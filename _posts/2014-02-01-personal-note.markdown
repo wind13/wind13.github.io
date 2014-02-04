@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "个人笔记本"
 date:   2014-02-01 21:28:39
-categories: jekyll update
+categories: personal note
 ---
 
 # 个人笔记本
