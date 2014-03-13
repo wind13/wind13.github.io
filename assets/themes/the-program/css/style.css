@@ -672,6 +672,7 @@ pre {
   margin-left: 0;
   margin-right: 0;
 }
+/*
 .unit-article ul,
 .unit-article ol,
 .unit-article dl {
@@ -680,6 +681,7 @@ pre {
 .unit-article ul {
   list-style: square;
 }
+*/
 .unit-article ol {
   list-style: decimal;
 }
