@@ -4,7 +4,7 @@
  <title>Wind13 Blog</title>
  <link href="http://wind13.github.io/" rel="self"/>
  <link href="http://wind13.github.io"/>
- <updated>2014-03-13T12:16:31+08:00</updated>
+ <updated>2014-03-13T22:14:52+08:00</updated>
  <id>http://wind13.github.io</id>
  <author>
    <name>Sam Liu</name>
@@ -13,10 +13,93 @@
 
  
  <entry>
+   <title>Playqaindex</title>
+   <link href="http://wind13.github.io/playscala/2014/02/26/playqaindex"/>
+   <updated>2014-02-26T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2014/02/26/playqaindex</id>
+   <content type="html">&lt;h1 id=&quot;play&quot;&gt;Play!技巧问答&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;wiki/PlayQAIndex/MultiProject&quot;&gt;Play!中如何用module组织多个相关项目&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;wiki/PlayQAIndex/FunctionTestSession&quot;&gt;FunctionTest测试中如何取得Session值&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;wiki/PlayQAIndex/XmlDomainBug&quot;&gt;Xml域名空间（WS.(url).get().getXml()无法取得带命名空间Document对象）识别问题&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;wiki/PlayQAIndex/FilterAllController&quot;&gt;在Play!中如何实现类似过滤器的功能&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;wiki/PlayQAIndex/UserHttps&quot;&gt;如何同时使用http和https协议&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;wiki/PlayQAIndex/LongPolling&quot;&gt;在Play!中是否支持Comet-style或long-polling的请求？&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;wiki/PlayQAIndex/OperationNotPermitted&quot;&gt;在Linux系统中，Fat32盘下无法执行play eclipsify命令&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;wiki/PlayQAIndex/CacheRemoveTime&quot;&gt;移除Cache可以设置时间吗？&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;wiki/PlayQAIndex/ValidateAndSave&quot;&gt;关于独立对像的存储报错问题validateAndSave();&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;wiki/PlayQAIndex/DetachedPersist&quot;&gt;分离实体持久化出错（PersistentObjectException: detached entity passed to persist）问题&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;wiki/PlayQAIndex/DeepQA&quot;&gt;Play框架深层问题讨论&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;wiki/PlayQAIndex/CmdChinese&quot;&gt;Play在Windows的cmd窗口中中文乱码的解决办法&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;wiki/PlayQAIndex/HqlCount1&quot;&gt;一个Hql中count判断的写法&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;wiki/PlayQAIndex/ModuleMissing&quot;&gt;无法加载pdf等Module的问题&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;wiki/PlayQAIndex/HqlLeftJoin&quot;&gt;Hql中 left join 的写法&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Hqlleftjoin</title>
+   <link href="http://wind13.github.io/playscala/2014/02/26/hqlleftjoin"/>
+   <updated>2014-02-26T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2014/02/26/hqlleftjoin</id>
+   <content type="html">&lt;h1 id=&quot;hql__left_join_&quot;&gt;HQL 中 left join 的写法&lt;/h1&gt;
+
+&lt;p&gt;用 Play 查询数据时，遇到关联对象的查询时，需要使用 left join 的语句，但与我们习惯的 SQL 语句不同，HQL 的写法和思路是面向对象的，所以下面就记录一些可用的例句供实际使用时参考：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;查询教的学生中有年龄大于30的老师
+hql = &amp;quot;select distinct o from Teacher o, Student r left join r.teacher h where r.age&amp;gt;=?&amp;quot;;&lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>个人笔记本</title>
-   <link href="http://wind13.github.io/personal/note/2014/02/01/personal-note"/>
+   <link href="http://wind13.github.io/personal/note/2014/02/01/note"/>
    <updated>2014-02-01T21:28:39Z</updated>
-   <id>http://wind13.github.io/personal/note/2014/02/01/personal-note</id>
+   <id>http://wind13.github.io/personal/note/2014/02/01/note</id>
    <content type="html">&lt;h1 id=&quot;&quot;&gt;个人笔记本&lt;/h1&gt;
 
 &lt;h2 id=&quot;_2&quot;&gt;工作笔记&lt;/h2&gt;
@@ -55,6 +138,2668 @@
 &lt;span class=&#39;c1&#39;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Start</title>
+   <link href="http://wind13.github.io/playscala/2014/01/21/start"/>
+   <updated>2014-01-21T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2014/01/21/start</id>
+   <content type="html">&lt;h1 id=&quot;_playscala_&quot;&gt;欢迎光临 PlayScala 知识站&lt;/h1&gt;
+
+&lt;p&gt;Welcome to PlayScala!&lt;/p&gt;
+
+&lt;h2 id=&quot;&quot;&gt;相关的网站&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.playframework.com&quot;&gt;Playframework官方网站&lt;/a&gt;简洁明快，特别适合开发Web应用软件，1.2.5版本实践中…&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://spray.io/&quot;&gt;Spray官方网站&lt;/a&gt;一套值得关注的基于&lt;a href=&quot;http://www.scala-lang.org/&quot;&gt;Scala&lt;/a&gt;和&lt;a href=&quot;http://akka.io/&quot;&gt;Akka&lt;/a&gt;的轻量REST/HTTP解决方案。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.oopsplay.org&quot;&gt;中国Play官方社区&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://cn.tanshuai.com/a/getting-started-scala-play&quot;&gt;关于Play2的一个非常好的入门教程&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.scala-lang.org/&quot;&gt;Scala语言&lt;/a&gt;，结合面向对象与函数式编程，更好地加强了软件的可扩展性，学习中……&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://zh.scala-tour.com/#/welcome&quot;&gt;Scala指南&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https///github.com/playframework/play20/wiki&quot;&gt;Play!2.0官方文档&lt;/a&gt;，在github开源。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://play-framework.herokuapp.com/&quot;&gt;国内中文文档翻译&lt;/a&gt;，Play!文档中文化QQ群：168013302，在兴趣的可以帮忙翻译&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https///github.com/hotplay/playframework-document-cn&quot;&gt;在github上的项目网址&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://code.google.com/p/play-cms/&quot;&gt;一个非常简单的内嵌CMS模块（play-cms module）&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;play&quot;&gt;本站收集Play!相关技巧&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;playscala/StopSSHGoPlay&quot;&gt;停止SSH，用Play!吧&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;playscala/PlayQAIndex&quot;&gt;Play!技巧问答&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;playscala/PlayWebSites&quot;&gt;国内一些使用Play!框架的网站&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;playscala/DevLinks&quot;&gt;编程知识链接收集&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;playscala/LearnSelf&quot;&gt;编程自学之路（个人建议供参考）&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;playscala/OtherRelay&quot;&gt;其他相关技术&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;playscala/xmlAwareNameSpace&quot;&gt;Xml 域名空间识别问题&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;playscala&quot;&gt;学用Play!和Scala做软件&lt;/h2&gt;
+
+&lt;h3 id=&quot;play1x_&quot;&gt;Play1.x 相关&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://liuu.iteye.com/blog/599129&quot;&gt;Playing Play!系列之一：Play框架的暴力美学&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://liuu.iteye.com/blog/629586&quot;&gt;Playing Play!系列之二：再见Servlet，Play框架的启动&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://liuu.iteye.com/blog/679437&quot;&gt;Playing Play!系列之三：不必Servlet3，Play框架的异步请求处理之道&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://moshihao.com/?p=350&quot;&gt;playframework 学习实践(一) – Play框架概述&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://moshihao.com/?p=359&quot;&gt;playframework 学习实践(二) – 搭建play开发环境&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://moshihao.com/?p=388&quot;&gt;playframework 学习实践(三) – Hello World , play!&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://moshihao.com/?p=399&quot;&gt;playframework 学习实践(四) – 配置你喜欢的IDE&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://wind13.blog.163.com/blog/static/2482349201010171145628/&quot;&gt;Play framework 技巧记录&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://wind13.blog.163.com/blog/static/248234920114462120998/&quot;&gt;Play framework 技巧记录 二&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;_2&quot;&gt;管理相关知识&lt;/h2&gt;
+
+&lt;p&gt;管理从思想上来说是哲学的，从理论上来说是科学的，从操作上来说是艺术的。——余世维&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;toc/TocTerm&quot;&gt;Toc术语&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;toc/BetterPlan&quot;&gt;如何制定和落实一项有效的改善方案？&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;manage/LuoJiSiWei&quot;&gt;罗辑思维听后记录&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;wiki&quot;&gt;Wiki相关知识记录&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;wiki/dokuwiki&quot;&gt;DoKuWiki&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Trac相关&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;wiki/TracIndex/TracInterfaceCustomization&quot;&gt;定制Trac界面&lt;/a&gt;（转自&lt;a href=&quot;http://trac-hacks.org/&quot;&gt;Trac-Hacks&lt;/a&gt;）&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://trac-hacks.org/&quot;&gt;Trac-Hacks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;_3&quot;&gt;常用在线工具&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://tool.oschina.net/regex&quot;&gt;正则表达式测试&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://tool.oschina.net/diff&quot;&gt;代码对比/归并&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://tool.oschina.net/jscompress&quot;&gt;JS代码压缩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://tool.oschina.net/encrypt?type=3&quot;&gt;BASE64编码解码&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://tool.oschina.net/csv2tb&quot;&gt;CSV转HTML表格&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://tool.oschina.net/codeformat/json&quot;&gt;JSON代码格式化&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://tool.oschina.net/codeformat/js&quot;&gt;JS代码格式化&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;_4&quot;&gt;生活智慧&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;wiki/FunnyClassic&quot;&gt;有趣经典收集&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;_5&quot;&gt;关于本站的一些说明&lt;/h2&gt;
+
+&lt;p&gt;一切才刚刚开始，希望大家多支持……&lt;/p&gt;
+
+&lt;p&gt;如果您需要信息化方面一些好的解决方案，&lt;/p&gt;
+
+&lt;p&gt;请给我发邮件：service AT playscala DOT com！&lt;/p&gt;
+
+&lt;p&gt;当然，你也可以说点别的……&lt;/p&gt;
+
+&lt;p&gt;环境保护，只要你是人类，就应该反思！从节约资源开始吧！&lt;/p&gt;
+
+&lt;p&gt;参与Wiki建设，分享知识经验！每个人都可以参加哦！点击右上角的&lt;a href=&quot;http://www.playscala.com/wiki.php?id=start&amp;do=register&quot;&gt;Register&lt;/a&gt;注册即可。&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Luojisiwei</title>
+   <link href="http://wind13.github.io/playscala/2014/01/10/luojisiwei"/>
+   <updated>2014-01-10T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2014/01/10/luojisiwei</id>
+   <content type="html">&lt;h1 id=&quot;&quot;&gt;罗辑思维听后记录&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.youku.com/show_page/id_zc40101545bdc11e2b356.html&quot;&gt;罗辑思维2013&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;19_&quot;&gt;第19期：在一起 有后代&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://v.youku.com/v_show/id_XNTQ0NzAzMTI0.html&quot;&gt;在线优酷观看&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;如果你不知道学一个知识有什么用，没有学习它的动力时，可以听一下这一讲，世间万物的知识其实是相互关联的，不要刻意将自己局限在某个专业的思维之中。&lt;/p&gt;
+
+&lt;h2 id=&quot;36&quot;&gt;第36期：大家都有拖延症&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://v.youku.com/v_show/id_XNTk2NDI0NDg4.html&quot;&gt;在线优酷观看&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;如果你感觉自己总是会拖延一些重要的事情，听听这一讲，也许会找到灵感并有一些适怀。&lt;/p&gt;
+
+&lt;p&gt;自己整理了一下缓解拖延的答案：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;将许多自己想做、要做的重要的事情列在自己的名单上，感觉拖延（不想做）一件事的时候，去这个名单上找另一件想做的事情来做。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;将大而模糊、创造性的事情分解成机械性、具体的小事情去完成。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;让种子飞一会儿，即提前先了解清楚一件事情的情况，然后可以先放下酝酿它，到时机成熟时就会快速完成。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;把事情放到群体压力中完成，可以让虚荣心等督促自己完成。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;因为人类的底层需求更关注当下的享受，所以会造成对未来重要的事情的拖延。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;现代社会从手段到目的很遥远（农夫晒太阳的故事）&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;现实生活中很多目的是被强加上的（老大爷巧治儿童踢球的故事）&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;很多的目的是想象虚拟的（选择看电影的实验）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;人在追求一个虚无飘渺的目的（1、目的是想象的；2、目的是强加的；3、目的和手段之间相隔很远）时，就会出现拖延，这也就是拖延症的主要原因。&lt;/p&gt;
+
+&lt;p&gt;未来的解决方向：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;每个人做自己感兴趣的事情。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;人在不同的年龄段下不断提升自己的境界，不断修炼，等待人格的成熟。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;顺其自然，不必为其烦恼，甘于做个平凡人（Loser）即可。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;51&quot;&gt;第51期：怎么当个明白人&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://v.youku.com/v_show/id_XNjQxMDQ4NTgw.html&quot;&gt;在线优酷观看&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;知史而鉴今，你真的懂得因果逻辑吗？看一下我们经常出现的逻辑中的误区，让自己从另外的角度警惕陷入这样的逻辑错误中。&lt;/p&gt;
+
+&lt;h2 id=&quot;54&quot;&gt;第54期：阴谋，是可能的吗？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://v.youku.com/v_show/id_XNjUwMzI3MjY4.html&quot;&gt;在线优酷观看&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;价格的本质：是指你要购买的一整套配套服务。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;历史上的所有价格联盟都是无效的，你可以限制价格，但无法完全规定购买到的服务细节。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;自由世界是所有人分散决策涌现出来的一个现象。总想控制价格是人类从过去走过来的一个妄念。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;越往回追溯历史，你会发现人类社会是由权力来主导，由中心来控制的这样一种社会样态，但越往后、越往未来，人类社会越是以自由为前提，以市场来协同，由分散的节点来分头决策的这样一种社会样态。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;1、空间上看，阴谋永远会存在，但规模会越来越受控。2、越往回追溯历史，阴谋得逞的可能越大，而相反越往未来，阴谋得逞的可能越小。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;未来发展的趋势是“去中心化”，推荐一本书《市场的力量》。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Ubuntueclipse</title>
+   <link href="http://wind13.github.io/playscala/2014/01/09/ubuntueclipse"/>
+   <updated>2014-01-09T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2014/01/09/ubuntueclipse</id>
+   <content type="html">&lt;h1 id=&quot;ubuntueclipse&quot;&gt;Ubuntu下Eclipse完美安装方案&lt;/h1&gt;
+
+&lt;h2 id=&quot;ubuntuaptgeteclipse&quot;&gt;Ubuntu下直接apt-get安装Eclipse的问题&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;直接安装的版本较低，我用Ubuntu13.10安装的是Eclipse3.8，而要用ScalaIDE，最好是4.x以上版本。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;其次是Eclipse的菜单显示问题，点击后看不到下拉菜单。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;&quot;&gt;完美解决方案&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;直接从eclipse.org官方网站&lt;a href=&quot;http://eclipse.org/downloads/&quot;&gt;下载&lt;/a&gt;自己喜欢的版本，欲Java编程可选择Eclipse IDE for Java Developers。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;解压到个人喜欢的软件目录即可。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;使用此命令 sudo vim /usr/share/applications/eclipse.desktop 建立应用启动如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;	[Desktop Entry]
+	Name=Eclipse
+	Comment=c project manage software
+	Exec=/home/sam/develop/eclipse/eclipse
+	Icon=/home/sam/develop/eclipse/icon.xpm
+	Terminal=false
+	Type=Application
+	Categories=GNOME;GTK;Office;Eclipse&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;注意替换你自己的路径，这样就ok了，在Dash主页主就可以找到eclipse的图标启动了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Otherrelay</title>
+   <link href="http://wind13.github.io/playscala/2014/01/09/otherrelay"/>
+   <updated>2014-01-09T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2014/01/09/otherrelay</id>
+   <content type="html">&lt;h1 id=&quot;&quot;&gt;其他编程相关&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Java 相关&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;playscala/otherrelay/Java/DateFormat&quot;&gt;String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://moshihao.com/?p=315&quot;&gt;java 类对象初始化顺序&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;JavaScript相关&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;playscala/otherrelay/jsframework&quot;&gt;JavaScript框架&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;easyui 相关&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;playscala/otherrelay/EasyUI/EasyUIForm&quot;&gt;easyui中form表单的ajax实现&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;playscala/otherrelay/EasyUI/Version1.2.5&quot;&gt;版本1.2.5改进说明&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;自动化测试（抓数据）相关&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;playscala/otherrelay/AutoTest/HtmlUnitDriverJavascript&quot;&gt;关于HtmlUnitDriver无法支持所有javascript效果的问题&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Git相关&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;playscala/otherrelay/Git/OftenUsed&quot;&gt;常用Git命令说明&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://java.dzone.com/articles/git-vs-svn-basic-commandline&quot;&gt;git 与 svn 命令对比&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;电脑相关&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;playscala/otherrelay/computerqa&quot;&gt;电脑知识问答&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;playscala/otherrelay/c461mubuntusteup&quot;&gt;联想C461M安装Ubuntu13.10问题&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;playscala/otherrelay/UbuntuEclipse&quot;&gt;Ubuntu下Eclipse完美安装方案&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Modulemissing</title>
+   <link href="http://wind13.github.io/playscala/2014/01/09/modulemissing"/>
+   <updated>2014-01-09T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2014/01/09/modulemissing</id>
+   <content type="html">&lt;h1 id=&quot;pdfmodule&quot;&gt;无法加载pdf等module的问题&lt;/h1&gt;
+
+&lt;p&gt;简单地加载pdf的Module，如官网所述：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;play -&amp;gt; pdf 1.0&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然而却提示无法加载。&lt;/p&gt;
+
+&lt;p&gt;尝试运行：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;play install pdf-1.0&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;提示：Cannot fetch the modules list from %%http://www.playframework.org/modules%%&lt;/p&gt;
+
+&lt;p&gt;后在playframework群中找到答案，是因为要用.com域名才能获取。&lt;/p&gt;
+
+&lt;p&gt;需要修改此文件：{PLAY_HOME}/framework/dependencies.yml 将最后面库路径的.org改为.com即可。&lt;/p&gt;
+
+&lt;p&gt;另外也可以自建仓库，如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;require
+   - play
+   - play1 -&amp;gt; pdf 1.0
+repositories
+   - play1modules:
+       type: http
+       artifact: &amp;quot;http://module.yourcompany.com/play1/modules/[module]-[version].zip&amp;quot;
+       contains:
+          - play1 -&amp;gt; *&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;之后就是从官网下载相应的zip文件放到你的网站相应目录%%http://module.yourcompany.com/play1/modules/%%下即可。&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>C461mubuntusteup</title>
+   <link href="http://wind13.github.io/playscala/2013/12/29/c461mubuntusteup"/>
+   <updated>2013-12-29T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/29/c461mubuntusteup</id>
+   <content type="html">&lt;h1 id=&quot;c461mubuntu1310&quot;&gt;联想C461M安装Ubuntu13.10问题&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;本人的笔记本：联想旭日C461M，买来后安装的是Vista系统，用起来很不习惯，速度也慢，现在喜欢上了Linux的系统，
+不喜欢Windows系统，WinXP微软也放弃维护了，于是前一年安装Fedora系统，使用还算正常，但是发现软件升级总是出
+现问题，老是不顺利，19升20时直接失败。所以前两天尝试安装Ubuntu系统，发现界面、软件升级等都很爽，但是……
+
+安装Ubuntu112.04LTS系统后发现几个问题：
+一、没有无线网络：
+http://mikezero.blog.163.com/blog/static/17527658320131161054480/
+首先查看网卡状态，终端命令：
+sudo lshw -C network
+再查看网卡型号：
+sudo lspci -vnn | grep 802.11b
+或：
+sudo lspci -vnn | grep BCM4311
+
+下载：http://zh-cn.broadcom.com/support/802.11/linux_sta.php
+解压：/home/sam/download/hybrid-v35-nodebug-pcoem-6_30_223_141
+执行：make
+再执行：sudo insmod wl.ko
+结果没有反应，一直执行不动的样子。
+于是再下载了readme.txt：http://zh-cn.broadcom.com/docs/linux_sta/README.txt
+运行以下语句：
+On Ubuntu, you will need headers and tools.  Try these commands:
+# apt-get install build-essential linux-headers-generic
+# apt-get build-dep linux
+
+二、看不到输入法图标：
+使用以下两句：
+killall ibus-daemon
+ibus-daemon -d
+即可显示，但现在问题是启动后不显示。
+
+三、找不到五笔输入法：
+sudo apt-get install ibus-table-wubi
+然后重启可以找到海峰五笔。
+
+四、未升级到LibreOffice4，默认是3，看到网上有升级方法：
+sudo add-apt-repository ppa:libreoffice/libreoffice-4.0
+sudo apt-get update
+sudo apt-get dist-upgrade
+
+不过因为无线网络这个致命问题，而没有解决，纠结下一步做何打算。
+
+========================================================
+第二天，决定安装了Ubuntu13.10，结果还是无法连接wifi，五笔输入法没有找到
+killall ibus-daemon
+ibus-daemon -d
+后，重启正常了。
+另外 LibreOffice默认就是4，这点很开心。
+
+而尝试修复无线网络时，下载的hybrid-v35-nodebug-pcoem-6_30_223_141.tar.gz文件，
+在解压时提示：设置所有者出错，不允许的操作。
+后尝试重启，重新下载文件后，可以正常解压。但运行make报错，失败。
+
+再次查阅本机自带的帮助文件，找到无线网络驱动的内容，看到这个网址链接：
+http://wireless.kernel.org/en/users/Drivers/b43#supported
+其中尝试运行了以下命令：
+sudo apt-get install firmware-b43-installer
+似乎下载安装了：http://www.lwfinger.com/b43-firmware/broadcom-wl-5.100.138.tar.bz2
+尝试重启后依然无效。
+
+最后再尝试使用ndiswrapper调用windows的驱动程序的方法：
+sudo apt-get install ndisgtk
+查看这个文档：https://help.ubuntu.com/community/WifiDocs/Driver/Ndiswrapper#bcm43xx
+将/etc/modprobe.d/blacklist 中的bcm43xx相关语句屏蔽，尝试是否可以运行。
+
+下载了官网的驱动Broadcom802.11_Wlan_XP.exe文件，按装文档所说解压该文件失败，即使是安装了cabextract
+和 unshield也都不行。
+
+============================================================
+第二天 下午 ～
+再次查询google，发现此文：
+http://linuxg.net/how-to-fix-broadcom-bcm4311-wireless-driver-on-ubuntu-and-linux-mint/
+参考此文：http://blog.chinaunix.net/uid-22002627-id-3478362.html
+执行相关命令：
+1.进入驱动所在目录，即bcmwl5.inf和bcmwl5.sys所在目录
+ndiswrapper –I bcmwl5.inf
+2.查看驱动是否安装
+ndiswrapper –l
+3.写入配置文件
+ndiswrapper –m
+ndiswrapper –ma
+ndiswrapper –mi
+4.加载模块
+modprobe ndiswrapper
+
+当运行modprobe时，卡死，郁闷，每次运行这个命令就卡死～
+不过，好在重启之后，搞定了，识别了无线网络！！！折腾了两天终于好了。
+最终应该正解是：http://blog.chinaunix.net/uid-22002627-id-3478362.html
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+另外，还有个问题：点重启时不能自动重启，停在“Ubuntu”的Logo界面很久不动，只好手工关机再开机。&lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Playwebsites</title>
+   <link href="http://wind13.github.io/playscala/2013/12/28/playwebsites"/>
+   <updated>2013-12-28T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/28/playwebsites</id>
+   <content type="html">&lt;h1 id=&quot;play&quot;&gt;国内使用Play!框架的网站&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.pinchequn.com/&quot;&gt;拼车群&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://tujiao.com/&quot;&gt;土椒网&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.paojiao.cn&quot;&gt;泡椒网&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://alum.cug.edu.cn&quot;&gt;中国地质大学&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.meizhijia.com&quot;&gt;美之家家居网&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://leihou.com/&quot;&gt;雷猴&lt;/a&gt;（据说是）&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.chideyi.com/&quot;&gt;吃得易&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Jsframework</title>
+   <link href="http://wind13.github.io/playscala/2013/12/24/jsframework"/>
+   <updated>2013-12-24T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/24/jsframework</id>
+   <content type="html">&lt;h1 id=&quot;javascript&quot;&gt;Javascript框架&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;* 综合框架
+	* [arale.js](http://aralejs.org/) 支付宝的前端基础类库 Arale 基于 SeaJS 和 jQuery 等，目前新构建 2.0 版本。 demo: [计算器](http://seajs.org/docs/demo/calculator/)
+	* [KISSY](http://docs.kissyui.com/) 是由淘宝前端攻城师们发起创建的一个开源 JS 类库。
+	* [Ender.js](http://ender.no.de/) - Ender is a full featured package manager for your browser. 作者 [Dustin Diaz](http://www.dustindiaz.com/)
+* 模块加载框架 [Javascript模块化](http://www.phphubei.com/article-4153-1.html)
+	* [Seajs](http://seajs.org/) 由支付宝团队开源，基于（[CommonJS](http://www.commonjs.org/impl/)的一种实现，类似的模块加载框架：,,）和jquery的前端框架
+	* BravoJS
+	* [Require.js](http://requirejs.org/)
+	* FlyScript
+	* [AlmondJS](https///github.com/jrburke/almond) A minimal AMD API implementation for use after optimized builds 
+	* [Amdjs](https///github.com/amdjs/amdjs-api/wiki/AMD) The Asynchronous Module Definition (AMD) API specifies a mechanism for defining modules such that the module and its dependencies can be asynchronously loaded.
+	* [ozjs](https///github.com/dexteryy/OzJS) 土豆网的开源模块加载js库
+* 模板框架
+	* [Handlebars.js](http://handlebarsjs.com/) provides the power necessary to let you build semantic templates effectively with no frustration.
+	* [mustache.js](http://mustache.github.com/) - Logic-less templates with Javascript.
+	* [Eco](https///github.com/sstephenson/eco/): Embedded CoffeeScript templates
+	* [Jade](http://jade-lang.com/): Node Template Engine
+* MVC框架 （初步选择Emberjs，Knockoutjs 和 Canjs）
+	* [The Top 10 Javascript MVC Frameworks Reviewed](http://codebrief.com/2012/01/the-top-10-javascript-mvc-frameworks-reviewed/)
+	* [TodoMVC](https///github.com/addyosmani/todomvc) 「[官网](http://todomvc.com/)」A common learning application for popular JavaScript MV* frameworks
+	* [最佳实践之 Javascript MVC](http://xhh.me/2012/06/best-practices-js-mvc.html)
+	* [Backbone.js](http://documentcloud.github.com/backbone/)
+		* [Backbone.js vs Ember.js](http://www.johng.co.uk/2012/01/11/backbone.js-vs-ember.js/)
+		* [What are the key differences between Ember.js (formerly SproutCore 2.0) and Backbone.js?](http://www.quora.com/What-are-the-key-differences-between-Ember-js-formerly-SproutCore-2-0-and-Backbone-js)
+	* [Emberjs](http://emberjs.com/)
+		* [学习心得](https///github.com/alipay/arale/issues/48)
+		* [Ember/Handlebars template precompilation with Play](http://eng.netwallet.com/2012/04/25/emberhandlebars-template-precompilation-with-play/)
+		* [Ember data](https///github.com/emberjs/data#readme) 与RubyOnRails结合较好
+		* [ember-rest](https///github.com/cerebris/ember-rest) Simple RESTful resources in Ember.js
+		* [Beginning Ember.js on Rails](http://www.cerebris.com/blog/2012/01/24/beginning-ember-js-on-rails-part-1/)
+		* [The architecture of Ember.js apps - data](http://jzajpt.github.com/2012/01/24/emberjs-app-architecture-data.html)
+		* [ember.js and the server](http://stackoverflow.com/questions/8948213/ember-js-and-the-server)
+		* [AngularJS vs Emberjs](http://discuss.emberjs.com/t/angularjs-vs-emberjs/1029/4) 英文贴，讨论哪个更好，其中提到AngularJS的机制有2000个绑定的限制，做大型系统更应该选Emberjs。
+		* [Fire Up Ember.js](https///peepcode.com/products/emberjs) 代码实例录像，需购买？
+		* [EMBLR, THE EMBER.JS TUMBLR](http://emberjs.tumblr.com/)
+			* [Experimenting with the Architecture of Ember.js](http://techiferous.com/2012/05/experimenting-with-the-architecture-of-ember-js/)
+	* [knockoutjs](http://knockoutjs.com/) Simplify dynamic JavaScript UIs by applying the Model-View-View Model (MVVM) pattern
+		* 优点：HTML中的data-binding属性可以方便地与其他模板框架并用。如：[Django合用的比较案例](http://blog.bootstraptoday.com/2012/01/23/emberjs-vs-knockoutjs/)
+		* [在线练习学习网站](http://learn.knockoutjs.com/)
+		* [BootStrap网站使用 knockoutjs的文章](http://blog.bootstraptoday.com/2012/01/23/emberjs-vs-knockoutjs/) ，说明了Knockoutjs比Emberjs更适合改造网站的原因。
+	* [AngularJS](http://angularjs.org/) HTML enhanced for web apps! MIT-licensed, Super-powered by Google!
+		* [angularui](http://angular-ui.github.io/bootstrap/)
+		* [一篇从Ember.js迁移到AngularJS的文章](http://beust.com/weblog/2012/12/29/migrating-from-ember-js-to-angularjs/)。介绍了AngularJs更加可扩展的好处。
+		* [基于jQuery UI Autocomplete Widget的ui-autocomplete](http://www.angularjs.cn/A059)
+		* [Ember.js or Angular.js?](https///news.ycombinator.com/item?id=5230636) 英文论坛一贴
+		* [Choosing a JS MVC Framework: Angular.js vs Ember.js](http://dybskiy.com/js-mvc-angular-vs-ember/)
+	* [Canjs](http://canjs.us/) is a MIT-licensed, client-side, JavaScript framework that makes building rich web applications easy. 与其他框架共用性最佳，[据评测性能也最佳](http://jsperf.com/canjs-ejs-performance/5) [还有这个测试](http://jsperf.com/tabs-timing-test) [这项显示knockoutjs在Live binding方面更好些](http://jsperf.com/canjs-ejs-performance)。
+	* [Batman.js](http://batmanjs.org/) is a framework for building rich web applications with CoffeeScript or JavaScript.
+	* [JavaScriptMVC](http://www.javascriptmvc.com/) is an open-source framework containing the best ideas in jQuery development. It guides you to successfully completed projects by promoting best practices, maintainability, and convention over configuration.
+	* [PureJS](http://www.purejs.org/) effortless. javascript.The missing API for Javascript.
+	* http://obvious.github.com/matador/
+	* http://derbyjs.com/ interesting
+	* http://flatironjs.org/ interesting
+	* http://railwayjs.com/ pretty bad.
+* 服务器端（并客户端）框架
+	* [Nodejs](http://nodejs.org/)
+		* [三种Javascript(NodeJS)异步编程代码模式比较](http://www.ituring.com.cn/article/62609)
+		* [在Node.js 中用 Q 实现Promise – Callbacks之外的另一种选择](http://www.ituring.com.cn/article/54547)
+	* [Meteor](http://meteor.com/) is a full stack framework
+	* [Yahoo! Mojito](https///github.com/yahoo/mojito) is the JavaScript library implementing Cocktails, a JavaScript-based on-line/off-line, multi-device, hosted application platform.
+	* [Wakanda](http://www.wakanda.org/) 服务器，开发工具studio和框架。
+* 测试框架
+	* [Jasmine](http://pivotal.github.com/jasmine/)
+	* [QUnit](http://docs.jquery.com/QUnit) is a powerful, easy-to-use, JavaScript test suite.
+* UI框架
+	* [Aliceui](http://aliceui.com/) 是支付宝前端样式解决方案小组的项目代称。[Alice Css书写规范](http://aliceui.com/css-spec/) [支付宝CSS样式架构](http://www.slideshare.net/sofish/css-8943211) [样式库构建规范](http://aliceui.com/alice-css-guide/)
+	* [D3.js](http://d3js.org/) is a JavaScript library for manipulating documents based on data. 二维图像生成框架
+	* [Wijmo](https///wijmo.com/purchase/) 商业全面控件UI，包含类似Excel控件图表控件SpreadJS等企业级UI控件，价格：$895。
+* 绘图报表
+	* [jQuery Sparklines](http://omnipotent.net/jquery.sparkline/#s-about) 很特别的在一行内显示一个小曲线或柱状图等的功能。
+	* [Peity](http://benpickles.github.com/peity/) 也是一行内的小图形功能。
+	* [RGraph](http://www.rgraph.net/) 功能很全面，对公益或个人使用免费，有商业授权。
+	* [Highcharts JS](http://www.highcharts.com/) 功能强大，对公益或个人使用免费，有商业授权，单网站$80。
+	* [jQuery HighchartsTable](http://pmsipilot.github.com/jquery-highchartTable-plugin) 免费MIT授权，但基于Highcharts JS，基本的线图、柱图等。
+	* [canvasXpress](http://canvasxpress.org/) 使用HTML5的&amp;lt;canvas&amp;gt;标签实现，功能全面，LGPL免费授权。
+	* [JointJs](http://www.jointjs.com/demos.html) 用于创建完全互动式图表，如组织架构图、UML状态图、UML类图等。
+	* [Elycharts](http://elycharts.com/examples) 是一个易于使用的，可定制的JavaScript图表绘制组件。这个组件可用于绘制大部分常用的图表类型包括：line, column, are, bar, pie, sparklines and combinations。图表利用SVG/VML技术生成，基于jQuery + Raphaël开发。
+* 脚本压缩打包工具
+		* [TUICompiler](https///github.com/dexteryy/TUICompiler) 土豆网的js打包工具&lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Version1.2.5</title>
+   <link href="http://wind13.github.io/playscala/2013/12/23/version1.2.5"/>
+   <updated>2013-12-23T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/23/version1.2.5</id>
+   <content type="html">&lt;h1 id=&quot;jquery_easyui_125_changelog&quot;&gt;jQuery EasyUI 1.2.5 ChangeLog&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Bug&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;tabs: When add a new tab panel with href property, the content page is loaded twice. fixed.&lt;/li&gt;
+
+&lt;li&gt;form: Failed to call ‘load’ method to load form input with complex name. fixed.&lt;/li&gt;
+
+&lt;li&gt;draggable: End drag in ie9, the cursor cannot be restored. fixed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Improvement&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;panel: The tools can be defined via html markup.&lt;/li&gt;
+
+&lt;li&gt;tabs: Call ‘close’ method to close specified tab panel, users can pass tab title or index of tab panel. Other methods such ‘select’,’getTab’ and ‘exists’ are similar to ‘close’ method.&lt;/li&gt;
+
+&lt;li&gt;tabs: Add ‘getTabIndex’ method.&lt;/li&gt;
+
+&lt;li&gt;tabs: Users can define mini tools on tabs.&lt;/li&gt;
+
+&lt;li&gt;tree: The mouse must move a specified distance to begin drag and drop operation.&lt;/li&gt;
+
+&lt;li&gt;resizable: Add ‘options’,’enable’ and ‘disable’ methods.&lt;/li&gt;
+
+&lt;li&gt;numberbox: Allow users to change number format.&lt;/li&gt;
+
+&lt;li&gt;datagrid: The subgrid is supported now.&lt;/li&gt;
+
+&lt;li&gt;searchbox: Add ‘selectName’ method to select searching type name.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Tracinterfacecustomization</title>
+   <link href="http://wind13.github.io/playscala/2013/12/23/tracinterfacecustomization"/>
+   <updated>2013-12-23T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/23/tracinterfacecustomization</id>
+   <content type="html">&lt;h1 id=&quot;trac&quot;&gt;定制Trac界面&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://trac-hacks.org/wiki/TracInterfaceCustomization&quot;&gt;原文地址&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;&quot;&gt;介绍&lt;/h5&gt;
+
+&lt;p&gt;该页面旨提供有关如何定制Trac界面的建议. 话题涵盖了编辑HTML模板和CSS文件, 但不包含程序代码本身. 这些话题想要向用户展示如何更改Trac的外观来满足他们特定的要求.&lt;/p&gt;
+
+&lt;h5 id=&quot;logo&quot;&gt;项目Logo和图标&lt;/h5&gt;
+
+&lt;p&gt;定制Trac界面最简单的部分是logo和站点的图标. 他们都可以通过&lt;a href=&quot;http://trac-hacks.org/wiki/TracIni&quot;&gt;trac.ini&lt;/a&gt;的设置进行配置.&lt;/p&gt;
+
+&lt;p&gt;logo或者图标应放在项目环境目录中的一个”htdocs”目录中(注意: 用Trac0.9之前的版本创建的项目, 你需要创建该目录).&lt;/p&gt;
+
+&lt;p&gt;”注意: 实际上你可以把logo和图标放在服务器的任何地方(只要通过服务器能访问到就可以), 并且在配置中使用他们的绝对URL或服务器的相对URL.&lt;/p&gt;
+
+&lt;p&gt;在你的&lt;a href=&quot;http://trac-hacks.org/wiki/TracIni&quot;&gt;trac.ini&lt;/a&gt;中的配置相应的段:&lt;/p&gt;
+
+&lt;h4 id=&quot;logo_2&quot;&gt;Logo&lt;/h4&gt;
+
+&lt;p&gt;将&lt;code&gt;src&lt;/code&gt;设置改为&lt;code&gt;site/&lt;/code&gt;, 后面跟着你的图像文件的名字. 应修改”宽度”和”高度”设置来匹配你的图像的尺寸(Trac的chrome处理器用”“site/”“对应位于项目目录的”“htdocs”“, 用”“common/”“对应普通文件).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[header_logo]
+src = site/my_logo.gif
+alt = My Project
+width = 300
+height = 100&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;_2&quot;&gt;图标&lt;/h4&gt;
+
+&lt;p&gt;图标应该是&lt;code&gt;.gif&lt;/code&gt;或&lt;code&gt;.ico&lt;/code&gt;格式的大小16x16的图像. 将&lt;code&gt;icon&lt;/code&gt;选项修改为&lt;code&gt;site/&lt;/code&gt;, 后面跟着你的图标文件的名称. 在你的Web浏览器中, 图标一般会显示在站点的URL旁边或者在”书签”菜单中.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[project]
+icon = site/my_icon.ico&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;”‘注意”’, 该图标会被 IE 忽略, 它只接受主机根路径下名为”favicon.ico”的文件. 要使项目图标在IE和其他浏览器中都起作用的话, 你可以将图标储存在主机的根路径中, 并按照下列方法在&lt;code&gt;trac.ini&lt;/code&gt;中引用它:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[project]
+icon = /favicon.ico&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;_3&quot;&gt;站点页眉和页脚&lt;/h5&gt;
+
+&lt;p&gt;在每个Trac项目的环境目录中, 应该有个叫templates的目录. 该目录包含文件site_header.cs和site_footer.cs. 用户可以通过添加所需的HTML标记到这些文件中, 来定制他们的Trac站点. 这两个文件的内容分别放在网站中每页的开始的标签&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt;和结尾的标签&lt;code&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;中.&lt;/p&gt;
+
+&lt;p&gt;这些文件可以包含静态HTML, 当然, 如果用户想要有动态的内容, 他们可以使用页面内部的&lt;a href=&quot;http://www.clearsilver.net/&quot;&gt;ClearSilver&lt;/a&gt;模板语言. 当你需要查看模板中有哪些可用变量, 将查询串”?hdfdump=1”添加到你的Trac站点的URL中. 这样将显示出模板数据的结构化视图.&lt;/p&gt;
+
+&lt;h5 id=&quot;_4&quot;&gt;站点样式表&lt;/h5&gt;
+
+&lt;p&gt;调整一个Trac网站的布局的主要方法是添加&lt;a href=&quot;http://www.w3.org/TR/REC-CSS2/&quot;&gt;CSS&lt;/a&gt;样式规则来覆盖默认的规则. 最好是通过编辑项目环境的&lt;code&gt;templates&lt;/code&gt;目录下的&lt;code&gt;site_css.cs&lt;/code&gt;文件来实现. 该模板中的内容会插入到Trac生成的每个HTML页面的&lt;code&gt;&amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt;&lt;/code&gt;&lt;code&gt;&amp;lt;/style&amp;gt;&lt;/code&gt;中.&lt;/p&gt;
+
+&lt;p&gt;虽然你可以将定制样式规则直接添加到&lt;code&gt;site_css.cs&lt;/code&gt;文件中, 我们建议你只引用一个外部样式表, 以便使浏览器能缓存此CSS文件, 而不是每次都传输这些样式规则.&lt;/p&gt;
+
+&lt;p&gt;下面的例子会导入一个位于根&lt;code&gt;style&lt;/code&gt;目录下的样式表:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@import url(/style/mytrac.css);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;你可以使用一个!ClearSilver变量来引用存储在项目环境的&lt;code&gt;htdocs&lt;/code&gt;目录中的样式表:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@import url(`&amp;lt;?cs var:chrome.href ?&amp;gt;`/site/style.css);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;_5&quot;&gt;项目列表&lt;/h5&gt;
+
+&lt;p&gt;如果你在使用Trac执行多个项目时, 你可以用一个定制!ClearSilver模板来显示项目的列表.&lt;/p&gt;
+
+&lt;p&gt;下面是Trac用来显示各项目链接的列表的基本模板. 对于不能加载的项目, 它会显示一个错误信息. 你可以将它作为你自己的索引模板的一个起点.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::html
+#!text/html
+`&amp;lt;html&amp;gt;`
+`&amp;lt;head&amp;gt;``&amp;lt;title&amp;gt;`Available Projects`&amp;lt;/title&amp;gt;``&amp;lt;/head&amp;gt;`
+`&amp;lt;body&amp;gt;`
+ `&amp;lt;h1&amp;gt;`Available Projects`&amp;lt;/h1&amp;gt;`
+ `&amp;lt;ul&amp;gt;`&amp;lt;?cs
+ each:project = projects ?&amp;gt;`&amp;lt;li&amp;gt;`&amp;lt;?cs
+  if:project.href ?&amp;gt;
+   `&amp;lt;a href=&amp;quot;&amp;quot;&amp;lt;?cs var:project.href ?&amp;gt;`&amp;quot;&amp;quot; title=&amp;quot;&amp;quot;`&amp;lt;?cs var:project.description ?&amp;gt;`&amp;quot;&amp;quot;&amp;gt;
+    `&amp;lt;?cs var:project.name ?&amp;gt;``&amp;lt;/a&amp;gt;`&amp;lt;?cs
+  else ?&amp;gt;
+   `&amp;lt;small&amp;gt;``&amp;lt;?cs var:project.name ?&amp;gt;`: `&amp;lt;em&amp;gt;`Error`&amp;lt;/em&amp;gt;` `&amp;lt;br /&amp;gt;`
+   (`&amp;lt;?cs var:project.description ?&amp;gt;`)`&amp;lt;/small&amp;gt;`&amp;lt;?cs
+  /if ?&amp;gt;
+  `&amp;lt;/li&amp;gt;`&amp;lt;?cs
+ /each ?&amp;gt;
+ `&amp;lt;/ul&amp;gt;`
+`&amp;lt;/body&amp;gt;`
+`&amp;lt;/html&amp;gt;`&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;一旦你创建了自己的定制模板, 你需要配置Web服务器, 来告诉Trac该模板的具体位置:&lt;/p&gt;
+
+&lt;p&gt;对于 &lt;a href=&quot;http://trac-hacks.org/wiki/TracFastCgi&quot;&gt;FastCGI&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;FastCgiConfig -initial-env TRAC_ENV_PARENT_DIR=/parent/dir/of/projects \
+              -initial-env TRAC_ENV_INDEX_TEMPLATE=/path/to/template&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;对于 &lt;a href=&quot;http://trac-hacks.org/wiki/TracModPython&quot;&gt;mod_python&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;PythonOption TracEnvIndexTemplate /path/to/template&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;对于 &lt;a href=&quot;http://trac-hacks.org/wiki/TracCgi&quot;&gt;CGI&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SetEnv TRAC_ENV_INDEX_TEMPLATE /path/to/template&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;_6&quot;&gt;主要模板&lt;/h5&gt;
+
+&lt;p&gt;!ClearSilver 也可以使用自己修改的Trac !ClearSilver模板. 注意, 不推荐使用该技术, 因为它使得升级Trac有很多问题: 很不幸的是, 在模板和程序代码间存在几个依赖关系, 例如表单域的名称, 模板数据的结构等, 这些在不同版本的Trac中都可能有变化.&lt;/p&gt;
+
+&lt;p&gt;如果你一定要使用修改的模板, 将默认模板目录(通常是在&lt;code&gt;$prefix/share/trac/templates&lt;/code&gt;中)中的模板文件复制到项目环境中的&lt;code&gt;templates&lt;/code&gt;目录中. 然后修改这些副本, 达到你想要的效果。&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>常用Git命令说明</title>
+   <link href="http://wind13.github.io/git/2013/12/23/oftenused"/>
+   <updated>2013-12-23T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/git/2013/12/23/oftenused</id>
+   <content type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;进入你的工作目录&lt;/p&gt;
+
+&lt;p&gt;cd yourworkpath&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;列出所有branch，当前所在branch前面有“*”号。&lt;/p&gt;
+
+&lt;p&gt;git branch -a&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;切换工作库&lt;/p&gt;
+
+&lt;p&gt;git checkout v1.5.1&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;合并另一个branch，通常是master&lt;/p&gt;
+
+&lt;p&gt;git merge master&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;再切换回来&lt;/p&gt;
+
+&lt;p&gt;git checkout master&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;查看当前目录情况&lt;/p&gt;
+
+&lt;p&gt;git status&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;将当前目录中的修改提交到相应的库（branch）中&lt;/p&gt;
+
+&lt;p&gt;git commit -m ””此处添加修改说明””&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;从远程库中合并最新状态&lt;/p&gt;
+
+&lt;p&gt;git pull&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;注：当使用git pull命令的时候如果提示有本地文件修改了，无法合并的时候，我们可以放弃本地修改（注意放弃的修改将不可恢复），然后再更新； 如果不想放弃本地修改，可以先提交，然后再合并更新。 如果要放弃本地修改后更新：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git reset --hard
+git pull&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;将合并后的状态并入远程库中。&lt;/p&gt;
+
+&lt;p&gt;git push origin master&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;如果是在分支上开发则为：&lt;/p&gt;
+
+&lt;p&gt;git push origin v1.5.1&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;取消某个文件的版本控制，但实际不删除这个文件：&lt;/p&gt;
+
+&lt;p&gt;git rm –cached somefile.txt&lt;/p&gt;
+
+&lt;h1 id=&quot;gitignore&quot;&gt;然后再修改目录下的.gitignore文件，添加上这个文件的相应忽略即可。&lt;/h1&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;查看每一行的改动：&lt;/p&gt;
+
+&lt;p&gt;git blame &lt;code&gt;&amp;lt;filename&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;git 查看一个文件的所有修改历史&lt;/p&gt;
+
+&lt;p&gt;git log –pretty=oneline &lt;code&gt;&amp;lt;filename&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;创建一个分支并切换到这个分支工作，通常可用于临时进行一些测试性的开发，如果要保留这个dirty的分支内容，可以commit上去，随时再切换回master就象一切没发生过。&lt;/p&gt;
+
+&lt;p&gt;git checkout -b dirty&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;如果这个测试性的开发需要被接受合并到主干master，只要切换到master再合并即可：&lt;/p&gt;
+
+&lt;p&gt;git checkout master git merge dirty&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;丢弃加入缓存区（即git add的准备提交的文件）的修改&lt;/p&gt;
+
+&lt;p&gt;git reset –hard HEAD&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;丢弃某个文件的修改，和SVN的revert命令一样&lt;/p&gt;
+
+&lt;p&gt;git checkout – comefile.txt&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;丢弃本地所有文件的修改，和SVN的revert命令一样&lt;/p&gt;
+
+&lt;p&gt;git checkout – &lt;em&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Htmlunitdriverjavascript</title>
+   <link href="http://wind13.github.io/playscala/2013/12/23/htmlunitdriverjavascript"/>
+   <updated>2013-12-23T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/23/htmlunitdriverjavascript</id>
+   <content type="html">&lt;h1 id=&quot;htmlunitdriverjavascript&quot;&gt;HtmlUnitDriver中javascript的支持问题&lt;/h1&gt;
+
+&lt;p&gt;参见：&lt;a href=&quot;http://code.google.com/p/selenium/issues/detail?id=371\#c4&quot;&gt;http://code.google.com/p/selenium/issues/detail?id=371#c4&lt;/a&gt;，看不到的元素或ajax异步更新的元素，都可能遇到无法取得或取得旧数据的问题。&lt;/p&gt;
+
+&lt;p&gt;和：&lt;a href=&quot;https://code.google.com/p/selenium/wiki/FrequentlyAskedQuestions#Q:_WebDriver_fails_to_find_elements_/_Does_not_block_on_page_loa&quot;&gt;http://code.google.com/p/selenium/wiki/FrequentlyAskedQuestions#Q:_WebDriver_fails_to_find_elements_/_Does_not_block_on_page_loads&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;因为&lt;a href=&quot;http://seleniumhq.org/docs/03_webdriver.html\#javascript-in-the-htmlunit-driver&quot;&gt;HtmlUnitDriver默认的javascript引擎是Rhino&lt;/a&gt;，所以很多的脚本动作可能无法和在浏览器中一样，不过基本的是以Firefox为准的。&lt;/p&gt;
+
+&lt;p&gt;另：&lt;a href=&quot;http://code.google.com/p/selenium/wiki/FrequentlyAskedQuestions\#Q:_How_do_I_handle_authentication_with_the_HtmlUnitDriver?&quot;&gt;How_do_I_handle_authentication_with_the_HtmlUnitDriver?&lt;/a&gt; 如何在HtmlUnitDriver中加上用户密码验证的方法。&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Gitolitesetup</title>
+   <link href="http://wind13.github.io/playscala/2013/12/23/gitolitesetup"/>
+   <updated>2013-12-23T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/23/gitolitesetup</id>
+   <content type="html">&lt;h1 id=&quot;centosgitolitegit&quot;&gt;CentOS下使用Gitolite架构Git服务的步骤&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;在服务端创建专用用户，如：git，可考虑不设置密码，从而无法用密码登录服务器。&lt;/li&gt;
+
+&lt;li&gt;在管理员电脑上创建管理员密钥对，并（通过U盘或root账号）拷贝到服务器上，之后添加到git用户目录的.ssh/authorized_keys文件中。从而达到无需密码从管理员电脑直接ssh到服务器git上的效果。&lt;/li&gt;
+
+&lt;li&gt;使用git clone下载Gitolite。&lt;/li&gt;
+
+&lt;li&gt;运行gl-system-install安装到服务器，此时会看到git用户目录中多出了bin, share, repositories等目录。&lt;/li&gt;
+
+&lt;li&gt;从客户端下载git clone 管理目录：gitolite-admin。&lt;/li&gt;
+
+&lt;li&gt;添加用户公钥*.pub到keydir目录，配置用户权限在conf/gitolite.conf文件中。&lt;/li&gt;
+&lt;/ol&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Easyuiform</title>
+   <link href="http://wind13.github.io/playscala/2013/12/23/easyuiform"/>
+   <updated>2013-12-23T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/23/easyuiform</id>
+   <content type="html">&lt;h1 id=&quot;easyuiformajax&quot;&gt;easyui中form表单的ajax实现&lt;/h1&gt;
+
+&lt;p&gt;示例代码如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+$(&amp;#39;#ff&amp;#39;).form({
+    url:$(this).attr(&amp;quot;&amp;quot;action&amp;quot;&amp;quot;),
+    onSubmit:function(){
+        return $(this).form(&amp;#39;validate&amp;#39;);
+    },
+    success:function(data){
+        alert(data);
+    }
+});&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;其中url的值是取的form中的action属性，故需注意填写form的相应属性，当然也可以为’/controller_name/action_name’。&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Dateformat</title>
+   <link href="http://wind13.github.io/playscala/2013/12/23/dateformat"/>
+   <updated>2013-12-23T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/23/dateformat</id>
+   <content type="html">&lt;h1 id=&quot;string__yyyymmdd_hhmmss__date&quot;&gt;String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型&lt;/h1&gt;
+
+&lt;p&gt;通常情况下可用Date.valueOf(String)直接转换;&lt;/p&gt;
+
+&lt;p&gt;String类型格式：”yyyy-MM-dd” Date.valueOf(“yyyy-MM-dd”)&lt;/p&gt;
+
+&lt;p&gt;例：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+String sd = &amp;quot;2012-01-12&amp;quot;;
+Date sdate = Date.valueOf(sd);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;但当String类型格式为”yyyy-MM-dd HH:mm:ss”时&lt;/p&gt;
+
+&lt;p&gt;则需使用：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+SimpleDateFormat sdf = new SimpleDateFormat(&amp;quot;yyyy-MM-dd HH:mm:ss&amp;quot;); 
+sdf.parse(String);
+需要添加try/catch&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;例：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+String sd = &amp;quot;2012-01-12 11:20:21&amp;quot;;
+
+try {
+     SimpleDateFormat sdf = new SimpleDateFormat(&amp;quot;yyyy-MM-dd HH:mm:ss&amp;quot;); 
+     Date sdate =sdf.parse(sd);
+    } catch (ParseException e) {
+     e.printStackTrace();
+    }&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;SimpleDateFormat支持的其它格式:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;quot;yyyy.MM.dd G &amp;#39;at&amp;#39; HH:mm:ss z&amp;quot;  2001.07.04 AD at 12:08:56 PDT  
+&amp;quot;EEE, MMM d, &amp;#39;&amp;#39;yy&amp;quot;  Wed, Jul 4, &amp;#39;01  
+&amp;quot;h:mm a&amp;quot;  12:08 PM  
+&amp;quot;hh &amp;#39;o&amp;#39;&amp;#39;clock&amp;#39; a, zzzz&amp;quot;  12 o&amp;#39;clock PM, Pacific Daylight Time  
+&amp;quot;K:mm a, z&amp;quot;  0:08 PM, PDT  
+&amp;quot;yyyyy.MMMMM.dd GGG hh:mm aaa&amp;quot;  02001.July.04 AD 12:08 PM  
+&amp;quot;EEE, d MMM yyyy HH:mm:ss Z&amp;quot;  Wed, 4 Jul 2001 12:08:56 -0700  
+&amp;quot;yyMMddHHmmssZ&amp;quot;  010704120856-0700  
+&amp;quot;yyyy-MM-dd&amp;#39;T&amp;#39;HH:mm:ss.SSSZ&amp;quot;  2001-07-04T12:08:56.235-0700  &lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Coolguydontlookatexplosions</title>
+   <link href="http://wind13.github.io/playscala/2013/12/23/coolguydontlookatexplosions"/>
+   <updated>2013-12-23T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/23/coolguydontlookatexplosions</id>
+   <content type="html">&lt;h1 id=&quot;cool_guys_dont_look_at_explosions&quot;&gt;Cool Guys Don’t Look At Explosions&lt;/h1&gt;
+
+&lt;h4 id=&quot;&quot;&gt;纯爷们儿从不围观爆炸！&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;Cool guys don&amp;#39;t look at explosions
+They blow things up and then walk away
+Who&amp;#39;s got time to watch an explosion?
+Because cool guys have errands that they have to walk to..
+
+Keep walkin&amp;#39;, keep shinin&amp;#39;
+Don&amp;#39;t look back keep on walkin&amp;#39;
+Keep struttin&amp;#39; slow motion
+The more you ignore it, the cooler you look
+
+Samberg: Ladies &amp;amp; gentlemen, please join me in welcoming..
+Mr. Neil Diamond!
+Will Ferrell: ha ha ha....Where are we?!
+
+Cool guys don&amp;#39;t look at explosions
+They stride for it in their diamond covered boots
+They wear jumpsuits with glitter and rhinestones
+And walk away in slow motion..
+Keep walkin, you&amp;#39;re cruisin..
+Cherry Cherry...Sweet Caroline..
+
+Denzel walks...
+Will Smith walks...
+Mark Wahlberg is wearin a hat!
+
+Samberg: Going solo....JJ Abrams!
+JJ Abrams solo
+Yeah!
+Okay.
+Because,Cool guys don&amp;#39;t look at explosions,
+The flames are hot, but my heart is chill 
+Walk fast from the roaring explosion,
+And don&amp;#39;t think about the people you killed&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这首歌专门为 The 2009 MTV Movie Awards而制作的 里面穿插了很多大片的画面&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;0:12 墨西哥往事2 Desperado&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;0:29 地狱骑士 Hell Ride&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;0:40 丛林奇兵 Welcome to the Jungle&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;0:57 幸运数字斯莱文 Lucky Number Slevin&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;1:08 钢铁侠 Ironman&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;1:12 杀出个黎明 From Dusk Till Dawn&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;1:14 老无所依 No Country for Old Man&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;1:21 全民超人 Hancock&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;1:24 生死狙击 Shooter&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;1:47 辛瑞那 Syriana&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;1:50 铁甲威龙 RoboCop&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;1:54 蝙蝠侠前传2 黑暗骑士 Batman&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;2:00 空中监狱 Con Air&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;2:13 X战警前传: 金刚狼 X-Men Origins: Wolverine&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;英文原版：http://v.ku6.com/show/rQb7VJTU5aHGspjWA3mLvw…html&lt;/p&gt;
+
+&lt;p&gt;中文改编版：http://v.youku.com/v_show/id_XMjI2OTQ1NjM2.html&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Confession214</title>
+   <link href="http://wind13.github.io/playscala/2013/12/23/confession214"/>
+   <updated>2013-12-23T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/23/confession214</id>
+   <content type="html">&lt;h1 id=&quot;&quot;&gt;情人节程序员经典表白&lt;/h1&gt;
+
+&lt;p&gt;我能把整个世界都抽象成一个类……&lt;/p&gt;
+
+&lt;p&gt;但是没办法把你变成我的对象……&lt;/p&gt;
+
+&lt;p&gt;想让你成为私有常量，外部函数无法访问你……&lt;/p&gt;
+
+&lt;p&gt;又想让你变成全局常量，在整个生命周期随时随地都可以调用你……&lt;/p&gt;
+
+&lt;p&gt;因为世界上没有这样的常量……&lt;/p&gt;
+
+&lt;p&gt;所以我无法定义你……&lt;/p&gt;
+
+&lt;p&gt;我可以重载甚至覆盖任何一种方法……&lt;/p&gt;
+
+&lt;p&gt;但是我却不能重载对你的思念……&lt;/p&gt;
+
+&lt;p&gt;也许命中注定了 你在我的世界里永远的烙上了静态的属性……&lt;/p&gt;
+
+&lt;p&gt;而我不慎调用了“爱你”这个方法……&lt;/p&gt;
+
+&lt;p&gt;当我义无返顾的把自己作为参数传进这个方法时……&lt;/p&gt;
+
+&lt;p&gt;我才发现方法”爱你”里面执行是一个死循环……&lt;/p&gt;
+
+&lt;p&gt;她不停的返回我对你的思念，并存入我心里的堆栈……&lt;/p&gt;
+
+&lt;p&gt;在这无穷无尽的循环中……&lt;/p&gt;
+
+&lt;p&gt;我的内存资源很快消耗殆尽……&lt;/p&gt;
+
+&lt;p&gt;而我却依然不停的向系统申请空间换取我对你的想念……&lt;/p&gt;
+
+&lt;p&gt;终于我受不了“爱你”的煎熬……&lt;/p&gt;
+
+&lt;p&gt;调用了”表白”这个Public方法……&lt;/p&gt;
+
+&lt;p&gt;将字符串“如果你爱我，我将用尽一生去爱你，你爱我吗？”传递给你……&lt;/p&gt;
+
+&lt;p&gt;我却捕获一个异常－－－内存溢出，我爱的人不爱我……&lt;/p&gt;
+
+&lt;p&gt;为了解决这个异常……&lt;/p&gt;
+
+&lt;p&gt;我偷偷地修改了”表白”的方法……&lt;/p&gt;
+
+&lt;p&gt;加上了异常处理finally块……&lt;/p&gt;
+
+&lt;p&gt;并且将返回值设为真……&lt;/p&gt;
+
+&lt;p&gt;心想这样万无一失了吧……&lt;/p&gt;
+
+&lt;p&gt;鼓起勇气再一次调用”表白”……&lt;/p&gt;
+
+&lt;p&gt;我却依然捕获到同样的异常……&lt;/p&gt;
+
+&lt;p&gt;仔细调试代码，原来在方法中有一段是这样的……&lt;/p&gt;
+
+&lt;p&gt;“如果没房没车则执行System.exit()”……&lt;/p&gt;
+
+&lt;p&gt;欲哭无泪，身心破碎，终于我的系统崩溃了……&lt;/p&gt;
+
+&lt;p&gt;留下一句“OutOfMemory 内存溢出”的提示……&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Computerqa</title>
+   <link href="http://wind13.github.io/playscala/2013/12/23/computerqa"/>
+   <updated>2013-12-23T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/23/computerqa</id>
+   <content type="html">&lt;h1 id=&quot;&quot;&gt;电脑使用及编程知识问答&lt;/h1&gt;
+
+&lt;h2 id=&quot;_2&quot;&gt;网易闪电邮和网易邮箱助手有什么区别，如何选择？&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;网易闪电邮是功能比较全面的邮箱客户端，可以同时支持其他邮箱的邮件收发，类似Foxmail和Outlook这样的邮箱软件。而网易邮箱助手则是个轻客户端，只能连接网易的邮箱，提供来信提醒和桌面预览等功能。如果你还想用客户端收发其它邮箱，那就只能选择网易闪电邮了，如果你只有网易的邮箱，又不想安装个太大的软件，只想要个轻巧的来信提醒小工具，那么网易邮箱助手是不错的选择。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;_3&quot;&gt;比较好的邮件客户端软件是什么？&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;最常见的是Foxmail，其他还有很多，网易闪电邮也比较简洁好用。但个人最推荐的还是Thunderbird，跨平台Windows和Linux系统都通用，安装上Thunderbird Conversations插件，Lightning插件和Provider for Google Calendar插件，这个邮件客户端软件就变得非常实用，让人爱不释手了。有日历、任务功能，邮件组织象gmail一样舒服，同时日历还可以跟google日历同步，这样你的手机什么的终端只要连上google日历就是一套非常好的GTD工具了！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;html5&quot;&gt;Html5实现多文件上传的方法？&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.zhangxinxu.com/wordpress/2011/09/%E5%9F%BA%E4%BA%8Ehtml5%E7%9A%84%E5%8F%AF%E9%A2%84%E8%A7%88%E5%A4%9A%E5%9B%BE%E7%89%87ajax%E4%B8%8A%E4%BC%A0/&quot;&gt;基于html5的可预览多图片ajax上传&lt;/a&gt; &lt;a href=&quot;http://jinghuainfo.iteye.com/blog/1193280&quot;&gt;使用HTML5实现多文件上传&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;fedorafile_not_found&quot;&gt;升级Fedora后启动不了报File not found错怎么办？&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;一般情况是grub2未设置好，启动不了。 可先用 Fedora16 LiveCD 或 Fedora16 DVD 启动进入shell，然后找到升级了的Fedora 16的挂载盘，如果是DVD修复的话，会挂在 /mnt/syslinux（记不清了）下，则执行：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;chroot /mnt/syslinux&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;执行以下命令可修复grub2：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;grub2-mkconfig -o /boot/grub2/gub.cfg
+grub2-install /dev/sda&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;如果执行第二句时报：Your embedding area is unusually small…，则一般是因为引导区被占用了，比如安装了Win7等，则可执行：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;grub2-install --force /dev/sda&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;这样就强制写入grub2的引导信息了，一般情况重启就正常了！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;_4&quot;&gt;主流代码仓库的选择，主要有哪些？&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Subversion 集中式（目前还在大量使用的，熟悉的人员较多）&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Git 分布式（更先进些，特别适用于开源项目，如 github 网站）&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;从Subversion转到Git有相应的工具和方法，参考：&lt;a href=&quot;http://leeiio.me/convert-subversion-to-git/&quot;&gt;转换你的 Subversion 到 Git&lt;/a&gt; 和 &lt;a href=&quot;http://rongjih.blog.163.com/blog/static/3357446120107111449543/&quot;&gt;如何将SVN仓库转换为Git仓库&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;GitoliteSetup&quot;&gt;CentOS下使用Gitolite架构Git服务的步骤&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Xmldomainbug</title>
+   <link href="http://wind13.github.io/playscala/2013/12/13/xmldomainbug"/>
+   <updated>2013-12-13T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/13/xmldomainbug</id>
+   <content type="html">&lt;h1 id=&quot;xml_&quot;&gt;Xml 域名空间识别问题&lt;/h1&gt;
+
+&lt;p&gt;相关文档见：&lt;a href=&quot;https///play.lighthouseapp.com/projects/57987/tickets/823-xpath-namespaces-with-httpresponsegetxml&quot;&gt;官方ticket任务#823&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Yes, this is correct. In the .getXML function the namespace ness is not set.\ 是的，有这个问题。在.getXML方法中允许命名空间（namespace）没有设置。&lt;/p&gt;
+
+&lt;p&gt;This line should be changed from:\ 这一行应该从这样：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to:\ 变成：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+DocumentBuilderFactory xmlFact = DocumentBuilderFactory.newInstance();
+xmlFact.setNamespace(true);
+DocumentBuilder builder = xmlFact.newDocumentBuilder();&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The same problem exists in the XML lib in the getDocument function:\ 同样的问题在XML的包里的getDocument方法中也存在：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+dbf.setNamespace(true); //Add this line!&lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Validateandsave</title>
+   <link href="http://wind13.github.io/playscala/2013/12/13/validateandsave"/>
+   <updated>2013-12-13T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/13/validateandsave</id>
+   <content type="html">&lt;h1 id=&quot;_validateandsave&quot;&gt;对像存储报错 validateAndSave问题&lt;/h1&gt;
+
+&lt;p&gt;问题：在存储对像时，同时存储该对像的关联对像，则会报错。\&lt;/p&gt;
+
+&lt;p&gt;例： room为hotel的关联对像。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+public class Room {
+ @ManyToOne
+ public Hotel hotel;
+}
+
+:::java
+Hotel hotel = new Hotel();
+Room room = new Room(hotel);
+room.validateAndSave();&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;会报错。这是因为在保存room对象的时候，hotel对象还没有持久化，所以room对象里面要保存一个hotelId就无法取得了，故必须要先保存父对象，再保存子对象。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;必须先将对像hotel存储，再存储一遍room对像。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+Hotel hotel = new Hotel();
+hotel.validateAndSave();
+Room room = new Room(hotel);
+room.validateAndSave();&lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Userhttps</title>
+   <link href="http://wind13.github.io/playscala/2013/12/13/userhttps"/>
+   <updated>2013-12-13T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/13/userhttps</id>
+   <content type="html">&lt;h1 id=&quot;httphttps&quot;&gt;如何同时使用http和https协议&lt;/h1&gt;
+
+&lt;p&gt;首先看&lt;a href=&quot;http://www.playframework.org/documentation/1.2.3/production#https&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;用openssl命令生成自己的签名文档&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;openssl genrsa 1024 &amp;gt; host.key
+openssl req -new -x509 -nodes -sha1 -days 365 -key host.key &amp;gt; host.cert&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;生成签名时需回答类似这样的问题：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Country Name (2 letter code) [XX]:
+State or Province Name (full name) []:
+Locality Name (eg, city) [Default City]:
+Organization Name (eg, company) [Default Company Ltd]:
+Organizational Unit Name (eg, section) []:
+Common Name (eg, your name or your server&amp;#39;s hostname) []:
+Email Address []:&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最终会得到两个文件：host.key和host.cert&lt;/p&gt;
+
+&lt;p&gt;然后在application.conf文件中配置如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http.port=9000
+https.port=9443
+
+# X509 certificates
+certificate.key.file=conf/host.key
+certificate.file=conf/host.cert
+# In case your key file is password protected
+certificate.password=secret
+trustmanager.algorithm=JKS&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/6114104/play-framework-https-and-http-at-the-same-time&quot;&gt;原问题及回答&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You just need to have both http.port and https.port in the application.conf file. For the links you want to be different from the normal site, use the @@ notation:&lt;/p&gt;
+
+&lt;p&gt;你只需要在application.conf文件中配置http.port和https.port，然后在页面上使用如下链接即可：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@@{Controller.action().secure()} =&amp;gt;https://...
+
+
+@@{Controller.action()} =&amp;gt; http://&lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Operationnotpermitted</title>
+   <link href="http://wind13.github.io/playscala/2013/12/13/operationnotpermitted"/>
+   <updated>2013-12-13T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/13/operationnotpermitted</id>
+   <content type="html">&lt;h1 id=&quot;operation_not_permitted_&quot;&gt;Operation not permitted 执行权限的问题&lt;/h1&gt;
+
+&lt;p&gt;在Linux系统中，正好项目放在原Windows的Fat32盘上，于是在执行play eclipsify的时候会报 Operation not permitted的错。&lt;/p&gt;
+
+&lt;p&gt;临时使用的话，只要使用root权限就可以正常执行。而Fat32的盘在Linux下是无法进行权限设置的，好像设置后还是无法记录下权限信息，所以要彻底解决这个问题就要将Fat32转为NTFS才行。&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Multiproject</title>
+   <link href="http://wind13.github.io/playscala/2013/12/13/multiproject"/>
+   <updated>2013-12-13T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/13/multiproject</id>
+   <content type="html">&lt;h1 id=&quot;playmodule&quot;&gt;Play!中如何用module组织多个相关项目？&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;首先按业务需求划分为多个应用，应用就是用 play new xxx来创建的。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;其次将公用部分划分为多个子项目或称子模块，就是用 play new-module创建的。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;这些项目均并列导入eclipse中，应用引用相应需要的子项目，需要在application.conf中添加，有多个就添加多行：&lt;/p&gt;
+
+&lt;p&gt;module.base=../base module.common=../common&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;在eclipse的项目属性中添加引用的子项目即可。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;注：关键在于项目规划合理，子项目或公用项目中model层可以分包，如：com.xxx.pack，而controllers和views也可以分包，但要慎重使用，在引用时也有一点小特殊写法。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Longpolling</title>
+   <link href="http://wind13.github.io/playscala/2013/12/13/longpolling"/>
+   <updated>2013-12-13T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/13/longpolling</id>
+   <content type="html">&lt;h1 id=&quot;playcometstylelongpolling&quot;&gt;Play!支持Comet-style或Long-polling这样的请求&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;参考&lt;a href=&quot;http://www.playframework.com/documentation/1.2.7/asynchronous&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;核心实现思想：通过在action中使用await(…);可以使http请求暂停在服务端，直到有符合的结果才返回。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Hqlcount1</title>
+   <link href="http://wind13.github.io/playscala/2013/12/13/hqlcount1"/>
+   <updated>2013-12-13T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/13/hqlcount1</id>
+   <content type="html">&lt;h1 id=&quot;hqlcount&quot;&gt;一个Hql中count判断的写法&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+	public static void test() {
+		String hql = &amp;quot;select o.teacher.id, o.teacher.goodStudentCount from Student o&amp;quot;
+			+ &amp;quot; group by teacher having count(*)&amp;gt;o.teacher.goodStudentCount&amp;quot;;
+		List&amp;lt;Long[]&amp;gt; idCounts = Teacher.find(hql).fetch();
+		for (Long[] idCount:idCounts) {
+			Logger.debug(&amp;quot;id: %s, %s&amp;quot;, idCount[0], idCount[1]);
+			Long id = idCount[0];
+		}
+		renderText(&amp;quot;ok!&amp;quot; + idCounts.size());
+	}&lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Functiontestsession</title>
+   <link href="http://wind13.github.io/playscala/2013/12/13/functiontestsession"/>
+   <updated>2013-12-13T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/13/functiontestsession</id>
+   <content type="html">&lt;h1 id=&quot;functiontestsession&quot;&gt;FunctionTest中如何取得session的值&lt;/h1&gt;
+
+&lt;p&gt;原文摘抄自：&lt;a href=&quot;https///groups.google.com/d/msg/play-framework/-/iQLX-uLwHWsJ&quot;&gt;https://groups.google.com/d/msg/play-framework/-/iQLX-uLwHWsJ&lt;/a&gt; （可能因墙访问不了……我是在邮件列表中收集的）&lt;/p&gt;
+
+&lt;h4 id=&quot;&quot;&gt;需求和问题&lt;/h4&gt;
+
+&lt;p&gt;原问及简单翻译说明如下：&lt;/p&gt;
+
+&lt;p&gt;Given a simple action:【简单给一个action如下：】&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+    public static void testAction() {
+      session.put(&amp;quot;worked&amp;quot;, &amp;quot;yes&amp;quot;);
+    }&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I want to test that the session is set:【我试着测试这个session是否被设置：】&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+  @Test
+  public void setsTheSession() {
+    Response response = GET(&amp;quot;/test&amp;quot;);
+    assertEquals(&amp;quot;yes&amp;quot;, Scope.Session.current().get(&amp;quot;worked&amp;quot;));
+  }&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But Scope.Session.current() always returns an empty map. Any clues? 【但Scope.Session.current()总是返回一个空的Map。有什么办法吗？】&lt;/p&gt;
+
+&lt;h4 id=&quot;_2&quot;&gt;关键回答&lt;/h4&gt;
+
+&lt;p&gt;原答及简单翻译如下：&lt;/p&gt;
+
+&lt;p&gt;I don’t think that works because you are not in the context of a server request when in a test. You are just acting as a regular browser making a GET request.\ 【我不认为可以那样写，因为在一个test中你不在服务请求的上下文中。你只是象一个普通的浏览器那样发送了一个GET请求。】\ If you want to set a cookie from a Controller you do this:\ 【如果你想在Controller中设置cookie，你可以象这样：】\ &lt;code&gt;response.setCookie(&amp;quot;mycookie&amp;quot;, &amp;quot;myvalue&amp;quot;, &amp;quot;1d&amp;quot;);&lt;/code&gt;{java} Then in your test you can do:\ 【然后在你的测试中，你可以这样：】\&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+Http.Response response = GET(&amp;quot;/home/cookie&amp;quot;);
+assertEquals(&amp;quot;myvalue&amp;quot;, response.cookies.get(&amp;quot;mycookie&amp;quot;).value);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For sessions you should take a look at this first:\ 【而session方面，你就应该先看一下这个：】\ http://www.playframework.org/documentation/1.2.3/controllers#session&lt;/p&gt;
+
+&lt;p&gt;“It’s important to understand that Session and Flash data are not stored in the server but are added to each subsequent HTTP Request, using the Cookie mechanism. So the data size is very limited (up to 4 KB) and you can only store String values.”\ 【理解这点很重要：Session和Flash的数据并不是保存在服务端，而是通过Cookie的机制加在每一次的HTTP请求中。所以数据的大小是受限制的（最多到4KB）并且你只可以保存String字串值。】\ They are of course signed so they can’t be changed. If I write session.put(“testcookie”, “brian”) I get this in the response header:\ 【它们当然是被加密的，所以你不能修改。如果我写session.put(“testcookie”, “brian”)，那么我将在response的header中得到：】\ &lt;code&gt;&amp;quot;PLAY_SESSION=31a4e4777b5950d78b9f3f88b02dfdb2361b5699-%00testcookie%3Abrian%00;Path=/&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This makes the job of testing actual session variables a little harder. I haven’t seen anything in the test code that does this for you. You have to go back to the play code to decode the session cookie to check for what you originally wanted to do. The function in playframework\framework\src\play\mvc\Scope.java restore() isn’t accessible so it looks like you have to either use reflection of some sort to call it or write your own session parse function like this (uses the secret from the application.conf to decode):\ 【这使得在测试中使用session值变得有点困难。我在测试的代码中没找到什么可以帮你做这件事的办法。你必须回到Play!的代码去解码那个session cookie以便得到原本的值。这个方法就在playframework\framework\src\play\mvc\Scope.java restore()是不可访问的，所以可能你只好使用类似反射的方法去调用它或者照着写一个你自己的session parse 方法（使用application.conf中的secret码来解码），参考：】\ https://gist.github.com/1224015&lt;/p&gt;
+
+&lt;p&gt;Then you can assert your session code pretty much as you were doing:\ 【然后你就可以用类似下面的办法校验你的session值了：】\&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+@Test
+public void setsTheSession() throws UnsupportedEncodingException
+{
+   Http.Response response = GET(&amp;quot;/home/cookie&amp;quot;);
+   Scope.Session session = parseSession(response.cookies.get(&amp;quot;PLAY_SESSION&amp;quot;).value);
+   assertEquals(&amp;quot;yes&amp;quot;, session.get(&amp;quot;worked&amp;quot;));
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On a side note I have switched my functional tests to JWebUnit using the HtmlUnit driver. It has more assert helpers, xpath html parsing and uses rhino for js parsing … but alas you still have to “decode” the PLAY_SESSION either way.\ 【另，我已经将我的functional test转到使用HtmlUnit driver的JWebUnit了。它有更多的校验工具，xpath的html解析工具和rhino的js解析工具等……当然，你还是可以使用”decode”去处理PLAY_SESSION的问题。】&lt;/p&gt;
+
+&lt;p&gt;个人建议：在Play!中最好还是只做Model层的单元测试即可，在Controller层中尽量少写业务逻辑代码，方法都往Model层集中，如果项目需要可加上Selenium的Web测试就足够了，实际感觉Functional Test有点鸡肋，不用也罢！&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Filterallcontroller</title>
+   <link href="http://wind13.github.io/playscala/2013/12/13/filterallcontroller"/>
+   <updated>2013-12-13T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/13/filterallcontroller</id>
+   <content type="html">&lt;h1 id=&quot;play&quot;&gt;在Play!中如何实现类似过滤器的功能？&lt;/h1&gt;
+
+&lt;p&gt;如果是单个Controller要实现过滤，只需写一个public static 的方法，加上@Before注解即可达到执行所有action前先执行这个方法的目的。&lt;/p&gt;
+
+&lt;p&gt;如果想实现全局即整个站点的action都被过滤，就需要写个BaseController（名字随便起，如SuperController，Application等）继承 Controller，在这里面写@Before的方法。然后其他的Controller都继承自BaseController即可。”&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Detachedpersist</title>
+   <link href="http://wind13.github.io/playscala/2013/12/13/detachedpersist"/>
+   <updated>2013-12-13T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/13/detachedpersist</id>
+   <content type="html">&lt;h1 id=&quot;persistentobjectexception_detached_entity_passed_to_persist&quot;&gt;分离实体持久化出错（PersistentObjectException: detached entity passed to persist）问题&lt;/h1&gt;
+
+&lt;p&gt;在Play!使用中，会用到Job来异步执行一些耗时的操作，此时很容易犯这样的错误：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+public class SomeLongJob extends Job`&amp;lt;Void&amp;gt;` {
+   private SomeModel model;
+   public SomeLongJob(SomeModel model) {
+      this.model =  model;
+   }
+
+   @Override
+   public void doJob() {
+       model.someprop = &amp;quot;new value&amp;quot;;
+       model.save();
+   }
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;此时执行后，会在save()方法处抛出异常：&lt;code&gt;PersistentObjectException: detached entity passed to persist&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;这是因为对象是从外面传进来的，而（我想）doJob是另外一个新启动的线程，所以这里可能只是一个引用，而真正的对象在原来那个主线程中，这边可能就只是个分离的拷贝或只是个引用，所以无权进行持久化操作。尝试过使用 model.merge()，好像不报错了，但又好像没有真正保存了值，猜想是因为没有在主线程中再次执行真正的save()去持久化。&lt;/p&gt;
+
+&lt;p&gt;因此，为了彻底避免这样的复杂问题，还是采用比较简单的解决方案吧：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+SomeLongJob extends Job`&amp;lt;Void&amp;gt;` {
+   private Long id;
+   public SomeLongJob(Long id) {
+      this.id =  id;
+   }
+
+   @Override
+   public void doJob() {
+       SomeModel model = SomeModel.findById(id);
+       model.someprop = &amp;quot;new value&amp;quot;;
+       model.save();
+   }
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这样一来，只传入id即可，所有的操作都在doJob内部，应该说是统一的一个线程中，这样就没有问题了。&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Deepqa</title>
+   <link href="http://wind13.github.io/playscala/2013/12/13/deepqa"/>
+   <updated>2013-12-13T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/13/deepqa</id>
+   <content type="html">&lt;h1 id=&quot;playframework&quot;&gt;Playframework热情交流群里的邮件讨论&lt;/h1&gt;
+
+&lt;h3 id=&quot;freewindplay2317_1021&quot;&gt;Freewind@play23月17日 10:21&lt;/h3&gt;
+
+&lt;p&gt;昨天有感于play源代码里的一些强大功能和精巧实现，提出了以下问题，这些问题在群里和几位朋友简单讨论过，但我觉得整理一下会有用。&lt;/p&gt;
+
+&lt;p&gt;play的一些打破常规的做法，让我非常欣赏和赞叹。希望大家不要仅满足于使用play，在有余力的情况下，多看看play的源代码，对自己java能力的进一步提高非常有帮助。当你能读懂甚至能独立实现一个类似play的框架时，就是真牛人了：）&lt;/p&gt;
+
+&lt;p&gt;有一些问题我也不知道答案，我有时间也会去读，共勉。&lt;/p&gt;
+
+&lt;p&gt;问题列表：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;play的hot reload是怎么实现的&lt;/li&gt;
+
+&lt;li&gt;有的库不能直接在play中使用，必须写一个插件以解决classloader的问题，为什么&lt;/li&gt;
+
+&lt;li&gt;action中向view中传参数时，可以render(a,b,c)，就直接过去了，不用专门传参数名”“a”“,”“b”“,”“c”“，这是怎么实现的&lt;/li&gt;
+
+&lt;li&gt;javabean不用写getter/setter，自动生成，是怎么实现的&lt;/li&gt;
+
+&lt;li&gt;其它类中调用javabean中的public field，但是最终将被转为getter/setter，怎么实现的&lt;/li&gt;
+
+&lt;li&gt;play中的template用的是groovy的gsp，但增加了自己的东西，比如tag等，是怎么实现的&lt;/li&gt;
+
+&lt;li&gt;User类继承Model后，可以使用findXxx这样的静态方法，这个方法是父类提供的，却能返回正确的子类类型，是怎么实现的&lt;/li&gt;
+
+&lt;li&gt;Action中直接调用另一个类，不用写return，但后面的代码就不再执行了，这是怎么实现的&lt;/li&gt;
+
+&lt;li&gt;play的session是基于cookie的，是怎么实现的&lt;/li&gt;
+
+&lt;li&gt;play中可以支持大量客户端的ajax应用，在action里，当接收到一个请求但没有取得需要的数据时，会暂停它的执行让出线程，等到有数据时再回到线程，发给客户端，是怎么实现的&lt;/li&gt;
+
+&lt;li&gt;public static void action(String name, String password)，play能根据name和password的名字，到request中取对应的数据，是怎么实现的？默认情况下，java程序编译后，参数名都会变，比如变成action(String a,String b)&lt;/li&gt;
+
+&lt;li&gt;play的request,response,cookie等类，都是自己定义的，为什么却可以打包为war，部署到tomcat下？那边传过来的可是j2ee里的类&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;green317_1107&quot;&gt;green@使用中3月17日 11:07&lt;/h3&gt;
+
+&lt;p&gt;很好的问题。谈谈自己的一些认识：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;play的hot reload是怎么实现的&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Play 会尝试使用Java instrument来做类的热替换，不过这个过程成功率不高，因为限制很大，包括类方法的签名不能改变 如果java instrument替换失效，play会重启，这样会重新装载application class loader，以便获得最新的应用类字节码 参见 play.classloading.ApplicationClassloader.detectChanges()&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;有的库不能直接在play中使用，必须写一个插件以解决classloader的问题，为什么？&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;能举例吗？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;action中向view中传参数时，可以render(a,b,c)，就直接过去了，不用专门传参数名”“a”“,”“b”“,”“c”“，这是怎么实现的？&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;play使用本地变量名增强器对应用类进行增强，这个过程会获得参数名字信息并保存到线程变量（ThreadLocal）当中。 同时控制器的render方法会尝试获得线程变量中的变量名字，将其放入renderArgs 参见 play.classloading.enhancers.LocalvariablesNamesEnhancer 和 play.mvc.Controller.render()&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;javabean不用写getter/setter，自动生成，是怎么实现的&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;参见 play.classloading.enhancers.PropertiesEnhancer 另外不是不用写getter/setter，而是当你没有提供getter/setter方法的时候，play帮你提供一个默认的&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;其它类中调用javabean中的public field，但是最终将被转为getter/setter，怎么实现的&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;参见 play.classloading.enhancers.PropertiesEnhancer&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;play中的template用的是groovy的gsp，但增加了自己的东西，比如tag等，是怎么实现的？&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;tag的实现有两种，一种是定义tag模板（/play/framework/templates），另一种是定义Java类/play/framework/src/play/templates/(FastTags.java|GroovyInlineTags.java))。 调用机制在play.templates.GroovyTemplateCompiler.startTag()可以找到&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;User类继承Model后，可以使用findXxx这样的静态方法，这个方法是父类提供的，却能返回正确的子类类型，是怎么实现的？&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;这是通过Java Generic机制实现的，如下代码所示：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+    public static `&amp;lt;T extends Model&amp;gt;` T findById(Object id) {
+        throw new UnsupportedOperationException(
+                &amp;quot;&amp;quot;Embedded entity does not support this method&amp;quot;&amp;quot;);
+    }&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;其实Java编译器无法判断具体返回类型，只能说是Model的子类。这个机制也有缺陷，导致下面代码编译出错：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+return (id == null) ? null : MyModel.findById(id);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;你只能用一下代码替换：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+if (null == id) return null;
+else return MyModel.findById(id);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;另外在Model的各种find方法中很多都会抛出UnsupportedOperationException异常，之所以运行的时候没有抛出异常，也是因为通过增强器进行了代码注入。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Action中直接调用另一个类，不用写return，但后面的代码就不再执行了，这是怎么实现的？&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Controller的各种render方法最后都会抛出play.mvc.results.Result类型的异常&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;play的session是基于cookie的，是怎么实现的？&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;很简单，在回应请求的时候play的session对象会被写入cookie，而读取请求的时候会从cookie生成session对象&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;play中可以支持大量客户端的ajax应用，在action里，当接收到一个请求但没有取得需要的数据时，会暂停它的执行让出线程，等到有数据时再回到线程，发给客户端，是怎么实现的？&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;通过await()调用实现的。具体过程比较复杂，如果愿意探究，需要仔细研究Controller和ActionInvoker代码&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;public static void action(String name, String password)，play能根据name和password的名字，到request中取对应的数据，是怎么实现的？默认情况下，java程序编译后，参数名都会变，比如变成action(String a,String b)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;与问题3同理，不过使用LocalVariablesNamesTracer的换成了ActionInvoker，这个过程不仅仅是变量名传递，同时还有很复杂的变量类型绑定。具体参见ActionInvoker.getActionMethodArgs的代码&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;play的request,response,cookie等类，都是自己定义的，为什么却可以打包为war，部署到tomcat下？那边传过来的可是j2ee里的类&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;不熟悉这方面的，大概是play.server.ServletWrapper做转换工作，参见play.server.ServletWrapper.service方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;freewindplay2317_1127&quot;&gt;Freewind@play23月17日 11:27&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;比如使用Ebean，如果不写一个插件来处理classloader的问题，在play中无法使用。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Play在dev模式下，编译java源代码后，生成的字节码是放在内存中的，而不是以.class文件形式保存在硬盘上。这给其它一些库带来了麻烦。 比如在Ebean的config中，需要传入Model类，Ebean会设法导入对应的.class文件。此时必须写一个插件，让Ebean能从play的classloader中找那些类。不然找不到会报错。&lt;/p&gt;
+&lt;/blockquote&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Cmdchinese</title>
+   <link href="http://wind13.github.io/playscala/2013/12/13/cmdchinese"/>
+   <updated>2013-12-13T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/13/cmdchinese</id>
+   <content type="html">&lt;h1 id=&quot;playwindowscmd&quot;&gt;Play在Windows的cmd窗口中中文乱码的解决办法&lt;/h1&gt;
+
+&lt;p&gt;play在cmd 下，system.out()输出的中文都是乱码&lt;/p&gt;
+
+&lt;p&gt;chcp 65001 / chcp 936 改变cmd字符集都不行&lt;/p&gt;
+
+&lt;p&gt;参考：&lt;a href=&quot;http://www.oschina.net/news/19463/play-framework-1-2-2&quot;&gt;http://www.oschina.net/news/19463/play-framework-1-2-2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;方法如下：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;安装目录下找到C:\Program Files\play-1.2.3\framework\pym\play 目录下的application.py&lt;/li&gt;
+
+&lt;li&gt;修改245行中的java_args.append(‘-Dfile.encoding=utf-8’)为 java_args.append(‘-Dfile.encoding=GBK’)（play-1.2.4中在258行，需要用带行号自动分行的编辑打开。）&lt;/li&gt;
+
+&lt;li&gt;保存之后重新运行&lt;/li&gt;
+&lt;/ol&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Cacheremovetime</title>
+   <link href="http://wind13.github.io/playscala/2013/12/13/cacheremovetime"/>
+   <updated>2013-12-13T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/12/13/cacheremovetime</id>
+   <content type="html">&lt;h1 id=&quot;cache&quot;&gt;移除Cache可以有时间参数吗？&lt;/h1&gt;
+
+&lt;p&gt;是的，可以，使用下面这样的语句即可：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+Cache.set(&amp;quot;some&amp;quot;, null, 0)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;其中最后一个参数是时间，单位是秒。详见源代码。&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Funnyclassic</title>
+   <link href="http://wind13.github.io/playscala/2013/10/26/funnyclassic"/>
+   <updated>2013-10-26T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/10/26/funnyclassic</id>
+   <content type="html">&lt;h1 id=&quot;&quot;&gt;有趣经典收集&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;wiki/FunnyClassic/CoolGuyDontLookAtExplosions&quot;&gt;纯爷们从不围观爆炸（英文歌词）&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;wiki/FunnyClassic/Confession214&quot;&gt;情人节程序员经典表白&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://115.com/file/e7ztthys#kingdom-rush-12141.swf&quot;&gt;一个不错的塔防Flash游戏&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Betterplan</title>
+   <link href="http://wind13.github.io/playscala/2013/10/26/betterplan"/>
+   <updated>2013-10-26T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/10/26/betterplan</id>
+   <content type="html">&lt;h1 id=&quot;&quot;&gt;如何制定和落实一项有效的改善方案？&lt;/h1&gt;
+
+&lt;h2 id=&quot;_2&quot;&gt;一、问题和参考答案&lt;/h2&gt;
+
+&lt;h3 id=&quot;1&quot;&gt;1、是否感觉公司在推行一个变革甚至一个简单的任务时，都会遇到员工的阻力或是简单应付？&lt;/h3&gt;
+
+&lt;p&gt;参考答案：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;是的，存在而且很多时候会是这样。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2&quot;&gt;2、他们为什么会阻止或仅仅是应付公司的改善方案呢？&lt;/h3&gt;
+
+&lt;p&gt;参考答案：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;人不抗拒改变，只是他没有看到改变后的好处。可以用TOC“鳄鱼和美人鱼”的故事反思员工抗拒或应付改善的原因。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3&quot;&gt;3、是什么造成了今天员工的这种应对公司改善方案的状态？&lt;/h3&gt;
+
+&lt;p&gt;参考答案：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;之前公司做了错误的决策，导致不良的结果现状。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;之前公司让员工做了无用的、无效的、甚至负作用的任务。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;之前的改善过程中，员工没有本质的（薪酬）提升和（能力）改善。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;之前的改善，形式大于实质，员工并不认可具体的执行和结果。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;之前的改善，付出远大于受益，员工疲惫，公司收效甚微。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;4&quot;&gt;4、公司的改善方案要员工做的事情，是他们认为有用、有意义、有价值、会有改善的事情吗？&lt;/h3&gt;
+
+&lt;p&gt;参考答案：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;公司的改善方案可能太空洞而不实际，员工心理上期待的改善方案可能更实际一些。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;公司的改善方案可能要求过多的形式主义的工作，如开会、报表、标准规范制定等，而员工期待的是具体怎么改进业务流程中长期存在的难题和困惑。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;公司认为有价值的事：制定标准、制定绩效考核政策、详尽的数据报表……；员工认为有价值的事：公司盈利、员工奖金、工作环境更舒适、业务流程更顺畅、工作更轻松、压力更小、紧急困难的任务更少、工作更有成就感、公司进入行业领先（自己更有面子）、工作内容更具创新性、更能发挥和提升自己的才能、工作中更有成长和学习……仔细想想，难道这些不正也是公司想要的吗？员工会拒绝这些改善吗？&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;5&quot;&gt;5、公司的改善方案真的是可行和有效的吗？&lt;/h3&gt;
+
+&lt;p&gt;参考答案：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;不能保证，毕竟通常这类方案只是几个高层在讨论和会议中决策出来的，真正落实到具体细节时，会有很多的问题。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;改善方案通常只是指出大的方向，能否成功，更多地在于执行和落实，而这个过程将主要信赖于员工的支持程度。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;6&quot;&gt;6、如何制定一个可行、有效的改善方案？如何制定一个员工支持的改善方案？&lt;/h3&gt;
+
+&lt;p&gt;参考答案：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;首先基于这样的事实：员工在会议上不太可能把实际中各种的问题总结得很好，包括一些根源性的问题和障碍也不一定能够发现和表达清楚，需要管理者深入实际工作现场去观察和分析。所以仅靠会议上收集的信息不足以做出正确的决策和分析，况且太多人的大型会议效率也不高，不适合讨论过于细节的问题，会议常会陷入应付过程、急于结束的状态。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;由上事实给出建议：深入实际现场，尝试从员工眼下最困惑的问题和困难着手，不急于采取较大的行动，试验性地进行一些改善措施，把改善方案先放在文档里，不急于公开和大面积实施，以便在试验过程中随时修正实施细节。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;过程中实践一些措施，总结可能的问题和障碍，分析实际现场真正的问题和原因，完善方案细节甚至修改原定方案以适应实际情况。&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;待各方面考虑周全，试验性的措施收到明显效果后，公开改善方案，开动员会鼓舞士气，此时这个方案将是一个更可行、有效的、全员支持的改善方案。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;7&quot;&gt;7、员工会拒绝真正对他有好处的改善吗？&lt;/h3&gt;
+
+&lt;p&gt;参考答案：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;当然不会，员工用简单的常识都可能判断一项改善方案是否会对他们有好处，是否真的是个有效的改善，管理者要重视这种直觉和判断，仔细分析和深挖背后的原因来修正手上的改善方案。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;8&quot;&gt;8、员工为什么总是怀疑公司的改善方案呢？这种怀疑是负面的吗？&lt;/h3&gt;
+
+&lt;p&gt;参考答案：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;怀疑是正常的，且甚至是正面的，应该被重视和鼓励的。深入了解员工怀疑的原因和障碍可以更好地帮助管理者做出真正正确的决策。还有一方面原因是因为之前的失败经历造成的，所以管理者要非常慎重地推进一次改善，因为一次错误的决策可能完全毁掉之前多个正确措施所积累的成果和士气，甚至不如完全不做改善来得效果好。深入的调查分析，多次的、小范围的试验验证，严谨科学的理论推演验算等都是避免错误的有效手段。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;9&quot;&gt;9、员工心理上会拒绝哪些改善中要做的事情？&lt;/h3&gt;
+
+&lt;p&gt;参考答案：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;员工心理上最拒绝的事情如：冗长低效的会议讨论、空洞抽象的理论宣讲、制作繁杂的报表文档、异想天开的方案指导、不切实际的行动要求和标准规范、重罚轻奖的绩效考核、机械无趣的重复工作、违反常识和经验的操作标准等。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;10&quot;&gt;10、怎么样达成一种双赢的状态，让员工积极响应，并全力支持公司快速推进改善呢？&lt;/h3&gt;
+
+&lt;p&gt;参考答案：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;深入员工基层，不急于去“管理”和“行动”，先多了解实际情况并分析问题，更多地参与到业务流程中，更多地与员工深入沟通，再运用先进的管理思想（如TOC等）来进行全面系统地分析，找寻最佳的切入点，谨慎操作，小量多次地试验以反复验证方案的可行性和个中利弊，最终再确定一个全面实施的改善方案，这样的方案一定可以得到员工的认可和积极响应，在推行过程中也会更快落实、更快见效。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;toc&quot;&gt;二、公司应该如何推行TOC的管理改善&lt;/h2&gt;
+
+&lt;p&gt;《第3选择》一书中有句话：“当人们的思想处于防御状态时，既不会有创造性，也不会有合作性”。个人感觉目前公司的中层管理人员甚至基层员工，都已经形成了一种对公司改革变化的防御状态，从平衡计分卡到TOC，每一次的变革都被认为是一次新的折腾，在这样的防御状态下，推行新的变革或执行改善措施都将是事倍而功半的，所以我们目前首先应该解决的是人员的一种思想状态问题，需要化解这种防御的状态，打消人员的担忧和顾虑，疏导人员的情绪和心态，不需要刻意地强调使用了一种新的管理思想，不需要刻意地把TOC的名词挂在嘴边当做金科玉律，不可挑战或质疑。&lt;/p&gt;
+
+&lt;p&gt;TOC的理论之所以强大，就是因为它根本来自于基本的常识和严谨的逻辑，不需要特别地强调TOC的知识体系，它也是存在于现实生活和工作当中的，因此我的建议是公司在推行TOC时，将TOC的名词和工具“隐藏”起来，只是让中层管理人员和基层员工感受到严谨的逻辑推理，全面系统的分析即可，这样才能真正让人员关注在具体的业务问题的解决，较顺畅地认可公司的改善方向，协助公司完成关键时期的改善行动。 例如，我们在用CRT图分析现状问题时，不需要讲解有关TOC理论中CRT图的方方面面，只需要展现我们绘制的CRT图，标题不要用CRT英文，而是使用类似“公司现状分析图”这样普通的文字，然后告诉大家这就是我们分析的公司的现状，箭头是表示一种充分条件的因果关系（此处可以稍做解释充分条件和因果关系），大家可以看看是不是这样？&lt;/p&gt;
+
+&lt;p&gt;例如，我们在使用“六阶阻抗”或“5F”等工具时，只需要巧妙地引导大家一步步进行即可，不需要将这些步骤说明并强调出来，以免令所有参与者感觉自己是被套上了一个模子或是在一条生产线上一步步被加工，这样的形式主义是会给参与者非常不好的感受，产生抗拒或应付的状态。 另外，在具体推行之前，个人觉得还需要首先树立一种公司的形象，改变以往“折腾”的不良印象，那就是“务实”的形象，不讲理论或少讲理论，将理论巧妙地融入到每一次沟通和实践过程中，用一句诗意的话来形容就是：“润物细无声”。那么“务实”的形象为什么会有效呢？因为几乎所有人员都是不反对公司改善的，反而一定是希望公司改善的，很多时候出现抗拒就象六阶阻抗所说的情况一样，某一阶出现了不认同的问题，然而在具体进行过程中，却不能简单地、形式化地用理论来套用，因为要与他人达成“协同”（《第3选择》所强调的一个词），需要行为模式这方面的知识和能力，正如《高效能人士的七个习惯》和《第3选择》这两本书中提到的原则和方法一样，需要考虑对方的“意愿”、“知识”和“技能”等因素，而不是简单地走一下六阶阻抗的流程就能达成共识的。&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Tocterm</title>
+   <link href="http://wind13.github.io/playscala/2013/09/29/tocterm"/>
+   <updated>2013-09-29T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/09/29/tocterm</id>
+   <content type="html">&lt;h1 id=&quot;toc_&quot;&gt;TOC 术语&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;TOC：Theory Of Constraints 约束理论（限制理论）瓶颈理论&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;F5：Focus Five Step 聚焦五步骤 I-E-S-E-GB识别Identify，挖尽Exploit， 迁就Subordinate，松绑Etevate，重返Go Back&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;TA：Throughput Account 有效产出会计&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;T: Throughput 生产量，有效产出&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;I（1）：Inventory 库存&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;I（2）：Investment 投资&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;OE：Operational Expensive 营运开支，营运费用&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;NP：Net Profit 纯利润&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;ROI：Return On Investment 投资收益率&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;CF：Cash Flow 现金流量&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;P&amp;amp;L：Profit and Loss Statement (P&amp;amp;L) 损益表&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;BS：Balance Sheet 资产负债表&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;BS：Batch Size 批量大小&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;TP：Thinking Process 思维流程&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;T/CU：瓶颈单位时间有效产出&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;CCR：Capacity Constrain Resource 产能制约资源&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;M(1)：Murphy 墨非&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;M(2)：Measurement 衡量&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;APMB：Assumption，Policy，Measurement，behavior 假设——政策（典范）——衡量——行为&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;CWR：Convergence，Win-Win，Respect 内敛（收敛），双赢，尊重&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;CRT：Current Reality Tree 当前现实树&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;CRD：Conflict Resolution Diagram 冲突消除图&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;FRT：Future Reality Tree 未来现实树&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;PRT：Pre-requisite Tree 前提条件树&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;TT：Transition Tree 转变树&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;S&amp;amp;T：Strategy &amp;amp; Tactics Tree 战略战术树&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;NBR：负面效应&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;OB：Obstacle 障碍&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;RC：Root Cause 根本原因&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;CP：Core Problem 核心问题&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;UDE：Undesirable Effects 不满意效应&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;DE：Desirable Effects 满意效应&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;INJ：Injection 注入，激发方案&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;IO：Inter-mediate Objectives 中间（中程）目标&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;SA：Specific Action 特别行动&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;IE：Inter-mediate Effect 中间效应&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;R：Requirements 需求，必要条件&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;PR：Pre-requisite 前提条件&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;CLR：Categories of Legimitate Reseration 逻辑（分类）测试&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;CCPM：Critical Chain Project Management 关键链（项目管理）&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;PB：Project Buffer 项目缓冲&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;FB：Feeding Buffer 接驳缓冲&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;RB：Resource Buffer 资源缓冲&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;OPT：Optimized Production Technology，最优生产技术&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;DBR：Drum,Buffer,Rope 鼓——缓冲——绳子&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;S-DBR：S-DBR 简单DBR&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;DBR-BM ：Drum,Buffer,Rope- Buffer Management 鼓——缓冲——绳子—缓冲管理&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;POOGI：Process Of On Going Improvement 持续改善程序&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;GC：高德拉特机构&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;MTS：Make to Stock 面向库存生产&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;MTO：Make to Order 面向定单生产&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;ATO：Assemble to Order 面向定单装配&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;ETO：Engineering to Order 面向定单设计&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;NEB（NBR）：Negative Effect Branches负效应枝条&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;The buy-in process：说服的流程&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;MO：Mafia Offer 黑手党方案&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;VV：Viable Vision 可行愿景&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;TOS：Throughput based Operating Strategy基于有效产出战略&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;TDD ：Throughput Dollar Day 有效产出/元/天&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;IDD：Inventory Dollar Day 库存/元/天&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;OP：Objection Prevention 异议预防&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;CWM：Central Warehouse Management 中央库存管理&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;TLT：Transportation Lead Time 运送提前期&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;PLT：Production Lead Time 生产提前期&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;OLT：Order Lead Time 订货提前期&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;RRO：Rapid Response Order 快速响应订单&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Retailer：retailer模板（零售商模板）&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Consumer goods：consumer goods模板（生活消费品模板）&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;TOCICO：Theory of Constraints International Certification Organization——TOC国际认证组织&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;CSS：Common Sense Solution 常识解决方案&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;SKU：单位库存&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;MBO ：Management by Objectives 目标管理&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;PL： Parkinson’s Law 帕金森定律&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;CL：Cannikin Law 木桶定律&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;ML： Murphy’s Law 墨菲定律&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;BE： Butterfly Effect 蝴蝶效应&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;DE：Domicile Effect 多米诺效应&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;LO：Learning Organization 学习型组织&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Ever Flourishing 基业长青&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Exponential Growth 指数性之成长&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Sales Approach 销售方式&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Profitability And Sales Volume 利润率和销售额&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;CRM ：Customer Relationship Management客户关系管理&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;TE：Throughput Effectiveness有效产出率（T与OE的比率）&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Student Syndrome 学生综合征&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Parkinson’s Law 帕金森定律&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;不良多工 不良多任务&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;APS：Advanced Planning and Scheduling 高级计划排程&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;→APS：Advanced Production Scheduling 高级生产排程&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;FCS：Finite-Capacity Scheduling 有限产能排程&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;MRP：Material Requirements Planning 物料需求计划&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;→（MRP：More Reams of Papers 更多令的纸）&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;→（MRP：More Ridiculous Priorities 更荒缪的优先顺序）&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;ERP：Enterprice Resource Planning 企业资源计划&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Justification 价值认证 Distribution Center 分销中心&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Right-Sizing 适当规模&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;PMS：Performance Measurement System 绩效衡量系统&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;MS：Master Schedule 主排程&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;MPS：Master Production Schedule 主生产排程&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;SC：Safety Capacity 备用产能&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;SB模型：Shipping Buffer出货缓冲模型&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;DV：Dependent Events 依存关系&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;SF：Statistical Fluctuations 统计波动&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;OEM：Original Equipment Manufacturer 原始设备制造商，贴牌生产，代工&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;ODM：Original Design Manufacturer原始设计制造商，设计生产（OEM升级）&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;OBM：Original Brand Manufacturer 原始品牌制造商&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1、A方看中B方的产品，让B方生产，用A方商标，对A方来说，这叫OEM；&lt;/li&gt;
+
+&lt;li&gt;2、A方自带技术和设计，让B方加工，这叫ODM；&lt;/li&gt;
+
+&lt;li&gt;对B方来说，只负责生产加工别人的产品，然后贴上别人的商标，这叫OBM.&lt;/li&gt;
+
+&lt;li&gt;某企业生产的产品没有自己的品牌，专门接受其他企业的OEM或ODM要求为其他企业定牌生产。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;WIP：Work In Process在制品&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;DDP: Delivered Duty Paid (named place of destination) 完税后交货（指定目的地）&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;DDP：Due Date Performance 交（货）期绩效&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;NA：Necessary Assumption 必要假设&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;PA： Parallel Assumption 并行假设&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;SA： Sufficient Assumption充份假设&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;DCE：Decisive Competitive Edge决定性竞争优势&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;EOQS：end-of-quarter syndrome季末症候群&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;ABP时间：Aggressive，But Possible 积极但是有可能&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;CCM： Critical Chain Method 关键链方法&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;CDC ：Central Distribution Center 中央仓库，中央分销中心&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;RDC：Region Distribution Center 区域仓库，区域分销中心&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;TPS：Throughput Per Shelf （每个，每平方米的）货架的有效产出&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;PERT： Program Evaluate Review Technique 计划评核术，项目评估检查技术&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Stopsshgoplay</title>
+   <link href="http://wind13.github.io/playscala/2013/09/29/stopsshgoplay"/>
+   <updated>2013-09-29T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/09/29/stopsshgoplay</id>
+   <content type="html">&lt;h1 id=&quot;sshplay&quot;&gt;停止SSH，用Play!吧&lt;/h1&gt;
+
+&lt;p&gt;Created 星期六 25 二月 2012&lt;/p&gt;
+
+&lt;p&gt;先看一段Playframework热情交流群（QQG：168013302）里的聊天记录：&lt;/p&gt;
+
+&lt;p&gt;木马@学生 09:59:13 实现个功能..要调用service接口的方法, 方法又在他的impl里面实现, impl里面又是调用dao层接口, dao层接口又是在dao的impl里面实现, dao的impl实现又是由hibernate访问的数据库, &lt;code&gt;
+木马@学生 09:59:28
+   真心蛋都碎了&lt;/code&gt; Freewind@play2 10:00:29 为什么要这么多接口？ 木马@学生 10:00:41 学校的项目…SSH2 Freewind@play2 10:01:04 话说我前公司也是这样的，看着都累 木马@学生 10:01:25 对了, 还没说上层的 action,拦截分配 do了返回, 木马@学生 10:01:31 头都大了&lt;code&gt;
+木马@学生 10:01:57
+   还前端的 jquery, ajax访问数据库, 再经过这些框架的时候&lt;/code&gt; Snake 10:01:59 ssh2是这样的 Snake 10:02:13 冠名弱耦合 木马@学生 10:02:14 那叫一个个都要问候到啊… Freewind@play2 10:03:01 你能不能改代码，能删的都删了 木马@学生 10:03:25 我就写个登陆功能, 就要搞这么多&lt;code&gt;
+世风十三@用中 10:06:12
+   我公司也是实现个简单的java app，用了无数接口，我重构时都删了。  
+Freewind@play2 10:07:18
+   都是当年spring惹的祸
+Snake 10:09:00
+   大项目是有需要的
+Snake 10:09:29
+   小项目用ssh有点小题大作
+木马@学生 10:10:09
+   学校总是搞最大的框架, 做最小的项目&lt;/code&gt; 世风十三@用中 10:10:22 算不算是接口滥用&lt;br /&gt;木马@学生 10:10:34 说出来能唬人啊&lt;code&gt;
+木马@学生 10:10:41
+   写出来, 全是英文啊&lt;/code&gt; Snake 10:11:11 现在外面很多的企业都要求ssh熟悉精通，所以学校也只能这样&lt;/p&gt;
+
+&lt;p&gt;应该说使用接口主要是基于开放封闭原则，即对扩展开放，而对修改封闭。而实际项目中，通常的开发是不断地修改完善，最终达到理想效果。所以开放封闭原则应该说不适用于项目内部，而是针对于打包对外服务的情况，所谓“接口”也正是对外来说的，如果你的项目是对外提供公用类库或是框架包等的，那就要严格定义准确的接口规范，并且尽量保持对外接口的稳定，在做系统分析时就要深入调研，考虑周到，对未来的变化有充分的预估。而相反如果是整个项目仅用于对内的应用，而所有代码都是自己控制，未来也没有与其他组群的协同问题，那就没有必要做到层层都接口，直接实现也未尝不可。&lt;/p&gt;
+
+&lt;p&gt;多数时候，初学者都是在对着SSH的框架照猫画虎，画的时候也不太深思为什么要这样做，只道是一种开发规范罢了，遵守便是，没什么好说，然而实际上SSH框架的创造者是思考了太多的可能性和各种问题后总结出的经验结晶，这其中考虑遇到最为复杂的情况类似大型企业复杂应用的开发等，而对于大多数中、小型项目而言，多少有点用牛刀杀鸡的感觉。&lt;/p&gt;
+
+&lt;p&gt;相对的，Play framework 则是从一开始就是针对Web应用开发来设计的，借鉴了其他很多优秀框架（如ROR）的思想，直接解决了中小型项目快速开发的问题，同时也提供了Module的机制，给予了无限的扩展空间，当然也适用于大型的企业应用项目，只要架构师在具体应用上掌握了一定的技巧和经验，开发起来还是相当敏捷和舒爽的！:)&lt;/p&gt;
+
+&lt;p&gt;所以，如果你们的团队是擅长Java这门语言的，你们的应用是基于Web的应用系统，你们有权决定使用什么样的技术路线和框架的话，那么强烈建议使用Playframework，放弃SSH的繁杂和冗余吧，在Playframework的世界里，你会接触到最新的技术思想，最敏捷的开发理念，最高效的代码实现！Welcome to Playframework world!&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Learnself</title>
+   <link href="http://wind13.github.io/playscala/2013/09/29/learnself"/>
+   <updated>2013-09-29T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/09/29/learnself</id>
+   <content type="html">&lt;h1 id=&quot;&quot;&gt;编程自学之路&lt;/h1&gt;
+
+&lt;p&gt;很多爱好编程，喜欢Play框架的朋友，开始的时候找不到门道，这里抛砖引玉，给大家分享一些经验……&lt;/p&gt;
+
+&lt;h4 id=&quot;_2&quot;&gt;首先，心要正。&lt;/h4&gt;
+
+&lt;p&gt;没错，如同武侠小说中的上乘武功一样，必须讲究心法，心术不正者必定会走火入魔。&lt;/p&gt;
+
+&lt;h4 id=&quot;_3&quot;&gt;其次，道要高。&lt;/h4&gt;
+
+&lt;p&gt;所谓魔高一尺，道高一丈，老子的道家思想的智慧，时至今日，如果每个人都能理解其中的道意，世界也就不会有这么多问题了。&lt;/p&gt;
+
+&lt;h4 id=&quot;born_for_program&quot;&gt;最后，Born for program!&lt;/h4&gt;
+
+&lt;p&gt;某一天，当你发现你天生就是做程序的料，你就算是入道了！&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Devlinks</title>
+   <link href="http://wind13.github.io/playscala/2013/09/29/devlinks"/>
+   <updated>2013-09-29T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/09/29/devlinks</id>
+   <content type="html">&lt;h1 id=&quot;&quot;&gt;编程知识链接收集&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Java 相关
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://lavasoft.blog.51cto.com/62575/184492&quot;&gt;java.util.logging.Logger使用详解&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Xmlawarenamespace</title>
+   <link href="http://wind13.github.io/playscala/2013/09/26/xmlawarenamespace"/>
+   <updated>2013-09-26T00:00:00+08:00</updated>
+   <id>http://wind13.github.io/playscala/2013/09/26/xmlawarenamespace</id>
+   <content type="html">&lt;h1 id=&quot;xml_&quot;&gt;Xml 域名空间识别问题&lt;/h1&gt;
+
+&lt;p&gt;相关文档见：&lt;a href=&quot;https///play.lighthouseapp.com/projects/57987/tickets/823-xpath-namespaces-with-httpresponsegetxml&quot;&gt;官方ticket任务#823&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Yes, this is correct. In the .getXML function the namespace ness is not set.\ 是的，有这个问题。在.getXML方法中允许命名空间（namespace）没有设置。&lt;/p&gt;
+
+&lt;p&gt;This line should be changed from:\ 这一行应该从这样：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to:\ 变成：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+DocumentBuilderFactory xmlFact = DocumentBuilderFactory.newInstance();
+xmlFact.setNamespace(true);
+DocumentBuilder builder = xmlFact.newDocumentBuilder();&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The same problem exists in the XML lib in the getDocument function:\ 同样的问题在XML的包里的getDocument方法中也存在：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:::java
+DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+dbf.setNamespace(true); //Add this line!&lt;/code&gt;&lt;/pre&gt;</content>
  </entry>
  
  <entry>

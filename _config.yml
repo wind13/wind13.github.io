@@ -9,7 +9,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Wind13 Blog
-tagline: Site Tagline
+tagline: Github is Great!
 author :
   name : Sam Liu
   email : wind13@163.com
