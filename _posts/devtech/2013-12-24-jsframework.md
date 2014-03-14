@@ -85,3 +85,5 @@ lang: zh
   * [Elycharts](http://elycharts.com/examples) 是一个易于使用的，可定制的JavaScript图表绘制组件。这个组件可用于绘制大部分常用的图表类型包括：line, column, are, bar, pie, sparklines and combinations。图表利用SVG/VML技术生成，基于jQuery + Raphaël开发。
 ## 脚本压缩打包工具
     * [TUICompiler](https///github.com/dexteryy/TUICompiler) 土豆网的js打包工具
+## 脚本牛人博客
+  * [Evan Wallace](http://madebyevan.com/) HTML5和 Javascript 高手，擅长 WebGL 等技术。
