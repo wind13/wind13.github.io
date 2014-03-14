@@ -14,4 +14,5 @@ categories: personal note
 ## 生活笔记
 
 ## 学习笔记
+* 基本搞定 jekyll-bootstrap 搭建 Blog 了，呵呵……
   * [HTML5资源网](http://www.html5tricks.com)
