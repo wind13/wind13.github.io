@@ -1,13 +1,13 @@
 ---
 layout: post
-category : playscala
+category : manage
 tagline: "PlayScala is Great!"
-tags : [playscala]
+title: "罗辑思维听后记录"
+tags : [罗辑思维]
 lang: zh
 ---
-# 罗辑思维听后记录
 
-[罗辑思维2013](http://www.youku.com/show_page/id_zc40101545bdc11e2b356.html)
+# [2013年罗辑思维](http://www.youku.com/show_page/id_zc40101545bdc11e2b356.html)
 
 ## 第19期：在一起 有后代
 
@@ -71,9 +71,10 @@ lang: zh
 
 *  未来发展的趋势是“去中心化”，推荐一本书《市场的力量》。
 
-# 2014年罗辑思维
+# [2014年罗辑思维](http://www.youku.com/show_page/id_z5bdbf57c947311e3b8b7.html)
 
-## 致终将逝去的隐私 05
+## 第5期 致终将逝去的隐私
+[在线优酷观看](http://v.youku.com/v_show/id_XNjg0Njc0NjYw.html)
 
 * 恐惧和贪婪令现代人不快乐，面对巨大贪婪和巨大付出的恐惧时，现代人该如何破呢？
 * 通过多维的“交叉复现”形成信息的高价值判断。

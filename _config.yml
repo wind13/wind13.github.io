@@ -8,14 +8,13 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Wind13 Blog
+title : PlayScala 知识站
 tagline: Github is Great!
 author :
   name : Sam Liu
   email : wind13@163.com
   github : wind13
-  twitter : wind13
-  feedburner : wind13
+  lofter : wind13
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -81,8 +80,10 @@ JB :
   #
   comments :
     provider : duoshuo
+    duoshuo:
+      short_name : playscala
     disqus :
-      short_name : jekyllbootstrap
+      short_name : playscala
     livefyre :
       site_id : 123
     intensedebate :
@@ -100,7 +101,8 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-49201859-1'
+        tracking_name : 'wind13.github.io'
     getclicky :
       site_id : 
     mixpanel :
