@@ -7,6 +7,8 @@ tags : [git]
 lang: zh
 ---
 
+参考：[史上最浅显易懂的Git教程！](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000){:target="_blank"}
+
 *  进入你的工作目录
 
 	
@@ -79,7 +81,7 @@ lang: zh
 
 	
 	git rm --cached somefile.txt
-	# 然后再修改目录下的.gitignore文件，添加上这个文件的相应忽略即可。
+> 然后再修改目录下的.gitignore文件，添加上这个文件的相应忽略即可。
 
 
 *  查看每一行的改动：
@@ -107,10 +109,19 @@ lang: zh
 	git merge dirty
 
 
-*  丢弃加入缓存区（即git add的准备提交的文件）的修改
+*  丢弃加入缓存区（即git add的准备提交的文件）的修改，分别退回到当前版本、上一个版本、上上一个版本、前99个版本、某特定 id 版本：
 
 	
 	git reset --hard HEAD
+    git reset --hard HEAD^
+    git reset --hard HEAD^^
+    git reset --hand HEAD~99
+    git reset --hard 322542re342
+
+*  查看过去和未来的版本 id 等信息：
+
+    git log
+    git reflog
 
 
 *  丢弃某个文件的修改，和SVN的revert命令一样

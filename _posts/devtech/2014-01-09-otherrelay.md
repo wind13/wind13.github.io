@@ -1,15 +1,14 @@
 ---
 layout: post
-category : playscala
-tagline: "PlayScala is Great!"
-tags : [playscala]
+category : devtech
+tagline: "Develop is Great!"
+title: "编程技术相关"
+tags : [index]
 lang: zh
 ---
-# 其他编程相关
-
 
 *  Java 相关
-    * [String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型](playscala/otherrelay/Java/DateFormat)
+    * [String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型]({% post_url /devtech/java/2013-12-23-dateformat %})
     * [java 类对象初始化顺序](http://moshihao.com/?p=315)
 
 *  JavaScript相关
@@ -23,7 +22,7 @@ lang: zh
     * [关于HtmlUnitDriver无法支持所有javascript效果的问题](playscala/otherrelay/AutoTest/HtmlUnitDriverJavascript)
 
 *  Git相关
-    * [常用Git命令说明](playscala/otherrelay/Git/OftenUsed)
+    * [常用Git命令说明]({% post_url /devtech/git/2013-12-23-oftenused %})
     * [git 与 svn 命令对比](http://java.dzone.com/articles/git-vs-svn-basic-commandline)
 
 *  电脑相关

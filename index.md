@@ -43,7 +43,7 @@ lang: zh
 
 *  [编程自学之路（个人建议供参考）]({% post_url /play1x/2013-09-29-learnself %})
 
-###  [其他相关技术]({% post_url /play1x/2014-01-09-otherrelay %})
+###  [其他相关技术]({% post_url /devtech/2014-01-09-otherrelay %})
 
 ## 管理相关知识
 
