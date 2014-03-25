@@ -3,7 +3,7 @@ layout: page
 category : Pages
 title: 欢迎光临 PlayScala 知识站
 tagline: "PlayScala is Great!"
-tags : [playscala]
+tags : [play1]
 lang: zh
 ---
 

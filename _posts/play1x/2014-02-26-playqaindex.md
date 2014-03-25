@@ -1,16 +1,15 @@
 ---
 layout: post
 category : playscala
+title: Play!技巧问答
 tagline: "PlayScala is Great!"
-tags : [playscala]
+tags : [play1x, QA]
 lang: zh
 ---
-# Play!技巧问答
 
+*  [Play!中如何用module组织多个相关项目]({% post_url /play1x/2013-12-13-multiproject %})
 
-*  [Play!中如何用module组织多个相关项目](wiki/PlayQAIndex/MultiProject)
-
-*  [FunctionTest测试中如何取得Session值](wiki/PlayQAIndex/FunctionTestSession)
+*  [FunctionTest测试中如何取得Session值]({% post_url /play1x/2013-12-13-functiontestsession %})
 
 *  [Xml域名空间（WS.(url).get().getXml()无法取得带命名空间Document对象）识别问题](wiki/PlayQAIndex/XmlDomainBug)
 
