@@ -1,6 +1,6 @@
 ---
 layout: post
-category : playscala
+category : play1x
 title: Play!技巧问答
 tagline: "PlayScala is Great!"
 tags : [play1x, QA]
@@ -11,11 +11,11 @@ lang: zh
 
 *  [FunctionTest测试中如何取得Session值]({% post_url /play1x/2013-12-13-functiontestsession %})
 
-*  [Xml域名空间（WS.(url).get().getXml()无法取得带命名空间Document对象）识别问题](wiki/PlayQAIndex/XmlDomainBug)
+*  [Xml域名空间（WS.(url).get().getXml()无法取得带命名空间Document对象）识别问题]({% post_url /play1x/2013-12-13-xmldomainbug %})
 
-*  [在Play!中如何实现类似过滤器的功能](wiki/PlayQAIndex/FilterAllController)
+*  [在Play!中如何实现类似过滤器的功能]({% post_url /play1x/2013-12-13-filterallcontroller %})
 
-*  [如何同时使用http和https协议](wiki/PlayQAIndex/UserHttps)
+*  [如何同时使用http和https协议]({% post_url /play1x/2013-12-13-userhttps %})
 
 *  [在Play!中是否支持Comet-style或long-polling的请求？](wiki/PlayQAIndex/LongPolling)
 
