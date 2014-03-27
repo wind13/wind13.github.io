@@ -7,8 +7,6 @@ tags : [Mac osx, uml, tools]
 lang: zh
 ---
 
-From: <http://wind13.lofter.com/post/b2b9b_fda5d7>
-
 今天工作时需要设计一下程序的架构，即建模工作，这件事用纯文本似乎较难完成（本人是纯文本的 funs）。用手绘软件（Gimp, SketchBookExpress）也不太方便，失量图软件（Inkscape，LibreOfficeDraw）也要从画方框开始也不方便，毕竟是模块化的图形，还是用专用的建模工具比较方便。 
 
 这方面工具不少，很多还有生成代码的功能，这个功能个人倒是不太需要，只是有个示意图可以引导思路就好了，毕竟有了思路后写代码时还会有很多变化，其实也就跟原图不太一致了，非要同步图与代码倒是给自己增加了很多麻烦和顾虑。 
@@ -59,9 +57,10 @@ From: <http://wind13.lofter.com/post/b2b9b_fda5d7>
 
    [13]: http://www.astah.net/
 
-在 Eclipse 里面的 [Marketplace][14] 搜索到更多的 UML 插件，选择尝试 UML Designer，在这里安装似乎方便很多，但是也安装了很长时间，这网速还能再慢点吗？ 
+在 Eclipse 里面的 [Marketplace][14] 搜索到更多的 UML 插件，选择尝试 [UML Designer][21]，在这里安装似乎方便很多，但是也安装了很长时间，这网速还能再慢点吗？因为 Eclipse 插件通常都要引用 EMF 等模块，因此如果 Eclipse 之前没有安装过这些模块，那么下载过程将极其漫长，最终由于安装时间过长放弃。 
 
    [14]: http://marketplace.eclipse.org/search/site/UML
+   [21]: http://marketplace.eclipse.org/content/uml-designer-eclipse-kepler-version
 
 还发现 [yEd Graph Editor][15]，这个流程图绘制工具，有 Mac 版本，于是下载尝试，结果下载失败放弃。
 
@@ -83,4 +82,4 @@ From: <http://wind13.lofter.com/post/b2b9b_fda5d7>
    [19]: http://www.codeuml.com/
    [20]: http://plantuml.sourceforge.net/
 
-
+参见：[Lofter 上的博文](http://wind13.lofter.com/post/b2b9b_fda5d7)

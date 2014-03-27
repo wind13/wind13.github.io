@@ -107,4 +107,5 @@ lang: zh
 当然，你也可以说点别的……
 
 环境保护，只要你是人类，就应该反思！从节约资源开始吧！
+志同道合（[做个环保主义的程序员](http://coolshell.cn/articles/7186.html)）的技术博客：[酷壳CoolShell](http://coolshell.cn/)
 
