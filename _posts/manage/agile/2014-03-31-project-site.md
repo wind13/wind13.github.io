@@ -7,6 +7,12 @@ tags : [scurm, git, project, agile, free]
 lang: zh
 ---
 
+   [1]: http://www.teambition.com
+   [2]: http://www.trello.com
+   [3]: http://www.github.com
+   [4]: http://www.bitbucket.com
+   [5]: http://git.oschina.net
+
 分享一些项目管理的网站：
 ## 敏捷软件开发思想的项目管理网站服务：
 * [teambition][1]：可免费创建有限数量的项目，界面友好。
@@ -17,9 +23,3 @@ lang: zh
 * [Bitbucket][4]： 免费创建公有库， 同时可免费创建有限的私有 Git 库。
 * [Git.oschina][5]：开源中国社区提供的 Git 库服务，可免费创建最多1000个公有或私有库。
 
-
-   [1]: http://www.teambition.com
-   [2]: http://www.trello.com
-   [3]: http://www.github.com
-   [4]: http://www.bitbucket.com
-   [5]: http://git.oschina.net

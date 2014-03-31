@@ -6,7 +6,11 @@ tagline: "PlayScala is Great!"
 tags : [play1]
 lang: zh
 ---
+{% include custom/setup %}
 
+## 最新发布
+{% assign this_month = site.posts %}
+{% include custom/this_month %}
 ## 学用Play!和Scala做软件
 
 ### 本站收集Play1.x相关
