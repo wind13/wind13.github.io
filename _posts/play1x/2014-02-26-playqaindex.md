@@ -17,22 +17,22 @@ lang: zh
 
 *  [如何同时使用http和https协议]({% post_url /play1x/2013-12-13-userhttps %})
 
-*  [在Play!中是否支持Comet-style或long-polling的请求？](wiki/PlayQAIndex/LongPolling)
+*  [在Play!中是否支持Comet-style或long-polling的请求？]({% post_url /play1x/2013-12-13-longpolling %})
 
-*  [在Linux系统中，Fat32盘下无法执行play eclipsify命令](wiki/PlayQAIndex/OperationNotPermitted)
+*  [在Linux系统中，Fat32盘下无法执行play eclipsify命令]({% post_url /play1x/2013-12-13-operationnotpermitted %})
 
-*  [移除Cache可以设置时间吗？](wiki/PlayQAIndex/CacheRemoveTime)
+*  [移除Cache可以设置时间吗？]({% post_url /play1x/2013-12-13-cacheremovetime %})
 
-*  [关于独立对像的存储报错问题validateAndSave();](wiki/PlayQAIndex/ValidateAndSave)
+*  [关于独立对像的存储报错问题validateAndSave();]({% post_url /play1x/2013-12-13-validateandsave %})
 
-*  [分离实体持久化出错（PersistentObjectException: detached entity passed to persist）问题](wiki/PlayQAIndex/DetachedPersist)
+*  [分离实体持久化出错（PersistentObjectException: detached entity passed to persist）问题]({% post_url /play1x/2013-12-13-detachedpersist %})
 
-*  [Play框架深层问题讨论](wiki/PlayQAIndex/DeepQA)
+*  [Play框架深层问题讨论]({% post_url /play1x/2013-12-13-deepqa %})
 
-*  [Play在Windows的cmd窗口中中文乱码的解决办法](wiki/PlayQAIndex/CmdChinese)
+*  [Play在Windows的cmd窗口中中文乱码的解决办法]({% post_url /play1x/2013-12-13-cmdchinese %})
 
-*  [一个Hql中count判断的写法](wiki/PlayQAIndex/HqlCount1)
+*  [一个Hql中count判断的写法]({% post_url /play1x/2013-12-13-hqlcount1 %})
 
-*  [无法加载pdf等Module的问题](wiki/PlayQAIndex/ModuleMissing)
+*  [无法加载pdf等Module的问题]({% post_url /play1x/2014-01-09-modulemissing %})
 
-*  [Hql中 left join 的写法](wiki/PlayQAIndex/HqlLeftJoin)
+*  [Hql中 left join 的写法]({% post_url /play1x/2014-02-26-hqlleftjoin %})
