@@ -11,6 +11,11 @@ lang: zh
 ## 最新发布
 {% assign this_month = site.posts %}
 {% include custom/this_month %}
+
+## 小工具或示例
+
+* [BSC权重小工具](/example/bscmin.html) （使用 EmberJS 开发）
+
 ## 学用Play!和Scala做软件
 
 ### 本站收集Play1.x相关

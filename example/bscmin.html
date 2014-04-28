@@ -1,0 +1,85 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]--> <!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]--> <!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]--> <!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+  body { padding: 20px; }
+  .border-table {
+  border: 1px solid #960; border-collapse: collapse;
+  }
+  .border-table th,td {
+  border: 1px solid #960; border-collapse: collapse; padding: 5px;
+  }
+  h1 {
+  text-align: center;
+  font-size: 24px;
+  }
+  .txtInput {width:50px;}
+  </style>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!-- script src="js/libs/jquery-1.7.2.min.js"></script -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+  <!-- script src="http://cdnjs.cloudflare.com/ajax/libs/ember.js/1.5.1/ember.min.js"></script -->
+  <script src="/js/libs/ember-0.9.8.1.min.js"></script>
+  <script type="text/x-handlebars" data-template-name="bsc-table">
+    <table class="border-table">
+      <thead>
+	<tr>
+	  <th>项目</th>
+	  {{#each ctl.items}}
+	  <th>
+	    <!-- {{view Em.TextField valueBinding="name"}} -->
+	    {{name}}
+	  </th>
+	  {{/each}}
+	  <th>总计</th>
+	</tr>
+      </thead>
+      <tbody>
+	{{#each ctl.compareItems}}
+	<tr>
+	  <th>
+	    {{title}}
+	  </th>
+	  {{#each tds}}
+	  <td title="请仔细思考左侧项是否比右侧项重要？">
+	    {{#if needCompare}}
+	    {{view Em.Checkbox checkedBinding="value" disabledBinding="disabled"}}{{txt}}
+	    {{else}}
+	    ----
+	    {{/if}}
+	  </td>
+	  {{/each}}
+	  <th>
+	    {{total}}
+	  </th>
+	</tr>
+	{{/each}}
+      </tbody>
+    </table>
+  </script>
+  <script type="text/x-handlebars" data-template-name="bsc-json">
+    <!-- <p>『{{ctrl.json}}』</p> -->
+  </script>
+</head>
+<body>
+  <h1>平衡计分卡打权重小工具</h1>
+  <script type="text/x-handlebars">
+    <p>在此输入所要比较的项目，用空格分开：{{#view App.Input}}{{/view}}</p>
+  </script>
+  <script>
+var App=Em.Application.create();Item=Em.Object.extend({name:null,toString:function(){return this.get("name");}});CompareItem=Em.Object.extend({left:null,right:null,i:null,j:null,value:null,txt:function(){if(this.get("value")){return 1;}else{return 0;}}.property("value"),toString:function(){return"{"+this.get("left")+"|"+this.get("right")+", value: "+this.get("value")+"}";},disabled:function(){return this.get("i")>this.get("j");}.property("i","j"),needCompare:function(){return this.get("left")!=this.get("right");}.property("left","right")});BSCRow=Em.Object.extend({title:null,itms:[],toString:function(){return"{title: "+this.get("title")+", itms: ["+this.get("itms")+"]}";},tds:function(){return Em.ArrayProxy.create({content:Em.A(this.get('itms'))});}.property('itms.@each').cacheable(),total:function(){var t=0;this.get("itms").forEach(function(item,i,obj){if(item.value){t++;}});return t;}.property('itms.@each.value')});App.CompareItems=Em.Object.extend({items:[],find:function(i,j){return this.get('compareItems').objectAt(i).itms.objectAt(j);},json:function(){if(this.get('compareItems').length>0){return this.get('compareItems');}else{return"";}}.property('compareItems.@each').cacheable(),compareItems:function(){var ctl=this;return ctl.get('items').map(function(it,idx,its){var cms=its.map(function(t,i,ts){var ci=CompareItem.create({i:idx,j:i,left:it,right:t});if(i>idx){ci.set("value",false);ci.addObserver('value',function(){var re=ctl.find(ci.j,ci.i);re.set("value",!ci.value);});}else if(i==idx){}else{ci.set("value",true);}return ci;});return BSCRow.create({title:it.name,itms:cms});});}.property('items.@each.name').cacheable()});App.Input=Em.TextField.extend({change:function(evt){ctlItems.get("items").clear();var items=this.value.split(" ").uniq();items.forEach(function(item,index,all){if($.trim(item)!=""){var it=Item.create({name:item});ctlItems.get("items").pushObject(it);}});}});App.BSCTable=Em.View.extend({templateName:'bsc-table',ctl:null});App.JsonView=Em.View.extend({templateName:'bsc-json',ctrl:null,});var ctlItems=App.CompareItems.create();var bsctable=App.BSCTable.create({ctl:ctlItems});bsctable.append();var bscjson=App.JsonView.create({ctrl:ctlItems});bscjson.append();
+  </script>
+</body>
+</html>
