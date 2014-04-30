@@ -1,7 +1,7 @@
 ---
 layout: post
 category : devtech
-title: Javascript框架
+title: Javascript框架及相关知识
 tagline: "Js is Great!"
 tags : [javascript framework angularjs]
 lang: zh
@@ -30,6 +30,8 @@ lang: zh
   * [Backbone.js](http://documentcloud.github.com/backbone/)
     * [Backbone.js vs Ember.js](http://www.johng.co.uk/2012/01/11/backbone.js-vs-ember.js/)
     * [What are the key differences between Ember.js (formerly SproutCore 2.0) and Backbone.js?](http://www.quora.com/What-are-the-key-differences-between-Ember-js-formerly-SproutCore-2-0-and-Backbone-js)
+    * [TroraxJS](http://thoraxjs.org/) 将 Backbone 和 Handlebars 结合的框架，适合大型可扩展的 Web 应用。
+  * [ChaplinJS](http://chaplinjs.org/) 可与 Backbone 结合使用，也可以与[Exoskeleton](http://exosjs.com/)（可替代 Backbone 系列，仅 8k） 结合使用。
   * [Emberjs](http://emberjs.com/)
     * [学习心得](https///github.com/alipay/arale/issues/48)
     * [Ember/Handlebars template precompilation with Play](http://eng.netwallet.com/2012/04/25/emberhandlebars-template-precompilation-with-play/)
@@ -64,12 +66,17 @@ lang: zh
   * [Nodejs](http://nodejs.org/)
     * [三种Javascript(NodeJS)异步编程代码模式比较](http://www.ituring.com.cn/article/62609)
     * [在Node.js 中用 Q 实现Promise – Callbacks之外的另一种选择](http://www.ituring.com.cn/article/54547)
-  * [Meteor](http://meteor.com/) is a full stack framework
+  * [Meteor](http://meteor.com/) is a full stack framework 基于 Node.js，服务端与客户端都使用 javascript。
   * [Yahoo! Mojito](https///github.com/yahoo/mojito) is the JavaScript library implementing Cocktails, a JavaScript-based on-line/off-line, multi-device, hosted application platform.
   * [Wakanda](http://www.wakanda.org/) 服务器，开发工具studio和框架。
-## 测试框架
+## 辅助工具及测试框架
   * [Jasmine](http://pivotal.github.com/jasmine/)
   * [QUnit](http://docs.jquery.com/QUnit) is a powerful, easy-to-use, JavaScript test suite.
+  * [YEOMAN](http://yeoman.io/) 脚手架工具，与下面的 Grunt 和 Bower 工具合并使用。
+  * [GruntJS](http://gruntjs.com/) 自动化任务的工具，可以压缩脚本、编译 coffescript、单元测试等。是一个基于任务的 JavaScript 项目命令行构建工具。
+  * [Bower](http://bower.io/) 依赖管理工具
+  * [JSHint](http://www.jshint.com/) 是一个 JavaScript 的代码质量检查工具，主要用来检查代码质量以及找出一些潜在的代码缺陷。
+  * [Phantom JS](http://phantomjs.org/) 是一个服务器端的 JavaScript API 的 WebKit。其支持各种Web标准： DOM 处理, CSS 选择器, JSON, Canvas, 和 SVG。主要用于无首自动化测试、网页抓图或转 pdf 等、操控网页自动化、网络监控（类似YSLow）等方面。
 ## UI框架
   * [Aliceui](http://aliceui.com/) 是支付宝前端样式解决方案小组的项目代称。[Alice Css书写规范](http://aliceui.com/css-spec/) [支付宝CSS样式架构](http://www.slideshare.net/sofish/css-8943211) [样式库构建规范](http://aliceui.com/alice-css-guide/)
   * [D3.js](http://d3js.org/) is a JavaScript library for manipulating documents based on data. 二维图像生成框架
@@ -84,6 +91,37 @@ lang: zh
   * [JointJs](http://www.jointjs.com/demos.html) 用于创建完全互动式图表，如组织架构图、UML状态图、UML类图等。
   * [Elycharts](http://elycharts.com/examples) 是一个易于使用的，可定制的JavaScript图表绘制组件。这个组件可用于绘制大部分常用的图表类型包括：line, column, are, bar, pie, sparklines and combinations。图表利用SVG/VML技术生成，基于jQuery + Raphaël开发。
 ## 脚本压缩打包工具
-    * [TUICompiler](https///github.com/dexteryy/TUICompiler) 土豆网的js打包工具
+  * [TUICompiler](https///github.com/dexteryy/TUICompiler) 土豆网的js打包工具
 ## 脚本牛人博客
   * [Evan Wallace](http://madebyevan.com/) HTML5和 Javascript 高手，擅长 WebGL 等技术。
+
+## 其他相关
+  * [Bootstrap中文官网](http://cnbootstrap.com/)
+  * [指令式Callback和函数式Promise：对nodejs的一声叹息](http://www.ituring.com.cn/article/50561)
+  * [七个富应用JavaScript框架](http://blog.geoinker.com/2012/12/29/seven-javascript/)
+  * [UIBox](http://www.uibox.in/) 一个方便搜索Javascript UI 框架的网站。
+  * [TodoMVC](https://github.com/tastejs/todomvc)各种js框架写的TODO示例，帮助选择适合自己的js框架。
+  * [Yahoo开放的Json资源](http://query.yahooapis.com/v1/public/yql?q=show%20tables&format=json)
+  * [JSONP详解](http://www.cnblogs.com/yuzhongwusan/archive/2012/12/11/2812849.html)
+  * [jQuery的deferred对象详解](http://www.ruanyifeng.com/blog/2011/08/a_detailed_explanation_of_jquery_deferred_object.html)
+  * [NodeJs中用node-webkit开发多平台的桌面客户端](http://www.baidufe.com/item/1fd388d6246c29c1368c.html)
+
+## CoffeeScript
+
+  * [《Smooth CoffeeScript》](http://autotelicum.github.io/Smooth-CoffeeScript/interactive/interactive-coffeescript.html)
+
+## 脚本示例收集
+
+  * [图片选择框](http://odyniec.net/projects/imgareaselect/examples.html)
+  * [布仿真特效](http://andrew-hoyer.com/experiments/cloth/)
+  * [数字用英文怎么读](http://andrew-hoyer.com/experiments/numbers/)
+  * [粒子系统](http://andrew-hoyer.com/experiments/particle_system/)
+  * [水滴下流系统](http://andrew-hoyer.com/experiments/dripsessions/)
+  * [机械手臂系统](http://andrew-hoyer.com/experiments/robotarm/)
+  * [字母雨系统](http://andrew-hoyer.com/experiments/rain/)
+
+## 正则表达式在线测试：
+
+  * [REGex TESTER](http://www.regextester.com/)
+  * [JavaScript 正则表达式在线测试工具](http://tools.jb51.net/tools/regex.asp)
+  * [regexpal](http://regexpal.com/) 0.1.4 — a JavaScript regular expression tester
