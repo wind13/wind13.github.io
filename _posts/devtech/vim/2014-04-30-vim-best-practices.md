@@ -27,3 +27,7 @@ lang: zh
     * 进入~/.vim/bundle/Command-T/ruby/command-t 目录，运行：ruby1.8 extconf.rb 会创建Makefile 。
     * 再运行 make 编译后就好了！
 * 一篇 Vim diff 比较文档的用法，[技巧：Vimdiff 使用](https://www.ibm.com/developerworks/cn/linux/l-vimdiff/)
+* 一些使用 Vim 进行 Scala 编程的参考文档：
+    * [My Vim setup for Scala](http://bleibinha.us/blog/2013/08/my-vim-setup-for-scala) 
+    * [Coding Scala with Vim](http://derekwyatt.org/2013/12/31/coding-scala-with-vim.html)
+    * [Vim Scala IDE (VimSIde) built upon ENSIME](https://github.com/megaannum/vimside)
