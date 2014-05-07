@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+    </head>
+
+    <body>
+        <h1>Fizz Buzz Whizz</h1>
+        <input type="text" id="a" size="1" maxlength="1" />
+        <input type="text" id="b" size="1" maxlength="1" />
+        <input type="text" id="c" size="1" maxlength="1" />
+        <button id="count-off">报数</button>
+        <div id="result"></div>
+        <script>
+            $(function(){
+                function checknumber(x) {
+                    if ($.isNumeric(x)) {
+                        if (x > 0 && x < 10) {
+                            return x;
+                        }
+                        else {
+                            alert("数字【" + x + "】应在0和10之间，谢谢！");
+                            return -1;
+                        }
+                    }
+                    else {
+                        alert("对不起，【" + x + "】不是数字，请填入个位数字，谢谢！");
+                        return -1;
+                    }
+                }
+
+                $("#count-off").click(function(){
+                    $("#result").empty();
+                    var a = checknumber($("#a").val());
+                    var b = checknumber($("#b").val());
+                    var c = checknumber($("#c").val());
+
+                    if (a < 0 || b < 0 || c < 0) {
+                        // input is not correct.
+                    } 
+                    else {
+                        if (a == b || b == c || a == c) {
+                            alert("三个数字不允许重复，如果题中有这个含意的话，呵呵……");
+                        }
+                        else {
+                            for (var i=1; i<=100; i++) {
+                                $("#result").append("<p>" + countoff(i, a, b, c) + "</p>");
+                            }
+                        }
+                    }
+                });
+
+                function divisible(all, div){
+                    return all%div == 0;
+                }
+
+                function containFirst(all){
+                    var a = $("#a").val();
+                    return ("" + all).indexOf(a) >= 0;
+                }
+
+                function countoff(n, a, b, c) {
+                    var r = "";
+                    if (containFirst(n)) {
+                        return "Fizz"; //ignore others.
+                    }
+                    if (divisible(n, a)) {
+                        r += "Fizz";
+                    }
+                    if (divisible(n, b)) {
+                        r += "Buzz";
+                    }
+                    if (divisible(n, c)) {
+                        r += "Whizz";
+                    }
+                    if (r == "") {
+                        r = n;
+                    }
+                    return r;
+                }
+            });
+        </script>
+    </body>
+</html>
