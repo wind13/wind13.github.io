@@ -1,16 +1,19 @@
 ---
 layout: post
-category : devtech
+category : devtech js
 title: Javascript框架及相关知识
 tagline: "Js is Great!"
 tags : [javascript framework angularjs]
 lang: zh
 ---
 ## 综合框架
+
   * [arale.js](http://aralejs.org/) 支付宝的前端基础类库 Arale 基于 SeaJS 和 jQuery 等，目前新构建 2.0 版本。 demo: [计算器](http://seajs.org/docs/demo/calculator/)
   * [KISSY](http://docs.kissyui.com/) 是由淘宝前端攻城师们发起创建的一个开源 JS 类库。
   * [Ender.js](http://ender.no.de/) - Ender is a full featured package manager for your browser. 作者 [Dustin Diaz](http://www.dustindiaz.com/)
+
 ## 模块加载框架 [Javascript模块化](http://www.phphubei.com/article-4153-1.html)
+
   * [Seajs](http://seajs.org/) 由支付宝团队开源，基于（[CommonJS](http://www.commonjs.org/impl/)的一种实现，类似的模块加载框架：,,）和jquery的前端框架
   * BravoJS
   * [Require.js](http://requirejs.org/)
@@ -18,20 +21,26 @@ lang: zh
   * [AlmondJS](https///github.com/jrburke/almond) A minimal AMD API implementation for use after optimized builds 
   * [Amdjs](https///github.com/amdjs/amdjs-api/wiki/AMD) The Asynchronous Module Definition (AMD) API specifies a mechanism for defining modules such that the module and its dependencies can be asynchronously loaded.
   * [ozjs](https///github.com/dexteryy/OzJS) 土豆网的开源模块加载js库
+
 ## 模板框架
+
   * [Handlebars.js](http://handlebarsjs.com/) provides the power necessary to let you build semantic templates effectively with no frustration.
   * [mustache.js](http://mustache.github.com/) - Logic-less templates with Javascript.
   * [Eco](https///github.com/sstephenson/eco/): Embedded CoffeeScript templates
   * [Jade](http://jade-lang.com/): Node Template Engine
+
 ## MVC框架 （初步选择Emberjs，Knockoutjs 和 Canjs）
+
   * [The Top 10 Javascript MVC Frameworks Reviewed](http://codebrief.com/2012/01/the-top-10-javascript-mvc-frameworks-reviewed/)
   * [TodoMVC](https///github.com/addyosmani/todomvc) 「[官网](http://todomvc.com/)」A common learning application for popular JavaScript MV* frameworks
   * [最佳实践之 Javascript MVC](http://xhh.me/2012/06/best-practices-js-mvc.html)
   * [Backbone.js](http://documentcloud.github.com/backbone/)
     * [Backbone.js vs Ember.js](http://www.johng.co.uk/2012/01/11/backbone.js-vs-ember.js/)
     * [What are the key differences between Ember.js (formerly SproutCore 2.0) and Backbone.js?](http://www.quora.com/What-are-the-key-differences-between-Ember-js-formerly-SproutCore-2-0-and-Backbone-js)
+    * [Marionette](http://marionettejs.com) Backbone.Marionette 组合应用库，用于简化大型 Javascript 应用。
     * [TroraxJS](http://thoraxjs.org/) 将 Backbone 和 Handlebars 结合的框架，适合大型可扩展的 Web 应用。
-  * [ChaplinJS](http://chaplinjs.org/) 可与 Backbone 结合使用，也可以与[Exoskeleton](http://exosjs.com/)（可替代 Backbone 系列，仅 8k） 结合使用。
+    * [RivetsJS](http://www.rivetsjs.com/) 轻量强大的数据模板绑定的解决方案，可与 Backbone 等合用。
+    * [ChaplinJS](http://chaplinjs.org/) 可与 Backbone 结合使用，也可以与[Exoskeleton](http://exosjs.com/)（可替代 Backbone 系列，仅 8k） 结合使用。
   * [Emberjs](http://emberjs.com/)
     * [学习心得](https///github.com/alipay/arale/issues/48)
     * [Ember/Handlebars template precompilation with Play](http://eng.netwallet.com/2012/04/25/emberhandlebars-template-precompilation-with-play/)
@@ -62,14 +71,18 @@ lang: zh
   * http://derbyjs.com/ interesting
   * http://flatironjs.org/ interesting
   * http://railwayjs.com/ pretty bad.
+
 ## 服务器端（并客户端）框架
+
   * [Nodejs](http://nodejs.org/)
     * [三种Javascript(NodeJS)异步编程代码模式比较](http://www.ituring.com.cn/article/62609)
     * [在Node.js 中用 Q 实现Promise – Callbacks之外的另一种选择](http://www.ituring.com.cn/article/54547)
   * [Meteor](http://meteor.com/) is a full stack framework 基于 Node.js，服务端与客户端都使用 javascript。
   * [Yahoo! Mojito](https///github.com/yahoo/mojito) is the JavaScript library implementing Cocktails, a JavaScript-based on-line/off-line, multi-device, hosted application platform.
   * [Wakanda](http://www.wakanda.org/) 服务器，开发工具studio和框架。
+
 ## 辅助工具及测试框架
+
   * [Jasmine](http://pivotal.github.com/jasmine/)
   * [QUnit](http://docs.jquery.com/QUnit) is a powerful, easy-to-use, JavaScript test suite.
   * [YEOMAN](http://yeoman.io/) 脚手架工具，与下面的 Grunt 和 Bower 工具合并使用。
@@ -77,7 +90,9 @@ lang: zh
   * [Bower](http://bower.io/) 依赖管理工具
   * [JSHint](http://www.jshint.com/) 是一个 JavaScript 的代码质量检查工具，主要用来检查代码质量以及找出一些潜在的代码缺陷。
   * [Phantom JS](http://phantomjs.org/) 是一个服务器端的 JavaScript API 的 WebKit。其支持各种Web标准： DOM 处理, CSS 选择器, JSON, Canvas, 和 SVG。主要用于无首自动化测试、网页抓图或转 pdf 等、操控网页自动化、网络监控（类似YSLow）等方面。
+
 ## UI框架
+
   * [Aliceui](http://aliceui.com/) 是支付宝前端样式解决方案小组的项目代称。[Alice Css书写规范](http://aliceui.com/css-spec/) [支付宝CSS样式架构](http://www.slideshare.net/sofish/css-8943211) [样式库构建规范](http://aliceui.com/alice-css-guide/)
   * [D3.js](http://d3js.org/) is a JavaScript library for manipulating documents based on data. 二维图像生成框架
   * [Wijmo](https///wijmo.com/purchase/) 商业全面控件UI，包含类似Excel控件图表控件SpreadJS等企业级UI控件，价格：$895。
@@ -90,12 +105,17 @@ lang: zh
   * [canvasXpress](http://canvasxpress.org/) 使用HTML5的&lt;canvas&rt;标签实现，功能全面，LGPL免费授权。
   * [JointJs](http://www.jointjs.com/demos.html) 用于创建完全互动式图表，如组织架构图、UML状态图、UML类图等。
   * [Elycharts](http://elycharts.com/examples) 是一个易于使用的，可定制的JavaScript图表绘制组件。这个组件可用于绘制大部分常用的图表类型包括：line, column, are, bar, pie, sparklines and combinations。图表利用SVG/VML技术生成，基于jQuery + Raphaël开发。
+
 ## 脚本压缩打包工具
+
   * [TUICompiler](https///github.com/dexteryy/TUICompiler) 土豆网的js打包工具
+
 ## 脚本牛人博客
+
   * [Evan Wallace](http://madebyevan.com/) HTML5和 Javascript 高手，擅长 WebGL 等技术。
 
 ## 其他相关
+
   * [Bootstrap中文官网](http://cnbootstrap.com/)
   * [指令式Callback和函数式Promise：对nodejs的一声叹息](http://www.ituring.com.cn/article/50561)
   * [七个富应用JavaScript框架](http://blog.geoinker.com/2012/12/29/seven-javascript/)
