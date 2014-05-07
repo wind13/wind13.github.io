@@ -30,4 +30,5 @@ lang: zh
 * 一些使用 Vim 进行 Scala 编程的参考文档：
     * [My Vim setup for Scala](http://bleibinha.us/blog/2013/08/my-vim-setup-for-scala) 
     * [Coding Scala with Vim](http://derekwyatt.org/2013/12/31/coding-scala-with-vim.html)
+    * [Editing Scala with vim](http://leonard.io/blog/2013/04/editing-scala-with-vim/)
     * [Vim Scala IDE (VimSIde) built upon ENSIME](https://github.com/megaannum/vimside)
