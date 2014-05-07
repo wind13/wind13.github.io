@@ -1,6 +1,6 @@
 ---
 layout: post
-category : devtech js
+categories : devtech js
 title: Javascript框架及相关知识
 tagline: "Js is Great!"
 tags : [javascript framework angularjs]

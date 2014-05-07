@@ -1,11 +1,11 @@
 ---
 layout: post
-category : playscala
-tagline: "PlayScala is Great!"
-tags : [playscala]
+categories : devtech js
+title: easyui中form表单的ajax实现
+tagline: "Js is Great!"
+tags : [easyui]
 lang: zh
 ---
-# easyui中form表单的ajax实现
 
 示例代码如下：
 
