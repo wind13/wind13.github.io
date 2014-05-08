@@ -3,8 +3,9 @@ layout: post
 category : devtech
 tagline: "Vim is Great!"
 title: "Vim 使用思路、最佳实践再整理"
-tags : [vim iterm2 tomorrow theme]
+tags : vim iterm2 tomorrow-theme
 lang: zh
+
 ---
 
 在 Mac OS X 上使用 Vim 真的是很享受，所以决定要用好这个工具，以下记录下本人的最佳实践：
