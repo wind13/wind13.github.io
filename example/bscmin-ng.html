@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <meta charset="UTF-8">
+        <title>bsc tool by ng</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <style type="text/css">
+            body { padding: 20px; }
+            .border-table {
+                border: 1px solid #960; border-collapse: collapse;
+            }
+            .border-table th,td {
+                border: 1px solid #960; border-collapse: collapse; padding: 5px;
+            }
+            h1 {
+                text-align: center;
+                font-size: 24px;
+            }
+            .txtInput {width:50px;}
+        </style>
+
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
+        
+    </head>
+    <body ng-controller="bscCtrl">
+        <h1>平衡计分卡打权重小工具</h1>
+        <p>在此输入所要比较的项目，用空格分开：
+        <input type="text" ng-model="strInput" />
+        </p>
+        <table class="border-table">
+            <thead>
+                <tr>
+                    <th>{{strInput}}项目{{items()}}</th>
+                    <th ng-repeat="item in items()">
+                        {{item}}{{strInput.split(" ")}}
+                    </th>
+                    <th>总计</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="citem in citems">
+                    <th>
+                        {{citem.name}}
+                    </th>
+                    <td title="请仔细思考左侧项是否比右侧项重要？">
+                        <!--  ng-repeat="td in citem.tds" -->
+                        <!-- #if td.needCompare -->
+                        <input type="checkbox">td.txt
+                        <!--  ng-model="td.value" disabled="{{td.disabled}}" -->
+                        <!-- else -->
+                        ----
+                        <!-- if -->
+                    </td>
+                    <th>
+                        {{citem.total}}
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    <script>
+            function bscCtrl($scope) {
+                $scope.strInput = "init";
+                // $scope.items = ["t1","t2","t3"];
+                function items() {
+                    //return $scope.strInput.split(" ");
+                    return $scope.strInput.split(" ");
+                }
+
+                $scope.citems = [
+                {name:"测试01"},
+                {name:"测试02"},
+                {name:"测试03"}
+                ];
+
+                $scope.tds = [];
+            }
+            Item = {
+                name:null,
+                toString:function(){
+                    return this.get("name");
+                }
+            };
+            /*
+            CompareItem = {
+                left:null,right:null,i:null,j:null,value:null,
+                txt:function(){
+                    if(this.get("value")){
+                        return 1;
+                    }
+                    else{
+                        return 0;
+                    }
+                },
+                toString:function(){
+                    return "{"+this.get("left")+"|"+this.get("right")+", value: "+this.get("value")+"}";
+                },
+                disabled:function(){
+                    return this.get("i")>this.get("j");
+                },
+                needCompare:function(){
+                    return this.get("left")!=this.get("right");
+                }.property("left","right")
+            };
+            */
+        </script>
+    </body>
+</html>
