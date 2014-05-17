@@ -19,6 +19,9 @@ lang : zh
     * [TroraxJS](http://thoraxjs.org/) 将 Backbone 和 Handlebars 结合的框架，适合大型可扩展的 Web 应用。
     * [RivetsJS](http://www.rivetsjs.com/) 轻量强大的数据模板绑定的解决方案，可与 Backbone 等合用。
     * [ChaplinJS](http://chaplinjs.org/) 可与 Backbone 结合使用，也可以与[Exoskeleton](http://exosjs.com/)（可替代 Backbone 系列，仅 8k） 结合使用。
+    * [Backbone.stickit](http://nytimes.github.io/backbone.stickit/) Backbone的一个双向绑定插件。
+    * [Backbone.databinding](https://www.npmjs.org/package/backbone.databinding) npmjs 开发的双向绑定插件。
+    * [PubNub](http://www.pubnub.com/) 可在整个应用及所有客户端上同步Model和Collections的解决方案。
   2. 转移到 EmberJS 上，使用 Handlebar 的模板机制。
   3. 转移到 AngularJS 上，全新的理念和编程思路。
 
