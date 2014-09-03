@@ -29,7 +29,7 @@
     <h1>（{{cloudata.requireB}}）和（{{cloudata.requireC}}）这两个需求共同的目标是什么？</h1>
     <div class="form-group"><input type="text" ng-model="cloudata.goalA" class="form-control" placeholder="共同目标" /></div>
 </div>
-<div class="reveal-animation" ng-show="step===0">
+<div class="reveal-animation" ng-show="step===6">
     <h1>{{cloudata.title}}</h1>
     <p>{{cloudata.story}}</p>
     <div class="svg-cloud">
@@ -63,6 +63,4 @@
 <div>
     <button ng-show="step>0" ng-click="pre()" class="btn btn-primary">上一步</button>
     <button ng-click="next()" class="btn btn-primary">下一步</button>
-    <p> {{cloudata.title}} </p>
-    <p> {{cloudata}} </p>
 </div>
