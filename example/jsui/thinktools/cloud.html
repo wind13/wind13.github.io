@@ -1,0 +1,269 @@
+<div class="reveal-animation noprint" ng-show="step===0">
+    <h1>{{"cloud.step0.title" | translate}}</h1>
+    <sub>{{"cloud.step0.sub" | translate}}</sub>
+    <p>{{"cloud.step0.pre" | translate}}</p>
+    <p>首先，请默想一下你目前想解决的一个矛盾、冲突或困惑的问题，给它起个概括性的名字，填入下面的标题框中：</p>
+    <div class="form-group">
+        <input type="text" ng-model="cloudata.title" class="form-control" placeholder="关于某个左右为难问题的疑云图"></input>
+    </div>
+</div>
+<div class="reveal-animation noprint" ng-show="step===1">
+    <h1>你面临什么样的矛盾和冲突（左右为难的事）呢？</h1>
+    <p>请参考示例的方式，用简洁、客观的语言描述一下这个左右为难的故事。</p>
+    <div class="form-group">
+        <textarea type="text" ng-model="cloudata.story" class="form-control" placeholder="关于某个左右为难问题的故事概述"></textarea>
+    </div>
+</div>
+<div class="reveal-animation noprint" ng-show="step===2">
+    <h1>核心冲突是什么？</h1>
+    <p>是什么左右为难的事呢？此处主要填写两方面冲突的行动。请参考示例。</p>
+    <p>如是自己左右为难，可全填“自己”。</p>
+    <div class="form-group">
+        <input type="text" ng-model="cloudata.partyB" placeholder="谁"></input>
+        <input type="text" ng-model="cloudata.actionB" class="form-control" placeholder="向左的行动"></input>
+    </div>
+    <div class="form-group">
+        <input type="text" ng-model="cloudata.partyC" placeholder="谁"></input>
+        <input type="text" ng-model="cloudata.actionC" class="form-control" placeholder="向右的行动"></input>
+    </div>
+</div>
+<div class="reveal-animation noprint" ng-show="step===3">
+    <h1>【{{cloudata.partyB}}】这个行动（{{cloudata.actionB}}）的目的是什么？</h1>
+    <div class="form-group">
+        <input type="text" ng-model="cloudata.requireB" class="form-control" placeholder="向左的目的/需求"></input>
+    </div>
+</div>
+<div class="reveal-animation noprint" ng-show="step===4">
+    <h1>【{{cloudata.partyC}}】这个行动（{{cloudata.actionC}}）的目的是什么？</h1>
+    <div class="form-group">
+        <input type="text" ng-model="cloudata.requireC" class="form-control" placeholder="向右的目的/需求"></input>
+    </div>
+</div>
+<div class="reveal-animation noprint" ng-show="step===5">
+    <h1>（{{cloudata.requireB}}）和（{{cloudata.requireC}}）这两个需求共同的目标是什么？</h1>
+    <div class="form-group">
+        <input type="text" ng-model="cloudata.goalA" class="form-control" placeholder="共同目标"></input>
+    </div>
+</div>
+<div class="reveal-animation noprint" ng-show="step===6">
+    <h1>【{{cloudata.partyB}}】为了（{{cloudata.requireB}}）而必须（{{cloudata.actionB}}）的前提假设有哪些？</h1>
+    <div class="form-group">
+        <input type="text" ng-model="cloudata.reasonB1" class="form-control" placeholder="向左的前提假设"></input>
+        <input type="text" ng-model="cloudata.reasonB2" class="form-control" placeholder="向左的前提假设"></input>
+        <input type="text" ng-model="cloudata.reasonB3" class="form-control" placeholder="向左的前提假设"></input>
+    </div>
+</div>
+<div class="reveal-animation noprint" ng-show="step===7">
+    <h1>【{{cloudata.partyC}}】为了（{{cloudata.requireC}}）而必须（{{cloudata.actionC}}）的前提假设有哪些？</h1>
+    <div class="form-group">
+        <input type="text" ng-model="cloudata.reasonC1" class="form-control" placeholder="向右的前提假设"></input>
+        <input type="text" ng-model="cloudata.reasonC2" class="form-control" placeholder="向右的前提假设"></input>
+        <input type="text" ng-model="cloudata.reasonC3" class="form-control" placeholder="向右的前提假设"></input>
+    </div>
+</div>
+<div class="reveal-animation noprint" ng-show="step===8">
+    <h1>（{{cloudata.actionB}}）和（{{cloudata.actionC}}）矛盾（冲突、无法同时实现）的前提假设有哪些？</h1>
+    <div class="form-group">
+        <input type="text" ng-model="cloudata.reasonD1" class="form-control" placeholder="矛盾的前提假设"></input>
+        <input type="text" ng-model="cloudata.reasonD2" class="form-control" placeholder="矛盾的前提假设"></input>
+        <input type="text" ng-model="cloudata.reasonD3" class="form-control" placeholder="矛盾的前提假设"></input>
+    </div>
+</div>
+<div class="reveal-animation noprint" ng-show="step===9">
+    <h1>现在打印一下你目前的冲突疑云图，接下来我们试试能否找到双赢解，“打印”完后点“下一步”继续。</h1>
+</div>
+<div class="reveal-animation noprint" ng-show="step===10">
+    <h1>分析前提假设</h1>
+    <h2>（{{cloudata.actionB}}）和（{{cloudata.actionC}}）矛盾（冲突、无法同时实现）：</h2>
+    <h2>因为（{{cloudata.reasonD1}}），是真的吗？</h2>
+
+    <choose id="tf1D1" model="cloudata.tf1D1" tstr="没错，一般是这样" fstr="不对，不是真的"></choose>
+    <div ng-show="cloudata.tf1D1==='true'">
+        <h2>是吗？总是真的吗？任何情况下都是真的？</h2>
+        <choose id="tf2D1" model="cloudata.tf2D1" tstr="是的，总是真的" fstr="不一定，有时不是真的"></choose>
+        <div ng-show="cloudata.tf2D1==='true'">
+            <h2>好的，那我个分析下一个假设：点“下一步”。</h2>
+        </div>
+    </div>
+    <answer tf1="cloudata.tf1D1" tf2="cloudata.tf2D1" model="cloudata.answerD1"></answer>
+    <solution tf1="cloudata.tf1D1" tf2="cloudata.tf2D1" model="cloudata.solutionD"></solution>
+</div>
+<div class="reveal-animation noprint" ng-show="step===11">
+    <h1>分析前提假设</h1>
+    <h2>【{{cloudata.partyB}}】为了（{{cloudata.requireB}}）而必须（{{cloudata.actionB}}）：</h2>
+    <h2>因为（{{cloudata.reasonB1}}），是真的吗？</h2>
+
+    <choose id="tf1B1" model="cloudata.tf1B1" tstr="没错，一般是这样" fstr="不对，不是真的"></choose>
+    <div ng-show="cloudata.tf1B1==='true'">
+        <h2>是吗？总是真的吗？任何情况下都是真的？</h2>
+        <choose id="tf2B1" model="cloudata.tf2B1" tstr="是的，总是真的" fstr="不一定，有时不是真的"></choose>
+        <div ng-show="cloudata.tf2B1==='true'">
+            <h2>好的，那我个分析下一个假设：点“下一步”。</h2>
+        </div>
+    </div>
+    <answer tf1="cloudata.tf1B1" tf2="cloudata.tf2B1" model="cloudata.answerB1"></answer>
+    <solution tf1="cloudata.tf1B1" tf2="cloudata.tf2B1" model="cloudata.solutionB"></solution>
+</div>
+<div class="reveal-animation noprint" ng-show="step===12">
+    <h1>分析前提假设</h1>
+    <h2>【{{cloudata.partyC}}】为了（{{cloudata.requireC}}）而必须（{{cloudata.actionC}}）：</h2>
+    <h2>因为（{{cloudata.reasonC1}}），是真的吗？</h2>
+
+    <choose id="tf1C1" model="cloudata.tf1C1" tstr="没错，一般是这样" fstr="不对，不是真的"></choose>
+    <div ng-show="cloudata.tf1C1==='true'">
+        <h2>是吗？总是真的吗？任何情况下都是真的？</h2>
+        <choose id="tf2C1" model="cloudata.tf2C1" tstr="是的，总是真的" fstr="不一定，有时不是真的"></choose>
+        <div ng-show="cloudata.tf2C1==='true'">
+            <h2>好的，那我个分析下一个假设：点“下一步”。</h2>
+        </div>
+    </div>
+    <answer tf1="cloudata.tf1C1" tf2="cloudata.tf2C1" model="cloudata.answerC1"></answer>
+    <solution tf1="cloudata.tf1C1" tf2="cloudata.tf2C1" model="cloudata.solutionC"></solution>
+</div>
+<p class="noprint"></p>
+<p class="noprint">如果思路不很清晰，可点击“演示”参考。</p>
+<div class="noprint">
+    <button ng-click="demo01()" class="btn btn-primary">{{isDemo?"cloud.revert":"cloud.demo" | translate}}01</button>
+    <button ng-click="demo02()" class="btn btn-primary">{{isDemo?"cloud.revert":"cloud.demo" | translate}}02</button>
+    <button ng-show="step>0" ng-click="pre()" class="btn btn-primary">上一步</button>
+    <button ng-click="next()" class="btn btn-primary">下一步</button>
+</div>
+<div class="noprint">
+    <button ng-show="step>=9" ng-click="print()" class="btn btn-primary">{{"print" | translate}}</button>
+    <label ng-show="step>=9">打印时请选择A4纸、横版、去掉页眉页脚，并调整而边距到适合宽度。</label>
+</div>
+
+<div class="reveal-animation" ng-show="step>=0">
+    <h1>{{cloudata.title}}</h1>
+    <p class="noprint">{{cloudata.story}}</p>
+    <div class="svg-cloud-tmp" style="height:600px">
+        <svg id="toccloud" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <g transform="scale(0.8,0.8)">
+
+                <marker id="triangle" viewBox="0 0 10 10" refX="0" refY="5" markerUnits="strokeWidth"
+                markerWidth="8" markerHeight="6" orient="auto">
+                    <path d="M 0 0 L 10 5 L 0 10 z" />
+                </marker>
+
+                <g transform="translate(-100,0)">
+                    <g ng-show="step>=6 && cloudata.reasonB1">
+                        <rect x="200" y="10" width="700" height="130" class="rectWho" />
+                        <foreignObject x="200" y="10" width="700" height="130">
+                            <ul class="rectReason">
+                                <li><span ng-class="cloudata.answerB1?'answered':''">{{cloudata.reasonB1}}</span>
+                                    <span ng-show="cloudata.answerB1">（{{cloudata.answerB1}}）</span>
+                                </li>
+                                <li>{{cloudata.reasonB2}}</li>
+                                <li>{{cloudata.reasonB3}}</li>
+                            </ul>
+                        </foreignObject>
+                        <line x1="595" y1="205" x2="580" y2="150" marker-end="url(#triangle)" stroke="black"
+                        stroke-width="2" title="C2A" />
+                    </g>
+
+                    <g ng-show="step>=7 && cloudata.reasonC1">
+                        <rect x="200" y="470" width="700" height="130" class="rectWho" />
+                        <foreignObject x="200" y="470" width="700" height="130">
+                            <ul class="rectReason">
+                                <li>{{cloudata.reasonC1}}</li>
+                                <li>{{cloudata.reasonC2}}</li>
+                                <li>{{cloudata.reasonC3}}</li>
+                            </ul>
+                        </foreignObject>
+                        <line x1="595" y1="405" x2="580" y2="460" marker-end="url(#triangle)" stroke="black"
+                        stroke-width="2" title="C2A" />
+                    </g>
+
+                    <g ng-show="step>=8 && cloudata.reasonD1">
+                        <rect x="950" y="40" width="270" height="540" class="rectWho" />
+                        <foreignObject x="950" y="40" width="270" height="540">
+                            <ul class="rectReason">
+                                <li>{{cloudata.reasonD1}}</li>
+                                <li>{{cloudata.reasonD2}}</li>
+                                <li>{{cloudata.reasonD3}}</li>
+                            </ul>
+                        </foreignObject>
+                        <line x1="950" y1="300" x2="765" y2="300" marker-end="url(#triangle)" stroke="black"
+                        stroke-width="2" title="C2A" />
+                    </g>
+
+                    <g transform="translate(-50,135)">
+                        <g ng-show="step>=5 && cloudata.goalA">
+                            <rect x="160" y="70" rx="20" ry="20" width="150" height="200" class="rectStyle"
+                            title="GoalA" />
+                            <foreignObject x="160" y="70" rx="20" ry="20" width="150" height="200">
+                                <div class="textGoal">{{cloudata.goalA}}</div>
+                            </foreignObject>
+                            <line x1="350" y1="70" x2="315" y2="160" marker-end="url(#triangle)" stroke="black"
+                            stroke-width="2" title="B2A" />
+                            <line x1="350" y1="270" x2="315" y2="180" marker-end="url(#triangle)" stroke="black"
+                            stroke-width="2" title="C2A" />
+                        </g>
+
+                        <g ng-show="step>=3 && cloudata.requireB">
+                            <rect x="350" y="20" rx="20" ry="20" width="250" height="100" class="rectStyle"
+                            title="RequireB" />
+                            <foreignObject x="350" y="20" rx="20" ry="20" width="250" height="100">
+                                <div class="rectText">{{cloudata.requireB}}</div>
+                            </foreignObject>
+                            <line x1="680" y1="70" x2="610" y2="70" marker-end="url(#triangle)" stroke="black"
+                            stroke-width="2" title="B2B" />
+                        </g>
+
+                        <g ng-show="step>=4 && cloudata.requireC">
+                            <rect x="350" y="220" rx="20" ry="20" width="250" height="100" class="rectStyle"
+                            title="RequireC" />
+                            <foreignObject x="350" y="220" rx="20" ry="20" width="250" height="100">
+                                <div class="rectText">{{cloudata.requireC}}</div>
+                            </foreignObject>
+                            <line x1="680" y1="270" x2="610" y2="270" marker-end="url(#triangle)" stroke="black"
+                            stroke-width="2" title="C2C" />
+                        </g>
+
+                        <g ng-show="step>=2 && (cloudata.actionB || cloudata.solutionB)">
+                            <rect x="680" y="20" rx="20" ry="20" width="250" height="100" ng-class="cloudata.solutionB?'solution':''"
+                            class="rectStyle" />
+                            <foreignObject x="680" y="20" rx="20" ry="20" width="250" height="100">
+                                <div class="rectText">{{cloudata.solutionB?cloudata.solutionB:cloudata.actionB}}</div>
+                            </foreignObject>
+                        </g>
+
+                        <g ng-show="step>=2 && cloudata.actionC">
+                            <rect x="680" y="220" rx="20" ry="20" width="250" height="100" class="rectStyle"
+                            />
+                            <foreignObject x="680" y="220" rx="20" ry="20" width="250" height="100">
+                                <div class="rectText">{{cloudata.actionC}}</div>
+                            </foreignObject>
+                        </g>
+
+                        <g ng-show="step>=3 && cloudata.actionB && cloudata.actionC">
+                            <polyline points="805 120 800 170 810 170 805 220" stroke="black" stroke-width="2"
+                            title="B2C" />
+                        </g>
+
+                        <g ng-show="step>=2">
+                            <g ng-show="cloudata.partyB">
+                                <rect x="935" y="40" width="60" height="50" class="rectWho" />
+                                <foreignObject x="935" y="40" width="60" height="50">
+                                    <div class="rectName">{{cloudata.partyB}}</div>
+                                </foreignObject>
+                            </g>
+                            <g ng-show="cloudata.partyC">
+                                <rect x="935" y="250" width="60" height="50" class="rectWho" />
+                                <foreignObject x="935" y="250" width="60" height="50">
+                                    <div class="rectName">{{cloudata.partyC}}</div>
+                                </foreignObject>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </div>
+    <!-- svg-adaptor svgid="toccloud" ng-transclude="">
+        <right-rounded-rect id="rrr01" x="100" y="100" width="200" height="180" radius="30" class="rrr"></right-rounded-rect>
+        <link-arrow id='la02' x1='50' y1='300' x2='20' y2='50'
+        stroke-width='2' stroke='#069' class="linkarrow"></link-arrow>
+    </svg-adaptor -->
+
+</div>
