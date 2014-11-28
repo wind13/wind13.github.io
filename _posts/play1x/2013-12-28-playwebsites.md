@@ -22,3 +22,6 @@ lang: zh
 
 *  [吃得易](http://www.chideyi.com/)
 
+*  [CNSPOC云课程平台](http://www.cnspoc.com/)
+
+*  [取号啦](http://www.quhao.la)
