@@ -9,7 +9,9 @@ lang: zh
 
 play在cmd 下，system.out()输出的中文都是乱码
 
-chcp 65001 / chcp 936 改变cmd字符集都不行
+首先，可参考：[cmd chcp命令切换字符格式](http://blog.csdn.net/xiezechang/article/details/8544292)
+
+如果 chcp 65001 / chcp 936 改变cmd字符集都不行
 
 参考：[http://www.oschina.net/news/19463/play-framework-1-2-2](http://www.oschina.net/news/19463/play-framework-1-2-2)
 
