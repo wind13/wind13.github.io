@@ -14,9 +14,14 @@
 <script>
 $(function(){
     $("#btnTrans").click(function(){
-        var json = JSON.parse($("#jsonTextArea").val());
-        var table = ConvertJsonToTable(json, "tableData", null, "linkText")
-        $("#divTable").html(table);
+        try {
+            var json = JSON.parse($("#jsonTextArea").val());
+            var table = ConvertJsonToTable(json, "tableData", null, "linkText")
+            $("#divTable").html(table);
+        } catch(e) {
+            alert(" 必须填入合法的 json 数据，请检查后再试。");
+            console.debug(e);
+        }
     });
 });
 </script>
