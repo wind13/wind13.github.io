@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="./js/j2t.js"></script>
+    <title>Json to Table</title>
+</head>
+<body>
+<h1>将 json 转换为 table 的小工具</h1>
+<textarea id="jsonTextArea" rows="8" cols="80"></textarea>
+<button id="btnTrans">转换</button>
+<div id="divTable"></div>
+<script>
+$(function(){
+    $("#btnTrans").click(function(){
+        var json = JSON.parse($("#jsonTextArea").val());
+        var table = ConvertJsonToTable(json, "tableData", null, "linkText")
+        $("#divTable").html(table);
+    });
+});
+</script>
+</body>
+</html>
