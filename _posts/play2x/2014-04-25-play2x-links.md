@@ -8,4 +8,5 @@ lang: zh
 ---
 
 * [Scala 课堂](http://twitter.github.io/scala_school/zh_cn/index.html)
+* [Scala Tutorial: Getting Started with Scala](https://blog.udemy.com/scala-tutorial-getting-started-with-scala/)
 * [Play2开发的CMS系统](http://www.blingblocks.org/en/)
