@@ -16,6 +16,7 @@ lang: zh
 
 * [TOC疑云图小工具](/example/jsui/thinktools/#/cloud) （使用 AngularJS 开发）
 * [BSC权重小工具](/example/bscmin.html) （使用 EmberJS 开发）
+* [JSON 转 Table 的小工具](/example/json2table.html)
 
 ## 学用Play!和Scala做软件
 
