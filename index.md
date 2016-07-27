@@ -112,7 +112,7 @@ lang: zh
 
 如果您需要信息化方面一些好的解决方案，
 
-请给我发邮件：service AT playscala DOT com！
+请给我发邮件：wind13 AT 163 DOT com！
 
 当然，你也可以说点别的……
 
