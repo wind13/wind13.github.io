@@ -1,9 +1,9 @@
 ---
 layout: page
 category : Pages
-title: 欢迎光临 PlayScala 知识站
-tagline: "PlayScala is Great!"
-tags : [play1]
+title: 欢迎光临 Wind13 的 Blog
+tagline: "Wind13 is a programmer!"
+tags : [wind13]
 lang: zh
 ---
 {% include custom/setup %}
@@ -119,4 +119,3 @@ lang: zh
 
 环境保护，只要你是人类，就应该反思！从节约资源开始吧！
 志同道合（[做个环保主义的程序员](http://coolshell.cn/articles/7186.html)）的技术博客：[酷壳CoolShell](http://coolshell.cn/)
-
