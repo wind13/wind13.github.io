@@ -1,8 +1,8 @@
 ---
 layout: post
 category : playscala
-tagline: "PlayScala is Great!"
-tags : [playscala]
+tagline: "Date format"
+tags : [devtech java]
 lang: zh
 ---
 # String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型
@@ -24,7 +24,7 @@ Date.valueOf("yyyy-MM-dd")
 则需使用：
 
 	:::java
-	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
+	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	sdf.parse(String);
 	需要添加try/catch
 
@@ -33,9 +33,9 @@ Date.valueOf("yyyy-MM-dd")
 
 	:::java
 	String sd = "2012-01-12 11:20:21";
-	
+
 	try {
-	     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
+	     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	     Date sdate =sdf.parse(sd);
 	    } catch (ParseException e) {
 	     e.printStackTrace();
@@ -44,7 +44,7 @@ Date.valueOf("yyyy-MM-dd")
 
 SimpleDateFormat支持的其它格式:
 
-	
+
 	"yyyy.MM.dd G 'at' HH:mm:ss z"  2001.07.04 AD at 12:08:56 PDT  
 	"EEE, MMM d, ''yy"  Wed, Jul 4, '01  
 	"h:mm a"  12:08 PM  
@@ -54,4 +54,3 @@ SimpleDateFormat支持的其它格式:
 	"EEE, d MMM yyyy HH:mm:ss Z"  Wed, 4 Jul 2001 12:08:56 -0700  
 	"yyMMddHHmmssZ"  010704120856-0700  
 	"yyyy-MM-dd'T'HH:mm:ss.SSSZ"  2001-07-04T12:08:56.235-0700  
-
