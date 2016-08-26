@@ -1,7 +1,7 @@
 ---
 layout: page
 category : Pages
-title: 欢迎光临 Wind13 的 Blog
+title: Wind13 的 Blog
 tagline: "Wind13 is a programmer!"
 tags : [wind13]
 lang: zh
