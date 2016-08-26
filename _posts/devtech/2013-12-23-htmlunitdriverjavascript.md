@@ -1,7 +1,6 @@
 ---
 layout: post
 category : playscala
-tagline: "PlayScala is Great!"
 tags : [playscala]
 lang: zh
 ---
@@ -14,4 +13,3 @@ lang: zh
 因为[HtmlUnitDriver默认的javascript引擎是Rhino](http://seleniumhq.org/docs/03_webdriver.html\#javascript-in-the-htmlunit-driver)，所以很多的脚本动作可能无法和在浏览器中一样，不过基本的是以Firefox为准的。
 
 另：[How_do_I_handle_authentication_with_the_HtmlUnitDriver?](http://code.google.com/p/selenium/wiki/FrequentlyAskedQuestions\#Q:_How_do_I_handle_authentication_with_the_HtmlUnitDriver?) 如何在HtmlUnitDriver中加上用户密码验证的方法。
-

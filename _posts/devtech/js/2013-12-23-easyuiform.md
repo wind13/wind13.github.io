@@ -1,9 +1,8 @@
 ---
 layout: post
-categories : devtech js
+categories: devtech js
 title: easyui中form表单的ajax实现
-tagline: "Js is Great!"
-tags : [easyui]
+tags: [easyui]
 lang: zh
 ---
 

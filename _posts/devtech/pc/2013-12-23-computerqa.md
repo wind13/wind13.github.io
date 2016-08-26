@@ -1,8 +1,7 @@
 ---
 layout: post
-category : playscala
-tagline: "PlayScala is Great!"
-tags : [playscala]
+category : pc
+tags : [pc]
 lang: zh
 ---
 # 电脑使用及编程知识问答
@@ -24,18 +23,18 @@ lang: zh
 > 一般情况是grub2未设置好，启动不了。
 > 可先用 Fedora16 LiveCD 或 Fedora16 DVD 启动进入shell，然后找到升级了的Fedora 16的挂载盘，如果是DVD修复的话，会挂在 /mnt/syslinux（记不清了）下，则执行：
 
-	
+
 	chroot /mnt/syslinux
 
 > 执行以下命令可修复grub2：
 
-	
+
 	grub2-mkconfig -o /boot/grub2/gub.cfg
 	grub2-install /dev/sda
 
 > 如果执行第二句时报：Your embedding area is unusually small...，则一般是因为引导区被占用了，比如安装了Win7等，则可执行：
 
-	
+
 	grub2-install --force /dev/sda
 
 > 这样就强制写入grub2的引导信息了，一般情况重启就正常了！
@@ -50,4 +49,3 @@ lang: zh
 *  从Subversion转到Git有相应的工具和方法，参考：[转换你的 Subversion 到 Git](http://leeiio.me/convert-subversion-to-git/) 和 [如何将SVN仓库转换为Git仓库](http://rongjih.blog.163.com/blog/static/3357446120107111449543/)
 
 *  [CentOS下使用Gitolite架构Git服务的步骤](GitoliteSetup)
-

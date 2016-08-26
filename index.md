@@ -22,13 +22,13 @@ lang: zh
 
 ### 本站收集Play1.x相关
 
-*  [停止SSH，用Play!吧]({% post_url /play1x/2013-09-29-stopsshgoplay %})
+*  [停止SSH，用Play!吧]({% post_url 2013-09-29-stopsshgoplay %})
 
-*  [Play!技巧问答]({% post_url /play1x/2014-02-26-playqaindex %})
+*  [Play!技巧问答]({% post_url 2014-02-26-playqaindex %})
 
-*  [国内一些使用Play!框架的网站]({% post_url /play1x/2013-12-28-playwebsites %})
+*  [国内一些使用Play!框架的网站]({% post_url 2013-12-28-playwebsites %})
 
-*  [Xml 域名空间识别问题]({% post_url /play1x/2013-09-26-xmlawarenamespace %})
+*  [Xml 域名空间识别问题]({% post_url 2013-09-26-xmlawarenamespace %})
 
 *  [Playing Play!系列之一：Play框架的暴力美学](http://liuu.iteye.com/blog/599129)
 
@@ -50,21 +50,21 @@ lang: zh
 
 ## 软件开发相关
 
-*  [编程知识链接收集]({% post_url /play1x/2013-09-29-devlinks %})
+*  [编程知识链接收集]({% post_url 2013-09-29-devlinks %})
 
-*  [编程自学之路（个人建议供参考）]({% post_url /play1x/2013-09-29-learnself %})
+*  [编程自学之路（个人建议供参考）]({% post_url 2013-09-29-learnself %})
 
-###  [其他相关技术]({% post_url /devtech/2014-01-09-otherrelay %})
+###  [其他相关技术]({% post_url 2014-01-09-otherrelay %})
 
 ## 管理相关知识
 
 管理从思想上来说是哲学的，从理论上来说是科学的，从操作上来说是艺术的。——余世维
 
-*  [Toc术语]({% post_url /manage/toc/2013-09-29-tocterm %})
+*  [Toc术语]({% post_url 2013-09-29-tocterm %})
 
-*  [如何制定和落实一项有效的改善方案？]({% post_url /manage/toc/2013-10-26-betterplan %})
+*  [如何制定和落实一项有效的改善方案？]({% post_url 2013-10-26-betterplan %})
 
-*  [罗辑思维听后记录]({% post_url /manage/2014-01-10-luojisiwei %})
+*  [罗辑思维听后记录]({% post_url 2014-01-10-luojisiwei %})
 
 ## 常用在线工具
 

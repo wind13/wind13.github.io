@@ -1,7 +1,6 @@
 ---
 layout: post
-category : playscala
-tagline: "Date format"
+category : devtech
 tags : [devtech java]
 lang: zh
 ---

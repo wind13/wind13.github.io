@@ -1,10 +1,10 @@
 ---
 layout: post
-categories : devtech js
 title: ***
-tagline: "Js is Great!"
+description: ""
+categories : devtech js
 tags : javascript framework angularjs
-lang: zh
-
 ---
+{% include JB/setup %}
+
 ## 综合框架

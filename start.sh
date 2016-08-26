@@ -1,1 +1,1 @@
-jekyll server --watch
+jekyll server --watch --drafts
