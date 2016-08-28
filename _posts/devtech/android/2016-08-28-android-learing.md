@@ -2,8 +2,8 @@
 layout: post
 title: "Android Learing"
 description: ""
-category:
-tags: []
+category: devtech/android
+tags: [Android]
 ---
 {% include JB/setup %}
 
