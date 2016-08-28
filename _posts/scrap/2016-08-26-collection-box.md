@@ -24,3 +24,7 @@ tags: static blog website version Clojure todo
 ### [Ferret - A Hard Real-Time Clojure for Lisp Machines](https://nakkaya.com/2016/06/10/ferret-a-hard-real-time-clojure-for-lisp-machines/)
 
 Ferret 可以编译 Clojure 文件到嵌入式机器中。
+
+### [木匠的世界](http://woodgears.ca/)
+
+里面有全球各种木头的玩儿法，木头齿轮什么的~
