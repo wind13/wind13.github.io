@@ -32,3 +32,7 @@ Ferret 可以编译 Clojure 文件到嵌入式机器中。
 ### [WiX](http://www.wix.com/)
 
 在网站上直接修改模板、文字、图片等内容生成网站的服务。
+
+### [IDEA+Tomcat+JRebel热部署](http://wibiline.iteye.com/blog/2073399)
+
+在IDEA上开发Tomcat一类的javaEE项目的姿势。
