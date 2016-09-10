@@ -144,3 +144,35 @@ setProperty
     ViewManagerPropertyUpdater.java:150
 ```
 - 设置的 justifyContent 属性错误，必须是 space-around 等形式。
+
+---
+
+```
+Assert failed: c
+customEval
+    figwheel-bridge.js:75
+<unknown>
+    figwheel-bridge.js:88
+```
+- 某个组件、控件有问题，不能正确render。
+
+---
+
+```
+console.error: "goog.require could not find: figwheel.connect"
+error
+    YellowBox.js:60
+<unknown>
+    figwheel-bridge.js:223
+customEval
+    figwheel-bridge.js:81
+<unknown>
+    figwheel-bridge.js:109
+```
+- 修改了 project.clj 导致的错误，引用了错误的库，退回修改后正常。
+
+---
+
+### 另外，请参考：
+
+- [React native开发中常见的错误](http://blog.csdn.net/xiangzhihong8/article/details/52223578)
