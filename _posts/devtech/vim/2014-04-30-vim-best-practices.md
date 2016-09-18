@@ -8,6 +8,10 @@ lang: zh
 
 ---
 
+以下是初入门时的姿势，现在完全不用这么麻烦，直接用[dot-vimrc](https://github.com/humiaozuzu/dot-vimrc)即可。
+
+---
+
 在 Mac OS X 上使用 Vim 真的是很享受，所以决定要用好这个工具，以下记录下本人的最佳实践：
 
 * 首先面临一个选择，是用 MacVim 还是 终端（Terminate）？我的选择是终端，不过我进一步选择了 iTerm2，功能强大些，界面漂亮些，再加上 [Tomorrow](https://github.com/chriskempson/tomorrow-theme) 的主题，就更爽了，呵呵……选择原因如下：
@@ -30,7 +34,7 @@ lang: zh
 * Vim-airline 的颜色需要在.vimrc中设置：set t_Co=256，theme的更换可设置：let g:airline_theme="molokai"
 * 一篇 Vim diff 比较文档的用法，[技巧：Vimdiff 使用](https://www.ibm.com/developerworks/cn/linux/l-vimdiff/)
 * 一些使用 Vim 进行 Scala 编程的参考文档：
-    * [My Vim setup for Scala](http://bleibinha.us/blog/2013/08/my-vim-setup-for-scala) 
+    * [My Vim setup for Scala](http://bleibinha.us/blog/2013/08/my-vim-setup-for-scala)
     * [Coding Scala with Vim](http://derekwyatt.org/2013/12/31/coding-scala-with-vim.html)
     * [Editing Scala with vim](http://leonard.io/blog/2013/04/editing-scala-with-vim/)
     * [Vim Scala IDE (VimSIde) built upon ENSIME](https://github.com/megaannum/vimside)
