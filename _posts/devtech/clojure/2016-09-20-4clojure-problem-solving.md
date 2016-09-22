@@ -91,22 +91,47 @@ adereth's solution:
 ```
 
 ### [#35](http://www.4clojure.com/problem/35)
-```
+```clojure
 7
 ```
 ### [#37](http://www.4clojure.com/problem/37)
-```
+```clojure
 "ABC"
 ```
 ### [#64](http://www.4clojure.com/problem/64)
-```
+```clojure
 +
 ```
 ### [#57](http://www.4clojure.com/problem/57)
-```
+```clojure
 '(5 4 3 2 1)
 ```
 ### [#71](http://www.4clojure.com/problem/71)
-```
+```clojure
 last
+```
+### [#68](http://www.4clojure.com/problem/68)
+```clojure
+'(7 6 5 4 3)
+```
+adereth's solution:
+```clojure
+[7 6 5 4 3]
+```
+### [#72](http://www.4clojure.com/problem/72)
+```clojure
+apply +
+```
+adereth's solution:
+```clojure
+#(reduce + %)
+```
+
+### [#134](http://www.4clojure.com/problem/134)
+```clojure
+#(= nil (get %2 %1 0))
+```
+adereth's solution:
+```clojure
+#(nil? (get %2 % true))
 ```

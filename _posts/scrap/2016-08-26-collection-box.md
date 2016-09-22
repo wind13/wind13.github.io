@@ -48,3 +48,9 @@ Ferret 可以编译 Clojure 文件到嵌入式机器中。
 ### [Devcards](https://github.com/bhauman/devcards) aims to provide ClojureScript developers with an interactive visual REPL.
 
 给ClojureScript开发，提供一个方便的界面效果测试功能。
+
+### [PhxSQL]https://github.com/tencent-wechat/phxsql
+
+PhxSQL是一个通过Paxos保证强一致和高可用的的MySQL集群。
+
+A high availability MySQL cluster that guarantees data consistency between a master and slaves.
