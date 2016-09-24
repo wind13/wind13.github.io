@@ -98,13 +98,18 @@ adereth's solution:
 ```clojure
 "ABC"
 ```
-### [#64](http://www.4clojure.com/problem/64)
+### [#52](http://www.4clojure.com/problem/52)
 ```clojure
-+
+[c e]
 ```
+
 ### [#57](http://www.4clojure.com/problem/57)
 ```clojure
 '(5 4 3 2 1)
+```
+### [#64](http://www.4clojure.com/problem/64)
+```clojure
++
 ```
 ### [#71](http://www.4clojure.com/problem/71)
 ```clojure
@@ -134,4 +139,30 @@ adereth's solution:
 adereth's solution:
 ```clojure
 #(nil? (get %2 % true))
+```
+
+### [#145](http://www.4clojure.com/problem/145)
+```clojure
+[1 5 9 13 17 21 25 29 33 37]
+```
+
+### [#156](http://www.4clojure.com/problem/156)
+```clojure
+#(apply merge (map (fn [k] {k %1}) %2))
+```
+```clojure
+#(apply array-map (mapcat (fn [k] [k %1]) %2))
+```
+adereth's solution:
+```clojure
+(fn [default values] (reduce #(assoc %1 %2 default) {} values))
+```
+
+### [#161](http://www.4clojure.com/problem/161)
+```clojure
+#{1 2}
+```
+### [#162](http://www.4clojure.com/problem/162)
+```clojure
+1
 ```
