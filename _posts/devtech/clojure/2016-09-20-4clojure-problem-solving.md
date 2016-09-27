@@ -90,6 +90,80 @@ adereth's solution:
 #(first (drop %2 %1))
 ```
 
+### [#22](http://www.4clojure.com/problem/22)
+
+```clojure
+#(reduce (fn [a b] (inc a)) 0 %)
+```
+
+adereth's solution:
+
+```clojure
+(fn [sequence] (reduce (fn [acc v] (inc acc)) 0 sequence))
+```
+
+### [#23](http://www.4clojure.com/problem/23)
+
+```clojure
+#(reduce (fn [rs ls] (cons ls rs)) [] %)
+```
+
+adereth's solution:
+
+```clojure
+(fn [s]
+  (loop [result []
+         s s]
+    (if (seq s)
+      (recur (concat [(first s)] result) (rest s))
+      result)))
+```
+
+### [#24](http://www.4clojure.com/problem/24)
+
+```clojure
+#(reduce + %)
+```
+
+adereth's solution:
+
+```clojure
+apply +
+```
+
+### [#25](http://www.4clojure.com/problem/25)
+
+```clojure
+#(filter odd? %)
+```
+
+adereth's solution:
+
+```clojure
+filter odd?
+```
+
+### [#26](http://www.4clojure.com/problem/26)
+```clojure
+#(take % ((fn fib [a b]
+            (lazy-seq (cons a (fib b (+ b a))))) 1 1))
+```
+
+adereth's solution:
+
+```clojure
+#(take %
+  (map first
+    (iterate (fn [[i1 i2]]
+      [i2 (+ i1 i2)])
+      [1 1])))
+```
+
+### [#27](http://www.4clojure.com/problem/27)
+```clojure
+#(= (reverse %) (seq %))
+```
+
 ### [#35](http://www.4clojure.com/problem/35)
 ```clojure
 7
