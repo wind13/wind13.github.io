@@ -11,4 +11,10 @@ tags: [clojure]
 
 ## 相关网站资料
 
-### [oakes/paren-soup](https://github.com/oakes/paren-soup) A browser-based editor for ClojureScript
+### [oakes/paren-soup](https://github.com/oakes/paren-soup)
+
+A browser-based editor for ClojureScript
+
+### [maven及clojars镜像](http://lbp0200-maven.daoapp.io/)
+
+可以解决国内连接clojars慢的问题。

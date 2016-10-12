@@ -69,6 +69,9 @@ tags : [mindmap, plan]
 4. 思考后期方向；
   - 微信应用开发
   - 让时间分发更多份
+  - 做微信小程序的clojure开发模板
+  - 用 Electron 做 Tocdo 的桌面应用
+  - 持续关注 React Native，Weex 和 
 
 上面爱好维度的这些技能特长是不同的维度，如何结合而形成特殊的竞争力？
 

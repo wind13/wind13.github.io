@@ -54,3 +54,31 @@ Ferret 可以编译 Clojure 文件到嵌入式机器中。
 PhxSQL是一个通过Paxos保证强一致和高可用的的MySQL集群。
 
 A high availability MySQL cluster that guarantees data consistency between a master and slaves.
+
+### [data-scope](https://github.com/jsofra/data-scope)
+
+将数据格式化，或变成图形的clojure库，支持[pretty print系列](https://github.com/jsofra/data-scope#pretty-print)、[graph viz系列](https://github.com/jsofra/data-scope#graphs)和[chart系列](https://github.com/jsofra/data-scope#charts)。
+
+### [g9.js](http://omrelli.ug/g9/gallery/) ([github](https://github.com/bijection/g9))
+
+automatically interactive graphics
+
+交互式图形svg生成库
+
+### [Leaflet.js](http://leafletjs.com/)
+
+an open-source JavaScript library for mobile-friendly interactive maps
+
+移动端友好的交互式地图开源js库
+
+### [细说 webpack 之流程篇](http://taobaofed.org/blog/2016/09/09/webpack-flow/)
+
+详细说明了 webpack 的流程。
+
+### [Element 网站快速成型工具](http://element.eleme.io/)
+
+Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的组件库，提供了配套设计资源，帮助你的网站快速成型。（饿了么推出）
+
+### [Spacemacs for vim](https://github.com/ctjhoa/spacevim)
+
+Vim 上的 Spacemacs

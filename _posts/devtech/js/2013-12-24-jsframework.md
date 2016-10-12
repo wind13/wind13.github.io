@@ -19,7 +19,7 @@ lang: zh
   * BravoJS
   * [Require.js](http://requirejs.org/)
   * FlyScript
-  * [AlmondJS](https///github.com/jrburke/almond) A minimal AMD API implementation for use after optimized builds 
+  * [AlmondJS](https///github.com/jrburke/almond) A minimal AMD API implementation for use after optimized builds
   * [Amdjs](https///github.com/amdjs/amdjs-api/wiki/AMD) The Asynchronous Module Definition (AMD) API specifies a mechanism for defining modules such that the module and its dependencies can be asynchronously loaded.
   * [ozjs](https///github.com/dexteryy/OzJS) 土豆网的开源模块加载js库
 
@@ -30,11 +30,12 @@ lang: zh
   * [Eco](https///github.com/sstephenson/eco/): Embedded CoffeeScript templates
   * [Jade](http://jade-lang.com/): Node Template Engine
 
-## MVC框架 （初步选择Emberjs，Knockoutjs 和 Canjs）
+## MVXX框架 （初步选择Emberjs，Knockoutjs 和 Canjs）
 
   * [The Top 10 Javascript MVC Frameworks Reviewed](http://codebrief.com/2012/01/the-top-10-javascript-mvc-frameworks-reviewed/)
   * [TodoMVC](https///github.com/addyosmani/todomvc) 「[官网](http://todomvc.com/)」A common learning application for popular JavaScript MV* frameworks
   * [最佳实践之 Javascript MVC](http://xhh.me/2012/06/best-practices-js-mvc.html)
+  * [Vue.js v2.0 中文](http://vuefe.cn/) [官网](http://vuejs.org/)
   * [Backbone.js](http://documentcloud.github.com/backbone/)
     * [Backbone.js vs Ember.js](http://www.johng.co.uk/2012/01/11/backbone.js-vs-ember.js/)
     * [What are the key differences between Ember.js (formerly SproutCore 2.0) and Backbone.js?](http://www.quora.com/What-are-the-key-differences-between-Ember-js-formerly-SproutCore-2-0-and-Backbone-js)

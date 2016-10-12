@@ -159,9 +159,40 @@ adereth's solution:
       [1 1])))
 ```
 
+### [#29](http://www.4clojure.com/problem/29)
+```clojure
+#(clojure.string/replace % #"[^A-Z]" "")
+```
+
+adereth's solution:
+
+```clojure
+(fn [s] (reduce str (filter #(Character/isUpperCase %) s)))
+```
+
 ### [#27](http://www.4clojure.com/problem/27)
 ```clojure
 #(= (reverse %) (seq %))
+```
+
+### [#32](http://www.4clojure.com/problem/32)
+```clojure
+#(mapcat (fn [s] [s s]) %)
+```
+
+### [#34](http://www.4clojure.com/problem/34)
+```clojure
+#((fn rng [s n r]
+    (if (< s n)
+      (rng (inc s) n (conj r s))
+      r)) %1 %2 [])
+```
+adereth's solution:
+```clojure
+(fn [start end] (take-while #(< % end)
+                            (iterate inc start)
+                            )
+  )
 ```
 
 ### [#35](http://www.4clojure.com/problem/35)
@@ -172,6 +203,23 @@ adereth's solution:
 ```clojure
 "ABC"
 ```
+### [#38](http://www.4clojure.com/problem/38)
+```clojure
+(fn [& s] (reduce (fn mx [a b] (if (> a b) a b)) s))
+```
+
+adereth's solution:
+
+```clojure
+(fn [ & xs ]
+  (reduce #(if (> %1 %2) %1 %2) xs))
+```
+
+### [#48](http://www.4clojure.com/problem/48)
+```clojure
+6
+```
+
 ### [#52](http://www.4clojure.com/problem/52)
 ```clojure
 [c e]
@@ -240,3 +288,7 @@ adereth's solution:
 ```clojure
 1
 ```
+
+## Another solution
+
+[Solutions to 4Clojure Easy Problems](http://www.anthony-galea.com/blog/post/solutions-to-4clojure-easy-problems/)
