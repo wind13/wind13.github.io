@@ -175,6 +175,44 @@ adereth's solution:
 #(= (reverse %) (seq %))
 ```
 
+### [#28](http://www.4clojure.com/problem/28)
+```clojure
+(defn cci [ls r]
+  (if (every? sequential? ls)
+    (concat r ls)
+    (apply cci r (partition-by sequential? ls))))
+
+#(let [f (first %)]
+  (if (sequential? f)
+    )
+  conj [] (first %))
+```
+
+### [#30](http://www.4clojure.com/problem/30)
+```clojure
+#((fn dis [ss l r]
+    (if-let [f (first ss)]
+      (let [rss (rest ss)]
+      	(if (= l f)
+        	(dis rss f r)
+        	(dis rss f (conj r f))))
+      r)) % nil [])
+```
+```clojure
+#((fn dis [ss l r]
+    (let [[f & s] ss]
+      (cond
+        (nil? f) r
+        (= l f) (dis s f r)
+        :else (dis s f (conj r f))))) % nil [])
+```
+
+adereth's solution:
+
+```clojure
+#(map first (partition-by identity %))
+```
+
 ### [#32](http://www.4clojure.com/problem/32)
 ```clojure
 #(mapcat (fn [s] [s s]) %)
@@ -214,6 +252,18 @@ adereth's solution:
 (fn [ & xs ]
   (reduce #(if (> %1 %2) %1 %2) xs))
 ```
+
+### [#42](http://www.4clojure.com/problem/42)
+```clojure
+#((fn factorial [n r]
+  (if (= n 1) r (factorial (dec n) (* n r)))) % 1)
+```
+
+adereth's solution:
+```clojure
+#(reduce * (range 1 (inc %)))
+```
+
 
 ### [#48](http://www.4clojure.com/problem/48)
 ```clojure

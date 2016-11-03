@@ -18,3 +18,7 @@ A browser-based editor for ClojureScript
 ### [maven及clojars镜像](http://lbp0200-maven.daoapp.io/)
 
 可以解决国内连接clojars慢的问题。
+
+### [Qinais/WeChat](https://github.com/qinains/wechat)
+
+一个基于Clojure语言的微信开发库
