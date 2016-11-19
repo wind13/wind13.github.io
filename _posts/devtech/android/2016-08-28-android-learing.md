@@ -34,3 +34,5 @@ sdk install gradle 3.0
 ### [XCL-Charts](https://github.com/xcltapestry/XCL-Charts)
 
 Android图表库(XCL-Charts is a free charting library for Android platform.)
+
+### [App Splash Screen Sizes](https://github.com/phonegap/phonegap/wiki/App-Splash-Screen-Sizes){:target="_blank"}
