@@ -15,3 +15,5 @@ tags: [angular]
  - [Angular 2 Components: Inputs and Outputs](https://www.sitepoint.com/angular-2-components-inputs-outputs/){:target="_blank"}
  - [The impure AsyncPipe](https://angular.io/docs/ts/latest/guide/pipes.html){:target="_blank"}
  - [Angular2 管道（pipes）](http://asdfblog.com/angular2-pipes.html){:target="_blank"}
+ - [[Angular 2] Build a select dropdown with *ngFor in Angular 2](http://www.cnblogs.com/Answer1215/p/5308130.html){:target="_blank"}
+ - [JavaScript Array Methods Reference](https://www.impressivewebs.com/javascript-array-methods-reference/){:target="_blank"}
