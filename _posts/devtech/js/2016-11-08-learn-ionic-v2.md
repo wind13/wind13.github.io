@@ -19,6 +19,7 @@ tags: [angular]
  - [Form validation is not working with Angular 2 FormBuilder in Ionic 2](http://stackoverflow.com/questions/39739979/form-validation-is-not-working-with-angular-2-formbuilder-in-ionic-2){:target="_blank"}
  - [Checkbox Group handling and Validation in Angular2](http://stackoverflow.com/questions/39674718/checkbox-group-handling-and-validation-in-angular2/39736803){:target="_blank"}
  - [ionic2+angular2中踩的那些坑](http://www.cnblogs.com/yanxiaodi/p/5750860.html)
+ - [(Ionic 2) Getting data from php services is undefined](http://stackoverflow.com/questions/37618000/ionic-2-getting-data-from-php-services-is-undefined/37650922)
  - 报以下错误，是因为 providers 填错了，应该只填 Service：
 
 ```
