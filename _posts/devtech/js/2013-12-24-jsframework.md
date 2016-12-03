@@ -22,6 +22,9 @@ lang: zh
   * [AlmondJS](https///github.com/jrburke/almond){:target="_blank"} A minimal AMD API implementation for use after optimized builds
   * [Amdjs](https///github.com/amdjs/amdjs-api/wiki/AMD){:target="_blank"} The Asynchronous Module Definition (AMD) API specifies a mechanism for defining modules such that the module and its dependencies can be asynchronously loaded.
   * [ozjs](https///github.com/dexteryy/OzJS){:target="_blank"} 土豆网的开源模块加载js库
+  * [npmjs](https://www.npmjs.com/){:target="_blank"} 后端依赖加载工具，包管理工具
+  * [Yarn](https://yarnpkg.com/){:target="_blank"} 后端依赖加载工具，包管理工具
+  * [UMD](https://github.com/umdjs/umd){:target="_blank"}
 
 ## 模板框架
 
@@ -112,6 +115,7 @@ lang: zh
 ## 脚本压缩打包工具
 
   * [TUICompiler](https///github.com/dexteryy/TUICompiler){:target="_blank"} 土豆网的js打包工具
+  * [Webpack 2 入门教程](https://llp0574.github.io/2016/11/29/getting-started-with-webpack2/){:target="_blank"}
 
 ## 脚本牛人博客
 
@@ -148,3 +152,8 @@ lang: zh
   * [REGex TESTER](http://www.regextester.com/){:target="_blank"}
   * [JavaScript 正则表达式在线测试工具](http://tools.jb51.net/tools/regex.asp){:target="_blank"}
   * [regexpal](http://regexpal.com/){:target="_blank"} 0.1.4 — a JavaScript regular expression tester
+
+## CSS 相关
+
+  * [PostCSS](http://postcss.org/){:target="_blank"} A tool for transforming CSS with JavaScript
+  * [CSSNext](http://cssnext.io/){:target="_blank"} Use tomorrow’s CSS syntax, today.

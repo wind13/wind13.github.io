@@ -10,6 +10,9 @@ tags: [angular]
 ## 基础
 
  - [ionic2文档整理](http://rainey.space/2016/04/06/Ionic2_Chinese_Document/)
+ - [A Guide to Styling an Ionic 2 Application](http://www.joshmorony.com/a-guide-to-styling-an-ionic-2-application/)
+ - [Tips & Tricks for Styling Ionic 2 Applications](http://www.joshmorony.com/tips-tricks-for-styling-ionic-2-applications/)
+ - [User-Selected Style Themes in an Ionic 2 Application](https://webcake.co/theming-an-ionic-2-application/)
 
 ## 问题
 
