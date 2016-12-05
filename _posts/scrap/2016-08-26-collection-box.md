@@ -9,6 +9,10 @@ tags: static blog website version Clojure todo
 
 ## 链接收集
 
+### [网页设计巅峰之作](https://zhuanlan.zhihu.com/p/24083839){:target="_blank"}
+
+### [为 Web 开发者提供的 16 本优秀的 E-BOOK](https://gold.xitu.io/post/58439d2aa22b9d006c215e50){:target="_blank"}
+
 ### [语义化版本 2.0.0](http://semver.org/lang/zh-CN/#section){:target="_blank"}
 
 软件的版本号不是随便乱起的，这里有相应的说明和规范。

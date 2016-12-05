@@ -13,6 +13,9 @@ tags: [angular]
  - [A Guide to Styling an Ionic 2 Application](http://www.joshmorony.com/a-guide-to-styling-an-ionic-2-application/)
  - [Tips & Tricks for Styling Ionic 2 Applications](http://www.joshmorony.com/tips-tricks-for-styling-ionic-2-applications/)
  - [User-Selected Style Themes in an Ionic 2 Application](https://webcake.co/theming-an-ionic-2-application/)
+ - [Vonic简明教程（一）：起步](http://im.dahoo.wang/2016/12/03/Vonic%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E8%B5%B7%E6%AD%A5/){:target="_blank"}
+ - [SQLite plugin](https://github.com/litehelpers/Cordova-sqlite-storage){:target="_blank"}
+ - [Cordova plugin NativeStorage](https://github.com/TheCocoaProject/cordova-plugin-nativestorage){:target="_blank"}
 
 ## 问题
 
@@ -41,15 +44,17 @@ metadata_resolver.js:499 Uncaught Error: Can't resolve all parameters for Projec
 
 如，将：
 
-```
+```javascript
 @Component({
   selector: 'page-prj-detail',
   templateUrl: 'prj-detail.html',
   providers: [Project]
 }
 ```
+
 改为：
-```
+
+```javascript
 @Component({
   selector: 'page-prj-detail',
   templateUrl: 'prj-detail.html',
@@ -73,3 +78,43 @@ at Object.next (http://localhost:8100/build/main.js:26130:82)
     at NgZone.triggerError (http://localhost:8100/build/main.js:28451:76)
     at Object.onHandleError (http://localhost:8100/build/main.js:28430:23)
 ```
+
+ - 编译时遇到这个错误：
+
+```
+[23:13:04]  Error: Error at [project path]/.tmp/pages/statis/projects.ngfactory.ts:351:29
+[23:13:04]  Supplied parameters do not match any signature of call target.
+[23:13:04]  ngc failed
+[23:13:04]  ionic-app-script task: "build"
+[23:13:04]  Error: Error
+```
+
+一般说明在程序的某处有个方法需求的参数与提供的参数对应不上，在build时无法通过，但在ionic serve时可正常运行，这个错误就比较难找了。这里注意看错误提示，说的是
+
+```
+.tmp/pages/statis/projects.ngfactory.ts
+```
+
+那么就去检查 /pages/statis/projects.ts 文件中的相应方法的参数吧！
+
+
+ - 编译时遇到这个错误：
+
+ ```
+ FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':packageDebug'.
+> java.io.FileNotFoundException: /Users/samliu/gits/jing-xi-h5/platforms/android/build/intermediates/assets/debug/www/assets/stub (Is a directory)
+```
+
+这个错误原因不明，但通常再次编译运行就好了。
+
+ - 调试时遇到这个错误：
+
+```
+Application Error
+There was a network error (http://192.168.56.1)
+```
+
+网上查到答案是要添加[whitelist的插件](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist/){:target="_blank"}，然后添加相应的网址到config.xml中。
