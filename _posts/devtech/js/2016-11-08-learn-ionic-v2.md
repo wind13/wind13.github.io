@@ -16,6 +16,7 @@ tags: [angular]
  - [Vonic简明教程（一）：起步](http://im.dahoo.wang/2016/12/03/Vonic%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E8%B5%B7%E6%AD%A5/){:target="_blank"}
  - [SQLite plugin](https://github.com/litehelpers/Cordova-sqlite-storage){:target="_blank"}
  - [Cordova plugin NativeStorage](https://github.com/TheCocoaProject/cordova-plugin-nativestorage){:target="_blank"}
+ - [Debugging Ionic 2 Apps in Chrome from Visual Studio Code](http://www.damirscorner.com/blog/posts/20161122-DebuggingIonic2AppsInChromeFromVisualStudioCode.html){:target="_blank"}
 
 ## 问题
 
