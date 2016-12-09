@@ -132,6 +132,8 @@ lang: zh
   * [JSONP详解](http://www.cnblogs.com/yuzhongwusan/archive/2012/12/11/2812849.html){:target="_blank"}
   * [jQuery的deferred对象详解](http://www.ruanyifeng.com/blog/2011/08/a_detailed_explanation_of_jquery_deferred_object.html){:target="_blank"}
   * [NodeJs中用node-webkit开发多平台的桌面客户端](http://www.baidufe.com/item/1fd388d6246c29c1368c.html){:target="_blank"}
+  * [Nexe](https://github.com/jaredallard/nexe) is a command-line utility that compiles your Node.js application into a single executable file.
+  * [Electron](http://electron.atom.io/) Build cross platform desktop apps with JavaScript, HTML, and CSS
 
 ## CoffeeScript
 
