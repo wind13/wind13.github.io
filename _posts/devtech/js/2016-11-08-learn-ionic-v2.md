@@ -17,6 +17,8 @@ tags: [angular]
  - [SQLite plugin](https://github.com/litehelpers/Cordova-sqlite-storage){:target="_blank"}
  - [Cordova plugin NativeStorage](https://github.com/TheCocoaProject/cordova-plugin-nativestorage){:target="_blank"}
  - [Debugging Ionic 2 Apps in Chrome from Visual Studio Code](http://www.damirscorner.com/blog/posts/20161122-DebuggingIonic2AppsInChromeFromVisualStudioCode.html){:target="_blank"}
+ - [Ionic 2 Conference Application](https://github.com/driftyco/ionic-conference-app){:target="_blank"}
+ - [Ionically Speaking](https://ionicallyspeaking.com/){:target="_blank"}
 
 ## 问题
 
@@ -25,8 +27,9 @@ tags: [angular]
  - Angular2 debug tool: [Augury](https://augury.angular.io/){:target="_blank"}
  - [Form validation is not working with Angular 2 FormBuilder in Ionic 2](http://stackoverflow.com/questions/39739979/form-validation-is-not-working-with-angular-2-formbuilder-in-ionic-2){:target="_blank"}
  - [Checkbox Group handling and Validation in Angular2](http://stackoverflow.com/questions/39674718/checkbox-group-handling-and-validation-in-angular2/39736803){:target="_blank"}
- - [ionic2+angular2中踩的那些坑](http://www.cnblogs.com/yanxiaodi/p/5750860.html)
+ - [ionic2+angular2中踩的那些坑](http://www.cnblogs.com/yanxiaodi/p/5750860.html){:target="_blank"}
  - [(Ionic 2) Getting data from php services is undefined](http://stackoverflow.com/questions/37618000/ionic-2-getting-data-from-php-services-is-undefined/37650922)
+ - [解决 ionic 中的 CORS（跨域） 问题](http://ionichina.com/topic/54f051698cbbaa7a56a49f98){:target="_blank"}
  - 报以下错误，是因为 providers 填错了，应该只填 Service：
 
 ```
@@ -119,3 +122,27 @@ There was a network error (http://192.168.56.1)
 ```
 
 网上查到答案是要添加[whitelist的插件](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist/){:target="_blank"}，然后添加相应的网址到config.xml中。
+
+ - 发现这个错误，一般是 queries.sql 里面的SQL写错了。
+
+```
+ERROR Can not issue data manipulation statements with executeQuery()
+```
+
+原因是修改性的SQL语句，上面的声明要用“!”，而不能用“?”。
+
+
+ - 遇到这个错：
+
+ ```
+ Can't bind to 'ngShow' since it isn't a known property of 'ion-list'.
+1. If 'ion-list' is an Angular component and it has 'ngShow' input, then verify that it is part of this module.
+2. If 'ion-list' is a Web Component then add "CUSTOM_ELEMENTS_SCHEMA" to the '@NgModule.schemas' of this component to suppress this message.
+```
+
+应该是说 ngShow 并不支持这样的写法，后改为 ` *ngIf `即可。
+
+
+ - 遇到这个错：Can't coerce body of type class java.lang.Integer
+
+ 是因为返回的数据不是json，比如直接将db操作的update结果1返回给客户端，这里(ok 1)就会报这个错，改为：(ok {:success 1}) 即可。
