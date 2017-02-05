@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="bower_components/text-highlighter/build/TextHighlighter.min.js"></script>
+    <script src="bower_components/text-highlighter/src/jquery.textHighlighter.js"></script>
+    <title>Json to Table</title>
+    <style>
+    body {
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      color: #333;
+    }
+    .feature {
+      display: -webkit-flex;
+      display: flex;
+      align-items: stretch;
+      align-self: stretch;
+      flex: 1 1 auto;
+    }
+    .content {
+      flex: 1;
+      background-color: #fed;
+    }
+    .comment {
+      flex: 1;
+      background-color: #efd;
+    }
+    </style>
+</head>
+<body>
+<h1>选择文字并写批注</h1>
+<div class="feature">
+  <div class="content">
+  <p class="first">  一般而言，在国考中言语理解与表达的题目有40道题，题量大，阅读量大是考生对此专项最大的印象，同时题目中作者的观点也不会非常直白地表达给我们，加之灵活的问法，导致考生对这类题十分头疼，准备了很长时间但得分率极低，下面，中公教育专家就重点分析下此专项中最困挠考生的迷惑点：“主旨观点”题是要往前推一步吗，“内容概括”题就选原文吗，两种有区别吗?</p>
+ 
+<p>【例题1】法国的乔利·贝朗13岁时干小杂工。一次在熨衣服时，不小心将油灯打翻。煤油洒到衣服上，雇主要他赔偿，但孩子没钱，只好答应白打一年工。此后，孩子把那件弄脏的衣服挂在床头作为警示。一天，他突然发现那件衣服被煤油浸过的地方不但没有脏，而且原有污渍也清除了。这个发现令他眼前一亮。他通过无数次试验，终于研究出一种干洗剂。一年后，他开了家干洗店，生意越做越大，最后终于成为世界干洗大王。</p>
+<p>这段文字意在说明()。</p>
+<ul>
+  <li>A.当一个人打翻了命运灯盏，跟前一片漆黑时，千万别捻灭了心灵的灯盏</li>
+<li>B.小聪明使人忙乱，大智慧让人安宁</li>
+<li>C.心中有一盏明灯，脚底才有行动</li>
+<li>D. 乔利·贝朗如何发明了干洗剂</li>
+</ul>
+<p>【中公解析】答案选A。这是一篇记叙性的文段。该题问的是“意在说明”而不是主要内容，所以要提炼文段的哲学道理，需要升华，如果问“主要概括的是”则选择D项;A项的含义是文段所表达的，B、C两项均不合适，故正确答案应为A项。</p>
+  </div>
+  <div class="comment">
+    <p></p>
+  </div>
+</div>
+<script>
+// var instance = $("div.content").mark("题目").mark('心灵');
+// hltr.setColor(color);
+// hltr.removeHighlights();
+$('.content:first').textHighlighter({
+  color: 'red',
+  onBeforeHighlight: function (range) {
+    console.debug('Selected text: ' + range + '\nReally highlight?');
+    return true;
+  },
+  onAfterHighlight: highlight,
+  onRemoveHighlight: function (hl) {
+    console.debug('Do you really want to remove: "' + hl.innerText + '"');
+  }
+});
+
+function highlight (range, highlights) {
+  console.debug('Created ' + highlights.length + ' highlight(s): ' + highlights.map(function (h) {
+      return '"' + h.innerText + '"';
+  }).join(', '));
+  var rs = $('.content:first').getHighlighter().serializeHighlights();
+  var ht = _.map(JSON.parse(rs), function(h){
+    var s = $(h[0]).text(h[1]);
+    return $('<p title="' + h[2] + ',' + h[3] + '"></p>').append(s);
+  })
+  $(".comment:first").empty().append(ht);
+}
+</script>
+</body>
+</html>
