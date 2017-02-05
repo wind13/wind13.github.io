@@ -146,3 +146,20 @@ ERROR Can not issue data manipulation statements with executeQuery()
  - 遇到这个错：Can't coerce body of type class java.lang.Integer
 
  是因为返回的数据不是json，比如直接将db操作的update结果1返回给客户端，这里(ok 1)就会报这个错，改为：(ok {:success 1}) 即可。
+
+
+ - 遇到这个错：Unable to find localabstract name of cordova app
+
+参考[此回复](https://github.com/Microsoft/vscode-cordova/issues/215#issuecomment-266093077)
+
+```
+vim .vscode/extensions/vsmobile.cordova-tools-1.2.4/out/src/debugger/cordovaDebugAdapter.js
+```
+
+在 254 行，修改为
+```
+// if (socketsInodes.indexOf(parseInt(fields[6], 10)) === -1) {
+if (pathField.indexOf(pid) === -1) {
+    continue;
+}
+```

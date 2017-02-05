@@ -253,6 +253,48 @@ adereth's solution:
   (reduce #(if (> %1 %2) %1 %2) xs))
 ```
 
+### [#39](http://www.4clojure.com/problem/39)
+
+```clojure
+(fn l [a b & r]
+  (if (or (nil? (first a)) (nil? (first b)))
+    (flatten r)
+    (l (rest a) (rest b) (conj (vec r) (first a) (first b)))))
+```
+
+adereth's solution:
+```clojure
+(fn [s1 s2]
+  (flatten (map list s1 s2)))
+```
+
+### [#40](http://www.4clojure.com/problem/40)
+
+```clojure
+(fn [x ys] (butlast (flatten (map #(list % x) ys))))
+```
+
+adereth's solution:
+```clojure
+#(butlast (interleave %2 (repeat %1)))
+```
+
+### [#41](http://www.4clojure.com/problem/41)
+
+```clojure
+(fn [ls n]
+  (keep-indexed #(if (> (mod (inc %1) n) 0) %2) ls))
+```
+
+adereth's solution:
+
+```clojure
+(fn [coll n]
+  (->> (partition-all n coll)
+       (map (partial take (dec n)))
+       (flatten)))
+```
+
 ### [#42](http://www.4clojure.com/problem/42)
 ```clojure
 #((fn factorial [n r]
