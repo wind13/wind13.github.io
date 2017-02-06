@@ -147,3 +147,27 @@ git remote -v
 ```shell
 git remote add origin https://github.com/wind13/xxx.git
 ```
+
+ - [使用GIT SUBTREE集成项目到子目录](http://aoxuis.me/post/2013-08-06-git-subtree)
+
+   - 第一次添加子目录，建立与git项目的关联
+
+```shell
+git remote add -f ai https://github.com/aoxu/ai.git  
+git subtree add --prefix=ai ai master --squash
+```
+
+   - 从远程仓库更新子目录
+
+```shell
+git fetch ai master  
+git subtree pull --prefix=ai ai --squash
+```
+
+   - 从子目录push到远程仓库
+
+```shell
+git subtree push --prefix=ai ai master
+```
+
+  - [Git 工具 - 子树合并](https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A0%91%E5%90%88%E5%B9%B6)

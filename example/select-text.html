@@ -12,6 +12,7 @@
       display: -webkit-flex;
       display: flex;
       flex-direction: column;
+      height: 100vh;
     }
     h1 {
       color: #333;
@@ -21,15 +22,17 @@
       display: flex;
       align-items: stretch;
       align-self: stretch;
-      flex: 1 1 auto;
+      flex: 1;
     }
     .content {
       flex: 1;
       background-color: #fed;
+      overflow: auto;
     }
     .comment {
       flex: 1;
       background-color: #efd;
+      overflow: auto;
     }
     </style>
 </head>
