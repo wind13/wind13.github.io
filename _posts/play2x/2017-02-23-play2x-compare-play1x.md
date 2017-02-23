@@ -1,3 +1,12 @@
+---
+layout: post
+category : play2x
+title: "Playframework 1.4.x 与Playframework 2.5.x 选型比较"
+tagline: "Play 2.5.x is your right choise."
+tags : [playframework, java]
+---
+{% include JB/setup %}
+
 # Playframework 1.4.x 与Playframework 2.5.x 选型比较
 
 ## Playframework 2.5.x
