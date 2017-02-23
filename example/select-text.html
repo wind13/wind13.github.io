@@ -28,11 +28,16 @@
       flex: 1;
       background-color: #fed;
       overflow: auto;
+      line-height: 2em;
     }
     .comment {
       flex: 1;
       background-color: #efd;
       overflow: auto;
+      line-height: 2em;
+    }
+    .highlighted {
+      background-color: chartreuse;
     }
     </style>
 </head>
@@ -57,11 +62,21 @@
   </div>
 </div>
 <script>
+var mockdata = {
+  "doc-id": "314",
+  "marks": [{
+    "tstmp": "1486387646251",
+    "color": "red",
+    "position": "1:3,78",
+    "comments": []
+  }]
+}
 // var instance = $("div.content").mark("题目").mark('心灵');
 // hltr.setColor(color);
 // hltr.removeHighlights();
 $('.content:first').textHighlighter({
-  color: 'red',
+  color: false,
+  tagName: 'mark',
   onBeforeHighlight: function (range) {
     console.debug('Selected text: ' + range + '\nReally highlight?');
     return true;
@@ -76,12 +91,22 @@ function highlight (range, highlights) {
   console.debug('Created ' + highlights.length + ' highlight(s): ' + highlights.map(function (h) {
       return '"' + h.innerText + '"';
   }).join(', '));
-  var rs = $('.content:first').getHighlighter().serializeHighlights();
+  var hObj = $('.content:first').getHighlighter();
+  var rs = hObj.serializeHighlights();
   var ht = _.map(JSON.parse(rs), function(h){
     var s = $(h[0]).text(h[1]);
-    return $('<p title="' + h[2] + ',' + h[3] + '"></p>').append(s);
+    var tstmp = s.data('timestamp');
+    var id = 'p' + tstmp;
+    var btn = '<button onclick="addComment(this, ' + tstmp + ')">add</button>';
+    return $('<div id="' + id + '" title="' + h[2] + ',' + h[3] + ',' + h[4] + '"></div>').append(s)
+      .append('<br/>').append(btn);
   })
+  console.debug(rs);
   $(".comment:first").empty().append(ht);
+}
+
+function addComment(btn, tstmp) {
+  $('#p'+tstmp).append("<p>comment</p>");
 }
 </script>
 </body>
