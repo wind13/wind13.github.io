@@ -68,3 +68,4 @@ tags : [playframework, java]
 ## 结论：越看越觉得应该直接开始使用 Play 2.5.x ，没什么可担心的，只会更好，不会入坑！
 
 - 一般的应用，Play 2.5.x 与 Play 1.4.x 上手难度相当，甚至在[测试](https://www.playframework.com/documentation/2.5.x/JavaTest)、[Form表单](https://www.playframework.com/documentation/2.5.x/JavaForms)、Model层（Ebean）等方面 Play 2.5.x 更有优势，有更多更专业且现成的解决方案。
+- 深层次的功能和配置等，更是Play2有所涉及（但需一定的学习曲线去掌握），而Play1就没有相关资料，只能借助第三方类库解决了，但跟Play1的结合又只能通过写它的Module来实现，麻烦情况可见一般。
