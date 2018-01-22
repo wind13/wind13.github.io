@@ -5,7 +5,7 @@ description: ""
 category: devtech/react
 tags: [react native]
 ---
-{% include JB/setup %}
+
 
 # React Native 相关学习
 

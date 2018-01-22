@@ -5,7 +5,7 @@ description: ""
 category: "devtech/js"
 tags: []
 ---
-{% include JB/setup %}
+
 
 ## 收集链接
 - [微信小应用资源汇总整理](https://github.com/Aufree/awesome-wechat-weapp/blob/master/README.md){:target="_blank"}

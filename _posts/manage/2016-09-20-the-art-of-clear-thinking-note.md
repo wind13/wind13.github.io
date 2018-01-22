@@ -6,7 +6,7 @@ description: ""
 category: "manage"
 tags: []
 ---
-{% include JB/setup %}
+
 
 ## 幸存偏误
 

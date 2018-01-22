@@ -5,7 +5,7 @@ description: ""
 category: devtech/clojure
 tags: [clojure]
 ---
-{% include JB/setup %}
+
 
 # Clojure/Script 学习
 

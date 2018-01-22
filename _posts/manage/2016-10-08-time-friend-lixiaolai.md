@@ -5,7 +5,7 @@ description: ""
 category: "manage"
 tags: ["李笑来"]
 ---
-{% include JB/setup %}
+
 
 ## 什么是心智
 

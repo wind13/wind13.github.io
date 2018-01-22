@@ -6,11 +6,9 @@ tagline: "Wind13 is a programmer!"
 tags : [wind13]
 lang: zh
 ---
-{% include custom/setup %}
 
 ## 最新发布
 {% assign this_month = site.posts %}
-{% include custom/this_month %}
 
 ## 小工具或示例
 
