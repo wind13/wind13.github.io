@@ -5,7 +5,7 @@ description: ""
 category: scrap
 tags: static blog website version Clojure todo
 ---
-{% include JB/setup %}
+
 
 ## 链接收集
 

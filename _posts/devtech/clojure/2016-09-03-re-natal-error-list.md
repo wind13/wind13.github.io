@@ -5,7 +5,7 @@ description: ""
 category: devtech/clojure
 tags: [clojure, re-natal, react native]
 ---
-{% include JB/setup %}
+
 
 ```
 Assert failed: c

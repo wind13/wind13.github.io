@@ -5,7 +5,7 @@ description: ""
 category: devtech/js
 tags: baidu mapapi
 ---
-{% include JB/setup %}
+
 
 ### [百度地图接口 MKMapViewListener](http://api.map.baidu.com/lbsapi/cloud/android_refer/com/baidu/mapapi/map/MKMapViewListener.html)
 

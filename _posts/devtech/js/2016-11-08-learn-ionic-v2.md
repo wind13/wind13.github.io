@@ -5,7 +5,7 @@ description: ""
 category: "devtech/js"
 tags: [angular]
 ---
-{% include JB/setup %}
+
 
 ## 基础
 

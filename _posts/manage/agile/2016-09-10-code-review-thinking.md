@@ -5,7 +5,7 @@ description: ""
 category: manage/agile
 tags: [code review]
 ---
-{% include JB/setup %}
+
 
 今天看了陈皓的[《从Code Review 谈如何做技术》](http://coolshell.cn/articles/11432.html)一文，笔记一些有启发的重点如下：
 
