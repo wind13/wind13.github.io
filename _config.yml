@@ -7,11 +7,11 @@
 title: Wind13's Blog
 subtitle: Wind13 is a programmer!
 description:
-author: 
-  name : Sam Liu
-  email : wind13@163.com
-  github : wind13
-  lofter : wind13
+author: Simon Liu
+#  name : Sam Liu
+#  email : wind13@163.com
+#  github : wind13
+#  lofter : wind13
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: en
 date_format: '%Y-%m-%d'
