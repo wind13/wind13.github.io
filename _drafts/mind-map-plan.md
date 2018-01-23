@@ -5,7 +5,6 @@ title: "Mind map plan"
 tagline: "Life has a plan"
 tags : [mindmap, plan]
 ---
-{% include JB/setup %}
 
 # 自由职业规划
 
