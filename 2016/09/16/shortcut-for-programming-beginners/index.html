@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.0.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="初学者," />
+
+
+<meta name="description" content="注：本文将不断更新或添加链接 有没有捷径？一听到“捷径”这个词，很多人就会感觉是个负面的意思，人不应该走捷径，而应该踏实努力、步步为营。所以，这里我们要先讨论一下这个问题：有没有捷径？ 既然题目取了“编程初学者的捷径”，当然就是说有捷径的，为什么说有？是因为事物发展的基本规律如此，一代人比一代人更进一步，就好像这个时代的人不用特别有学问也会知道很多上个时代的人曾经不知道的事物，这一代人不用再经历“">
+<meta name="keywords" content="初学者">
+<meta property="og:type" content="article">
+<meta property="og:title" content="编程初学者的捷径">
+<meta property="og:url" content="http://wind13.github.io/2016/09/16/shortcut-for-programming-beginners/index.html">
+<meta property="og:site_name" content="Wind13&#39;s Blog">
+<meta property="og:description" content="注：本文将不断更新或添加链接 有没有捷径？一听到“捷径”这个词，很多人就会感觉是个负面的意思，人不应该走捷径，而应该踏实努力、步步为营。所以，这里我们要先讨论一下这个问题：有没有捷径？ 既然题目取了“编程初学者的捷径”，当然就是说有捷径的，为什么说有？是因为事物发展的基本规律如此，一代人比一代人更进一步，就好像这个时代的人不用特别有学问也会知道很多上个时代的人曾经不知道的事物，这一代人不用再经历“">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-13T07:02:20.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="编程初学者的捷径">
+<meta name="twitter:description" content="注：本文将不断更新或添加链接 有没有捷径？一听到“捷径”这个词，很多人就会感觉是个负面的意思，人不应该走捷径，而应该踏实努力、步步为营。所以，这里我们要先讨论一下这个问题：有没有捷径？ 既然题目取了“编程初学者的捷径”，当然就是说有捷径的，为什么说有？是因为事物发展的基本规律如此，一代人比一代人更进一步，就好像这个时代的人不用特别有学问也会知道很多上个时代的人曾经不知道的事物，这一代人不用再经历“">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Wind13's Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://wind13.github.io/2016/09/16/shortcut-for-programming-beginners/"/>
+
+
+  <title>编程初学者的捷径 | Wind13's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wind13's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2016/09/16/shortcut-for-programming-beginners/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Simon J S Wind13 Liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wind13's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">编程初学者的捷径</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-09-16T00:00:00+00:00">2016-09-16</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/devtech/" itemprop="url" rel="index"><span itemprop="name">devtech</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/09/16/shortcut-for-programming-beginners/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2016/09/16/shortcut-for-programming-beginners/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><em>注：本文将不断更新或添加链接</em></p>
+<h2 id="有没有捷径？"><a href="#有没有捷径？" class="headerlink" title="有没有捷径？"></a>有没有捷径？</h2><p>一听到“捷径”这个词，很多人就会感觉是个负面的意思，人不应该走捷径，而应该踏实努力、步步为营。所以，这里我们要先讨论一下这个问题：有没有捷径？</p>
+<p>既然题目取了“编程初学者的捷径”，当然就是说有捷径的，为什么说有？是因为事物发展的基本规律如此，一代人比一代人更进一步，就好像这个时代的人不用特别有学问也会知道很多上个时代的人曾经不知道的事物，这一代人不用再经历“大哥大”的模拟式蜂窝电话，就可以直接用上智能手机了，熟练使用最先进的智能手机，也不用知道手机内部的结构和软件逻辑，这其实就是一种捷径，前人所走过的弯路，前人所趟过的深坑都可以跳过了。人类的认知本来也就是在前人的巨人肩膀上不断叠加起来的，编程的学习路径为什么不可以走走捷径（新的快捷路径）呢？</p>
+<h2 id="首先是坚定的信念"><a href="#首先是坚定的信念" class="headerlink" title="首先是坚定的信念"></a>首先是坚定的信念</h2><p>想学编程的初学者，最重要的是坚定的信念，不怕学得慢，不怕学不会，就怕中途放弃，不学了谁也没办法。</p>
+<p>为什么选择学编程？世界上那么多的学问，每个人的精力和时间都是有限的，那么选择编程到底对不对？好不好？这个信念可以不可持久坚持下去呢？</p>
+<p>编程这门学问，实际上是人类智慧发展到今天最璀璨的明珠之一，其重要性不用多说，这个时代的很多伟大工程都离不开这门学问，随着互联网、移动互联网与各个行业的不断深入结合，编程已经是现代乃至未来时代所不可获缺的一个部分。</p>
+<p>人类自有语言和文字以后，各方面科技发展突飞猛进，得益于人类使用语言互相交流沟通，语言打通了人与人之间的思维联系，从而能够集合很多人的共同智慧来达成伟大的成就。而新时代的来临，人类开始利用机器、电脑来达成新的成就，而人与机器、电脑沟通的语言就是编程语言，这也将是一个全新的精彩的世界，等待人类不断探索和发现。</p>
+<p>人类发明的编程语言，比自然形成的语言更为严谨，更为科学，组合了人类逻辑、数学、机器等多方面的学识，结合机器和电脑的功能，可以解决很多的问题，完成很多的工作等。</p>
+<p>暂且不说目前互联网以及移动互联网的火热，也不看软件开发人才的抢手和热门，只因编程本身就是一个很有意思、很有趣的学问，同时也可以和其他行业的学问有机地结合起来，不影响自己对其他方面知识的探索，反而会是很有效的工具，帮助你轻松跨界高速发展！</p>
+<h2 id="其次是正确的路径"><a href="#其次是正确的路径" class="headerlink" title="其次是正确的路径"></a>其次是正确的路径</h2><p>正确的路径就是说方法，其实也就是咱们说的“捷径”，少走弯路，少填坑，人的精力有限，时间宝贵，注意力珍惜，必须选择正确的方法和路径。</p>
+<h3 id="边用边学就是最佳路径；"><a href="#边用边学就是最佳路径；" class="headerlink" title="边用边学就是最佳路径；"></a>边用边学就是最佳路径；</h3><p>iPad拿在一个小孩子手中，你仔细观察，几乎没有人教他们，他们就会很快熟悉这里面的界面、功能，很快就能用iPad做很多事情，拍照片、画画涂鸦、玩游戏、看视频等。</p>
+<p>大多数时候，我们总是先会用某件东西，之后再了解其中的原理，进而深入研究它的内部机制等，这是符合事物的熟悉规律的，所以这里所说的“捷径”自然不会搞反人类的学院式教学，先讲计算机原理、数据结构什么的了，第一步自然是不管三七二十一，先用起来再说。</p>
+<p>第一步的第一步，当然是要有一台电脑，这里说的自然不是一般的电脑，为了学编程，为了走捷径地学编程，自然要选择一台学编程最捷径的电脑，那就是苹果笔记本，钱少的可以买Macbook Air，钱多的自然可以Macbook Pro，选择尺寸自然也是13寸或15寸，根据自己的经济水平和个人喜好了，追求性能自然15寸，还想兼顾便携性那就13寸，如果不考虑钱的问题，个人推荐15寸MBP（Macbook Pro)，那屏幕看起来才舒服，个头稍大点，重量稍重点都不是事儿，年轻人背个电脑包到处跑跑是没啥问题的。除了笔记本，当然iMac或Mac mini也都是可以选择的，总之是要用苹果系统来学编程就最快捷了。</p>
+<p>接下来，苹果电脑的一般性使用，网上大把的教程和技巧，大家可以各自找来看看，悟性好的话基本都不是什么问题。</p>
+<p>进入正题，开始用程序，如何开始呢？REPL应该是最好的开始，编程世界的即时响应，所见即所得嘛！</p>
+<ul>
+<li>参考 <a href="https://www.jianshu.com/p/8ad7056b243f" target="_blank" rel="noopener">Homebrew总结</a></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install boot-clj</span><br></pre></td></tr></table></figure>
+<p>用上面这个命令安装 boot 这个命令工具。然后有了boot就可以运行下面这个命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">boot repl</span><br></pre></td></tr></table></figure>
+<p>得到一个REPL的环境，你就可以开始练习简单的编程了：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(* 8 9)</span><br></pre></td></tr></table></figure>
+<p>这个就可以得到 72，你看你现在拥有了一个计算器了！</p>
+<p>再试试更复杂的四则运算吧：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(* (+ 6 2) (- 9 2) (- 7 3))</span><br></pre></td></tr></table></figure>
+<p>这个就是：(* 8 7 4)，得到224。</p>
+<p>接下来可以来<a href="http://www.4clojure.com/problems" target="_blank" rel="noopener">这里</a>注册个账号然后做些题，边做题练习，边在REPL里面测试。</p>
+<p>英语看不懂，怎么办？安装个有道词典，边查边学，硬着头皮查着看，慢慢就明白了，最好再用标准的伦敦腔读出来英语学得更快。</p>
+<p>我自己做的答案在<a href="/devtech/clojure/2016/09/20/4clojure-problem-solving">这里</a>供参考。</p>
+<ul>
+<li><a href="https://www.sdk.cn/news/5412" target="_blank" rel="noopener">我终于弄懂了各种前端build工具</a>{:target=”_blank”}</li>
+</ul>
+<h3 id="基本功也很重要；"><a href="#基本功也很重要；" class="headerlink" title="基本功也很重要；"></a>基本功也很重要；</h3><p>基本功就象武侠小说里比喻的“内功心法”一般，是决定你能达到多高，以及走到多远的根基，类似“悟性”的东西，说某个人对编程这门学问比较有悟性，也可能就是在这些基本功方面有所特长，自然会在很多地方显现出他与别人的区别。</p>
+<p>开悟、开窍也就有点这里所说的“捷径”的意思，所以，如果一个人的基本功比较扎实，那自然走上“捷径”的过程就比较容易，相反，就感觉非常困难了。</p>
+<h4 id="第一、英语"><a href="#第一、英语" class="headerlink" title="第一、英语"></a>第一、英语</h4><h4 id="第二、数学"><a href="#第二、数学" class="headerlink" title="第二、数学"></a>第二、数学</h4><p>道理基本是说：你数学初中水平也可以学，但想成为编程高手，就不容易了。</p>
+<p>就象是你内功只有二级水平（初中水平），学些普通武功是没问题的，但要学高级武功，就要内功到八、九级或十级（大学以上、专家水平）才厉害~</p>
+<p>内功就象是数学水平，而武功就象是编程水平。</p>
+<h4 id="第三、观察力"><a href="#第三、观察力" class="headerlink" title="第三、观察力"></a>第三、观察力</h4><h4 id="第四、思考力（分析力）"><a href="#第四、思考力（分析力）" class="headerlink" title="第四、思考力（分析力）"></a>第四、思考力（分析力）</h4><h3 id="系统的图画不断显现；"><a href="#系统的图画不断显现；" class="headerlink" title="系统的图画不断显现；"></a>系统的图画不断显现；</h3><p>面临无数的选择，学会选择最佳方案、实践、工具等很重要。</p>
+<h2 id="成为一个高手"><a href="#成为一个高手" class="headerlink" title="成为一个高手"></a>成为一个高手</h2><p>刻意练习</p>
+<p>套路</p>
+<p>永远做有挑战的事</p>
+<p>脑中存储最新的技术架构</p>
+<p>提高自己的认知水平</p>
+<h2 id="最后就是实践，学以致用了！"><a href="#最后就是实践，学以致用了！" class="headerlink" title="最后就是实践，学以致用了！"></a>最后就是实践，学以致用了！</h2><p>只学不用岂不是浪费？我们也不能仅仅是为学而学，何况上一节也提到边学边用才是最佳路径。</p>
+<h3 id="找准自己的发展方向；"><a href="#找准自己的发展方向；" class="headerlink" title="找准自己的发展方向；"></a>找准自己的发展方向；</h3><h3 id="不断深入，不断登高；"><a href="#不断深入，不断登高；" class="headerlink" title="不断深入，不断登高；"></a>不断深入，不断登高；</h3><h3 id="完成伟大的成就吧！"><a href="#完成伟大的成就吧！" class="headerlink" title="完成伟大的成就吧！"></a>完成伟大的成就吧！</h3><p>战略的定义：</p>
+<ul>
+<li>事后总结出来的好运气</li>
+<li>有选择的放弃</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/初学者/" rel="tag"># 初学者</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/10/code-review-thinking/" rel="next" title="关于 Code review 的思考">
+                <i class="fa fa-chevron-left"></i> 关于 Code review 的思考
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/09/18/data-time/" rel="prev" title="《智能时代》读书笔记">
+                《智能时代》读书笔记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Simon J S Wind13 Liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">75</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">17</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">84</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#有没有捷径？"><span class="nav-number">1.</span> <span class="nav-text">有没有捷径？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#首先是坚定的信念"><span class="nav-number">2.</span> <span class="nav-text">首先是坚定的信念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其次是正确的路径"><span class="nav-number">3.</span> <span class="nav-text">其次是正确的路径</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#边用边学就是最佳路径；"><span class="nav-number">3.1.</span> <span class="nav-text">边用边学就是最佳路径；</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本功也很重要；"><span class="nav-number">3.2.</span> <span class="nav-text">基本功也很重要；</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#第一、英语"><span class="nav-number">3.2.1.</span> <span class="nav-text">第一、英语</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第二、数学"><span class="nav-number">3.2.2.</span> <span class="nav-text">第二、数学</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第三、观察力"><span class="nav-number">3.2.3.</span> <span class="nav-text">第三、观察力</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第四、思考力（分析力）"><span class="nav-number">3.2.4.</span> <span class="nav-text">第四、思考力（分析力）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统的图画不断显现；"><span class="nav-number">3.3.</span> <span class="nav-text">系统的图画不断显现；</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#成为一个高手"><span class="nav-number">4.</span> <span class="nav-text">成为一个高手</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后就是实践，学以致用了！"><span class="nav-number">5.</span> <span class="nav-text">最后就是实践，学以致用了！</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#找准自己的发展方向；"><span class="nav-number">5.1.</span> <span class="nav-text">找准自己的发展方向；</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不断深入，不断登高；"><span class="nav-number">5.2.</span> <span class="nav-text">不断深入，不断登高；</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#完成伟大的成就吧！"><span class="nav-number">5.3.</span> <span class="nav-text">完成伟大的成就吧！</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Simon J S Wind13 Liu</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Mist</a> v6.0.2</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'pb127VMyO1tj2NuIS2qWcGtI-gzGzoHsz',
+        appKey: 'fyVGKb3uqUa3iQdM6EhAIytp',
+        placeholder: '请留言，如需进一步交流，请留联系方式，谢谢！',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
