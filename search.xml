@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[2018年3月23日这期“歌手”听后感]]></title>
+    <url>%2F2018%2F03%2F24%2F2018%E5%B9%B43%E6%9C%8823%E6%97%A5%E8%BF%99%E6%9C%9F%E6%AD%8C%E6%89%8B%E5%90%AC%E5%90%8E%E6%84%9F%2F</url>
+    <content type="text"><![CDATA[2018年3月23日这期“歌手”听后感这一期两位歌手都唱了崔健的歌，腾格尔唱《从头再来》，华晨宇唱《假行僧》，可见崔健中国摇滚之父的称号不是虚的。 从1993年大学时听过崔健的歌后，就将他奉为中国甚至世界摇滚中最为独特另类的一个，后来在几十年中，偶尔再听还是那么独特，不管时代如何变迁，他的音乐依然在每次听到的时候都有特殊的感觉。 这期“歌手”再次证明了这一点，崔健的摇滚即使在今天这个信息智能时代听起来依然是最新潮、最牛逼的！ 不过相对来说，我更欣赏华晨宇的改编，是新一代音乐人用自己的灵魂对崔健《假行僧》的自我诠释，中间一度听得我两眼含泪，华晨宇是个可怜孩子，心灵的孤独和寂苦在小时候长时间无人知道、无人理解、无人关爱，好在自己在音乐中找到了表达，从而也造就了今天的新一代音乐天才和新星。有过童年悲伤经历的人们应该能感受到音乐中那种透达心底的孤寂，也应该更能理解这表面有些怪异的音乐和演唱方式所传达的空灵宇宙间的无奈和无所谓…… 腾格尔的演唱基本是崔健摇滚的原本风格，没太多新的创新，当然也没有崔健原版的风格独特和反抗精神。嗯，再去找崔健的原版演唱会看一下……]]></content>
+      <tags>
+        <tag>歌手</tag>
+        <tag>崔健</tag>
+        <tag>华晨宇</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[为什么说一个全新的操作系统是必要的？]]></title>
     <url>%2F2018%2F03%2F05%2Fwhy-new-os-zh%2F</url>
     <content type="text"><![CDATA[注：此文是 OSv 官网介绍的文章，感觉对于理解 OSv 很有帮助，特翻译如下，原文地址 Today’s cloud-based applications run a heavyweight stack: the hypervisor, which divides the hardware resources among virtual machines; the operating system, which divides the virtual machine’s resources among applications; and the application server, which divides the application’s resources among the end users. 当今的云应用都运行在一个非常重的技术栈上： Hypervisor (虚拟机管理程序) ，要将硬件资源从虚拟机中分离； OS 操作系统，要将虚拟机从应用中分离； App Server 应用服务，要将应用资源从终端用户处分离。 Clearly, there is a lot of duplication going on. Each layer adds its own overhead in an attempt to abstract away and hide the problems caused by the lower layer. The result is inefficient and complex. 很明显，这中间有很多的重复。每一层都添加了额外的开销用来抽象和隐藏低一层所产生的问题。结果是低效和复杂的。 Enter OSv - the operating system for the cloud. On the one hand, designed and optimized to run on a hypervisor. On the other hand, designed to run an application stack without getting in the way. Designed for the cloud. 来到 OSv —— 专为云而生的操作系统。一方面，它是专为虚拟机管理而设计和优化的。另一方面，专为无障碍地运行整个应用（包括 OS 系统）。专为云设计。 It’s cloudy out there and we love it它就在云上，我们喜欢它！The public cloud era opens new horizons and opportunities for hi-tech businesses. Virtualization is dominant, resources are evergreen and agility is the key. The role of the OS in this form changes. The need to massively scale out forces developers to run multiple copies of identical Virtual Machines (VMs). VMs are the new process that needs to be lightweight, blazing fast, scalable and cheap. DevOps and PaaS solutions bypass the OS and allow developers to deploy their code directly to the cloud. All these goodies are rapidly penetrating the enterprise space with matching private cloud capabilities and virtual appliances that act as bridges to the public cloud 公有云时代为高科技企业展开了全新的视野和机会。虚拟机占到了主导地位，资源的快速响应和持久在线是关键。而操作系统 OS 的角色在这样的情况下也有所改变。大规模扩展的需求迫使开发人员同时要运行多个相同的虚拟机（VM）。 VMs 是一个需要轻量级、快速、可扩展和廉价的新流程。DevOps 和 PaaS 解决方案绕过操作系统，允许开发者将代码直接放到云上。所有这些优点都迅速渗透到企业空间中，并提供了与公有云相匹配的私有云功能和虚拟设备。 Virtualization 2.0虚拟化 2.0VMware had brought virtualization into the x86 world (recall that virtualization was introduced by IBM’s mainframes in the 70s). While VMware has done a fantastic job shifting the enterprise from physical to virtual, it stopped there. Amazon Web Services had wider vision; Amazon do not use terminology such as virtual machine. Amazon sees the entire user workload and solves scaling issues. VMware 将虚拟化引入到了 x86 型机的世界（记得虚拟化是由IBM的大型机在上世纪70年代引入的概念）。虽然 VMware 做了一项出色的工作，将企业从物理机带入虚拟机世界，但它也就止步于此。 而 Amazon 网络服务则有更广阔的视野； Amazon 不使用诸如虚拟机之类的术语。 Amazon 看到了用户整个的工作负载并解决了缩放问题。 The right(tm) way - the new world is compose out of the smallest building blocks possible, running in clusters of multiple VMs. Common components are NoSQL databases, MemCacheD, front end webservers, backend webservers, etc. One single application is hosted within the virtual machine. That application uses a fraction of the guest OS capabilities - there is no hardware as the hypervisor owns that, there are no real users as this is a server, there are no other apps to schedule. Users pay for CPU cycles they don’t really need and need to maintain and tune a full blown generic OS. 正确（TM）的方式 —— 新的世界是由尽可能小的积木组成，运行在多个虚拟机集群中。 常见的组件是 NoSQL 数据库，缓存，前端 Web 服务器，后台服务器等，单个应用程序托管在虚拟机内。该应用程序使用了客户机操作系统功能的一小部分——没有 Hypervisor (虚拟机管理程序) 中的硬件，没有真正的用户，因为这是一个服务器，没有其他应用程序需要去调度。 所以用户不必为他们并不真正需要的 CPU 损耗付费，也不必维护和调整一个完整的通用操作系统。 Unlike new infrastructure such as hypervisors, NoSQL, PaaS, etc, the operating system hasn’t changed much. The same OS image that powers physical machines, from tiny embedded devices to room-size top500 supercomputers, is also used in the cloud. 不象新的基础设施如 Hypervisors 虚拟机管理程序，NoSQL，PaaS 等，操作系统并没有太大变化。 与之相同的实现了物理机功能的操作系统映像 (从小型嵌入式设备的房间大小的TOP500超级计算机) 也都用在了云上。 Typical cloud workloads run application servers using Java, Ruby, Python and JavaScript (node.js). This historical evolution is not ideal - Java, Linux and the hypervisor implement parallel/duplicated mechanisms for protection and abstraction. These mechanisms are redundant when combined, and impose a large overhead in terms of CPU and memory. 常见的云应用服务器使用 Java、Ruby、Python 和 JavaScript (node.js)。而这个历史演变过程实际并不理想 —— Java, Linux 和 Hypervisor (虚拟机管理程序) 为了保护和抽象而实现了并行或复制机制。这些机制在组合时是多余的，在 CPU 和内存方面强加了大量的开销。 The management efforts needed to maintain Linux are extensive. Thousands of packages, multiple security updates, complex tuning and specialists to manage. It doesn’t stop in the OS level. JVM workloads require manual tuning in a variety of ways and VM templates and instances needs to be software managed by tools like Puppet and Chef. 维护 Linux 所需的管理工作是广泛的。 数千个包、多个安全更新、复杂的配置和专用列表需要管理。它不会停止在操作系统级别。JVM 工作负载需要以各种方式手动调优，VM 模板和实例也需要用像 Puppet 和 Chef 这样的工具软件来管理。 These tools help to manage multiple OS configurations but if we’ll examine their operation on a single OS instance, we’ll discover that their roots go to the Unix OS of the 1970s. They’re based on pushing human configuration files and strings to /etc files. Typical OSs still do not have a fully automated API. OSv takes a simpler approach, with a common REST API for all configuration and data collection. 这些工具有助于管理多个操作系统配置， 但如果我们在一个操作系统实例上检查它们的操作，我们会发现它们根本是在 20 世纪 70 年代的 UNIX 操作系统上建立的， 它们是基于将人为的配置文件和字符串入到 /etc 文件目录中来实现的。 常见的操作系统仍然没有完全自动化的 API 。而 OSv 则是用一个简单的方法，用一个共同的 REST API 来完成所有的配置和数据采集。]]></content>
@@ -22,7 +32,7 @@
   <entry>
     <title><![CDATA[Docker 学习]]></title>
     <url>%2F2018%2F02%2F07%2FDocker-%E5%AD%A6%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[快速入门心法官网文档也好，网上其他的教程也好，都非常有“耐心”，一点点地教你怎么理解和使用 docker，但我在看这些教程和文档的时候其实很着急，因为我只想快速入门并且用起来，而且最好是按最佳实践的路子用起来，而不是象个初学者那样慢慢摸索。但就是没人把这条捷径说清楚…… 下面我就我所知道和理解的内容，写一点快速入门的心法： 首先知道 docker 大概是个什么？ 就我的理解，直白地说：就是一个轻量的虚拟机，在一个基本的内核基础上，层层叠加出想要的虚拟机环境。 同时要注意一个重要概念，类似于微服务概念，每一个 docker 虚拟机里面一般只做一件事，只支持一个服务，例如： web 服务、 hexo 博客服务等； 其次要知道拿 docker 来有什么用，最主要的用途在哪儿？ 目前就我的使用情况来说，就是一些开发部署环境在本机搭建起来很麻烦，不同的操作系统还有所不同，还要在本机安装一堆的包，还要在本机进行很多配置，而使用 docker 之后，就可以不用在本机安装了，本机干净了，又能快捷享用 docker 虚拟机中提供的服务。 保证应用项目在不同的主机上运行时一致，因为都是运行在 docker 中的，所以各种操作系统，各个电脑打开项目，只要正常安装了 docker 后，启动运行起来，都象是在 linux 中一样，因为 docker 虚拟机基本都是基于 linux 操作系统的。 如何快速入门使用？ 首先要有一定的基础，否则会遇到太多阻碍，个人觉得是要对 linux 系统的基础操作和一些工作模式要有一定的熟悉和了解，特别是网络方面比较清楚会有比较大的帮助，另外了解 git 的使用流程和基本命令会比较有帮助，对于理解 docker 这种虚拟机的管理模式也会比较有帮助，当然有一定的编程基础，熟悉一些语言开发也是必须的，毕竟 docker 就是帮助开发部署环境用的。 快捷路线就是 docker-compose 了，别在 docker 命令上花费太多时间，只要把 docker 和 docker-compose 安装好后，就直接找一两个 docker-compose 构建的开源项目来尝试，运行 docker-compose up 就可以了，这本来也就是使用 docker 后最大的好处之一，只需要一个命令，有 docker 镜像就启动服务，没有就相应地创建或下载，总之不用操心怎么安装环境什么的。 另一个注意点是尽量选择那些以 alpine 为基础的镜像，文件占空间小。 以上只是心法，具体的知识和教程可参考下面的内容，网上也多得是： 基本概念传统虚拟机：虚拟硬件和完整的操作系统，再运行应用；容器：运行于宿主的内核，没有自己的内核，没有硬件虚拟。 Docker 包括三个基本概念，涉及 Docker 的整个生命周期。 镜像（Image）[类]：由多层文件系统联合组成，支持容器运行和配置参数，无动态数据。 容器（Container）[实例]：运行于独立命名空间的进程，以镜像为基础层，之上是容器存储层（会随容器消亡）。数据卷不会消亡。容器是拥有不同 IP 地址从而使其成为网络上可识别的独立 Linux 进程。容器依赖于镜像，如果想删除某个镜像，必须先删除相应的容器。 仓库（Repository）：Docker Registry =&gt; Repository =&gt; Tag == Image，”repository:tag”，一个镜像可以对应多个标签 tag。 虚悬镜像（Dangling image）：docker pull 或 docker build 导致标签指向新镜像，旧的无标签镜像变成虚悬镜像。 黑箱镜像：使用 docker commit 意味着所有对镜像的操作都是黑箱操作，生成的镜像也被称为黑箱镜像。 数据卷：volume Docker 网络强烈建议大家将容器加入自定义的 Docker 网络来连接多个容器，而不是使用 –link 参数。 创建一个新的 Docker 网络1docker network create -d bridge my-net docker 命令使用 COPY 指令，源文件的各种元数据都会保留。比如读、写、执行权限、文件变更时间等。这个特性对于镜像定制很有用。特别是构建相关文件都在使用 Git 进行管理的时候。 docker主命令不要用后台运行，容器就是为了主进程而存在的，主进程退出，容器就失去了存在的意义，从而退出。正确的做法是直接执行 nginx 可执行文件，并且要求以前台形式运行。比如： CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;] Docker run 详解当利用 docker run 来创建容器时，Docker 在后台运行的标准操作包括： 检查本地是否存在指定的镜像，不存在就从公有仓库下载 利用镜像创建并启动一个容器 分配一个文件系统，并在只读的镜像层外面挂载一层可读写层 从宿主主机配置的网桥接口中桥接一个虚拟接口到容器中去 从地址池配置一个 ip 地址给容器 执行用户指定的应用程序 执行完毕后容器被终止 Docker Registry 公开服务镜像服务被称为加速器。常见的有 阿里云加速器、DaoCloud 加速器 等。 国内也有一些云服务商提供类似于 Docker Hub 的公开服务。比如 时速云镜像仓库、网易云镜像服务、DaoCloud 镜像市场、阿里云镜像库 等。 docker 编译一个 Dockerfile1docker build -t friendlyhello . 列出系统中的所有镜像：1234docker imagesREPOSITORY TAG IMAGE IDfriendlyhello latest 326387cea398 删除所有虚悬镜像：1docker image prune 删除所有无主的数据卷：1docker volume prune 删除本地镜像：1234567docker image rm [选项] &lt;镜像1&gt; [&lt;镜像2&gt; ...]# 删除所有仓库名为 redis 的镜像docker image rm $(docker image ls -q redis)# 删除所有在 mongo:3.2 之前的镜像docker image rm $(docker image ls -q -f before=mongo:3.2) 查看镜像的历史记录1docker history ubuntu:latest 在某个端口映射下启动该镜像：1docker run -p 4000:80 friendlyhello 1docker run -it --rm ubuntu:16.04 bash -i：交互； -t：终端； –rm 容器退出后将其删除； 12# 用 nginx 镜像启动一个容器，命名为 webserver，并且映射了 80 端口docker run --name webserver -d -p 80:80 nginx 查看映射端口配置1docker port webserver 进入某个运行中的容器 bash1docker exec -it webserver bash 查看镜像、容器、数据卷所占用的空间1docker system df 列出系统中启动的容器：1234docker container lsCONTAINER ID IMAGE COMMAND CREATED1fa4ab2cf395 friendlyhello &quot;python app.py&quot; 28 seconds ago 关闭某个容器：1docker container stop 1fa4ab2cf395 Services12345678docker stack ls # List stacks or appsdocker stack deploy -c &lt;composefile&gt; &lt;appname&gt; # Run the specified Compose filedocker service ls # List running services associated with an appdocker service ps &lt;service&gt; # List tasks associated with an appdocker inspect &lt;task or container&gt; # Inspect task or containerdocker container ls -q # List container IDsdocker stack rm &lt;appname&gt; # Tear down an applicationdocker swarm leave --force # Take down a single node swarm from the manager docker 命令帮助123456789101112131415161718192021222324252627282930313233343536373839404142434445464748Commands: attach Attach to a running container # 当前 shell 下 attach 连接指定运行镜像 build Build an image from a Dockerfile # 通过 Dockerfile 定制镜像 commit Create a new image from a container's changes # 提交当前容器为新的镜像 cp Copy files/folders from the containers filesystem to the host path # 从容器中拷贝指定文件或者目录到宿主机中 create Create a new container # 创建一个新的容器，同 run，但不启动容器 diff Inspect changes on a container's filesystem # 查看 docker 容器变化 events Get real time events from the server # 从 docker 服务获取容器实时事件 exec Run a command in an existing container # 在已存在的容器上运行命令 export Stream the contents of a container as a tar archive # 导出容器的内容流作为一个 tar 归档文件[对应 import ] history Show the history of an image # 展示一个镜像形成历史 images List images # 列出系统当前镜像 import Create a new filesystem image from the contents of a tarball # 从tar包中的内容创建一个新的文件系统映像[对应 export] info Display system-wide information # 显示系统相关信息 inspect Return low-level information on a container # 查看容器详细信息 kill Kill a running container # kill 指定 docker 容器 load Load an image from a tar archive # 从一个 tar 包中加载一个镜像[对应 save] login Register or Login to the docker registry server # 注册或者登陆一个 docker 源服务器 logout Log out from a Docker registry server # 从当前 Docker registry 退出 logs Fetch the logs of a container # 输出当前容器日志信息 port Lookup the public-facing port which is NAT-ed to PRIVATE_PORT # 查看映射端口对应的容器内部源端口 pause Pause all processes within a container # 暂停容器 ps List containers # 列出容器列表 pull Pull an image or a repository from the docker registry server # 从docker镜像源服务器拉取指定镜像或者库镜像 push Push an image or a repository to the docker registry server # 推送指定镜像或者库镜像至docker源服务器 restart Restart a running container # 重启运行的容器 rm Remove one or more containers # 移除一个或者多个容器 rmi Remove one or more images # 移除一个或多个镜像[无容器使用该镜像才可删除，否则需删除相关容器才可继续或 -f 强制删除] run Run a command in a new container # 创建一个新的容器并运行一个命令 save Save an image to a tar archive # 保存一个镜像为一个 tar 包[对应 load] search Search for an image on the Docker Hub # 在 docker hub 中搜索镜像 start Start a stopped containers # 启动容器 stop Stop a running containers # 停止容器 tag Tag an image into a repository # 给源中镜像打标签 top Lookup the running processes of a container # 查看容器中运行的进程信息 unpause Unpause a paused container # 取消暂停容器 version Show the docker version information # 查看 docker 版本号 wait Block until a container stops, then print its exit code # 截取容器停止时的退出状态值 Docker 高级网络工具和示例在介绍自定义网络拓扑之前，你可能会对一些外部工具和例子感兴趣： pipeworkJérôme Petazzoni 编写了一个叫 pipework 的 shell 脚本，可以帮助用户在比较复杂的场景中完成容器的连接。 playgroundBrandon Rhodes 创建了一个提供完整的 Docker 容器网络拓扑管理的 Python库，包括路由、NAT 防火墙；以及一些提供 HTTP, SMTP, POP, IMAP, Telnet, SSH, FTP 的服务器。 Docker 官方三剑客Docker Compose 项目 服务 (service)：一个应用容器，实际上可以运行多个相同镜像的实例。 项目 (project)：由一组关联的应用容器组成的一个完整业务单元。 Docker Machine 项目在多种平台上快速安装 Docker 环境，在 macOS 上安装 xhyve 虚拟机支持： 1brew install docker-machine-driver-xhyve Docker Swarm mode 项目提供 Docker 容器集群服务，具有容错能力的去中心化设计、内置服务发现、负载均衡、路由网格、动态伸缩、滚动更新、安全传输等。与 Kubernetes 是竞争关系。 巅峰对决之Swarm、Kubernetes、Mesos Kubernetes vs Docker Swarm 选择焦虑症のKubernetes 与 Docker Swarm 使用方法：初始化一个 Swarm 集群：12345docker swarm init --advertise-addr 192.168.99.100Swarm initialized: current node (7t2kqs1cmbw3r54921y9ofdcu) is now a manager.To add a worker to this swarm, run the following command: docker swarm join –token SWMTKN-1-4l54p60fpaumw188uk5yea8l3z0sd80q6ydiav0e8r12w5cog1-8i70bpp0wtxggiemi2wx63f3g 192.168.99.100:237712To add a manager to this swarm, run &apos;docker swarm join-token manager&apos; and follow the instructions. 添加一个虚拟机后，加入此 swarm 遇到如下报错：1Error response from daemon: rpc error: code = Unavailable desc = grpc: the connection is unavailable KubernetesKubernetes 是 Google 团队发起的开源项目，它的目标是管理跨多个主机的容器，提供基本的部署，维护以及运用伸缩，主要实现语言为 Go 语言。 Kubernetes 实际上是一个希腊词κυβερνήτης，意思是”船的舵手”。 在这个意义上， Kubernetes 对于 Docker (集装箱船)倒是挺般配的。 kubernetes 架构简介 OSvOSv is the open source operating system designed for the cloud.]]></content>
+    <content type="text"><![CDATA[快速入门心法官网文档也好，网上其他的教程也好，都非常有“耐心”，一点点地教你怎么理解和使用 docker，但我在看这些教程和文档的时候其实很着急，因为我只想快速入门并且用起来，而且最好是按最佳实践的路子用起来，而不是象个初学者那样慢慢摸索。但就是没人把这条捷径说清楚…… 下面我就我所知道和理解的内容，写一点快速入门的心法： 首先知道 docker 大概是个什么？ 就我的理解，直白地说：就是一个轻量的虚拟机，在一个基本的内核基础上，层层叠加出想要的虚拟机环境。 同时要注意一个重要概念，类似于微服务概念，每一个 docker 虚拟机里面一般只做一件事，只支持一个服务，例如： web 服务、 hexo 博客服务等； 其次要知道拿 docker 来有什么用，最主要的用途在哪儿？ 目前就我的使用情况来说，就是一些开发部署环境在本机搭建起来很麻烦，不同的操作系统还有所不同，还要在本机安装一堆的包，还要在本机进行很多配置，而使用 docker 之后，就可以不用在本机安装了，本机干净了，又能快捷享用 docker 虚拟机中提供的服务。 保证应用项目在不同的主机上运行时一致，因为都是运行在 docker 中的，所以各种操作系统，各个电脑打开项目，只要正常安装了 docker 后，启动运行起来，都象是在 linux 中一样，因为 docker 虚拟机基本都是基于 linux 操作系统的。 如何快速入门使用？ 首先要有一定的基础，否则会遇到太多阻碍，个人觉得是要对 linux 系统的基础操作和一些工作模式要有一定的熟悉和了解，特别是网络方面比较清楚会有比较大的帮助，另外了解 git 的使用流程和基本命令会比较有帮助，对于理解 docker 这种虚拟机的管理模式也会比较有帮助，当然有一定的编程基础，熟悉一些语言开发也是必须的，毕竟 docker 就是帮助开发部署环境用的。 快捷路线就是 docker-compose 了，别在 docker 命令上花费太多时间，只要把 docker 和 docker-compose 安装好后，就直接找一两个 docker-compose 构建的开源项目来尝试，运行 docker-compose up 就可以了，这本来也就是使用 docker 后最大的好处之一，只需要一个命令，有 docker 镜像就启动服务，没有就相应地创建或下载，总之不用操心怎么安装环境什么的。 另一个注意点是尽量选择那些以 alpine 为基础的镜像，文件占空间小。 以上只是心法，具体的知识和教程可参考下面的内容，网上也多得是： 基本概念传统虚拟机：虚拟硬件和完整的操作系统，再运行应用；容器：运行于宿主的内核，没有自己的内核，没有硬件虚拟。 Docker 包括三个基本概念，涉及 Docker 的整个生命周期。 镜像（Image）[类]：由多层文件系统联合组成，支持容器运行和配置参数，无动态数据。 容器（Container）[实例]：运行于独立命名空间的进程，以镜像为基础层，之上是容器存储层（会随容器消亡）。数据卷不会消亡。容器是拥有不同 IP 地址从而使其成为网络上可识别的独立 Linux 进程。容器依赖于镜像，如果想删除某个镜像，必须先删除相应的容器。 仓库（Repository）：Docker Registry =&gt; Repository =&gt; Tag == Image，”repository:tag”，一个镜像可以对应多个标签 tag。 虚悬镜像（Dangling image）：docker pull 或 docker build 导致标签指向新镜像，旧的无标签镜像变成虚悬镜像。 黑箱镜像：使用 docker commit 意味着所有对镜像的操作都是黑箱操作，生成的镜像也被称为黑箱镜像。 数据卷：volume Docker 网络强烈建议大家将容器加入自定义的 Docker 网络来连接多个容器，而不是使用 –link 参数。 创建一个新的 Docker 网络1docker network create -d bridge my-net docker 命令使用 COPY 指令，源文件的各种元数据都会保留。比如读、写、执行权限、文件变更时间等。这个特性对于镜像定制很有用。特别是构建相关文件都在使用 Git 进行管理的时候。 docker主命令不要用后台运行，容器就是为了主进程而存在的，主进程退出，容器就失去了存在的意义，从而退出。正确的做法是直接执行 nginx 可执行文件，并且要求以前台形式运行。比如： CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;] Docker run 详解当利用 docker run 来创建容器时，Docker 在后台运行的标准操作包括： 检查本地是否存在指定的镜像，不存在就从公有仓库下载 利用镜像创建并启动一个容器 分配一个文件系统，并在只读的镜像层外面挂载一层可读写层 从宿主主机配置的网桥接口中桥接一个虚拟接口到容器中去 从地址池配置一个 ip 地址给容器 执行用户指定的应用程序 执行完毕后容器被终止 Docker Registry 公开服务镜像服务被称为加速器。常见的有 阿里云加速器、DaoCloud 加速器 等。 国内也有一些云服务商提供类似于 Docker Hub 的公开服务。比如 时速云镜像仓库、网易云镜像服务、DaoCloud 镜像市场、阿里云镜像库 等。 docker 编译一个 Dockerfile1docker build -t friendlyhello . 列出系统中的所有镜像：1234docker imagesREPOSITORY TAG IMAGE IDfriendlyhello latest 326387cea398 删除所有虚悬镜像：1docker image prune 删除所有无主的数据卷：1docker volume prune 删除本地镜像：1234567docker image rm [选项] &lt;镜像1&gt; [&lt;镜像2&gt; ...]# 删除所有仓库名为 redis 的镜像docker image rm $(docker image ls -q redis)# 删除所有在 mongo:3.2 之前的镜像docker image rm $(docker image ls -q -f before=mongo:3.2) 查看镜像的历史记录1docker history ubuntu:latest 在某个端口映射下启动该镜像：1docker run -p 4000:80 friendlyhello 1docker run -it --rm ubuntu:16.04 bash -i：交互； -t：终端； –rm 容器退出后将其删除； 12# 用 nginx 镜像启动一个容器，命名为 webserver，并且映射了 80 端口docker run --name webserver -d -p 80:80 nginx 查看映射端口配置1docker port webserver 进入某个运行中的容器 bash1docker exec -it webserver bash 查看镜像、容器、数据卷所占用的空间1docker system df 列出系统中启动的容器：1234docker container lsCONTAINER ID IMAGE COMMAND CREATED1fa4ab2cf395 friendlyhello &quot;python app.py&quot; 28 seconds ago 关闭某个容器：1docker container stop 1fa4ab2cf395 Services12345678docker stack ls # List stacks or appsdocker stack deploy -c &lt;composefile&gt; &lt;appname&gt; # Run the specified Compose filedocker service ls # List running services associated with an appdocker service ps &lt;service&gt; # List tasks associated with an appdocker inspect &lt;task or container&gt; # Inspect task or containerdocker container ls -q # List container IDsdocker stack rm &lt;appname&gt; # Tear down an applicationdocker swarm leave --force # Take down a single node swarm from the manager docker 命令帮助123456789101112131415161718192021222324252627282930313233343536373839404142434445464748Commands: attach Attach to a running container # 当前 shell 下 attach 连接指定运行镜像 build Build an image from a Dockerfile # 通过 Dockerfile 定制镜像 commit Create a new image from a container's changes # 提交当前容器为新的镜像 cp Copy files/folders from the containers filesystem to the host path # 从容器中拷贝指定文件或者目录到宿主机中 create Create a new container # 创建一个新的容器，同 run，但不启动容器 diff Inspect changes on a container's filesystem # 查看 docker 容器变化 events Get real time events from the server # 从 docker 服务获取容器实时事件 exec Run a command in an existing container # 在已存在的容器上运行命令 export Stream the contents of a container as a tar archive # 导出容器的内容流作为一个 tar 归档文件[对应 import ] history Show the history of an image # 展示一个镜像形成历史 images List images # 列出系统当前镜像 import Create a new filesystem image from the contents of a tarball # 从tar包中的内容创建一个新的文件系统映像[对应 export] info Display system-wide information # 显示系统相关信息 inspect Return low-level information on a container # 查看容器详细信息 kill Kill a running container # kill 指定 docker 容器 load Load an image from a tar archive # 从一个 tar 包中加载一个镜像[对应 save] login Register or Login to the docker registry server # 注册或者登陆一个 docker 源服务器 logout Log out from a Docker registry server # 从当前 Docker registry 退出 logs Fetch the logs of a container # 输出当前容器日志信息 port Lookup the public-facing port which is NAT-ed to PRIVATE_PORT # 查看映射端口对应的容器内部源端口 pause Pause all processes within a container # 暂停容器 ps List containers # 列出容器列表 pull Pull an image or a repository from the docker registry server # 从docker镜像源服务器拉取指定镜像或者库镜像 push Push an image or a repository to the docker registry server # 推送指定镜像或者库镜像至docker源服务器 restart Restart a running container # 重启运行的容器 rm Remove one or more containers # 移除一个或者多个容器 rmi Remove one or more images # 移除一个或多个镜像[无容器使用该镜像才可删除，否则需删除相关容器才可继续或 -f 强制删除] run Run a command in a new container # 创建一个新的容器并运行一个命令 save Save an image to a tar archive # 保存一个镜像为一个 tar 包[对应 load] search Search for an image on the Docker Hub # 在 docker hub 中搜索镜像 start Start a stopped containers # 启动容器 stop Stop a running containers # 停止容器 tag Tag an image into a repository # 给源中镜像打标签 top Lookup the running processes of a container # 查看容器中运行的进程信息 unpause Unpause a paused container # 取消暂停容器 version Show the docker version information # 查看 docker 版本号 wait Block until a container stops, then print its exit code # 截取容器停止时的退出状态值 Docker 高级网络工具和示例在介绍自定义网络拓扑之前，你可能会对一些外部工具和例子感兴趣： pipeworkJérôme Petazzoni 编写了一个叫 pipework 的 shell 脚本，可以帮助用户在比较复杂的场景中完成容器的连接。 playgroundBrandon Rhodes 创建了一个提供完整的 Docker 容器网络拓扑管理的 Python库，包括路由、NAT 防火墙；以及一些提供 HTTP, SMTP, POP, IMAP, Telnet, SSH, FTP 的服务器。 Docker 官方三剑客Docker Compose 项目 服务 (service)：一个应用容器，实际上可以运行多个相同镜像的实例。 项目 (project)：由一组关联的应用容器组成的一个完整业务单元。 Docker Machine 项目在多种平台上快速安装 Docker 环境，在 macOS 上安装 xhyve 虚拟机支持： 1brew install docker-machine-driver-xhyve Docker Swarm mode 项目提供 Docker 容器集群服务，具有容错能力的去中心化设计、内置服务发现、负载均衡、路由网格、动态伸缩、滚动更新、安全传输等。与 Kubernetes 是竞争关系。 巅峰对决之Swarm、Kubernetes、Mesos Kubernetes vs Docker Swarm 选择焦虑症のKubernetes 与 Docker Swarm 使用方法：初始化一个 Swarm 集群：12345docker swarm init --advertise-addr 192.168.99.100Swarm initialized: current node (7t2kqs1cmbw3r54921y9ofdcu) is now a manager.To add a worker to this swarm, run the following command: docker swarm join –token SWMTKN-1-4l54p60fpaumw188uk5yea8l3z0sd80q6ydiav0e8r12w5cog1-8i70bpp0wtxggiemi2wx63f3g 192.168.99.100:237712To add a manager to this swarm, run &apos;docker swarm join-token manager&apos; and follow the instructions. 添加一个虚拟机后，加入此 swarm 遇到如下报错：1Error response from daemon: rpc error: code = Unavailable desc = grpc: the connection is unavailable KubernetesKubernetes 是 Google 团队发起的开源项目，它的目标是管理跨多个主机的容器，提供基本的部署，维护以及运用伸缩，主要实现语言为 Go 语言。 Kubernetes 实际上是一个希腊词κυβερνήτης，意思是”船的舵手”。 在这个意义上， Kubernetes 对于 Docker (集装箱船)倒是挺般配的。 kubernetes 架构简介 OSvOSv is the open source operating system designed for the cloud. MobyMoby defines the future in specialized container systems building. An open framework to assemble specialized container systems without reinventing the wheel. 似乎是更高、更深层定制化容器的工具，示例：LinuxKit 开源项目中几个文件各是什么意思？ Dockerfile 运行时的 docker 镜像生成文件，docker build . 并执行 docker run the-id-build 可尝试。 Capstanfile 是 OSv 的镜像生成文件。 Procfile 是 Heroku 的运行时命令文件。]]></content>
       <tags>
         <tag>Docker</tag>
       </tags>
@@ -165,19 +175,19 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[4clojure problem solving]]></title>
-    <url>%2F2016%2F09%2F20%2F4clojure-problem-solving%2F</url>
-    <content type="text"><![CDATA[14 题以前答案一般没啥区别，略过…… #151#(* % 2) adereth’s solution: 1* 2 #161format "Hello, %s!" adereth’s solution: 1#(str "Hello, " % "!") #171'(6 7 8) adereth’s solution: 1[6 7 8] #181'(6 7) adereth’s solution: 1'(6 7) #191#(peek (vec %)) adereth’s solution: 1(comp first reverse) #201#(nth (reverse %) 1) adereth’s solution: 1(comp second reverse) #211234(fn getn [ary n] (if (= n 0) (first ary) (getn (rest ary) (dec n)))) adereth’s solution: 1#(first (drop %2 %1)) #221#(reduce (fn [a b] (inc a)) 0 %) adereth’s solution: 1(fn [sequence] (reduce (fn [acc v] (inc acc)) 0 sequence)) #231#(reduce (fn [rs ls] (cons ls rs)) [] %) adereth’s solution: 123456(fn [s] (loop [result [] s s] (if (seq s) (recur (concat [(first s)] result) (rest s)) result))) #241#(reduce + %) adereth’s solution: 1apply + #251#(filter odd? %) adereth’s solution: 1filter odd? #2612#(take % ((fn fib [a b] (lazy-seq (cons a (fib b (+ b a))))) 1 1)) adereth’s solution: 12345#(take % (map first (iterate (fn [[i1 i2]] [i2 (+ i1 i2)]) [1 1]))) #291#(clojure.string/replace % #"[^A-Z]" "") adereth’s solution: 1(fn [s] (reduce str (filter #(Character/isUpperCase %) s))) #271#(= (reverse %) (seq %)) #28123456789(defn cci [ls r] (if (every? sequential? ls) (concat r ls) (apply cci r (partition-by sequential? ls))))#(let [f (first %)] (if (sequential? f) ) conj [] (first %)) #301234567#((fn dis [ss l r] (if-let [f (first ss)] (let [rss (rest ss)] (if (= l f) (dis rss f r) (dis rss f (conj r f)))) r)) % nil []) 123456#((fn dis [ss l r] (let [[f &amp; s] ss] (cond (nil? f) r (= l f) (dis s f r) :else (dis s f (conj r f))))) % nil []) adereth’s solution: 1#(map first (partition-by identity %)) #321#(mapcat (fn [s] [s s]) %) #341234#((fn rng [s n r] (if (&lt; s n) (rng (inc s) n (conj r s)) r)) %1 %2 []) adereth’s solution:1234(fn [start end] (take-while #(&lt; % end) (iterate inc start) ) ) #3517 #371"ABC" #381(fn [&amp; s] (reduce (fn mx [a b] (if (&gt; a b) a b)) s)) adereth’s solution: 12(fn [ &amp; xs ] (reduce #(if (&gt; %1 %2) %1 %2) xs)) #391234(fn l [a b &amp; r] (if (or (nil? (first a)) (nil? (first b))) (flatten r) (l (rest a) (rest b) (conj (vec r) (first a) (first b))))) adereth’s solution:12(fn [s1 s2] (flatten (map list s1 s2))) #401(fn [x ys] (butlast (flatten (map #(list % x) ys)))) adereth’s solution:1#(butlast (interleave %2 (repeat %1))) #4112(fn [ls n] (keep-indexed #(if (&gt; (mod (inc %1) n) 0) %2) ls)) adereth’s solution: 1234(fn [coll n] (-&gt;&gt; (partition-all n coll) (map (partial take (dec n))) (flatten))) #4212#((fn factorial [n r] (if (= n 1) r (factorial (dec n) (* n r)))) % 1) adereth’s solution:1#(reduce * (range 1 (inc %))) #4816 #521[c e] #571'(5 4 3 2 1) #641+ #711last #681'(7 6 5 4 3) adereth’s solution:1[7 6 5 4 3] #721apply + adereth’s solution:1#(reduce + %) #1341#(= nil (get %2 %1 0)) adereth’s solution:1#(nil? (get %2 % true)) #1451[1 5 9 13 17 21 25 29 33 37] #1561#(apply merge (map (fn [k] &#123;k %1&#125;) %2)) 1#(apply array-map (mapcat (fn [k] [k %1]) %2)) adereth’s solution:1(fn [default values] (reduce #(assoc %1 %2 default) &#123;&#125; values)) #1611#&#123;1 2&#125; #16211 Another solutionSolutions to 4Clojure Easy Problems]]></content>
-      <categories>
-        <category>devtech/clojure</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[《清晰思考的艺术》读书笔记]]></title>
     <url>%2F2016%2F09%2F20%2Fthe-art-of-clear-thinking-note%2F</url>
     <content type="text"><![CDATA[幸存偏误只（看到、统计）（幸存的、媒体报道的、成功的）（案例、公司、明星）等，而得到错误的结论。 如：股票指数不能代表一个国家的经济。如：畅销图书和成功教练都值得怀疑。 游泳选手身材错觉在游泳选手和化妆品模特那里，美丽是一种选择标准，而不是结果。 远离成功自助图书，因为写这些书的人都天生具有快乐倾向。 过度自信效应]]></content>
       <categories>
         <category>manage</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[4clojure problem solving]]></title>
+    <url>%2F2016%2F09%2F20%2F4clojure-problem-solving%2F</url>
+    <content type="text"><![CDATA[14 题以前答案一般没啥区别，略过…… #151#(* % 2) adereth’s solution: 1* 2 #161format "Hello, %s!" adereth’s solution: 1#(str "Hello, " % "!") #171'(6 7 8) adereth’s solution: 1[6 7 8] #181'(6 7) adereth’s solution: 1'(6 7) #191#(peek (vec %)) adereth’s solution: 1(comp first reverse) #201#(nth (reverse %) 1) adereth’s solution: 1(comp second reverse) #211234(fn getn [ary n] (if (= n 0) (first ary) (getn (rest ary) (dec n)))) adereth’s solution: 1#(first (drop %2 %1)) #221#(reduce (fn [a b] (inc a)) 0 %) adereth’s solution: 1(fn [sequence] (reduce (fn [acc v] (inc acc)) 0 sequence)) #231#(reduce (fn [rs ls] (cons ls rs)) [] %) adereth’s solution: 123456(fn [s] (loop [result [] s s] (if (seq s) (recur (concat [(first s)] result) (rest s)) result))) #241#(reduce + %) adereth’s solution: 1apply + #251#(filter odd? %) adereth’s solution: 1filter odd? #2612#(take % ((fn fib [a b] (lazy-seq (cons a (fib b (+ b a))))) 1 1)) adereth’s solution: 12345#(take % (map first (iterate (fn [[i1 i2]] [i2 (+ i1 i2)]) [1 1]))) #291#(clojure.string/replace % #"[^A-Z]" "") adereth’s solution: 1(fn [s] (reduce str (filter #(Character/isUpperCase %) s))) #271#(= (reverse %) (seq %)) #28123456789(defn cci [ls r] (if (every? sequential? ls) (concat r ls) (apply cci r (partition-by sequential? ls))))#(let [f (first %)] (if (sequential? f) ) conj [] (first %)) #301234567#((fn dis [ss l r] (if-let [f (first ss)] (let [rss (rest ss)] (if (= l f) (dis rss f r) (dis rss f (conj r f)))) r)) % nil []) 123456#((fn dis [ss l r] (let [[f &amp; s] ss] (cond (nil? f) r (= l f) (dis s f r) :else (dis s f (conj r f))))) % nil []) adereth’s solution: 1#(map first (partition-by identity %)) #321#(mapcat (fn [s] [s s]) %) #341234#((fn rng [s n r] (if (&lt; s n) (rng (inc s) n (conj r s)) r)) %1 %2 []) adereth’s solution:1234(fn [start end] (take-while #(&lt; % end) (iterate inc start) ) ) #3517 #371"ABC" #381(fn [&amp; s] (reduce (fn mx [a b] (if (&gt; a b) a b)) s)) adereth’s solution: 12(fn [ &amp; xs ] (reduce #(if (&gt; %1 %2) %1 %2) xs)) #391234(fn l [a b &amp; r] (if (or (nil? (first a)) (nil? (first b))) (flatten r) (l (rest a) (rest b) (conj (vec r) (first a) (first b))))) adereth’s solution:12(fn [s1 s2] (flatten (map list s1 s2))) #401(fn [x ys] (butlast (flatten (map #(list % x) ys)))) adereth’s solution:1#(butlast (interleave %2 (repeat %1))) #4112(fn [ls n] (keep-indexed #(if (&gt; (mod (inc %1) n) 0) %2) ls)) adereth’s solution: 1234(fn [coll n] (-&gt;&gt; (partition-all n coll) (map (partial take (dec n))) (flatten))) #4212#((fn factorial [n r] (if (= n 1) r (factorial (dec n) (* n r)))) % 1) adereth’s solution:1#(reduce * (range 1 (inc %))) #4816 #521[c e] #571'(5 4 3 2 1) #641+ #711last #681'(7 6 5 4 3) adereth’s solution:1[7 6 5 4 3] #721apply + adereth’s solution:1#(reduce + %) #1341#(= nil (get %2 %1 0)) adereth’s solution:1#(nil? (get %2 % true)) #1451[1 5 9 13 17 21 25 29 33 37] #1561#(apply merge (map (fn [k] &#123;k %1&#125;) %2)) 1#(apply array-map (mapcat (fn [k] [k %1]) %2)) adereth’s solution:1(fn [default values] (reduce #(assoc %1 %2 default) &#123;&#125; values)) #1611#&#123;1 2&#125; #16211 Another solutionSolutions to 4Clojure Easy Problems]]></content>
+      <categories>
+        <category>devtech/clojure</category>
       </categories>
   </entry>
   <entry>
@@ -245,43 +255,20 @@
         <category>devtech/clojure</category>
       </categories>
       <tags>
+        <tag>clojure</tag>
         <tag>react native</tag>
-        <tag>clojure</tag>
         <tag>re-natal</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Clojure Learning]]></title>
-    <url>%2F2016%2F08%2F28%2Fclojure-learning%2F</url>
-    <content type="text"><![CDATA[Clojure/Script 学习RESTful Service Framework Luminus 综合 web 框架，其中（查看 Profiles 详细包含内容）包含 RESTful Services 的实现。 Immutant Web server Hiccup HTML Template Compojure API Sweet web apis with Compojure &amp; Swagger Pedestal is a sturdy(坚实的) and reliable(可靠的) base for services and APIs. Liberator (Github repo) is a Clojure library for building RESTful applications. Compojure is a small routing library for Ring that allows web applications to be composed of small, independent parts. Moustache is a micro web framework/internal DSL to wire Ring handlers and middlewares. bidi Bi-directional URI dispatch. Silk Isomorphic Clojure[Script] Routing. 各框架比较图Rich Hickey Already Answered That!Web server Ring is a low-level interface and library for building web applications in the Clojure programming language. It is similar to the Ruby Rack library, the WSGI in Python, or the Java Servlet specification. GraphQL Framework Lacinia is a library for implementing Facebook’s GraphQL specification in idiomatic Clojure. Github site HTML lib Rum is a client/server library for HTML UI. In ClojureScript, it works as React wrapper, in Clojure, it is a static HTML generator. 相关网站资料 oakes/paren-soup A browser-based editor for ClojureScript maven及clojars镜像 可以解决国内连接clojars慢的问题。 Qinais/WeChat 一个基于Clojure语言的微信开发库 Clojure Web 开发– Ring 使用指南 Night Light 在Clojure项目中添加依赖，运行命令即可运行起一个 IDE。 jiacai2050/history-master 用 ClojureScript + Reagent + Re-frame + Ant.design 写的浏览器插件，可以分析历史访问记录。 Scheme 语言官网 Should I learn Scheme or Racket? Lisp: Common Lisp, Racket, Clojure, Emacs Lisp 比较 与 Scheme 的区别和比较What are the differences between Clojure, Scheme/Racket and Common Lisp? The languages have somewhat different design philosophies. Scheme was designed as a minimal dialect for understanding the Actor Model; it later became used for pedagogy. Clojure was designed for concurrency. As a result, Scheme has a reputation of being minimal and elegant, Common Lisp of being powerful and paradigm-agnostic (functional, OO, whatever), and Clojure of favoring functional programming. Scheme was designed to simplify the Lisp language, that was its only intent except it never really caught on. I think Clojure does something similar its meant to simplify Scheme for the JVM nothing more. Its just like every other JVM language just there to inflate the user experience, only to simplify writting boilerplate in Java land.]]></content>
-      <categories>
-        <category>devtech/clojure</category>
-      </categories>
-      <tags>
-        <tag>GraphQL</tag>
-        <tag>clojure</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[React Native Learning]]></title>
     <url>%2F2016%2F08%2F28%2Freact-native-learning%2F</url>
-    <content type="text"><![CDATA[React Native 相关学习React 相关 Ant Design 蚂蚁金服ui库 Bi Sheng 转化 markdown 文档为静态单页面 React 应用 相关文档资料 比 React Native 更好的选择：Flutter React Native是原生开发的末日吗？ React Native: Is it the end of native development? Style 的笔记 alignItems ReactPropTypes.oneOf([ ‘flex-start’, ‘flex-end’, ‘center’, ‘stretch’ ]) stretch 向两边伸展 alignSelf ReactPropTypes.oneOf([ ‘auto’, ‘flex-start’, ‘flex-end’, ‘center’, ‘stretch’ ]) flexDirection ReactPropTypes.oneOf([ ‘row’, ‘row-reverse’, ‘column’, ‘column-reverse’ ]) flexWrap ReactPropTypes.oneOf([ ‘wrap’, ‘nowrap’ ]) justifyContent ReactPropTypes.oneOf([ ‘flex-start’, ‘flex-end’, ‘center’, ‘space-between’, ‘space-around’ ])]]></content>
+    <content type="text"><![CDATA[React Native 相关学习React 相关 React 官网 Ant Design 蚂蚁金服ui库 Ant Design Pro 上手备忘录 Bi Sheng 转化 markdown 文档为静态单页面 React 应用 從零開始學 ReactJS React 中文文档 React 最佳实践——那些 React 没告诉你但很重要的事 基于 Jest + Enzyme 的 React 单元测试 react-motion React 动画效果库 集成方案： React + Redux + RESTfulAPI React + Relay + GraphQL Relay： 全新的React数据获取框架 antizer ClojureScript library for Ant Design React UI components React Loadable A higher order component for loading components with promises. 用 promise 加载组件的高阶组件，可用于 React 显示加载、代码分离、服务端渲染等。 roadhog Cli tool for creating react apps, configurable version of create-react-app. 创建可配置的 React 应用的命令行工具，集成了 Jest, Enzyme 等。 相关文档资料 react-devtools React Developer Tools 比 React Native 更好的选择：Flutter React Native是原生开发的末日吗？ React Native: Is it the end of native development? Style 的笔记 alignItems ReactPropTypes.oneOf([ ‘flex-start’, ‘flex-end’, ‘center’, ‘stretch’ ]) stretch 向两边伸展 alignSelf ReactPropTypes.oneOf([ ‘auto’, ‘flex-start’, ‘flex-end’, ‘center’, ‘stretch’ ]) flexDirection ReactPropTypes.oneOf([ ‘row’, ‘row-reverse’, ‘column’, ‘column-reverse’ ]) flexWrap ReactPropTypes.oneOf([ ‘wrap’, ‘nowrap’ ]) justifyContent ReactPropTypes.oneOf([ ‘flex-start’, ‘flex-end’, ‘center’, ‘space-between’, ‘space-around’ ])]]></content>
       <categories>
         <category>devtech/react</category>
       </categories>
       <tags>
         <tag>react native</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Android Learing]]></title>
-    <url>%2F2016%2F08%2F28%2Fandroid-learing%2F</url>
-    <content type="text"><![CDATA[Android 开发学习准备工作安装 JDK，Gradle，Android SDK 等；首先装 SDKMan，先别急去一个个下载，这里介绍就是安装其他开发工具的工具：这是专为开发人员准备的安装工具！网速好的话，一句话搞定： 1curl -s &quot;https://get.sdkman.io&quot; | bash 安装 Gradle，点击看一下最新的命令，本文书写时还是 3.0 版本，如下:1sdk install gradle 3.0 有用的库XCL-ChartsAndroid图表库(XCL-Charts is a free charting library for Android platform.) App Splash Screen Sizes{:target=”_blank”}]]></content>
-      <categories>
-        <category>devtech/android</category>
-      </categories>
-      <tags>
-        <tag>Android</tag>
       </tags>
   </entry>
   <entry>
@@ -296,14 +283,26 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[收集的盒子]]></title>
-    <url>%2F2016%2F08%2F26%2Fcollection-box%2F</url>
-    <content type="text"><![CDATA[链接收集网页设计巅峰之作{:target=”_blank”}为 Web 开发者提供的 16 本优秀的 E-BOOK{:target=”_blank”}语义化版本 2.0.0{:target=”_blank”}软件的版本号不是随便乱起的，这里有相应的说明和规范。 Publish Websites Like a BOSS B]{:target=”_blank”}发布静态网站、Blog 的系统，与 Jekyll-Bootstrap 类似吧~ Static - Static Site Generator{:target=”_blank”}用 Clojure 发布静态网站、Blog 的系统，有空可以试试。 StackEdit{:target=”_blank”}浏览器里的 markdown 编辑器，有点类似马克印象的功能，可同步文件到Dropbox等，可写数学公式，可画UML图等。 Ferret - A Hard Real-Time Clojure for Lisp Machines{:target=”_blank”}Ferret 可以编译 Clojure 文件到嵌入式机器中。 木匠的世界{:target=”_blank”}里面有全球各种木头的玩儿法，木头齿轮什么的~ WiX{:target=”_blank”}在网站上直接修改模板、文字、图片等内容生成网站的服务。 IDEA+Tomcat+JRebel热部署{:target=”_blank”}在IDEA上开发Tomcat一类的javaEE项目的姿势。 nylas/N1{:target=”_blank”}一个Electron框架做的桌面应用，邮件工具。 Devcards{:target=”_blank”} aims to provide ClojureScript developers with an interactive visual REPL.给ClojureScript开发，提供一个方便的界面效果测试功能。 PhxSQL{:target=”_blank”}PhxSQL是一个通过Paxos保证强一致和高可用的的MySQL集群。 A high availability MySQL cluster that guarantees data consistency between a master and slaves. data-scope{:target=”_blank”}将数据格式化，或变成图形的clojure库，支持pretty print系列、graph viz系列和chart系列。 g9.js{:target=”_blank”} (github{:target=”_blank”})automatically interactive graphics 交互式图形svg生成库 Leaflet.js{:target=”_blank”}an open-source JavaScript library for mobile-friendly interactive maps 移动端友好的交互式地图开源js库 细说 webpack 之流程篇{:target=”_blank”}详细说明了 webpack 的流程。 Element 网站快速成型工具{:target=”_blank”}Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的组件库，提供了配套设计资源，帮助你的网站快速成型。（饿了么推出） Spacemacs for vim{:target=”_blank”}Vim 上的 Spacemacs ELPA镜像-EmacsChina{:target=”_blank”}]]></content>
+    <title><![CDATA[Clojure Learning]]></title>
+    <url>%2F2016%2F08%2F28%2Fclojure-learning%2F</url>
+    <content type="text"><![CDATA[Clojure/Script 学习RESTful Service Framework Luminus 综合 web 框架，其中（查看 Profiles 详细包含内容）包含 RESTful Services 的实现。 Immutant Web server Hiccup HTML Template Compojure API Sweet web apis with Compojure &amp; Swagger Pedestal is a sturdy(坚实的) and reliable(可靠的) base for services and APIs. Liberator (Github repo) is a Clojure library for building RESTful applications. Compojure is a small routing library for Ring that allows web applications to be composed of small, independent parts. Moustache is a micro web framework/internal DSL to wire Ring handlers and middlewares. bidi Bi-directional URI dispatch. Silk Isomorphic Clojure[Script] Routing. 各框架比较图Rich Hickey Already Answered That!Web server Ring is a low-level interface and library for building web applications in the Clojure programming language. It is similar to the Ruby Rack library, the WSGI in Python, or the Java Servlet specification. Chestnut is a Clojure/ClojureScript web apps application template. React framework Reagent Om Rum Brutha Simple ClojureScript interface to React GraphQL Framework Lacinia is a library for implementing Facebook’s GraphQL specification in idiomatic Clojure. Github site HTML UI lib Rum is a client/server library for HTML UI. In ClojureScript, it works as React wrapper, in Clojure, it is a static HTML generator. antizer ClojureScript library for Ant Design React UI components. 相关网站资料 oakes/paren-soup A browser-based editor for ClojureScript maven及clojars镜像 可以解决国内连接clojars慢的问题。 Qinais/WeChat 一个基于Clojure语言的微信开发库 Clojure Web 开发– Ring 使用指南 Night Light 在Clojure项目中添加依赖，运行命令即可运行起一个 IDE。 jiacai2050/history-master 用 ClojureScript + Reagent + Re-frame + Ant.design 写的浏览器插件，可以分析历史访问记录。 Scheme 语言官网 Should I learn Scheme or Racket? Lisp: Common Lisp, Racket, Clojure, Emacs Lisp 比较 与 Scheme 的区别和比较What are the differences between Clojure, Scheme/Racket and Common Lisp? The languages have somewhat different design philosophies. Scheme was designed as a minimal dialect for understanding the Actor Model; it later became used for pedagogy. Clojure was designed for concurrency. As a result, Scheme has a reputation of being minimal and elegant, Common Lisp of being powerful and paradigm-agnostic (functional, OO, whatever), and Clojure of favoring functional programming. Scheme was designed to simplify the Lisp language, that was its only intent except it never really caught on. I think Clojure does something similar its meant to simplify Scheme for the JVM nothing more. Its just like every other JVM language just there to inflate the user experience, only to simplify writting boilerplate in Java land.]]></content>
       <categories>
-        <category>scrap</category>
+        <category>devtech/clojure</category>
       </categories>
       <tags>
-        <tag>static blog website version Clojure todo</tag>
+        <tag>GraphQL</tag>
+        <tag>clojure</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Android Learing]]></title>
+    <url>%2F2016%2F08%2F28%2Fandroid-learing%2F</url>
+    <content type="text"><![CDATA[Android 开发学习准备工作安装 JDK，Gradle，Android SDK 等；首先装 SDKMan，先别急去一个个下载，这里介绍就是安装其他开发工具的工具：这是专为开发人员准备的安装工具！网速好的话，一句话搞定： 1curl -s &quot;https://get.sdkman.io&quot; | bash 安装 Gradle，点击看一下最新的命令，本文书写时还是 3.0 版本，如下:1sdk install gradle 3.0 有用的库XCL-ChartsAndroid图表库(XCL-Charts is a free charting library for Android platform.) App Splash Screen Sizes{:target=”_blank”}]]></content>
+      <categories>
+        <category>devtech/android</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
       </tags>
   </entry>
   <entry>
@@ -315,6 +314,17 @@
       </categories>
       <tags>
         <tag>essay</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[收集的盒子]]></title>
+    <url>%2F2016%2F08%2F26%2Fcollection-box%2F</url>
+    <content type="text"><![CDATA[链接收集网页设计巅峰之作{:target=”_blank”}为 Web 开发者提供的 16 本优秀的 E-BOOK{:target=”_blank”}语义化版本 2.0.0{:target=”_blank”}软件的版本号不是随便乱起的，这里有相应的说明和规范。 Publish Websites Like a BOSS B]{:target=”_blank”}发布静态网站、Blog 的系统，与 Jekyll-Bootstrap 类似吧~ Static - Static Site Generator{:target=”_blank”}用 Clojure 发布静态网站、Blog 的系统，有空可以试试。 StackEdit{:target=”_blank”}浏览器里的 markdown 编辑器，有点类似马克印象的功能，可同步文件到Dropbox等，可写数学公式，可画UML图等。 Ferret - A Hard Real-Time Clojure for Lisp Machines{:target=”_blank”}Ferret 可以编译 Clojure 文件到嵌入式机器中。 木匠的世界{:target=”_blank”}里面有全球各种木头的玩儿法，木头齿轮什么的~ WiX{:target=”_blank”}在网站上直接修改模板、文字、图片等内容生成网站的服务。 IDEA+Tomcat+JRebel热部署{:target=”_blank”}在IDEA上开发Tomcat一类的javaEE项目的姿势。 nylas/N1{:target=”_blank”}一个Electron框架做的桌面应用，邮件工具。 Devcards{:target=”_blank”} aims to provide ClojureScript developers with an interactive visual REPL.给ClojureScript开发，提供一个方便的界面效果测试功能。 PhxSQL{:target=”_blank”}PhxSQL是一个通过Paxos保证强一致和高可用的的MySQL集群。 A high availability MySQL cluster that guarantees data consistency between a master and slaves. data-scope{:target=”_blank”}将数据格式化，或变成图形的clojure库，支持pretty print系列、graph viz系列和chart系列。 g9.js{:target=”_blank”} (github{:target=”_blank”})automatically interactive graphics 交互式图形svg生成库 Leaflet.js{:target=”_blank”}an open-source JavaScript library for mobile-friendly interactive maps 移动端友好的交互式地图开源js库 细说 webpack 之流程篇{:target=”_blank”}详细说明了 webpack 的流程。 Element 网站快速成型工具{:target=”_blank”}Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的组件库，提供了配套设计资源，帮助你的网站快速成型。（饿了么推出） Spacemacs for vim{:target=”_blank”}Vim 上的 Spacemacs ELPA镜像-EmacsChina{:target=”_blank”}]]></content>
+      <categories>
+        <category>scrap</category>
+      </categories>
+      <tags>
+        <tag>static blog website version Clojure todo</tag>
       </tags>
   </entry>
   <entry>
@@ -435,17 +445,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[编程技术相关]]></title>
-    <url>%2F2014%2F01%2F09%2Fotherrelay%2F</url>
-    <content type="text"><![CDATA[Java 相关 String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型 java 类对象初始化顺序 JavaScript相关 JavaScript框架 easyui 相关 easyui中form表单的ajax实现 版本1.2.5改进说明 自动化测试（抓数据）相关 关于HtmlUnitDriver无法支持所有javascript效果的问题 Git相关 常用Git命令说明 git 与 svn 命令对比 电脑相关 电脑知识问答 联想C461M安装Ubuntu13.10问题 Ubuntu下Eclipse完美安装方案]]></content>
-      <categories>
-        <category>devtech</category>
-      </categories>
-      <tags>
-        <tag>index</tag>
-      </tags>
-  </entry>
-  <entry>
     <title></title>
     <url>%2F2014%2F01%2F09%2Fmodulemissing%2F</url>
     <content type="text"><![CDATA[无法加载pdf等module的问题简单地加载pdf的Module，如官网所述： play -&gt; pdf 1.0 然而却提示无法加载。 尝试运行： play install pdf-1.0 提示：Cannot fetch the modules list from %%http://www.playframework.org/modules%% 后在playframework群中找到答案，是因为要用.com域名才能获取。 需要修改此文件：{PLAY_HOME}/framework/dependencies.yml将最后面库路径的.org改为.com即可。 另外也可以自建仓库，如下： require - play - play1 -&gt; pdf 1.0 repositories - play1modules: type: http artifact: &quot;http://module.yourcompany.com/play1/modules/[module]-[version].zip&quot; contains: - play1 -&gt; * 之后就是从官网下载相应的zip文件放到你的网站相应目录%%http://module.yourcompany.com/play1/modules/%%下即可。]]></content>
@@ -454,6 +453,17 @@
       </categories>
       <tags>
         <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[编程技术相关]]></title>
+    <url>%2F2014%2F01%2F09%2Fotherrelay%2F</url>
+    <content type="text"><![CDATA[Java 相关 String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型 java 类对象初始化顺序 JavaScript相关 JavaScript框架 easyui 相关 easyui中form表单的ajax实现 版本1.2.5改进说明 自动化测试（抓数据）相关 关于HtmlUnitDriver无法支持所有javascript效果的问题 Git相关 常用Git命令说明 git 与 svn 命令对比 电脑相关 电脑知识问答 联想C461M安装Ubuntu13.10问题 Ubuntu下Eclipse完美安装方案]]></content>
+      <categories>
+        <category>devtech</category>
+      </categories>
+      <tags>
+        <tag>index</tag>
       </tags>
   </entry>
   <entry>
@@ -481,7 +491,7 @@
   <entry>
     <title><![CDATA[Javascript框架及相关知识]]></title>
     <url>%2F2013%2F12%2F24%2Fjsframework%2F</url>
-    <content type="text"><![CDATA[综合框架 arale.js{:target=”_blank”} 支付宝的前端基础类库 Arale 基于 SeaJS 和 jQuery 等，目前新构建 2.0 版本。 demo: 计算器{:target=”_blank”} KISSY{:target=”_blank”} 是由淘宝前端攻城师们发起创建的一个开源 JS 类库。 Ender.js{:target=”_blank”} - Ender is a full featured package manager for your browser. 作者 Dustin Diaz{:target=”_blank”} 模块加载框架 Javascript模块化{:target=”_blank”} Seajs{:target=”_blank”} 由支付宝团队开源，基于（CommonJS{:target=”_blank”}的一种实现，类似的模块加载框架：,,）和jquery的前端框架 BravoJS Require.js{:target=”_blank”} FlyScript AlmondJS{:target=”_blank”} A minimal AMD API implementation for use after optimized builds Amdjs{:target=”_blank”} The Asynchronous Module Definition (AMD) API specifies a mechanism for defining modules such that the module and its dependencies can be asynchronously loaded. ozjs{:target=”_blank”} 土豆网的开源模块加载js库 npmjs{:target=”_blank”} 后端依赖加载工具，包管理工具 Yarn{:target=”_blank”} 后端依赖加载工具，包管理工具 Yarn vs npm：你需要知道的一切 UMD{:target=”_blank”} 模板框架 Handlebars.js{:target=”_blank”} provides the power necessary to let you build semantic templates effectively with no frustration. mustache.js{:target=”_blank”} - Logic-less templates with Javascript. Eco{:target=”_blank”}: Embedded CoffeeScript templates Jade{:target=”_blank”}: Node Template Engine MVXX框架 （初步选择Emberjs，Knockoutjs 和 Canjs） The Top 10 Javascript MVC Frameworks Reviewed{:target=”_blank”} TodoMVC{:target=”_blank”} 「官网{:target=”_blank”}」A common learning application for popular JavaScript MV* frameworks 最佳实践之 Javascript MVC{:target=”_blank”} Vue.js v2.0 中文{:target=”_blank”} 官网{:target=”_blank”} Backbone.js{:target=”_blank”} Backbone.js vs Ember.js{:target=”_blank”} What are the key differences between Ember.js (formerly SproutCore 2.0) and Backbone.js?{:target=”_blank”} Marionette{:target=”_blank”} Backbone.Marionette 组合应用库，用于简化大型 Javascript 应用。 TroraxJS{:target=”_blank”} 将 Backbone 和 Handlebars 结合的框架，适合大型可扩展的 Web 应用。 RivetsJS{:target=”_blank”} 轻量强大的数据模板绑定的解决方案，可与 Backbone 等合用。 ChaplinJS{:target=”_blank”} 可与 Backbone 结合使用，也可以与Exoskeleton{:target=”_blank”}（可替代 Backbone 系列，仅 8k） 结合使用。 Emberjs{:target=”_blank”} 学习心得{:target=”_blank”} Ember/Handlebars template precompilation with Play{:target=”_blank”} Ember data{:target=”_blank”} 与RubyOnRails结合较好 ember-rest{:target=”_blank”} Simple RESTful resources in Ember.js Beginning Ember.js on Rails{:target=”_blank”} The architecture of Ember.js apps - data{:target=”_blank”} ember.js and the server{:target=”_blank”} AngularJS vs Emberjs{:target=”_blank”} 英文贴，讨论哪个更好，其中提到AngularJS的机制有2000个绑定的限制，做大型系统更应该选Emberjs。 Fire Up Ember.js{:target=”_blank”} 代码实例录像，需购买？ EMBLR, THE EMBER.JS TUMBLR{:target=”_blank”} Experimenting with the Architecture of Ember.js{:target=”_blank”} knockoutjs{:target=”_blank”} Simplify dynamic JavaScript UIs by applying the Model-View-View Model (MVVM) pattern 优点：HTML中的data-binding属性可以方便地与其他模板框架并用。如：Django合用的比较案例{:target=”_blank”} 在线练习学习网站{:target=”_blank”} BootStrap网站使用 knockoutjs的文章{:target=”_blank”} ，说明了Knockoutjs比Emberjs更适合改造网站的原因。 AngularJS{:target=”_blank”} HTML enhanced for web apps! MIT-licensed, Super-powered by Google! angularui{:target=”_blank”} 一篇从Ember.js迁移到AngularJS的文章{:target=”_blank”}。介绍了AngularJs更加可扩展的好处。 基于jQuery UI Autocomplete Widget的ui-autocomplete{:target=”_blank”} Ember.js or Angular.js?{:target=”_blank”} 英文论坛一贴 Choosing a JS MVC Framework: Angular.js vs Ember.js{:target=”_blank”} Canjs{:target=”_blank”} is a MIT-licensed, client-side, JavaScript framework that makes building rich web applications easy. 与其他框架共用性最佳，据评测性能也最佳{:target=”_blank”} 还有这个测试{:target=”_blank”} 这项显示knockoutjs在Live binding方面更好些{:target=”_blank”}。 Batman.js{:target=”_blank”} is a framework for building rich web applications with CoffeeScript or JavaScript. JavaScriptMVC{:target=”_blank”} is an open-source framework containing the best ideas in jQuery development. It guides you to successfully completed projects by promoting best practices, maintainability, and convention over configuration. PureJS{:target=”_blank”} effortless. javascript.The missing API for Javascript. http://obvious.github.com/matador/ http://derbyjs.com/ interesting http://flatironjs.org/ interesting http://railwayjs.com/ pretty bad. 服务器端（并客户端）框架 Nodejs{:target=”_blank”} 三种Javascript(NodeJS)异步编程代码模式比较{:target=”_blank”} 在Node.js 中用 Q 实现Promise – Callbacks之外的另一种选择{:target=”_blank”} Meteor{:target=”_blank”} is a full stack framework 基于 Node.js，服务端与客户端都使用 javascript。 Yahoo! Mojito{:target=”_blank”} is the JavaScript library implementing Cocktails, a JavaScript-based on-line/off-line, multi-device, hosted application platform. Wakanda{:target=”_blank”} 服务器，开发工具studio和框架。 辅助工具及测试框架 Puppeteer 谷歌最新的大招，替代了 PhantomJS 等。 译文：Puppeteer 与 Chrome Headless —— 从入门到爬虫 Try Puppeteer online Puppeteer之爬虫入门 我终于弄懂了各种前端build工具{:target=”_blank”} Jasmine{:target=”_blank”} QUnit{:target=”_blank”} is a powerful, easy-to-use, JavaScript test suite. YEOMAN{:target=”_blank”} 脚手架工具，与下面的 Grunt 和 Bower 工具合并使用。 GruntJS{:target=”_blank”} 自动化任务的工具，可以压缩脚本、编译 coffescript、单元测试等。是一个基于任务的 JavaScript 项目命令行构建工具。 Bower{:target=”_blank”} 依赖管理工具 JSHint{:target=”_blank”} 是一个 JavaScript 的代码质量检查工具，主要用来检查代码质量以及找出一些潜在的代码缺陷。 Phantom JS{:target=”_blank”} 是一个服务器端的 JavaScript API 的 WebKit。其支持各种Web标准： DOM 处理, CSS 选择器, JSON, Canvas, 和 SVG。主要用于无首自动化测试、网页抓图或转 pdf 等、操控网页自动化、网络监控（类似YSLow）等方面。 自从 Puppeteer 发布后，停止维护了。 函数式编程 Ramda 函数库参考教程UI框架 Aliceui{:target=”_blank”} 是支付宝前端样式解决方案小组的项目代称。Alice Css书写规范{:target=”_blank”} 支付宝CSS样式架构{:target=”_blank”} 样式库构建规范{:target=”_blank”} D3.js{:target=”_blank”} is a JavaScript library for manipulating documents based on data. 二维图像生成框架 Wijmo{:target=”_blank”} 商业全面控件UI，包含类似Excel控件图表控件SpreadJS等企业级UI控件，价格：$895。 iView 官网 基于 Vue 的 UI 框架 绘图报表 jQuery Sparklines{:target=”_blank”} 很特别的在一行内显示一个小曲线或柱状图等的功能。 Peity{:target=”_blank”} 也是一行内的小图形功能。 RGraph{:target=”_blank”} 功能很全面，对公益或个人使用免费，有商业授权。 Highcharts JS{:target=”_blank”} 功能强大，对公益或个人使用免费，有商业授权，单网站$80。 jQuery HighchartsTable{:target=”_blank”} 免费MIT授权，但基于Highcharts JS，基本的线图、柱图等。 canvasXpress{:target=”_blank”} 使用HTML5的&lt;canvas&rt;标签实现，功能全面，LGPL免费授权。 JointJs{:target=”_blank”} 用于创建完全互动式图表，如组织架构图、UML状态图、UML类图等。 Elycharts{:target=”_blank”} 是一个易于使用的，可定制的JavaScript图表绘制组件。这个组件可用于绘制大部分常用的图表类型包括：line, column, are, bar, pie, sparklines and combinations。图表利用SVG/VML技术生成，基于jQuery + Raphaël开发。 脚本压缩打包工具 TUICompiler{:target=”_blank”} 土豆网的js打包工具 Webpack 2 入门教程{:target=”_blank”} 脚本牛人博客 Evan Wallace{:target=”_blank”} HTML5和 Javascript 高手，擅长 WebGL 等技术。 其他相关 Bootstrap中文官网{:target=”_blank”} 指令式Callback和函数式Promise：对nodejs的一声叹息{:target=”_blank”} 七个富应用JavaScript框架{:target=”_blank”} UIBox{:target=”_blank”} 一个方便搜索Javascript UI 框架的网站。 TodoMVC{:target=”_blank”}各种js框架写的TODO示例，帮助选择适合自己的js框架。 Yahoo开放的Json资源{:target=”_blank”} JSONP详解{:target=”_blank”} jQuery的deferred对象详解{:target=”_blank”} NodeJs中用node-webkit开发多平台的桌面客户端{:target=”_blank”} Nexe is a command-line utility that compiles your Node.js application into a single executable file. Electron Build cross platform desktop apps with JavaScript, HTML, and CSS CoffeeScript 《Smooth CoffeeScript》{:target=”_blank”} 脚本示例收集 图片选择框{:target=”_blank”} 布仿真特效{:target=”_blank”} 数字用英文怎么读{:target=”_blank”} 粒子系统{:target=”_blank”} 水滴下流系统{:target=”_blank”} 机械手臂系统{:target=”_blank”} 字母雨系统{:target=”_blank”} 正则表达式在线测试： REGex TESTER{:target=”_blank”} JavaScript 正则表达式在线测试工具{:target=”_blank”} regexpal{:target=”_blank”} 0.1.4 — a JavaScript regular expression tester CSS 相关 PostCSS{:target=”_blank”} A tool for transforming CSS with JavaScript CSSNext{:target=”_blank”} Use tomorrow’s CSS syntax, today.]]></content>
+    <content type="text"><![CDATA[综合框架 arale.js{:target=”_blank”} 支付宝的前端基础类库 Arale 基于 SeaJS 和 jQuery 等，目前新构建 2.0 版本。 demo: 计算器{:target=”_blank”} KISSY{:target=”_blank”} 是由淘宝前端攻城师们发起创建的一个开源 JS 类库。 Ender.js{:target=”_blank”} - Ender is a full featured package manager for your browser. 作者 Dustin Diaz{:target=”_blank”} 模块加载框架 Javascript模块化{:target=”_blank”} Seajs{:target=”_blank”} 由支付宝团队开源，基于（CommonJS{:target=”_blank”}的一种实现，类似的模块加载框架：,,）和jquery的前端框架 BravoJS Require.js{:target=”_blank”} FlyScript AlmondJS{:target=”_blank”} A minimal AMD API implementation for use after optimized builds Amdjs{:target=”_blank”} The Asynchronous Module Definition (AMD) API specifies a mechanism for defining modules such that the module and its dependencies can be asynchronously loaded. ozjs{:target=”_blank”} 土豆网的开源模块加载js库 npmjs{:target=”_blank”} 后端依赖加载工具，包管理工具 Yarn{:target=”_blank”} 后端依赖加载工具，包管理工具 Yarn vs npm：你需要知道的一切 UMD{:target=”_blank”} 模板框架 Handlebars.js{:target=”_blank”} provides the power necessary to let you build semantic templates effectively with no frustration. mustache.js{:target=”_blank”} - Logic-less templates with Javascript. Eco{:target=”_blank”}: Embedded CoffeeScript templates Jade{:target=”_blank”}: Node Template Engine MVXX框架 （初步选择Emberjs，Knockoutjs 和 Canjs） The Top 10 Javascript MVC Frameworks Reviewed{:target=”_blank”} TodoMVC{:target=”_blank”} 「官网{:target=”_blank”}」A common learning application for popular JavaScript MV* frameworks 最佳实践之 Javascript MVC{:target=”_blank”} Vue.js v2.0 中文{:target=”_blank”} 官网{:target=”_blank”} NUXT Vue.js 通用应用框架 Backbone.js{:target=”_blank”} Backbone.js vs Ember.js{:target=”_blank”} What are the key differences between Ember.js (formerly SproutCore 2.0) and Backbone.js?{:target=”_blank”} Marionette{:target=”_blank”} Backbone.Marionette 组合应用库，用于简化大型 Javascript 应用。 TroraxJS{:target=”_blank”} 将 Backbone 和 Handlebars 结合的框架，适合大型可扩展的 Web 应用。 RivetsJS{:target=”_blank”} 轻量强大的数据模板绑定的解决方案，可与 Backbone 等合用。 ChaplinJS{:target=”_blank”} 可与 Backbone 结合使用，也可以与Exoskeleton{:target=”_blank”}（可替代 Backbone 系列，仅 8k） 结合使用。 Emberjs{:target=”_blank”} 学习心得{:target=”_blank”} Ember/Handlebars template precompilation with Play{:target=”_blank”} Ember data{:target=”_blank”} 与RubyOnRails结合较好 ember-rest{:target=”_blank”} Simple RESTful resources in Ember.js Beginning Ember.js on Rails{:target=”_blank”} The architecture of Ember.js apps - data{:target=”_blank”} ember.js and the server{:target=”_blank”} AngularJS vs Emberjs{:target=”_blank”} 英文贴，讨论哪个更好，其中提到AngularJS的机制有2000个绑定的限制，做大型系统更应该选Emberjs。 Fire Up Ember.js{:target=”_blank”} 代码实例录像，需购买？ EMBLR, THE EMBER.JS TUMBLR{:target=”_blank”} Experimenting with the Architecture of Ember.js{:target=”_blank”} knockoutjs{:target=”_blank”} Simplify dynamic JavaScript UIs by applying the Model-View-View Model (MVVM) pattern 优点：HTML中的data-binding属性可以方便地与其他模板框架并用。如：Django合用的比较案例{:target=”_blank”} 在线练习学习网站{:target=”_blank”} BootStrap网站使用 knockoutjs的文章{:target=”_blank”} ，说明了Knockoutjs比Emberjs更适合改造网站的原因。 AngularJS{:target=”_blank”} HTML enhanced for web apps! MIT-licensed, Super-powered by Google! angularui{:target=”_blank”} 一篇从Ember.js迁移到AngularJS的文章{:target=”_blank”}。介绍了AngularJs更加可扩展的好处。 基于jQuery UI Autocomplete Widget的ui-autocomplete{:target=”_blank”} Ember.js or Angular.js?{:target=”_blank”} 英文论坛一贴 Choosing a JS MVC Framework: Angular.js vs Ember.js{:target=”_blank”} Canjs{:target=”_blank”} is a MIT-licensed, client-side, JavaScript framework that makes building rich web applications easy. 与其他框架共用性最佳，据评测性能也最佳{:target=”_blank”} 还有这个测试{:target=”_blank”} 这项显示knockoutjs在Live binding方面更好些{:target=”_blank”}。 Batman.js{:target=”_blank”} is a framework for building rich web applications with CoffeeScript or JavaScript. JavaScriptMVC{:target=”_blank”} is an open-source framework containing the best ideas in jQuery development. It guides you to successfully completed projects by promoting best practices, maintainability, and convention over configuration. PureJS{:target=”_blank”} effortless. javascript.The missing API for Javascript. http://obvious.github.com/matador/ http://derbyjs.com/ interesting http://flatironjs.org/ interesting http://railwayjs.com/ pretty bad. 服务器端（并客户端）框架 Nodejs{:target=”_blank”} 三种Javascript(NodeJS)异步编程代码模式比较{:target=”_blank”} 在Node.js 中用 Q 实现Promise – Callbacks之外的另一种选择{:target=”_blank”} Meteor{:target=”_blank”} is a full stack framework 基于 Node.js，服务端与客户端都使用 javascript。 Yahoo! Mojito{:target=”_blank”} is the JavaScript library implementing Cocktails, a JavaScript-based on-line/off-line, multi-device, hosted application platform. Wakanda{:target=”_blank”} 服务器，开发工具studio和框架。 辅助工具及测试框架 Puppeteer 谷歌最新的大招，替代了 PhantomJS 等。 译文：Puppeteer 与 Chrome Headless —— 从入门到爬虫 Try Puppeteer online Puppeteer之爬虫入门 我终于弄懂了各种前端build工具{:target=”_blank”} Jasmine{:target=”_blank”} QUnit{:target=”_blank”} is a powerful, easy-to-use, JavaScript test suite. YEOMAN{:target=”_blank”} 脚手架工具，与下面的 Grunt 和 Bower 工具合并使用。 GruntJS{:target=”_blank”} 自动化任务的工具，可以压缩脚本、编译 coffescript、单元测试等。是一个基于任务的 JavaScript 项目命令行构建工具。 Bower{:target=”_blank”} 依赖管理工具 JSHint{:target=”_blank”} 是一个 JavaScript 的代码质量检查工具，主要用来检查代码质量以及找出一些潜在的代码缺陷。 Phantom JS{:target=”_blank”} 是一个服务器端的 JavaScript API 的 WebKit。其支持各种Web标准： DOM 处理, CSS 选择器, JSON, Canvas, 和 SVG。主要用于无首自动化测试、网页抓图或转 pdf 等、操控网页自动化、网络监控（类似YSLow）等方面。 自从 Puppeteer 发布后，停止维护了。 函数式编程 Ramda 函数库参考教程 UI框架 Ant Design 这个是蚂蚁金服前端样式解决方案小组的项目代称。Alice Css书写规范{:target=”_blank”} 支付宝CSS样式架构{:target=”_blank”} 样式库构建规范{:target=”_blank”} D3.js{:target=”_blank”} is a JavaScript library for manipulating documents based on data. 二维图像生成框架 Wijmo{:target=”_blank”} 商业全面控件UI，包含类似Excel控件图表控件SpreadJS等企业级UI控件，价格：$895。 iView 官网 基于 Vue 的 UI 框架 Joint.js 关系图类库，国外，高级收费。 G6 关系图类库，国内蚂蚁金服旗下，免费。 绘图报表 jQuery Sparklines{:target=”_blank”} 很特别的在一行内显示一个小曲线或柱状图等的功能。 Peity{:target=”_blank”} 也是一行内的小图形功能。 RGraph{:target=”_blank”} 功能很全面，对公益或个人使用免费，有商业授权。 Highcharts JS{:target=”_blank”} 功能强大，对公益或个人使用免费，有商业授权，单网站$80。 jQuery HighchartsTable{:target=”_blank”} 免费MIT授权，但基于Highcharts JS，基本的线图、柱图等。 canvasXpress{:target=”_blank”} 使用HTML5的&lt;canvas&rt;标签实现，功能全面，LGPL免费授权。 JointJs{:target=”_blank”} 用于创建完全互动式图表，如组织架构图、UML状态图、UML类图等。 Elycharts{:target=”_blank”} 是一个易于使用的，可定制的JavaScript图表绘制组件。这个组件可用于绘制大部分常用的图表类型包括：line, column, are, bar, pie, sparklines and combinations。图表利用SVG/VML技术生成，基于jQuery + Raphaël开发。 脚本压缩打包工具 TUICompiler{:target=”_blank”} 土豆网的js打包工具 Webpack 2 入门教程{:target=”_blank”} 脚本牛人博客 Evan Wallace{:target=”_blank”} HTML5和 Javascript 高手，擅长 WebGL 等技术。 其他相关 Bootstrap中文官网{:target=”_blank”} 指令式Callback和函数式Promise：对nodejs的一声叹息{:target=”_blank”} 七个富应用JavaScript框架{:target=”_blank”} UIBox{:target=”_blank”} 一个方便搜索Javascript UI 框架的网站。 TodoMVC{:target=”_blank”}各种js框架写的TODO示例，帮助选择适合自己的js框架。 Yahoo开放的Json资源{:target=”_blank”} JSONP详解{:target=”_blank”} jQuery的deferred对象详解{:target=”_blank”} NodeJs中用node-webkit开发多平台的桌面客户端{:target=”_blank”} Nexe is a command-line utility that compiles your Node.js application into a single executable file. Electron Build cross platform desktop apps with JavaScript, HTML, and CSS CoffeeScript 《Smooth CoffeeScript》{:target=”_blank”} 脚本示例收集 图片选择框{:target=”_blank”} 布仿真特效{:target=”_blank”} 数字用英文怎么读{:target=”_blank”} 粒子系统{:target=”_blank”} 水滴下流系统{:target=”_blank”} 机械手臂系统{:target=”_blank”} 字母雨系统{:target=”_blank”} 正则表达式在线测试： REGex TESTER{:target=”_blank”} JavaScript 正则表达式在线测试工具{:target=”_blank”} regexpal{:target=”_blank”} 0.1.4 — a JavaScript regular expression tester CSS 相关 PostCSS{:target=”_blank”} A tool for transforming CSS with JavaScript CSSNext{:target=”_blank”} Use tomorrow’s CSS syntax, today.]]></content>
       <categories>
         <category>devtech js</category>
       </categories>
@@ -490,9 +500,31 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[常用Git命令说明]]></title>
+    <url>%2F2013%2F12%2F23%2Foftenused%2F</url>
+    <content type="text"><![CDATA[参考：史上最浅显易懂的Git教程！{:target=”_blank”} 进入你的工作目录 cd yourworkpath 列出所有branch，当前所在branch前面有“*”号。 git branch -a 切换工作库 git checkout v1.5.1 合并另一个branch，通常是master git merge master 再切换回来 git checkout master 查看当前目录情况 git status 将当前目录中的修改提交到相应的库（branch）中 git commit -m &quot;&quot;此处添加修改说明&quot;&quot; 从远程库中合并最新状态 git pull 注：当使用git pull命令的时候如果提示有本地文件修改了，无法合并的时候，我们可以放弃本地修改（注意放弃的修改将不可恢复），然后再更新；如果不想放弃本地修改，可以先提交，然后再合并更新。如果要放弃本地修改后更新： git reset --hard git pull 将合并后的状态并入远程库中。 git push origin master 如果是在分支上开发则为： git push origin v1.5.1 取消某个文件的版本控制，但实际不删除这个文件： git rm --cached somefile.txt 然后再修改目录下的.gitignore文件，添加上这个文件的相应忽略即可。 查看每一行的改动： git blame `&lt;filename&gt;` git 查看一个文件的所有修改历史 git log --pretty=oneline `&lt;filename&gt;` 创建一个分支并切换到这个分支工作，通常可用于临时进行一些测试性的开发，如果要保留这个dirty的分支内容，可以commit上去，随时再切换回master就象一切没发生过。 git checkout -b dirty 如果这个测试性的开发需要被接受合并到主干master，只要切换到master再合并即可： git checkout master git merge dirty 丢弃加入缓存区（即git add的准备提交的文件）的修改，分别退回到当前版本、上一个版本、上上一个版本、前99个版本、某特定 id 版本： git reset --hard HEAD git reset --hard HEAD^ git reset --hard HEAD^^ git reset --hand HEAD~99 git reset --hard 322542re342 查看过去和未来的版本 id 等信息： git log git reflog 丢弃某个文件的修改，和SVN的revert命令一样 git checkout -- comefile.txt 丢弃本地所有文件的修改，和SVN的revert命令一样 1git checkout -- *.* 查看当前路径下的远程库情况： 1git remote -v 添加远程库路径 1git remote add origin https://github.com/wind13/xxx.git 使用GIT SUBTREE集成项目到子目录 第一次添加子目录，建立与git项目的关联 12git remote add -f ai https://github.com/aoxu/ai.git git subtree add --prefix=ai ai master --squash 从远程仓库更新子目录 12git fetch ai master git subtree pull --prefix=ai ai --squash 从子目录push到远程仓库 1git subtree push --prefix=ai ai master Git 工具 - 子树合并]]></content>
+      <categories>
+        <category>devtech</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title></title>
-    <url>%2F2013%2F12%2F23%2Fcoolguydontlookatexplosions%2F</url>
-    <content type="text"><![CDATA[Cool Guys Don’t Look At Explosions纯爷们儿从不围观爆炸！Cool guys don&apos;t look at explosions They blow things up and then walk away Who&apos;s got time to watch an explosion? Because cool guys have errands that they have to walk to.. Keep walkin&apos;, keep shinin&apos; Don&apos;t look back keep on walkin&apos; Keep struttin&apos; slow motion The more you ignore it, the cooler you look Samberg: Ladies &amp; gentlemen, please join me in welcoming.. Mr. Neil Diamond! Will Ferrell: ha ha ha....Where are we?! Cool guys don&apos;t look at explosions They stride for it in their diamond covered boots They wear jumpsuits with glitter and rhinestones And walk away in slow motion.. Keep walkin, you&apos;re cruisin.. Cherry Cherry...Sweet Caroline.. Denzel walks... Will Smith walks... Mark Wahlberg is wearin a hat! Samberg: Going solo....JJ Abrams! JJ Abrams solo Yeah! Okay. Because,Cool guys don&apos;t look at explosions, The flames are hot, but my heart is chill Walk fast from the roaring explosion, And don&apos;t think about the people you killed 这首歌专门为 The 2009 MTV Movie Awards而制作的里面穿插了很多大片的画面 0:12 墨西哥往事2 Desperado 0:29 地狱骑士 Hell Ride 0:40 丛林奇兵 Welcome to the Jungle 0:57 幸运数字斯莱文 Lucky Number Slevin 1:08 钢铁侠 Ironman 1:12 杀出个黎明 From Dusk Till Dawn 1:14 老无所依 No Country for Old Man 1:21 全民超人 Hancock 1:24 生死狙击 Shooter 1:47 辛瑞那 Syriana 1:50 铁甲威龙 RoboCop 1:54 蝙蝠侠前传2 黑暗骑士 Batman 2:00 空中监狱 Con Air 2:13 X战警前传: 金刚狼 X-Men Origins: Wolverine 英文原版：http://v.ku6.com/show/rQb7VJTU5aHGspjWA3mLvw...html 中文改编版：http://v.youku.com/v_show/id_XMjI2OTQ1NjM2.html]]></content>
+    <url>%2F2013%2F12%2F23%2Fcomputerqa%2F</url>
+    <content type="text"><![CDATA[电脑使用及编程知识问答网易闪电邮和网易邮箱助手有什么区别，如何选择？ 网易闪电邮是功能比较全面的邮箱客户端，可以同时支持其他邮箱的邮件收发，类似Foxmail和Outlook这样的邮箱软件。而网易邮箱助手则是个轻客户端，只能连接网易的邮箱，提供来信提醒和桌面预览等功能。如果你还想用客户端收发其它邮箱，那就只能选择网易闪电邮了，如果你只有网易的邮箱，又不想安装个太大的软件，只想要个轻巧的来信提醒小工具，那么网易邮箱助手是不错的选择。 比较好的邮件客户端软件是什么？ 最常见的是Foxmail，其他还有很多，网易闪电邮也比较简洁好用。但个人最推荐的还是Thunderbird，跨平台Windows和Linux系统都通用，安装上Thunderbird Conversations插件，Lightning插件和Provider for Google Calendar插件，这个邮件客户端软件就变得非常实用，让人爱不释手了。有日历、任务功能，邮件组织象gmail一样舒服，同时日历还可以跟google日历同步，这样你的手机什么的终端只要连上google日历就是一套非常好的GTD工具了！ Html5实现多文件上传的方法？ 基于html5的可预览多图片ajax上传使用HTML5实现多文件上传 升级Fedora后启动不了报File not found错怎么办？ 一般情况是grub2未设置好，启动不了。可先用 Fedora16 LiveCD 或 Fedora16 DVD 启动进入shell，然后找到升级了的Fedora 16的挂载盘，如果是DVD修复的话，会挂在 /mnt/syslinux（记不清了）下，则执行： chroot /mnt/syslinux 执行以下命令可修复grub2： grub2-mkconfig -o /boot/grub2/gub.cfg grub2-install /dev/sda 如果执行第二句时报：Your embedding area is unusually small…，则一般是因为引导区被占用了，比如安装了Win7等，则可执行： grub2-install --force /dev/sda 这样就强制写入grub2的引导信息了，一般情况重启就正常了！ 主流代码仓库的选择，主要有哪些？ Subversion 集中式（目前还在大量使用的，熟悉的人员较多） Git 分布式（更先进些，特别适用于开源项目，如 github 网站） 从Subversion转到Git有相应的工具和方法，参考：转换你的 Subversion 到 Git 和 如何将SVN仓库转换为Git仓库 CentOS下使用Gitolite架构Git服务的步骤]]></content>
+      <categories>
+        <category>pc</category>
+      </categories>
+      <tags>
+        <tag>pc</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F12%2F23%2Fgitolitesetup%2F</url>
+    <content type="text"><![CDATA[CentOS下使用Gitolite架构Git服务的步骤 在服务端创建专用用户，如：git，可考虑不设置密码，从而无法用密码登录服务器。 在管理员电脑上创建管理员密钥对，并（通过U盘或root账号）拷贝到服务器上，之后添加到git用户目录的.ssh/authorized_keys文件中。从而达到无需密码从管理员电脑直接ssh到服务器git上的效果。 使用git clone下载Gitolite。 运行gl-system-install安装到服务器，此时会看到git用户目录中多出了bin, share, repositories等目录。 从客户端下载git clone 管理目录：gitolite-admin。 添加用户公钥*.pub到keydir目录，配置用户权限在conf/gitolite.conf文件中。]]></content>
       <categories>
         <category>playscala</category>
       </categories>
@@ -501,9 +533,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[jQuery EasyUI 1.2.5 ChangeLog]]></title>
-    <url>%2F2013%2F12%2F23%2Fversion1.2.5%2F</url>
-    <content type="text"><![CDATA[Bug tabs: When add a new tab panel with href property, the content page is loaded twice. fixed. form: Failed to call ‘load’ method to load form input with complex name. fixed. draggable: End drag in ie9, the cursor cannot be restored. fixed. Improvement panel: The tools can be defined via html markup. tabs: Call ‘close’ method to close specified tab panel, users can pass tab title or index of tab panel. Other methods such ‘select’,’getTab’ and ‘exists’ are similar to ‘close’ method. tabs: Add ‘getTabIndex’ method. tabs: Users can define mini tools on tabs. tree: The mouse must move a specified distance to begin drag and drop operation. resizable: Add ‘options’,’enable’ and ‘disable’ methods. numberbox: Allow users to change number format. datagrid: The subgrid is supported now. searchbox: Add ‘selectName’ method to select searching type name.]]></content>
+    <title><![CDATA[easyui中form表单的ajax实现]]></title>
+    <url>%2F2013%2F12%2F23%2Feasyuiform%2F</url>
+    <content type="text"><![CDATA[示例代码如下： :::java $(&apos;#ff&apos;).form({ url:$(this).attr(&quot;&quot;action&quot;&quot;), onSubmit:function(){ return $(this).form(&apos;validate&apos;); }, success:function(data){ alert(data); } }); 其中url的值是取的form中的action属性，故需注意填写form的相应属性，当然也可以为’/controller_name/action_name’。]]></content>
       <categories>
         <category>devtech js</category>
       </categories>
@@ -524,6 +556,28 @@
   </entry>
   <entry>
     <title></title>
+    <url>%2F2013%2F12%2F23%2Fconfession214%2F</url>
+    <content type="text"><![CDATA[情人节程序员经典表白我能把整个世界都抽象成一个类…… 但是没办法把你变成我的对象…… 想让你成为私有常量，外部函数无法访问你…… 又想让你变成全局常量，在整个生命周期随时随地都可以调用你…… 因为世界上没有这样的常量…… 所以我无法定义你…… 我可以重载甚至覆盖任何一种方法…… 但是我却不能重载对你的思念…… 也许命中注定了 你在我的世界里永远的烙上了静态的属性…… 而我不慎调用了“爱你”这个方法…… 当我义无返顾的把自己作为参数传进这个方法时…… 我才发现方法”爱你”里面执行是一个死循环…… 她不停的返回我对你的思念，并存入我心里的堆栈…… 在这无穷无尽的循环中…… 我的内存资源很快消耗殆尽…… 而我却依然不停的向系统申请空间换取我对你的想念…… 终于我受不了“爱你”的煎熬…… 调用了”表白”这个Public方法…… 将字符串“如果你爱我，我将用尽一生去爱你，你爱我吗？”传递给你…… 我却捕获一个异常－－－内存溢出，我爱的人不爱我…… 为了解决这个异常…… 我偷偷地修改了”表白”的方法…… 加上了异常处理finally块…… 并且将返回值设为真…… 心想这样万无一失了吧…… 鼓起勇气再一次调用”表白”…… 我却依然捕获到同样的异常…… 仔细调试代码，原来在方法中有一段是这样的…… “如果没房没车则执行System.exit()”…… 欲哭无泪，身心破碎，终于我的系统崩溃了…… 留下一句“OutOfMemory 内存溢出”的提示……]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F12%2F23%2Fcoolguydontlookatexplosions%2F</url>
+    <content type="text"><![CDATA[Cool Guys Don’t Look At Explosions纯爷们儿从不围观爆炸！Cool guys don&apos;t look at explosions They blow things up and then walk away Who&apos;s got time to watch an explosion? Because cool guys have errands that they have to walk to.. Keep walkin&apos;, keep shinin&apos; Don&apos;t look back keep on walkin&apos; Keep struttin&apos; slow motion The more you ignore it, the cooler you look Samberg: Ladies &amp; gentlemen, please join me in welcoming.. Mr. Neil Diamond! Will Ferrell: ha ha ha....Where are we?! Cool guys don&apos;t look at explosions They stride for it in their diamond covered boots They wear jumpsuits with glitter and rhinestones And walk away in slow motion.. Keep walkin, you&apos;re cruisin.. Cherry Cherry...Sweet Caroline.. Denzel walks... Will Smith walks... Mark Wahlberg is wearin a hat! Samberg: Going solo....JJ Abrams! JJ Abrams solo Yeah! Okay. Because,Cool guys don&apos;t look at explosions, The flames are hot, but my heart is chill Walk fast from the roaring explosion, And don&apos;t think about the people you killed 这首歌专门为 The 2009 MTV Movie Awards而制作的里面穿插了很多大片的画面 0:12 墨西哥往事2 Desperado 0:29 地狱骑士 Hell Ride 0:40 丛林奇兵 Welcome to the Jungle 0:57 幸运数字斯莱文 Lucky Number Slevin 1:08 钢铁侠 Ironman 1:12 杀出个黎明 From Dusk Till Dawn 1:14 老无所依 No Country for Old Man 1:21 全民超人 Hancock 1:24 生死狙击 Shooter 1:47 辛瑞那 Syriana 1:50 铁甲威龙 RoboCop 1:54 蝙蝠侠前传2 黑暗骑士 Batman 2:00 空中监狱 Con Air 2:13 X战警前传: 金刚狼 X-Men Origins: Wolverine 英文原版：http://v.ku6.com/show/rQb7VJTU5aHGspjWA3mLvw...html 中文改编版：http://v.youku.com/v_show/id_XMjI2OTQ1NjM2.html]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
     <url>%2F2013%2F12%2F23%2Ftracinterfacecustomization%2F</url>
     <content type="text"><![CDATA[定制Trac界面原文地址 介绍该页面旨提供有关如何定制Trac界面的建议. 话题涵盖了编辑HTML模板和CSS文件, 但不包含程序代码本身. 这些话题想要向用户展示如何更改Trac的外观来满足他们特定的要求. 项目Logo和图标定制Trac界面最简单的部分是logo和站点的图标. 他们都可以通过trac.ini的设置进行配置. logo或者图标应放在项目环境目录中的一个’’htdocs’’目录中(注意: 用Trac0.9之前的版本创建的项目, 你需要创建该目录). ‘’注意: 实际上你可以把logo和图标放在服务器的任何地方(只要通过服务器能访问到就可以), 并且在配置中使用他们的绝对URL或服务器的相对URL.’’ 在你的trac.ini中的配置相应的段: Logo将src设置改为site/, 后面跟着你的图像文件的名字. 应修改’’宽度’’和’’高度’’设置来匹配你的图像的尺寸(Trac的chrome处理器用””site/“”对应位于项目目录的””htdocs””, 用””common/“”对应普通文件). [header_logo] src = site/my_logo.gif alt = My Project width = 300 height = 100 图标图标应该是.gif或.ico格式的大小16x16的图像. 将icon选项修改为site/, 后面跟着你的图标文件的名称. 在你的Web浏览器中, 图标一般会显示在站点的URL旁边或者在’’书签’’菜单中. [project] icon = site/my_icon.ico ‘’’注意’’’, 该图标会被 IE 忽略, 它只接受主机根路径下名为’’favicon.ico’’的文件. 要使项目图标在IE和其他浏览器中都起作用的话, 你可以将图标储存在主机的根路径中, 并按照下列方法在trac.ini中引用它: [project] icon = /favicon.ico 站点页眉和页脚在每个Trac项目的环境目录中, 应该有个叫templates的目录. 该目录包含文件site_header.cs和site_footer.cs. 用户可以通过添加所需的HTML标记到这些文件中, 来定制他们的Trac站点. 这两个文件的内容分别放在网站中每页的开始的标签&lt;body&gt;和结尾的标签&lt;/body&gt;中. 这些文件可以包含静态HTML, 当然, 如果用户想要有动态的内容, 他们可以使用页面内部的ClearSilver模板语言. 当你需要查看模板中有哪些可用变量, 将查询串’’?hdfdump=1’’添加到你的Trac站点的URL中. 这样将显示出模板数据的结构化视图. 站点样式表调整一个Trac网站的布局的主要方法是添加CSS样式规则来覆盖默认的规则. 最好是通过编辑项目环境的templates目录下的site_css.cs文件来实现. 该模板中的内容会插入到Trac生成的每个HTML页面的&lt;style type=&quot;text/css&quot;&gt;``中. 虽然你可以将定制样式规则直接添加到site_css.cs文件中, 我们建议你只引用一个外部样式表, 以便使浏览器能缓存此CSS文件, 而不是每次都传输这些样式规则. 下面的例子会导入一个位于根style目录下的样式表: @import url(/style/mytrac.css); 你可以使用一个!ClearSilver变量来引用存储在项目环境的htdocs目录中的样式表: @import url(`&lt;?cs var:chrome.href ?&gt;`/site/style.css); 项目列表如果你在使用Trac执行多个项目时, 你可以用一个定制!ClearSilver模板来显示项目的列表. 下面是Trac用来显示各项目链接的列表的基本模板. 对于不能加载的项目, 它会显示一个错误信息. 你可以将它作为你自己的索引模板的一个起点. :::html #!text/html `&lt;html&gt;` `&lt;head&gt;``&lt;title&gt;`Available Projects`&lt;/title&gt;``&lt;/head&gt;` `&lt;body&gt;` `&lt;h1&gt;`Available Projects`&lt;/h1&gt;` `&lt;ul&gt;`&lt;?cs each:project = projects ?&gt;`&lt;li&gt;`&lt;?cs if:project.href ?&gt; `&lt;a href=&quot;&quot;&lt;?cs var:project.href ?&gt;`&quot;&quot; title=&quot;&quot;`&lt;?cs var:project.description ?&gt;`&quot;&quot;&gt; `&lt;?cs var:project.name ?&gt;``&lt;/a&gt;`&lt;?cs else ?&gt; `&lt;small&gt;``&lt;?cs var:project.name ?&gt;`: `&lt;em&gt;`Error`&lt;/em&gt;` `&lt;br /&gt;` (`&lt;?cs var:project.description ?&gt;`)`&lt;/small&gt;`&lt;?cs /if ?&gt; `&lt;/li&gt;`&lt;?cs /each ?&gt; `&lt;/ul&gt;` `&lt;/body&gt;` `&lt;/html&gt;` 一旦你创建了自己的定制模板, 你需要配置Web服务器, 来告诉Trac该模板的具体位置: 对于 FastCGI: FastCgiConfig -initial-env TRAC_ENV_PARENT_DIR=/parent/dir/of/projects \ -initial-env TRAC_ENV_INDEX_TEMPLATE=/path/to/template 对于 mod_python: PythonOption TracEnvIndexTemplate /path/to/template 对于 CGI: SetEnv TRAC_ENV_INDEX_TEMPLATE /path/to/template 主要模板!ClearSilver也可以使用自己修改的Trac !ClearSilver模板. 注意, 不推荐使用该技术, 因为它使得升级Trac有很多问题: 很不幸的是, 在模板和程序代码间存在几个依赖关系, 例如表单域的名称, 模板数据的结构等, 这些在不同版本的Trac中都可能有变化. 如果你一定要使用修改的模板, 将默认模板目录(通常是在$prefix/share/trac/templates中)中的模板文件复制到项目环境中的templates目录中. 然后修改这些副本, 达到你想要的效果。]]></content>
       <categories>
@@ -534,14 +588,14 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>%2F2013%2F12%2F23%2Fconfession214%2F</url>
-    <content type="text"><![CDATA[情人节程序员经典表白我能把整个世界都抽象成一个类…… 但是没办法把你变成我的对象…… 想让你成为私有常量，外部函数无法访问你…… 又想让你变成全局常量，在整个生命周期随时随地都可以调用你…… 因为世界上没有这样的常量…… 所以我无法定义你…… 我可以重载甚至覆盖任何一种方法…… 但是我却不能重载对你的思念…… 也许命中注定了 你在我的世界里永远的烙上了静态的属性…… 而我不慎调用了“爱你”这个方法…… 当我义无返顾的把自己作为参数传进这个方法时…… 我才发现方法”爱你”里面执行是一个死循环…… 她不停的返回我对你的思念，并存入我心里的堆栈…… 在这无穷无尽的循环中…… 我的内存资源很快消耗殆尽…… 而我却依然不停的向系统申请空间换取我对你的想念…… 终于我受不了“爱你”的煎熬…… 调用了”表白”这个Public方法…… 将字符串“如果你爱我，我将用尽一生去爱你，你爱我吗？”传递给你…… 我却捕获一个异常－－－内存溢出，我爱的人不爱我…… 为了解决这个异常…… 我偷偷地修改了”表白”的方法…… 加上了异常处理finally块…… 并且将返回值设为真…… 心想这样万无一失了吧…… 鼓起勇气再一次调用”表白”…… 我却依然捕获到同样的异常…… 仔细调试代码，原来在方法中有一段是这样的…… “如果没房没车则执行System.exit()”…… 欲哭无泪，身心破碎，终于我的系统崩溃了…… 留下一句“OutOfMemory 内存溢出”的提示……]]></content>
+    <title><![CDATA[jQuery EasyUI 1.2.5 ChangeLog]]></title>
+    <url>%2F2013%2F12%2F23%2Fversion1.2.5%2F</url>
+    <content type="text"><![CDATA[Bug tabs: When add a new tab panel with href property, the content page is loaded twice. fixed. form: Failed to call ‘load’ method to load form input with complex name. fixed. draggable: End drag in ie9, the cursor cannot be restored. fixed. Improvement panel: The tools can be defined via html markup. tabs: Call ‘close’ method to close specified tab panel, users can pass tab title or index of tab panel. Other methods such ‘select’,’getTab’ and ‘exists’ are similar to ‘close’ method. tabs: Add ‘getTabIndex’ method. tabs: Users can define mini tools on tabs. tree: The mouse must move a specified distance to begin drag and drop operation. resizable: Add ‘options’,’enable’ and ‘disable’ methods. numberbox: Allow users to change number format. datagrid: The subgrid is supported now. searchbox: Add ‘selectName’ method to select searching type name.]]></content>
       <categories>
-        <category>playscala</category>
+        <category>devtech js</category>
       </categories>
       <tags>
-        <tag>playscala</tag>
+        <tag>easyui</tag>
       </tags>
   </entry>
   <entry>
@@ -556,148 +610,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[easyui中form表单的ajax实现]]></title>
-    <url>%2F2013%2F12%2F23%2Feasyuiform%2F</url>
-    <content type="text"><![CDATA[示例代码如下： :::java $(&apos;#ff&apos;).form({ url:$(this).attr(&quot;&quot;action&quot;&quot;), onSubmit:function(){ return $(this).form(&apos;validate&apos;); }, success:function(data){ alert(data); } }); 其中url的值是取的form中的action属性，故需注意填写form的相应属性，当然也可以为’/controller_name/action_name’。]]></content>
-      <categories>
-        <category>devtech js</category>
-      </categories>
-      <tags>
-        <tag>easyui</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[常用Git命令说明]]></title>
-    <url>%2F2013%2F12%2F23%2Foftenused%2F</url>
-    <content type="text"><![CDATA[参考：史上最浅显易懂的Git教程！{:target=”_blank”} 进入你的工作目录 cd yourworkpath 列出所有branch，当前所在branch前面有“*”号。 git branch -a 切换工作库 git checkout v1.5.1 合并另一个branch，通常是master git merge master 再切换回来 git checkout master 查看当前目录情况 git status 将当前目录中的修改提交到相应的库（branch）中 git commit -m &quot;&quot;此处添加修改说明&quot;&quot; 从远程库中合并最新状态 git pull 注：当使用git pull命令的时候如果提示有本地文件修改了，无法合并的时候，我们可以放弃本地修改（注意放弃的修改将不可恢复），然后再更新；如果不想放弃本地修改，可以先提交，然后再合并更新。如果要放弃本地修改后更新： git reset --hard git pull 将合并后的状态并入远程库中。 git push origin master 如果是在分支上开发则为： git push origin v1.5.1 取消某个文件的版本控制，但实际不删除这个文件： git rm --cached somefile.txt 然后再修改目录下的.gitignore文件，添加上这个文件的相应忽略即可。 查看每一行的改动： git blame `&lt;filename&gt;` git 查看一个文件的所有修改历史 git log --pretty=oneline `&lt;filename&gt;` 创建一个分支并切换到这个分支工作，通常可用于临时进行一些测试性的开发，如果要保留这个dirty的分支内容，可以commit上去，随时再切换回master就象一切没发生过。 git checkout -b dirty 如果这个测试性的开发需要被接受合并到主干master，只要切换到master再合并即可： git checkout master git merge dirty 丢弃加入缓存区（即git add的准备提交的文件）的修改，分别退回到当前版本、上一个版本、上上一个版本、前99个版本、某特定 id 版本： git reset --hard HEAD git reset --hard HEAD^ git reset --hard HEAD^^ git reset --hand HEAD~99 git reset --hard 322542re342 查看过去和未来的版本 id 等信息： git log git reflog 丢弃某个文件的修改，和SVN的revert命令一样 git checkout -- comefile.txt 丢弃本地所有文件的修改，和SVN的revert命令一样 1git checkout -- *.* 查看当前路径下的远程库情况： 1git remote -v 添加远程库路径 1git remote add origin https://github.com/wind13/xxx.git 使用GIT SUBTREE集成项目到子目录 第一次添加子目录，建立与git项目的关联 12git remote add -f ai https://github.com/aoxu/ai.git git subtree add --prefix=ai ai master --squash 从远程仓库更新子目录 12git fetch ai master git subtree pull --prefix=ai ai --squash 从子目录push到远程仓库 1git subtree push --prefix=ai ai master Git 工具 - 子树合并]]></content>
-      <categories>
-        <category>devtech</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2013%2F12%2F23%2Fgitolitesetup%2F</url>
-    <content type="text"><![CDATA[CentOS下使用Gitolite架构Git服务的步骤 在服务端创建专用用户，如：git，可考虑不设置密码，从而无法用密码登录服务器。 在管理员电脑上创建管理员密钥对，并（通过U盘或root账号）拷贝到服务器上，之后添加到git用户目录的.ssh/authorized_keys文件中。从而达到无需密码从管理员电脑直接ssh到服务器git上的效果。 使用git clone下载Gitolite。 运行gl-system-install安装到服务器，此时会看到git用户目录中多出了bin, share, repositories等目录。 从客户端下载git clone 管理目录：gitolite-admin。 添加用户公钥*.pub到keydir目录，配置用户权限在conf/gitolite.conf文件中。]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2013%2F12%2F23%2Fcomputerqa%2F</url>
-    <content type="text"><![CDATA[电脑使用及编程知识问答网易闪电邮和网易邮箱助手有什么区别，如何选择？ 网易闪电邮是功能比较全面的邮箱客户端，可以同时支持其他邮箱的邮件收发，类似Foxmail和Outlook这样的邮箱软件。而网易邮箱助手则是个轻客户端，只能连接网易的邮箱，提供来信提醒和桌面预览等功能。如果你还想用客户端收发其它邮箱，那就只能选择网易闪电邮了，如果你只有网易的邮箱，又不想安装个太大的软件，只想要个轻巧的来信提醒小工具，那么网易邮箱助手是不错的选择。 比较好的邮件客户端软件是什么？ 最常见的是Foxmail，其他还有很多，网易闪电邮也比较简洁好用。但个人最推荐的还是Thunderbird，跨平台Windows和Linux系统都通用，安装上Thunderbird Conversations插件，Lightning插件和Provider for Google Calendar插件，这个邮件客户端软件就变得非常实用，让人爱不释手了。有日历、任务功能，邮件组织象gmail一样舒服，同时日历还可以跟google日历同步，这样你的手机什么的终端只要连上google日历就是一套非常好的GTD工具了！ Html5实现多文件上传的方法？ 基于html5的可预览多图片ajax上传使用HTML5实现多文件上传 升级Fedora后启动不了报File not found错怎么办？ 一般情况是grub2未设置好，启动不了。可先用 Fedora16 LiveCD 或 Fedora16 DVD 启动进入shell，然后找到升级了的Fedora 16的挂载盘，如果是DVD修复的话，会挂在 /mnt/syslinux（记不清了）下，则执行： chroot /mnt/syslinux 执行以下命令可修复grub2： grub2-mkconfig -o /boot/grub2/gub.cfg grub2-install /dev/sda 如果执行第二句时报：Your embedding area is unusually small…，则一般是因为引导区被占用了，比如安装了Win7等，则可执行： grub2-install --force /dev/sda 这样就强制写入grub2的引导信息了，一般情况重启就正常了！ 主流代码仓库的选择，主要有哪些？ Subversion 集中式（目前还在大量使用的，熟悉的人员较多） Git 分布式（更先进些，特别适用于开源项目，如 github 网站） 从Subversion转到Git有相应的工具和方法，参考：转换你的 Subversion 到 Git 和 如何将SVN仓库转换为Git仓库 CentOS下使用Gitolite架构Git服务的步骤]]></content>
-      <categories>
-        <category>pc</category>
-      </categories>
-      <tags>
-        <tag>pc</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[FunctionTest中如何取得session的值]]></title>
-    <url>%2F2013%2F12%2F13%2Ffunctiontestsession%2F</url>
-    <content type="text"><![CDATA[原文摘抄自：https://groups.google.com/d/msg/play-framework/-/iQLX-uLwHWsJ （可能因墙访问不了……我是在邮件列表中收集的） 需求和问题原问及简单翻译说明如下： Given a simple action:【简单给一个action如下：】 :::java public static void testAction() { session.put(&quot;worked&quot;, &quot;yes&quot;); } I want to test that the session is set:【我试着测试这个session是否被设置：】 :::java @Test public void setsTheSession() { Response response = GET(&quot;/test&quot;); assertEquals(&quot;yes&quot;, Scope.Session.current().get(&quot;worked&quot;)); } But Scope.Session.current() always returns an empty map. Any clues?【但Scope.Session.current()总是返回一个空的Map。有什么办法吗？】 关键回答原答及简单翻译如下： I don’t think that works because you are not in the context of a server request when in a test. You are just acting as a regular browser making a GET request.【我不认为可以那样写，因为在一个test中你不在服务请求的上下文中。你只是象一个普通的浏览器那样发送了一个GET请求。】If you want to set a cookie from a Controller you do this:【如果你想在Controller中设置cookie，你可以象这样：】response.setCookie(&quot;mycookie&quot;, &quot;myvalue&quot;, &quot;1d&quot;);{java}Then in your test you can do:【然后在你的测试中，你可以这样：】 :::java Http.Response response = GET(&quot;/home/cookie&quot;); assertEquals(&quot;myvalue&quot;, response.cookies.get(&quot;mycookie&quot;).value); For sessions you should take a look at this first:【而session方面，你就应该先看一下这个：】http://www.playframework.org/documentation/1.2.3/controllers#session “It’s important to understand that Session and Flash data are not stored in the server but are added to each subsequent HTTP Request, using the Cookie mechanism. So the data size is very limited (up to 4 KB) and you can only store String values.”【理解这点很重要：Session和Flash的数据并不是保存在服务端，而是通过Cookie的机制加在每一次的HTTP请求中。所以数据的大小是受限制的（最多到4KB）并且你只可以保存String字串值。】They are of course signed so they can’t be changed. If I write session.put(“testcookie”, “brian”) I get this in the response header:【它们当然是被加密的，所以你不能修改。如果我写session.put(“testcookie”, “brian”)，那么我将在response的header中得到：】&quot;PLAY_SESSION=31a4e4777b5950d78b9f3f88b02dfdb2361b5699-%00testcookie%3Abrian%00;Path=/&quot; This makes the job of testing actual session variables a little harder. I haven’t seen anything in the test code that does this for you. You have to go back to the play code to decode the session cookie to check for what you originally wanted to do. The function in playframework\framework\src\play\mvc\Scope.java restore() isn’t accessible so it looks like you have to either use reflection of some sort to call it or write your own session parse function like this (uses the secret from the application.conf to decode):【这使得在测试中使用session值变得有点困难。我在测试的代码中没找到什么可以帮你做这件事的办法。你必须回到Play!的代码去解码那个session cookie以便得到原本的值。这个方法就在playframework\framework\src\play\mvc\Scope.java restore()是不可访问的，所以可能你只好使用类似反射的方法去调用它或者照着写一个你自己的session parse 方法（使用application.conf中的secret码来解码），参考：】https://gist.github.com/1224015 Then you can assert your session code pretty much as you were doing:【然后你就可以用类似下面的办法校验你的session值了：】 :::java @Test public void setsTheSession() throws UnsupportedEncodingException { Http.Response response = GET(&quot;/home/cookie&quot;); Scope.Session session = parseSession(response.cookies.get(&quot;PLAY_SESSION&quot;).value); assertEquals(&quot;yes&quot;, session.get(&quot;worked&quot;)); } On a side note I have switched my functional tests to JWebUnit using the HtmlUnit driver. It has more assert helpers, xpath html parsing and uses rhino for js parsing… but alas you still have to “decode” the PLAY_SESSION either way.【另，我已经将我的functional test转到使用HtmlUnit driver的JWebUnit了。它有更多的校验工具，xpath的html解析工具和rhino的js解析工具等……当然，你还是可以使用”decode”去处理PLAY_SESSION的问题。】 个人建议：在Play!中最好还是只做Model层的单元测试即可，在Controller层中尽量少写业务逻辑代码，方法都往Model层集中，如果项目需要可加上Selenium的Web测试就足够了，实际感觉Functional Test有点鸡肋，不用也罢！]]></content>
-      <categories>
-        <category>play1x</category>
-      </categories>
-      <tags>
-        <tag>play1</tag>
-        <tag>session</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[在Play!中如何实现类似过滤器的功能？]]></title>
-    <url>%2F2013%2F12%2F13%2Ffilterallcontroller%2F</url>
-    <content type="text"><![CDATA[如果是单个Controller要实现过滤，只需写一个public static 的方法，加上@Before注解即可达到执行所有action前先执行这个方法的目的。 如果想实现全局即整个站点的action都被过滤，就需要写个BaseController（名字随便起，如SuperController，Application等）继承 Controller，在这里面写@Before的方法。然后其他的Controller都继承自BaseController即可。”]]></content>
-      <categories>
-        <category>play1x</category>
-      </categories>
-      <tags>
-        <tag>play1x</tag>
-        <tag>filter</tag>
-        <tag>过滤器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2013%2F12%2F13%2Fvalidateandsave%2F</url>
-    <content type="text"><![CDATA[对像存储报错 validateAndSave问题问题：在存储对像时，同时存储该对像的关联对像，则会报错。\ 例：room为hotel的关联对像。 :::java public class Room { @ManyToOne public Hotel hotel; } :::java Hotel hotel = new Hotel(); Room room = new Room(hotel); room.validateAndSave(); 会报错。这是因为在保存room对象的时候，hotel对象还没有持久化，所以room对象里面要保存一个hotelId就无法取得了，故必须要先保存父对象，再保存子对象。 必须先将对像hotel存储，再存储一遍room对像。 :::java Hotel hotel = new Hotel(); hotel.validateAndSave(); Room room = new Room(hotel); room.validateAndSave();]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
     <title></title>
     <url>%2F2013%2F12%2F13%2Foperationnotpermitted%2F</url>
     <content type="text"><![CDATA[Operation not permitted 执行权限的问题在Linux系统中，正好项目放在原Windows的Fat32盘上，于是在执行play eclipsify的时候会报 Operation not permitted的错。 临时使用的话，只要使用root权限就可以正常执行。而Fat32的盘在Linux下是无法进行权限设置的，好像设置后还是无法记录下权限信息，所以要彻底解决这个问题就要将Fat32转为NTFS才行。]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2013%2F12%2F13%2Flongpolling%2F</url>
-    <content type="text"><![CDATA[Play!支持Comet-style或Long-polling这样的请求 参考官方文档 核心实现思想：通过在action中使用await(…);可以使http请求暂停在服务端，直到有符合的结果才返回。]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Play!中如何用module组织多个相关项目？]]></title>
-    <url>%2F2013%2F12%2F13%2Fmultiproject%2F</url>
-    <content type="text"><![CDATA[首先按业务需求划分为多个应用，应用就是用 play new xxx来创建的。 其次将公用部分划分为多个子项目或称子模块，就是用 play new-module创建的。 这些项目均并列导入eclipse中，应用引用相应需要的子项目，需要在application.conf中添加，有多个就添加多行： module.base=../base module.common=../common 在eclipse的项目属性中添加引用的子项目即可。 注：关键在于项目规划合理，子项目或公用项目中model层可以分包，如：com.xxx.pack，而controllers和views也可以分包，但要慎重使用，在引用时也有一点小特殊写法。]]></content>
-      <categories>
-        <category>play1x</category>
-      </categories>
-      <tags>
-        <tag>play1x</tag>
-        <tag>module</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2013%2F12%2F13%2Fcmdchinese%2F</url>
-    <content type="text"><![CDATA[Play在Windows的cmd窗口中中文乱码的解决办法play在cmd 下，system.out()输出的中文都是乱码 首先，可参考：cmd chcp命令切换字符格式 或参考：在Windows的CMD中如何设置支持UTF8编码? 如果 chcp 65001 / chcp 936 改变cmd字符集都不行 参考：http://www.oschina.net/news/19463/play-framework-1-2-2 方法如下： 安装目录下找到C:\Program Files\play-1.2.3\framework\pym\play 目录下的application.py 修改245行中的java_args.append(‘-Dfile.encoding=utf-8’)为 java_args.append(‘-Dfile.encoding=GBK’)（play-1.2.4中在258行，需要用带行号自动分行的编辑打开。） 保存之后重新运行]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Xml 域名空间识别问题]]></title>
-    <url>%2F2013%2F12%2F13%2Fxmldomainbug%2F</url>
-    <content type="text"><![CDATA[相关文档见：官方ticket任务#823 Yes, this is correct. In the .getXML function the namespace ness is not set.是的，有这个问题。在.getXML方法中允许命名空间（namespace）没有设置。 This line should be changed from:这一行应该从这样： :::java DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder(); to:变成： :::java DocumentBuilderFactory xmlFact = DocumentBuilderFactory.newInstance(); xmlFact.setNamespace(true); DocumentBuilder builder = xmlFact.newDocumentBuilder(); The same problem exists in the XML lib in the getDocument function:同样的问题在XML的包里的getDocument方法中也存在： :::java DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance(); dbf.setNamespace(true); //Add this line!]]></content>
-      <categories>
-        <category>play1x</category>
-      </categories>
-      <tags>
-        <tag>play1x</tag>
-        <tag>xml</tag>
-        <tag>namespace</tag>
-        <tag>getXML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2013%2F12%2F13%2Fhqlcount1%2F</url>
-    <content type="text"><![CDATA[一个Hql中count判断的写法:::java public static void test() { String hql = &quot;select o.teacher.id, o.teacher.goodStudentCount from Student o&quot; + &quot; group by teacher having count(*)&gt;o.teacher.goodStudentCount&quot;; List&lt;Long[]&gt; idCounts = Teacher.find(hql).fetch(); for (Long[] idCount:idCounts) { Logger.debug(&quot;id: %s, %s&quot;, idCount[0], idCount[1]); Long id = idCount[0]; } renderText(&quot;ok!&quot; + idCounts.size()); }]]></content>
       <categories>
         <category>playscala</category>
       </categories>
@@ -715,6 +630,33 @@
       <tags>
         <tag>play1x</tag>
         <tag>https</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Xml 域名空间识别问题]]></title>
+    <url>%2F2013%2F12%2F13%2Fxmldomainbug%2F</url>
+    <content type="text"><![CDATA[相关文档见：官方ticket任务#823 Yes, this is correct. In the .getXML function the namespace ness is not set.是的，有这个问题。在.getXML方法中允许命名空间（namespace）没有设置。 This line should be changed from:这一行应该从这样： :::java DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder(); to:变成： :::java DocumentBuilderFactory xmlFact = DocumentBuilderFactory.newInstance(); xmlFact.setNamespace(true); DocumentBuilder builder = xmlFact.newDocumentBuilder(); The same problem exists in the XML lib in the getDocument function:同样的问题在XML的包里的getDocument方法中也存在： :::java DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance(); dbf.setNamespace(true); //Add this line!]]></content>
+      <categories>
+        <category>play1x</category>
+      </categories>
+      <tags>
+        <tag>play1x</tag>
+        <tag>xml</tag>
+        <tag>namespace</tag>
+        <tag>getXML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[在Play!中如何实现类似过滤器的功能？]]></title>
+    <url>%2F2013%2F12%2F13%2Ffilterallcontroller%2F</url>
+    <content type="text"><![CDATA[如果是单个Controller要实现过滤，只需写一个public static 的方法，加上@Before注解即可达到执行所有action前先执行这个方法的目的。 如果想实现全局即整个站点的action都被过滤，就需要写个BaseController（名字随便起，如SuperController，Application等）继承 Controller，在这里面写@Before的方法。然后其他的Controller都继承自BaseController即可。”]]></content>
+      <categories>
+        <category>play1x</category>
+      </categories>
+      <tags>
+        <tag>play1x</tag>
+        <tag>filter</tag>
+        <tag>过滤器</tag>
       </tags>
   </entry>
   <entry>
@@ -741,8 +683,76 @@
   </entry>
   <entry>
     <title></title>
+    <url>%2F2013%2F12%2F13%2Flongpolling%2F</url>
+    <content type="text"><![CDATA[Play!支持Comet-style或Long-polling这样的请求 参考官方文档 核心实现思想：通过在action中使用await(…);可以使http请求暂停在服务端，直到有符合的结果才返回。]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
     <url>%2F2013%2F12%2F13%2Fcacheremovetime%2F</url>
     <content type="text"><![CDATA[移除Cache可以有时间参数吗？是的，可以，使用下面这样的语句即可： :::java Cache.set(&quot;some&quot;, null, 0) 其中最后一个参数是时间，单位是秒。详见源代码。]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[FunctionTest中如何取得session的值]]></title>
+    <url>%2F2013%2F12%2F13%2Ffunctiontestsession%2F</url>
+    <content type="text"><![CDATA[原文摘抄自：https://groups.google.com/d/msg/play-framework/-/iQLX-uLwHWsJ （可能因墙访问不了……我是在邮件列表中收集的） 需求和问题原问及简单翻译说明如下： Given a simple action:【简单给一个action如下：】 :::java public static void testAction() { session.put(&quot;worked&quot;, &quot;yes&quot;); } I want to test that the session is set:【我试着测试这个session是否被设置：】 :::java @Test public void setsTheSession() { Response response = GET(&quot;/test&quot;); assertEquals(&quot;yes&quot;, Scope.Session.current().get(&quot;worked&quot;)); } But Scope.Session.current() always returns an empty map. Any clues?【但Scope.Session.current()总是返回一个空的Map。有什么办法吗？】 关键回答原答及简单翻译如下： I don’t think that works because you are not in the context of a server request when in a test. You are just acting as a regular browser making a GET request.【我不认为可以那样写，因为在一个test中你不在服务请求的上下文中。你只是象一个普通的浏览器那样发送了一个GET请求。】If you want to set a cookie from a Controller you do this:【如果你想在Controller中设置cookie，你可以象这样：】response.setCookie(&quot;mycookie&quot;, &quot;myvalue&quot;, &quot;1d&quot;);{java}Then in your test you can do:【然后在你的测试中，你可以这样：】 :::java Http.Response response = GET(&quot;/home/cookie&quot;); assertEquals(&quot;myvalue&quot;, response.cookies.get(&quot;mycookie&quot;).value); For sessions you should take a look at this first:【而session方面，你就应该先看一下这个：】http://www.playframework.org/documentation/1.2.3/controllers#session “It’s important to understand that Session and Flash data are not stored in the server but are added to each subsequent HTTP Request, using the Cookie mechanism. So the data size is very limited (up to 4 KB) and you can only store String values.”【理解这点很重要：Session和Flash的数据并不是保存在服务端，而是通过Cookie的机制加在每一次的HTTP请求中。所以数据的大小是受限制的（最多到4KB）并且你只可以保存String字串值。】They are of course signed so they can’t be changed. If I write session.put(“testcookie”, “brian”) I get this in the response header:【它们当然是被加密的，所以你不能修改。如果我写session.put(“testcookie”, “brian”)，那么我将在response的header中得到：】&quot;PLAY_SESSION=31a4e4777b5950d78b9f3f88b02dfdb2361b5699-%00testcookie%3Abrian%00;Path=/&quot; This makes the job of testing actual session variables a little harder. I haven’t seen anything in the test code that does this for you. You have to go back to the play code to decode the session cookie to check for what you originally wanted to do. The function in playframework\framework\src\play\mvc\Scope.java restore() isn’t accessible so it looks like you have to either use reflection of some sort to call it or write your own session parse function like this (uses the secret from the application.conf to decode):【这使得在测试中使用session值变得有点困难。我在测试的代码中没找到什么可以帮你做这件事的办法。你必须回到Play!的代码去解码那个session cookie以便得到原本的值。这个方法就在playframework\framework\src\play\mvc\Scope.java restore()是不可访问的，所以可能你只好使用类似反射的方法去调用它或者照着写一个你自己的session parse 方法（使用application.conf中的secret码来解码），参考：】https://gist.github.com/1224015 Then you can assert your session code pretty much as you were doing:【然后你就可以用类似下面的办法校验你的session值了：】 :::java @Test public void setsTheSession() throws UnsupportedEncodingException { Http.Response response = GET(&quot;/home/cookie&quot;); Scope.Session session = parseSession(response.cookies.get(&quot;PLAY_SESSION&quot;).value); assertEquals(&quot;yes&quot;, session.get(&quot;worked&quot;)); } On a side note I have switched my functional tests to JWebUnit using the HtmlUnit driver. It has more assert helpers, xpath html parsing and uses rhino for js parsing… but alas you still have to “decode” the PLAY_SESSION either way.【另，我已经将我的functional test转到使用HtmlUnit driver的JWebUnit了。它有更多的校验工具，xpath的html解析工具和rhino的js解析工具等……当然，你还是可以使用”decode”去处理PLAY_SESSION的问题。】 个人建议：在Play!中最好还是只做Model层的单元测试即可，在Controller层中尽量少写业务逻辑代码，方法都往Model层集中，如果项目需要可加上Selenium的Web测试就足够了，实际感觉Functional Test有点鸡肋，不用也罢！]]></content>
+      <categories>
+        <category>play1x</category>
+      </categories>
+      <tags>
+        <tag>play1</tag>
+        <tag>session</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F12%2F13%2Fvalidateandsave%2F</url>
+    <content type="text"><![CDATA[对像存储报错 validateAndSave问题问题：在存储对像时，同时存储该对像的关联对像，则会报错。\ 例：room为hotel的关联对像。 :::java public class Room { @ManyToOne public Hotel hotel; } :::java Hotel hotel = new Hotel(); Room room = new Room(hotel); room.validateAndSave(); 会报错。这是因为在保存room对象的时候，hotel对象还没有持久化，所以room对象里面要保存一个hotelId就无法取得了，故必须要先保存父对象，再保存子对象。 必须先将对像hotel存储，再存储一遍room对像。 :::java Hotel hotel = new Hotel(); hotel.validateAndSave(); Room room = new Room(hotel); room.validateAndSave();]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Play!中如何用module组织多个相关项目？]]></title>
+    <url>%2F2013%2F12%2F13%2Fmultiproject%2F</url>
+    <content type="text"><![CDATA[首先按业务需求划分为多个应用，应用就是用 play new xxx来创建的。 其次将公用部分划分为多个子项目或称子模块，就是用 play new-module创建的。 这些项目均并列导入eclipse中，应用引用相应需要的子项目，需要在application.conf中添加，有多个就添加多行： module.base=../base module.common=../common 在eclipse的项目属性中添加引用的子项目即可。 注：关键在于项目规划合理，子项目或公用项目中model层可以分包，如：com.xxx.pack，而controllers和views也可以分包，但要慎重使用，在引用时也有一点小特殊写法。]]></content>
+      <categories>
+        <category>play1x</category>
+      </categories>
+      <tags>
+        <tag>play1x</tag>
+        <tag>module</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F12%2F13%2Fhqlcount1%2F</url>
+    <content type="text"><![CDATA[一个Hql中count判断的写法:::java public static void test() { String hql = &quot;select o.teacher.id, o.teacher.goodStudentCount from Student o&quot; + &quot; group by teacher having count(*)&gt;o.teacher.goodStudentCount&quot;; List&lt;Long[]&gt; idCounts = Teacher.find(hql).fetch(); for (Long[] idCount:idCounts) { Logger.debug(&quot;id: %s, %s&quot;, idCount[0], idCount[1]); Long id = idCount[0]; } renderText(&quot;ok!&quot; + idCounts.size()); }]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F12%2F13%2Fcmdchinese%2F</url>
+    <content type="text"><![CDATA[Play在Windows的cmd窗口中中文乱码的解决办法play在cmd 下，system.out()输出的中文都是乱码 首先，可参考：cmd chcp命令切换字符格式 或参考：在Windows的CMD中如何设置支持UTF8编码? 如果 chcp 65001 / chcp 936 改变cmd字符集都不行 参考：http://www.oschina.net/news/19463/play-framework-1-2-2 方法如下： 安装目录下找到C:\Program Files\play-1.2.3\framework\pym\play 目录下的application.py 修改245行中的java_args.append(‘-Dfile.encoding=utf-8’)为 java_args.append(‘-Dfile.encoding=GBK’)（play-1.2.4中在258行，需要用带行号自动分行的编辑打开。） 保存之后重新运行]]></content>
       <categories>
         <category>playscala</category>
       </categories>
@@ -784,15 +794,16 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[停止SSH，用Play!吧]]></title>
-    <url>%2F2013%2F09%2F29%2Fstopsshgoplay%2F</url>
-    <content type="text"><![CDATA[Created 星期六 25 二月 2012 先看一段Playframework热情交流群（QQG：168013302）里的聊天记录： 木马@学生 09:59:13 实现个功能..要调用service接口的方法, 方法又在他的impl里面实现, impl里面又是调用dao层接口, dao层接口又是在dao的impl里面实现, dao的impl实现又是由hibernate访问的数据库,木马@学生 09:59:28 真心蛋都碎了Freewind@play2 10:00:29 为什么要这么多接口？木马@学生 10:00:41 学校的项目…SSH2Freewind@play2 10:01:04 话说我前公司也是这样的，看着都累木马@学生 10:01:25 对了, 还没说上层的 action,拦截分配 do了返回,木马@学生 10:01:31 头都大了木马@学生 10:01:57 还前端的 jquery, ajax访问数据库, 再经过这些框架的时候Snake 10:01:59 ssh2是这样的Snake 10:02:13 冠名弱耦合木马@学生 10:02:14 那叫一个个都要问候到啊…Freewind@play2 10:03:01 你能不能改代码，能删的都删了木马@学生 10:03:25 我就写个登陆功能, 就要搞这么多世风十三@用中 10:06:12 我公司也是实现个简单的java app，用了无数接口，我重构时都删了。Freewind@play2 10:07:18 都是当年spring惹的祸Snake 10:09:00 大项目是有需要的Snake 10:09:29 小项目用ssh有点小题大作木马@学生 10:10:09 学校总是搞最大的框架, 做最小的项目世风十三@用中 10:10:22 算不算是接口滥用木马@学生 10:10:34 说出来能唬人啊木马@学生 10:10:41 写出来, 全是英文啊Snake 10:11:11 ssh熟悉精通，所以学校也只能这样 应该说使用接口主要是基于开放封闭原则，即对扩展开放，而对修改封闭。而实际项目中，通常的开发是不断地修改完善，最终达到理想效果。所以开放封闭原则应该说不适用于项目内部，而是针对于打包对外服务的情况，所谓“接口”也正是对外来说的，如果你的项目是对外提供公用类库或是框架包等的，那就要严格定义准确的接口规范，并且尽量保持对外接口的稳定，在做系统分析时就要深入调研，考虑周到，对未来的变化有充分的预估。而相反如果是整个项目仅用于对内的应用，而所有代码都是自己控制，未来也没有与其他组群的协同问题，那就没有必要做到层层都接口，直接实现也未尝不可。 多数时候，初学者都是在对着SSH的框架照猫画虎，画的时候也不太深思为什么要这样做，只道是一种开发规范罢了，遵守便是，没什么好说，然而实际上SSH框架的创造者是思考了太多的可能性和各种问题后总结出的经验结晶，这其中考虑遇到最为复杂的情况类似大型企业复杂应用的开发等，而对于大多数中、小型项目而言，多少有点用牛刀杀鸡的感觉。 相对的，Play framework 则是从一开始就是针对Web应用开发来设计的，借鉴了其他很多优秀框架（如ROR）的思想，直接解决了中小型项目快速开发的问题，同时也提供了Module的机制，给予了无限的扩展空间，当然也适用于大型的企业应用项目，只要架构师在具体应用上掌握了一定的技巧和经验，开发起来还是相当敏捷和舒爽的！:) 所以，如果你们的团队是擅长Java这门语言的，你们的应用是基于Web的应用系统，你们有权决定使用什么样的技术路线和框架的话，那么强烈建议使用Playframework，放弃SSH的繁杂和冗余吧，在Playframework的世界里，你会接触到最新的技术思想，最敏捷的开发理念，最高效的代码实现！Welcome to Playframework world!]]></content>
+    <title></title>
+    <url>%2F2013%2F09%2F29%2Fdevlinks%2F</url>
+    <content type="text"><![CDATA[编程知识链接收集 Java 相关 java.util.logging.Logger使用详解 10 Java Regular Expression Examples You Should Know Java Regex cheat sheet]]></content>
       <categories>
-        <category>play1x</category>
+        <category>playscala</category>
       </categories>
       <tags>
-        <tag>play1</tag>
-        <tag>ssh</tag>
+        <tag>Java</tag>
+        <tag>Regex</tag>
+        <tag>正则表达式</tag>
       </tags>
   </entry>
   <entry>
@@ -807,16 +818,15 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>%2F2013%2F09%2F29%2Fdevlinks%2F</url>
-    <content type="text"><![CDATA[编程知识链接收集 Java 相关 java.util.logging.Logger使用详解 10 Java Regular Expression Examples You Should Know Java Regex cheat sheet]]></content>
+    <title><![CDATA[停止SSH，用Play!吧]]></title>
+    <url>%2F2013%2F09%2F29%2Fstopsshgoplay%2F</url>
+    <content type="text"><![CDATA[Created 星期六 25 二月 2012 先看一段Playframework热情交流群（QQG：168013302）里的聊天记录： 木马@学生 09:59:13 实现个功能..要调用service接口的方法, 方法又在他的impl里面实现, impl里面又是调用dao层接口, dao层接口又是在dao的impl里面实现, dao的impl实现又是由hibernate访问的数据库,木马@学生 09:59:28 真心蛋都碎了Freewind@play2 10:00:29 为什么要这么多接口？木马@学生 10:00:41 学校的项目…SSH2Freewind@play2 10:01:04 话说我前公司也是这样的，看着都累木马@学生 10:01:25 对了, 还没说上层的 action,拦截分配 do了返回,木马@学生 10:01:31 头都大了木马@学生 10:01:57 还前端的 jquery, ajax访问数据库, 再经过这些框架的时候Snake 10:01:59 ssh2是这样的Snake 10:02:13 冠名弱耦合木马@学生 10:02:14 那叫一个个都要问候到啊…Freewind@play2 10:03:01 你能不能改代码，能删的都删了木马@学生 10:03:25 我就写个登陆功能, 就要搞这么多世风十三@用中 10:06:12 我公司也是实现个简单的java app，用了无数接口，我重构时都删了。Freewind@play2 10:07:18 都是当年spring惹的祸Snake 10:09:00 大项目是有需要的Snake 10:09:29 小项目用ssh有点小题大作木马@学生 10:10:09 学校总是搞最大的框架, 做最小的项目世风十三@用中 10:10:22 算不算是接口滥用木马@学生 10:10:34 说出来能唬人啊木马@学生 10:10:41 写出来, 全是英文啊Snake 10:11:11 ssh熟悉精通，所以学校也只能这样 应该说使用接口主要是基于开放封闭原则，即对扩展开放，而对修改封闭。而实际项目中，通常的开发是不断地修改完善，最终达到理想效果。所以开放封闭原则应该说不适用于项目内部，而是针对于打包对外服务的情况，所谓“接口”也正是对外来说的，如果你的项目是对外提供公用类库或是框架包等的，那就要严格定义准确的接口规范，并且尽量保持对外接口的稳定，在做系统分析时就要深入调研，考虑周到，对未来的变化有充分的预估。而相反如果是整个项目仅用于对内的应用，而所有代码都是自己控制，未来也没有与其他组群的协同问题，那就没有必要做到层层都接口，直接实现也未尝不可。 多数时候，初学者都是在对着SSH的框架照猫画虎，画的时候也不太深思为什么要这样做，只道是一种开发规范罢了，遵守便是，没什么好说，然而实际上SSH框架的创造者是思考了太多的可能性和各种问题后总结出的经验结晶，这其中考虑遇到最为复杂的情况类似大型企业复杂应用的开发等，而对于大多数中、小型项目而言，多少有点用牛刀杀鸡的感觉。 相对的，Play framework 则是从一开始就是针对Web应用开发来设计的，借鉴了其他很多优秀框架（如ROR）的思想，直接解决了中小型项目快速开发的问题，同时也提供了Module的机制，给予了无限的扩展空间，当然也适用于大型的企业应用项目，只要架构师在具体应用上掌握了一定的技巧和经验，开发起来还是相当敏捷和舒爽的！:) 所以，如果你们的团队是擅长Java这门语言的，你们的应用是基于Web的应用系统，你们有权决定使用什么样的技术路线和框架的话，那么强烈建议使用Playframework，放弃SSH的繁杂和冗余吧，在Playframework的世界里，你会接触到最新的技术思想，最敏捷的开发理念，最高效的代码实现！Welcome to Playframework world!]]></content>
       <categories>
-        <category>playscala</category>
+        <category>play1x</category>
       </categories>
       <tags>
-        <tag>Java</tag>
-        <tag>Regex</tag>
-        <tag>正则表达式</tag>
+        <tag>play1</tag>
+        <tag>ssh</tag>
       </tags>
   </entry>
   <entry>
