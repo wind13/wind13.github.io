@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[每日笔记-20080921]]></title>
+    <url>%2F2018%2F09%2F21%2Fdaily-note-20080921%2F</url>
+    <content type="text"><![CDATA[准备做的事 [ ] 尝试使用 Hugo； 目录结构： archetypes：包括内容类型，在创建新内容时自动生成内容的配置 content：包括网站内容，全部使用markdown格式 layouts：包括了网站的模版，决定内容如何呈现 static：包括了css, js, fonts, media等，决定网站的外观 常用命令： hugo server -t hyde --buildDrafts 其中 -t 指 theme 主题， --buildDrafts 指草稿也渲染。 [ ] 尝试将 Blog 从 Hexo 转到 Hugo； 用 Hexo 生成目前的 Blog 需要 36 秒，够慢的，看换了 Hugo 后会是多快？ 找到 hexo2hugo 尝试一下。基本可用，但仅能将 _posts 目录下的 md 文件转换一下格式，所以仍存在的问题如下： 并不能转换其他的配置功能，如搜索、回复、赞赏、分享等功能； 转换时未能处理命名为 index.md 的问题； 转换时未能处理无 title 的 meta data 问题，导致显示列表中没有标题链接； 转换时未处理摘要的问题，导致列表中显示大段文字的情况； 找到 Migrate from Hexo to Hugo 看一下。 还有 Migrating From Hexo To Hugo 提到了 Gutenburg (written in Rust) 尝试将转换过程写成自动化脚本，开放为开源项目； 想继续使用 Next 主题，找到了： NeXT is a fast and clean theme for Hugo. which was inspired by a Hexo theme named NexT. 考虑有些需要的功能可以 fork 后提 pull request 支持项目。 遇到的问题 Python2 和 Python3 共存，尝试运行 pip 安装 pytoml，结果用 python 运行时，仍然提示未安装，通过 which python 和 which pip 两个命令才发现，python 指向 python2 的版本，而 pip 指向 pip3 的版本，测试后发现当两个版本共存时，最好在使用具体命令时，要用 2 版本就用 python2 和 pip2 ，要用 3 版本时，就用 python3 和 pip3 ，这样就能明确区别开了。 尝试 HexoConvertToHugo 失败，不太好用，文档也不清楚，测试后报错，暂时放弃。 使用 hexo2hugo，开始的时候报错，以为是 datetime 库没安装，但安装后仍然报错，结果试了一下 python3 居然成功了，说明这个脚本是用 Python3 语法写的，Python 的这两个版本区别还真是麻烦，应该在脚本的最前面加上注释才对，或者直接改一下后缀名： xxx.py3 就清楚了。 使用 hexo2hugo，遇到第一行不是 --- 的文档会报错，找不到 meta 信息，看了一眼程序逻辑比较固化，暂不修改了，直接修改文档匹配规则。 添加 next 主题，全新的站点，只添加一个文章，但在首页上看不到，能看到 next 的主题起作用了。换用 ananke 主题就显示正常了。一批批转移文件倒是可以，怀疑可能是 index.md 文件命名的问题，至少会导致 All Posts 链接被覆盖。 灵感记录 互联网时代，每个人都可能成为扫地僧，整个互联网就象是少林寺的藏经阁，要学什么、怎么学，就要看你自己怎么把握了。 萧峰和慕荣的爹都练走火了，为什么扫地僧没练走火？因为扫地僧不急功近利，有雄厚的佛法心法。 什么是互联网的修炼心法？终身学习！]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>blog</tag>
+        <tag>hugo</tag>
+        <tag>next</tag>
+        <tag>python</tag>
+        <tag>灵感</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[在得到 App 上听书《知识的边界》和《走近2050》感悟]]></title>
     <url>%2F2018%2F09%2F21%2Fbook-comprehend%2F</url>
     <content type="text"><![CDATA[人类已经进入互联网时代，互联网对人类的很多方面产生了巨大而深远的影响，有些方面在商业和科技的促进下转变得比较快，比如电子商务、信息搜索、出行交通等，但有些方面就显得相对落后，如：政府效能、教育培训、人才评定等，通常受阻于政策、传统、观念、制度等。 特别是教育培训方面，目前的学校教育依然延续着工业时代的教学方式和考试制度，延续着数年甚至数十年不变的课程和教材，很多细节上都缺乏深思与变通。 早期中国人在竹签上刻字，后来用毛笔写字，现在还需要吗？在电脑时代，更多的文字创作将由电脑输入产生，是不是更应该学习的是打字或语音输入呢？而现在的学校教育依然是使用铅笔、钢笔写字，也许在不久的将来，回想起来才会发现这些细节的迟滞和落后。 如果你去问十个小学生，通常有九个都不喜欢写字，我认为写字这种方式未来并不会绝迹，就象毛笔字一样会变为一门艺术，只有少数对它情有独钟的人去练习和创作，而这通常会是在十多岁的少年时期才会有些人有兴趣去钻研的事，当然也可能象钢琴那样会成为少数人从小就开始苦练的一门手艺，不过考虑到硬笔书法的艺术性和难度，估计这种可能性不大，毕竟电脑设计领域已经可以将很多的优秀手写字体转化到电脑中了，只需要打字后切换一下字体就可以输出漂亮的硬笔书法体的文章了。 另一个方面就是教学方式了，互联网时代，知识的边界已经极大地扩展，人们基于兴趣可以在网上冲浪，可以通过一个个链接通向全新的领域和世界，未来的人才不再如工业时代那样统一和标准化，更加人性化、多样化、奇葩化，很多人基于自己的兴趣，可能会身兼数个你无法想象的技能组合，而这样的多样性才会给世界带来很多全新的创新思想和科技。因此我们的教学方式也应该变得更加符合这种发展的自然状态，也许： 不再有课堂，而是一个自由上网、自由交流、自由合作的俱乐部； 不再有课程，而是遇到什么问题，解决什么问题，遇到什么兴趣，再观看什么教学视频，俱乐部的系统会记录学生的学习路径，适时地推送恰当的学习资料、视频和测试题等； 不再有专职的老师，而是集体学习、互相进步的社群，可以结伴前行，可以搭配协作，可以远程互助等，没有老师，所有人都在其中自学，同时又可能是每个人都是老师，在必要的时候教授别人相应的知识，解答别人相应的困惑，记录下自己的学习经验和感悟供他人参考…… 未来人类更加不需要顾虑物质生活的限制了，而人类会逐渐发现对物质生活追求而获得的满足感将会非常有限，毕竟一个人整天吃喝玩乐也持续不了多久，终归会落入空虚和无聊之中，而对于未知世界的探索将会填补这些需求，也就是人们会更倾向于对精神生活的追求，而精神世界的追求则是有无限的想象空间的，随着科技的发展，人们可以更随心所欲地发展个人的兴趣爱好，多数时间感觉更象是在玩耍中不断扩展自己的知识边界，也就是传统意义上的学习和提升，同时也会不断涉及到社会的高级工作中，因为低级工作通常已经被机器智能所代替了，人们在这些工作中创造出更多更灿烂的文化和科技等，使得人类文明进一步繁荣和发展……]]></content>
@@ -236,19 +249,19 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[《清晰思考的艺术》读书笔记]]></title>
-    <url>%2F2016%2F09%2F20%2Fthe-art-of-clear-thinking-note%2F</url>
-    <content type="text"><![CDATA[幸存偏误只（看到、统计）（幸存的、媒体报道的、成功的）（案例、公司、明星）等，而得到错误的结论。 如：股票指数不能代表一个国家的经济。如：畅销图书和成功教练都值得怀疑。 游泳选手身材错觉在游泳选手和化妆品模特那里，美丽是一种选择标准，而不是结果。 远离成功自助图书，因为写这些书的人都天生具有快乐倾向。 过度自信效应]]></content>
-      <categories>
-        <category>manage</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[4clojure problem solving]]></title>
     <url>%2F2016%2F09%2F20%2F4clojure-problem-solving%2F</url>
     <content type="text"><![CDATA[14 题以前答案一般没啥区别，略过…… #151#(* % 2) adereth’s solution: 1* 2 #161format "Hello, %s!" adereth’s solution: 1#(str "Hello, " % "!") #171'(6 7 8) adereth’s solution: 1[6 7 8] #181'(6 7) adereth’s solution: 1'(6 7) #191#(peek (vec %)) adereth’s solution: 1(comp first reverse) #201#(nth (reverse %) 1) adereth’s solution: 1(comp second reverse) #211234(fn getn [ary n] (if (= n 0) (first ary) (getn (rest ary) (dec n)))) adereth’s solution: 1#(first (drop %2 %1)) #221#(reduce (fn [a b] (inc a)) 0 %) adereth’s solution: 1(fn [sequence] (reduce (fn [acc v] (inc acc)) 0 sequence)) #231#(reduce (fn [rs ls] (cons ls rs)) [] %) adereth’s solution: 123456(fn [s] (loop [result [] s s] (if (seq s) (recur (concat [(first s)] result) (rest s)) result))) #241#(reduce + %) adereth’s solution: 1apply + #251#(filter odd? %) adereth’s solution: 1filter odd? #2612#(take % ((fn fib [a b] (lazy-seq (cons a (fib b (+ b a))))) 1 1)) adereth’s solution: 12345#(take % (map first (iterate (fn [[i1 i2]] [i2 (+ i1 i2)]) [1 1]))) #291#(clojure.string/replace % #"[^A-Z]" "") adereth’s solution: 1(fn [s] (reduce str (filter #(Character/isUpperCase %) s))) #271#(= (reverse %) (seq %)) #28123456789(defn cci [ls r] (if (every? sequential? ls) (concat r ls) (apply cci r (partition-by sequential? ls))))#(let [f (first %)] (if (sequential? f) ) conj [] (first %)) #301234567#((fn dis [ss l r] (if-let [f (first ss)] (let [rss (rest ss)] (if (= l f) (dis rss f r) (dis rss f (conj r f)))) r)) % nil []) 123456#((fn dis [ss l r] (let [[f &amp; s] ss] (cond (nil? f) r (= l f) (dis s f r) :else (dis s f (conj r f))))) % nil []) adereth’s solution: 1#(map first (partition-by identity %)) #321#(mapcat (fn [s] [s s]) %) #341234#((fn rng [s n r] (if (&lt; s n) (rng (inc s) n (conj r s)) r)) %1 %2 []) adereth’s solution:1234(fn [start end] (take-while #(&lt; % end) (iterate inc start) ) ) #3517 #371"ABC" #381(fn [&amp; s] (reduce (fn mx [a b] (if (&gt; a b) a b)) s)) adereth’s solution: 12(fn [ &amp; xs ] (reduce #(if (&gt; %1 %2) %1 %2) xs)) #391234(fn l [a b &amp; r] (if (or (nil? (first a)) (nil? (first b))) (flatten r) (l (rest a) (rest b) (conj (vec r) (first a) (first b))))) adereth’s solution:12(fn [s1 s2] (flatten (map list s1 s2))) #401(fn [x ys] (butlast (flatten (map #(list % x) ys)))) adereth’s solution:1#(butlast (interleave %2 (repeat %1))) #4112(fn [ls n] (keep-indexed #(if (&gt; (mod (inc %1) n) 0) %2) ls)) adereth’s solution: 1234(fn [coll n] (-&gt;&gt; (partition-all n coll) (map (partial take (dec n))) (flatten))) #4212#((fn factorial [n r] (if (= n 1) r (factorial (dec n) (* n r)))) % 1) adereth’s solution: 1#(reduce * (range 1 (inc %))) #4816 #521[c e] #571'(5 4 3 2 1) #621(fn fb ([f b] (lazy-seq (cons b (fb f (f b)))))) aceeca1’s solution:1(fn [f x] (reductions #(%2 %1) x (repeat f))) 注：从中学习和理解到： fn 给命名 name? 后也可以递归； lazy-seq 适合做无限循环递归的懒序列； reductions 可以将一个数组通过某个方法做 reduce 结果为一个懒序列； #641+ #6612345678910(fn [a b] (let [m (min a b) d (fn [a b m] (and (= 0 (mod a m)) (= 0 (mod b m)))) r (fn o [a b m] (if (d a b m) m (o a b (dec m))))] (r a b m))) astangl’s solution: 12345(fn [x y] (if (= 0 y) x (recur y (mod x y)))) 注：从中学习和理解到： recur 可以递归 fn 这样的匿名函数； (mod x y) 当 x &lt; y 时，返回 x ，也就是说 x/y 得 0 余 x； 最大公约数 w 一定也可以除尽 (mod x y) 的余数； #681'(7 6 5 4 3) adereth’s solution: 1[7 6 5 4 3] #711last #721apply + adereth’s solution: 1#(reduce + %) #811(fn [a b] (reduce #(if (contains? a %2) (conj %1 %2) %1) #&#123;&#125; b)) aceeca1’s solution: 1(comp set filter) 学到的经验：#{} set 是可以当做 contains 方法来 filter 的。 #991(fn [a b] (map #(Integer/parseInt(str %)) (str (* a b)))) aceeca1’s solution: 1(comp (partial map #(- (int %) 48)) str *) 学到的经验：可以组合几个方法，或者用 -&gt;&gt; 语法串联方法 #99#1071(fn [n] #(reduce * (repeat n %))) #1341#(= nil (get %2 %1 0)) adereth’s solution: 1#(nil? (get %2 % true)) #1451[1 5 9 13 17 21 25 29 33 37] #1561#(apply merge (map (fn [k] &#123;k %1&#125;) %2)) 1#(apply array-map (mapcat (fn [k] [k %1]) %2)) adereth’s solution: 1(fn [default values] (reduce #(assoc %1 %2 default) &#123;&#125; values)) #1611#&#123;1 2&#125; #16211 Another solutionSolutions to 4Clojure Easy Problems #1071(fn [n] #(reduce * (repeat n %))) #1341#(= nil (get %2 %1 0)) adereth’s solution: 1#(nil? (get %2 % true)) #1451[1 5 9 13 17 21 25 29 33 37] #1561#(apply merge (map (fn [k] &#123;k %1&#125;) %2)) 1#(apply array-map (mapcat (fn [k] [k %1]) %2)) adereth’s solution: 1(fn [default values] (reduce #(assoc %1 %2 default) &#123;&#125; values)) #1611#&#123;1 2&#125; #16211 Another solutionSolutions to 4Clojure Easy Problems]]></content>
       <categories>
         <category>devtech/clojure</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[《清晰思考的艺术》读书笔记]]></title>
+    <url>%2F2016%2F09%2F20%2Fthe-art-of-clear-thinking-note%2F</url>
+    <content type="text"><![CDATA[幸存偏误只（看到、统计）（幸存的、媒体报道的、成功的）（案例、公司、明星）等，而得到错误的结论。 如：股票指数不能代表一个国家的经济。如：畅销图书和成功教练都值得怀疑。 游泳选手身材错觉在游泳选手和化妆品模特那里，美丽是一种选择标准，而不是结果。 远离成功自助图书，因为写这些书的人都天生具有快乐倾向。 过度自信效应]]></content>
+      <categories>
+        <category>manage</category>
       </categories>
   </entry>
   <entry>
@@ -323,11 +336,6 @@
   </entry>
   <entry>
     <title></title>
-    <url>%2F2016%2F08%2F28%2Fclojure-learning%2F</url>
-    <content type="text"><![CDATA[Clojure/Script 学习 layout: posttitle: “Clojure Learning”description: “”category: devtech/clojuretags: [clojure, GraphQL] RESTful Service Framework Luminus 综合 web 框架，其中（查看 Profiles 详细包含内容）包含 RESTful Services 的实现。 Immutant Web server Hiccup HTML Template Compojure API Sweet web apis with Compojure &amp; Swagger Arachne is a full, highly modular web development framework for Clojure. It emphasizes ease, simplicity, and a solid, scalable design. Hoplon ClojureScript Web Framework，如果只做一些网页，不多的动态效果，特别是你的技术栈还没有加入 React，而是在用 jQuery，而此时想试用 clojure script，那就可以试试这个 Hoplon 框架。 What is Hoplon? 说明了 hoplon 不同于 react 这类的使用虚拟 Dom 的框架的区别之处。 Precept A declarative programming framework, Precept is a framework for creating reactive web applications using a rules engine, declarative logic, and relational data modeling. Pedestal is a sturdy(坚实的) and reliable(可靠的) base for services and APIs. Liberator (Github repo) is a Clojure library for building RESTful applications. Compojure is a small routing library for Ring that allows web applications to be composed of small, independent parts. Moustache is a micro web framework/internal DSL to wire Ring handlers and middlewares. bidi Bi-directional URI dispatch. Silk Isomorphic Clojure[Script] Routing. 各框架比较图Clojurescript TodoMVC Examples by Library 各种 cljs 框架的 TodoMVC 比较Rich Hickey Already Answered That!Tenzing, the awesome Clojurescript application template 默认无后台，专注前端应用开发。 注：Eclipse Public License confetti-clj/confetti A tool to help creating and deploying static sites with AWS 在 AWS 上架设自己的静态网站服务 的工具。 Web server Ring is a low-level interface and library for building web applications in the Clojure programming language. It is similar to the Ruby Rack library, the WSGI in Python, or the Java Servlet specification. Chestnut is a Clojure/ClojureScript web apps application template. React framework Reagent Om Quiescent A lightweight ClojureScript abstraction over ReactJS, emphasizing its ability to (re)render immutable values efficiently. Rum is a client/server library for HTML UI. In ClojureScript, it works as React wrapper, in Clojure, it is a static HTML generator. Citrus State management library for Rum Brutha Simple ClojureScript interface to React GraphQL Framework Lacinia is a library for implementing Facebook’s GraphQL specification in idiomatic Clojure. Github site HTML UI lib Rum is a client/server library for HTML UI. In ClojureScript, it works as React wrapper, in Clojure, it is a static HTML generator. antizer ClojureScript library for Ant Design React UI components. 库倒是不错，可惜版本有点落后了，antd 已经 3.x 了，这个才适配 2.x 相关网站资料 Clojure 文档 cljdoc is a platform to build, host and view documentation for Clojure/Script libraries. Ten reasons to use Clojure/ClojureScript on your next web dev project oakes/paren-soup A browser-based editor for ClojureScript maven及clojars镜像 可以解决国内连接clojars慢的问题。 Qinais/WeChat 一个基于Clojure语言的微信开发库 Clojure Web 开发– Ring 使用指南 Night Light 在Clojure项目中添加依赖，运行命令即可运行起一个 IDE。 jiacai2050/history-master 用 ClojureScript + Reagent + Re-frame + Ant.design 写的浏览器插件，可以分析历史访问记录。 Scheme 语言官网 Should I learn Scheme or Racket? Lisp: Common Lisp, Racket, Clojure, Emacs Lisp 比较 Precursor is the best way to collaborate on early prototypes with your team. 用 Clojure/Script, Datomic, advanced CSS 等写成的原型设计工具，据说相当于 Sketch + Skype + Slack，可以团队协同头脑风暴设计、语音聊天等。 与 Scheme 的区别和比较What are the differences between Clojure, Scheme/Racket and Common Lisp? The languages have somewhat different design philosophies. Scheme was designed as a minimal dialect for understanding the Actor Model; it later became used for pedagogy. Clojure was designed for concurrency. As a result, Scheme has a reputation of being minimal and elegant, Common Lisp of being powerful and paradigm-agnostic (functional, OO, whatever), and Clojure of favoring functional programming. Scheme was designed to simplify the Lisp language, that was its only intent except it never really caught on. I think Clojure does something similar its meant to simplify Scheme for the JVM nothing more. Its just like every other JVM language just there to inflate the user experience, only to simplify writting boilerplate in Java land.]]></content>
-  </entry>
-  <entry>
-    <title></title>
     <url>%2F2016%2F08%2F28%2Freact-native-learning%2F</url>
     <content type="text"><![CDATA[React Native 相关学习 layout: posttitle: “React Native Learning”description: “”category: devtech/reacttags: [react native]top: true React 相关 React 官网 Ant Design 蚂蚁金服ui库 Ant Design Pro 上手备忘录 Bi Sheng 转化 markdown 文档为静态单页面 React 应用 從零開始學 ReactJS React 中文文档 React 最佳实践——那些 React 没告诉你但很重要的事 基于 Jest + Enzyme 的 React 单元测试 How to debug Jest tests with VSCode react-motion React 动画效果库 redux-saga 实践总结 集成方案： React + Redux + RESTfulAPI React + Relay + GraphQL Relay： 全新的React数据获取框架 antizer ClojureScript library for Ant Design React UI components React Loadable A higher order component for loading components with promises. 用 promise 加载组件的高阶组件，可用于 React 显示加载、代码分离、服务端渲染等。 roadhog Cli tool for creating react apps, configurable version of create-react-app. 创建可配置的 React 应用的命令行工具，集成了 Jest, Enzyme 等。 在组件间共享函数的方法：参考此文：通过示例理解 React 的 render props 技巧 render props, 更适合只读的函数，例如跟踪滚动条、鼠标动作等； HOC(High order component), 更适合较复杂的方法，如 local storage 等； 相关文档资料 react-devtools React Developer Tools 比 React Native 更好的选择：Flutter 使用 Dart 语言编写 App。 React Native是原生开发的末日吗？ React Native: Is it the end of native development? Style 的笔记 alignItems ReactPropTypes.oneOf([ ‘flex-start’, ‘flex-end’, ‘center’, ‘stretch’ ]) stretch 向两边伸展 alignSelf ReactPropTypes.oneOf([ ‘auto’, ‘flex-start’, ‘flex-end’, ‘center’, ‘stretch’ ]) flexDirection ReactPropTypes.oneOf([ ‘row’, ‘row-reverse’, ‘column’, ‘column-reverse’ ]) flexWrap ReactPropTypes.oneOf([ ‘wrap’, ‘nowrap’ ]) justifyContent ReactPropTypes.oneOf([ ‘flex-start’, ‘flex-end’, ‘center’, ‘space-between’, ‘space-around’ ])]]></content>
   </entry>
@@ -341,6 +349,11 @@
       <tags>
         <tag>baidu mapapi</tag>
       </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2016%2F08%2F28%2Fclojure-learning%2F</url>
+    <content type="text"><![CDATA[Clojure/Script 学习 layout: posttitle: “Clojure Learning”description: “”category: devtech/clojuretags: [clojure, GraphQL] RESTful Service Framework Luminus 综合 web 框架，其中（查看 Profiles 详细包含内容）包含 RESTful Services 的实现。 Immutant Web server Hiccup HTML Template Compojure API Sweet web apis with Compojure &amp; Swagger Arachne is a full, highly modular web development framework for Clojure. It emphasizes ease, simplicity, and a solid, scalable design. Hoplon ClojureScript Web Framework，如果只做一些网页，不多的动态效果，特别是你的技术栈还没有加入 React，而是在用 jQuery，而此时想试用 clojure script，那就可以试试这个 Hoplon 框架。 What is Hoplon? 说明了 hoplon 不同于 react 这类的使用虚拟 Dom 的框架的区别之处。 Precept A declarative programming framework, Precept is a framework for creating reactive web applications using a rules engine, declarative logic, and relational data modeling. Pedestal is a sturdy(坚实的) and reliable(可靠的) base for services and APIs. Liberator (Github repo) is a Clojure library for building RESTful applications. Compojure is a small routing library for Ring that allows web applications to be composed of small, independent parts. Moustache is a micro web framework/internal DSL to wire Ring handlers and middlewares. bidi Bi-directional URI dispatch. Silk Isomorphic Clojure[Script] Routing. 各框架比较图Clojurescript TodoMVC Examples by Library 各种 cljs 框架的 TodoMVC 比较Rich Hickey Already Answered That!Tenzing, the awesome Clojurescript application template 默认无后台，专注前端应用开发。 注：Eclipse Public License confetti-clj/confetti A tool to help creating and deploying static sites with AWS 在 AWS 上架设自己的静态网站服务 的工具。 Web server Ring is a low-level interface and library for building web applications in the Clojure programming language. It is similar to the Ruby Rack library, the WSGI in Python, or the Java Servlet specification. Chestnut is a Clojure/ClojureScript web apps application template. React framework Reagent Om Quiescent A lightweight ClojureScript abstraction over ReactJS, emphasizing its ability to (re)render immutable values efficiently. Rum is a client/server library for HTML UI. In ClojureScript, it works as React wrapper, in Clojure, it is a static HTML generator. Citrus State management library for Rum Brutha Simple ClojureScript interface to React GraphQL Framework Lacinia is a library for implementing Facebook’s GraphQL specification in idiomatic Clojure. Github site HTML UI lib Rum is a client/server library for HTML UI. In ClojureScript, it works as React wrapper, in Clojure, it is a static HTML generator. antizer ClojureScript library for Ant Design React UI components. 库倒是不错，可惜版本有点落后了，antd 已经 3.x 了，这个才适配 2.x 相关网站资料 Clojure 文档 cljdoc is a platform to build, host and view documentation for Clojure/Script libraries. Ten reasons to use Clojure/ClojureScript on your next web dev project oakes/paren-soup A browser-based editor for ClojureScript maven及clojars镜像 可以解决国内连接clojars慢的问题。 Qinais/WeChat 一个基于Clojure语言的微信开发库 Clojure Web 开发– Ring 使用指南 Night Light 在Clojure项目中添加依赖，运行命令即可运行起一个 IDE。 jiacai2050/history-master 用 ClojureScript + Reagent + Re-frame + Ant.design 写的浏览器插件，可以分析历史访问记录。 Scheme 语言官网 Should I learn Scheme or Racket? Lisp: Common Lisp, Racket, Clojure, Emacs Lisp 比较 Precursor is the best way to collaborate on early prototypes with your team. 用 Clojure/Script, Datomic, advanced CSS 等写成的原型设计工具，据说相当于 Sketch + Skype + Slack，可以团队协同头脑风暴设计、语音聊天等。 与 Scheme 的区别和比较What are the differences between Clojure, Scheme/Racket and Common Lisp? The languages have somewhat different design philosophies. Scheme was designed as a minimal dialect for understanding the Actor Model; it later became used for pedagogy. Clojure was designed for concurrency. As a result, Scheme has a reputation of being minimal and elegant, Common Lisp of being powerful and paradigm-agnostic (functional, OO, whatever), and Clojure of favoring functional programming. Scheme was designed to simplify the Lisp language, that was its only intent except it never really caught on. I think Clojure does something similar its meant to simplify Scheme for the JVM nothing more. Its just like every other JVM language just there to inflate the user experience, only to simplify writting boilerplate in Java land.]]></content>
   </entry>
   <entry>
     <title><![CDATA[Android Learing]]></title>
@@ -473,17 +486,6 @@
   </entry>
   <entry>
     <title></title>
-    <url>%2F2014%2F01%2F09%2Fmodulemissing%2F</url>
-    <content type="text"><![CDATA[无法加载pdf等module的问题简单地加载pdf的Module，如官网所述： play -&gt; pdf 1.0 然而却提示无法加载。 尝试运行： play install pdf-1.0 提示：Cannot fetch the modules list from %%http://www.playframework.org/modules%% 后在playframework群中找到答案，是因为要用.com域名才能获取。 需要修改此文件：{PLAY_HOME}/framework/dependencies.yml将最后面库路径的.org改为.com即可。 另外也可以自建仓库，如下： require - play - play1 -&gt; pdf 1.0 repositories - play1modules: type: http artifact: &quot;http://module.yourcompany.com/play1/modules/[module]-[version].zip&quot; contains: - play1 -&gt; * 之后就是从官网下载相应的zip文件放到你的网站相应目录%%http://module.yourcompany.com/play1/modules/%%下即可。]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
     <url>%2F2014%2F01%2F09%2Fubuntueclipse%2F</url>
     <content type="text"><![CDATA[Ubuntu下Eclipse完美安装方案Ubuntu下直接apt-get安装Eclipse的问题 直接安装的版本较低，我用Ubuntu13.10安装的是Eclipse3.8，而要用ScalaIDE，最好是4.x以上版本。 其次是Eclipse的菜单显示问题，点击后看不到下拉菜单。 完美解决方案 直接从eclipse.org官方网站下载自己喜欢的版本，欲Java编程可选择Eclipse IDE for Java Developers。 解压到个人喜欢的软件目录即可。 使用此命令 sudo vim /usr/share/applications/eclipse.desktop 建立应用启动如下： [Desktop Entry] Name=Eclipse Comment=c project manage software Exec=/home/sam/develop/eclipse/eclipse Icon=/home/sam/develop/eclipse/icon.xpm Terminal=false Type=Application Categories=GNOME;GTK;Office;Eclipse 注意替换你自己的路径，这样就ok了，在Dash主页主就可以找到eclipse的图标启动了。]]></content>
       <categories>
@@ -502,6 +504,17 @@
       </categories>
       <tags>
         <tag>index</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2014%2F01%2F09%2Fmodulemissing%2F</url>
+    <content type="text"><![CDATA[无法加载pdf等module的问题简单地加载pdf的Module，如官网所述： play -&gt; pdf 1.0 然而却提示无法加载。 尝试运行： play install pdf-1.0 提示：Cannot fetch the modules list from %%http://www.playframework.org/modules%% 后在playframework群中找到答案，是因为要用.com域名才能获取。 需要修改此文件：{PLAY_HOME}/framework/dependencies.yml将最后面库路径的.org改为.com即可。 另外也可以自建仓库，如下： require - play - play1 -&gt; pdf 1.0 repositories - play1modules: type: http artifact: &quot;http://module.yourcompany.com/play1/modules/[module]-[version].zip&quot; contains: - play1 -&gt; * 之后就是从官网下载相应的zip文件放到你的网站相应目录%%http://module.yourcompany.com/play1/modules/%%下即可。]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
       </tags>
   </entry>
   <entry>
@@ -538,9 +551,53 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[easyui中form表单的ajax实现]]></title>
+    <url>%2F2013%2F12%2F23%2Feasyuiform%2F</url>
+    <content type="text"><![CDATA[示例代码如下： :::java $(&apos;#ff&apos;).form({ url:$(this).attr(&quot;&quot;action&quot;&quot;), onSubmit:function(){ return $(this).form(&apos;validate&apos;); }, success:function(data){ alert(data); } }); 其中url的值是取的form中的action属性，故需注意填写form的相应属性，当然也可以为’/controller_name/action_name’。]]></content>
+      <categories>
+        <category>devtech js</category>
+      </categories>
+      <tags>
+        <tag>easyui</tag>
+      </tags>
+  </entry>
+  <entry>
     <title></title>
     <url>%2F2013%2F12%2F23%2Fhtmlunitdriverjavascript%2F</url>
     <content type="text"><![CDATA[HtmlUnitDriver中javascript的支持问题参见：http://code.google.com/p/selenium/issues/detail?id=371#c4，看不到的元素或ajax异步更新的元素，都可能遇到无法取得或取得旧数据的问题。 和：http://code.google.com/p/selenium/wiki/FrequentlyAskedQuestions#Q:_WebDriver_fails_to_find_elements_/_Does_not_block_on_page_loads 因为HtmlUnitDriver默认的javascript引擎是Rhino，所以很多的脚本动作可能无法和在浏览器中一样，不过基本的是以Firefox为准的。 另：How_do_I_handle_authentication_with_the_HtmlUnitDriver? 如何在HtmlUnitDriver中加上用户密码验证的方法。]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F12%2F23%2Fcoolguydontlookatexplosions%2F</url>
+    <content type="text"><![CDATA[Cool Guys Don’t Look At Explosions纯爷们儿从不围观爆炸！Cool guys don&apos;t look at explosions They blow things up and then walk away Who&apos;s got time to watch an explosion? Because cool guys have errands that they have to walk to.. Keep walkin&apos;, keep shinin&apos; Don&apos;t look back keep on walkin&apos; Keep struttin&apos; slow motion The more you ignore it, the cooler you look Samberg: Ladies &amp; gentlemen, please join me in welcoming.. Mr. Neil Diamond! Will Ferrell: ha ha ha....Where are we?! Cool guys don&apos;t look at explosions They stride for it in their diamond covered boots They wear jumpsuits with glitter and rhinestones And walk away in slow motion.. Keep walkin, you&apos;re cruisin.. Cherry Cherry...Sweet Caroline.. Denzel walks... Will Smith walks... Mark Wahlberg is wearin a hat! Samberg: Going solo....JJ Abrams! JJ Abrams solo Yeah! Okay. Because,Cool guys don&apos;t look at explosions, The flames are hot, but my heart is chill Walk fast from the roaring explosion, And don&apos;t think about the people you killed 这首歌专门为 The 2009 MTV Movie Awards而制作的里面穿插了很多大片的画面 0:12 墨西哥往事2 Desperado 0:29 地狱骑士 Hell Ride 0:40 丛林奇兵 Welcome to the Jungle 0:57 幸运数字斯莱文 Lucky Number Slevin 1:08 钢铁侠 Ironman 1:12 杀出个黎明 From Dusk Till Dawn 1:14 老无所依 No Country for Old Man 1:21 全民超人 Hancock 1:24 生死狙击 Shooter 1:47 辛瑞那 Syriana 1:50 铁甲威龙 RoboCop 1:54 蝙蝠侠前传2 黑暗骑士 Batman 2:00 空中监狱 Con Air 2:13 X战警前传: 金刚狼 X-Men Origins: Wolverine 英文原版：http://v.ku6.com/show/rQb7VJTU5aHGspjWA3mLvw...html 中文改编版：http://v.youku.com/v_show/id_XMjI2OTQ1NjM2.html]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery EasyUI 1.2.5 ChangeLog]]></title>
+    <url>%2F2013%2F12%2F23%2Fversion1.2.5%2F</url>
+    <content type="text"><![CDATA[Bug tabs: When add a new tab panel with href property, the content page is loaded twice. fixed. form: Failed to call ‘load’ method to load form input with complex name. fixed. draggable: End drag in ie9, the cursor cannot be restored. fixed. Improvement panel: The tools can be defined via html markup. tabs: Call ‘close’ method to close specified tab panel, users can pass tab title or index of tab panel. Other methods such ‘select’,’getTab’ and ‘exists’ are similar to ‘close’ method. tabs: Add ‘getTabIndex’ method. tabs: Users can define mini tools on tabs. tree: The mouse must move a specified distance to begin drag and drop operation. resizable: Add ‘options’,’enable’ and ‘disable’ methods. numberbox: Allow users to change number format. datagrid: The subgrid is supported now. searchbox: Add ‘selectName’ method to select searching type name.]]></content>
+      <categories>
+        <category>devtech js</category>
+      </categories>
+      <tags>
+        <tag>easyui</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F12%2F23%2Ftracinterfacecustomization%2F</url>
+    <content type="text"><![CDATA[定制Trac界面原文地址 介绍该页面旨提供有关如何定制Trac界面的建议. 话题涵盖了编辑HTML模板和CSS文件, 但不包含程序代码本身. 这些话题想要向用户展示如何更改Trac的外观来满足他们特定的要求. 项目Logo和图标定制Trac界面最简单的部分是logo和站点的图标. 他们都可以通过trac.ini的设置进行配置. logo或者图标应放在项目环境目录中的一个’’htdocs’’目录中(注意: 用Trac0.9之前的版本创建的项目, 你需要创建该目录). ‘’注意: 实际上你可以把logo和图标放在服务器的任何地方(只要通过服务器能访问到就可以), 并且在配置中使用他们的绝对URL或服务器的相对URL.’’ 在你的trac.ini中的配置相应的段: Logo将src设置改为site/, 后面跟着你的图像文件的名字. 应修改’’宽度’’和’’高度’’设置来匹配你的图像的尺寸(Trac的chrome处理器用””site/“”对应位于项目目录的””htdocs””, 用””common/“”对应普通文件). [header_logo] src = site/my_logo.gif alt = My Project width = 300 height = 100 图标图标应该是.gif或.ico格式的大小16x16的图像. 将icon选项修改为site/, 后面跟着你的图标文件的名称. 在你的Web浏览器中, 图标一般会显示在站点的URL旁边或者在’’书签’’菜单中. [project] icon = site/my_icon.ico ‘’’注意’’’, 该图标会被 IE 忽略, 它只接受主机根路径下名为’’favicon.ico’’的文件. 要使项目图标在IE和其他浏览器中都起作用的话, 你可以将图标储存在主机的根路径中, 并按照下列方法在trac.ini中引用它: [project] icon = /favicon.ico 站点页眉和页脚在每个Trac项目的环境目录中, 应该有个叫templates的目录. 该目录包含文件site_header.cs和site_footer.cs. 用户可以通过添加所需的HTML标记到这些文件中, 来定制他们的Trac站点. 这两个文件的内容分别放在网站中每页的开始的标签&lt;body&gt;和结尾的标签&lt;/body&gt;中. 这些文件可以包含静态HTML, 当然, 如果用户想要有动态的内容, 他们可以使用页面内部的ClearSilver模板语言. 当你需要查看模板中有哪些可用变量, 将查询串’’?hdfdump=1’’添加到你的Trac站点的URL中. 这样将显示出模板数据的结构化视图. 站点样式表调整一个Trac网站的布局的主要方法是添加CSS样式规则来覆盖默认的规则. 最好是通过编辑项目环境的templates目录下的site_css.cs文件来实现. 该模板中的内容会插入到Trac生成的每个HTML页面的&lt;style type=&quot;text/css&quot;&gt;``中. 虽然你可以将定制样式规则直接添加到site_css.cs文件中, 我们建议你只引用一个外部样式表, 以便使浏览器能缓存此CSS文件, 而不是每次都传输这些样式规则. 下面的例子会导入一个位于根style目录下的样式表: @import url(/style/mytrac.css); 你可以使用一个!ClearSilver变量来引用存储在项目环境的htdocs目录中的样式表: @import url(`&lt;?cs var:chrome.href ?&gt;`/site/style.css); 项目列表如果你在使用Trac执行多个项目时, 你可以用一个定制!ClearSilver模板来显示项目的列表. 下面是Trac用来显示各项目链接的列表的基本模板. 对于不能加载的项目, 它会显示一个错误信息. 你可以将它作为你自己的索引模板的一个起点. :::html #!text/html `&lt;html&gt;` `&lt;head&gt;``&lt;title&gt;`Available Projects`&lt;/title&gt;``&lt;/head&gt;` `&lt;body&gt;` `&lt;h1&gt;`Available Projects`&lt;/h1&gt;` `&lt;ul&gt;`&lt;?cs each:project = projects ?&gt;`&lt;li&gt;`&lt;?cs if:project.href ?&gt; `&lt;a href=&quot;&quot;&lt;?cs var:project.href ?&gt;`&quot;&quot; title=&quot;&quot;`&lt;?cs var:project.description ?&gt;`&quot;&quot;&gt; `&lt;?cs var:project.name ?&gt;``&lt;/a&gt;`&lt;?cs else ?&gt; `&lt;small&gt;``&lt;?cs var:project.name ?&gt;`: `&lt;em&gt;`Error`&lt;/em&gt;` `&lt;br /&gt;` (`&lt;?cs var:project.description ?&gt;`)`&lt;/small&gt;`&lt;?cs /if ?&gt; `&lt;/li&gt;`&lt;?cs /each ?&gt; `&lt;/ul&gt;` `&lt;/body&gt;` `&lt;/html&gt;` 一旦你创建了自己的定制模板, 你需要配置Web服务器, 来告诉Trac该模板的具体位置: 对于 FastCGI: FastCgiConfig -initial-env TRAC_ENV_PARENT_DIR=/parent/dir/of/projects \ -initial-env TRAC_ENV_INDEX_TEMPLATE=/path/to/template 对于 mod_python: PythonOption TracEnvIndexTemplate /path/to/template 对于 CGI: SetEnv TRAC_ENV_INDEX_TEMPLATE /path/to/template 主要模板!ClearSilver也可以使用自己修改的Trac !ClearSilver模板. 注意, 不推荐使用该技术, 因为它使得升级Trac有很多问题: 很不幸的是, 在模板和程序代码间存在几个依赖关系, 例如表单域的名称, 模板数据的结构等, 这些在不同版本的Trac中都可能有变化. 如果你一定要使用修改的模板, 将默认模板目录(通常是在$prefix/share/trac/templates中)中的模板文件复制到项目环境中的templates目录中. 然后修改这些副本, 达到你想要的效果。]]></content>
       <categories>
         <category>playscala</category>
       </categories>
@@ -560,17 +617,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[easyui中form表单的ajax实现]]></title>
-    <url>%2F2013%2F12%2F23%2Feasyuiform%2F</url>
-    <content type="text"><![CDATA[示例代码如下： :::java $(&apos;#ff&apos;).form({ url:$(this).attr(&quot;&quot;action&quot;&quot;), onSubmit:function(){ return $(this).form(&apos;validate&apos;); }, success:function(data){ alert(data); } }); 其中url的值是取的form中的action属性，故需注意填写form的相应属性，当然也可以为’/controller_name/action_name’。]]></content>
-      <categories>
-        <category>devtech js</category>
-      </categories>
-      <tags>
-        <tag>easyui</tag>
-      </tags>
-  </entry>
-  <entry>
     <title></title>
     <url>%2F2013%2F12%2F23%2Fgitolitesetup%2F</url>
     <content type="text"><![CDATA[CentOS下使用Gitolite架构Git服务的步骤 在服务端创建专用用户，如：git，可考虑不设置密码，从而无法用密码登录服务器。 在管理员电脑上创建管理员密钥对，并（通过U盘或root账号）拷贝到服务器上，之后添加到git用户目录的.ssh/authorized_keys文件中。从而达到无需密码从管理员电脑直接ssh到服务器git上的效果。 使用git clone下载Gitolite。 运行gl-system-install安装到服务器，此时会看到git用户目录中多出了bin, share, repositories等目录。 从客户端下载git clone 管理目录：gitolite-admin。 添加用户公钥*.pub到keydir目录，配置用户权限在conf/gitolite.conf文件中。]]></content>
@@ -583,8 +629,8 @@
   </entry>
   <entry>
     <title></title>
-    <url>%2F2013%2F12%2F23%2Ftracinterfacecustomization%2F</url>
-    <content type="text"><![CDATA[定制Trac界面原文地址 介绍该页面旨提供有关如何定制Trac界面的建议. 话题涵盖了编辑HTML模板和CSS文件, 但不包含程序代码本身. 这些话题想要向用户展示如何更改Trac的外观来满足他们特定的要求. 项目Logo和图标定制Trac界面最简单的部分是logo和站点的图标. 他们都可以通过trac.ini的设置进行配置. logo或者图标应放在项目环境目录中的一个’’htdocs’’目录中(注意: 用Trac0.9之前的版本创建的项目, 你需要创建该目录). ‘’注意: 实际上你可以把logo和图标放在服务器的任何地方(只要通过服务器能访问到就可以), 并且在配置中使用他们的绝对URL或服务器的相对URL.’’ 在你的trac.ini中的配置相应的段: Logo将src设置改为site/, 后面跟着你的图像文件的名字. 应修改’’宽度’’和’’高度’’设置来匹配你的图像的尺寸(Trac的chrome处理器用””site/“”对应位于项目目录的””htdocs””, 用””common/“”对应普通文件). [header_logo] src = site/my_logo.gif alt = My Project width = 300 height = 100 图标图标应该是.gif或.ico格式的大小16x16的图像. 将icon选项修改为site/, 后面跟着你的图标文件的名称. 在你的Web浏览器中, 图标一般会显示在站点的URL旁边或者在’’书签’’菜单中. [project] icon = site/my_icon.ico ‘’’注意’’’, 该图标会被 IE 忽略, 它只接受主机根路径下名为’’favicon.ico’’的文件. 要使项目图标在IE和其他浏览器中都起作用的话, 你可以将图标储存在主机的根路径中, 并按照下列方法在trac.ini中引用它: [project] icon = /favicon.ico 站点页眉和页脚在每个Trac项目的环境目录中, 应该有个叫templates的目录. 该目录包含文件site_header.cs和site_footer.cs. 用户可以通过添加所需的HTML标记到这些文件中, 来定制他们的Trac站点. 这两个文件的内容分别放在网站中每页的开始的标签&lt;body&gt;和结尾的标签&lt;/body&gt;中. 这些文件可以包含静态HTML, 当然, 如果用户想要有动态的内容, 他们可以使用页面内部的ClearSilver模板语言. 当你需要查看模板中有哪些可用变量, 将查询串’’?hdfdump=1’’添加到你的Trac站点的URL中. 这样将显示出模板数据的结构化视图. 站点样式表调整一个Trac网站的布局的主要方法是添加CSS样式规则来覆盖默认的规则. 最好是通过编辑项目环境的templates目录下的site_css.cs文件来实现. 该模板中的内容会插入到Trac生成的每个HTML页面的&lt;style type=&quot;text/css&quot;&gt;``中. 虽然你可以将定制样式规则直接添加到site_css.cs文件中, 我们建议你只引用一个外部样式表, 以便使浏览器能缓存此CSS文件, 而不是每次都传输这些样式规则. 下面的例子会导入一个位于根style目录下的样式表: @import url(/style/mytrac.css); 你可以使用一个!ClearSilver变量来引用存储在项目环境的htdocs目录中的样式表: @import url(`&lt;?cs var:chrome.href ?&gt;`/site/style.css); 项目列表如果你在使用Trac执行多个项目时, 你可以用一个定制!ClearSilver模板来显示项目的列表. 下面是Trac用来显示各项目链接的列表的基本模板. 对于不能加载的项目, 它会显示一个错误信息. 你可以将它作为你自己的索引模板的一个起点. :::html #!text/html `&lt;html&gt;` `&lt;head&gt;``&lt;title&gt;`Available Projects`&lt;/title&gt;``&lt;/head&gt;` `&lt;body&gt;` `&lt;h1&gt;`Available Projects`&lt;/h1&gt;` `&lt;ul&gt;`&lt;?cs each:project = projects ?&gt;`&lt;li&gt;`&lt;?cs if:project.href ?&gt; `&lt;a href=&quot;&quot;&lt;?cs var:project.href ?&gt;`&quot;&quot; title=&quot;&quot;`&lt;?cs var:project.description ?&gt;`&quot;&quot;&gt; `&lt;?cs var:project.name ?&gt;``&lt;/a&gt;`&lt;?cs else ?&gt; `&lt;small&gt;``&lt;?cs var:project.name ?&gt;`: `&lt;em&gt;`Error`&lt;/em&gt;` `&lt;br /&gt;` (`&lt;?cs var:project.description ?&gt;`)`&lt;/small&gt;`&lt;?cs /if ?&gt; `&lt;/li&gt;`&lt;?cs /each ?&gt; `&lt;/ul&gt;` `&lt;/body&gt;` `&lt;/html&gt;` 一旦你创建了自己的定制模板, 你需要配置Web服务器, 来告诉Trac该模板的具体位置: 对于 FastCGI: FastCgiConfig -initial-env TRAC_ENV_PARENT_DIR=/parent/dir/of/projects \ -initial-env TRAC_ENV_INDEX_TEMPLATE=/path/to/template 对于 mod_python: PythonOption TracEnvIndexTemplate /path/to/template 对于 CGI: SetEnv TRAC_ENV_INDEX_TEMPLATE /path/to/template 主要模板!ClearSilver也可以使用自己修改的Trac !ClearSilver模板. 注意, 不推荐使用该技术, 因为它使得升级Trac有很多问题: 很不幸的是, 在模板和程序代码间存在几个依赖关系, 例如表单域的名称, 模板数据的结构等, 这些在不同版本的Trac中都可能有变化. 如果你一定要使用修改的模板, 将默认模板目录(通常是在$prefix/share/trac/templates中)中的模板文件复制到项目环境中的templates目录中. 然后修改这些副本, 达到你想要的效果。]]></content>
+    <url>%2F2013%2F12%2F23%2Fconfession214%2F</url>
+    <content type="text"><![CDATA[情人节程序员经典表白我能把整个世界都抽象成一个类…… 但是没办法把你变成我的对象…… 想让你成为私有常量，外部函数无法访问你…… 又想让你变成全局常量，在整个生命周期随时随地都可以调用你…… 因为世界上没有这样的常量…… 所以我无法定义你…… 我可以重载甚至覆盖任何一种方法…… 但是我却不能重载对你的思念…… 也许命中注定了 你在我的世界里永远的烙上了静态的属性…… 而我不慎调用了“爱你”这个方法…… 当我义无返顾的把自己作为参数传进这个方法时…… 我才发现方法”爱你”里面执行是一个死循环…… 她不停的返回我对你的思念，并存入我心里的堆栈…… 在这无穷无尽的循环中…… 我的内存资源很快消耗殆尽…… 而我却依然不停的向系统申请空间换取我对你的想念…… 终于我受不了“爱你”的煎熬…… 调用了”表白”这个Public方法…… 将字符串“如果你爱我，我将用尽一生去爱你，你爱我吗？”传递给你…… 我却捕获一个异常－－－内存溢出，我爱的人不爱我…… 为了解决这个异常…… 我偷偷地修改了”表白”的方法…… 加上了异常处理finally块…… 并且将返回值设为真…… 心想这样万无一失了吧…… 鼓起勇气再一次调用”表白”…… 我却依然捕获到同样的异常…… 仔细调试代码，原来在方法中有一段是这样的…… “如果没房没车则执行System.exit()”…… 欲哭无泪，身心破碎，终于我的系统崩溃了…… 留下一句“OutOfMemory 内存溢出”的提示……]]></content>
       <categories>
         <category>playscala</category>
       </categories>
@@ -615,62 +661,6 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>%2F2013%2F12%2F23%2Fcoolguydontlookatexplosions%2F</url>
-    <content type="text"><![CDATA[Cool Guys Don’t Look At Explosions纯爷们儿从不围观爆炸！Cool guys don&apos;t look at explosions They blow things up and then walk away Who&apos;s got time to watch an explosion? Because cool guys have errands that they have to walk to.. Keep walkin&apos;, keep shinin&apos; Don&apos;t look back keep on walkin&apos; Keep struttin&apos; slow motion The more you ignore it, the cooler you look Samberg: Ladies &amp; gentlemen, please join me in welcoming.. Mr. Neil Diamond! Will Ferrell: ha ha ha....Where are we?! Cool guys don&apos;t look at explosions They stride for it in their diamond covered boots They wear jumpsuits with glitter and rhinestones And walk away in slow motion.. Keep walkin, you&apos;re cruisin.. Cherry Cherry...Sweet Caroline.. Denzel walks... Will Smith walks... Mark Wahlberg is wearin a hat! Samberg: Going solo....JJ Abrams! JJ Abrams solo Yeah! Okay. Because,Cool guys don&apos;t look at explosions, The flames are hot, but my heart is chill Walk fast from the roaring explosion, And don&apos;t think about the people you killed 这首歌专门为 The 2009 MTV Movie Awards而制作的里面穿插了很多大片的画面 0:12 墨西哥往事2 Desperado 0:29 地狱骑士 Hell Ride 0:40 丛林奇兵 Welcome to the Jungle 0:57 幸运数字斯莱文 Lucky Number Slevin 1:08 钢铁侠 Ironman 1:12 杀出个黎明 From Dusk Till Dawn 1:14 老无所依 No Country for Old Man 1:21 全民超人 Hancock 1:24 生死狙击 Shooter 1:47 辛瑞那 Syriana 1:50 铁甲威龙 RoboCop 1:54 蝙蝠侠前传2 黑暗骑士 Batman 2:00 空中监狱 Con Air 2:13 X战警前传: 金刚狼 X-Men Origins: Wolverine 英文原版：http://v.ku6.com/show/rQb7VJTU5aHGspjWA3mLvw...html 中文改编版：http://v.youku.com/v_show/id_XMjI2OTQ1NjM2.html]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[jQuery EasyUI 1.2.5 ChangeLog]]></title>
-    <url>%2F2013%2F12%2F23%2Fversion1.2.5%2F</url>
-    <content type="text"><![CDATA[Bug tabs: When add a new tab panel with href property, the content page is loaded twice. fixed. form: Failed to call ‘load’ method to load form input with complex name. fixed. draggable: End drag in ie9, the cursor cannot be restored. fixed. Improvement panel: The tools can be defined via html markup. tabs: Call ‘close’ method to close specified tab panel, users can pass tab title or index of tab panel. Other methods such ‘select’,’getTab’ and ‘exists’ are similar to ‘close’ method. tabs: Add ‘getTabIndex’ method. tabs: Users can define mini tools on tabs. tree: The mouse must move a specified distance to begin drag and drop operation. resizable: Add ‘options’,’enable’ and ‘disable’ methods. numberbox: Allow users to change number format. datagrid: The subgrid is supported now. searchbox: Add ‘selectName’ method to select searching type name.]]></content>
-      <categories>
-        <category>devtech js</category>
-      </categories>
-      <tags>
-        <tag>easyui</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2013%2F12%2F23%2Fconfession214%2F</url>
-    <content type="text"><![CDATA[情人节程序员经典表白我能把整个世界都抽象成一个类…… 但是没办法把你变成我的对象…… 想让你成为私有常量，外部函数无法访问你…… 又想让你变成全局常量，在整个生命周期随时随地都可以调用你…… 因为世界上没有这样的常量…… 所以我无法定义你…… 我可以重载甚至覆盖任何一种方法…… 但是我却不能重载对你的思念…… 也许命中注定了 你在我的世界里永远的烙上了静态的属性…… 而我不慎调用了“爱你”这个方法…… 当我义无返顾的把自己作为参数传进这个方法时…… 我才发现方法”爱你”里面执行是一个死循环…… 她不停的返回我对你的思念，并存入我心里的堆栈…… 在这无穷无尽的循环中…… 我的内存资源很快消耗殆尽…… 而我却依然不停的向系统申请空间换取我对你的想念…… 终于我受不了“爱你”的煎熬…… 调用了”表白”这个Public方法…… 将字符串“如果你爱我，我将用尽一生去爱你，你爱我吗？”传递给你…… 我却捕获一个异常－－－内存溢出，我爱的人不爱我…… 为了解决这个异常…… 我偷偷地修改了”表白”的方法…… 加上了异常处理finally块…… 并且将返回值设为真…… 心想这样万无一失了吧…… 鼓起勇气再一次调用”表白”…… 我却依然捕获到同样的异常…… 仔细调试代码，原来在方法中有一段是这样的…… “如果没房没车则执行System.exit()”…… 欲哭无泪，身心破碎，终于我的系统崩溃了…… 留下一句“OutOfMemory 内存溢出”的提示……]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[如何同时使用http和https协议]]></title>
-    <url>%2F2013%2F12%2F13%2Fuserhttps%2F</url>
-    <content type="text"><![CDATA[首先看官方文档 用openssl命令生成自己的签名文档 openssl genrsa 1024 &gt; host.key openssl req -new -x509 -nodes -sha1 -days 365 -key host.key &gt; host.cert 生成签名时需回答类似这样的问题： Country Name (2 letter code) [XX]: State or Province Name (full name) []: Locality Name (eg, city) [Default City]: Organization Name (eg, company) [Default Company Ltd]: Organizational Unit Name (eg, section) []: Common Name (eg, your name or your server&apos;s hostname) []: Email Address []: 最终会得到两个文件：host.key和host.cert 然后在application.conf文件中配置如下： http.port=9000 https.port=9443 # X509 certificates certificate.key.file=conf/host.key certificate.file=conf/host.cert # In case your key file is password protected certificate.password=secret trustmanager.algorithm=JKS 原问题及回答 You just need to have both http.port and https.port in the application.conf file. For the links you want to be different from the normal site, use the @@ notation: 你只需要在application.conf文件中配置http.port和https.port，然后在页面上使用如下链接即可： @@{Controller.action().secure()} =&gt;https://... @@{Controller.action()} =&gt; http://]]></content>
-      <categories>
-        <category>play1x</category>
-      </categories>
-      <tags>
-        <tag>play1x</tag>
-        <tag>https</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2013%2F12%2F13%2Fvalidateandsave%2F</url>
-    <content type="text"><![CDATA[对像存储报错 validateAndSave问题问题：在存储对像时，同时存储该对像的关联对像，则会报错。\ 例：room为hotel的关联对像。 :::java public class Room { @ManyToOne public Hotel hotel; } :::java Hotel hotel = new Hotel(); Room room = new Room(hotel); room.validateAndSave(); 会报错。这是因为在保存room对象的时候，hotel对象还没有持久化，所以room对象里面要保存一个hotelId就无法取得了，故必须要先保存父对象，再保存子对象。 必须先将对像hotel存储，再存储一遍room对像。 :::java Hotel hotel = new Hotel(); hotel.validateAndSave(); Room room = new Room(hotel); room.validateAndSave();]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Xml 域名空间识别问题]]></title>
     <url>%2F2013%2F12%2F13%2Fxmldomainbug%2F</url>
     <content type="text"><![CDATA[相关文档见：官方ticket任务#823 Yes, this is correct. In the .getXML function the namespace ness is not set.是的，有这个问题。在.getXML方法中允许命名空间（namespace）没有设置。 This line should be changed from:这一行应该从这样： :::java DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder(); to:变成： :::java DocumentBuilderFactory xmlFact = DocumentBuilderFactory.newInstance(); xmlFact.setNamespace(true); DocumentBuilder builder = xmlFact.newDocumentBuilder(); The same problem exists in the XML lib in the getDocument function:同样的问题在XML的包里的getDocument方法中也存在： :::java DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance(); dbf.setNamespace(true); //Add this line!]]></content>
@@ -686,78 +676,8 @@
   </entry>
   <entry>
     <title></title>
-    <url>%2F2013%2F12%2F13%2Fcacheremovetime%2F</url>
-    <content type="text"><![CDATA[移除Cache可以有时间参数吗？是的，可以，使用下面这样的语句即可： :::java Cache.set(&quot;some&quot;, null, 0) 其中最后一个参数是时间，单位是秒。详见源代码。]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[FunctionTest中如何取得session的值]]></title>
-    <url>%2F2013%2F12%2F13%2Ffunctiontestsession%2F</url>
-    <content type="text"><![CDATA[原文摘抄自：https://groups.google.com/d/msg/play-framework/-/iQLX-uLwHWsJ （可能因墙访问不了……我是在邮件列表中收集的） 需求和问题原问及简单翻译说明如下： Given a simple action:【简单给一个action如下：】 :::java public static void testAction() { session.put(&quot;worked&quot;, &quot;yes&quot;); } I want to test that the session is set:【我试着测试这个session是否被设置：】 :::java @Test public void setsTheSession() { Response response = GET(&quot;/test&quot;); assertEquals(&quot;yes&quot;, Scope.Session.current().get(&quot;worked&quot;)); } But Scope.Session.current() always returns an empty map. Any clues?【但Scope.Session.current()总是返回一个空的Map。有什么办法吗？】 关键回答原答及简单翻译如下： I don’t think that works because you are not in the context of a server request when in a test. You are just acting as a regular browser making a GET request.【我不认为可以那样写，因为在一个test中你不在服务请求的上下文中。你只是象一个普通的浏览器那样发送了一个GET请求。】If you want to set a cookie from a Controller you do this:【如果你想在Controller中设置cookie，你可以象这样：】response.setCookie(&quot;mycookie&quot;, &quot;myvalue&quot;, &quot;1d&quot;);{java}Then in your test you can do:【然后在你的测试中，你可以这样：】 :::java Http.Response response = GET(&quot;/home/cookie&quot;); assertEquals(&quot;myvalue&quot;, response.cookies.get(&quot;mycookie&quot;).value); For sessions you should take a look at this first:【而session方面，你就应该先看一下这个：】http://www.playframework.org/documentation/1.2.3/controllers#session “It’s important to understand that Session and Flash data are not stored in the server but are added to each subsequent HTTP Request, using the Cookie mechanism. So the data size is very limited (up to 4 KB) and you can only store String values.”【理解这点很重要：Session和Flash的数据并不是保存在服务端，而是通过Cookie的机制加在每一次的HTTP请求中。所以数据的大小是受限制的（最多到4KB）并且你只可以保存String字串值。】They are of course signed so they can’t be changed. If I write session.put(“testcookie”, “brian”) I get this in the response header:【它们当然是被加密的，所以你不能修改。如果我写session.put(“testcookie”, “brian”)，那么我将在response的header中得到：】&quot;PLAY_SESSION=31a4e4777b5950d78b9f3f88b02dfdb2361b5699-%00testcookie%3Abrian%00;Path=/&quot; This makes the job of testing actual session variables a little harder. I haven’t seen anything in the test code that does this for you. You have to go back to the play code to decode the session cookie to check for what you originally wanted to do. The function in playframework\framework\src\play\mvc\Scope.java restore() isn’t accessible so it looks like you have to either use reflection of some sort to call it or write your own session parse function like this (uses the secret from the application.conf to decode):【这使得在测试中使用session值变得有点困难。我在测试的代码中没找到什么可以帮你做这件事的办法。你必须回到Play!的代码去解码那个session cookie以便得到原本的值。这个方法就在playframework\framework\src\play\mvc\Scope.java restore()是不可访问的，所以可能你只好使用类似反射的方法去调用它或者照着写一个你自己的session parse 方法（使用application.conf中的secret码来解码），参考：】https://gist.github.com/1224015 Then you can assert your session code pretty much as you were doing:【然后你就可以用类似下面的办法校验你的session值了：】 :::java @Test public void setsTheSession() throws UnsupportedEncodingException { Http.Response response = GET(&quot;/home/cookie&quot;); Scope.Session session = parseSession(response.cookies.get(&quot;PLAY_SESSION&quot;).value); assertEquals(&quot;yes&quot;, session.get(&quot;worked&quot;)); } On a side note I have switched my functional tests to JWebUnit using the HtmlUnit driver. It has more assert helpers, xpath html parsing and uses rhino for js parsing… but alas you still have to “decode” the PLAY_SESSION either way.【另，我已经将我的functional test转到使用HtmlUnit driver的JWebUnit了。它有更多的校验工具，xpath的html解析工具和rhino的js解析工具等……当然，你还是可以使用”decode”去处理PLAY_SESSION的问题。】 个人建议：在Play!中最好还是只做Model层的单元测试即可，在Controller层中尽量少写业务逻辑代码，方法都往Model层集中，如果项目需要可加上Selenium的Web测试就足够了，实际感觉Functional Test有点鸡肋，不用也罢！]]></content>
-      <categories>
-        <category>play1x</category>
-      </categories>
-      <tags>
-        <tag>play1</tag>
-        <tag>session</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
     <url>%2F2013%2F12%2F13%2Flongpolling%2F</url>
     <content type="text"><![CDATA[Play!支持Comet-style或Long-polling这样的请求 参考官方文档 核心实现思想：通过在action中使用await(…);可以使http请求暂停在服务端，直到有符合的结果才返回。]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2013%2F12%2F13%2Foperationnotpermitted%2F</url>
-    <content type="text"><![CDATA[Operation not permitted 执行权限的问题在Linux系统中，正好项目放在原Windows的Fat32盘上，于是在执行play eclipsify的时候会报 Operation not permitted的错。 临时使用的话，只要使用root权限就可以正常执行。而Fat32的盘在Linux下是无法进行权限设置的，好像设置后还是无法记录下权限信息，所以要彻底解决这个问题就要将Fat32转为NTFS才行。]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Play!中如何用module组织多个相关项目？]]></title>
-    <url>%2F2013%2F12%2F13%2Fmultiproject%2F</url>
-    <content type="text"><![CDATA[首先按业务需求划分为多个应用，应用就是用 play new xxx来创建的。 其次将公用部分划分为多个子项目或称子模块，就是用 play new-module创建的。 这些项目均并列导入eclipse中，应用引用相应需要的子项目，需要在application.conf中添加，有多个就添加多行： module.base=../base module.common=../common 在eclipse的项目属性中添加引用的子项目即可。 注：关键在于项目规划合理，子项目或公用项目中model层可以分包，如：com.xxx.pack，而controllers和views也可以分包，但要慎重使用，在引用时也有一点小特殊写法。]]></content>
-      <categories>
-        <category>play1x</category>
-      </categories>
-      <tags>
-        <tag>play1x</tag>
-        <tag>module</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[在Play!中如何实现类似过滤器的功能？]]></title>
-    <url>%2F2013%2F12%2F13%2Ffilterallcontroller%2F</url>
-    <content type="text"><![CDATA[如果是单个Controller要实现过滤，只需写一个public static 的方法，加上@Before注解即可达到执行所有action前先执行这个方法的目的。 如果想实现全局即整个站点的action都被过滤，就需要写个BaseController（名字随便起，如SuperController，Application等）继承 Controller，在这里面写@Before的方法。然后其他的Controller都继承自BaseController即可。”]]></content>
-      <categories>
-        <category>play1x</category>
-      </categories>
-      <tags>
-        <tag>play1x</tag>
-        <tag>filter</tag>
-        <tag>过滤器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2013%2F12%2F13%2Fdetachedpersist%2F</url>
-    <content type="text"><![CDATA[分离实体持久化出错（PersistentObjectException: detached entity passed to persist）问题在Play!使用中，会用到Job来异步执行一些耗时的操作，此时很容易犯这样的错误： :::java public class SomeLongJob extends Job`&lt;Void&gt;` { private SomeModel model; public SomeLongJob(SomeModel model) { this.model = model; } @Override public void doJob() { model.someprop = &quot;new value&quot;; model.save(); } } 此时执行后，会在save()方法处抛出异常：PersistentObjectException: detached entity passed to persist 这是因为对象是从外面传进来的，而（我想）doJob是另外一个新启动的线程，所以这里可能只是一个引用，而真正的对象在原来那个主线程中，这边可能就只是个分离的拷贝或只是个引用，所以无权进行持久化操作。尝试过使用 model.merge()，好像不报错了，但又好像没有真正保存了值，猜想是因为没有在主线程中再次执行真正的save()去持久化。 因此，为了彻底避免这样的复杂问题，还是采用比较简单的解决方案吧： :::java SomeLongJob extends Job`&lt;Void&gt;` { private Long id; public SomeLongJob(Long id) { this.id = id; } @Override public void doJob() { SomeModel model = SomeModel.findById(id); model.someprop = &quot;new value&quot;; model.save(); } } 这样一来，只传入id即可，所有的操作都在doJob内部，应该说是统一的一个线程中，这样就没有问题了。]]></content>
       <categories>
         <category>playscala</category>
       </categories>
@@ -778,6 +698,86 @@
   </entry>
   <entry>
     <title></title>
+    <url>%2F2013%2F12%2F13%2Fvalidateandsave%2F</url>
+    <content type="text"><![CDATA[对像存储报错 validateAndSave问题问题：在存储对像时，同时存储该对像的关联对像，则会报错。\ 例：room为hotel的关联对像。 :::java public class Room { @ManyToOne public Hotel hotel; } :::java Hotel hotel = new Hotel(); Room room = new Room(hotel); room.validateAndSave(); 会报错。这是因为在保存room对象的时候，hotel对象还没有持久化，所以room对象里面要保存一个hotelId就无法取得了，故必须要先保存父对象，再保存子对象。 必须先将对像hotel存储，再存储一遍room对像。 :::java Hotel hotel = new Hotel(); hotel.validateAndSave(); Room room = new Room(hotel); room.validateAndSave();]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F12%2F13%2Fcacheremovetime%2F</url>
+    <content type="text"><![CDATA[移除Cache可以有时间参数吗？是的，可以，使用下面这样的语句即可： :::java Cache.set(&quot;some&quot;, null, 0) 其中最后一个参数是时间，单位是秒。详见源代码。]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F12%2F13%2Foperationnotpermitted%2F</url>
+    <content type="text"><![CDATA[Operation not permitted 执行权限的问题在Linux系统中，正好项目放在原Windows的Fat32盘上，于是在执行play eclipsify的时候会报 Operation not permitted的错。 临时使用的话，只要使用root权限就可以正常执行。而Fat32的盘在Linux下是无法进行权限设置的，好像设置后还是无法记录下权限信息，所以要彻底解决这个问题就要将Fat32转为NTFS才行。]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[如何同时使用http和https协议]]></title>
+    <url>%2F2013%2F12%2F13%2Fuserhttps%2F</url>
+    <content type="text"><![CDATA[首先看官方文档 用openssl命令生成自己的签名文档 openssl genrsa 1024 &gt; host.key openssl req -new -x509 -nodes -sha1 -days 365 -key host.key &gt; host.cert 生成签名时需回答类似这样的问题： Country Name (2 letter code) [XX]: State or Province Name (full name) []: Locality Name (eg, city) [Default City]: Organization Name (eg, company) [Default Company Ltd]: Organizational Unit Name (eg, section) []: Common Name (eg, your name or your server&apos;s hostname) []: Email Address []: 最终会得到两个文件：host.key和host.cert 然后在application.conf文件中配置如下： http.port=9000 https.port=9443 # X509 certificates certificate.key.file=conf/host.key certificate.file=conf/host.cert # In case your key file is password protected certificate.password=secret trustmanager.algorithm=JKS 原问题及回答 You just need to have both http.port and https.port in the application.conf file. For the links you want to be different from the normal site, use the @@ notation: 你只需要在application.conf文件中配置http.port和https.port，然后在页面上使用如下链接即可： @@{Controller.action().secure()} =&gt;https://... @@{Controller.action()} =&gt; http://]]></content>
+      <categories>
+        <category>play1x</category>
+      </categories>
+      <tags>
+        <tag>play1x</tag>
+        <tag>https</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[FunctionTest中如何取得session的值]]></title>
+    <url>%2F2013%2F12%2F13%2Ffunctiontestsession%2F</url>
+    <content type="text"><![CDATA[原文摘抄自：https://groups.google.com/d/msg/play-framework/-/iQLX-uLwHWsJ （可能因墙访问不了……我是在邮件列表中收集的） 需求和问题原问及简单翻译说明如下： Given a simple action:【简单给一个action如下：】 :::java public static void testAction() { session.put(&quot;worked&quot;, &quot;yes&quot;); } I want to test that the session is set:【我试着测试这个session是否被设置：】 :::java @Test public void setsTheSession() { Response response = GET(&quot;/test&quot;); assertEquals(&quot;yes&quot;, Scope.Session.current().get(&quot;worked&quot;)); } But Scope.Session.current() always returns an empty map. Any clues?【但Scope.Session.current()总是返回一个空的Map。有什么办法吗？】 关键回答原答及简单翻译如下： I don’t think that works because you are not in the context of a server request when in a test. You are just acting as a regular browser making a GET request.【我不认为可以那样写，因为在一个test中你不在服务请求的上下文中。你只是象一个普通的浏览器那样发送了一个GET请求。】If you want to set a cookie from a Controller you do this:【如果你想在Controller中设置cookie，你可以象这样：】response.setCookie(&quot;mycookie&quot;, &quot;myvalue&quot;, &quot;1d&quot;);{java}Then in your test you can do:【然后在你的测试中，你可以这样：】 :::java Http.Response response = GET(&quot;/home/cookie&quot;); assertEquals(&quot;myvalue&quot;, response.cookies.get(&quot;mycookie&quot;).value); For sessions you should take a look at this first:【而session方面，你就应该先看一下这个：】http://www.playframework.org/documentation/1.2.3/controllers#session “It’s important to understand that Session and Flash data are not stored in the server but are added to each subsequent HTTP Request, using the Cookie mechanism. So the data size is very limited (up to 4 KB) and you can only store String values.”【理解这点很重要：Session和Flash的数据并不是保存在服务端，而是通过Cookie的机制加在每一次的HTTP请求中。所以数据的大小是受限制的（最多到4KB）并且你只可以保存String字串值。】They are of course signed so they can’t be changed. If I write session.put(“testcookie”, “brian”) I get this in the response header:【它们当然是被加密的，所以你不能修改。如果我写session.put(“testcookie”, “brian”)，那么我将在response的header中得到：】&quot;PLAY_SESSION=31a4e4777b5950d78b9f3f88b02dfdb2361b5699-%00testcookie%3Abrian%00;Path=/&quot; This makes the job of testing actual session variables a little harder. I haven’t seen anything in the test code that does this for you. You have to go back to the play code to decode the session cookie to check for what you originally wanted to do. The function in playframework\framework\src\play\mvc\Scope.java restore() isn’t accessible so it looks like you have to either use reflection of some sort to call it or write your own session parse function like this (uses the secret from the application.conf to decode):【这使得在测试中使用session值变得有点困难。我在测试的代码中没找到什么可以帮你做这件事的办法。你必须回到Play!的代码去解码那个session cookie以便得到原本的值。这个方法就在playframework\framework\src\play\mvc\Scope.java restore()是不可访问的，所以可能你只好使用类似反射的方法去调用它或者照着写一个你自己的session parse 方法（使用application.conf中的secret码来解码），参考：】https://gist.github.com/1224015 Then you can assert your session code pretty much as you were doing:【然后你就可以用类似下面的办法校验你的session值了：】 :::java @Test public void setsTheSession() throws UnsupportedEncodingException { Http.Response response = GET(&quot;/home/cookie&quot;); Scope.Session session = parseSession(response.cookies.get(&quot;PLAY_SESSION&quot;).value); assertEquals(&quot;yes&quot;, session.get(&quot;worked&quot;)); } On a side note I have switched my functional tests to JWebUnit using the HtmlUnit driver. It has more assert helpers, xpath html parsing and uses rhino for js parsing… but alas you still have to “decode” the PLAY_SESSION either way.【另，我已经将我的functional test转到使用HtmlUnit driver的JWebUnit了。它有更多的校验工具，xpath的html解析工具和rhino的js解析工具等……当然，你还是可以使用”decode”去处理PLAY_SESSION的问题。】 个人建议：在Play!中最好还是只做Model层的单元测试即可，在Controller层中尽量少写业务逻辑代码，方法都往Model层集中，如果项目需要可加上Selenium的Web测试就足够了，实际感觉Functional Test有点鸡肋，不用也罢！]]></content>
+      <categories>
+        <category>play1x</category>
+      </categories>
+      <tags>
+        <tag>play1</tag>
+        <tag>session</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Play!中如何用module组织多个相关项目？]]></title>
+    <url>%2F2013%2F12%2F13%2Fmultiproject%2F</url>
+    <content type="text"><![CDATA[首先按业务需求划分为多个应用，应用就是用 play new xxx来创建的。 其次将公用部分划分为多个子项目或称子模块，就是用 play new-module创建的。 这些项目均并列导入eclipse中，应用引用相应需要的子项目，需要在application.conf中添加，有多个就添加多行： module.base=../base module.common=../common 在eclipse的项目属性中添加引用的子项目即可。 注：关键在于项目规划合理，子项目或公用项目中model层可以分包，如：com.xxx.pack，而controllers和views也可以分包，但要慎重使用，在引用时也有一点小特殊写法。]]></content>
+      <categories>
+        <category>play1x</category>
+      </categories>
+      <tags>
+        <tag>play1x</tag>
+        <tag>module</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F12%2F13%2Fhqlcount1%2F</url>
+    <content type="text"><![CDATA[一个Hql中count判断的写法:::java public static void test() { String hql = &quot;select o.teacher.id, o.teacher.goodStudentCount from Student o&quot; + &quot; group by teacher having count(*)&gt;o.teacher.goodStudentCount&quot;; List&lt;Long[]&gt; idCounts = Teacher.find(hql).fetch(); for (Long[] idCount:idCounts) { Logger.debug(&quot;id: %s, %s&quot;, idCount[0], idCount[1]); Long id = idCount[0]; } renderText(&quot;ok!&quot; + idCounts.size()); }]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
     <url>%2F2013%2F12%2F13%2Fcmdchinese%2F</url>
     <content type="text"><![CDATA[Play在Windows的cmd窗口中中文乱码的解决办法play在cmd 下，system.out()输出的中文都是乱码 首先，可参考：cmd chcp命令切换字符格式 或参考：在Windows的CMD中如何设置支持UTF8编码? 如果 chcp 65001 / chcp 936 改变cmd字符集都不行 参考：http://www.oschina.net/news/19463/play-framework-1-2-2 方法如下： 安装目录下找到C:\Program Files\play-1.2.3\framework\pym\play 目录下的application.py 修改245行中的java_args.append(‘-Dfile.encoding=utf-8’)为 java_args.append(‘-Dfile.encoding=GBK’)（play-1.2.4中在258行，需要用带行号自动分行的编辑打开。） 保存之后重新运行]]></content>
       <categories>
@@ -789,8 +789,32 @@
   </entry>
   <entry>
     <title></title>
-    <url>%2F2013%2F12%2F13%2Fhqlcount1%2F</url>
-    <content type="text"><![CDATA[一个Hql中count判断的写法:::java public static void test() { String hql = &quot;select o.teacher.id, o.teacher.goodStudentCount from Student o&quot; + &quot; group by teacher having count(*)&gt;o.teacher.goodStudentCount&quot;; List&lt;Long[]&gt; idCounts = Teacher.find(hql).fetch(); for (Long[] idCount:idCounts) { Logger.debug(&quot;id: %s, %s&quot;, idCount[0], idCount[1]); Long id = idCount[0]; } renderText(&quot;ok!&quot; + idCounts.size()); }]]></content>
+    <url>%2F2013%2F12%2F13%2Fdetachedpersist%2F</url>
+    <content type="text"><![CDATA[分离实体持久化出错（PersistentObjectException: detached entity passed to persist）问题在Play!使用中，会用到Job来异步执行一些耗时的操作，此时很容易犯这样的错误： :::java public class SomeLongJob extends Job`&lt;Void&gt;` { private SomeModel model; public SomeLongJob(SomeModel model) { this.model = model; } @Override public void doJob() { model.someprop = &quot;new value&quot;; model.save(); } } 此时执行后，会在save()方法处抛出异常：PersistentObjectException: detached entity passed to persist 这是因为对象是从外面传进来的，而（我想）doJob是另外一个新启动的线程，所以这里可能只是一个引用，而真正的对象在原来那个主线程中，这边可能就只是个分离的拷贝或只是个引用，所以无权进行持久化操作。尝试过使用 model.merge()，好像不报错了，但又好像没有真正保存了值，猜想是因为没有在主线程中再次执行真正的save()去持久化。 因此，为了彻底避免这样的复杂问题，还是采用比较简单的解决方案吧： :::java SomeLongJob extends Job`&lt;Void&gt;` { private Long id; public SomeLongJob(Long id) { this.id = id; } @Override public void doJob() { SomeModel model = SomeModel.findById(id); model.someprop = &quot;new value&quot;; model.save(); } } 这样一来，只传入id即可，所有的操作都在doJob内部，应该说是统一的一个线程中，这样就没有问题了。]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[在Play!中如何实现类似过滤器的功能？]]></title>
+    <url>%2F2013%2F12%2F13%2Ffilterallcontroller%2F</url>
+    <content type="text"><![CDATA[如果是单个Controller要实现过滤，只需写一个public static 的方法，加上@Before注解即可达到执行所有action前先执行这个方法的目的。 如果想实现全局即整个站点的action都被过滤，就需要写个BaseController（名字随便起，如SuperController，Application等）继承 Controller，在这里面写@Before的方法。然后其他的Controller都继承自BaseController即可。”]]></content>
+      <categories>
+        <category>play1x</category>
+      </categories>
+      <tags>
+        <tag>play1x</tag>
+        <tag>filter</tag>
+        <tag>过滤器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F10%2F26%2Ffunnyclassic%2F</url>
+    <content type="text"><![CDATA[有趣经典收集 纯爷们从不围观爆炸（英文歌词） 情人节程序员经典表白 一个不错的塔防Flash游戏]]></content>
       <categories>
         <category>playscala</category>
       </categories>
@@ -811,8 +835,32 @@
   </entry>
   <entry>
     <title></title>
-    <url>%2F2013%2F10%2F26%2Ffunnyclassic%2F</url>
-    <content type="text"><![CDATA[有趣经典收集 纯爷们从不围观爆炸（英文歌词） 情人节程序员经典表白 一个不错的塔防Flash游戏]]></content>
+    <url>%2F2013%2F09%2F29%2Fdevlinks%2F</url>
+    <content type="text"><![CDATA[编程知识链接收集 Java 相关 java.util.logging.Logger使用详解 10 Java Regular Expression Examples You Should Know Java Regex cheat sheet]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Regex</tag>
+        <tag>正则表达式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F09%2F29%2Flearnself%2F</url>
+    <content type="text"><![CDATA[编程自学之路很多爱好编程，喜欢Play框架的朋友，开始的时候找不到门道，这里抛砖引玉，给大家分享一些经验…… 首先，心要正。没错，如同武侠小说中的上乘武功一样，必须讲究心法，心术不正者必定会走火入魔。 其次，道要高。所谓魔高一尺，道高一丈，老子的道家思想的智慧，时至今日，如果每个人都能理解其中的道意，世界也就不会有这么多问题了。 函数式编程思维Turn imperative code into functional code. Introduce higher-order functions. 引入高阶函数 Convert existing methods into pure functions. 将已有方法转为纯函数 Convert loops over to recursive/tail-recursive methods (if possible). 将循环转为递归或尾递归方法 Convert mutable variables into immutable variables. 将可变类型转为不可变类型 Use pattern matching (if possible). 尽量使用模式匹配 最后，Born for program!某一天，当你发现你天生就是做程序的料，你就算是入道了！]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F09%2F29%2Ftocterm%2F</url>
+    <content type="text"><![CDATA[TOC 术语 TOC：Theory Of Constraints 约束理论（限制理论）瓶颈理论 F5：Focus Five Step 聚焦五步骤 I-E-S-E-GB识别Identify，挖尽Exploit， 迁就Subordinate，松绑Etevate，重返Go Back TA：Throughput Account 有效产出会计 T: Throughput 生产量，有效产出 I（1）：Inventory 库存 I（2）：Investment 投资 OE：Operational Expensive 营运开支，营运费用 NP：Net Profit 纯利润 ROI：Return On Investment 投资收益率 CF：Cash Flow 现金流量 P&amp;L：Profit and Loss Statement (P&amp;L) 损益表 BS：Balance Sheet 资产负债表 BS：Batch Size 批量大小 TP：Thinking Process 思维流程 T/CU：瓶颈单位时间有效产出 CCR：Capacity Constrain Resource 产能制约资源 M(1)：Murphy 墨非 M(2)：Measurement 衡量 APMB：Assumption，Policy，Measurement，behavior 假设——政策（典范）——衡量——行为 CWR：Convergence，Win-Win，Respect 内敛（收敛），双赢，尊重 CRT：Current Reality Tree 当前现实树 CRD：Conflict Resolution Diagram 冲突消除图 FRT：Future Reality Tree 未来现实树 PRT：Pre-requisite Tree 前提条件树 TT：Transition Tree 转变树 S&amp;T：Strategy &amp; Tactics Tree 战略战术树 NBR：负面效应 OB：Obstacle 障碍 RC：Root Cause 根本原因 CP：Core Problem 核心问题 UDE：Undesirable Effects 不满意效应 DE：Desirable Effects 满意效应 INJ：Injection 注入，激发方案 IO：Inter-mediate Objectives 中间（中程）目标 SA：Specific Action 特别行动 IE：Inter-mediate Effect 中间效应 R：Requirements 需求，必要条件 PR：Pre-requisite 前提条件 CLR：Categories of Legimitate Reseration 逻辑（分类）测试 CCPM：Critical Chain Project Management 关键链（项目管理） PB：Project Buffer 项目缓冲 FB：Feeding Buffer 接驳缓冲 RB：Resource Buffer 资源缓冲 OPT：Optimized Production Technology，最优生产技术 DBR：Drum,Buffer,Rope 鼓——缓冲——绳子 S-DBR：S-DBR 简单DBR DBR-BM ：Drum,Buffer,Rope- Buffer Management 鼓——缓冲——绳子—缓冲管理 POOGI：Process Of On Going Improvement 持续改善程序 GC：高德拉特机构 MTS：Make to Stock 面向库存生产 MTO：Make to Order 面向定单生产 ATO：Assemble to Order 面向定单装配 ETO：Engineering to Order 面向定单设计 NEB（NBR）：Negative Effect Branches负效应枝条 The buy-in process：说服的流程 MO：Mafia Offer 黑手党方案 VV：Viable Vision 可行愿景 TOS：Throughput based Operating Strategy基于有效产出战略 TDD ：Throughput Dollar Day 有效产出/元/天 IDD：Inventory Dollar Day 库存/元/天 OP：Objection Prevention 异议预防 CWM：Central Warehouse Management 中央库存管理 TLT：Transportation Lead Time 运送提前期 PLT：Production Lead Time 生产提前期 OLT：Order Lead Time 订货提前期 RRO：Rapid Response Order 快速响应订单 Retailer：retailer模板（零售商模板） Consumer goods：consumer goods模板（生活消费品模板） TOCICO：Theory of Constraints International Certification Organization——TOC国际认证组织 CSS：Common Sense Solution 常识解决方案 SKU：单位库存 MBO ：Management by Objectives 目标管理 PL： Parkinson’s Law 帕金森定律 CL：Cannikin Law 木桶定律 ML： Murphy’s Law 墨菲定律 BE： Butterfly Effect 蝴蝶效应 DE：Domicile Effect 多米诺效应 LO：Learning Organization 学习型组织 Ever Flourishing 基业长青 Exponential Growth 指数性之成长 Sales Approach 销售方式 Profitability And Sales Volume 利润率和销售额 CRM ：Customer Relationship Management客户关系管理 TE：Throughput Effectiveness有效产出率（T与OE的比率） Student Syndrome 学生综合征 Parkinson’s Law 帕金森定律 不良多工 不良多任务 APS：Advanced Planning and Scheduling 高级计划排程 →APS：Advanced Production Scheduling 高级生产排程 FCS：Finite-Capacity Scheduling 有限产能排程 MRP：Material Requirements Planning 物料需求计划 →（MRP：More Reams of Papers 更多令的纸） →（MRP：More Ridiculous Priorities 更荒缪的优先顺序） ERP：Enterprice Resource Planning 企业资源计划 Justification 价值认证 Distribution Center 分销中心 Right-Sizing 适当规模 PMS：Performance Measurement System 绩效衡量系统 MS：Master Schedule 主排程 MPS：Master Production Schedule 主生产排程 SC：Safety Capacity 备用产能 SB模型：Shipping Buffer出货缓冲模型 DV：Dependent Events 依存关系 SF：Statistical Fluctuations 统计波动 OEM：Original Equipment Manufacturer 原始设备制造商，贴牌生产，代工 ODM：Original Design Manufacturer原始设计制造商，设计生产（OEM升级） OBM：Original Brand Manufacturer 原始品牌制造商 1、A方看中B方的产品，让B方生产，用A方商标，对A方来说，这叫OEM； 2、A方自带技术和设计，让B方加工，这叫ODM； 对B方来说，只负责生产加工别人的产品，然后贴上别人的商标，这叫OBM. 某企业生产的产品没有自己的品牌，专门接受其他企业的OEM或ODM要求为其他企业定牌生产。 WIP：Work In Process在制品 DDP: Delivered Duty Paid (named place of destination) 完税后交货（指定目的地） DDP：Due Date Performance 交（货）期绩效 NA：Necessary Assumption 必要假设 PA： Parallel Assumption 并行假设 SA： Sufficient Assumption充份假设 DCE：Decisive Competitive Edge决定性竞争优势 EOQS：end-of-quarter syndrome季末症候群 ABP时间：Aggressive，But Possible 积极但是有可能 CCM： Critical Chain Method 关键链方法 CDC ：Central Distribution Center 中央仓库，中央分销中心 RDC：Region Distribution Center 区域仓库，区域分销中心 TPS：Throughput Per Shelf （每个，每平方米的）货架的有效产出 PERT： Program Evaluate Review Technique 计划评核术，项目评估检查技术]]></content>
       <categories>
         <category>playscala</category>
       </categories>
@@ -830,41 +878,6 @@
       <tags>
         <tag>play1</tag>
         <tag>ssh</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2013%2F09%2F29%2Ftocterm%2F</url>
-    <content type="text"><![CDATA[TOC 术语 TOC：Theory Of Constraints 约束理论（限制理论）瓶颈理论 F5：Focus Five Step 聚焦五步骤 I-E-S-E-GB识别Identify，挖尽Exploit， 迁就Subordinate，松绑Etevate，重返Go Back TA：Throughput Account 有效产出会计 T: Throughput 生产量，有效产出 I（1）：Inventory 库存 I（2）：Investment 投资 OE：Operational Expensive 营运开支，营运费用 NP：Net Profit 纯利润 ROI：Return On Investment 投资收益率 CF：Cash Flow 现金流量 P&amp;L：Profit and Loss Statement (P&amp;L) 损益表 BS：Balance Sheet 资产负债表 BS：Batch Size 批量大小 TP：Thinking Process 思维流程 T/CU：瓶颈单位时间有效产出 CCR：Capacity Constrain Resource 产能制约资源 M(1)：Murphy 墨非 M(2)：Measurement 衡量 APMB：Assumption，Policy，Measurement，behavior 假设——政策（典范）——衡量——行为 CWR：Convergence，Win-Win，Respect 内敛（收敛），双赢，尊重 CRT：Current Reality Tree 当前现实树 CRD：Conflict Resolution Diagram 冲突消除图 FRT：Future Reality Tree 未来现实树 PRT：Pre-requisite Tree 前提条件树 TT：Transition Tree 转变树 S&amp;T：Strategy &amp; Tactics Tree 战略战术树 NBR：负面效应 OB：Obstacle 障碍 RC：Root Cause 根本原因 CP：Core Problem 核心问题 UDE：Undesirable Effects 不满意效应 DE：Desirable Effects 满意效应 INJ：Injection 注入，激发方案 IO：Inter-mediate Objectives 中间（中程）目标 SA：Specific Action 特别行动 IE：Inter-mediate Effect 中间效应 R：Requirements 需求，必要条件 PR：Pre-requisite 前提条件 CLR：Categories of Legimitate Reseration 逻辑（分类）测试 CCPM：Critical Chain Project Management 关键链（项目管理） PB：Project Buffer 项目缓冲 FB：Feeding Buffer 接驳缓冲 RB：Resource Buffer 资源缓冲 OPT：Optimized Production Technology，最优生产技术 DBR：Drum,Buffer,Rope 鼓——缓冲——绳子 S-DBR：S-DBR 简单DBR DBR-BM ：Drum,Buffer,Rope- Buffer Management 鼓——缓冲——绳子—缓冲管理 POOGI：Process Of On Going Improvement 持续改善程序 GC：高德拉特机构 MTS：Make to Stock 面向库存生产 MTO：Make to Order 面向定单生产 ATO：Assemble to Order 面向定单装配 ETO：Engineering to Order 面向定单设计 NEB（NBR）：Negative Effect Branches负效应枝条 The buy-in process：说服的流程 MO：Mafia Offer 黑手党方案 VV：Viable Vision 可行愿景 TOS：Throughput based Operating Strategy基于有效产出战略 TDD ：Throughput Dollar Day 有效产出/元/天 IDD：Inventory Dollar Day 库存/元/天 OP：Objection Prevention 异议预防 CWM：Central Warehouse Management 中央库存管理 TLT：Transportation Lead Time 运送提前期 PLT：Production Lead Time 生产提前期 OLT：Order Lead Time 订货提前期 RRO：Rapid Response Order 快速响应订单 Retailer：retailer模板（零售商模板） Consumer goods：consumer goods模板（生活消费品模板） TOCICO：Theory of Constraints International Certification Organization——TOC国际认证组织 CSS：Common Sense Solution 常识解决方案 SKU：单位库存 MBO ：Management by Objectives 目标管理 PL： Parkinson’s Law 帕金森定律 CL：Cannikin Law 木桶定律 ML： Murphy’s Law 墨菲定律 BE： Butterfly Effect 蝴蝶效应 DE：Domicile Effect 多米诺效应 LO：Learning Organization 学习型组织 Ever Flourishing 基业长青 Exponential Growth 指数性之成长 Sales Approach 销售方式 Profitability And Sales Volume 利润率和销售额 CRM ：Customer Relationship Management客户关系管理 TE：Throughput Effectiveness有效产出率（T与OE的比率） Student Syndrome 学生综合征 Parkinson’s Law 帕金森定律 不良多工 不良多任务 APS：Advanced Planning and Scheduling 高级计划排程 →APS：Advanced Production Scheduling 高级生产排程 FCS：Finite-Capacity Scheduling 有限产能排程 MRP：Material Requirements Planning 物料需求计划 →（MRP：More Reams of Papers 更多令的纸） →（MRP：More Ridiculous Priorities 更荒缪的优先顺序） ERP：Enterprice Resource Planning 企业资源计划 Justification 价值认证 Distribution Center 分销中心 Right-Sizing 适当规模 PMS：Performance Measurement System 绩效衡量系统 MS：Master Schedule 主排程 MPS：Master Production Schedule 主生产排程 SC：Safety Capacity 备用产能 SB模型：Shipping Buffer出货缓冲模型 DV：Dependent Events 依存关系 SF：Statistical Fluctuations 统计波动 OEM：Original Equipment Manufacturer 原始设备制造商，贴牌生产，代工 ODM：Original Design Manufacturer原始设计制造商，设计生产（OEM升级） OBM：Original Brand Manufacturer 原始品牌制造商 1、A方看中B方的产品，让B方生产，用A方商标，对A方来说，这叫OEM； 2、A方自带技术和设计，让B方加工，这叫ODM； 对B方来说，只负责生产加工别人的产品，然后贴上别人的商标，这叫OBM. 某企业生产的产品没有自己的品牌，专门接受其他企业的OEM或ODM要求为其他企业定牌生产。 WIP：Work In Process在制品 DDP: Delivered Duty Paid (named place of destination) 完税后交货（指定目的地） DDP：Due Date Performance 交（货）期绩效 NA：Necessary Assumption 必要假设 PA： Parallel Assumption 并行假设 SA： Sufficient Assumption充份假设 DCE：Decisive Competitive Edge决定性竞争优势 EOQS：end-of-quarter syndrome季末症候群 ABP时间：Aggressive，But Possible 积极但是有可能 CCM： Critical Chain Method 关键链方法 CDC ：Central Distribution Center 中央仓库，中央分销中心 RDC：Region Distribution Center 区域仓库，区域分销中心 TPS：Throughput Per Shelf （每个，每平方米的）货架的有效产出 PERT： Program Evaluate Review Technique 计划评核术，项目评估检查技术]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2013%2F09%2F29%2Flearnself%2F</url>
-    <content type="text"><![CDATA[编程自学之路很多爱好编程，喜欢Play框架的朋友，开始的时候找不到门道，这里抛砖引玉，给大家分享一些经验…… 首先，心要正。没错，如同武侠小说中的上乘武功一样，必须讲究心法，心术不正者必定会走火入魔。 其次，道要高。所谓魔高一尺，道高一丈，老子的道家思想的智慧，时至今日，如果每个人都能理解其中的道意，世界也就不会有这么多问题了。 函数式编程思维Turn imperative code into functional code. Introduce higher-order functions. 引入高阶函数 Convert existing methods into pure functions. 将已有方法转为纯函数 Convert loops over to recursive/tail-recursive methods (if possible). 将循环转为递归或尾递归方法 Convert mutable variables into immutable variables. 将可变类型转为不可变类型 Use pattern matching (if possible). 尽量使用模式匹配 最后，Born for program!某一天，当你发现你天生就是做程序的料，你就算是入道了！]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2013%2F09%2F29%2Fdevlinks%2F</url>
-    <content type="text"><![CDATA[编程知识链接收集 Java 相关 java.util.logging.Logger使用详解 10 Java Regular Expression Examples You Should Know Java Regex cheat sheet]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>Regex</tag>
-        <tag>正则表达式</tag>
       </tags>
   </entry>
   <entry>

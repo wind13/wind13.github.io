@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wind13.github.io/"/>
-  <updated>2018-09-21T05:58:40.000Z</updated>
+  <updated>2018-09-21T10:25:05.000Z</updated>
   <id>http://wind13.github.io/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>每日笔记-20080921</title>
+    <link href="http://wind13.github.io/2018/09/21/daily-note-20080921/"/>
+    <id>http://wind13.github.io/2018/09/21/daily-note-20080921/</id>
+    <published>2018-09-21T10:25:07.000Z</published>
+    <updated>2018-09-21T10:25:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="准备做的事"><a href="#准备做的事" class="headerlink" title="准备做的事"></a>准备做的事</h2><ul><li><p>[ ]  尝试使用 Hugo；</p><ul><li>目录结构：<ul><li>archetypes：包括内容类型，在创建新内容时自动生成内容的配置</li><li>content：包括网站内容，全部使用markdown格式</li><li>layouts：包括了网站的模版，决定内容如何呈现</li><li>static：包括了css, js, fonts, media等，决定网站的外观</li></ul></li><li>常用命令：<ul><li><code>hugo server -t hyde --buildDrafts</code> 其中 <code>-t</code> 指 theme 主题， <code>--buildDrafts</code> 指草稿也渲染。</li></ul></li></ul></li><li><p>[ ]  尝试将 Blog 从 Hexo 转到 Hugo；</p><ul><li>用 Hexo 生成目前的 Blog 需要 36 秒，够慢的，看换了 Hugo 后会是多快？</li><li>找到 <a href="https://github.com/wd/hexo2hugo" target="_blank" rel="noopener">hexo2hugo</a> 尝试一下。基本可用，但仅能将 _posts 目录下的 md 文件转换一下格式，所以仍存在的问题如下：<ul><li style="list-style: none"><input type="checkbox"> 并不能转换其他的配置功能，如搜索、回复、赞赏、分享等功能；</li><li style="list-style: none"><input type="checkbox"> 转换时未能处理命名为 <code>index.md</code> 的问题；</li><li style="list-style: none"><input type="checkbox"> 转换时未能处理无 <code>title</code> 的 meta data 问题，导致显示列表中没有标题链接；</li><li style="list-style: none"><input type="checkbox"> 转换时未处理摘要的问题，导致列表中显示大段文字的情况；</li></ul></li><li>找到 <a href="https://danielfree.net/archives/migrate-from-hugo-to-hugo/" target="_blank" rel="noopener">Migrate from Hexo to Hugo</a> 看一下。 还有 <a href="https://www.babaei.net/blog/migrating-from-hexo-to-hugo/" target="_blank" rel="noopener">Migrating From Hexo To Hugo</a> 提到了 <a href="https://www.getgutenberg.io/" target="_blank" rel="noopener">Gutenburg</a> (written in <a href="https://www.rust-lang.org/" target="_blank" rel="noopener">Rust</a>)</li></ul></li><li style="list-style: none"><input type="checkbox"> 尝试将转换过程写成自动化脚本，开放为开源项目；</li><li style="list-style: none"><input type="checkbox"> 想继续使用 Next 主题，找到了：<ul><li><a href="https://github.com/leopku/hugo-theme-next" target="_blank" rel="noopener">NeXT</a> is a fast and clean theme for <a href="http://gohugo.io/" target="_blank" rel="noopener">Hugo</a>. which was inspired by a Hexo theme named <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">NexT</a>.</li><li>考虑有些需要的功能可以 fork 后提 pull request 支持项目。</li></ul></li></ul><h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><ul><li>Python2 和 Python3 共存，尝试运行 pip 安装 pytoml，结果用 python 运行时，仍然提示未安装，通过 <code>which python</code> 和 <code>which pip</code>  两个命令才发现，python 指向 python2 的版本，而 pip 指向 pip3 的版本，测试后发现当两个版本共存时，最好在使用具体命令时，要用 2 版本就用 <code>python2</code> 和 <code>pip2</code> ，要用 3 版本时，就用 <code>python3</code> 和 <code>pip3</code> ，这样就能明确区别开了。</li><li>尝试 <a href="https://github.com/gucheen/HexoConvertToHugo" target="_blank" rel="noopener">HexoConvertToHugo</a> 失败，不太好用，文档也不清楚，测试后报错，暂时放弃。</li><li>使用 hexo2hugo，开始的时候报错，以为是 <code>datetime</code> 库没安装，但安装后仍然报错，结果试了一下 python3 居然成功了，说明这个脚本是用 Python3 语法写的，Python 的这两个版本区别还真是麻烦，应该在脚本的最前面加上注释才对，或者直接改一下后缀名： xxx.py3 就清楚了。</li><li>使用 hexo2hugo，遇到第一行不是 <code>---</code> 的文档会报错，找不到 meta 信息，看了一眼程序逻辑比较固化，暂不修改了，直接修改文档匹配规则。</li><li>添加 next 主题，全新的站点，只添加一个文章，但在首页上看不到，能看到 <code>next</code> 的主题起作用了。换用 <code>ananke</code> 主题就显示正常了。一批批转移文件倒是可以，怀疑可能是 <code>index.md</code> 文件命名的问题，至少会导致 <code>All Posts</code> 链接被覆盖。</li></ul><h2 id="灵感记录"><a href="#灵感记录" class="headerlink" title="灵感记录"></a>灵感记录</h2><ul><li>互联网时代，每个人都可能成为扫地僧，整个互联网就象是少林寺的藏经阁，要学什么、怎么学，就要看你自己怎么把握了。<ul><li>萧峰和慕荣的爹都练走火了，为什么扫地僧没练走火？因为扫地僧不急功近利，有雄厚的佛法心法。</li><li>什么是互联网的修炼心法？终身学习！</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;准备做的事&quot;&gt;&lt;a href=&quot;#准备做的事&quot; class=&quot;headerlink&quot; title=&quot;准备做的事&quot;&gt;&lt;/a&gt;准备做的事&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;[ ]  尝试使用 Hugo；&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;目录结构：&lt;ul&gt;
+&lt;li&gt;archet
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://wind13.github.io/tags/hexo/"/>
+    
+      <category term="blog" scheme="http://wind13.github.io/tags/blog/"/>
+    
+      <category term="hugo" scheme="http://wind13.github.io/tags/hugo/"/>
+    
+      <category term="next" scheme="http://wind13.github.io/tags/next/"/>
+    
+      <category term="python" scheme="http://wind13.github.io/tags/python/"/>
+    
+      <category term="灵感" scheme="http://wind13.github.io/tags/%E7%81%B5%E6%84%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>在得到 App 上听书《知识的边界》和《走近2050》感悟</title>
@@ -515,28 +552,6 @@
       <category term="playframework" scheme="http://wind13.github.io/tags/playframework/"/>
     
       <category term="java" scheme="http://wind13.github.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://wind13.github.io/2017/02/05/tech-select/"/>
-    <id>http://wind13.github.io/2017/02/05/tech-select/</id>
-    <published>2017-02-05T00:00:00.000Z</published>
-    <updated>2018-04-11T03:36:59.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="技术选型之我见"><a href="#技术选型之我见" class="headerlink" title="技术选型之我见"></a>技术选型之我见</h1><hr><p>layout: post<br>categories : manage agile<br>title: 技术选型之我见<br>tagline: “Architect select”<br>tags : [architect]<br>lang: zh</p><hr><p>技术选型是各个技术团队架构师所面临的挑战之一，也是重要的决策之一，关系到团队技术发展的大方向，甚至决定着项目未来生存的生命力和寿命长短。</p><p>然而要做好这件选型的决策却是不那么简单，同时也没有什么特定的标准。</p><p>个人所见：</p><h2 id="首先，要见多识广；"><a href="#首先，要见多识广；" class="headerlink" title="首先，要见多识广；"></a>首先，要见多识广；</h2><p>既然是说选型，那就要有所选择，也就是说要能够博览众长，知道相关领域各式各样的技术方向，多看一些严谨的介绍文章和比较文章，做一些重点的笔记，毕竟精力是有限的，所以不可能每一个技术方向都深入研究，最终通常也只能选择三种左右来进行体验和原型测试等。<br>平时要多看新技术社区的文章，顺藤摸瓜地去发现新的技术动向，看它们的官网，看官方文档（英文阅读是基本功），看Demo等，不要迷信商业解决方案，更多地相信开源社区的力量，关注人气较高的开源社区，注意看有些开源项目有可能维护较少或者bug较多（查看Issue列表页），那就不能轻易使用。</p><h2 id="其次，要实事求是；"><a href="#其次，要实事求是；" class="headerlink" title="其次，要实事求是；"></a>其次，要实事求是；</h2><h2 id="最后，要勇于冒险；"><a href="#最后，要勇于冒险；" class="headerlink" title="最后，要勇于冒险；"></a>最后，要勇于冒险；</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;技术选型之我见&quot;&gt;&lt;a href=&quot;#技术选型之我见&quot; class=&quot;headerlink&quot; title=&quot;技术选型之我见&quot;&gt;&lt;/a&gt;技术选型之我见&lt;/h1&gt;&lt;hr&gt;
-&lt;p&gt;layout: post&lt;br&gt;categories : manage agile&lt;br&gt;
-      
-    
-    </summary>
-    
     
   </entry>
   

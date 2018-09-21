@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wind13.github.io/2018/09/21/daily-note-20080921/</loc>
+    
+    <lastmod>2018-09-21T10:25:05.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wind13.github.io/2018/09/21/book-comprehend/</loc>
     
     <lastmod>2018-09-21T05:58:40.000Z</lastmod>
@@ -282,35 +289,7 @@
   </url>
   
   <url>
-    <loc>http://wind13.github.io/2016/09/10/code-review-thinking/</loc>
-    
-    <lastmod>2018-01-22T17:14:06.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wind13.github.io/2016/09/20/the-art-of-clear-thinking-note/</loc>
-    
-    <lastmod>2018-01-22T17:14:06.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wind13.github.io/2016/09/18/data-time/</loc>
-    
-    <lastmod>2018-01-22T17:14:06.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wind13.github.io/2016/08/28/android-learing/</loc>
-    
-    <lastmod>2018-01-22T17:14:06.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wind13.github.io/2016/11/08/learn-angular-v2/</loc>
+    <loc>http://wind13.github.io/2016/10/08/time-friend-lixiaolai/</loc>
     
     <lastmod>2018-01-22T17:14:06.000Z</lastmod>
     
@@ -324,13 +303,6 @@
   </url>
   
   <url>
-    <loc>http://wind13.github.io/2016/10/08/time-friend-lixiaolai/</loc>
-    
-    <lastmod>2018-01-22T17:14:06.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://wind13.github.io/2016/09/03/re-natal-error-list/</loc>
     
     <lastmod>2018-01-22T17:14:06.000Z</lastmod>
@@ -338,7 +310,42 @@
   </url>
   
   <url>
+    <loc>http://wind13.github.io/2016/09/18/data-time/</loc>
+    
+    <lastmod>2018-01-22T17:14:06.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wind13.github.io/2016/08/28/baidu-map-usage/</loc>
+    
+    <lastmod>2018-01-22T17:14:06.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wind13.github.io/2016/08/28/android-learing/</loc>
+    
+    <lastmod>2018-01-22T17:14:06.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wind13.github.io/2016/09/10/code-review-thinking/</loc>
+    
+    <lastmod>2018-01-22T17:14:06.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wind13.github.io/2016/11/08/learn-angular-v2/</loc>
+    
+    <lastmod>2018-01-22T17:14:06.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wind13.github.io/2016/09/20/the-art-of-clear-thinking-note/</loc>
     
     <lastmod>2018-01-22T17:14:06.000Z</lastmod>
     
@@ -373,14 +380,7 @@
   </url>
   
   <url>
-    <loc>http://wind13.github.io/2013/12/23/computerqa/</loc>
-    
-    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wind13.github.io/2013/12/23/tracinterfacecustomization/</loc>
+    <loc>http://wind13.github.io/2013/12/23/version1.2.5/</loc>
     
     <lastmod>2016-08-26T12:57:39.000Z</lastmod>
     
@@ -401,27 +401,6 @@
   </url>
   
   <url>
-    <loc>http://wind13.github.io/2013/12/23/coolguydontlookatexplosions/</loc>
-    
-    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wind13.github.io/2013/12/13/userhttps/</loc>
-    
-    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wind13.github.io/2014/05/07/migrate-backbone-to/</loc>
-    
-    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://wind13.github.io/2013/12/23/easyuiform/</loc>
     
     <lastmod>2016-08-26T12:57:39.000Z</lastmod>
@@ -429,14 +408,14 @@
   </url>
   
   <url>
-    <loc>http://wind13.github.io/2013/12/23/version1.2.5/</loc>
+    <loc>http://wind13.github.io/2014/04/25/play2x-links/</loc>
     
     <lastmod>2016-08-26T12:57:39.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://wind13.github.io/2013/12/13/xmldomainbug/</loc>
+    <loc>http://wind13.github.io/2013/09/29/tocterm/</loc>
     
     <lastmod>2016-08-26T12:57:39.000Z</lastmod>
     
@@ -457,28 +436,21 @@
   </url>
   
   <url>
-    <loc>http://wind13.github.io/2014/04/25/play2x-links/</loc>
+    <loc>http://wind13.github.io/2013/12/23/tracinterfacecustomization/</loc>
     
     <lastmod>2016-08-26T12:57:39.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://wind13.github.io/2013/12/13/operationnotpermitted/</loc>
+    <loc>http://wind13.github.io/2013/12/23/htmlunitdriverjavascript/</loc>
     
     <lastmod>2016-08-26T12:57:39.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://wind13.github.io/2013/12/23/gitolitesetup/</loc>
-    
-    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wind13.github.io/2013/12/13/functiontestsession/</loc>
+    <loc>http://wind13.github.io/2013/12/13/cacheremovetime/</loc>
     
     <lastmod>2016-08-26T12:57:39.000Z</lastmod>
     
@@ -492,6 +464,20 @@
   </url>
   
   <url>
+    <loc>http://wind13.github.io/2014/05/07/migrate-backbone-to/</loc>
+    
+    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wind13.github.io/2014/01/09/modulemissing/</loc>
+    
+    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wind13.github.io/2013/12/13/longpolling/</loc>
     
     <lastmod>2016-08-26T12:57:39.000Z</lastmod>
@@ -499,28 +485,7 @@
   </url>
   
   <url>
-    <loc>http://wind13.github.io/2013/12/23/confession214/</loc>
-    
-    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wind13.github.io/2013/12/13/multiproject/</loc>
-    
-    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wind13.github.io/2013/12/13/filterallcontroller/</loc>
-    
-    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wind13.github.io/2013/12/13/detachedpersist/</loc>
+    <loc>http://wind13.github.io/2013/12/23/coolguydontlookatexplosions/</loc>
     
     <lastmod>2016-08-26T12:57:39.000Z</lastmod>
     
@@ -534,7 +499,105 @@
   </url>
   
   <url>
+    <loc>http://wind13.github.io/2013/12/23/gitolitesetup/</loc>
+    
+    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wind13.github.io/2013/12/13/xmldomainbug/</loc>
+    
+    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wind13.github.io/2013/12/23/confession214/</loc>
+    
+    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wind13.github.io/2013/12/23/dateformat/</loc>
+    
+    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wind13.github.io/2013/12/13/validateandsave/</loc>
+    
+    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wind13.github.io/2013/12/23/computerqa/</loc>
+    
+    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wind13.github.io/2013/12/13/operationnotpermitted/</loc>
+    
+    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wind13.github.io/2013/12/13/userhttps/</loc>
+    
+    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wind13.github.io/2013/12/13/functiontestsession/</loc>
+    
+    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wind13.github.io/2013/12/13/multiproject/</loc>
+    
+    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wind13.github.io/2013/12/13/hqlcount1/</loc>
+    
+    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wind13.github.io/2013/12/13/cmdchinese/</loc>
+    
+    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wind13.github.io/2013/12/13/detachedpersist/</loc>
+    
+    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wind13.github.io/2013/10/26/funnyclassic/</loc>
+    
+    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wind13.github.io/2013/12/13/filterallcontroller/</loc>
     
     <lastmod>2016-08-26T12:57:39.000Z</lastmod>
     
@@ -555,63 +618,7 @@
   </url>
   
   <url>
-    <loc>http://wind13.github.io/2013/12/13/hqlcount1/</loc>
-    
-    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wind13.github.io/2013/09/29/tocterm/</loc>
-    
-    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wind13.github.io/2013/12/13/cacheremovetime/</loc>
-    
-    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wind13.github.io/2013/12/23/htmlunitdriverjavascript/</loc>
-    
-    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://wind13.github.io/2013/09/26/xmlawarenamespace/</loc>
-    
-    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wind13.github.io/2013/10/26/funnyclassic/</loc>
-    
-    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wind13.github.io/2014/01/09/modulemissing/</loc>
-    
-    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wind13.github.io/2013/12/23/dateformat/</loc>
-    
-    <lastmod>2016-08-26T12:57:39.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wind13.github.io/2013/12/13/validateandsave/</loc>
     
     <lastmod>2016-08-26T12:57:39.000Z</lastmod>
     
