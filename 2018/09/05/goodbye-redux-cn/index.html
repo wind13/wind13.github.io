@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.0.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="react,redux,graphql," />
+
+
+<meta name="description" content="作者：Jack Scott  原文（英语）  国内网可能访问不到……大致翻译如下： 本文主要分析了一下我们过去为什么需要 Redux，而为什么以后又不再需要了。  在过去的几年里，互联网技术已经转向用前端 JavaScript 框架来实现网站和手机应用，以达到更好的用户体验。这非常棒 🔥 ，我个人很欣赏这些框架提供的灵活性。  但是灵活得是否有些过头了……  为了能更好地理解这个问题，让我们把时">
+<meta name="keywords" content="react,redux,graphql">
+<meta property="og:type" content="article">
+<meta property="og:title" content="再见了 Redux （翻译）">
+<meta property="og:url" content="http://wind13.github.io/2018/09/05/goodbye-redux-cn/index.html">
+<meta property="og:site_name" content="Wind13&#39;s Blog">
+<meta property="og:description" content="作者：Jack Scott  原文（英语）  国内网可能访问不到……大致翻译如下： 本文主要分析了一下我们过去为什么需要 Redux，而为什么以后又不再需要了。  在过去的几年里，互联网技术已经转向用前端 JavaScript 框架来实现网站和手机应用，以达到更好的用户体验。这非常棒 🔥 ，我个人很欣赏这些框架提供的灵活性。  但是灵活得是否有些过头了……  为了能更好地理解这个问题，让我们把时">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3664876-14f4fcccb131ca0a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3664876-519ee7773ccf33c6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3664876-f415e7981f12340a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3664876-6275231c73de14d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-09-05T10:10:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="再见了 Redux （翻译）">
+<meta name="twitter:description" content="作者：Jack Scott  原文（英语）  国内网可能访问不到……大致翻译如下： 本文主要分析了一下我们过去为什么需要 Redux，而为什么以后又不再需要了。  在过去的几年里，互联网技术已经转向用前端 JavaScript 框架来实现网站和手机应用，以达到更好的用户体验。这非常棒 🔥 ，我个人很欣赏这些框架提供的灵活性。  但是灵活得是否有些过头了……  为了能更好地理解这个问题，让我们把时">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3664876-14f4fcccb131ca0a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Wind13's Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://wind13.github.io/2018/09/05/goodbye-redux-cn/"/>
+
+
+  <title>再见了 Redux （翻译） | Wind13's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wind13's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2018/09/05/goodbye-redux-cn/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Simon J S Wind13 Liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wind13's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">再见了 Redux （翻译）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-05T09:35:11+00:00">2018-09-05</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/09/05/goodbye-redux-cn/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/09/05/goodbye-redux-cn/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>作者：<a href="https://medium.com/@jackrobertscott" target="_blank" rel="noopener">Jack Scott</a> </p>
+<p><a href="https://medium.com/@jackrobertscott/goodbye-redux-26e6a27b3a0b" target="_blank" rel="noopener">原文（英语）</a>  国内网可能访问不到……大致翻译如下：</p>
+<p>本文主要分析了一下我们过去为什么需要 Redux，而为什么以后又不再需要了。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3664876-14f4fcccb131ca0a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Goodbye Redux"></p>
+<p>在过去的几年里，互联网技术已经转向用前端 JavaScript 框架来实现网站和手机应用，以达到更好的用户体验。这非常棒 🔥 ，我个人很欣赏这些框架提供的灵活性。</p>
+<blockquote>
+<p>但是灵活得是否有些过头了……</p>
+</blockquote>
+<p>为了能更好地理解这个问题，让我们把时钟拨回到 JavaScript 框架出现以前，看看我们是怎么开发应用的。</p>
+<h2 id="⏳-JavaScript-以前的大陆-A-Land-Before-JavaScript…"><a href="#⏳-JavaScript-以前的大陆-A-Land-Before-JavaScript…" class="headerlink" title="⏳ JavaScript 以前的大陆 A Land Before JavaScript…"></a>⏳ JavaScript 以前的大陆 A Land Before JavaScript…</h2><p>在前几个前端框架（最值得注意的是AngularJS、Backbone和Ember）出现之前，我们只是在服务器上渲染模板，然后将完整的HTML页面发送到浏览器。当时流行的框架包括：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3664876-519ee7773ccf33c6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sf, django, rails"></p>
+<ul>
+<li>Django (Python)——2005年7月21日发布 ~13 年前</li>
+<li>Ruby on Rails —— 2005年12月13日发布 ~13 年前</li>
+<li>Symphony (PHP) —— 2005年10月22日发布 ~13 年前</li>
+</ul>
+<p>这些框架主要是围绕了 MVC 概念也就是 Model-View-Controller 来开发的，Model 表示数据的模型，View 表示怎么显示这些数据，而 Controller 则连接这两部分。</p>
+<blockquote>
+<p>我的意思是说，这其中也有 JavaScript，但我们更多的时候是在说 jQuery 做的滑动条和一些完全没必要的动态网页效果</p>
+</blockquote>
+<p>在这些框架上编写的应用有一些问题，但总得来说还不错，直到有一天 Ryan Dahl 有了一个很棒的主意，他开发了第一版的 Node.js，可以让开发人员写服务端程序，而不止是用 JavaScript 做些愚蠢的动画。</p>
+<ul>
+<li>Node.js ——2009年5月27日发布 ~9 年前</li>
+</ul>
+<p>猛然间人们似乎看到了 JavaScript 的无限可能性，用一丁点儿的代码就能做很多事儿，这充分打开了其他开发人员的想象力，人们不仅创建更多强大的 Node.js 工具，还开始创建有趣的前端框架，在接下来的几年里，JavaScript 就象滚雪球一样高速发展起来：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3664876-f415e7981f12340a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="AngularJS, Backbone.js, Ember.js"></p>
+<ul>
+<li>Express.js（后端）——2010年11月16日发布 ~8 年前</li>
+<li>Backbone.js（前端）——2010年10月12日发布 ~8 年前</li>
+<li>AngularJS（前端）——2010年10月20日发布 ~8 年前</li>
+<li>Ember.js（前端）——2011年12月8日发布 ~8 年前</li>
+</ul>
+<p>这就开始了应用开发模式的重大转变。之前由服务端直接处理的 MVC 模式被分拆为两部分：一个服务端的 MC 和一个客户端的 V(MC)，客户端使用的就是上述的前端框架。在早期的这些框架中，还包含 Model 和 Controller 层在 View 中。两份 Model 和 Controller，前端也有一份 MC，这样看来是要写更多的代码了。</p>
+<h2 id="🤦‍-脸书有个头疼的问题-Facebook-Had-A-Problem"><a href="#🤦‍-脸书有个头疼的问题-Facebook-Had-A-Problem" class="headerlink" title="🤦‍ 脸书有个头疼的问题 Facebook Had A Problem"></a>🤦‍ 脸书有个头疼的问题 Facebook Had A Problem</h2><p>正当所有人开心地使用上述方案的时候，Facebook 来了，随着它的迅速崛起，Facebook 变成了最大的网页应用，而为了解决页头上即时消息的数量显示问题（实际上这个小问题在海量用户使用的场景下是比较复杂的），旧的方案也并不能很好地应对……</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3664876-6275231c73de14d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Facebook head aches"></p>
+<p>于是他们推出了 React：</p>
+<ul>
+<li>React（前端） ——2013年 三月发布 ~5 年前</li>
+</ul>
+<p>而 React 只管 View 层，于是又有了 Flux，之后是 Redux（Redo Flux），有兴趣了解详情的可以看这个视频：</p>
+<p><a href="https://v.youku.com/v_show/id_XMTU1MDg5OTQ1Ng==.html" target="_blank" rel="noopener">Youku视频</a>  <a href="https://v.qq.com/x/page/g0189w2yt1r.html" target="_blank" rel="noopener">QQ视频</a></p>
+<h2 id="🍐-……于是这东西变得象个鸭梨-…Then-Things-Started-to-Go-Pear-Shaped"><a href="#🍐-……于是这东西变得象个鸭梨-…Then-Things-Started-to-Go-Pear-Shaped" class="headerlink" title="🍐 ……于是这东西变得象个鸭梨 …Then Things Started to Go Pear Shaped"></a>🍐 ……于是这东西变得象个鸭梨 …Then Things Started to Go Pear Shaped</h2><p>Redux 的工作方式是把一个应用中几乎所有的动态信息都保存在一个 JavaScript 对象中。这样不管你在应用的哪个地方看到的数据都来自同一个地方，也就能保持一致，这样也就解决了 Facebook 所头疼的问题。</p>
+<p>于是突然又来了一种新框架：React + Redux 解决方案，Facebook 用它来解决问题，而从此以后所有人都过上了幸福的生活……对吗？</p>
+<h2 id="✋-不尽然-Not-quite"><a href="#✋-不尽然-Not-quite" class="headerlink" title="✋ 不尽然 Not quite."></a>✋ 不尽然 Not quite.</h2><p>问题在于人们（包括我）开始用一个对象保存所有信息，其中的每一部分都是由服务端获得，没错这可以保证数据的及时更新，但同时也存在 3 个缺点：</p>
+<ol>
+<li>这需要大量的多余的代码才能很好地运行，这很浪费时间。</li>
+<li>因为所有代码放在一处，这可能带来“旧数据”的问题，也就是说你可能在应用中见到一些来自之前状态的不想要的数据。</li>
+<li>对于新的开发人员学习曲线太高，继而使得前端Web开发很难被新的开发人员采用。</li>
+</ol>
+<p>我们有一个向用户显示数据的相对简单的老式 MVC 框架应用，其中也就是几个简单的模板，在2005年，我们成功地将它转换为一个单页面应用，它的前端代码通常是后端代码的 10 倍。例如：我最近开发了一个简单的应用，然后我用 <a href="https://wakatime.com/" target="_blank" rel="noopener">WakaTime</a> 来衡量我在编码上的耗时情况，以下是测量结果：</p>
+<ul>
+<li>React Redux 前端代码库—— 32 小时.</li>
+<li>Express + Mongoose 后端代码库——4 小时.</li>
+</ul>
+<h2 id="🤯-你当真？Are-you-serious"><a href="#🤯-你当真？Are-you-serious" class="headerlink" title="🤯 你当真？Are you serious??"></a>🤯 你当真？Are you serious??</h2><p>我花了 8 倍的时间在前端？让我们看看原因吧，下面是一个示例，一个很普通的取数据（例如取得所有用户）到前端的流程：</p>
+<blockquote>
+<p>🚧 警告：下面的步骤描述非常技术化，如果你看不太懂没关系。Warning: the following steps are super techy so don’t worry if you get lost.</p>
+</blockquote>
+<ol>
+<li>创建一个组件来显示用户列表（这一步没啥问题）；</li>
+<li>创建一个 <code>fetch</code> 请求到后端接口；</li>
+<li>在 <code>state</code> 中添加一个新字段；</li>
+<li>添加一个 <code>action</code> 用来更新 <code>state</code> 的数据；</li>
+<li>添加一个 <code>thunk</code> 方法来运行 <code>fetch</code> 请求，然后使用新的 <code>action</code> 来更新 <code>state</code> 状态；</li>
+<li>使用 <code>connect()</code> 将这个 <code>thunk</code> 方法加到组件中的 <code>dispatch</code> 方法中；</li>
+<li>再次使用 <code>connect()</code> 从 <code>state</code> 中提取数据；</li>
+<li>在组件的 <code>prop types</code> 属性类型中声明 <code>thunk</code> 方法和提取的数据字段；</li>
+<li>在 <code>componentDidMount()</code> 方法中调用 <code>thunk</code> 方法；</li>
+<li>最后，渲染数据到界面；</li>
+</ol>
+<p>我的天……10步，回到 Ruby on Rails 的时代，我只需要把数据放到 HTML 的模板中就完事儿了，达到的效果差不多，我想这中间肯定有什么问题吧？！</p>
+<h2 id="☝️-一条新的路径-A-New-Approach"><a href="#☝️-一条新的路径-A-New-Approach" class="headerlink" title="☝️ 一条新的路径 A New Approach"></a>☝️ 一条新的路径 A New Approach</h2><p>Redux 只是解决了前端数据的一致性，但它也带来了如前所述的问题，那么它的价值到底是什么？</p>
+<blockquote>
+<p>基本上我们重写了整个前端只是解决了屈指可数的几个小问题。</p>
+</blockquote>
+<p>Facebook 也意识到了这个问题，启动了一个新项目叫 GraphQL，GraphQL 目前还是个技术名词，我不确定大家是否知道它为什么酷？</p>
+<p>GraphQL 完全不同于 Redux，Facebook 又创造了一个大神级的产品，但却没指出这宝贝为什么这么重要，这也是为什么我花时间写此文的原因。</p>
+<blockquote>
+<p>简言之，如果说 Redux 是一匹马的话，GraphQL 就是一辆车。</p>
+</blockquote>
+<h3 id="什么？怎么-Redux-成了一匹马？"><a href="#什么？怎么-Redux-成了一匹马？" class="headerlink" title="什么？怎么 Redux 成了一匹马？"></a>什么？怎么 Redux 成了一匹马？</h3><p>我之所以把它们比做一匹马和一辆车，原因是这俩完全是两个物种，一个是有四条腿的马动物，一个是有四个轮子的机器。然而，它们的作用是一样的，都是把人运到想去的地方。虽然它们各自有不同的适合场景，但通常来说，汽车会更快些。</p>
+<h3 id="那么，GraphQL-到底是什么？"><a href="#那么，GraphQL-到底是什么？" class="headerlink" title="那么，GraphQL 到底是什么？"></a>那么，GraphQL 到底是什么？</h3><p>官方文档是这样说的：“GraphQL 是一种 APIs 接口的查询语言”，感觉不清不楚的，其实他们所谓的查询语言基本上一个就可以替代上百个 HTTP 接口，因为这个技术还很新，所以文档和支持的技术还有点难懂，有一定的学习曲线。这儿给你一个例子看是否有帮助：</p>
+<p>GraphQL 可以替代类似这样的接口：</p>
+<ul>
+<li>GET /users/1234567890</li>
+<li>POST /cars</li>
+<li>PUT /example/endpoints</li>
+</ul>
+<p>只查询你需要的字段，如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  user(id: <span class="string">"1234567890"</span>) &#123;</span><br><span class="line">    name,</span><br><span class="line">    email</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>返回：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;user&quot;: &#123;</span><br><span class="line">    &quot;name&quot;: &quot;Luke Skywalker&quot;,</span><br><span class="line">    &quot;email&quot;: &quot;luke@iamyourfather.com&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>等一下——<strong>自定义的查询</strong>……这可是需要点儿时间去实现的，也许你这么认为~</p>
+<p>但实际上不用，原因在于：由于只请求需要的数据，突然你不需要那么多服务端请求了，也就是说你不需要写那么多代码去处理那么多服务端请求了，于是，你就节省了大量不需要实现的代码和时间。</p>
+<h2 id="🤷‍-但这就能替代-Redux-了吗？But-how-does-this-replace-Redux"><a href="#🤷‍-但这就能替代-Redux-了吗？But-how-does-this-replace-Redux" class="headerlink" title="🤷‍ 但这就能替代 Redux 了吗？But how does this replace Redux?"></a>🤷‍ 但这就能替代 Redux 了吗？But how does this replace Redux?</h2><p>问得好！简单地说，<strong>不能</strong>。不过，它鼓励你不要象 Redux 那样把所有信息存在一个单独的对象中，因为每个查询只针对应用的一小部分，而不是整个应用。在一整个应用的数据源中只关注一小部分，这应该算是个 <code>anti-pattern</code> 反模式、反常识（甚至是有点不合逻辑）的。</p>
+<blockquote>
+<p>通过使用 GraphQL 你就可以摆脱对 Redux 的依赖从而省掉大量的代码。</p>
+</blockquote>
+<p>还有一点要注意：Redux 和 GraphQL 是可以共存的，这样你可以平滑地过渡，这儿有一些关于两者整合的文章：</p>
+<p><a href="https://s3.amazonaws.com/apollo-docs-1.x/redux.html" target="_blank" rel="noopener">Integrating with Redux | Apollo React Docs</a></p>
+<p>用不用 Redux 变成一种选择。是用它解决一些小任务而面对头疼的问题，还是换一种方法完成那些任务？</p>
+<h3 id="那么，你会怎么选择？"><a href="#那么，你会怎么选择？" class="headerlink" title="那么，你会怎么选择？"></a>那么，你会怎么选择？</h3><p>Redux 在当时确实解决了问题，但就在同时，Web 开发行业又在 <code>Web sockets</code> 领域有了巨大的进步。</p>
+<p>Web sockets 是在服务端和客户端建立持续的连接，服务端就可以通知客户端何时更新。你猜怎么着？GraphQL 用一种叫 <code>subscriptions</code> 的订阅技术直接就能支持 web sockets，我们可以用这种 <code>subscriptions</code> 的订阅机制来更新应用中想保持同步的部分。</p>
+<p>核心的区别在于：与其让客户端（用 Redux）告诉我们哪里要更新，不如让服务端直接通知客户端更新。结果是一样的，这儿有一些例子是怎么用 MongoDB 或 Mongoose 实现 Web socket 和 <code>subscriptions</code> 的。</p>
+<p><a href="http://thecodebarbarian.com/a-nodejs-perspective-on-mongodb-36-change-streams.html" target="_blank" rel="noopener">A Node.js Perspective on MongoDB 3.6: Change Streams</a></p>
+<p><a href="https://mongoosejs.com/docs/api.html#model_Model.watch" target="_blank" rel="noopener">Mongoose v5.2.12: API — Model.watch()</a></p>
+<h2 id="🚀-未来很精彩！The-Future-Looks-Awesome"><a href="#🚀-未来很精彩！The-Future-Looks-Awesome" class="headerlink" title="🚀 未来很精彩！The Future Looks Awesome!"></a>🚀 未来很精彩！The Future Looks Awesome!</h2><p>GraphQL 开发没多久，但眼下也可以用在产品上了。我不想撒谎，官方文档确实能把人搞晕，需要对 JavaScript 和 服务端运行机制有很强的理解才行。然而如果你还没那么强，但想了解更多，这有一个很流行的教程：</p>
+<p><a href="https://graphql.org/learn/" target="_blank" rel="noopener">GraphQL: A query language for APIs.</a></p>
+<p>还有很多有用的库可以帮你逐步地整合 GraphQL 到已有产品中。不用担心，你不用一次弄完，这些库可以帮你轻松地、慢慢地改善你的应用。Apollo 就是一家做这事儿的公司。</p>
+<p><a href="https://www.apollographql.com/" target="_blank" rel="noopener">Apollo GraphQL</a></p>
+<p>好了，我希望这篇文章可以对阐明一些复杂的概念有帮助。</p>
+<p>如果你喜欢这篇文章，请点赞——这对我来说是很大的鼓励——或者有问题请留言。</p>
+<p>谢谢！🙌 </p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>赞赏留名，相识相惜 ~</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Simon J S Wind13 Liu 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Simon J S Wind13 Liu 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+      <div id="bitcoin" style="display: inline-block">
+        <img id="bitcoin_qr" src="/images/bitcoin.png" alt="Simon J S Wind13 Liu 比特币"/>
+        <p>比特币</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Simon J S Wind13 Liu
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://wind13.github.io/2018/09/05/goodbye-redux-cn/" title="再见了 Redux （翻译）">http://wind13.github.io/2018/09/05/goodbye-redux-cn/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="external nofollow" target="_blank">CC BY-NC-ND 4.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/react/" rel="tag"># react</a>
+          
+            <a href="/tags/redux/" rel="tag"># redux</a>
+          
+            <a href="/tags/graphql/" rel="tag"># graphql</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/27/vscode-vi-segment-chinese-punctuation/" rel="next" title="在 vscode 的 vi 模式下，按中文标点移动光标的方法">
+                <i class="fa fa-chevron-left"></i> 在 vscode 的 vi 模式下，按中文标点移动光标的方法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/19/go-learn/" rel="prev" title="go 语言学习">
+                go 语言学习 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Simon J S Wind13 Liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">85</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">92</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#⏳-JavaScript-以前的大陆-A-Land-Before-JavaScript…"><span class="nav-number">1.</span> <span class="nav-text">⏳ JavaScript 以前的大陆 A Land Before JavaScript…</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#🤦‍-脸书有个头疼的问题-Facebook-Had-A-Problem"><span class="nav-number">2.</span> <span class="nav-text">🤦‍ 脸书有个头疼的问题 Facebook Had A Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#🍐-……于是这东西变得象个鸭梨-…Then-Things-Started-to-Go-Pear-Shaped"><span class="nav-number">3.</span> <span class="nav-text">🍐 ……于是这东西变得象个鸭梨 …Then Things Started to Go Pear Shaped</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#✋-不尽然-Not-quite"><span class="nav-number">4.</span> <span class="nav-text">✋ 不尽然 Not quite.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#🤯-你当真？Are-you-serious"><span class="nav-number">5.</span> <span class="nav-text">🤯 你当真？Are you serious??</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#☝️-一条新的路径-A-New-Approach"><span class="nav-number">6.</span> <span class="nav-text">☝️ 一条新的路径 A New Approach</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么？怎么-Redux-成了一匹马？"><span class="nav-number">6.1.</span> <span class="nav-text">什么？怎么 Redux 成了一匹马？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#那么，GraphQL-到底是什么？"><span class="nav-number">6.2.</span> <span class="nav-text">那么，GraphQL 到底是什么？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#🤷‍-但这就能替代-Redux-了吗？But-how-does-this-replace-Redux"><span class="nav-number">7.</span> <span class="nav-text">🤷‍ 但这就能替代 Redux 了吗？But how does this replace Redux?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#那么，你会怎么选择？"><span class="nav-number">7.1.</span> <span class="nav-text">那么，你会怎么选择？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#🚀-未来很精彩！The-Future-Looks-Awesome"><span class="nav-number">8.</span> <span class="nav-text">🚀 未来很精彩！The Future Looks Awesome!</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Simon J S Wind13 Liu</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname,
+            owner: 'wind13',
+            repo: 'wind13.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '567b199e73fe5024b689971fac5a78fc3da64821',
+            
+                client_id: 'b3eba2d74cdccd08c0bb'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
