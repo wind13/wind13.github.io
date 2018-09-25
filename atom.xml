@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wind13.github.io/"/>
-  <updated>2018-09-25T01:56:43.000Z</updated>
+  <updated>2018-09-25T08:25:28.000Z</updated>
   <id>http://wind13.github.io/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>当日记录-20080922</title>
+    <title>当日笔记-20080925</title>
+    <link href="http://wind13.github.io/2018/09/25/daily-note-20080925/"/>
+    <id>http://wind13.github.io/2018/09/25/daily-note-20080925/</id>
+    <published>2018-09-25T08:25:28.000Z</published>
+    <updated>2018-09-25T08:25:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="小程序"><a href="#小程序" class="headerlink" title="小程序"></a>小程序</h2><ul><li><a href="https://github.com/lcxfs1991/blog/issues/28" target="_blank" rel="noopener">小程序的全栈开发新时代</a></li></ul><h2 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h2><ul><li><a href="https://mp.weixin.qq.com/s/rlUUXVEinbeH4aQ0g2SGXA" target="_blank" rel="noopener">读懂世纪难题“黎曼猜想”和其历史</a></li><li><a href="https://mp.weixin.qq.com/s/LKu7wWcpwbzBTU5t72m9Dw" target="_blank" rel="noopener">黎曼猜想仍旧，素数依然孤独</a></li><li><a href="https://zhuanlan.zhihu.com/p/25055731" target="_blank" rel="noopener">黎曼猜想，及其解释（上）</a></li><li><a href="https://zhuanlan.zhihu.com/p/25222934" target="_blank" rel="noopener">黎曼猜想，及其解释（下）</a></li></ul><h3 id="神奇而有趣的素数"><a href="#神奇而有趣的素数" class="headerlink" title="神奇而有趣的素数"></a>神奇而有趣的素数</h3><ul><li>素数（质数）就是除了 1 和自身，不能再被其他整数整除的数字。</li><li>第一个问题：下一个素数的规律是什么？</li><li>2 的倍数即是所有偶数。</li><li>3 的倍数，其数字相加能被 3 整除。</li><li><p>5 的倍数，结尾不是 5 就是 0，即见到这两个数字结尾的整数就能被 5 整除。</p></li><li><p>7 的倍数是第一个比较没规律的素数集合，而 7 = 2 * 3 + 1，即前两个素数相乘后再加 1 即可。</p></li><li>11 = 2 <em> 5 + 1，13 = 2 </em> 2 * 3 + 1，欧几里得在公元前 300 年证明了素数有无限个。如果是有限个，那假设它们的乘积为 P ，而 Q = P + 1，那么 Q 应该是一个合数，即可被其中某个素数 p 整除，而 p 又可以整除 P，那么 Q - P 也应该能被 p 整除，但是 Q - P = 1，1 显然不能被 p 整除，只能被 1 整除，所以不存在这样有限个素数的情况。</li></ul><h3 id="调和级数"><a href="#调和级数" class="headerlink" title="调和级数"></a>调和级数</h3><p>$$H_r = \sum_{r=1}^\infin \frac{1}{r} = 1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + …$$</p><ul><li>谐波：高于基音基本频率的泛音，该和式被奥雷斯姆证明是不收敛的（即不存在极限，不接近/趋向于任何特定的数字，而是一直增长到无穷大）。</li></ul><h3 id="Zeta-函数"><a href="#Zeta-函数" class="headerlink" title="Zeta 函数"></a>Zeta 函数</h3><p>$$\zeta(n)=\sum_{r=1}^\infin \frac{1}{r^n}=1 + \frac{1}{2^n} + \frac{1}{3^n} + \frac{1}{4^n} + …$$</p><p>若将 n = 1 代入，就会得到调和级数，它是发散的。然而对于 n &gt; 1 的所有值, 该级数是收敛的，这意味着当 r 递增时，其和趋向于某些数，即它不会增长到无穷大。</p><h3 id="欧拉乘积公式"><a href="#欧拉乘积公式" class="headerlink" title="欧拉乘积公式"></a>欧拉乘积公式</h3><p>zeta 函数和素数间的第一个联系是由欧拉发现的，当时他发现了 n 和 p 两个自然数（大于零的整数）之间的关系，其中 p 为素数：</p><p>$$\zeta(n)=\sum_{r=1}^\infin\frac1{r^n}=\prod_p\frac1{1-p^{-s}}=(1-\frac1{1-\frac1{2^s}})\times(1-\frac1{1-\frac1{3^s}})\times(1-\frac1{1-\frac1{5^s}})\times(1-\frac1{1-\frac1{7^s}})\times(1-\frac1{1-\frac1{11^s}})\times…$$</p><p>欧拉乘积公式，其中 n，p 均为大于零的数字且 p 为素数</p><h2 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h2><ul><li><a href="https://www.mathjax.org/" target="_blank" rel="noopener">MathJax</a> Beautiful math in all browsers</li><li><a href="https://www.liuguogy.com/archives/markdown-mathjax-grammar.html" target="_blank" rel="noopener">Markdown 中的 MathJax 数学公式语法整理</a></li><li><a href="https://www.jianshu.com/p/a0aa94ef8ab2" target="_blank" rel="noopener">在Markdown中输入数学公式(MathJax)</a></li><li><a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">MathJax basic tutorial and quick reference</a></li></ul><h2 id="Hugo-theme"><a href="#Hugo-theme" class="headerlink" title="Hugo theme"></a>Hugo theme</h2><ul><li><a href="https://www.zeolearn.com/magazine/develop-a-theme-for-hugo" target="_blank" rel="noopener">Develop a Theme for Hugo</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;小程序&quot;&gt;&lt;a href=&quot;#小程序&quot; class=&quot;headerlink&quot; title=&quot;小程序&quot;&gt;&lt;/a&gt;小程序&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/lcxfs1991/blog/issues/28&quot; target
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>当日笔记-20080922</title>
     <link href="http://wind13.github.io/2018/09/25/daily-note-20080922/"/>
     <id>http://wind13.github.io/2018/09/25/daily-note-20080922/</id>
     <published>2018-09-25T01:53:04.000Z</published>
-    <updated>2018-09-25T01:56:43.000Z</updated>
+    <updated>2018-09-25T08:25:57.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Hugo-研究"><a href="#Hugo-研究" class="headerlink" title="Hugo 研究"></a>Hugo 研究</h2><p>对 Hugo 有点着迷了，看到了 <a href="https://www.youtube.com/watch?list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&amp;v=qtIqKaDlqXo" target="_blank" rel="noopener">Youtube 上面的教程</a>，非常详细而直观，同时还可以练习英语听力，看自己感兴趣的英语视频内容应该是学英语最佳的途径之一了。</p><p>然后发现了这个 <a href="https://www.netlify.com" target="_blank" rel="noopener">netlify 网站</a> ，号称：Everything you need to deploy your project. 在静态网站的基础上，扩展很多功能 Auth/Form/Lamda 等，包括部署 CI/CD 等，单人免费，<a href="https://www.netlify.com/pricing/" target="_blank" rel="noopener">多人收费</a>。考虑到结合 Hugo, google AWP, netlify, AWS lamda 和 facebook Fauna 无服务数据库，就可以做很牛的网站和 App 服务了。 未来技术的发展会进一步简化人们提供服务的能力，从人人可以发 Blog，到人人可以提供应用服务，甚至到人人可以搭平台……</p><h2 id="英语学习"><a href="#英语学习" class="headerlink" title="英语学习"></a>英语学习</h2><p>发现了<a href="https://www.youtube.com/watch?v=FrMSSQRYS6I" target="_blank" rel="noopener">这个</a>视频 How to learn any language in six months Chris Lonsdale at TEDxLingnanUniversity，5 个原则和 7 个行动，超级棒的学习心法！而且在电视上看到这人的英语学习视频，准备购买了来学，似乎感觉自己真正找到了学习英语的法门。</p><ul><li><a href="https://v.youku.com/v_show/id_XNjkyODIyMDYw.html" target="_blank" rel="noopener">Ted——6个月掌握外语学习方法（英语字幕）</a></li><li>[<a href="https://v.qq.com/x/page/x0603lw682d.html" target="_blank" rel="noopener">TED经典视频：6个月掌握流利的外语学习方法</a>]</li><li><a href="https://list.youku.com/star/show/uid_UMzYzMzc0MA==.html" target="_blank" rel="noopener">龙飞虎</a></li><li><p><a href="https://v.youku.com/v_show/id_XMTM3NTg1OTk0NA==.html" target="_blank" rel="noopener">英语学习方法 6个月从0学英语 语法是你的朋友</a></p></li><li><p><a href="https://piccdn.igetget.com/img/201708/21/201708211714508672282465.jpg" target="_blank" rel="noopener">得到招聘赠书</a></p></li></ul>]]></content>
     
@@ -511,45 +533,6 @@
       <category term="hexo" scheme="http://wind13.github.io/tags/hexo/"/>
     
       <category term="blog" scheme="http://wind13.github.io/tags/blog/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Wind13 的 Blog 之 原来的首页</title>
-    <link href="http://wind13.github.io/2017/12/31/index/"/>
-    <id>http://wind13.github.io/2017/12/31/index/</id>
-    <published>2017-12-31T00:00:00.000Z</published>
-    <updated>2018-07-31T02:08:24.000Z</updated>
-    
-    <content type="html"><![CDATA[<!-- {*## 小工具或示例* [TOC疑云图小工具](/example/jsui/thinktools/#/cloud) （使用 AngularJS 开发）* [BSC权重小工具](/example/bscmin.html) （使用 EmberJS 开发）* [JSON 转 Table 的小工具](/example/json2table.html)*} --><h2 id="学用Play-和Scala做软件"><a href="#学用Play-和Scala做软件" class="headerlink" title="学用Play!和Scala做软件"></a>学用Play!和Scala做软件</h2><h3 id="本站收集Play1-x相关"><a href="#本站收集Play1-x相关" class="headerlink" title="本站收集Play1.x相关"></a>本站收集Play1.x相关</h3><ul><li><p><a href="!--￼0--">停止SSH，用Play!吧</a></p></li><li><p><a href="!--￼1--">Play!技巧问答</a></p></li><li><p><a href="!--￼2--">国内一些使用Play!框架的网站</a></p></li><li><p><a href="!--￼3--">Xml 域名空间识别问题</a></p></li></ul><a id="more"></a><ul><li><p><a href="http://liuu.iteye.com/blog/599129" target="_blank" rel="noopener">Playing Play!系列之一：Play框架的暴力美学</a></p></li><li><p><a href="http://liuu.iteye.com/blog/629586" target="_blank" rel="noopener">Playing Play!系列之二：再见Servlet，Play框架的启动</a></p></li><li><p><a href="http://liuu.iteye.com/blog/679437" target="_blank" rel="noopener">Playing Play!系列之三：不必Servlet3，Play框架的异步请求处理之道</a></p></li><li><p><a href="http://moshihao.com/?p=350" target="_blank" rel="noopener">playframework 学习实践(一) – Play框架概述</a></p></li><li><p><a href="http://moshihao.com/?p=359" target="_blank" rel="noopener">playframework 学习实践(二) – 搭建play开发环境</a></p></li><li><p><a href="http://moshihao.com/?p=388" target="_blank" rel="noopener">playframework 学习实践(三) – Hello World , play!</a></p></li><li><p><a href="http://moshihao.com/?p=399" target="_blank" rel="noopener">playframework 学习实践(四) – 配置你喜欢的IDE</a></p></li><li><p><a href="http://wind13.blog.163.com/blog/static/2482349201010171145628/" target="_blank" rel="noopener">Play framework 技巧记录</a></p></li><li><p><a href="http://wind13.blog.163.com/blog/static/248234920114462120998/" target="_blank" rel="noopener">Play framework 技巧记录 二</a></p></li></ul><h2 id="软件开发相关"><a href="#软件开发相关" class="headerlink" title="软件开发相关"></a>软件开发相关</h2><ul><li><p><a href="!--￼4--">编程知识链接收集</a></p></li><li><p><a href="!--￼5--">编程自学之路（个人建议供参考）</a></p></li></ul><h3 id="其他相关技术"><a href="#其他相关技术" class="headerlink" title="其他相关技术"></a><a href="!--￼6--">其他相关技术</a></h3><h2 id="管理相关知识"><a href="#管理相关知识" class="headerlink" title="管理相关知识"></a>管理相关知识</h2><p>管理从思想上来说是哲学的，从理论上来说是科学的，从操作上来说是艺术的。——余世维</p><ul><li><a href="!--￼7--">Toc术语</a></li><li><a href="!--￼8--">如何制定和落实一项有效的改善方案？</a></li><li><a href="!--￼9--">罗辑思维听后记录</a></li></ul><ul><li><a href="https://mp.weixin.qq.com/s/C0vuUl-QVdPR4GbCZBWu3A" target="_blank" rel="noopener">用了半天OKR，结果还是KPI？二者区别看这里</a></li></ul><h2 id="常用在线工具"><a href="#常用在线工具" class="headerlink" title="常用在线工具"></a>常用在线工具</h2><ul><li><p><a href="http://tool.oschina.net/regex" target="_blank" rel="noopener">正则表达式测试</a></p></li><li><p><a href="http://tool.oschina.net/diff" target="_blank" rel="noopener">代码对比/归并</a></p></li><li><p><a href="http://tool.oschina.net/jscompress" target="_blank" rel="noopener">JS代码压缩</a></p></li><li><p><a href="http://tool.oschina.net/encrypt?type=3" target="_blank" rel="noopener">BASE64编码解码</a></p></li><li><p><a href="http://tool.oschina.net/csv2tb" target="_blank" rel="noopener">CSV转HTML表格</a></p></li><li><p><a href="http://tool.oschina.net/codeformat/json" target="_blank" rel="noopener">JSON代码格式化</a></p></li><li><p><a href="http://tool.oschina.net/codeformat/js" target="_blank" rel="noopener">JS代码格式化</a></p></li></ul><h2 id="相关的网站"><a href="#相关的网站" class="headerlink" title="相关的网站"></a>相关的网站</h2><ul><li><p><a href="http://www.playframework.com" target="_blank" rel="noopener">Playframework官方网站</a>简洁明快，特别适合开发Web应用软件，1.2.5版本实践中…</p></li><li><p><a href="http://spray.io/" target="_blank" rel="noopener">Spray官方网站</a>一套值得关注的基于<a href="http://www.scala-lang.org/" target="_blank" rel="noopener">Scala</a>和<a href="http://akka.io/" target="_blank" rel="noopener">Akka</a>的轻量REST/HTTP解决方案。</p></li><li><p><a href="http://www.oopsplay.org" target="_blank" rel="noopener">中国Play官方社区</a></p></li><li><p><a href="http://cn.tanshuai.com/a/getting-started-scala-play" target="_blank" rel="noopener">关于Play2的一个非常好的入门教程</a></p></li><li><p><a href="http://www.scala-lang.org/" target="_blank" rel="noopener">Scala语言</a>，结合面向对象与函数式编程，更好地加强了软件的可扩展性，学习中……</p></li><li><p><a href="http://zh.scala-tour.com/#/welcome" target="_blank" rel="noopener">Scala指南</a></p></li><li><p><a href="https///github.com/playframework/play20/wiki">Play!2.0官方文档</a>，在github开源。</p></li><li><p><a href="http://play-framework.herokuapp.com/" target="_blank" rel="noopener">国内中文文档翻译</a>，Play!文档中文化QQ群：168013302，在兴趣的可以帮忙翻译</p></li><li><p><a href="https///github.com/hotplay/playframework-document-cn">在github上的项目网址</a></p></li><li><p><a href="http://code.google.com/p/play-cms/" target="_blank" rel="noopener">一个非常简单的内嵌CMS模块（play-cms module）</a></p></li></ul><h2 id="生活智慧"><a href="#生活智慧" class="headerlink" title="生活智慧"></a>生活智慧</h2><p><a href="wiki/FunnyClassic">有趣经典收集</a></p><h2 id="关于本站的一些说明"><a href="#关于本站的一些说明" class="headerlink" title="关于本站的一些说明"></a>关于本站的一些说明</h2><p>一切才刚刚开始，希望大家多支持……</p><p>如果您需要信息化方面一些好的解决方案，</p><p>请给我发邮件：wind13 AT 163 DOT com！</p><p>当然，你也可以说点别的……</p><p>环境保护，只要你是人类，就应该反思！从节约资源开始吧！<br>志同道合（<a href="http://coolshell.cn/articles/7186.html" target="_blank" rel="noopener">做个环保主义的程序员</a>）的技术博客：<a href="http://coolshell.cn/" target="_blank" rel="noopener">酷壳CoolShell</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;!-- {*
-## 小工具或示例
-
-* [TOC疑云图小工具](/example/jsui/thinktools/#/cloud) （使用 AngularJS 开发）
-* [BSC权重小工具](/example/bscmin.html) （使用 EmberJS 开发）
-* [JSON 转 Table 的小工具](/example/json2table.html)
-
-*} --&gt;
-&lt;h2 id=&quot;学用Play-和Scala做软件&quot;&gt;&lt;a href=&quot;#学用Play-和Scala做软件&quot; class=&quot;headerlink&quot; title=&quot;学用Play!和Scala做软件&quot;&gt;&lt;/a&gt;学用Play!和Scala做软件&lt;/h2&gt;&lt;h3 id=&quot;本站收集Play1-x相关&quot;&gt;&lt;a href=&quot;#本站收集Play1-x相关&quot; class=&quot;headerlink&quot; title=&quot;本站收集Play1.x相关&quot;&gt;&lt;/a&gt;本站收集Play1.x相关&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;!--￼0--&quot;&gt;停止SSH，用Play!吧&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;!--￼1--&quot;&gt;Play!技巧问答&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;!--￼2--&quot;&gt;国内一些使用Play!框架的网站&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;!--￼3--&quot;&gt;Xml 域名空间识别问题&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Pages" scheme="http://wind13.github.io/categories/Pages/"/>
-    
-    
-      <category term="wind13" scheme="http://wind13.github.io/tags/wind13/"/>
     
   </entry>
   
