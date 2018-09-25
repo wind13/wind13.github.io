@@ -304,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/cacheremovetime/">
+    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/validateandsave/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Simon J S Wind13 Liu">
@@ -323,7 +323,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2013/12/13/cacheremovetime/" itemprop="url">未命名</a></h1>
+                <a class="post-title-link" href="/2013/12/13/validateandsave/" itemprop="url">未命名</a></h1>
         
 
         <div class="post-meta">
@@ -392,458 +392,20 @@
       
         
           
-          移除Cache可以有时间参数吗？是的，可以，使用下面这样的语句即可：
+          对像存储报错 validateAndSave问题问题：在存储对像时，同时存储该对像的关联对像，则会报错。\
+例：room为hotel的关联对像。
 :::java
-Cache.set(&quot;some&quot;, null, 0)
-其中最后一个参数是时间，单位是秒。详见源代码。
+public class Room {
+ @ManyToOne
+ public Hotel hotel;
+}
 
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2013/12/13/cacheremovetime/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/operationnotpermitted/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Simon J S Wind13 Liu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wind13's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2013/12/13/operationnotpermitted/" itemprop="url">未命名</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-12-13T00:00:00+00:00">2013-12-13</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/playscala/" itemprop="url" rel="index"><span itemprop="name">playscala</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Operation not permitted 执行权限的问题在Linux系统中，正好项目放在原Windows的Fat32盘上，于是在执行play eclipsify的时候会报 Operation not permitted的错。
-临时使用的话，只要使用root权限就可以正常执行。而Fat32的盘在
+:::java
+Hotel
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2013/12/13/operationnotpermitted/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/userhttps/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Simon J S Wind13 Liu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wind13's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2013/12/13/userhttps/" itemprop="url">如何同时使用http和https协议</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-12-13T00:00:00+00:00">2013-12-13</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/play1x/" itemprop="url" rel="index"><span itemprop="name">play1x</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          首先看官方文档
-用openssl命令生成自己的签名文档
-openssl genrsa 1024 &gt; host.key
-openssl req -new -x509 -nodes -sha1 -days 365 -key host.key &gt; host.cert
-生成签名时需回答类似这样的
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2013/12/13/userhttps/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/functiontestsession/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Simon J S Wind13 Liu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wind13's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2013/12/13/functiontestsession/" itemprop="url">FunctionTest中如何取得session的值</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-12-13T00:00:00+00:00">2013-12-13</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/play1x/" itemprop="url" rel="index"><span itemprop="name">play1x</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          原文摘抄自：https://groups.google.com/d/msg/play-framework/-/iQLX-uLwHWsJ （可能因墙访问不了……我是在邮件列表中收集的）
-需求和问题原问及简单翻译说明如下：
-Given a simple action:【简单给一个action如下：】
-:
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2013/12/13/functiontestsession/#more" rel="contents">
+            <a class="btn" href="/2013/12/13/validateandsave/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1046,7 +608,7 @@ Given a simple action:【简单给一个action如下：】
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/hqlcount1/">
+    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/xmldomainbug/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Simon J S Wind13 Liu">
@@ -1065,7 +627,7 @@ Given a simple action:【简单给一个action如下：】
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2013/12/13/hqlcount1/" itemprop="url">未命名</a></h1>
+                <a class="post-title-link" href="/2013/12/13/xmldomainbug/" itemprop="url">Xml 域名空间识别问题</a></h1>
         
 
         <div class="post-meta">
@@ -1098,7 +660,7 @@ Given a simple action:【简单给一个action如下：】
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/playscala/" itemprop="url" rel="index"><span itemprop="name">playscala</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/play1x/" itemprop="url" rel="index"><span itemprop="name">play1x</span></a></span>
 
                 
                 
@@ -1134,13 +696,159 @@ Given a simple action:【简单给一个action如下：】
       
         
           
-          一个Hql中count判断的写法:::java
-    public static void test() {
-        String hql = &quot;select o.teacher.id, o.teacher.goodStudentCount from Student o&quot
+          相关文档见：官方ticket任务#823
+Yes, this is correct. In the .getXML function the namespace ness is not set.是的，有这个问题。在.getXML方法中允许命名空间（namespace）没有设置。
+This line 
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2013/12/13/hqlcount1/#more" rel="contents">
+            <a class="btn" href="/2013/12/13/xmldomainbug/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/filterallcontroller/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Simon J S Wind13 Liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wind13's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2013/12/13/filterallcontroller/" itemprop="url">在Play!中如何实现类似过滤器的功能？</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-12-13T00:00:00+00:00">2013-12-13</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/play1x/" itemprop="url" rel="index"><span itemprop="name">play1x</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          如果是单个Controller要实现过滤，只需写一个public static 的方法，加上@Before注解即可达到执行所有action前先执行这个方法的目的。
+如果想实现全局即整个站点的action都被过滤，就需要写个BaseController（名字随便起，如SuperController，A
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2013/12/13/filterallcontroller/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1341,7 +1049,7 @@ Given a simple action:【简单给一个action如下：】
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/detachedpersist/">
+    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/longpolling/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Simon J S Wind13 Liu">
@@ -1360,7 +1068,7 @@ Given a simple action:【简单给一个action如下：】
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2013/12/13/detachedpersist/" itemprop="url">未命名</a></h1>
+                <a class="post-title-link" href="/2013/12/13/longpolling/" itemprop="url">未命名</a></h1>
         
 
         <div class="post-meta">
@@ -1429,13 +1137,17 @@ Given a simple action:【简单给一个action如下：】
       
         
           
-          分离实体持久化出错（PersistentObjectException: detached entity passed to persist）问题在Play!使用中，会用到Job来异步执行一些耗时的操作，此时很容易犯这样的错误：
-:::java
-public class SomeLongJob ex
-          ...
+          Play!支持Comet-style或Long-polling这样的请求
+参考官方文档
+
+核心实现思想：通过在action中使用await(…);可以使http请求暂停在服务端，直到有符合的结果才返回。
+
+
+
+          
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2013/12/13/detachedpersist/#more" rel="contents">
+            <a class="btn" href="/2013/12/13/longpolling/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1488,7 +1200,7 @@ public class SomeLongJob ex
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/filterallcontroller/">
+    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/deepqa/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Simon J S Wind13 Liu">
@@ -1507,7 +1219,299 @@ public class SomeLongJob ex
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2013/12/13/filterallcontroller/" itemprop="url">在Play!中如何实现类似过滤器的功能？</a></h1>
+                <a class="post-title-link" href="/2013/12/13/deepqa/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-12-13T00:00:00+00:00">2013-12-13</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/playscala/" itemprop="url" rel="index"><span itemprop="name">playscala</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Playframework热情交流群里的邮件讨论Freewind@play23月17日 10:21昨天有感于play源代码里的一些强大功能和精巧实现，提出了以下问题，这些问题在群里和几位朋友简单讨论过，但我觉得整理一下会有用。
+play的一些打破常规的做法，让我非常欣赏和赞叹。希望大家不要仅满足于使
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2013/12/13/deepqa/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/operationnotpermitted/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Simon J S Wind13 Liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wind13's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2013/12/13/operationnotpermitted/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-12-13T00:00:00+00:00">2013-12-13</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/playscala/" itemprop="url" rel="index"><span itemprop="name">playscala</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Operation not permitted 执行权限的问题在Linux系统中，正好项目放在原Windows的Fat32盘上，于是在执行play eclipsify的时候会报 Operation not permitted的错。
+临时使用的话，只要使用root权限就可以正常执行。而Fat32的盘在
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2013/12/13/operationnotpermitted/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/functiontestsession/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Simon J S Wind13 Liu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wind13's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2013/12/13/functiontestsession/" itemprop="url">FunctionTest中如何取得session的值</a></h1>
         
 
         <div class="post-meta">
@@ -1576,12 +1580,14 @@ public class SomeLongJob ex
       
         
           
-          如果是单个Controller要实现过滤，只需写一个public static 的方法，加上@Before注解即可达到执行所有action前先执行这个方法的目的。
-如果想实现全局即整个站点的action都被过滤，就需要写个BaseController（名字随便起，如SuperController，A
+          原文摘抄自：https://groups.google.com/d/msg/play-framework/-/iQLX-uLwHWsJ （可能因墙访问不了……我是在邮件列表中收集的）
+需求和问题原问及简单翻译说明如下：
+Given a simple action:【简单给一个action如下：】
+:
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2013/12/13/filterallcontroller/#more" rel="contents">
+            <a class="btn" href="/2013/12/13/functiontestsession/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1634,7 +1640,7 @@ public class SomeLongJob ex
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/10/26/funnyclassic/">
+    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/cacheremovetime/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Simon J S Wind13 Liu">
@@ -1653,7 +1659,7 @@ public class SomeLongJob ex
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2013/10/26/funnyclassic/" itemprop="url">未命名</a></h1>
+                <a class="post-title-link" href="/2013/12/13/cacheremovetime/" itemprop="url">未命名</a></h1>
         
 
         <div class="post-meta">
@@ -1665,7 +1671,7 @@ public class SomeLongJob ex
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-10-26T00:00:00+00:00">2013-10-26</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-12-13T00:00:00+00:00">2013-12-13</time>
             
 
             
@@ -1722,19 +1728,15 @@ public class SomeLongJob ex
       
         
           
-          有趣经典收集
-纯爷们从不围观爆炸（英文歌词）
-
-情人节程序员经典表白
-
-一个不错的塔防Flash游戏
-
-
+          移除Cache可以有时间参数吗？是的，可以，使用下面这样的语句即可：
+:::java
+Cache.set(&quot;some&quot;, null, 0)
+其中最后一个参数是时间，单位是秒。详见源代码。
 
           
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2013/10/26/funnyclassic/#more" rel="contents">
+            <a class="btn" href="/2013/12/13/cacheremovetime/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1819,7 +1821,7 @@ public class SomeLongJob ex
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">86</span>
+                    <span class="site-state-item-count">87</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1841,7 +1843,7 @@ public class SomeLongJob ex
                 
                 <div class="site-state-item site-state-tags">
                   <a href="/tags/index.html">
-                    <span class="site-state-item-count">96</span>
+                    <span class="site-state-item-count">97</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wind13.github.io/"/>
-  <updated>2018-09-21T10:27:29.000Z</updated>
+  <updated>2018-09-25T01:56:43.000Z</updated>
   <id>http://wind13.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>当日记录-20080922</title>
+    <link href="http://wind13.github.io/2018/09/25/daily-note-20080922/"/>
+    <id>http://wind13.github.io/2018/09/25/daily-note-20080922/</id>
+    <published>2018-09-25T01:53:04.000Z</published>
+    <updated>2018-09-25T01:56:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Hugo-研究"><a href="#Hugo-研究" class="headerlink" title="Hugo 研究"></a>Hugo 研究</h2><p>对 Hugo 有点着迷了，看到了 <a href="https://www.youtube.com/watch?list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&amp;v=qtIqKaDlqXo" target="_blank" rel="noopener">Youtube 上面的教程</a>，非常详细而直观，同时还可以练习英语听力，看自己感兴趣的英语视频内容应该是学英语最佳的途径之一了。</p><p>然后发现了这个 <a href="https://www.netlify.com" target="_blank" rel="noopener">netlify 网站</a> ，号称：Everything you need to deploy your project. 在静态网站的基础上，扩展很多功能 Auth/Form/Lamda 等，包括部署 CI/CD 等，单人免费，<a href="https://www.netlify.com/pricing/" target="_blank" rel="noopener">多人收费</a>。考虑到结合 Hugo, google AWP, netlify, AWS lamda 和 facebook Fauna 无服务数据库，就可以做很牛的网站和 App 服务了。 未来技术的发展会进一步简化人们提供服务的能力，从人人可以发 Blog，到人人可以提供应用服务，甚至到人人可以搭平台……</p><h2 id="英语学习"><a href="#英语学习" class="headerlink" title="英语学习"></a>英语学习</h2><p>发现了<a href="https://www.youtube.com/watch?v=FrMSSQRYS6I" target="_blank" rel="noopener">这个</a>视频 How to learn any language in six months Chris Lonsdale at TEDxLingnanUniversity，5 个原则和 7 个行动，超级棒的学习心法！而且在电视上看到这人的英语学习视频，准备购买了来学，似乎感觉自己真正找到了学习英语的法门。</p><ul><li><a href="https://v.youku.com/v_show/id_XNjkyODIyMDYw.html" target="_blank" rel="noopener">Ted——6个月掌握外语学习方法（英语字幕）</a></li><li>[<a href="https://v.qq.com/x/page/x0603lw682d.html" target="_blank" rel="noopener">TED经典视频：6个月掌握流利的外语学习方法</a>]</li><li><a href="https://list.youku.com/star/show/uid_UMzYzMzc0MA==.html" target="_blank" rel="noopener">龙飞虎</a></li><li><p><a href="https://v.youku.com/v_show/id_XMTM3NTg1OTk0NA==.html" target="_blank" rel="noopener">英语学习方法 6个月从0学英语 语法是你的朋友</a></p></li><li><p><a href="https://piccdn.igetget.com/img/201708/21/201708211714508672282465.jpg" target="_blank" rel="noopener">得到招聘赠书</a></p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Hugo-研究&quot;&gt;&lt;a href=&quot;#Hugo-研究&quot; class=&quot;headerlink&quot; title=&quot;Hugo 研究&quot;&gt;&lt;/a&gt;Hugo 研究&lt;/h2&gt;&lt;p&gt;对 Hugo 有点着迷了，看到了 &lt;a href=&quot;https://www.youtube.com/
+      
+    
+    </summary>
+    
+    
+      <category term="hugo" scheme="http://wind13.github.io/tags/hugo/"/>
+    
+      <category term="netlify" scheme="http://wind13.github.io/tags/netlify/"/>
+    
+  </entry>
   
   <entry>
     <title>每日笔记-20080921</title>
@@ -525,33 +550,6 @@
     
     
       <category term="wind13" scheme="http://wind13.github.io/tags/wind13/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Playframework 1.4.x 与Playframework 2.5.x 选型比较</title>
-    <link href="http://wind13.github.io/2017/02/23/play2x-compare-play1x/"/>
-    <id>http://wind13.github.io/2017/02/23/play2x-compare-play1x/</id>
-    <published>2017-02-23T00:00:00.000Z</published>
-    <updated>2018-02-09T02:13:52.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Playframework-1-4-x-与Playframework-2-5-x-选型比较"><a href="#Playframework-1-4-x-与Playframework-2-5-x-选型比较" class="headerlink" title="Playframework 1.4.x 与Playframework 2.5.x 选型比较"></a>Playframework 1.4.x 与Playframework 2.5.x 选型比较</h1><h2 id="Playframework-2-5-x"><a href="#Playframework-2-5-x" class="headerlink" title="Playframework 2.5.x"></a>Playframework 2.5.x</h2><h3 id="优势："><a href="#优势：" class="headerlink" title="优势："></a>优势：</h3><ul><li>文档齐全，持续更新；</li><li>支持更多最新的技术，更清晰的底层技术；</li><li>完全异步的HTTP编程模型；</li><li>通过 Comet, long-polling and WebSockets 给客户端提供持续的连接；</li><li>通过 Akka 的 Actor 模型提供响应高并发的系统；</li><li>使用 Akka Streams<ul><li>Filters</li><li>Streaming response bodies</li><li>Request body parsers</li><li>WebSockets</li><li>Streaming WS client responses</li></ul></li><li>使用 Websocket</li><li>使用 Ebean 或 JPA 和 Anorm（用于Scala）作为数据层，Java 建议用 Ebean，<ul><li>Ebean 可以很容易<a href="http://ebean-orm.github.io/docs/features/elasticsearch/" target="_blank" rel="noopener">跟 ElasticSearch 结合</a>做全文检索相关功能。</li><li>Ebean <a href="https://github.com/playframework/play-ebean-example/blob/master/app/models/Computer.java" target="_blank" rel="noopener">服务端分页</a>极为容易。</li></ul></li><li>使用 <a href="https://www.playframework.com/documentation/2.5.x/JavaComet" target="_blank" rel="noopener">Comet sockets</a></li><li>使用更强大的 The Twirl template engine，即 Scala 的界面模板，<ul><li>模板是要编译的，编译前更早报错，报错更准确。</li><li>语法简洁，只有一个“@”特殊字符，借助强大的 Scala 语言功能更强大。</li><li>函数式编程的语法和表达式非常适合模板引擎。</li></ul></li><li>路由系统 routing system 也是编译的，帮助提早发现错误。</li><li>强大而易用的<a href="https://www.playframework.com/documentation/2.5.x/JavaTest" target="_blank" rel="noopener">自动化测试</a>系统。</li><li>采用 sbt 作为集成编译工具，可以很好地与 Maven 等传统工具结合，这样也就可以很好地和已有系统集成。</li><li>有很多的实际示例代码和模组 Module 可用，如下：<ul><li><a href="https://github.com/swagger-api/swagger-play" target="_blank" rel="noopener">swagger-play</a></li><li><a href="https://github.com/innoveit/play2-pdf" target="_blank" rel="noopener">PDF module</a></li><li><a href="https://edulify.github.io/play-geolocation-module.edulify.com/" target="_blank" rel="noopener">Geolocation</a></li></ul></li><li>很多方面都有针对性的优雅解决方案，如：<ul><li><a href="https://www.playframework.com/documentation/2.5.x/JavaCsrf" target="_blank" rel="noopener">CSRF</a></li><li><a href="https://www.playframework.com/documentation/2.5.x/JavaJsonActions" target="_blank" rel="noopener">JSON 转换</a> Play 2 使用的是 Jackson 而不是 google 的那个 gson。</li><li><a href="https://www.playframework.com/documentation/2.5.x/Evolutions" target="_blank" rel="noopener">Database Evolutions</a></li><li><a href="https://www.playframework.com/documentation/2.5.x/Deploying" target="_blank" rel="noopener">Deploy 部署</a> dist 命令很强大，直接打个zip包，解压后，运行 bin 目录下的 run 命令就可以启动服务了。甚至可以打成各个系统 Native 的安装包，如 <em>.msi (Windows), </em>.apk (macOS), *.rpm (Linux) 等</li></ul></li></ul><h3 id="劣势："><a href="#劣势：" class="headerlink" title="劣势："></a>劣势：</h3><ul><li>深入的功能，特别是 Akka 有一定的学习曲线。</li><li>Java 和 Scala 有界线，有两套API，不能自然转换，未来要用 Scala 则可能需要重写。</li></ul><h2 id="Playframework-1-4-x"><a href="#Playframework-1-4-x" class="headerlink" title="Playframework 1.4.x"></a>Playframework 1.4.x</h2><h3 id="优势：-1"><a href="#优势：-1" class="headerlink" title="优势："></a>优势：</h3><ul><li>有之前的项目经验，熟悉度高；</li><li>满足基本的项目需求，实现一般的（传统的）信息系统没有问题；</li><li>可用之前的项目快速起步，包括与 Swagger 等的结合，部署脚本文件等。</li></ul><h3 id="劣势：-1"><a href="#劣势：-1" class="headerlink" title="劣势："></a>劣势：</h3><ul><li>动态语言的 Groovy 界面模板，非编译型语言，仅在运行时才能知道错误，不易排查错误原因，解释型运行效率低。</li><li>太多黑科技，“不正规”地使用“正规”的 Java 技术，可能导致一些很难解决的Bug，包括与第三方 jar 包的兼容问题等。</li><li>项目采用 python 做为编译等工作的工具，不易自定义和集成已有系统。</li></ul><h2 id="结论：越看越觉得应该直接开始使用-Play-2-5-x-，没什么可担心的，只会更好，不会入坑！"><a href="#结论：越看越觉得应该直接开始使用-Play-2-5-x-，没什么可担心的，只会更好，不会入坑！" class="headerlink" title="结论：越看越觉得应该直接开始使用 Play 2.5.x ，没什么可担心的，只会更好，不会入坑！"></a>结论：越看越觉得应该直接开始使用 Play 2.5.x ，没什么可担心的，只会更好，不会入坑！</h2><ul><li>一般的应用，Play 2.5.x 与 Play 1.4.x 上手难度相当，甚至在<a href="https://www.playframework.com/documentation/2.5.x/JavaTest" target="_blank" rel="noopener">测试</a>、<a href="https://www.playframework.com/documentation/2.5.x/JavaForms" target="_blank" rel="noopener">Form表单</a>、Model层（Ebean）等方面 Play 2.5.x 更有优势，有更多更专业且现成的解决方案。</li><li>深层次的功能和配置等，更是Play2有所涉及（但需一定的学习曲线去掌握），而Play1就没有相关资料，只能借助第三方类库解决了，但跟Play1的结合又只能通过写它的Module来实现，麻烦情况可见一般。</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Playframework-1-4-x-与Playframework-2-5-x-选型比较&quot;&gt;&lt;a href=&quot;#Playframework-1-4-x-与Playframework-2-5-x-选型比较&quot; class=&quot;headerlink&quot; title=&quot;Pl
-      
-    
-    </summary>
-    
-      <category term="play2x" scheme="http://wind13.github.io/categories/play2x/"/>
-    
-    
-      <category term="playframework" scheme="http://wind13.github.io/tags/playframework/"/>
-    
-      <category term="java" scheme="http://wind13.github.io/tags/java/"/>
     
   </entry>
   
