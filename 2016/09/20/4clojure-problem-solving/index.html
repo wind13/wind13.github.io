@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.0.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="Hexo, NexT">
+
+
+<meta name="description" content="14 题以前答案一般没啥区别，略过…… #151#(* % 2)  adereth’s solution: 1* 2  #161format &quot;Hello, %s!&quot;  adereth’s solution: 1#(str &quot;Hello, &quot; % &quot;!&quot;)  #171&apos;(6 7 8)  adereth’s solution: 1[6 7 8]  #181&apos;(6 7)  adereth’s solu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="4clojure problem solving">
+<meta property="og:url" content="http://wind13.github.io/2016/09/20/4clojure-problem-solving/index.html">
+<meta property="og:site_name" content="Wind13&#39;s Blog">
+<meta property="og:description" content="14 题以前答案一般没啥区别，略过…… #151#(* % 2)  adereth’s solution: 1* 2  #161format &quot;Hello, %s!&quot;  adereth’s solution: 1#(str &quot;Hello, &quot; % &quot;!&quot;)  #171&apos;(6 7 8)  adereth’s solution: 1[6 7 8]  #181&apos;(6 7)  adereth’s solu">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-07-27T11:10:41.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="4clojure problem solving">
+<meta name="twitter:description" content="14 题以前答案一般没啥区别，略过…… #151#(* % 2)  adereth’s solution: 1* 2  #161format &quot;Hello, %s!&quot;  adereth’s solution: 1#(str &quot;Hello, &quot; % &quot;!&quot;)  #171&apos;(6 7 8)  adereth’s solution: 1[6 7 8]  #181&apos;(6 7)  adereth’s solu">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Wind13's Blog" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://wind13.github.io/2016/09/20/4clojure-problem-solving/">
+
+
+  <title>4clojure problem solving | Wind13's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wind13's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2016/09/20/4clojure-problem-solving/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Simon J S Wind13 Liu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wind13's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">4clojure problem solving</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-09-20T00:00:00+00:00">2016-09-20</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/devtech-clojure/" itemprop="url" rel="index"><span itemprop="name">devtech/clojure</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/09/20/4clojure-problem-solving/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2016/09/20/4clojure-problem-solving/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>14 题以前答案一般没啥区别，略过……</p>
+<h3 id="15"><a href="#15" class="headerlink" title="#15"></a><a href="http://www.4clojure.com/problem/15" target="_blank" rel="noopener">#15</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(* % 2)</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">* 2</span><br></pre></td></tr></table></figure>
+
+<h3 id="16"><a href="#16" class="headerlink" title="#16"></a><a href="http://www.4clojure.com/problem/16" target="_blank" rel="noopener">#16</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">format "Hello, %s!"</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(str "Hello, " % "!")</span><br></pre></td></tr></table></figure>
+
+<h3 id="17"><a href="#17" class="headerlink" title="#17"></a><a href="http://www.4clojure.com/problem/17" target="_blank" rel="noopener">#17</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">'(6 7 8)</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">6</span> <span class="number">7</span> <span class="number">8</span>]</span><br></pre></td></tr></table></figure>
+
+<h3 id="18"><a href="#18" class="headerlink" title="#18"></a><a href="http://www.4clojure.com/problem/18" target="_blank" rel="noopener">#18</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">'(6 7)</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">'(6 7)</span><br></pre></td></tr></table></figure>
+
+<h3 id="19"><a href="#19" class="headerlink" title="#19"></a><a href="http://www.4clojure.com/problem/19" target="_blank" rel="noopener">#19</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(peek (vec %))</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">comp</span></span> first reverse)</span><br></pre></td></tr></table></figure>
+
+<h3 id="20"><a href="#20" class="headerlink" title="#20"></a><a href="http://www.4clojure.com/problem/20" target="_blank" rel="noopener">#20</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(nth (reverse %) 1)</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">comp</span></span> second reverse)</span><br></pre></td></tr></table></figure>
+
+<h3 id="21"><a href="#21" class="headerlink" title="#21"></a><a href="http://www.4clojure.com/problem/21" target="_blank" rel="noopener">#21</a></h3><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> getn [ary n]</span><br><span class="line">  (<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">=</span></span> n <span class="number">0</span>)</span><br><span class="line">    (<span class="name"><span class="builtin-name">first</span></span> ary)</span><br><span class="line">    (<span class="name">getn</span> (<span class="name"><span class="builtin-name">rest</span></span> ary) (<span class="name"><span class="builtin-name">dec</span></span> n))))</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(first (drop %2 %1))</span><br></pre></td></tr></table></figure>
+
+<h3 id="22"><a href="#22" class="headerlink" title="#22"></a><a href="http://www.4clojure.com/problem/22" target="_blank" rel="noopener">#22</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(reduce (fn [a b] (inc a)) 0 %)</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> [sequence] (<span class="name"><span class="builtin-name">reduce</span></span> (<span class="name"><span class="builtin-name">fn</span></span> [acc v] (<span class="name"><span class="builtin-name">inc</span></span> acc)) <span class="number">0</span> sequence))</span><br></pre></td></tr></table></figure>
+
+<h3 id="23"><a href="#23" class="headerlink" title="#23"></a><a href="http://www.4clojure.com/problem/23" target="_blank" rel="noopener">#23</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(reduce (fn [rs ls] (cons ls rs)) [] %)</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> [s]</span><br><span class="line">  (<span class="name"><span class="builtin-name">loop</span></span> [result []</span><br><span class="line">         s s]</span><br><span class="line">    (<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">seq</span></span> s)</span><br><span class="line">      (<span class="name"><span class="builtin-name">recur</span></span> (<span class="name"><span class="builtin-name">concat</span></span> [(<span class="name"><span class="builtin-name">first</span></span> s)] result) (<span class="name"><span class="builtin-name">rest</span></span> s))</span><br><span class="line">      result)))</span><br></pre></td></tr></table></figure>
+
+<h3 id="24"><a href="#24" class="headerlink" title="#24"></a><a href="http://www.4clojure.com/problem/24" target="_blank" rel="noopener">#24</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(reduce + %)</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apply +</span><br></pre></td></tr></table></figure>
+
+<h3 id="25"><a href="#25" class="headerlink" title="#25"></a><a href="http://www.4clojure.com/problem/25" target="_blank" rel="noopener">#25</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(filter odd? %)</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">filter odd?</span><br></pre></td></tr></table></figure>
+
+<h3 id="26"><a href="#26" class="headerlink" title="#26"></a><a href="http://www.4clojure.com/problem/26" target="_blank" rel="noopener">#26</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#(take % ((fn fib [a b]</span><br><span class="line">            (lazy-seq (cons a (fib b (+ b a))))) 1 1))</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#(take %</span><br><span class="line">  (<span class="name"><span class="builtin-name">map</span></span> first</span><br><span class="line">    (<span class="name"><span class="builtin-name">iterate</span></span> (<span class="name"><span class="builtin-name">fn</span></span> [[i1 i2]]</span><br><span class="line">      [i2 (<span class="name"><span class="builtin-name">+</span></span> i1 i2)])</span><br><span class="line">      [1 1])))</span><br></pre></td></tr></table></figure>
+
+<h3 id="29"><a href="#29" class="headerlink" title="#29"></a><a href="http://www.4clojure.com/problem/29" target="_blank" rel="noopener">#29</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(clojure.string/replace % #"[^A-Z]" "")</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> [s] (<span class="name"><span class="builtin-name">reduce</span></span> str (<span class="name"><span class="builtin-name">filter</span></span> #(<span class="name">Character/isUpperCase</span> %) s)))</span><br></pre></td></tr></table></figure>
+
+<h3 id="27"><a href="#27" class="headerlink" title="#27"></a><a href="http://www.4clojure.com/problem/27" target="_blank" rel="noopener">#27</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(= (reverse %) (seq %))</span><br></pre></td></tr></table></figure>
+
+<h3 id="28"><a href="#28" class="headerlink" title="#28"></a><a href="http://www.4clojure.com/problem/28" target="_blank" rel="noopener">#28</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">defn</span></span> cci [ls r]</span><br><span class="line">  (<span class="name"><span class="builtin-name">if</span></span> (<span class="name">every?</span> sequential? ls)</span><br><span class="line">    (<span class="name"><span class="builtin-name">concat</span></span> r ls)</span><br><span class="line">    (<span class="name"><span class="builtin-name">apply</span></span> cci r (<span class="name">partition-by</span> sequential? ls))))</span><br><span class="line"></span><br><span class="line">#(let [f (first %)]</span><br><span class="line">  (<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">sequential?</span></span> f)</span><br><span class="line">    )</span><br><span class="line">  conj [] (first %))</span><br></pre></td></tr></table></figure>
+
+<h3 id="30"><a href="#30" class="headerlink" title="#30"></a><a href="http://www.4clojure.com/problem/30" target="_blank" rel="noopener">#30</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#((fn dis [ss l r]</span><br><span class="line">    (<span class="name"><span class="builtin-name">if-let</span></span> [f (<span class="name"><span class="builtin-name">first</span></span> ss)]</span><br><span class="line">      (<span class="name"><span class="builtin-name">let</span></span> [rss (<span class="name"><span class="builtin-name">rest</span></span> ss)]</span><br><span class="line">      	(<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">=</span></span> l f)</span><br><span class="line">        	(<span class="name">dis</span> rss f r)</span><br><span class="line">        	(<span class="name">dis</span> rss f (<span class="name"><span class="builtin-name">conj</span></span> r f))))</span><br><span class="line">      r)) % nil [])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#((fn dis [ss l r]</span><br><span class="line">    (<span class="name"><span class="builtin-name">let</span></span> [[f &amp; s] ss]</span><br><span class="line">      (<span class="name"><span class="builtin-name">cond</span></span></span><br><span class="line">        (<span class="name"><span class="builtin-name">nil?</span></span> f) r</span><br><span class="line">        (<span class="name"><span class="builtin-name">=</span></span> l f) (<span class="name">dis</span> s f r)</span><br><span class="line">        :else (dis s f (conj r f))))) % nil [])</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(map first (partition-by identity %))</span><br></pre></td></tr></table></figure>
+
+<h3 id="32"><a href="#32" class="headerlink" title="#32"></a><a href="http://www.4clojure.com/problem/32" target="_blank" rel="noopener">#32</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(mapcat (fn [s] [s s]) %)</span><br></pre></td></tr></table></figure>
+
+<h3 id="34"><a href="#34" class="headerlink" title="#34"></a><a href="http://www.4clojure.com/problem/34" target="_blank" rel="noopener">#34</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#((fn rng [s n r]</span><br><span class="line">    (<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">&lt;</span></span> s n)</span><br><span class="line">      (<span class="name">rng</span> (<span class="name"><span class="builtin-name">inc</span></span> s) n (<span class="name"><span class="builtin-name">conj</span></span> r s))</span><br><span class="line">      r)) %1 %2 [])</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> [start end] (<span class="name"><span class="builtin-name">take-while</span></span> #(<span class="name"><span class="builtin-name">&lt;</span></span> % end)</span><br><span class="line">                            (<span class="name"><span class="builtin-name">iterate</span></span> inc start)</span><br><span class="line">                            )</span><br><span class="line">  )</span><br></pre></td></tr></table></figure>
+
+<h3 id="35"><a href="#35" class="headerlink" title="#35"></a><a href="http://www.4clojure.com/problem/35" target="_blank" rel="noopener">#35</a></h3><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">7</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="37"><a href="#37" class="headerlink" title="#37"></a><a href="http://www.4clojure.com/problem/37" target="_blank" rel="noopener">#37</a></h3><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"ABC"</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="38"><a href="#38" class="headerlink" title="#38"></a><a href="http://www.4clojure.com/problem/38" target="_blank" rel="noopener">#38</a></h3><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> [&amp; s] (<span class="name"><span class="builtin-name">reduce</span></span> (<span class="name"><span class="builtin-name">fn</span></span> mx [a b] (<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">&gt;</span></span> a b) a b)) s))</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> [ &amp; xs ]</span><br><span class="line">  (<span class="name"><span class="builtin-name">reduce</span></span> #(<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">&gt;</span></span> %<span class="number">1</span> %<span class="number">2</span>) %<span class="number">1</span> %<span class="number">2</span>) xs))</span><br></pre></td></tr></table></figure>
+
+<h3 id="39"><a href="#39" class="headerlink" title="#39"></a><a href="http://www.4clojure.com/problem/39" target="_blank" rel="noopener">#39</a></h3><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> l [a b &amp; r]</span><br><span class="line">  (<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">or</span></span> (<span class="name"><span class="builtin-name">nil?</span></span> (<span class="name"><span class="builtin-name">first</span></span> a)) (<span class="name"><span class="builtin-name">nil?</span></span> (<span class="name"><span class="builtin-name">first</span></span> b)))</span><br><span class="line">    (<span class="name"><span class="builtin-name">flatten</span></span> r)</span><br><span class="line">    (<span class="name">l</span> (<span class="name"><span class="builtin-name">rest</span></span> a) (<span class="name"><span class="builtin-name">rest</span></span> b) (<span class="name"><span class="builtin-name">conj</span></span> (<span class="name"><span class="builtin-name">vec</span></span> r) (<span class="name"><span class="builtin-name">first</span></span> a) (<span class="name"><span class="builtin-name">first</span></span> b)))))</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> [s1 s2]</span><br><span class="line">  (<span class="name"><span class="builtin-name">flatten</span></span> (<span class="name"><span class="builtin-name">map</span></span> list s1 s2)))</span><br></pre></td></tr></table></figure>
+
+<h3 id="40"><a href="#40" class="headerlink" title="#40"></a><a href="http://www.4clojure.com/problem/40" target="_blank" rel="noopener">#40</a></h3><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> [x ys] (<span class="name"><span class="builtin-name">butlast</span></span> (<span class="name"><span class="builtin-name">flatten</span></span> (<span class="name"><span class="builtin-name">map</span></span> #(<span class="name"><span class="builtin-name">list</span></span> % x) ys))))</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(butlast (interleave %2 (repeat %1)))</span><br></pre></td></tr></table></figure>
+
+<h3 id="41"><a href="#41" class="headerlink" title="#41"></a><a href="http://www.4clojure.com/problem/41" target="_blank" rel="noopener">#41</a></h3><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> [ls n]</span><br><span class="line">  (<span class="name">keep-indexed</span> #(<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">&gt;</span></span> (<span class="name"><span class="builtin-name">mod</span></span> (<span class="name"><span class="builtin-name">inc</span></span> %<span class="number">1</span>) n) <span class="number">0</span>) %<span class="number">2</span>) ls))</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> [coll n]</span><br><span class="line">  (<span class="name"><span class="builtin-name">-&gt;&gt;</span></span> (<span class="name">partition-all</span> n coll)</span><br><span class="line">       (<span class="name"><span class="builtin-name">map</span></span> (<span class="name"><span class="builtin-name">partial</span></span> take (<span class="name"><span class="builtin-name">dec</span></span> n)))</span><br><span class="line">       (<span class="name"><span class="builtin-name">flatten</span></span>)))</span><br></pre></td></tr></table></figure>
+
+<h3 id="42"><a href="#42" class="headerlink" title="#42"></a><a href="http://www.4clojure.com/problem/42" target="_blank" rel="noopener">#42</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#((fn factorial [n r]</span><br><span class="line">  (if (= n 1) r (factorial (dec n) (* n r)))) % 1)</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(reduce * (range 1 (inc %)))</span><br></pre></td></tr></table></figure>
+
+<h3 id="48"><a href="#48" class="headerlink" title="#48"></a><a href="http://www.4clojure.com/problem/48" target="_blank" rel="noopener">#48</a></h3><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">6</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="52"><a href="#52" class="headerlink" title="#52"></a><a href="http://www.4clojure.com/problem/52" target="_blank" rel="noopener">#52</a></h3><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[c e]</span><br></pre></td></tr></table></figure>
+
+<h3 id="57"><a href="#57" class="headerlink" title="#57"></a><a href="http://www.4clojure.com/problem/57" target="_blank" rel="noopener">#57</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">'(5 4 3 2 1)</span><br></pre></td></tr></table></figure>
+
+<h3 id="62"><a href="#62" class="headerlink" title="#62"></a><a href="http://www.4clojure.com/problem/62" target="_blank" rel="noopener">#62</a></h3><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> fb ([f b] (<span class="name"><span class="builtin-name">lazy-seq</span></span> (<span class="name"><span class="builtin-name">cons</span></span> b (<span class="name">fb</span> f (<span class="name">f</span> b))))))</span><br></pre></td></tr></table></figure>
+
+<p>aceeca1’s solution:</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> [f x] (<span class="name">reductions</span> #(%<span class="number">2</span> %<span class="number">1</span>) x (<span class="name"><span class="builtin-name">repeat</span></span> f)))</span><br></pre></td></tr></table></figure>
+
+<p>注：从中学习和理解到：</p>
+<ol>
+<li>fn 给命名 <code>name?</code> 后也可以递归；</li>
+<li>lazy-seq 适合做无限循环递归的懒序列；</li>
+<li>reductions 可以将一个数组通过某个方法做 reduce 结果为一个懒序列；</li>
+</ol>
+<h3 id="64"><a href="#64" class="headerlink" title="#64"></a><a href="http://www.4clojure.com/problem/64" target="_blank" rel="noopener">#64</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+</span><br></pre></td></tr></table></figure>
+
+<h3 id="66"><a href="#66" class="headerlink" title="#66"></a><a href="http://www.4clojure.com/problem/66" target="_blank" rel="noopener">#66</a></h3><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> [a b]</span><br><span class="line">  (<span class="name"><span class="builtin-name">let</span></span> [m (<span class="name"><span class="builtin-name">min</span></span> a b)</span><br><span class="line">        d (<span class="name"><span class="builtin-name">fn</span></span> [a b m]</span><br><span class="line">              (<span class="name"><span class="builtin-name">and</span></span> (<span class="name"><span class="builtin-name">=</span></span> <span class="number">0</span> (<span class="name"><span class="builtin-name">mod</span></span> a m))</span><br><span class="line">                   (<span class="name"><span class="builtin-name">=</span></span> <span class="number">0</span> (<span class="name"><span class="builtin-name">mod</span></span> b m))))</span><br><span class="line">        r (<span class="name"><span class="builtin-name">fn</span></span> o [a b m] </span><br><span class="line">               (<span class="name"><span class="builtin-name">if</span></span> (<span class="name">d</span> a b m)</span><br><span class="line">                 m</span><br><span class="line">                 (<span class="name">o</span> a b (<span class="name"><span class="builtin-name">dec</span></span> m))))]</span><br><span class="line">    (<span class="name">r</span> a b m)))</span><br></pre></td></tr></table></figure>
+
+<p>astangl’s solution:</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span></span><br><span class="line">  [x y]</span><br><span class="line">  (<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">=</span></span> <span class="number">0</span> y)</span><br><span class="line">      x</span><br><span class="line">      (<span class="name"><span class="builtin-name">recur</span></span> y (<span class="name"><span class="builtin-name">mod</span></span> x y))))</span><br></pre></td></tr></table></figure>
+
+<p>注：从中学习和理解到：</p>
+<ol>
+<li>recur 可以递归 fn 这样的匿名函数；</li>
+<li>(mod x y) 当 <code>x &lt; y</code> 时，返回 x ，也就是说 x/y 得 0 余 x；</li>
+<li>最大公约数 w 一定也可以除尽 (mod x y) 的余数；</li>
+</ol>
+<h3 id="68"><a href="#68" class="headerlink" title="#68"></a><a href="http://www.4clojure.com/problem/68" target="_blank" rel="noopener">#68</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">'(7 6 5 4 3)</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">7</span> <span class="number">6</span> <span class="number">5</span> <span class="number">4</span> <span class="number">3</span>]</span><br></pre></td></tr></table></figure>
+
+<h3 id="71"><a href="#71" class="headerlink" title="#71"></a><a href="http://www.4clojure.com/problem/71" target="_blank" rel="noopener">#71</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">last</span><br></pre></td></tr></table></figure>
+
+<h3 id="72"><a href="#72" class="headerlink" title="#72"></a><a href="http://www.4clojure.com/problem/72" target="_blank" rel="noopener">#72</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apply +</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(reduce + %)</span><br></pre></td></tr></table></figure>
+
+<h3 id="81"><a href="#81" class="headerlink" title="#81"></a><a href="http://www.4clojure.com/problem/81" target="_blank" rel="noopener">#81</a></h3><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> [a b] (<span class="name"><span class="builtin-name">reduce</span></span> #(<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">contains?</span></span> a %<span class="number">2</span>) (<span class="name"><span class="builtin-name">conj</span></span> %<span class="number">1</span> %<span class="number">2</span>) %<span class="number">1</span>) #&#123;&#125; b))</span><br></pre></td></tr></table></figure>
+
+<p>aceeca1’s solution:</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">comp</span></span> set filter)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>学到的经验：#{} set 是可以当做 contains 方法来 filter 的。</li>
+</ul>
+<h3 id="99"><a href="#99" class="headerlink" title="#99"></a><a href="http://www.4clojure.com/problem/99" target="_blank" rel="noopener">#99</a></h3><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> [a b] (<span class="name"><span class="builtin-name">map</span></span> #(<span class="name">Integer/parseInt</span>(<span class="name"><span class="builtin-name">str</span></span> %)) (<span class="name"><span class="builtin-name">str</span></span> (<span class="name"><span class="builtin-name">*</span></span> a b))))</span><br></pre></td></tr></table></figure>
+
+<p>aceeca1’s solution:</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">comp</span></span> (<span class="name"><span class="builtin-name">partial</span></span> map #(<span class="name"><span class="builtin-name">-</span></span> (<span class="name"><span class="builtin-name">int</span></span> %) <span class="number">48</span>)) str *)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>学到的经验：可以组合几个方法，或者用 -&gt;&gt; 语法串联方法</li>
+</ul>
+<h3 id="99-1"><a href="#99-1" class="headerlink" title="#99"></a><a href="http://www.4clojure.com/problem/99" target="_blank" rel="noopener">#99</a></h3><h3 id="107"><a href="#107" class="headerlink" title="#107"></a><a href="http://www.4clojure.com/problem/107" target="_blank" rel="noopener">#107</a></h3><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> [n] #(<span class="name"><span class="builtin-name">reduce</span></span> * (<span class="name"><span class="builtin-name">repeat</span></span> n %)))</span><br></pre></td></tr></table></figure>
+
+<h3 id="134"><a href="#134" class="headerlink" title="#134"></a><a href="http://www.4clojure.com/problem/134" target="_blank" rel="noopener">#134</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(= nil (get %2 %1 0))</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(nil? (get %2 % true))</span><br></pre></td></tr></table></figure>
+
+<h3 id="145"><a href="#145" class="headerlink" title="#145"></a><a href="http://www.4clojure.com/problem/145" target="_blank" rel="noopener">#145</a></h3><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">1</span> <span class="number">5</span> <span class="number">9</span> <span class="number">13</span> <span class="number">17</span> <span class="number">21</span> <span class="number">25</span> <span class="number">29</span> <span class="number">33</span> <span class="number">37</span>]</span><br></pre></td></tr></table></figure>
+
+<h3 id="156"><a href="#156" class="headerlink" title="#156"></a><a href="http://www.4clojure.com/problem/156" target="_blank" rel="noopener">#156</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(apply merge (map (fn [k] &#123;k %1&#125;) %2))</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(apply array-map (mapcat (fn [k] [k %1]) %2))</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> [default values] (<span class="name"><span class="builtin-name">reduce</span></span> #(<span class="name"><span class="builtin-name">assoc</span></span> %<span class="number">1</span> %<span class="number">2</span> default) &#123;&#125; values))</span><br></pre></td></tr></table></figure>
+
+<h3 id="161"><a href="#161" class="headerlink" title="#161"></a><a href="http://www.4clojure.com/problem/161" target="_blank" rel="noopener">#161</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#&#123;1 2&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="162"><a href="#162" class="headerlink" title="#162"></a><a href="http://www.4clojure.com/problem/162" target="_blank" rel="noopener">#162</a></h3><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Another-solution"><a href="#Another-solution" class="headerlink" title="Another solution"></a>Another solution</h2><p><a href="http://www.anthony-galea.com/blog/post/solutions-to-4clojure-easy-problems/" target="_blank" rel="noopener">Solutions to 4Clojure Easy Problems</a></p>
+<h3 id="107-1"><a href="#107-1" class="headerlink" title="#107"></a><a href="http://www.4clojure.com/problem/107" target="_blank" rel="noopener">#107</a></h3><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> [n] #(<span class="name"><span class="builtin-name">reduce</span></span> * (<span class="name"><span class="builtin-name">repeat</span></span> n %)))</span><br></pre></td></tr></table></figure>
+
+<h3 id="134-1"><a href="#134-1" class="headerlink" title="#134"></a><a href="http://www.4clojure.com/problem/134" target="_blank" rel="noopener">#134</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(= nil (get %2 %1 0))</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(nil? (get %2 % true))</span><br></pre></td></tr></table></figure>
+
+<h3 id="145-1"><a href="#145-1" class="headerlink" title="#145"></a><a href="http://www.4clojure.com/problem/145" target="_blank" rel="noopener">#145</a></h3><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">1</span> <span class="number">5</span> <span class="number">9</span> <span class="number">13</span> <span class="number">17</span> <span class="number">21</span> <span class="number">25</span> <span class="number">29</span> <span class="number">33</span> <span class="number">37</span>]</span><br></pre></td></tr></table></figure>
+
+<h3 id="156-1"><a href="#156-1" class="headerlink" title="#156"></a><a href="http://www.4clojure.com/problem/156" target="_blank" rel="noopener">#156</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(apply merge (map (fn [k] &#123;k %1&#125;) %2))</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#(apply array-map (mapcat (fn [k] [k %1]) %2))</span><br></pre></td></tr></table></figure>
+
+<p>adereth’s solution:</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">fn</span></span> [default values] (<span class="name"><span class="builtin-name">reduce</span></span> #(<span class="name"><span class="builtin-name">assoc</span></span> %<span class="number">1</span> %<span class="number">2</span> default) &#123;&#125; values))</span><br></pre></td></tr></table></figure>
+
+<h3 id="161-1"><a href="#161-1" class="headerlink" title="#161"></a><a href="http://www.4clojure.com/problem/161" target="_blank" rel="noopener">#161</a></h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#&#123;1 2&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="162-1"><a href="#162-1" class="headerlink" title="#162"></a><a href="http://www.4clojure.com/problem/162" target="_blank" rel="noopener">#162</a></h3><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Another-solution-1"><a href="#Another-solution-1" class="headerlink" title="Another solution"></a>Another solution</h2><p><a href="http://www.anthony-galea.com/blog/post/solutions-to-4clojure-easy-problems/" target="_blank" rel="noopener">Solutions to 4Clojure Easy Problems</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>赞赏留名，相识相惜 ~</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Simon J S Wind13 Liu 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Simon J S Wind13 Liu 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+      <div id="bitcoin" style="display: inline-block">
+        <img id="bitcoin_qr" src="/images/bitcoin.png" alt="Simon J S Wind13 Liu 比特币">
+        <p>比特币</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Simon J S Wind13 Liu
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://wind13.github.io/2016/09/20/4clojure-problem-solving/" title="4clojure problem solving">http://wind13.github.io/2016/09/20/4clojure-problem-solving/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="external nofollow" target="_blank">CC BY-NC-ND 4.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/20/the-art-of-clear-thinking-note/" rel="next" title="《清晰思考的艺术》读书笔记">
+                <i class="fa fa-chevron-left"></i> 《清晰思考的艺术》读书笔记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/09/24/weixin-xiao-cheng-xu/" rel="prev" title="微信小程序相关学习">
+                微信小程序相关学习 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Simon J S Wind13 Liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">89</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">98</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#15"><span class="nav-number">1.</span> <span class="nav-text">#15</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16"><span class="nav-number">2.</span> <span class="nav-text">#16</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#17"><span class="nav-number">3.</span> <span class="nav-text">#17</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#18"><span class="nav-number">4.</span> <span class="nav-text">#18</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#19"><span class="nav-number">5.</span> <span class="nav-text">#19</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#20"><span class="nav-number">6.</span> <span class="nav-text">#20</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#21"><span class="nav-number">7.</span> <span class="nav-text">#21</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22"><span class="nav-number">8.</span> <span class="nav-text">#22</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23"><span class="nav-number">9.</span> <span class="nav-text">#23</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#24"><span class="nav-number">10.</span> <span class="nav-text">#24</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#25"><span class="nav-number">11.</span> <span class="nav-text">#25</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#26"><span class="nav-number">12.</span> <span class="nav-text">#26</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#29"><span class="nav-number">13.</span> <span class="nav-text">#29</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#27"><span class="nav-number">14.</span> <span class="nav-text">#27</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#28"><span class="nav-number">15.</span> <span class="nav-text">#28</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#30"><span class="nav-number">16.</span> <span class="nav-text">#30</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#32"><span class="nav-number">17.</span> <span class="nav-text">#32</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#34"><span class="nav-number">18.</span> <span class="nav-text">#34</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#35"><span class="nav-number">19.</span> <span class="nav-text">#35</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#37"><span class="nav-number">20.</span> <span class="nav-text">#37</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#38"><span class="nav-number">21.</span> <span class="nav-text">#38</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#39"><span class="nav-number">22.</span> <span class="nav-text">#39</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#40"><span class="nav-number">23.</span> <span class="nav-text">#40</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#41"><span class="nav-number">24.</span> <span class="nav-text">#41</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#42"><span class="nav-number">25.</span> <span class="nav-text">#42</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#48"><span class="nav-number">26.</span> <span class="nav-text">#48</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#52"><span class="nav-number">27.</span> <span class="nav-text">#52</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#57"><span class="nav-number">28.</span> <span class="nav-text">#57</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#62"><span class="nav-number">29.</span> <span class="nav-text">#62</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#64"><span class="nav-number">30.</span> <span class="nav-text">#64</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#66"><span class="nav-number">31.</span> <span class="nav-text">#66</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#68"><span class="nav-number">32.</span> <span class="nav-text">#68</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#71"><span class="nav-number">33.</span> <span class="nav-text">#71</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#72"><span class="nav-number">34.</span> <span class="nav-text">#72</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#81"><span class="nav-number">35.</span> <span class="nav-text">#81</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#99"><span class="nav-number">36.</span> <span class="nav-text">#99</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#99-1"><span class="nav-number">37.</span> <span class="nav-text">#99</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#107"><span class="nav-number">38.</span> <span class="nav-text">#107</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#134"><span class="nav-number">39.</span> <span class="nav-text">#134</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#145"><span class="nav-number">40.</span> <span class="nav-text">#145</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#156"><span class="nav-number">41.</span> <span class="nav-text">#156</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#161"><span class="nav-number">42.</span> <span class="nav-text">#161</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#162"><span class="nav-number">43.</span> <span class="nav-text">#162</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#Another-solution"><span class="nav-number"></span> <span class="nav-text">Another solution</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#107-1"><span class="nav-number">1.</span> <span class="nav-text">#107</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#134-1"><span class="nav-number">2.</span> <span class="nav-text">#134</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#145-1"><span class="nav-number">3.</span> <span class="nav-text">#145</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#156-1"><span class="nav-number">4.</span> <span class="nav-text">#156</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#161-1"><span class="nav-number">5.</span> <span class="nav-text">#161</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#162-1"><span class="nav-number">6.</span> <span class="nav-text">#162</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Another-solution-1"><span class="nav-number"></span> <span class="nav-text">Another solution</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Simon J S Wind13 Liu</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname,
+            owner: 'wind13',
+            repo: 'wind13.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '567b199e73fe5024b689971fac5a78fc3da64821',
+            
+                client_id: 'b3eba2d74cdccd08c0bb'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

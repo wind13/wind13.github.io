@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.0.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="TypeScript,React,GraphQL,">
+
+
+<meta name="description" content="实践 Using GraphQL with MongoDB Testing a GraphQL Server using Jest using-dataloader-to-batch-requests How GraphQL Replaces Redux js Client Bind GraphQL data to your UI with one function call.  相关网站 Gra">
+<meta name="keywords" content="TypeScript,React,GraphQL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GraphQL 学习">
+<meta property="og:url" content="http://wind13.github.io/2018/05/03/GraphQL-learning/index.html">
+<meta property="og:site_name" content="Wind13&#39;s Blog">
+<meta property="og:description" content="实践 Using GraphQL with MongoDB Testing a GraphQL Server using Jest using-dataloader-to-batch-requests How GraphQL Replaces Redux js Client Bind GraphQL data to your UI with one function call.  相关网站 Gra">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://mmbiz.qpic.cn/mmbiz_png/aaVJqS7LaMLClPic6l1HLPZAEorehByj4Lg18e9bbBrEm61icnjq8xs5jz81PJLIuWVPo7ZdXW7iab9dicAIQdQzzw/640">
+<meta property="og:updated_time" content="2018-06-27T09:15:55.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GraphQL 学习">
+<meta name="twitter:description" content="实践 Using GraphQL with MongoDB Testing a GraphQL Server using Jest using-dataloader-to-batch-requests How GraphQL Replaces Redux js Client Bind GraphQL data to your UI with one function call.  相关网站 Gra">
+<meta name="twitter:image" content="http://mmbiz.qpic.cn/mmbiz_png/aaVJqS7LaMLClPic6l1HLPZAEorehByj4Lg18e9bbBrEm61icnjq8xs5jz81PJLIuWVPo7ZdXW7iab9dicAIQdQzzw/640">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Wind13's Blog" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://wind13.github.io/2018/05/03/GraphQL-learning/">
+
+
+  <title>GraphQL 学习 | Wind13's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wind13's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2018/05/03/GraphQL-learning/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Simon J S Wind13 Liu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wind13's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">GraphQL 学习</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-03T08:55:25+00:00">2018-05-03</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/05/03/GraphQL-learning/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/05/03/GraphQL-learning/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h2><ul>
+<li><a href="https://www.compose.com/articles/using-graphql-with-mongodb/" target="_blank" rel="noopener">Using GraphQL with MongoDB</a></li>
+<li><a href="https://medium.com/entria/testing-a-graphql-server-using-jest-4e00d0e4980e" target="_blank" rel="noopener">Testing a GraphQL Server using Jest</a></li>
+<li><a href="https://github.com/gajus/gajus.com-blog/blob/master/posts/using-dataloader-to-batch-requests/index.md" target="_blank" rel="noopener">using-dataloader-to-batch-requests</a></li>
+<li><a href="https://hackernoon.com/how-graphql-replaces-redux-3fff8289221d" target="_blank" rel="noopener">How GraphQL Replaces Redux</a></li>
+<li><a href="https://www.apollographql.com/client/" target="_blank" rel="noopener">js Client</a> Bind GraphQL data to your UI with one function call.</li>
+</ul>
+<h2 id="相关网站"><a href="#相关网站" class="headerlink" title="相关网站"></a>相关网站</h2><ul>
+<li><a href="http://graphql.cn/" target="_blank" rel="noopener">GraphQL CN</a> A query language for APIs. 一种用于 API 的查询语言。</li>
+<li><a href="http://graphql.cn/learn/best-practices/" target="_blank" rel="noopener">GraphQL 最佳实践</a></li>
+<li><a href="https://github.com/chentsulin/awesome-graphql" target="_blank" rel="noopener">awesome-graphql</a></li>
+<li><a href="https://www.howtographql.com/" target="_blank" rel="noopener">The Fullstack Tutorial for GraphQL</a> Youtube 视频教程</li>
+<li><a href="https://github.com/graphql/graphiql" target="_blank" rel="noopener">GraphiQL</a> A graphical interactive in-browser GraphQL IDE. <a href="http://graphql.org/swapi-graphql" target="_blank" rel="noopener">Live demo</a></li>
+<li><a href="https://lacinia.readthedocs.io/en/latest/" target="_blank" rel="noopener">Lacinia</a> - GraphQL for Clojure，<a href="https://github.com/walmartlabs/lacinia" target="_blank" rel="noopener">Github Repo</a> 一套 GraphQL 规范的完整实现，致力于维护对规范的外部兼容。</li>
+<li><a href="https://github.com/alumbra/alumbra" target="_blank" rel="noopener">alumbra</a> Simple &amp; Elegant GraphQL for Clojure!</li>
+<li><a href="https://github.com/tendant/graphql-clj" target="_blank" rel="noopener">graphql-clj</a> A Clojure library designed to provide GraphQL implementation.</li>
+<li><a href="http://graphql.cn/code" target="_blank" rel="noopener">流行的服务端框架、客户端库、服务</a></li>
+<li><a href="https://dev-blog.apollodata.com/getting-started-with-typescript-and-apollo-a9aa2c7dcf87" target="_blank" rel="noopener">Getting started with TypeScript and Apollo</a></li>
+<li><a href="https://facebook.github.io/relay/" target="_blank" rel="noopener">Relay</a> A JavaScript framework for building data-driven React applications</li>
+<li><a href="https://github.com/swannodette/om-datascript" target="_blank" rel="noopener">Om Next w/ DataScript</a></li>
+<li>Node.js 实现：<ul>
+<li><a href="https://www.apollographql.com/docs/apollo-server/" target="_blank" rel="noopener">Apollo Server</a> is a flexible, community driven, production-ready HTTP GraphQL middleware for Express, Hapi, Koa, and more.</li>
+<li><a href="https://github.com/graphql/express-graphql" target="_blank" rel="noopener">express-graphql</a></li>
+</ul>
+</li>
+<li>以下内容部分摘自微信文章：<a href="https://mp.weixin.qq.com/s/g5zHRLFSBvHWaKLLhedtvQ" target="_blank" rel="noopener">微服务下使用GraphQL构建BFF的实践</a></li>
+</ul>
+<h2 id="微服务架构的优势-virtue-："><a href="#微服务架构的优势-virtue-：" class="headerlink" title="微服务架构的优势(virtue)："></a>微服务架构的优势(virtue)：</h2><p>简单说来，微服务是一种架构风格。通过对特定业务领域的分析与建模，将复杂的应用分解成小而专一、耦合度低并且高度自治的一组服务。微服务中的每个服务都是很小的应用，这些应用服务相互独立并且可部署。微服务通过对复杂应用的拆分，达到简化应用的目的，而这些耦合度较低的服务则通过 API 形式进行通信，所以服务之间对外暴露的都是 API，不管是对资源的获取还是修改。</p>
+<ul>
+<li>Isolation 隔离状态</li>
+<li>Autonomy 自治</li>
+</ul>
+<h2 id="BFF-前端的中间层后端"><a href="#BFF-前端的中间层后端" class="headerlink" title="BFF 前端的中间层后端"></a>BFF 前端的中间层后端</h2><p>Backend for Frontends(以下简称 BFF) 顾名思义，是为前端而存在的后端 (服务) 中间层。引用了 BFF 之后，前端应用将直接和 BFF 通信，BFF 再和后端进行 API 通信，所以本质上来说，BFF 更像是一种“中间层”服务。</p>
+<h3 id="BFF-其实是一种-API-Gateway-实现模式"><a href="#BFF-其实是一种-API-Gateway-实现模式" class="headerlink" title="BFF 其实是一种 API Gateway 实现模式"></a>BFF 其实是一种 API Gateway 实现模式</h3><h4 id="API-Gateway-的三种实现："><a href="#API-Gateway-的三种实现：" class="headerlink" title="API Gateway 的三种实现："></a>API Gateway 的三种实现：</h4><ul>
+<li>一个 API Gateway 对所有客户端提供同一种 API，例：<code>/api/users</code></li>
+<li>一个 API Gateway 通过 Router 对每种客户端提供分别的 API，例：<code>/mobile/api/users</code> 和 <code>/web/api/users</code></li>
+<li>多个 API Gateway 分别对每种客户端提供分别的 API，例：如上，但两个 Gateway 分别为 Mobile Gateway 和 Web Gateway。</li>
+</ul>
+<p>BFF 其实是 API Gateway 的其中一种实现模式，即 BFF 更类似于第三种 API Gateway 实现，通常一个 BFF 对应一种客户端，再由 BFF 去调用后端的实际 API。</p>
+<h2 id="GraphQL-与-REST-对比"><a href="#GraphQL-与-REST-对比" class="headerlink" title="GraphQL 与 REST 对比"></a>GraphQL 与 REST 对比</h2><h3 id="相比于-REST-风格，GraphQL-具有如下特性："><a href="#相比于-REST-风格，GraphQL-具有如下特性：" class="headerlink" title="相比于 REST 风格，GraphQL 具有如下特性："></a>相比于 REST 风格，GraphQL 具有如下特性：</h3><ol>
+<li>定义数据模型：按需获取</li>
+<li>数据分层</li>
+<li>强类型</li>
+<li>协议而非存储</li>
+<li>无须版本化</li>
+</ol>
+<h3 id="对于-GraphQL-和-REST-之间的对比，主要有如下不同："><a href="#对于-GraphQL-和-REST-之间的对比，主要有如下不同：" class="headerlink" title="对于 GraphQL 和 REST 之间的对比，主要有如下不同："></a>对于 GraphQL 和 REST 之间的对比，主要有如下不同：</h3><ul>
+<li>数据获取：REST 缺乏可扩展性， GraphQL 能够按需获取。GraphQL API 调用时，payload 是可以扩展的 ;</li>
+<li>API 调用：REST 针对每种资源的操作都是一个 endpoint, GraphQL 只需要一个 endpoint( /graphql), 只是 post body 不一样 ;</li>
+<li>复杂数据请求：REST 对于嵌套的复杂数据需要多次调用，GraphQL 一次调用, 减少网络开销；</li>
+<li>错误码处理：REST 能够精确返回 HTTP 错误码，GraphQL 统一返回 200，对错误信息进行包装；</li>
+<li>版本号：REST 通过 v1/v2 实现，GraphQL 通过 Schema 扩展实现；</li>
+</ul>
+<h2 id="微服务-GraphQL-BFF-实践"><a href="#微服务-GraphQL-BFF-实践" class="headerlink" title="微服务 + GraphQL + BFF 实践"></a>微服务 + GraphQL + BFF 实践</h2><p>在微服务下基于 GraphQL 构建 BFF，例如在项目对应的业务场景下，微服务后台有近 10 个微服务，客户端包括针对不同角色的 4 个 App 以及一个 Web 端。对于每种类型的 App，都有一个 BFF 与之对应。每种 BFF 只服务于这个 App。BFF 解析到客户端请求之后，会通过 BFF 端的服务发现，去对应的微服务后台通过 CQRS 的方式进行数据查询或修改。</p>
+<p>使用 GraphQL-express 框架构建项目的 BFF 端，然后通过 Docker 进行部署。BFF 和微服务后台之间，还是通过 registrator 和 Consul 进行服务注册和发现。</p>
+<p><img src="http://mmbiz.qpic.cn/mmbiz_png/aaVJqS7LaMLClPic6l1HLPZAEorehByj4Lg18e9bbBrEm61icnjq8xs5jz81PJLIuWVPo7ZdXW7iab9dicAIQdQzzw/640" alt="整体技术架构"></p>
+<p>三个 App 客户端分别使用 GraphQL 的形式请求对应的 BFF。BFF 层再通过 Consul 服务发现和后端通信。</p>
+<h3 id="关于系统中的鉴权问题"><a href="#关于系统中的鉴权问题" class="headerlink" title="关于系统中的鉴权问题"></a>关于系统中的鉴权问题</h3><p>用户登录后，App 直接访问 KeyCloak 服务获取到 id_token，然后通过 id_token 透传访问 auth-api 服务获取到 access_token, access_token 以 JWT (Json Web Token) 的形式放置到后续 http 请求的头信息中。</p>
+<p>在我们这个系统中 BFF 层并不做鉴权服务，所有的鉴权过程全部由各自的微服务模块负责。BFF 只提供中转的功能。BFF 是否需要集成鉴权认证，主要看各系统自己的设计，并不是一个标准的实践。</p>
+<h3 id="BFF-is-pary-of-Application-BFF-就是客户端的一部分"><a href="#BFF-is-pary-of-Application-BFF-就是客户端的一部分" class="headerlink" title="BFF is pary of Application, BFF 就是客户端的一部分"></a>BFF is pary of Application, BFF 就是客户端的一部分</h3><ul>
+<li>BFF 中定义的数据结构，就是客户端所真正关心的。</li>
+<li>BFF 就是为客户端而生，是客户端的一部分。</li>
+<li>需要说明的是，对于“业务的关注”并不是说，BFF 会处理所有的业务逻辑，业务逻辑还是应该由微服务关心，BFF 关注的是客户端需要什么。</li>
+</ul>
+<h3 id="GraphQL-Mutation-与-CQRS"><a href="#GraphQL-Mutation-与-CQRS" class="headerlink" title="GraphQL Mutation 与 CQRS"></a>GraphQL Mutation 与 CQRS</h3><p>不同于 query，所有 mutation 都会调用后端的 API，而后端的 API 对于资源的修改也是通过 SpringBoot EventListener 实现的 CQRS 模式。</p>
+<h3 id="新架构的测试"><a href="#新架构的测试" class="headerlink" title="新架构的测试"></a>新架构的测试</h3><p>在引入了 BFF 的项目，我们的测试仍然使用金字塔原理，只是在客户端和后台之间，需要添加对 BFF 的测试。</p>
+<ul>
+<li>Client 的 integration-test 关心的是 App 访问 BFF 的连通性，App 中所有访问 BFF 的请求都需要进行测试；</li>
+<li>BFF 的 integration-test 测试的是 BFF 到微服务 API 的连通性，BFF 中依赖的所有 API 都应该有集成测试的保障；</li>
+<li>API 的 integration-test 关注的是这个服务对外暴露的所有 API，通常测试所有的 Controller 中的 API。</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>赞赏留名，相识相惜 ~</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Simon J S Wind13 Liu 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Simon J S Wind13 Liu 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+      <div id="bitcoin" style="display: inline-block">
+        <img id="bitcoin_qr" src="/images/bitcoin.png" alt="Simon J S Wind13 Liu 比特币">
+        <p>比特币</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Simon J S Wind13 Liu
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://wind13.github.io/2018/05/03/GraphQL-learning/" title="GraphQL 学习">http://wind13.github.io/2018/05/03/GraphQL-learning/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="external nofollow" target="_blank">CC BY-NC-ND 4.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/TypeScript/" rel="tag"># TypeScript</a>
+          
+            <a href="/tags/React/" rel="tag"># React</a>
+          
+            <a href="/tags/GraphQL/" rel="tag"># GraphQL</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/29/one-pic-know-antd/" rel="next" title="一图看懂 AntD 的结构">
+                <i class="fa fa-chevron-left"></i> 一图看懂 AntD 的结构
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/22/baihua-async/" rel="prev" title="白话理解 Node.js 异步单线程">
+                白话理解 Node.js 异步单线程 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Simon J S Wind13 Liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">89</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">98</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#实践"><span class="nav-number">1.</span> <span class="nav-text">实践</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相关网站"><span class="nav-number">2.</span> <span class="nav-text">相关网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#微服务架构的优势-virtue-："><span class="nav-number">3.</span> <span class="nav-text">微服务架构的优势(virtue)：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BFF-前端的中间层后端"><span class="nav-number">4.</span> <span class="nav-text">BFF 前端的中间层后端</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#BFF-其实是一种-API-Gateway-实现模式"><span class="nav-number">4.1.</span> <span class="nav-text">BFF 其实是一种 API Gateway 实现模式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#API-Gateway-的三种实现："><span class="nav-number">4.1.1.</span> <span class="nav-text">API Gateway 的三种实现：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GraphQL-与-REST-对比"><span class="nav-number">5.</span> <span class="nav-text">GraphQL 与 REST 对比</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#相比于-REST-风格，GraphQL-具有如下特性："><span class="nav-number">5.1.</span> <span class="nav-text">相比于 REST 风格，GraphQL 具有如下特性：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对于-GraphQL-和-REST-之间的对比，主要有如下不同："><span class="nav-number">5.2.</span> <span class="nav-text">对于 GraphQL 和 REST 之间的对比，主要有如下不同：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#微服务-GraphQL-BFF-实践"><span class="nav-number">6.</span> <span class="nav-text">微服务 + GraphQL + BFF 实践</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#关于系统中的鉴权问题"><span class="nav-number">6.1.</span> <span class="nav-text">关于系统中的鉴权问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BFF-is-pary-of-Application-BFF-就是客户端的一部分"><span class="nav-number">6.2.</span> <span class="nav-text">BFF is pary of Application, BFF 就是客户端的一部分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GraphQL-Mutation-与-CQRS"><span class="nav-number">6.3.</span> <span class="nav-text">GraphQL Mutation 与 CQRS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新架构的测试"><span class="nav-number">6.4.</span> <span class="nav-text">新架构的测试</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Simon J S Wind13 Liu</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname,
+            owner: 'wind13',
+            repo: 'wind13.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '567b199e73fe5024b689971fac5a78fc3da64821',
+            
+                client_id: 'b3eba2d74cdccd08c0bb'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

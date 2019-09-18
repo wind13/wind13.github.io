@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.0.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="Hexo, NexT">
+
+
+<meta name="description" content="Nginx 和 Node.js 都是多进程单线程的。它通过事件轮询（event loop Node.js 事件循环）来实现并行操作，因此，我们要尽可能的避免阻塞操作，取而代之，多使用非阻塞操作。参考 Understanding the node.js event loop 主线程和子线程，这里说的单线程，是说主线程只有一个，所以要把阻塞的运算处理分拆到子线程中去运行。  使用回调函数 以非阻塞操作">
+<meta property="og:type" content="article">
+<meta property="og:title" content="白话理解 Node.js 异步单线程">
+<meta property="og:url" content="http://wind13.github.io/2018/05/22/baihua-async/index.html">
+<meta property="og:site_name" content="Wind13&#39;s Blog">
+<meta property="og:description" content="Nginx 和 Node.js 都是多进程单线程的。它通过事件轮询（event loop Node.js 事件循环）来实现并行操作，因此，我们要尽可能的避免阻塞操作，取而代之，多使用非阻塞操作。参考 Understanding the node.js event loop 主线程和子线程，这里说的单线程，是说主线程只有一个，所以要把阻塞的运算处理分拆到子线程中去运行。  使用回调函数 以非阻塞操作">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-05-23T03:30:15.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="白话理解 Node.js 异步单线程">
+<meta name="twitter:description" content="Nginx 和 Node.js 都是多进程单线程的。它通过事件轮询（event loop Node.js 事件循环）来实现并行操作，因此，我们要尽可能的避免阻塞操作，取而代之，多使用非阻塞操作。参考 Understanding the node.js event loop 主线程和子线程，这里说的单线程，是说主线程只有一个，所以要把阻塞的运算处理分拆到子线程中去运行。  使用回调函数 以非阻塞操作">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Wind13's Blog" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://wind13.github.io/2018/05/22/baihua-async/">
+
+
+  <title>白话理解 Node.js 异步单线程 | Wind13's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wind13's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2018/05/22/baihua-async/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Simon J S Wind13 Liu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wind13's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">白话理解 Node.js 异步单线程</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-22T10:37:39+00:00">2018-05-22</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/05/22/baihua-async/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/05/22/baihua-async/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Nginx 和 Node.js 都是多进程单线程的。它通过事件轮询（event loop <a href="http://www.runoob.com/nodejs/nodejs-event-loop.html" target="_blank" rel="noopener">Node.js 事件循环</a>）来实现并行操作，因此，我们要尽可能的避免阻塞操作，取而代之，多使用非阻塞操作。参考 <a href="http://blog.mixu.net/2011/02/01/understanding-the-node-js-event-loop/" target="_blank" rel="noopener">Understanding the node.js event loop</a></p>
+<p>主线程和子线程，这里说的单线程，是说主线程只有一个，所以要把阻塞的运算处理分拆到子线程中去运行。</p>
+<ul>
+<li>使用回调函数</li>
+<li>以非阻塞操作进行请求响应</li>
+</ul>
+<h2 id="几种可能的响应网络请求的方式："><a href="#几种可能的响应网络请求的方式：" class="headerlink" title="几种可能的响应网络请求的方式："></a>几种可能的响应网络请求的方式：</h2><ul>
+<li>同步；最简单，但一个访问会阻塞其他访问；</li>
+<li>分出新进程；还算简单，但大量的访问请求意味着大量的进程，会占用大量内存资源；</li>
+<li>多线程；比较复杂，有些机器不支持线程，随着线程的增加，编程复杂度的增加也是很可怕的，很快就不知道怎么控制线程间的共享资源了。另外，线程占用内存会随请求数量增加快速增加，这也是为什么 Apache 比 Nginx 响应同样数量请求时占用更多的内存的原因。</li>
+<li>单线程异步回调；也算简单，通过异步调用将主线程的任务分派到子线程中，通过回调函数来实现任务完成后的通知主线程及执行后续任务。</li>
+</ul>
+<h2 id="白话理解"><a href="#白话理解" class="headerlink" title="白话理解"></a>白话理解</h2><p>假设我们想做机器人卖米线的生意，我们要给机器人编程序，有煮米线的程序、收钱找钱的程序、擦桌子收碗的程序、端盘上饭的程序等。</p>
+<p>同步的程序是最容易编写的，就是一件一件地做，一项一项地完成，一个步骤一个步骤地操作等。</p>
+<p>那么同步的方式会带来什么问题呢？就是每来一个顾客请求，我们就开始处理这个请求，不理其他顾客甚至当前顾客的其他请求，如果当前的事情是比较费时的，比如煮米线，那么就会阻塞其他所有请求和顾客，这显然是不能接受的。</p>
+<p>那么新进程的方式是什么意思呢？就好比复制多开了很多个米线摊，其他顾客的请求自然可以由其他米线摊来处理，但显然这很浪费资源，只有在需要开分店的时候才比较合适，那就是分布式架构加负载均衡所解决的问题了。但我们不能在一个店还没开好（高效运转）的时候就去搞连锁，那样会亏死的，所以先要把一个店的运转高效起来再说。</p>
+<p>那么多线程的方式呢？可以想象就是一个摊儿或店，但雇佣了多个人，有人收钱，有人煮米线，但每个服务仍是同步单线程状态、即初级机器人水平，也就是说只专心做手头的事，做完一件事才做下一件事。</p>
+<p>单线程异步回调的方式呢？就好像来了一个灵活的（机器）人（主线程），他来操作其他机器人，他接受请求，再命令其他专业的机器人做，然后他就又接受下一个请求……</p>
+<p>这样就需要其他机器人是可以接受命令的，而煮米线机器人原来的方法是同步的，如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 口味: 大/小份,</span></span><br><span class="line"><span class="comment"> * 份量: 麻辣/三鲜</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">煮米线(口味, 份量) &#123;</span><br><span class="line">  花 <span class="number">5</span> 分钟煮一碗 此口味 此份量 的米线;</span><br><span class="line">  <span class="keyword">return</span> 米线；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>新的方法：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 需求参数：</span></span><br><span class="line"><span class="comment"> *  口味: 大/小份,</span></span><br><span class="line"><span class="comment"> *  份量: 麻辣/三鲜</span></span><br><span class="line"><span class="comment"> * 完事儿干啥：</span></span><br><span class="line"><span class="comment"> *  callback 回调函数</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">煮米线(&#123;需求参数&#125;, 完事儿干啥) &#123;</span><br><span class="line">  花 <span class="number">5</span> 分钟煮一碗 需求参数.此口味 需求参数.此份量 的米线;</span><br><span class="line">  call 完事儿干啥();</span><br><span class="line">&#125;</span><br><span class="line">下单米线(某口味, 某份量, 服务员) &#123;</span><br><span class="line">  煮米线(&#123;口味: 某口味, 份量:某份量&#125;, 服务员.上菜);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>调用方法：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">下单米线(三鲜, 小份, 服务员A);</span><br><span class="line">下单米线(麻辣, 大份, 服务员B);</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">煮一碗 小份 三鲜 米线</span><br><span class="line">服务员A 端给客人</span><br></pre></td></tr></table></figure>
+
+<h2 id="For-循环也要注意阻塞问题"><a href="#For-循环也要注意阻塞问题" class="headerlink" title="For 循环也要注意阻塞问题"></a>For 循环也要注意阻塞问题</h2><h3 id="以下示例证明-for-循环较大时会是个阻塞操作，同时证明-Node-js-是单线程的。"><a href="#以下示例证明-for-循环较大时会是个阻塞操作，同时证明-Node-js-是单线程的。" class="headerlink" title="以下示例证明 for 循环较大时会是个阻塞操作，同时证明 Node.js 是单线程的。"></a>以下示例证明 for 循环较大时会是个阻塞操作，同时证明 Node.js 是单线程的。</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">proveSingleBlock</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> start = <span class="built_in">Date</span>.now();<span class="comment">//获取当前时间戳</span></span><br><span class="line">  <span class="keyword">var</span> n = <span class="number">0</span></span><br><span class="line">  setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">Date</span>.now() - start);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">1000000000</span>; i++)&#123;<span class="comment">//执行长循环</span></span><br><span class="line">      n = n+<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;, <span class="number">1000</span>);</span><br><span class="line">  setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">Date</span>.now() - start);</span><br><span class="line">    <span class="built_in">console</span>.log(n);</span><br><span class="line">  &#125;, <span class="number">2000</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>我们在 Node.js 中就需要将如下的耗时较长的 for 循环：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">block</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> n = <span class="number">0</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> x = <span class="number">0</span> ; x &lt; <span class="number">1000000000</span>; x++)&#123;</span><br><span class="line">    <span class="comment">//do something crazy.</span></span><br><span class="line">    n = n+x;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> n;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>改写为下面这样：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">noblock</span>(<span class="params">callback</span>) </span>&#123;</span><br><span class="line">  setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> r = block();</span><br><span class="line">    <span class="keyword">if</span> (callback) &#123; callback(r); &#125;</span><br><span class="line">  &#125;, <span class="number">0</span>);</span><br><span class="line">  <span class="keyword">return</span> <span class="string">'async'</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>测试代码如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> start = <span class="built_in">Date</span>.now();<span class="comment">//获取当前时间戳</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// block version</span></span><br><span class="line"><span class="built_in">console</span>.log(block());</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'Block version:'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Date</span>.now() - start);</span><br><span class="line"></span><br><span class="line"><span class="comment">// no block setTimeout version</span></span><br><span class="line"><span class="built_in">console</span>.log(noblock(<span class="function"><span class="keyword">function</span>(<span class="params">r</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(r);</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'No block version:'</span>);</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">Date</span>.now() - start);</span><br><span class="line">&#125;));</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'Main end:'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Date</span>.now() - start);</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用-ES6-的-Promise-实现异步"><a href="#使用-ES6-的-Promise-实现异步" class="headerlink" title="使用 ES6 的 Promise 实现异步"></a>使用 ES6 的 Promise 实现异步</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#link'</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"Enter"</span>);</span><br><span class="line">    <span class="keyword">var</span> asyncFunct = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>) </span>&#123;</span><br><span class="line">        $(<span class="string">'#link'</span>).animate(&#123; <span class="attr">width</span>: <span class="number">200</span> &#125;, <span class="number">2000</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"finished"</span>);</span><br><span class="line">            resolve();</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">    asyncFunct.then(<span class="function">(<span class="params">result</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"Exit"</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>还有 async/await, generator/yield 等</p>
+<h2 id="多线程方案"><a href="#多线程方案" class="headerlink" title="多线程方案"></a>多线程方案</h2><h3 id="用-libuv-库来支持多线程"><a href="#用-libuv-库来支持多线程" class="headerlink" title="用 libuv 库来支持多线程"></a>用 libuv 库来支持多线程</h3><p>如果我们非要让 Node.js 支持多线程，还是提倡使用官方的做法，利用 libuv 库来实现。</p>
+<blockquote>
+<p>libuv是一个跨平台的异步I/O库，它主要用于 Node.js 的开发，同时他也被Mozilla’s Rust language, Luvit, Julia, pyuv等使用。它主要包括了Event loops事件循环， Filesystem 文件系统， Networking 网络支持， Threads 线程， Processes 进程， Utilities 其他工具。</p>
+</blockquote>
+<h3 id="tagg2模块-threads-a-gogo-库"><a href="#tagg2模块-threads-a-gogo-库" class="headerlink" title="tagg2模块 threads_a_gogo 库"></a>tagg2模块 <a href="https://github.com/xk/node-threads-a-gogo" target="_blank" rel="noopener">threads_a_gogo</a> 库</h3><p><a href="https://cnodejs.org/topic/518b679763e9f8a5424406e9" target="_blank" rel="noopener">threads_a_gogo 实现 nodejs 多线程，真正的非阻塞</a></p>
+<h2 id="多进程方案"><a href="#多进程方案" class="headerlink" title="多进程方案"></a>多进程方案</h2><p>在支持 html5 的浏览器里，我们可以使用 webworker 来将一些耗时的计算丢入 worker 进程中执行，这样主进程就不会阻塞，用户也就不会有卡顿的感觉了。在 Node.js 中是否也可以使用这类技术，保证主线程的通畅呢？</p>
+<h3 id="cluster"><a href="#cluster" class="headerlink" title="cluster"></a>cluster</h3><p>cluster可以用来让 Node.js 充分利用多核 cpu 的性能，同时也可以让 Node.js 程序更加健壮，官网上的 cluster 示例已经告诉我们如何重新启动一个因为异常而崩溃的子进程。</p>
+<h3 id="webworker"><a href="#webworker" class="headerlink" title="webworker"></a>webworker</h3><p>想要像在浏览器端那样启动 worker 进程，我们需要利用 Node.js 核心 api 里的 child_process 模块。 child_process 模块提供了 fork 的方法，可以启动一个 Node.js 文件，将它作为 worker 进程，当 worker 进程工作完毕，把结果通过 send 方法传递给主进程，然后自动退出，这样我们就利用了多进程来解决主线程阻塞的问题。</p>
+<h2 id="多进程和多线程"><a href="#多进程和多线程" class="headerlink" title="多进程和多线程"></a>多进程和多线程</h2><p>大部分多线程解决 cpu 密集型任务的方案都可以用我们之前讨论的多进程方案来替代，但是有一些比较特殊的场景多线程的优势就发挥出来了，比如 http web 服务器响应静态文件的例子。</p>
+<p>以 express 处理小型静态文件为例，大致的处理流程如下：</p>
+<ol>
+<li>首先获取文件状态，判断文件的修改时间或者判断 etag 来确定是否响应 304 给客户端，让客户端继续使用本地缓存。</li>
+<li>如果缓存已经失效或者客户端没有缓存，就需要获取文件的内容到 buffer 中，为响应作准备。</li>
+<li>然后判断文件的 MIME 类型，如果是类似 html, js, css 等静态资源，还需要 gzip 压缩之后传输给客户端。</li>
+<li>最后将 gzip 压缩完成的静态文件响应给客户端。</li>
+</ol>
+<p>用 ifile 包能得到 10 倍的速度和效率，不过 express 的作者TJ 说：</p>
+<blockquote>
+<p>请牢记你可能不需要这么高等级吞吐率的系统，就算是每月百万级别下载量的 npm 网站，也仅仅每秒处理 17 个请求而已，这样的压力甚至于 PHP 也可以处理掉（又黑了一把 php ）。</p>
+</blockquote>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>单线程的 Node.js 给我们编码带来了太多的便利和乐趣，我们应该时刻保持清醒的头脑，在写 Node.js 代码中切不可与 PHP 混淆，任何一个隐藏的问题都可能击溃整个线上正在运行的 Node.js 程序。</p>
+<p>单线程异步的 Node.js 不代表不会阻塞，在主线程做过多的任务可能会导致主线程的卡死，影响整个程序的性能，所以我们要非常小心的处理大量的循环，字符串拼接和浮点运算等 cpu 密集型任务，合理的利用各种技术把任务丢给子线程或子进程去完成，保持 Node.js 主线程的畅通。</p>
+<p>线程/进程的使用并不是没有开销的，尽可能减少创建和销毁线程/进程的次数，可以提升我们系统整体的性能和出错的概率。</p>
+<p>最后请不要一味的追求高性能和高并发，因为我们可能不需要系统具有那么大的吞吐率。高效，敏捷，低成本的开发才是项目所需要的，这也是为什么 Node.js 能够在众多开发语言中脱颖而出的关键。</p>
+<h2 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h2><ul>
+<li><a href="https://www.jianshu.com/p/1887d9b446b2" target="_blank" rel="noopener">js的单线程和多进程</a></li>
+<li><a href="https://github.com/DoubleSpout/threadAndPackage/blob/master/chapter.7.thread_and_process.md" target="_blank" rel="noopener">Node.js的线程和进程</a></li>
+<li><a href="https://stackoverflow.com/questions/9516900/how-can-i-create-an-asynchronous-function-in-javascript" target="_blank" rel="noopener">How can I create an Asynchronous function in Javascript?</a></li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>赞赏留名，相识相惜 ~</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Simon J S Wind13 Liu 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Simon J S Wind13 Liu 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+      <div id="bitcoin" style="display: inline-block">
+        <img id="bitcoin_qr" src="/images/bitcoin.png" alt="Simon J S Wind13 Liu 比特币">
+        <p>比特币</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Simon J S Wind13 Liu
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://wind13.github.io/2018/05/22/baihua-async/" title="白话理解 Node.js 异步单线程">http://wind13.github.io/2018/05/22/baihua-async/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="external nofollow" target="_blank">CC BY-NC-ND 4.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/03/GraphQL-learning/" rel="next" title="GraphQL 学习">
+                <i class="fa fa-chevron-left"></i> GraphQL 学习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/26/Ant-Design-React-Note/" rel="prev" title="Ant Design React 使用记录">
+                Ant Design React 使用记录 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Simon J S Wind13 Liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">89</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">98</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#几种可能的响应网络请求的方式："><span class="nav-number">1.</span> <span class="nav-text">几种可能的响应网络请求的方式：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#白话理解"><span class="nav-number">2.</span> <span class="nav-text">白话理解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#For-循环也要注意阻塞问题"><span class="nav-number">3.</span> <span class="nav-text">For 循环也要注意阻塞问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#以下示例证明-for-循环较大时会是个阻塞操作，同时证明-Node-js-是单线程的。"><span class="nav-number">3.1.</span> <span class="nav-text">以下示例证明 for 循环较大时会是个阻塞操作，同时证明 Node.js 是单线程的。</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-ES6-的-Promise-实现异步"><span class="nav-number">4.</span> <span class="nav-text">使用 ES6 的 Promise 实现异步</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多线程方案"><span class="nav-number">5.</span> <span class="nav-text">多线程方案</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#用-libuv-库来支持多线程"><span class="nav-number">5.1.</span> <span class="nav-text">用 libuv 库来支持多线程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tagg2模块-threads-a-gogo-库"><span class="nav-number">5.2.</span> <span class="nav-text">tagg2模块 threads_a_gogo 库</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多进程方案"><span class="nav-number">6.</span> <span class="nav-text">多进程方案</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#cluster"><span class="nav-number">6.1.</span> <span class="nav-text">cluster</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#webworker"><span class="nav-number">6.2.</span> <span class="nav-text">webworker</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多进程和多线程"><span class="nav-number">7.</span> <span class="nav-text">多进程和多线程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">8.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文档"><span class="nav-number">9.</span> <span class="nav-text">参考文档</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Simon J S Wind13 Liu</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname,
+            owner: 'wind13',
+            repo: 'wind13.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '567b199e73fe5024b689971fac5a78fc3da64821',
+            
+                client_id: 'b3eba2d74cdccd08c0bb'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.0.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="wind13,">
+
+
+<meta name="description" content="学用Play!和Scala做软件本站收集Play1.x相关 停止SSH，用Play!吧  Play!技巧问答  国内一些使用Play!框架的网站  Xml 域名空间识别问题">
+<meta name="keywords" content="wind13">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Wind13 的 Blog 之 原来的首页">
+<meta property="og:url" content="http://wind13.github.io/2017/12/31/index/index.html">
+<meta property="og:site_name" content="Wind13&#39;s Blog">
+<meta property="og:description" content="学用Play!和Scala做软件本站收集Play1.x相关 停止SSH，用Play!吧  Play!技巧问答  国内一些使用Play!框架的网站  Xml 域名空间识别问题">
+<meta property="og:locale" content="zh">
+<meta property="og:updated_time" content="2018-07-31T02:08:24.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Wind13 的 Blog 之 原来的首页">
+<meta name="twitter:description" content="学用Play!和Scala做软件本站收集Play1.x相关 停止SSH，用Play!吧  Play!技巧问答  国内一些使用Play!框架的网站  Xml 域名空间识别问题">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Wind13's Blog" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://wind13.github.io/2017/12/31/index/">
+
+
+  <title>Wind13 的 Blog 之 原来的首页 | Wind13's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wind13's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+	<h1 class="post-title" itemprop="name headline">Wind13 的 Blog 之 原来的首页</h1>
+
+
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <!-- {*
+## 小工具或示例
+
+* [TOC疑云图小工具](/example/jsui/thinktools/#/cloud) （使用 AngularJS 开发）
+* [BSC权重小工具](/example/bscmin.html) （使用 EmberJS 开发）
+* [JSON 转 Table 的小工具](/example/json2table.html)
+
+*} -->
+
+<h2 id="学用Play-和Scala做软件"><a href="#学用Play-和Scala做软件" class="headerlink" title="学用Play!和Scala做软件"></a>学用Play!和Scala做软件</h2><h3 id="本站收集Play1-x相关"><a href="#本站收集Play1-x相关" class="headerlink" title="本站收集Play1.x相关"></a>本站收集Play1.x相关</h3><ul>
+<li><p><a href="!--￼0--">停止SSH，用Play!吧</a></p>
+</li>
+<li><p><a href="!--￼1--">Play!技巧问答</a></p>
+</li>
+<li><p><a href="!--￼2--">国内一些使用Play!框架的网站</a></p>
+</li>
+<li><p><a href="!--￼3--">Xml 域名空间识别问题</a></p>
+</li>
+</ul>
+<a id="more"></a>
+
+<ul>
+<li><p><a href="http://liuu.iteye.com/blog/599129" target="_blank" rel="noopener">Playing Play!系列之一：Play框架的暴力美学</a></p>
+</li>
+<li><p><a href="http://liuu.iteye.com/blog/629586" target="_blank" rel="noopener">Playing Play!系列之二：再见Servlet，Play框架的启动</a></p>
+</li>
+<li><p><a href="http://liuu.iteye.com/blog/679437" target="_blank" rel="noopener">Playing Play!系列之三：不必Servlet3，Play框架的异步请求处理之道</a></p>
+</li>
+<li><p><a href="http://moshihao.com/?p=350" target="_blank" rel="noopener">playframework 学习实践(一) – Play框架概述</a></p>
+</li>
+<li><p><a href="http://moshihao.com/?p=359" target="_blank" rel="noopener">playframework 学习实践(二) – 搭建play开发环境</a></p>
+</li>
+<li><p><a href="http://moshihao.com/?p=388" target="_blank" rel="noopener">playframework 学习实践(三) – Hello World , play!</a></p>
+</li>
+<li><p><a href="http://moshihao.com/?p=399" target="_blank" rel="noopener">playframework 学习实践(四) – 配置你喜欢的IDE</a></p>
+</li>
+<li><p><a href="http://wind13.blog.163.com/blog/static/2482349201010171145628/" target="_blank" rel="noopener">Play framework 技巧记录</a></p>
+</li>
+<li><p><a href="http://wind13.blog.163.com/blog/static/248234920114462120998/" target="_blank" rel="noopener">Play framework 技巧记录 二</a></p>
+</li>
+</ul>
+<h2 id="软件开发相关"><a href="#软件开发相关" class="headerlink" title="软件开发相关"></a>软件开发相关</h2><ul>
+<li><p><a href="!--￼4--">编程知识链接收集</a></p>
+</li>
+<li><p><a href="!--￼5--">编程自学之路（个人建议供参考）</a></p>
+</li>
+</ul>
+<h3 id="其他相关技术"><a href="#其他相关技术" class="headerlink" title="其他相关技术"></a><a href="!--￼6--">其他相关技术</a></h3><h2 id="管理相关知识"><a href="#管理相关知识" class="headerlink" title="管理相关知识"></a>管理相关知识</h2><p>管理从思想上来说是哲学的，从理论上来说是科学的，从操作上来说是艺术的。——余世维</p>
+<ul>
+<li><a href="!--￼7--">Toc术语</a></li>
+<li><a href="!--￼8--">如何制定和落实一项有效的改善方案？</a></li>
+<li><a href="!--￼9--">罗辑思维听后记录</a></li>
+</ul>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/C0vuUl-QVdPR4GbCZBWu3A" target="_blank" rel="noopener">用了半天OKR，结果还是KPI？二者区别看这里</a></li>
+</ul>
+<h2 id="常用在线工具"><a href="#常用在线工具" class="headerlink" title="常用在线工具"></a>常用在线工具</h2><ul>
+<li><p><a href="http://tool.oschina.net/regex" target="_blank" rel="noopener">正则表达式测试</a></p>
+</li>
+<li><p><a href="http://tool.oschina.net/diff" target="_blank" rel="noopener">代码对比/归并</a></p>
+</li>
+<li><p><a href="http://tool.oschina.net/jscompress" target="_blank" rel="noopener">JS代码压缩</a></p>
+</li>
+<li><p><a href="http://tool.oschina.net/encrypt?type=3" target="_blank" rel="noopener">BASE64编码解码</a></p>
+</li>
+<li><p><a href="http://tool.oschina.net/csv2tb" target="_blank" rel="noopener">CSV转HTML表格</a></p>
+</li>
+<li><p><a href="http://tool.oschina.net/codeformat/json" target="_blank" rel="noopener">JSON代码格式化</a></p>
+</li>
+<li><p><a href="http://tool.oschina.net/codeformat/js" target="_blank" rel="noopener">JS代码格式化</a></p>
+</li>
+</ul>
+<h2 id="相关的网站"><a href="#相关的网站" class="headerlink" title="相关的网站"></a>相关的网站</h2><ul>
+<li><p><a href="http://www.playframework.com" target="_blank" rel="noopener">Playframework官方网站</a>简洁明快，特别适合开发Web应用软件，1.2.5版本实践中…</p>
+</li>
+<li><p><a href="http://spray.io/" target="_blank" rel="noopener">Spray官方网站</a>一套值得关注的基于<a href="http://www.scala-lang.org/" target="_blank" rel="noopener">Scala</a>和<a href="http://akka.io/" target="_blank" rel="noopener">Akka</a>的轻量REST/HTTP解决方案。</p>
+</li>
+<li><p><a href="http://www.oopsplay.org" target="_blank" rel="noopener">中国Play官方社区</a></p>
+</li>
+<li><p><a href="http://cn.tanshuai.com/a/getting-started-scala-play" target="_blank" rel="noopener">关于Play2的一个非常好的入门教程</a></p>
+</li>
+<li><p><a href="http://www.scala-lang.org/" target="_blank" rel="noopener">Scala语言</a>，结合面向对象与函数式编程，更好地加强了软件的可扩展性，学习中……</p>
+</li>
+<li><p><a href="http://zh.scala-tour.com/#/welcome" target="_blank" rel="noopener">Scala指南</a></p>
+</li>
+<li><p><a href="https///github.com/playframework/play20/wiki">Play!2.0官方文档</a>，在github开源。</p>
+</li>
+<li><p><a href="http://play-framework.herokuapp.com/" target="_blank" rel="noopener">国内中文文档翻译</a>，Play!文档中文化QQ群：168013302，在兴趣的可以帮忙翻译</p>
+</li>
+<li><p><a href="https///github.com/hotplay/playframework-document-cn">在github上的项目网址</a></p>
+</li>
+<li><p><a href="http://code.google.com/p/play-cms/" target="_blank" rel="noopener">一个非常简单的内嵌CMS模块（play-cms module）</a></p>
+</li>
+</ul>
+<h2 id="生活智慧"><a href="#生活智慧" class="headerlink" title="生活智慧"></a>生活智慧</h2><p><a href="wiki/FunnyClassic">有趣经典收集</a></p>
+<h2 id="关于本站的一些说明"><a href="#关于本站的一些说明" class="headerlink" title="关于本站的一些说明"></a>关于本站的一些说明</h2><p>一切才刚刚开始，希望大家多支持……</p>
+<p>如果您需要信息化方面一些好的解决方案，</p>
+<p>请给我发邮件：wind13 AT 163 DOT com！</p>
+<p>当然，你也可以说点别的……</p>
+<p>环境保护，只要你是人类，就应该反思！从节约资源开始吧！<br>志同道合（<a href="http://coolshell.cn/articles/7186.html" target="_blank" rel="noopener">做个环保主义的程序员</a>）的技术博客：<a href="http://coolshell.cn/" target="_blank" rel="noopener">酷壳CoolShell</a></p>
+
+        
+      </div>
+      
+      
+      
+    </div>
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Simon J S Wind13 Liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">89</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">98</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#学用Play-和Scala做软件"><span class="nav-number">1.</span> <span class="nav-text">学用Play!和Scala做软件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本站收集Play1-x相关"><span class="nav-number">1.1.</span> <span class="nav-text">本站收集Play1.x相关</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#软件开发相关"><span class="nav-number">2.</span> <span class="nav-text">软件开发相关</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#其他相关技术"><span class="nav-number">2.1.</span> <span class="nav-text">其他相关技术</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#管理相关知识"><span class="nav-number">3.</span> <span class="nav-text">管理相关知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用在线工具"><span class="nav-number">4.</span> <span class="nav-text">常用在线工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相关的网站"><span class="nav-number">5.</span> <span class="nav-text">相关的网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生活智慧"><span class="nav-number">6.</span> <span class="nav-text">生活智慧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于本站的一些说明"><span class="nav-number">7.</span> <span class="nav-text">关于本站的一些说明</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Simon J S Wind13 Liu</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname,
+            owner: 'wind13',
+            repo: 'wind13.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '567b199e73fe5024b689971fac5a78fc3da64821',
+            
+                client_id: 'b3eba2d74cdccd08c0bb'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
