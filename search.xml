@@ -3,9 +3,12 @@
   <entry>
     <title><![CDATA[Rust Learning]]></title>
     <url>%2F2019%2F10%2F04%2Frust-learning%2F</url>
-    <content type="text"><![CDATA[Rust Learning Julia、Rust、F#、Go编程语言游览和感想 Rust, Julia, and Go_ Disruptive New Programming Languages Changing the Face of C 新兴的函数式编程语言（如 Elixir 或 Elm） 从实际应用角度来看，Rust更偏向于底层，旨在替换C语言与C++，Golang旨在替换Java与C#。 Rust语言本身不依赖于虚拟机与GC，没有运行时，跨平台，主要靠一套所有权、生命周期、类型系统维护着语言的本身，语言高度抽象。 Golang 语言需要依赖于GC，自动垃圾回收，自带协程，快速编译，跨平台。 Rust 是一门入门门槛较高的语言，所有权与生命周期阻碍了不知多少的编程者。而go语言，入门较容易，学过类C语言同学，基本看一下语法就能入手写代码。 Rust by Example [oeasy]教您玩转rust编程视频教程 使用Rust编写操作系统（一）：独立式可执行程序 Rust与go在网上吵的比较大区别是，Rust有泛型，而Go没有。 做网络服务选Go， 上手比较简单。做系统用Rust, 它就是未来的系统语言。 如何利用科大源提速Cargo和Rust Writing an OS in Rust CS140E: Operating Systems Design and Implementation 一个Rust OS的专栏 Julia 是新晋发布1.0版本的科学计算类语言，号称兼具C++、python、matlab的优点。 孩子的编程语言 V 语言强势登顶 GitHub TOP1，难道要取 Go 而代之？ vlang Comparison of V and Other Languages]]></content>
+    <content type="text"><![CDATA[Rust Learning Julia、Rust、F#、Go编程语言游览和感想 Rust, Julia, and Go_ Disruptive New Programming Languages Changing the Face of C 新兴的函数式编程语言（如 Elixir 或 Elm） 从实际应用角度来看，Rust更偏向于底层，旨在替换C语言与C++，Golang旨在替换Java与C#。 Rust语言本身不依赖于虚拟机与GC，没有运行时，跨平台，主要靠一套所有权、生命周期、类型系统维护着语言的本身，语言高度抽象。 Golang 语言需要依赖于GC，自动垃圾回收，自带协程，快速编译，跨平台。 Rust 是一门入门门槛较高的语言，所有权与生命周期阻碍了不知多少的编程者。而go语言，入门较容易，学过类C语言同学，基本看一下语法就能入手写代码。 Rust by Example The Rust Programming Language The Cargo Book The Rust Playground [oeasy]教您玩转rust编程视频教程 使用Rust编写操作系统（一）：独立式可执行程序 Rust与go在网上吵的比较大区别是，Rust有泛型，而Go没有。 做网络服务选Go， 上手比较简单。做系统用Rust, 它就是未来的系统语言。 如何利用科大源提速Cargo和Rust Writing an OS in Rust CS140E: Operating Systems Design and Implementation 一个Rust OS的专栏 Julia 是新晋发布1.0版本的科学计算类语言，号称兼具C++、python、matlab的优点。 孩子的编程语言 V 语言强势登顶 GitHub TOP1，难道要取 Go 而代之？ vlang Comparison of V and Other Languages]]></content>
       <tags>
         <tag>rust</tag>
+        <tag>golang</tag>
+        <tag>julia</tag>
+        <tag>vlang</tag>
       </tags>
   </entry>
   <entry>
