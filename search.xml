@@ -12,7 +12,7 @@
   <entry>
     <title><![CDATA[Rust Learning]]></title>
     <url>%2F2019%2F10%2F04%2Frust-learning%2F</url>
-    <content type="text"><![CDATA[Rust LearningReferences Julia、Rust、F#、Go编程语言游览和感想 Rust, Julia, and Go_ Disruptive New Programming Languages Changing the Face of C 新兴的函数式编程语言（如 Elixir 或 Elm） 从实际应用角度来看，Rust更偏向于底层，旨在替换C语言与C++，Golang旨在替换Java与C#。 Rust语言本身不依赖于虚拟机与GC，没有运行时，跨平台，主要靠一套所有权、生命周期、类型系统维护着语言的本身，语言高度抽象。 Golang 语言需要依赖于GC，自动垃圾回收，自带协程，快速编译，跨平台。 Rust 是一门入门门槛较高的语言，所有权与生命周期阻碍了不知多少的编程者。而go语言，入门较容易，学过类C语言同学，基本看一下语法就能入手写代码。 Rust Book Rust by Example Rustlings Small exercises to get you used to reading and writing Rust code! The Rust Programming Language The Cargo Book The Rust Playground Rust.cc Rust语言中文社区 Rust Force CN Rust in Motion Need to buy $39.99 Web Rocket is a web framework for Rust with flexibility, usability, or type safety. Ruby and Rails Haskell and Yesod Python and Bottle or Flask IRON extensible web framework for rust GUI conrod An easy-to-use, 2D GUI library written entirely in Rust. druid Data-oriented Rust UI design toolkit. libui-rs Rust bindings to the minimalist, native, cross-platform UI toolkit libui Are we GUI Yet? Other [oeasy]教您玩转rust编程视频教程 使用Rust编写操作系统（一）：独立式可执行程序 不能使用线程、文件、堆内存、网络、随机数、标准输出，或其它任何需要操作系统抽象和特定硬件的特性； 可以使用迭代器、闭包、模式匹配、Option、Result、字符串格式化，当然还有所有权系统。 需要创建一个独立于操作系统的可执行程序，被称作独立式可执行程序（freestanding executable）或裸机程序（bare-metal executable)。 独立式可执行程序并不能访问Rust运行时或crt0库，需要定义自己的入口点，即重写整个crt0库和它定义的入口点。 Rust与go在网上吵的比较大区别是，Rust有泛型，而Go没有。 做网络服务选Go， 上手比较简单。做系统用Rust, 它就是未来的系统语言。 如何利用科大源提速Cargo和Rust Writing an OS in Rust CS140E: Operating Systems Design and Implementation 一个Rust OS的专栏 Julia 是新晋发布1.0版本的科学计算类语言，号称兼具C++、python、matlab的优点。 孩子的编程语言 V 语言强势登顶 GitHub TOP1，难道要取 Go 而代之？ vlang Comparison of V and Other Languages Learn web MDN web docs Key points数据竞争 对于所有的类型T和任意的生命周期参数‘a，都能衍生出两种类型：&amp;’a T 和 &amp;mut ‘a T。 &amp;’a T 相当于T的读取器，持有T的读锁， &amp;mut ‘a T 相当于T的写入器，持有T的写锁。 编译器里有一个工具borrowck，在编译时会自动检查这两种类型的使用情况，如果有非法的使用，就报错，不让你编译通过。同样地，当你手中还持有着对一个值的引用时，编译器不允许将其移动或者销毁。这样，就杜绝了野指针现象和数据竞争问题。 12let rb0 = &amp;b;let rb1 = &amp;mut b; 值传递 Rust 的默认的值的传递是：转移。不管是赋值还是函数调用时的参数和返回值，都是这样。 分类体系(taxonomy) 开放的分类，使用泛型；封闭的分类，使用枚举(ADT)。 开放的全分类：Type + Trait]]></content>
+    <content type="text"><![CDATA[Rust LearningReferences Julia、Rust、F#、Go编程语言游览和感想 Rust, Julia, and Go_ Disruptive New Programming Languages Changing the Face of C 新兴的函数式编程语言（如 Elixir 或 Elm） 从实际应用角度来看，Rust更偏向于底层，旨在替换C语言与C++，Golang旨在替换Java与C#。 Rust语言本身不依赖于虚拟机与GC，没有运行时，跨平台，主要靠一套所有权、生命周期、类型系统维护着语言的本身，语言高度抽象。 Golang 语言需要依赖于GC，自动垃圾回收，自带协程，快速编译，跨平台。 Rust 是一门入门门槛较高的语言，所有权与生命周期阻碍了不知多少的编程者。而go语言，入门较容易，学过类C语言同学，基本看一下语法就能入手写代码。 Rust Book Rust by Example Rustlings Small exercises to get you used to reading and writing Rust code! The Rust Programming Language The Cargo Book The Rust Playground Rust.cc Rust语言中文社区 Rust Force CN Rust in Motion Need to buy $39.99 Web Rocket is a web framework for Rust with flexibility, usability, or type safety. Ruby and Rails Haskell and Yesod Python and Bottle or Flask IRON extensible web framework for rust GUI conrod An easy-to-use, 2D GUI library written entirely in Rust. druid Data-oriented Rust UI design toolkit. libui-rs Rust bindings to the minimalist, native, cross-platform UI toolkit libui Are we GUI Yet? Other [oeasy]教您玩转rust编程视频教程 使用Rust编写操作系统（一）：独立式可执行程序 不能使用线程、文件、堆内存、网络、随机数、标准输出，或其它任何需要操作系统抽象和特定硬件的特性； 可以使用迭代器、闭包、模式匹配、Option、Result、字符串格式化，当然还有所有权系统。 需要创建一个独立于操作系统的可执行程序，被称作独立式可执行程序（freestanding executable）或裸机程序（bare-metal executable)。 独立式可执行程序并不能访问Rust运行时或crt0库，需要定义自己的入口点，即重写整个crt0库和它定义的入口点。 Rust与go在网上吵的比较大区别是，Rust有泛型，而Go没有。 做网络服务选Go， 上手比较简单。做系统用Rust, 它就是未来的系统语言。 将Rust编译成库 Rust初步（六）：在C#中使用Rust组件 Rust vs. C++：性能大比拼 如何利用科大源提速Cargo和Rust Writing an OS in Rust CS140E: Operating Systems Design and Implementation 一个Rust OS的专栏 Julia 是新晋发布1.0版本的科学计算类语言，号称兼具C++、python、matlab的优点。 孩子的编程语言 V 语言强势登顶 GitHub TOP1，难道要取 Go 而代之？ vlang Comparison of V and Other Languages Learn web MDN web docs Key points 理解所有权：What is Ownership Copy Move Clone 理解引用和借用：References and Borrowing &amp; 引用 (&amp;) 借用 We call having references as function parameters borrowing 我们称“将引用作为函数参数”为“借用” 解引用 数据竞争 对于所有的类型T和任意的生命周期参数‘a，都能衍生出两种类型：&amp;’a T 和 &amp;mut ‘a T。 &amp;’a T 相当于T的读取器，持有T的读锁， &amp;mut ‘a T 相当于T的写入器，持有T的写锁。 编译器里有一个工具borrowck，在编译时会自动检查这两种类型的使用情况，如果有非法的使用，就报错，不让你编译通过。同样地，当你手中还持有着对一个值的引用时，编译器不允许将其移动或者销毁。这样，就杜绝了野指针现象和数据竞争问题。 12let rb0 = &amp;b;let rb1 = &amp;mut b; 值传递 Rust 的默认的值的传递是：转移。不管是赋值还是函数调用时的参数和返回值，都是这样。 分类体系(taxonomy) 开放的分类，使用泛型；封闭的分类，使用枚举(ADT)。 开放的全分类：Type + Trait]]></content>
       <tags>
         <tag>rust</tag>
         <tag>golang</tag>
@@ -174,7 +174,7 @@
   <entry>
     <title></title>
     <url>%2F2018%2F02%2F07%2FDocker-%E5%AD%A6%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[Docker 学习 title: Docker 学习tags: [Docker]date: 2018-02-07 16:18:26 快速入门心法官网文档也好，网上其他的教程也好，都非常有“耐心”，一点点地教你怎么理解和使用 docker，但我在看这些教程和文档的时候其实很着急，因为我只想快速入门并且用起来，而且最好是按最佳实践的路子用起来，而不是象个初学者那样慢慢摸索。但就是没人把这条捷径说清楚…… 下面我就我所知道和理解的内容，写一点快速入门的心法： 首先知道 docker 大概是个什么？ 就我的理解，直白地说：就是一个轻量的虚拟机，在一个基本的内核基础上，层层叠加出想要的虚拟机环境。 同时要注意一个重要概念，类似于微服务概念，每一个 docker 虚拟机里面一般只做一件事，只支持一个服务，例如： web 服务、 hexo 博客服务等； 其次要知道拿 docker 来有什么用，最主要的用途在哪儿？ 目前就我的使用情况来说，就是一些开发部署环境在本机搭建起来很麻烦，不同的操作系统还有所不同，还要在本机安装一堆的包，还要在本机进行很多配置，而使用 docker 之后，就可以不用在本机安装了，本机干净了，又能快捷享用 docker 虚拟机中提供的服务。 保证应用项目在不同的主机上运行时一致，因为都是运行在 docker 中的，所以各种操作系统，各个电脑打开项目，只要正常安装了 docker 后，启动运行起来，都象是在 linux 中一样，因为 docker 虚拟机基本都是基于 linux 操作系统的。 如何快速入门使用？ 首先要有一定的基础，否则会遇到太多阻碍，个人觉得是要对 linux 系统的基础操作和一些工作模式要有一定的熟悉和了解，特别是网络方面比较清楚会有比较大的帮助，另外了解 git 的使用流程和基本命令会比较有帮助，对于理解 docker 这种虚拟机的管理模式也会比较有帮助，当然有一定的编程基础，熟悉一些语言开发也是必须的，毕竟 docker 就是帮助开发部署环境用的。 快捷路线就是 docker-compose 了，别在 docker 命令上花费太多时间，只要把 docker 和 docker-compose 安装好后，就直接找一两个 docker-compose 构建的开源项目来尝试，运行 docker-compose up 就可以了，这本来也就是使用 docker 后最大的好处之一，只需要一个命令，有 docker 镜像就启动服务，没有就相应地创建或下载，总之不用操心怎么安装环境什么的。 另一个注意点是尽量选择那些以 alpine 为基础的镜像，文件占空间小。 以上只是心法，具体的知识和教程可参考下面的内容，网上也多得是： 参考链接 使用 mongo docker 镜像 docker-compose使用示例 Docker Compose 配置文件详解 其中第15项 links 启发了我写数据库连接的方式：mongodb://admin:rootadmin@mgdb:27017/coral-reef 基本概念传统虚拟机：虚拟硬件和完整的操作系统，再运行应用；容器：运行于宿主的内核，没有自己的内核，没有硬件虚拟。 Docker 包括三个基本概念，涉及 Docker 的整个生命周期。 镜像（Image）[类]：由多层文件系统联合组成，支持容器运行和配置参数，无动态数据。 容器（Container）[实例]：运行于独立命名空间的进程，以镜像为基础层，之上是容器存储层（会随容器消亡）。数据卷不会消亡。容器是拥有不同 IP 地址从而使其成为网络上可识别的独立 Linux 进程。容器依赖于镜像，如果想删除某个镜像，必须先删除相应的容器。 仓库（Repository）：Docker Registry =&gt; Repository =&gt; Tag == Image，”repository:tag”，一个镜像可以对应多个标签 tag。 虚悬镜像（Dangling image）：docker pull 或 docker build 导致标签指向新镜像，旧的无标签镜像变成虚悬镜像。 黑箱镜像：使用 docker commit 意味着所有对镜像的操作都是黑箱操作，生成的镜像也被称为黑箱镜像。 数据卷：volume Docker 网络强烈建议大家将容器加入自定义的 Docker 网络来连接多个容器，而不是使用 –link 参数。 创建一个新的 Docker 网络1docker network create -d bridge my-net docker 命令使用 COPY 指令，源文件的各种元数据都会保留。比如读、写、执行权限、文件变更时间等。这个特性对于镜像定制很有用。特别是构建相关文件都在使用 Git 进行管理的时候。 docker主命令不要用后台运行，容器就是为了主进程而存在的，主进程退出，容器就失去了存在的意义，从而退出。正确的做法是直接执行 nginx 可执行文件，并且要求以前台形式运行。比如： CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;] Docker run 详解当利用 docker run 来创建容器时，Docker 在后台运行的标准操作包括： 检查本地是否存在指定的镜像，不存在就从公有仓库下载 利用镜像创建并启动一个容器 分配一个文件系统，并在只读的镜像层外面挂载一层可读写层 从宿主主机配置的网桥接口中桥接一个虚拟接口到容器中去 从地址池配置一个 ip 地址给容器 执行用户指定的应用程序 执行完毕后容器被终止 Docker Registry 公开服务镜像服务被称为加速器。常见的有 阿里云加速器、DaoCloud 加速器 等。 国内也有一些云服务商提供类似于 Docker Hub 的公开服务。比如 时速云镜像仓库、网易云镜像服务、DaoCloud 镜像市场、阿里云镜像库 等。 docker 编译一个 Dockerfile1docker build -t friendlyhello . 列出系统中的所有镜像：1234docker imagesREPOSITORY TAG IMAGE IDfriendlyhello latest 326387cea398 删除所有虚悬镜像：1docker image prune 删除所有无主的数据卷：1docker volume prune 删除本地镜像：1234567docker image rm [选项] &lt;镜像1&gt; [&lt;镜像2&gt; ...]# 删除所有仓库名为 redis 的镜像docker image rm $(docker image ls -q redis)# 删除所有在 mongo:3.2 之前的镜像docker image rm $(docker image ls -q -f before=mongo:3.2) 查看镜像的历史记录1docker history ubuntu:latest 在某个端口映射下启动该镜像：1docker run -p 4000:80 friendlyhello 1docker run -it --rm ubuntu:16.04 bash -i：交互； -t：终端； –rm 容器退出后将其删除； 12# 用 nginx 镜像启动一个容器，命名为 webserver，并且映射了 80 端口docker run --name webserver -d -p 80:80 nginx 查看映射端口配置1docker port webserver 进入某个运行中的容器 bash1docker exec -it webserver bash 查看镜像、容器、数据卷所占用的空间1docker system df 列出系统中启动的容器：1234docker container lsCONTAINER ID IMAGE COMMAND CREATED1fa4ab2cf395 friendlyhello "python app.py" 28 seconds ago 关闭某个容器：1docker container stop 1fa4ab2cf395 Services12345678docker stack ls # List stacks or appsdocker stack deploy -c &lt;composefile&gt; &lt;appname&gt; # Run the specified Compose filedocker service ls # List running services associated with an appdocker service ps &lt;service&gt; # List tasks associated with an appdocker inspect &lt;task or container&gt; # Inspect task or containerdocker container ls -q # List container IDsdocker stack rm &lt;appname&gt; # Tear down an applicationdocker swarm leave --force # Take down a single node swarm from the manager docker 命令帮助123456789101112131415161718192021222324252627282930313233343536373839404142434445464748Commands: attach Attach to a running container # 当前 shell 下 attach 连接指定运行镜像 build Build an image from a Dockerfile # 通过 Dockerfile 定制镜像 commit Create a new image from a container's changes # 提交当前容器为新的镜像 cp Copy files/folders from the containers filesystem to the host path # 从容器中拷贝指定文件或者目录到宿主机中 create Create a new container # 创建一个新的容器，同 run，但不启动容器 diff Inspect changes on a container's filesystem # 查看 docker 容器变化 events Get real time events from the server # 从 docker 服务获取容器实时事件 exec Run a command in an existing container # 在已存在的容器上运行命令 export Stream the contents of a container as a tar archive # 导出容器的内容流作为一个 tar 归档文件[对应 import ] history Show the history of an image # 展示一个镜像形成历史 images List images # 列出系统当前镜像 import Create a new filesystem image from the contents of a tarball # 从tar包中的内容创建一个新的文件系统映像[对应 export] info Display system-wide information # 显示系统相关信息 inspect Return low-level information on a container # 查看容器详细信息 kill Kill a running container # kill 指定 docker 容器 load Load an image from a tar archive # 从一个 tar 包中加载一个镜像[对应 save] login Register or Login to the docker registry server # 注册或者登陆一个 docker 源服务器 logout Log out from a Docker registry server # 从当前 Docker registry 退出 logs Fetch the logs of a container # 输出当前容器日志信息 port Lookup the public-facing port which is NAT-ed to PRIVATE_PORT # 查看映射端口对应的容器内部源端口 pause Pause all processes within a container # 暂停容器 ps List containers # 列出容器列表 pull Pull an image or a repository from the docker registry server # 从docker镜像源服务器拉取指定镜像或者库镜像 push Push an image or a repository to the docker registry server # 推送指定镜像或者库镜像至docker源服务器 restart Restart a running container # 重启运行的容器 rm Remove one or more containers # 移除一个或者多个容器 rmi Remove one or more images # 移除一个或多个镜像[无容器使用该镜像才可删除，否则需删除相关容器才可继续或 -f 强制删除] run Run a command in a new container # 创建一个新的容器并运行一个命令 save Save an image to a tar archive # 保存一个镜像为一个 tar 包[对应 load] search Search for an image on the Docker Hub # 在 docker hub 中搜索镜像 start Start a stopped containers # 启动容器 stop Stop a running containers # 停止容器 tag Tag an image into a repository # 给源中镜像打标签 top Lookup the running processes of a container # 查看容器中运行的进程信息 unpause Unpause a paused container # 取消暂停容器 version Show the docker version information # 查看 docker 版本号 wait Block until a container stops, then print its exit code # 截取容器停止时的退出状态值 Docker 高级网络工具和示例在介绍自定义网络拓扑之前，你可能会对一些外部工具和例子感兴趣： pipeworkJérôme Petazzoni 编写了一个叫 pipework 的 shell 脚本，可以帮助用户在比较复杂的场景中完成容器的连接。 playgroundBrandon Rhodes 创建了一个提供完整的 Docker 容器网络拓扑管理的 Python库，包括路由、NAT 防火墙；以及一些提供 HTTP, SMTP, POP, IMAP, Telnet, SSH, FTP 的服务器。 Docker 官方三剑客Docker Compose 项目 服务 (service)：一个应用容器，实际上可以运行多个相同镜像的实例。 项目 (project)：由一组关联的应用容器组成的一个完整业务单元。 Docker Machine 项目在多种平台上快速安装 Docker 环境，在 macOS 上安装 xhyve 虚拟机支持： 1brew install docker-machine-driver-xhyve Docker Swarm mode 项目提供 Docker 容器集群服务，具有容错能力的去中心化设计、内置服务发现、负载均衡、路由网格、动态伸缩、滚动更新、安全传输等。与 Kubernetes 是竞争关系。 巅峰对决之Swarm、Kubernetes、Mesos Kubernetes vs Docker Swarm 选择焦虑症のKubernetes 与 Docker Swarm 使用方法：初始化一个 Swarm 集群：123docker swarm init --advertise-addr 192.168.99.100Swarm initialized: current node (7t2kqs1cmbw3r54921y9ofdcu) is now a manager. To add a worker to this swarm, run the following command: 1docker swarm join --token SWMTKN-1-4l54p60fpaumw188uk5yea8l3z0sd80q6ydiav0e8r12w5cog1-8i70bpp0wtxggiemi2wx63f3g 192.168.99.100:2377 To add a manager to this swarm, run ‘docker swarm join-token manager’ and follow the instructions. 添加一个虚拟机后，加入此 swarm 遇到如下报错：1Error response from daemon: rpc error: code = Unavailable desc = grpc: the connection is unavailable KubernetesKubernetes 是 Google 团队发起的开源项目，它的目标是管理跨多个主机的容器，提供基本的部署，维护以及运用伸缩，主要实现语言为 Go 语言。 Kubernetes 实际上是一个希腊词κυβερνήτης，意思是”船的舵手”。 在这个意义上， Kubernetes 对于 Docker (集装箱船)倒是挺般配的。 kubernetes 架构简介 Kubernetes By Example 非常棒的 K8s 学习网站 OSvOSv is the open source operating system designed for the cloud. MobyMoby defines the future in specialized container systems building. An open framework to assemble specialized container systems without reinventing the wheel. 似乎是更高、更深层定制化容器的工具，示例：LinuxKit 开源项目中几个文件各是什么意思？ Dockerfile 运行时的 docker 镜像生成文件，docker build . 并执行 docker run the-id-build 可尝试。 Capstanfile 是 OSv 的镜像生成文件。 Procfile 是 Heroku 的运行时命令文件。]]></content>
+    <content type="text"><![CDATA[Docker 学习 title: Docker 学习tags: [Docker]date: 2018-02-07 16:18:26 快速入门心法官网文档也好，网上其他的教程也好，都非常有“耐心”，一点点地教你怎么理解和使用 docker，但我在看这些教程和文档的时候其实很着急，因为我只想快速入门并且用起来，而且最好是按最佳实践的路子用起来，而不是象个初学者那样慢慢摸索。但就是没人把这条捷径说清楚…… 下面我就我所知道和理解的内容，写一点快速入门的心法： 首先知道 docker 大概是个什么？ 就我的理解，直白地说：就是一个轻量的虚拟机，在一个基本的内核基础上，层层叠加出想要的虚拟机环境。 同时要注意一个重要概念，类似于微服务概念，每一个 docker 虚拟机里面一般只做一件事，只支持一个服务，例如： web 服务、 hexo 博客服务等； 其次要知道拿 docker 来有什么用，最主要的用途在哪儿？ 目前就我的使用情况来说，就是一些开发部署环境在本机搭建起来很麻烦，不同的操作系统还有所不同，还要在本机安装一堆的包，还要在本机进行很多配置，而使用 docker 之后，就可以不用在本机安装了，本机干净了，又能快捷享用 docker 虚拟机中提供的服务。 保证应用项目在不同的主机上运行时一致，因为都是运行在 docker 中的，所以各种操作系统，各个电脑打开项目，只要正常安装了 docker 后，启动运行起来，都象是在 linux 中一样，因为 docker 虚拟机基本都是基于 linux 操作系统的。 如何快速入门使用？ 首先要有一定的基础，否则会遇到太多阻碍，个人觉得是要对 linux 系统的基础操作和一些工作模式要有一定的熟悉和了解，特别是网络方面比较清楚会有比较大的帮助，另外了解 git 的使用流程和基本命令会比较有帮助，对于理解 docker 这种虚拟机的管理模式也会比较有帮助，当然有一定的编程基础，熟悉一些语言开发也是必须的，毕竟 docker 就是帮助开发部署环境用的。 快捷路线就是 docker-compose 了，别在 docker 命令上花费太多时间，只要把 docker 和 docker-compose 安装好后，就直接找一两个 docker-compose 构建的开源项目来尝试，运行 docker-compose up 就可以了，这本来也就是使用 docker 后最大的好处之一，只需要一个命令，有 docker 镜像就启动服务，没有就相应地创建或下载，总之不用操心怎么安装环境什么的。 另一个注意点是尽量选择那些以 alpine 为基础的镜像，文件占空间小。 以上只是心法，具体的知识和教程可参考下面的内容，网上也多得是： 参考链接 使用 mongo docker 镜像 docker-compose使用示例 Docker Compose 配置文件详解 其中第15项 links 启发了我写数据库连接的方式：mongodb://admin:rootadmin@mgdb:27017/coral-reef 基本概念传统虚拟机：虚拟硬件和完整的操作系统，再运行应用；容器：运行于宿主的内核，没有自己的内核，没有硬件虚拟。 Docker 包括三个基本概念，涉及 Docker 的整个生命周期。 镜像（Image）[类]：由多层文件系统联合组成，支持容器运行和配置参数，无动态数据。 容器（Container）[实例]：运行于独立命名空间的进程，以镜像为基础层，之上是容器存储层（会随容器消亡）。数据卷不会消亡。容器是拥有不同 IP 地址从而使其成为网络上可识别的独立 Linux 进程。容器依赖于镜像，如果想删除某个镜像，必须先删除相应的容器。 仓库（Repository）：Docker Registry =&gt; Repository =&gt; Tag == Image，”repository:tag”，一个镜像可以对应多个标签 tag。 虚悬镜像（Dangling image）：docker pull 或 docker build 导致标签指向新镜像，旧的无标签镜像变成虚悬镜像。 黑箱镜像：使用 docker commit 意味着所有对镜像的操作都是黑箱操作，生成的镜像也被称为黑箱镜像。 数据卷：volume Docker 网络强烈建议大家将容器加入自定义的 Docker 网络来连接多个容器，而不是使用 –link 参数。 创建一个新的 Docker 网络1docker network create -d bridge my-net docker 命令使用 COPY 指令，源文件的各种元数据都会保留。比如读、写、执行权限、文件变更时间等。这个特性对于镜像定制很有用。特别是构建相关文件都在使用 Git 进行管理的时候。 docker主命令不要用后台运行，容器就是为了主进程而存在的，主进程退出，容器就失去了存在的意义，从而退出。正确的做法是直接执行 nginx 可执行文件，并且要求以前台形式运行。比如： CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;] Docker run 详解当利用 docker run 来创建容器时，Docker 在后台运行的标准操作包括： 检查本地是否存在指定的镜像，不存在就从公有仓库下载 利用镜像创建并启动一个容器 分配一个文件系统，并在只读的镜像层外面挂载一层可读写层 从宿主主机配置的网桥接口中桥接一个虚拟接口到容器中去 从地址池配置一个 ip 地址给容器 执行用户指定的应用程序 执行完毕后容器被终止 Docker Registry 公开服务镜像服务被称为加速器。常见的有 阿里云加速器、DaoCloud 加速器 等。 国内也有一些云服务商提供类似于 Docker Hub 的公开服务。比如 时速云镜像仓库、网易云镜像服务、DaoCloud 镜像市场、阿里云镜像库 等。 docker 编译一个 Dockerfile1docker build -t friendlyhello . 列出系统中的所有镜像：1234docker imagesREPOSITORY TAG IMAGE IDfriendlyhello latest 326387cea398 删除所有虚悬镜像：1docker image prune 删除所有无主的数据卷：1docker volume prune 删除本地镜像：1234567docker image rm [选项] &lt;镜像1&gt; [&lt;镜像2&gt; ...]# 删除所有仓库名为 redis 的镜像docker image rm $(docker image ls -q redis)# 删除所有在 mongo:3.2 之前的镜像docker image rm $(docker image ls -q -f before=mongo:3.2) 查看镜像的历史记录1docker history ubuntu:latest 在某个端口映射下启动该镜像：1docker run -p 4000:80 friendlyhello 1docker run -it --rm ubuntu:16.04 bash -i：交互； -t：终端； –rm 容器退出后将其删除； 12# 用 nginx 镜像启动一个容器，命名为 webserver，并且映射了 80 端口docker run --name webserver -d -p 80:80 nginx 查看映射端口配置1docker port webserver 进入某个运行中的容器 bash1docker exec -it webserver bash 查看镜像、容器、数据卷所占用的空间1docker system df 列出系统中启动的容器：1234docker container lsCONTAINER ID IMAGE COMMAND CREATED1fa4ab2cf395 friendlyhello "python app.py" 28 seconds ago 关闭某个容器：1docker container stop 1fa4ab2cf395 Services12345678docker stack ls # List stacks or appsdocker stack deploy -c &lt;composefile&gt; &lt;appname&gt; # Run the specified Compose filedocker service ls # List running services associated with an appdocker service ps &lt;service&gt; # List tasks associated with an appdocker inspect &lt;task or container&gt; # Inspect task or containerdocker container ls -q # List container IDsdocker stack rm &lt;appname&gt; # Tear down an applicationdocker swarm leave --force # Take down a single node swarm from the manager docker 命令帮助123456789101112131415161718192021222324252627282930313233343536373839404142434445464748Commands: attach Attach to a running container # 当前 shell 下 attach 连接指定运行镜像 build Build an image from a Dockerfile # 通过 Dockerfile 定制镜像 commit Create a new image from a container's changes # 提交当前容器为新的镜像 cp Copy files/folders from the containers filesystem to the host path # 从容器中拷贝指定文件或者目录到宿主机中 create Create a new container # 创建一个新的容器，同 run，但不启动容器 diff Inspect changes on a container's filesystem # 查看 docker 容器变化 events Get real time events from the server # 从 docker 服务获取容器实时事件 exec Run a command in an existing container # 在已存在的容器上运行命令 export Stream the contents of a container as a tar archive # 导出容器的内容流作为一个 tar 归档文件[对应 import ] history Show the history of an image # 展示一个镜像形成历史 images List images # 列出系统当前镜像 import Create a new filesystem image from the contents of a tarball # 从tar包中的内容创建一个新的文件系统映像[对应 export] info Display system-wide information # 显示系统相关信息 inspect Return low-level information on a container # 查看容器详细信息 kill Kill a running container # kill 指定 docker 容器 load Load an image from a tar archive # 从一个 tar 包中加载一个镜像[对应 save] login Register or Login to the docker registry server # 注册或者登陆一个 docker 源服务器 logout Log out from a Docker registry server # 从当前 Docker registry 退出 logs Fetch the logs of a container # 输出当前容器日志信息 port Lookup the public-facing port which is NAT-ed to PRIVATE_PORT # 查看映射端口对应的容器内部源端口 pause Pause all processes within a container # 暂停容器 ps List containers # 列出容器列表 pull Pull an image or a repository from the docker registry server # 从docker镜像源服务器拉取指定镜像或者库镜像 push Push an image or a repository to the docker registry server # 推送指定镜像或者库镜像至docker源服务器 restart Restart a running container # 重启运行的容器 rm Remove one or more containers # 移除一个或者多个容器 rmi Remove one or more images # 移除一个或多个镜像[无容器使用该镜像才可删除，否则需删除相关容器才可继续或 -f 强制删除] run Run a command in a new container # 创建一个新的容器并运行一个命令 save Save an image to a tar archive # 保存一个镜像为一个 tar 包[对应 load] search Search for an image on the Docker Hub # 在 docker hub 中搜索镜像 start Start a stopped containers # 启动容器 stop Stop a running containers # 停止容器 tag Tag an image into a repository # 给源中镜像打标签 top Lookup the running processes of a container # 查看容器中运行的进程信息 unpause Unpause a paused container # 取消暂停容器 version Show the docker version information # 查看 docker 版本号 wait Block until a container stops, then print its exit code # 截取容器停止时的退出状态值 Docker 高级网络工具和示例在介绍自定义网络拓扑之前，你可能会对一些外部工具和例子感兴趣： pipeworkJérôme Petazzoni 编写了一个叫 pipework 的 shell 脚本，可以帮助用户在比较复杂的场景中完成容器的连接。 playgroundBrandon Rhodes 创建了一个提供完整的 Docker 容器网络拓扑管理的 Python库，包括路由、NAT 防火墙；以及一些提供 HTTP, SMTP, POP, IMAP, Telnet, SSH, FTP 的服务器。 Docker 官方三剑客Docker Compose 项目 服务 (service)：一个应用容器，实际上可以运行多个相同镜像的实例。 项目 (project)：由一组关联的应用容器组成的一个完整业务单元。 Docker Machine 项目在多种平台上快速安装 Docker 环境，在 macOS 上安装 xhyve 虚拟机支持： 1brew install docker-machine-driver-xhyve Docker Swarm mode 项目提供 Docker 容器集群服务，具有容错能力的去中心化设计、内置服务发现、负载均衡、路由网格、动态伸缩、滚动更新、安全传输等。与 Kubernetes 是竞争关系。 巅峰对决之Swarm、Kubernetes、Mesos Kubernetes vs Docker Swarm 选择焦虑症のKubernetes 与 Docker Swarm 使用方法：初始化一个 Swarm 集群：123docker swarm init --advertise-addr 192.168.99.100Swarm initialized: current node (7t2kqs1cmbw3r54921y9ofdcu) is now a manager. To add a worker to this swarm, run the following command: 1docker swarm join --token SWMTKN-1-4l54p60fpaumw188uk5yea8l3z0sd80q6ydiav0e8r12w5cog1-8i70bpp0wtxggiemi2wx63f3g 192.168.99.100:2377 To add a manager to this swarm, run ‘docker swarm join-token manager’ and follow the instructions. 添加一个虚拟机后，加入此 swarm 遇到如下报错：1Error response from daemon: rpc error: code = Unavailable desc = grpc: the connection is unavailable KubernetesKubernetes 是 Google 团队发起的开源项目，它的目标是管理跨多个主机的容器，提供基本的部署，维护以及运用伸缩，主要实现语言为 Go 语言。 Kubernetes 实际上是一个希腊词κυβερνήτης，意思是”船的舵手”。 在这个意义上， Kubernetes 对于 Docker (集装箱船)倒是挺般配的。 kubernetes 架构简介 Kubernetes By Example 非常棒的 K8s 学习网站 OSvOSv is the open source operating system designed for the cloud. MobyMoby defines the future in specialized container systems building. An open framework to assemble specialized container systems without reinventing the wheel. 似乎是更高、更深层定制化容器的工具，示例：LinuxKit 开源项目中几个文件各是什么意思？ Dockerfile 运行时的 docker 镜像生成文件，docker build . 并执行 docker run the-id-build 可尝试。 Capstanfile 是 OSv 的镜像生成文件。 Procfile 是 Heroku 的运行时命令文件。 问题解决 Docker-Toolbox常见问题解决方案 重启Docker主机1docker-machine restart default docker-compose up 遇到 Windows named pipe error:(code: 2) 问题1docker-machine env 然后依照提示执行类似： 1eval $("C:\Program Files\Docker Toolbox\docker-machine.exe" env) 再执行 docker-compose up 即可。]]></content>
   </entry>
   <entry>
     <title><![CDATA[两个 Lock 文件的迷惑]]></title>
@@ -235,6 +235,17 @@
     <content type="text"><![CDATA[技术选型之我见 layout: postcategories : manage agiletitle: 技术选型之我见tagline: “Architect select”tags : [architect]lang: zh 技术选型是各个技术团队架构师所面临的挑战之一，也是重要的决策之一，关系到团队技术发展的大方向，甚至决定着项目未来生存的生命力和寿命长短。 然而要做好这件选型的决策却是不那么简单，同时也没有什么特定的标准。 个人所见： 首先，要见多识广；既然是说选型，那就要有所选择，也就是说要能够博览众长，知道相关领域各式各样的技术方向，多看一些严谨的介绍文章和比较文章，做一些重点的笔记，毕竟精力是有限的，所以不可能每一个技术方向都深入研究，最终通常也只能选择三种左右来进行体验和原型测试等。平时要多看新技术社区的文章，顺藤摸瓜地去发现新的技术动向，看它们的官网，看官方文档（英文阅读是基本功），看Demo等，不要迷信商业解决方案，更多地相信开源社区的力量，关注人气较高的开源社区，注意看有些开源项目有可能维护较少或者bug较多（查看Issue列表页），那就不能轻易使用。 其次，要实事求是；最后，要勇于冒险；]]></content>
   </entry>
   <entry>
+    <title><![CDATA[DevOps技术相关]]></title>
+    <url>%2F2016%2F12%2F18%2Fdevops-collection%2F</url>
+    <content type="text"><![CDATA[DevOps技术相关相关链接 Ansible中文权威指南 所有重复的IT工作可以被自动化并分享给其他组员。 Choosing a deployment tool - ansible vs puppet vs chef vs salt 相关观点 Puppet is a similar tool to Chef Vagrant is a tool for developers and a toy for admins, you can quickly stand up a development environment with vagrant, e.g. I want to develop an android app, grab an IDE from vagrant, I think it will be overtaken by Docker soon. 我现在使用的是阿里容器服务: https://cs.console.aliyun.com ，配合阿里的虚拟主机以及代码托管(code.aliyun.com)，实在不能再方便。 创业圈的docker服务，我比较推荐http://daocloud.io，很久以前我还去他们家上海总部做过使用开发demo，这是一家很有工程师文化的企业，而且里面确实有好几个国内docker界顶级玩家。 假如你用的是VPS或者AWS什么的 首选Rex http://rexify.org/ 次选Ansible http://ansible.cc/ Docker &gt; Vagrant那针对国内可以流畅使用docker但无法正常使用vagrant的情况，作如何处理呢？ 我们团队的解决方案是将服务器部署的docker编排脚本(docker-compose)直接修改参数以适应Local开发。每次开发前，docker-compose up -d，再配以各类脚本。结果是，这样开发起来比在硅谷用Vagrant还要爽！！Vagrant所有的操作都可以用在docker中一样做，例如:复制文件: vagrant scp; docker cpssh: vagrant ssh; docker-compose exec CONTAINER /bin/sh所以，到最后，我们发现，开发部署都用docker还有一个额外好处，vagrant的开发环境到部署环境还是存在差异的，而我们开发用的起docker集群的编排脚本无需经过调试直接复制到服务器端就能一行命令解决部署:docker-compose up -d What you developed is what will be deployed. 谢谢! 作者：大杰哥链接：https://www.zhihu.com/question/32324376/answer/123239426来源：知乎著作权归作者所有，转载请联系作者获得授权。]]></content>
+      <categories>
+        <category>devtech</category>
+      </categories>
+      <tags>
+        <tag>DevOps</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[DB, SQL 技术相关]]></title>
     <url>%2F2016%2F12%2F18%2Fdb-collection%2F</url>
     <content type="text"><![CDATA[DB, SQL 技术相关Presto（中文站）是一个运行在多台服务器上的分布式系统。]]></content>
@@ -247,20 +258,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[DevOps技术相关]]></title>
-    <url>%2F2016%2F12%2F18%2Fdevops-collection%2F</url>
-    <content type="text"><![CDATA[DevOps技术相关相关链接 Ansible中文权威指南 所有重复的IT工作可以被自动化并分享给其他组员。 Choosing a deployment tool - ansible vs puppet vs chef vs salt 相关观点 Puppet is a similar tool to Chef Vagrant is a tool for developers and a toy for admins, you can quickly stand up a development environment with vagrant, e.g. I want to develop an android app, grab an IDE from vagrant, I think it will be overtaken by Docker soon. 我现在使用的是阿里容器服务: https://cs.console.aliyun.com ，配合阿里的虚拟主机以及代码托管(code.aliyun.com)，实在不能再方便。 创业圈的docker服务，我比较推荐http://daocloud.io，很久以前我还去他们家上海总部做过使用开发demo，这是一家很有工程师文化的企业，而且里面确实有好几个国内docker界顶级玩家。 假如你用的是VPS或者AWS什么的 首选Rex http://rexify.org/ 次选Ansible http://ansible.cc/ Docker &gt; Vagrant那针对国内可以流畅使用docker但无法正常使用vagrant的情况，作如何处理呢？ 我们团队的解决方案是将服务器部署的docker编排脚本(docker-compose)直接修改参数以适应Local开发。每次开发前，docker-compose up -d，再配以各类脚本。结果是，这样开发起来比在硅谷用Vagrant还要爽！！Vagrant所有的操作都可以用在docker中一样做，例如:复制文件: vagrant scp; docker cpssh: vagrant ssh; docker-compose exec CONTAINER /bin/sh所以，到最后，我们发现，开发部署都用docker还有一个额外好处，vagrant的开发环境到部署环境还是存在差异的，而我们开发用的起docker集群的编排脚本无需经过调试直接复制到服务器端就能一行命令解决部署:docker-compose up -d What you developed is what will be deployed. 谢谢! 作者：大杰哥链接：https://www.zhihu.com/question/32324376/answer/123239426来源：知乎著作权归作者所有，转载请联系作者获得授权。]]></content>
-      <categories>
-        <category>devtech</category>
-      </categories>
-      <tags>
-        <tag>DevOps</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Ionic 2 相关学习]]></title>
-    <url>%2F2016%2F11%2F08%2Flearn-ionic-v2%2F</url>
-    <content type="text"><![CDATA[基础 ionic2文档整理 A Guide to Styling an Ionic 2 Application Tips &amp; Tricks for Styling Ionic 2 Applications User-Selected Style Themes in an Ionic 2 Application Vonic简明教程（一）：起步{:target=”_blank”} SQLite plugin{:target=”_blank”} Cordova plugin NativeStorage{:target=”_blank”} Debugging Ionic 2 Apps in Chrome from Visual Studio Code{:target=”_blank”} Ionic 2 Conference Application{:target=”_blank”} Ionically Speaking{:target=”_blank”} 问题 I18n 官方文档如此{:target=”_blank”}，使用ng2-translate{:target=”_blank”}库实现。 Angular2 debug tool: Augury{:target=”_blank”} Form validation is not working with Angular 2 FormBuilder in Ionic 2{:target=”_blank”} Checkbox Group handling and Validation in Angular2{:target=”_blank”} ionic2+angular2中踩的那些坑{:target=”_blank”} (Ionic 2) Getting data from php services is undefined 解决 ionic 中的 CORS（跨域） 问题{:target=”_blank”} 跨域资源共享 CORS 详解 报以下错误，是因为 providers 填错了，应该只填 Service： 1234567891011metadata_resolver.js:499 Uncaught Error: Can&apos;t resolve all parameters for Project: (?, ?). at CompileMetadataResolver.getDependenciesMetadata (http://localhost:8100/build/main.js:23905:19) at CompileMetadataResolver.getTypeMetadata (http://localhost:8100/build/main.js:23806:26) at http://localhost:8100/build/main.js:23949:41 at Array.forEach (native) at CompileMetadataResolver.getProvidersMetadata (http://localhost:8100/build/main.js:23929:19) at CompileMetadataResolver.getDirectiveMetadata (http://localhost:8100/build/main.js:23569:34) at http://localhost:8100/build/main.js:23674:49 at Array.forEach (native) at CompileMetadataResolver.getNgModuleMetadata (http://localhost:8100/build/main.js:23668:49) at RuntimeCompiler._compileComponents (http://localhost:8100/build/main.js:39512:47) 如，将： 12345@Component(&#123; selector: 'page-prj-detail', templateUrl: 'prj-detail.html', providers: [Project]&#125; 改为： 12345@Component(&#123; selector: 'page-prj-detail', templateUrl: 'prj-detail.html', providers: [ProjectService]&#125; 遇到这个错误，可能是html界面的方法与ts中的方法对不上。 1234567891011polyfills.js:3 Uncaught TypeError: exceptionHandler.handleError is not a functionat Object.next (http://localhost:8100/build/main.js:26130:82) at SafeSubscriber.schedulerFn [as _next] (http://localhost:8100/build/main.js:27643:52) at SafeSubscriber.__tryOrUnsub (http://localhost:8100/build/main.js:9761:16) at SafeSubscriber.next (http://localhost:8100/build/main.js:9710:22) at Subscriber._next (http://localhost:8100/build/main.js:9663:26) at Subscriber.next (http://localhost:8100/build/main.js:9627:18) at EventEmitter.Subject.next (http://localhost:8100/build/main.js:11949:25) at EventEmitter.emit (http://localhost:8100/build/main.js:27635:76) at NgZone.triggerError (http://localhost:8100/build/main.js:28451:76) at Object.onHandleError (http://localhost:8100/build/main.js:28430:23) 编译时遇到这个错误： 12345[23:13:04] Error: Error at [project path]/.tmp/pages/statis/projects.ngfactory.ts:351:29[23:13:04] Supplied parameters do not match any signature of call target.[23:13:04] ngc failed[23:13:04] ionic-app-script task: &quot;build&quot;[23:13:04] Error: Error 一般说明在程序的某处有个方法需求的参数与提供的参数对应不上，在build时无法通过，但在ionic serve时可正常运行，这个错误就比较难找了。这里注意看错误提示，说的是 1.tmp/pages/statis/projects.ngfactory.ts 那么就去检查 /pages/statis/projects.ts 文件中的相应方法的参数吧！ 编译时遇到这个错误： 12345 FAILURE: Build failed with an exception.* What went wrong:Execution failed for task &apos;:packageDebug&apos;.&gt; java.io.FileNotFoundException: /Users/samliu/gits/jing-xi-h5/platforms/android/build/intermediates/assets/debug/www/assets/stub (Is a directory) 这个错误原因不明，但通常再次编译运行就好了。 调试时遇到这个错误： 12Application ErrorThere was a network error (http://192.168.56.1) 网上查到答案是要添加whitelist的插件{:target=”_blank”}，然后添加相应的网址到config.xml中。 发现这个错误，一般是 queries.sql 里面的SQL写错了。 1ERROR Can not issue data manipulation statements with executeQuery() 原因是修改性的SQL语句，上面的声明要用“!”，而不能用“?”。 遇到这个错： 123 Can&apos;t bind to &apos;ngShow&apos; since it isn&apos;t a known property of &apos;ion-list&apos;.1. If &apos;ion-list&apos; is an Angular component and it has &apos;ngShow&apos; input, then verify that it is part of this module.2. If &apos;ion-list&apos; is a Web Component then add &quot;CUSTOM_ELEMENTS_SCHEMA&quot; to the &apos;@NgModule.schemas&apos; of this component to suppress this message. 应该是说 ngShow 并不支持这样的写法，后改为 *ngIf即可。 遇到这个错：Can’t coerce body of type class java.lang.Integer 是因为返回的数据不是json，比如直接将db操作的update结果1返回给客户端，这里(ok 1)就会报这个错，改为：(ok {:success 1}) 即可。 遇到这个错：Unable to find localabstract name of cordova app 参考此回复 1vim .vscode/extensions/vsmobile.cordova-tools-1.2.4/out/src/debugger/cordovaDebugAdapter.js 在 254 行，修改为 1234// if (socketsInodes.indexOf(parseInt(fields[6], 10)) === -1) &#123;if (pathField.indexOf(pid) === -1) &#123; continue;&#125;]]></content>
+    <title><![CDATA[Angular 2 相关学习]]></title>
+    <url>%2F2016%2F11%2F08%2Flearn-angular-v2%2F</url>
+    <content type="text"><![CDATA[基础 I18n 官方文档如此{:target=”_blank”}，目前的解决方案似乎很麻烦。 Angular 2 Components: Inputs and Outputs{:target=”_blank”} The impure AsyncPipe{:target=”_blank”} Angular2 管道（pipes）{:target=”_blank”} [Angular 2] Build a select dropdown with *ngFor in Angular 2{:target=”_blank”} JavaScript Array Methods Reference{:target=”_blank”} JavaScript Modules: A Beginner’s Guide{:target=”_blank”} 问题]]></content>
       <categories>
         <category>devtech/js</category>
       </categories>
@@ -269,9 +269,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Angular 2 相关学习]]></title>
-    <url>%2F2016%2F11%2F08%2Flearn-angular-v2%2F</url>
-    <content type="text"><![CDATA[基础 I18n 官方文档如此{:target=”_blank”}，目前的解决方案似乎很麻烦。 Angular 2 Components: Inputs and Outputs{:target=”_blank”} The impure AsyncPipe{:target=”_blank”} Angular2 管道（pipes）{:target=”_blank”} [Angular 2] Build a select dropdown with *ngFor in Angular 2{:target=”_blank”} JavaScript Array Methods Reference{:target=”_blank”} JavaScript Modules: A Beginner’s Guide{:target=”_blank”} 问题]]></content>
+    <title><![CDATA[Ionic 2 相关学习]]></title>
+    <url>%2F2016%2F11%2F08%2Flearn-ionic-v2%2F</url>
+    <content type="text"><![CDATA[基础 ionic2文档整理 A Guide to Styling an Ionic 2 Application Tips &amp; Tricks for Styling Ionic 2 Applications User-Selected Style Themes in an Ionic 2 Application Vonic简明教程（一）：起步{:target=”_blank”} SQLite plugin{:target=”_blank”} Cordova plugin NativeStorage{:target=”_blank”} Debugging Ionic 2 Apps in Chrome from Visual Studio Code{:target=”_blank”} Ionic 2 Conference Application{:target=”_blank”} Ionically Speaking{:target=”_blank”} 问题 I18n 官方文档如此{:target=”_blank”}，使用ng2-translate{:target=”_blank”}库实现。 Angular2 debug tool: Augury{:target=”_blank”} Form validation is not working with Angular 2 FormBuilder in Ionic 2{:target=”_blank”} Checkbox Group handling and Validation in Angular2{:target=”_blank”} ionic2+angular2中踩的那些坑{:target=”_blank”} (Ionic 2) Getting data from php services is undefined 解决 ionic 中的 CORS（跨域） 问题{:target=”_blank”} 跨域资源共享 CORS 详解 报以下错误，是因为 providers 填错了，应该只填 Service： 1234567891011metadata_resolver.js:499 Uncaught Error: Can&apos;t resolve all parameters for Project: (?, ?). at CompileMetadataResolver.getDependenciesMetadata (http://localhost:8100/build/main.js:23905:19) at CompileMetadataResolver.getTypeMetadata (http://localhost:8100/build/main.js:23806:26) at http://localhost:8100/build/main.js:23949:41 at Array.forEach (native) at CompileMetadataResolver.getProvidersMetadata (http://localhost:8100/build/main.js:23929:19) at CompileMetadataResolver.getDirectiveMetadata (http://localhost:8100/build/main.js:23569:34) at http://localhost:8100/build/main.js:23674:49 at Array.forEach (native) at CompileMetadataResolver.getNgModuleMetadata (http://localhost:8100/build/main.js:23668:49) at RuntimeCompiler._compileComponents (http://localhost:8100/build/main.js:39512:47) 如，将： 12345@Component(&#123; selector: 'page-prj-detail', templateUrl: 'prj-detail.html', providers: [Project]&#125; 改为： 12345@Component(&#123; selector: 'page-prj-detail', templateUrl: 'prj-detail.html', providers: [ProjectService]&#125; 遇到这个错误，可能是html界面的方法与ts中的方法对不上。 1234567891011polyfills.js:3 Uncaught TypeError: exceptionHandler.handleError is not a functionat Object.next (http://localhost:8100/build/main.js:26130:82) at SafeSubscriber.schedulerFn [as _next] (http://localhost:8100/build/main.js:27643:52) at SafeSubscriber.__tryOrUnsub (http://localhost:8100/build/main.js:9761:16) at SafeSubscriber.next (http://localhost:8100/build/main.js:9710:22) at Subscriber._next (http://localhost:8100/build/main.js:9663:26) at Subscriber.next (http://localhost:8100/build/main.js:9627:18) at EventEmitter.Subject.next (http://localhost:8100/build/main.js:11949:25) at EventEmitter.emit (http://localhost:8100/build/main.js:27635:76) at NgZone.triggerError (http://localhost:8100/build/main.js:28451:76) at Object.onHandleError (http://localhost:8100/build/main.js:28430:23) 编译时遇到这个错误： 12345[23:13:04] Error: Error at [project path]/.tmp/pages/statis/projects.ngfactory.ts:351:29[23:13:04] Supplied parameters do not match any signature of call target.[23:13:04] ngc failed[23:13:04] ionic-app-script task: &quot;build&quot;[23:13:04] Error: Error 一般说明在程序的某处有个方法需求的参数与提供的参数对应不上，在build时无法通过，但在ionic serve时可正常运行，这个错误就比较难找了。这里注意看错误提示，说的是 1.tmp/pages/statis/projects.ngfactory.ts 那么就去检查 /pages/statis/projects.ts 文件中的相应方法的参数吧！ 编译时遇到这个错误： 12345 FAILURE: Build failed with an exception.* What went wrong:Execution failed for task &apos;:packageDebug&apos;.&gt; java.io.FileNotFoundException: /Users/samliu/gits/jing-xi-h5/platforms/android/build/intermediates/assets/debug/www/assets/stub (Is a directory) 这个错误原因不明，但通常再次编译运行就好了。 调试时遇到这个错误： 12Application ErrorThere was a network error (http://192.168.56.1) 网上查到答案是要添加whitelist的插件{:target=”_blank”}，然后添加相应的网址到config.xml中。 发现这个错误，一般是 queries.sql 里面的SQL写错了。 1ERROR Can not issue data manipulation statements with executeQuery() 原因是修改性的SQL语句，上面的声明要用“!”，而不能用“?”。 遇到这个错： 123 Can&apos;t bind to &apos;ngShow&apos; since it isn&apos;t a known property of &apos;ion-list&apos;.1. If &apos;ion-list&apos; is an Angular component and it has &apos;ngShow&apos; input, then verify that it is part of this module.2. If &apos;ion-list&apos; is a Web Component then add &quot;CUSTOM_ELEMENTS_SCHEMA&quot; to the &apos;@NgModule.schemas&apos; of this component to suppress this message. 应该是说 ngShow 并不支持这样的写法，后改为 *ngIf即可。 遇到这个错：Can’t coerce body of type class java.lang.Integer 是因为返回的数据不是json，比如直接将db操作的update结果1返回给客户端，这里(ok 1)就会报这个错，改为：(ok {:success 1}) 即可。 遇到这个错：Unable to find localabstract name of cordova app 参考此回复 1vim .vscode/extensions/vsmobile.cordova-tools-1.2.4/out/src/debugger/cordovaDebugAdapter.js 在 254 行，修改为 1234// if (socketsInodes.indexOf(parseInt(fields[6], 10)) === -1) &#123;if (pathField.indexOf(pid) === -1) &#123; continue;&#125;]]></content>
       <categories>
         <category>devtech/js</category>
       </categories>
@@ -385,11 +385,6 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>%2F2016%2F08%2F28%2Fclojure-learning%2F</url>
-    <content type="text"><![CDATA[Clojure/Script 学习 layout: posttitle: “Clojure Learning”description: “”category: devtech/clojuretags: [clojure, GraphQL] RESTful Service Framework Luminus 综合 web 框架，其中（查看 Profiles 详细包含内容）包含 RESTful Services 的实现。 Immutant Web server Hiccup HTML Template Compojure API Sweet web apis with Compojure &amp; Swagger Arachne is a full, highly modular web development framework for Clojure. It emphasizes ease, simplicity, and a solid, scalable design. Hoplon ClojureScript Web Framework，如果只做一些网页，不多的动态效果，特别是你的技术栈还没有加入 React，而是在用 jQuery，而此时想试用 clojure script，那就可以试试这个 Hoplon 框架。 What is Hoplon? 说明了 hoplon 不同于 react 这类的使用虚拟 Dom 的框架的区别之处。 Precept A declarative programming framework, Precept is a framework for creating reactive web applications using a rules engine, declarative logic, and relational data modeling. Pedestal is a sturdy(坚实的) and reliable(可靠的) base for services and APIs. Liberator (Github repo) is a Clojure library for building RESTful applications. Compojure is a small routing library for Ring that allows web applications to be composed of small, independent parts. Moustache is a micro web framework/internal DSL to wire Ring handlers and middlewares. bidi Bi-directional URI dispatch. Silk Isomorphic Clojure[Script] Routing. 各框架比较图Clojurescript TodoMVC Examples by Library 各种 cljs 框架的 TodoMVC 比较Rich Hickey Already Answered That!Tenzing, the awesome Clojurescript application template 默认无后台，专注前端应用开发。 注：Eclipse Public License confetti-clj/confetti A tool to help creating and deploying static sites with AWS 在 AWS 上架设自己的静态网站服务 的工具。 Web server Ring is a low-level interface and library for building web applications in the Clojure programming language. It is similar to the Ruby Rack library, the WSGI in Python, or the Java Servlet specification. Chestnut is a Clojure/ClojureScript web apps application template. React framework Reagent Om Quiescent A lightweight ClojureScript abstraction over ReactJS, emphasizing its ability to (re)render immutable values efficiently. Rum is a client/server library for HTML UI. In ClojureScript, it works as React wrapper, in Clojure, it is a static HTML generator. Citrus State management library for Rum Brutha Simple ClojureScript interface to React GraphQL Framework Lacinia is a library for implementing Facebook’s GraphQL specification in idiomatic Clojure. Github site HTML UI lib Rum is a client/server library for HTML UI. In ClojureScript, it works as React wrapper, in Clojure, it is a static HTML generator. antizer ClojureScript library for Ant Design React UI components. 库倒是不错，可惜版本有点落后了，antd 已经 3.x 了，这个才适配 2.x 相关网站资料 Clojure 文档 cljdoc is a platform to build, host and view documentation for Clojure/Script libraries. Ten reasons to use Clojure/ClojureScript on your next web dev project oakes/paren-soup A browser-based editor for ClojureScript maven及clojars镜像 可以解决国内连接clojars慢的问题。 Qinais/WeChat 一个基于Clojure语言的微信开发库 Clojure Web 开发– Ring 使用指南 Night Light 在Clojure项目中添加依赖，运行命令即可运行起一个 IDE。 jiacai2050/history-master 用 ClojureScript + Reagent + Re-frame + Ant.design 写的浏览器插件，可以分析历史访问记录。 Scheme 语言官网 Should I learn Scheme or Racket? Lisp: Common Lisp, Racket, Clojure, Emacs Lisp 比较 Precursor is the best way to collaborate on early prototypes with your team. 用 Clojure/Script, Datomic, advanced CSS 等写成的原型设计工具，据说相当于 Sketch + Skype + Slack，可以团队协同头脑风暴设计、语音聊天等。 与 Scheme 的区别和比较What are the differences between Clojure, Scheme/Racket and Common Lisp? The languages have somewhat different design philosophies. Scheme was designed as a minimal dialect for understanding the Actor Model; it later became used for pedagogy. Clojure was designed for concurrency. As a result, Scheme has a reputation of being minimal and elegant, Common Lisp of being powerful and paradigm-agnostic (functional, OO, whatever), and Clojure of favoring functional programming. Scheme was designed to simplify the Lisp language, that was its only intent except it never really caught on. I think Clojure does something similar its meant to simplify Scheme for the JVM nothing more. Its just like every other JVM language just there to inflate the user experience, only to simplify writting boilerplate in Java land.]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[百度地图使用相关资料]]></title>
     <url>%2F2016%2F08%2F28%2Fbaidu-map-usage%2F</url>
     <content type="text"><![CDATA[百度地图接口 MKMapViewListener地图显示事件监听器。 该接口监听地图显示事件，用户需要实现该接口以处理相应事件。 百度地图程序包 com.baidu.mapapi.map地图展示与操作相关方法，覆盖物相关方法]]></content>
@@ -410,6 +405,11 @@
       <tags>
         <tag>Android</tag>
       </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2016%2F08%2F28%2Fclojure-learning%2F</url>
+    <content type="text"><![CDATA[Clojure/Script 学习 layout: posttitle: “Clojure Learning”description: “”category: devtech/clojuretags: [clojure, GraphQL] RESTful Service Framework Luminus 综合 web 框架，其中（查看 Profiles 详细包含内容）包含 RESTful Services 的实现。 Immutant Web server Hiccup HTML Template Compojure API Sweet web apis with Compojure &amp; Swagger Arachne is a full, highly modular web development framework for Clojure. It emphasizes ease, simplicity, and a solid, scalable design. Hoplon ClojureScript Web Framework，如果只做一些网页，不多的动态效果，特别是你的技术栈还没有加入 React，而是在用 jQuery，而此时想试用 clojure script，那就可以试试这个 Hoplon 框架。 What is Hoplon? 说明了 hoplon 不同于 react 这类的使用虚拟 Dom 的框架的区别之处。 Precept A declarative programming framework, Precept is a framework for creating reactive web applications using a rules engine, declarative logic, and relational data modeling. Pedestal is a sturdy(坚实的) and reliable(可靠的) base for services and APIs. Liberator (Github repo) is a Clojure library for building RESTful applications. Compojure is a small routing library for Ring that allows web applications to be composed of small, independent parts. Moustache is a micro web framework/internal DSL to wire Ring handlers and middlewares. bidi Bi-directional URI dispatch. Silk Isomorphic Clojure[Script] Routing. 各框架比较图Clojurescript TodoMVC Examples by Library 各种 cljs 框架的 TodoMVC 比较Rich Hickey Already Answered That!Tenzing, the awesome Clojurescript application template 默认无后台，专注前端应用开发。 注：Eclipse Public License confetti-clj/confetti A tool to help creating and deploying static sites with AWS 在 AWS 上架设自己的静态网站服务 的工具。 Web server Ring is a low-level interface and library for building web applications in the Clojure programming language. It is similar to the Ruby Rack library, the WSGI in Python, or the Java Servlet specification. Chestnut is a Clojure/ClojureScript web apps application template. React framework Reagent Om Quiescent A lightweight ClojureScript abstraction over ReactJS, emphasizing its ability to (re)render immutable values efficiently. Rum is a client/server library for HTML UI. In ClojureScript, it works as React wrapper, in Clojure, it is a static HTML generator. Citrus State management library for Rum Brutha Simple ClojureScript interface to React GraphQL Framework Lacinia is a library for implementing Facebook’s GraphQL specification in idiomatic Clojure. Github site HTML UI lib Rum is a client/server library for HTML UI. In ClojureScript, it works as React wrapper, in Clojure, it is a static HTML generator. antizer ClojureScript library for Ant Design React UI components. 库倒是不错，可惜版本有点落后了，antd 已经 3.x 了，这个才适配 2.x 相关网站资料 Clojure 文档 cljdoc is a platform to build, host and view documentation for Clojure/Script libraries. Ten reasons to use Clojure/ClojureScript on your next web dev project oakes/paren-soup A browser-based editor for ClojureScript maven及clojars镜像 可以解决国内连接clojars慢的问题。 Qinais/WeChat 一个基于Clojure语言的微信开发库 Clojure Web 开发– Ring 使用指南 Night Light 在Clojure项目中添加依赖，运行命令即可运行起一个 IDE。 jiacai2050/history-master 用 ClojureScript + Reagent + Re-frame + Ant.design 写的浏览器插件，可以分析历史访问记录。 Scheme 语言官网 Should I learn Scheme or Racket? Lisp: Common Lisp, Racket, Clojure, Emacs Lisp 比较 Precursor is the best way to collaborate on early prototypes with your team. 用 Clojure/Script, Datomic, advanced CSS 等写成的原型设计工具，据说相当于 Sketch + Skype + Slack，可以团队协同头脑风暴设计、语音聊天等。 与 Scheme 的区别和比较What are the differences between Clojure, Scheme/Racket and Common Lisp? The languages have somewhat different design philosophies. Scheme was designed as a minimal dialect for understanding the Actor Model; it later became used for pedagogy. Clojure was designed for concurrency. As a result, Scheme has a reputation of being minimal and elegant, Common Lisp of being powerful and paradigm-agnostic (functional, OO, whatever), and Clojure of favoring functional programming. Scheme was designed to simplify the Lisp language, that was its only intent except it never really caught on. I think Clojure does something similar its meant to simplify Scheme for the JVM nothing more. Its just like every other JVM language just there to inflate the user experience, only to simplify writting boilerplate in Java land.]]></content>
   </entry>
   <entry>
     <title></title>
@@ -501,6 +501,17 @@
       </tags>
   </entry>
   <entry>
+    <title></title>
+    <url>%2F2014%2F02%2F26%2Fhqlleftjoin%2F</url>
+    <content type="text"><![CDATA[数据库相关HQL 中 left join 的写法用 Play 查询数据时，遇到关联对象的查询时，需要使用 left join 的语句，但与我们习惯的 SQL 语句不同，HQL 的写法和思路是面向对象的，所以下面就记录一些可用的例句供实际使用时参考： 查询教的学生中有年龄大于30的老师 hql = &quot;select distinct o from Teacher o, Student r left join r.teacher h where r.age&gt;=?&quot;;Datomic 信息模型]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Play!技巧问答]]></title>
     <url>%2F2014%2F02%2F26%2Fplayqaindex%2F</url>
     <content type="text"><![CDATA[Play!中如何用module组织多个相关项目 FunctionTest测试中如何取得Session值 Xml域名空间（WS.(url).get().getXml()无法取得带命名空间Document对象）识别问题 在Play!中如何实现类似过滤器的功能 如何同时使用http和https协议 在Play!中是否支持Comet-style或long-polling的请求？ 在Linux系统中，Fat32盘下无法执行play eclipsify命令 移除Cache可以设置时间吗？ 关于独立对像的存储报错问题validateAndSave(); 分离实体持久化出错（PersistentObjectException: detached entity passed to persist）问题 Play框架深层问题讨论 Play在Windows的cmd窗口中中文乱码的解决办法 一个Hql中count判断的写法 无法加载pdf等Module的问题 Hql中 left join 的写法]]></content>
@@ -513,17 +524,6 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>%2F2014%2F02%2F26%2Fhqlleftjoin%2F</url>
-    <content type="text"><![CDATA[数据库相关HQL 中 left join 的写法用 Play 查询数据时，遇到关联对象的查询时，需要使用 left join 的语句，但与我们习惯的 SQL 语句不同，HQL 的写法和思路是面向对象的，所以下面就记录一些可用的例句供实际使用时参考： 查询教的学生中有年龄大于30的老师 hql = &quot;select distinct o from Teacher o, Student r left join r.teacher h where r.age&gt;=?&quot;;Datomic 信息模型]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[罗辑思维听后记录]]></title>
     <url>%2F2014%2F01%2F10%2Fluojisiwei%2F</url>
     <content type="text"><![CDATA[2013年罗辑思维第19期：在一起 有后代在线优酷观看 如果你不知道学一个知识有什么用，没有学习它的动力时，可以听一下这一讲，世间万物的知识其实是相互关联的，不要刻意将自己局限在某个专业的思维之中。 第36期：大家都有拖延症在线优酷观看 如果你感觉自己总是会拖延一些重要的事情，听听这一讲，也许会找到灵感并有一些适怀。 自己整理了一下缓解拖延的答案： 将许多自己想做、要做的重要的事情列在自己的名单上，感觉拖延（不想做）一件事的时候，去这个名单上找另一件想做的事情来做。 将大而模糊、创造性的事情分解成机械性、具体的小事情去完成。 让种子飞一会儿，即提前先了解清楚一件事情的情况，然后可以先放下酝酿它，到时机成熟时就会快速完成。 把事情放到群体压力中完成，可以让虚荣心等督促自己完成。 因为人类的底层需求更关注当下的享受，所以会造成对未来重要的事情的拖延。 现代社会从手段到目的很遥远（农夫晒太阳的故事） 现实生活中很多目的是被强加上的（老大爷巧治儿童踢球的故事） 很多的目的是想象虚拟的（选择看电影的实验） 人在追求一个虚无飘渺的目的（1、目的是想象的；2、目的是强加的；3、目的和手段之间相隔很远）时，就会出现拖延，这也就是拖延症的主要原因。 未来的解决方向： 每个人做自己感兴趣的事情。 人在不同的年龄段下不断提升自己的境界，不断修炼，等待人格的成熟。 顺其自然，不必为其烦恼，甘于做个平凡人（Loser）即可。 第51期：怎么当个明白人在线优酷观看 知史而鉴今，你真的懂得因果逻辑吗？看一下我们经常出现的逻辑中的误区，让自己从另外的角度警惕陷入这样的逻辑错误中。 第54期：阴谋，是可能的吗？在线优酷观看 价格的本质：是指你要购买的一整套配套服务。 历史上的所有价格联盟都是无效的，你可以限制价格，但无法完全规定购买到的服务细节。 自由世界是所有人分散决策涌现出来的一个现象。总想控制价格是人类从过去走过来的一个妄念。 越往回追溯历史，你会发现人类社会是由权力来主导，由中心来控制的这样一种社会样态，但越往后、越往未来，人类社会越是以自由为前提，以市场来协同，由分散的节点来分头决策的这样一种社会样态。 1、空间上看，阴谋永远会存在，但规模会越来越受控。2、越往回追溯历史，阴谋得逞的可能越大，而相反越往未来，阴谋得逞的可能越小。 未来发展的趋势是“去中心化”，推荐一本书《市场的力量》。 2014年罗辑思维第5期 致终将逝去的隐私在线优酷观看 恐惧和贪婪令现代人不快乐，面对巨大贪婪和巨大付出的恐惧时，现代人该如何破呢？ 通过多维的“交叉复现”形成信息的高价值判断。 《信息简史》大数据时代，隐私不再，象一个绝望的守城战，是热武器对冷兵器的战争。 《智慧政府》大数据令政府有善治。 人性制造的不确定性和机器制造的确定性在无始无终的赛跑。]]></content>
@@ -532,17 +532,6 @@
       </categories>
       <tags>
         <tag>罗辑思维</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2014%2F01%2F09%2Fubuntueclipse%2F</url>
-    <content type="text"><![CDATA[Ubuntu下Eclipse完美安装方案Ubuntu下直接apt-get安装Eclipse的问题 直接安装的版本较低，我用Ubuntu13.10安装的是Eclipse3.8，而要用ScalaIDE，最好是4.x以上版本。 其次是Eclipse的菜单显示问题，点击后看不到下拉菜单。 完美解决方案 直接从eclipse.org官方网站下载自己喜欢的版本，欲Java编程可选择Eclipse IDE for Java Developers。 解压到个人喜欢的软件目录即可。 使用此命令 sudo vim /usr/share/applications/eclipse.desktop 建立应用启动如下： [Desktop Entry] Name=Eclipse Comment=c project manage software Exec=/home/sam/develop/eclipse/eclipse Icon=/home/sam/develop/eclipse/icon.xpm Terminal=false Type=Application Categories=GNOME;GTK;Office;Eclipse 注意替换你自己的路径，这样就ok了，在Dash主页主就可以找到eclipse的图标启动了。]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
       </tags>
   </entry>
   <entry>
@@ -565,6 +554,17 @@
       </categories>
       <tags>
         <tag>index</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2014%2F01%2F09%2Fubuntueclipse%2F</url>
+    <content type="text"><![CDATA[Ubuntu下Eclipse完美安装方案Ubuntu下直接apt-get安装Eclipse的问题 直接安装的版本较低，我用Ubuntu13.10安装的是Eclipse3.8，而要用ScalaIDE，最好是4.x以上版本。 其次是Eclipse的菜单显示问题，点击后看不到下拉菜单。 完美解决方案 直接从eclipse.org官方网站下载自己喜欢的版本，欲Java编程可选择Eclipse IDE for Java Developers。 解压到个人喜欢的软件目录即可。 使用此命令 sudo vim /usr/share/applications/eclipse.desktop 建立应用启动如下： [Desktop Entry] Name=Eclipse Comment=c project manage software Exec=/home/sam/develop/eclipse/eclipse Icon=/home/sam/develop/eclipse/icon.xpm Terminal=false Type=Application Categories=GNOME;GTK;Office;Eclipse 注意替换你自己的路径，这样就ok了，在Dash主页主就可以找到eclipse的图标启动了。]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
       </tags>
   </entry>
   <entry>
@@ -613,6 +613,61 @@
   </entry>
   <entry>
     <title></title>
+    <url>%2F2013%2F12%2F23%2Fcoolguydontlookatexplosions%2F</url>
+    <content type="text"><![CDATA[Cool Guys Don’t Look At Explosions纯爷们儿从不围观爆炸！Cool guys don&apos;t look at explosions They blow things up and then walk away Who&apos;s got time to watch an explosion? Because cool guys have errands that they have to walk to.. Keep walkin&apos;, keep shinin&apos; Don&apos;t look back keep on walkin&apos; Keep struttin&apos; slow motion The more you ignore it, the cooler you look Samberg: Ladies &amp; gentlemen, please join me in welcoming.. Mr. Neil Diamond! Will Ferrell: ha ha ha....Where are we?! Cool guys don&apos;t look at explosions They stride for it in their diamond covered boots They wear jumpsuits with glitter and rhinestones And walk away in slow motion.. Keep walkin, you&apos;re cruisin.. Cherry Cherry...Sweet Caroline.. Denzel walks... Will Smith walks... Mark Wahlberg is wearin a hat! Samberg: Going solo....JJ Abrams! JJ Abrams solo Yeah! Okay. Because,Cool guys don&apos;t look at explosions, The flames are hot, but my heart is chill Walk fast from the roaring explosion, And don&apos;t think about the people you killed这首歌专门为 The 2009 MTV Movie Awards而制作的里面穿插了很多大片的画面 0:12 墨西哥往事2 Desperado 0:29 地狱骑士 Hell Ride 0:40 丛林奇兵 Welcome to the Jungle 0:57 幸运数字斯莱文 Lucky Number Slevin 1:08 钢铁侠 Ironman 1:12 杀出个黎明 From Dusk Till Dawn 1:14 老无所依 No Country for Old Man 1:21 全民超人 Hancock 1:24 生死狙击 Shooter 1:47 辛瑞那 Syriana 1:50 铁甲威龙 RoboCop 1:54 蝙蝠侠前传2 黑暗骑士 Batman 2:00 空中监狱 Con Air 2:13 X战警前传: 金刚狼 X-Men Origins: Wolverine 英文原版：http://v.ku6.com/show/rQb7VJTU5aHGspjWA3mLvw...html 中文改编版：http://v.youku.com/v_show/id_XMjI2OTQ1NjM2.html]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F12%2F23%2Fgitolitesetup%2F</url>
+    <content type="text"><![CDATA[CentOS下使用Gitolite架构Git服务的步骤 在服务端创建专用用户，如：git，可考虑不设置密码，从而无法用密码登录服务器。 在管理员电脑上创建管理员密钥对，并（通过U盘或root账号）拷贝到服务器上，之后添加到git用户目录的.ssh/authorized_keys文件中。从而达到无需密码从管理员电脑直接ssh到服务器git上的效果。 使用git clone下载Gitolite。 运行gl-system-install安装到服务器，此时会看到git用户目录中多出了bin, share, repositories等目录。 从客户端下载git clone 管理目录：gitolite-admin。 添加用户公钥*.pub到keydir目录，配置用户权限在conf/gitolite.conf文件中。]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F12%2F23%2Ftracinterfacecustomization%2F</url>
+    <content type="text"><![CDATA[定制Trac界面原文地址 介绍该页面旨提供有关如何定制Trac界面的建议. 话题涵盖了编辑HTML模板和CSS文件, 但不包含程序代码本身. 这些话题想要向用户展示如何更改Trac的外观来满足他们特定的要求. 项目Logo和图标定制Trac界面最简单的部分是logo和站点的图标. 他们都可以通过trac.ini的设置进行配置. logo或者图标应放在项目环境目录中的一个’’htdocs’’目录中(注意: 用Trac0.9之前的版本创建的项目, 你需要创建该目录). ‘’注意: 实际上你可以把logo和图标放在服务器的任何地方(只要通过服务器能访问到就可以), 并且在配置中使用他们的绝对URL或服务器的相对URL.’’ 在你的trac.ini中的配置相应的段: Logo将src设置改为site/, 后面跟着你的图像文件的名字. 应修改’’宽度’’和’’高度’’设置来匹配你的图像的尺寸(Trac的chrome处理器用””site/“”对应位于项目目录的””htdocs””, 用””common/“”对应普通文件). [header_logo] src = site/my_logo.gif alt = My Project width = 300 height = 100图标图标应该是.gif或.ico格式的大小16x16的图像. 将icon选项修改为site/, 后面跟着你的图标文件的名称. 在你的Web浏览器中, 图标一般会显示在站点的URL旁边或者在’’书签’’菜单中. [project] icon = site/my_icon.ico‘’’注意’’’, 该图标会被 IE 忽略, 它只接受主机根路径下名为’’favicon.ico’’的文件. 要使项目图标在IE和其他浏览器中都起作用的话, 你可以将图标储存在主机的根路径中, 并按照下列方法在trac.ini中引用它: [project] icon = /favicon.ico站点页眉和页脚在每个Trac项目的环境目录中, 应该有个叫templates的目录. 该目录包含文件site_header.cs和site_footer.cs. 用户可以通过添加所需的HTML标记到这些文件中, 来定制他们的Trac站点. 这两个文件的内容分别放在网站中每页的开始的标签&lt;body&gt;和结尾的标签&lt;/body&gt;中. 这些文件可以包含静态HTML, 当然, 如果用户想要有动态的内容, 他们可以使用页面内部的ClearSilver模板语言. 当你需要查看模板中有哪些可用变量, 将查询串’’?hdfdump=1’’添加到你的Trac站点的URL中. 这样将显示出模板数据的结构化视图. 站点样式表调整一个Trac网站的布局的主要方法是添加CSS样式规则来覆盖默认的规则. 最好是通过编辑项目环境的templates目录下的site_css.cs文件来实现. 该模板中的内容会插入到Trac生成的每个HTML页面的&lt;style type=&quot;text/css&quot;&gt;``&lt;/style&gt;中. 虽然你可以将定制样式规则直接添加到site_css.cs文件中, 我们建议你只引用一个外部样式表, 以便使浏览器能缓存此CSS文件, 而不是每次都传输这些样式规则. 下面的例子会导入一个位于根style目录下的样式表: @import url(/style/mytrac.css);你可以使用一个!ClearSilver变量来引用存储在项目环境的htdocs目录中的样式表: @import url(`&lt;?cs var:chrome.href ?&gt;`/site/style.css);项目列表如果你在使用Trac执行多个项目时, 你可以用一个定制!ClearSilver模板来显示项目的列表. 下面是Trac用来显示各项目链接的列表的基本模板. 对于不能加载的项目, 它会显示一个错误信息. 你可以将它作为你自己的索引模板的一个起点. :::html #!text/html `&lt;html&gt;` `&lt;head&gt;``&lt;title&gt;`Available Projects`&lt;/title&gt;``&lt;/head&gt;` `&lt;body&gt;` `&lt;h1&gt;`Available Projects`&lt;/h1&gt;` `&lt;ul&gt;`&lt;?cs each:project = projects ?&gt;`&lt;li&gt;`&lt;?cs if:project.href ?&gt; `&lt;a href=&quot;&quot;&lt;?cs var:project.href ?&gt;`&quot;&quot; title=&quot;&quot;`&lt;?cs var:project.description ?&gt;`&quot;&quot;&gt; `&lt;?cs var:project.name ?&gt;``&lt;/a&gt;`&lt;?cs else ?&gt; `&lt;small&gt;``&lt;?cs var:project.name ?&gt;`: `&lt;em&gt;`Error`&lt;/em&gt;` `&lt;br /&gt;` (`&lt;?cs var:project.description ?&gt;`)`&lt;/small&gt;`&lt;?cs /if ?&gt; `&lt;/li&gt;`&lt;?cs /each ?&gt; `&lt;/ul&gt;` `&lt;/body&gt;` `&lt;/html&gt;`一旦你创建了自己的定制模板, 你需要配置Web服务器, 来告诉Trac该模板的具体位置: 对于 FastCGI: FastCgiConfig -initial-env TRAC_ENV_PARENT_DIR=/parent/dir/of/projects \ -initial-env TRAC_ENV_INDEX_TEMPLATE=/path/to/template对于 mod_python: PythonOption TracEnvIndexTemplate /path/to/template对于 CGI: SetEnv TRAC_ENV_INDEX_TEMPLATE /path/to/template主要模板!ClearSilver也可以使用自己修改的Trac !ClearSilver模板. 注意, 不推荐使用该技术, 因为它使得升级Trac有很多问题: 很不幸的是, 在模板和程序代码间存在几个依赖关系, 例如表单域的名称, 模板数据的结构等, 这些在不同版本的Trac中都可能有变化. 如果你一定要使用修改的模板, 将默认模板目录(通常是在$prefix/share/trac/templates中)中的模板文件复制到项目环境中的templates目录中. 然后修改这些副本, 达到你想要的效果。]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[easyui中form表单的ajax实现]]></title>
+    <url>%2F2013%2F12%2F23%2Feasyuiform%2F</url>
+    <content type="text"><![CDATA[示例代码如下： :::java $(&apos;#ff&apos;).form({ url:$(this).attr(&quot;&quot;action&quot;&quot;), onSubmit:function(){ return $(this).form(&apos;validate&apos;); }, success:function(data){ alert(data); } });其中url的值是取的form中的action属性，故需注意填写form的相应属性，当然也可以为’/controller_name/action_name’。]]></content>
+      <categories>
+        <category>devtech js</category>
+      </categories>
+      <tags>
+        <tag>easyui</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[常用Git命令说明]]></title>
+    <url>%2F2013%2F12%2F23%2Foftenused%2F</url>
+    <content type="text"><![CDATA[参考：史上最浅显易懂的Git教程！ 进入你的工作目录 cd yourworkpath 列出所有branch，当前所在branch前面有“*”号。 git branch -a 切换工作库 git checkout v1.5.1 合并另一个branch，通常是master git merge master 再切换回来 git checkout master 查看当前目录情况 git status 将当前目录中的修改提交到相应的库（branch）中 git commit -m “”此处添加修改说明”” 从远程库中合并最新状态 git pull 注：当使用git pull命令的时候如果提示有本地文件修改了，无法合并的时候，我们可以放弃本地修改（注意放弃的修改将不可恢复），然后再更新；如果不想放弃本地修改，可以先提交，然后再合并更新。如果要放弃本地修改后更新： git reset –hard git pull 将合并后的状态并入远程库中。 git push origin master 如果是在分支上开发则为： git push origin v1.5.1 取消某个文件的版本控制，但实际不删除这个文件： git rm –cached somefile.txt 然后再修改目录下的.gitignore文件，添加上这个文件的相应忽略即可。 查看每一行的改动： git blame &lt;filename&gt; git 查看一个文件的所有修改历史 git log –pretty=oneline &lt;filename&gt; 创建一个分支并切换到这个分支工作，通常可用于临时进行一些测试性的开发，如果要保留这个dirty的分支内容，可以commit上去，随时再切换回master就象一切没发生过。 git checkout -b dirty 如果这个测试性的开发需要被接受合并到主干master，只要切换到master再合并即可： git checkout mastergit merge dirty 丢弃加入缓存区（即git add的准备提交的文件）的修改，分别退回到当前版本、上一个版本、上上一个版本、前99个版本、某特定 id 版本： git reset –hard HEAD git reset –hard HEAD^ git reset –hard HEAD^^ git reset –hand HEAD~99 git reset –hard 322542re342 查看过去和未来的版本 id 等信息： git log git reflog 丢弃某个文件的修改，和SVN的revert命令一样 git checkout – comefile.txt 丢弃本地所有文件的修改，和SVN的revert命令一样 1git checkout -- *.* 查看当前路径下的远程库情况： 1git remote -v 添加远程库路径 1git remote add origin https://github.com/wind13/xxx.git 查看分支详细信息 1git branch -vv 更换本地分支对应的远程分支 1git branch --set-upstream-to=origin/master master 快速本地复制一个库到另一个目录，不带多余的文件： 1git fast-export --all | (mkdir ../repobackup &amp;&amp; cd ../repobackup &amp;&amp; git init &amp;&amp; git fast-import &amp;&amp; git reset --hard HEAD) 分拆代码库 12git filter-branch --prune-empty --subdirectory-filter ./folder/to/subrepo/ branch-namegit filter-branch --prune-empty --subdirectory-filter ./folder/to/subrepo/ -- --all 如果分拆有误，想退回 1git reflog 查看到具体要回到哪个点，记住HEAD{n}里面那个数字n；然后再执行 reset 回到那个位置： 1git reset --hard HEAD@&#123;n&#125; 使用GIT SUBTREE集成项目到子目录 第一次添加子目录，建立与git项目的关联 12git remote add -f ai https://github.com/aoxu/ai.git git subtree add --prefix=ai ai master --squash 从远程仓库更新子目录 12git fetch ai master git subtree pull --prefix=ai ai --squash 从子目录push到远程仓库 1git subtree push --prefix=ai ai master Git 工具 - 子树合并]]></content>
+      <categories>
+        <category>devtech</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
     <url>%2F2013%2F12%2F23%2Fdateformat%2F</url>
     <content type="text"><![CDATA[String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型通常情况下可用Date.valueOf(String)直接转换; String类型格式：”yyyy-MM-dd”Date.valueOf(“yyyy-MM-dd”) 例： :::java String sd = &quot;2012-01-12&quot;; Date sdate = Date.valueOf(sd);但当String类型格式为”yyyy-MM-dd HH:mm:ss”时 则需使用： :::java SimpleDateFormat sdf = new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;); sdf.parse(String); 需要添加try/catch例： :::java String sd = &quot;2012-01-12 11:20:21&quot;; try { SimpleDateFormat sdf = new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;); Date sdate =sdf.parse(sd); } catch (ParseException e) { e.printStackTrace(); }SimpleDateFormat支持的其它格式: &quot;yyyy.MM.dd G &apos;at&apos; HH:mm:ss z&quot; 2001.07.04 AD at 12:08:56 PDT &quot;EEE, MMM d, &apos;&apos;yy&quot; Wed, Jul 4, &apos;01 &quot;h:mm a&quot; 12:08 PM &quot;hh &apos;o&apos;&apos;clock&apos; a, zzzz&quot; 12 o&apos;clock PM, Pacific Daylight Time &quot;K:mm a, z&quot; 0:08 PM, PDT &quot;yyyyy.MMMMM.dd GGG hh:mm aaa&quot; 02001.July.04 AD 12:08 PM &quot;EEE, d MMM yyyy HH:mm:ss Z&quot; Wed, 4 Jul 2001 12:08:56 -0700 &quot;yyMMddHHmmssZ&quot; 010704120856-0700 &quot;yyyy-MM-dd&apos;T&apos;HH:mm:ss.SSSZ&quot; 2001-07-04T12:08:56.235-0700]]></content>
       <categories>
@@ -634,20 +689,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[easyui中form表单的ajax实现]]></title>
-    <url>%2F2013%2F12%2F23%2Feasyuiform%2F</url>
-    <content type="text"><![CDATA[示例代码如下： :::java $(&apos;#ff&apos;).form({ url:$(this).attr(&quot;&quot;action&quot;&quot;), onSubmit:function(){ return $(this).form(&apos;validate&apos;); }, success:function(data){ alert(data); } });其中url的值是取的form中的action属性，故需注意填写form的相应属性，当然也可以为’/controller_name/action_name’。]]></content>
-      <categories>
-        <category>devtech js</category>
-      </categories>
-      <tags>
-        <tag>easyui</tag>
-      </tags>
-  </entry>
-  <entry>
     <title></title>
-    <url>%2F2013%2F12%2F23%2Fgitolitesetup%2F</url>
-    <content type="text"><![CDATA[CentOS下使用Gitolite架构Git服务的步骤 在服务端创建专用用户，如：git，可考虑不设置密码，从而无法用密码登录服务器。 在管理员电脑上创建管理员密钥对，并（通过U盘或root账号）拷贝到服务器上，之后添加到git用户目录的.ssh/authorized_keys文件中。从而达到无需密码从管理员电脑直接ssh到服务器git上的效果。 使用git clone下载Gitolite。 运行gl-system-install安装到服务器，此时会看到git用户目录中多出了bin, share, repositories等目录。 从客户端下载git clone 管理目录：gitolite-admin。 添加用户公钥*.pub到keydir目录，配置用户权限在conf/gitolite.conf文件中。]]></content>
+    <url>%2F2013%2F12%2F23%2Fconfession214%2F</url>
+    <content type="text"><![CDATA[情人节程序员经典表白我能把整个世界都抽象成一个类…… 但是没办法把你变成我的对象…… 想让你成为私有常量，外部函数无法访问你…… 又想让你变成全局常量，在整个生命周期随时随地都可以调用你…… 因为世界上没有这样的常量…… 所以我无法定义你…… 我可以重载甚至覆盖任何一种方法…… 但是我却不能重载对你的思念…… 也许命中注定了 你在我的世界里永远的烙上了静态的属性…… 而我不慎调用了“爱你”这个方法…… 当我义无返顾的把自己作为参数传进这个方法时…… 我才发现方法”爱你”里面执行是一个死循环…… 她不停的返回我对你的思念，并存入我心里的堆栈…… 在这无穷无尽的循环中…… 我的内存资源很快消耗殆尽…… 而我却依然不停的向系统申请空间换取我对你的想念…… 终于我受不了“爱你”的煎熬…… 调用了”表白”这个Public方法…… 将字符串“如果你爱我，我将用尽一生去爱你，你爱我吗？”传递给你…… 我却捕获一个异常－－－内存溢出，我爱的人不爱我…… 为了解决这个异常…… 我偷偷地修改了”表白”的方法…… 加上了异常处理finally块…… 并且将返回值设为真…… 心想这样万无一失了吧…… 鼓起勇气再一次调用”表白”…… 我却依然捕获到同样的异常…… 仔细调试代码，原来在方法中有一段是这样的…… “如果没房没车则执行System.exit()”…… 欲哭无泪，身心破碎，终于我的系统崩溃了…… 留下一句“OutOfMemory 内存溢出”的提示……]]></content>
       <categories>
         <category>playscala</category>
       </categories>
@@ -668,8 +712,8 @@
   </entry>
   <entry>
     <title></title>
-    <url>%2F2013%2F12%2F23%2Fconfession214%2F</url>
-    <content type="text"><![CDATA[情人节程序员经典表白我能把整个世界都抽象成一个类…… 但是没办法把你变成我的对象…… 想让你成为私有常量，外部函数无法访问你…… 又想让你变成全局常量，在整个生命周期随时随地都可以调用你…… 因为世界上没有这样的常量…… 所以我无法定义你…… 我可以重载甚至覆盖任何一种方法…… 但是我却不能重载对你的思念…… 也许命中注定了 你在我的世界里永远的烙上了静态的属性…… 而我不慎调用了“爱你”这个方法…… 当我义无返顾的把自己作为参数传进这个方法时…… 我才发现方法”爱你”里面执行是一个死循环…… 她不停的返回我对你的思念，并存入我心里的堆栈…… 在这无穷无尽的循环中…… 我的内存资源很快消耗殆尽…… 而我却依然不停的向系统申请空间换取我对你的想念…… 终于我受不了“爱你”的煎熬…… 调用了”表白”这个Public方法…… 将字符串“如果你爱我，我将用尽一生去爱你，你爱我吗？”传递给你…… 我却捕获一个异常－－－内存溢出，我爱的人不爱我…… 为了解决这个异常…… 我偷偷地修改了”表白”的方法…… 加上了异常处理finally块…… 并且将返回值设为真…… 心想这样万无一失了吧…… 鼓起勇气再一次调用”表白”…… 我却依然捕获到同样的异常…… 仔细调试代码，原来在方法中有一段是这样的…… “如果没房没车则执行System.exit()”…… 欲哭无泪，身心破碎，终于我的系统崩溃了…… 留下一句“OutOfMemory 内存溢出”的提示……]]></content>
+    <url>%2F2013%2F12%2F13%2Fcacheremovetime%2F</url>
+    <content type="text"><![CDATA[移除Cache可以有时间参数吗？是的，可以，使用下面这样的语句即可： :::java Cache.set(&quot;some&quot;, null, 0)其中最后一个参数是时间，单位是秒。详见源代码。]]></content>
       <categories>
         <category>playscala</category>
       </categories>
@@ -678,53 +722,54 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>%2F2013%2F12%2F23%2Fcoolguydontlookatexplosions%2F</url>
-    <content type="text"><![CDATA[Cool Guys Don’t Look At Explosions纯爷们儿从不围观爆炸！Cool guys don&apos;t look at explosions They blow things up and then walk away Who&apos;s got time to watch an explosion? Because cool guys have errands that they have to walk to.. Keep walkin&apos;, keep shinin&apos; Don&apos;t look back keep on walkin&apos; Keep struttin&apos; slow motion The more you ignore it, the cooler you look Samberg: Ladies &amp; gentlemen, please join me in welcoming.. Mr. Neil Diamond! Will Ferrell: ha ha ha....Where are we?! Cool guys don&apos;t look at explosions They stride for it in their diamond covered boots They wear jumpsuits with glitter and rhinestones And walk away in slow motion.. Keep walkin, you&apos;re cruisin.. Cherry Cherry...Sweet Caroline.. Denzel walks... Will Smith walks... Mark Wahlberg is wearin a hat! Samberg: Going solo....JJ Abrams! JJ Abrams solo Yeah! Okay. Because,Cool guys don&apos;t look at explosions, The flames are hot, but my heart is chill Walk fast from the roaring explosion, And don&apos;t think about the people you killed这首歌专门为 The 2009 MTV Movie Awards而制作的里面穿插了很多大片的画面 0:12 墨西哥往事2 Desperado 0:29 地狱骑士 Hell Ride 0:40 丛林奇兵 Welcome to the Jungle 0:57 幸运数字斯莱文 Lucky Number Slevin 1:08 钢铁侠 Ironman 1:12 杀出个黎明 From Dusk Till Dawn 1:14 老无所依 No Country for Old Man 1:21 全民超人 Hancock 1:24 生死狙击 Shooter 1:47 辛瑞那 Syriana 1:50 铁甲威龙 RoboCop 1:54 蝙蝠侠前传2 黑暗骑士 Batman 2:00 空中监狱 Con Air 2:13 X战警前传: 金刚狼 X-Men Origins: Wolverine 英文原版：http://v.ku6.com/show/rQb7VJTU5aHGspjWA3mLvw...html 中文改编版：http://v.youku.com/v_show/id_XMjI2OTQ1NjM2.html]]></content>
+    <title><![CDATA[FunctionTest中如何取得session的值]]></title>
+    <url>%2F2013%2F12%2F13%2Ffunctiontestsession%2F</url>
+    <content type="text"><![CDATA[原文摘抄自：https://groups.google.com/d/msg/play-framework/-/iQLX-uLwHWsJ （可能因墙访问不了……我是在邮件列表中收集的） 需求和问题原问及简单翻译说明如下： Given a simple action:【简单给一个action如下：】 :::java public static void testAction() { session.put(&quot;worked&quot;, &quot;yes&quot;); }I want to test that the session is set:【我试着测试这个session是否被设置：】 :::java @Test public void setsTheSession() { Response response = GET(&quot;/test&quot;); assertEquals(&quot;yes&quot;, Scope.Session.current().get(&quot;worked&quot;)); }But Scope.Session.current() always returns an empty map. Any clues?【但Scope.Session.current()总是返回一个空的Map。有什么办法吗？】 关键回答原答及简单翻译如下： I don’t think that works because you are not in the context of a server request when in a test. You are just acting as a regular browser making a GET request.【我不认为可以那样写，因为在一个test中你不在服务请求的上下文中。你只是象一个普通的浏览器那样发送了一个GET请求。】If you want to set a cookie from a Controller you do this:【如果你想在Controller中设置cookie，你可以象这样：】response.setCookie(&quot;mycookie&quot;, &quot;myvalue&quot;, &quot;1d&quot;);{java}Then in your test you can do:【然后在你的测试中，你可以这样：】 :::java Http.Response response = GET(&quot;/home/cookie&quot;); assertEquals(&quot;myvalue&quot;, response.cookies.get(&quot;mycookie&quot;).value);For sessions you should take a look at this first:【而session方面，你就应该先看一下这个：】http://www.playframework.org/documentation/1.2.3/controllers#session “It’s important to understand that Session and Flash data are not stored in the server but are added to each subsequent HTTP Request, using the Cookie mechanism. So the data size is very limited (up to 4 KB) and you can only store String values.”【理解这点很重要：Session和Flash的数据并不是保存在服务端，而是通过Cookie的机制加在每一次的HTTP请求中。所以数据的大小是受限制的（最多到4KB）并且你只可以保存String字串值。】They are of course signed so they can’t be changed. If I write session.put(“testcookie”, “brian”) I get this in the response header:【它们当然是被加密的，所以你不能修改。如果我写session.put(“testcookie”, “brian”)，那么我将在response的header中得到：】&quot;PLAY_SESSION=31a4e4777b5950d78b9f3f88b02dfdb2361b5699-%00testcookie%3Abrian%00;Path=/&quot; This makes the job of testing actual session variables a little harder. I haven’t seen anything in the test code that does this for you. You have to go back to the play code to decode the session cookie to check for what you originally wanted to do. The function in playframework\framework\src\play\mvc\Scope.java restore() isn’t accessible so it looks like you have to either use reflection of some sort to call it or write your own session parse function like this (uses the secret from the application.conf to decode):【这使得在测试中使用session值变得有点困难。我在测试的代码中没找到什么可以帮你做这件事的办法。你必须回到Play!的代码去解码那个session cookie以便得到原本的值。这个方法就在playframework\framework\src\play\mvc\Scope.java restore()是不可访问的，所以可能你只好使用类似反射的方法去调用它或者照着写一个你自己的session parse 方法（使用application.conf中的secret码来解码），参考：】https://gist.github.com/1224015 Then you can assert your session code pretty much as you were doing:【然后你就可以用类似下面的办法校验你的session值了：】 :::java @Test public void setsTheSession() throws UnsupportedEncodingException { Http.Response response = GET(&quot;/home/cookie&quot;); Scope.Session session = parseSession(response.cookies.get(&quot;PLAY_SESSION&quot;).value); assertEquals(&quot;yes&quot;, session.get(&quot;worked&quot;)); }On a side note I have switched my functional tests to JWebUnit using the HtmlUnit driver. It has more assert helpers, xpath html parsing and uses rhino for js parsing… but alas you still have to “decode” the PLAY_SESSION either way.【另，我已经将我的functional test转到使用HtmlUnit driver的JWebUnit了。它有更多的校验工具，xpath的html解析工具和rhino的js解析工具等……当然，你还是可以使用”decode”去处理PLAY_SESSION的问题。】 个人建议：在Play!中最好还是只做Model层的单元测试即可，在Controller层中尽量少写业务逻辑代码，方法都往Model层集中，如果项目需要可加上Selenium的Web测试就足够了，实际感觉Functional Test有点鸡肋，不用也罢！]]></content>
       <categories>
-        <category>playscala</category>
+        <category>play1x</category>
       </categories>
       <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2013%2F12%2F23%2Ftracinterfacecustomization%2F</url>
-    <content type="text"><![CDATA[定制Trac界面原文地址 介绍该页面旨提供有关如何定制Trac界面的建议. 话题涵盖了编辑HTML模板和CSS文件, 但不包含程序代码本身. 这些话题想要向用户展示如何更改Trac的外观来满足他们特定的要求. 项目Logo和图标定制Trac界面最简单的部分是logo和站点的图标. 他们都可以通过trac.ini的设置进行配置. logo或者图标应放在项目环境目录中的一个’’htdocs’’目录中(注意: 用Trac0.9之前的版本创建的项目, 你需要创建该目录). ‘’注意: 实际上你可以把logo和图标放在服务器的任何地方(只要通过服务器能访问到就可以), 并且在配置中使用他们的绝对URL或服务器的相对URL.’’ 在你的trac.ini中的配置相应的段: Logo将src设置改为site/, 后面跟着你的图像文件的名字. 应修改’’宽度’’和’’高度’’设置来匹配你的图像的尺寸(Trac的chrome处理器用””site/“”对应位于项目目录的””htdocs””, 用””common/“”对应普通文件). [header_logo] src = site/my_logo.gif alt = My Project width = 300 height = 100图标图标应该是.gif或.ico格式的大小16x16的图像. 将icon选项修改为site/, 后面跟着你的图标文件的名称. 在你的Web浏览器中, 图标一般会显示在站点的URL旁边或者在’’书签’’菜单中. [project] icon = site/my_icon.ico‘’’注意’’’, 该图标会被 IE 忽略, 它只接受主机根路径下名为’’favicon.ico’’的文件. 要使项目图标在IE和其他浏览器中都起作用的话, 你可以将图标储存在主机的根路径中, 并按照下列方法在trac.ini中引用它: [project] icon = /favicon.ico站点页眉和页脚在每个Trac项目的环境目录中, 应该有个叫templates的目录. 该目录包含文件site_header.cs和site_footer.cs. 用户可以通过添加所需的HTML标记到这些文件中, 来定制他们的Trac站点. 这两个文件的内容分别放在网站中每页的开始的标签&lt;body&gt;和结尾的标签&lt;/body&gt;中. 这些文件可以包含静态HTML, 当然, 如果用户想要有动态的内容, 他们可以使用页面内部的ClearSilver模板语言. 当你需要查看模板中有哪些可用变量, 将查询串’’?hdfdump=1’’添加到你的Trac站点的URL中. 这样将显示出模板数据的结构化视图. 站点样式表调整一个Trac网站的布局的主要方法是添加CSS样式规则来覆盖默认的规则. 最好是通过编辑项目环境的templates目录下的site_css.cs文件来实现. 该模板中的内容会插入到Trac生成的每个HTML页面的&lt;style type=&quot;text/css&quot;&gt;``&lt;/style&gt;中. 虽然你可以将定制样式规则直接添加到site_css.cs文件中, 我们建议你只引用一个外部样式表, 以便使浏览器能缓存此CSS文件, 而不是每次都传输这些样式规则. 下面的例子会导入一个位于根style目录下的样式表: @import url(/style/mytrac.css);你可以使用一个!ClearSilver变量来引用存储在项目环境的htdocs目录中的样式表: @import url(`&lt;?cs var:chrome.href ?&gt;`/site/style.css);项目列表如果你在使用Trac执行多个项目时, 你可以用一个定制!ClearSilver模板来显示项目的列表. 下面是Trac用来显示各项目链接的列表的基本模板. 对于不能加载的项目, 它会显示一个错误信息. 你可以将它作为你自己的索引模板的一个起点. :::html #!text/html `&lt;html&gt;` `&lt;head&gt;``&lt;title&gt;`Available Projects`&lt;/title&gt;``&lt;/head&gt;` `&lt;body&gt;` `&lt;h1&gt;`Available Projects`&lt;/h1&gt;` `&lt;ul&gt;`&lt;?cs each:project = projects ?&gt;`&lt;li&gt;`&lt;?cs if:project.href ?&gt; `&lt;a href=&quot;&quot;&lt;?cs var:project.href ?&gt;`&quot;&quot; title=&quot;&quot;`&lt;?cs var:project.description ?&gt;`&quot;&quot;&gt; `&lt;?cs var:project.name ?&gt;``&lt;/a&gt;`&lt;?cs else ?&gt; `&lt;small&gt;``&lt;?cs var:project.name ?&gt;`: `&lt;em&gt;`Error`&lt;/em&gt;` `&lt;br /&gt;` (`&lt;?cs var:project.description ?&gt;`)`&lt;/small&gt;`&lt;?cs /if ?&gt; `&lt;/li&gt;`&lt;?cs /each ?&gt; `&lt;/ul&gt;` `&lt;/body&gt;` `&lt;/html&gt;`一旦你创建了自己的定制模板, 你需要配置Web服务器, 来告诉Trac该模板的具体位置: 对于 FastCGI: FastCgiConfig -initial-env TRAC_ENV_PARENT_DIR=/parent/dir/of/projects \ -initial-env TRAC_ENV_INDEX_TEMPLATE=/path/to/template对于 mod_python: PythonOption TracEnvIndexTemplate /path/to/template对于 CGI: SetEnv TRAC_ENV_INDEX_TEMPLATE /path/to/template主要模板!ClearSilver也可以使用自己修改的Trac !ClearSilver模板. 注意, 不推荐使用该技术, 因为它使得升级Trac有很多问题: 很不幸的是, 在模板和程序代码间存在几个依赖关系, 例如表单域的名称, 模板数据的结构等, 这些在不同版本的Trac中都可能有变化. 如果你一定要使用修改的模板, 将默认模板目录(通常是在$prefix/share/trac/templates中)中的模板文件复制到项目环境中的templates目录中. 然后修改这些副本, 达到你想要的效果。]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[常用Git命令说明]]></title>
-    <url>%2F2013%2F12%2F23%2Foftenused%2F</url>
-    <content type="text"><![CDATA[参考：史上最浅显易懂的Git教程！ 进入你的工作目录 cd yourworkpath 列出所有branch，当前所在branch前面有“*”号。 git branch -a 切换工作库 git checkout v1.5.1 合并另一个branch，通常是master git merge master 再切换回来 git checkout master 查看当前目录情况 git status 将当前目录中的修改提交到相应的库（branch）中 git commit -m “”此处添加修改说明”” 从远程库中合并最新状态 git pull 注：当使用git pull命令的时候如果提示有本地文件修改了，无法合并的时候，我们可以放弃本地修改（注意放弃的修改将不可恢复），然后再更新；如果不想放弃本地修改，可以先提交，然后再合并更新。如果要放弃本地修改后更新： git reset –hard git pull 将合并后的状态并入远程库中。 git push origin master 如果是在分支上开发则为： git push origin v1.5.1 取消某个文件的版本控制，但实际不删除这个文件： git rm –cached somefile.txt 然后再修改目录下的.gitignore文件，添加上这个文件的相应忽略即可。 查看每一行的改动： git blame &lt;filename&gt; git 查看一个文件的所有修改历史 git log –pretty=oneline &lt;filename&gt; 创建一个分支并切换到这个分支工作，通常可用于临时进行一些测试性的开发，如果要保留这个dirty的分支内容，可以commit上去，随时再切换回master就象一切没发生过。 git checkout -b dirty 如果这个测试性的开发需要被接受合并到主干master，只要切换到master再合并即可： git checkout mastergit merge dirty 丢弃加入缓存区（即git add的准备提交的文件）的修改，分别退回到当前版本、上一个版本、上上一个版本、前99个版本、某特定 id 版本： git reset –hard HEAD git reset –hard HEAD^ git reset –hard HEAD^^ git reset –hand HEAD~99 git reset –hard 322542re342 查看过去和未来的版本 id 等信息： git log git reflog 丢弃某个文件的修改，和SVN的revert命令一样 git checkout – comefile.txt 丢弃本地所有文件的修改，和SVN的revert命令一样 1git checkout -- *.* 查看当前路径下的远程库情况： 1git remote -v 添加远程库路径 1git remote add origin https://github.com/wind13/xxx.git 快速本地复制一个库到另一个目录，不带多余的文件： 1git fast-export --all | (mkdir ../repobackup &amp;&amp; cd ../repobackup &amp;&amp; git init &amp;&amp; git fast-import &amp;&amp; git reset --hard HEAD) 分拆代码库 12git filter-branch --prune-empty --subdirectory-filter ./folder/to/subrepo/ branch-namegit filter-branch --prune-empty --subdirectory-filter ./folder/to/subrepo/ -- --all 如果分拆有误，想退回 1git reflog 查看到具体要回到哪个点，记住HEAD{n}里面那个数字n；然后再执行 reset 回到那个位置： 1git reset --hard HEAD@&#123;n&#125; 使用GIT SUBTREE集成项目到子目录 第一次添加子目录，建立与git项目的关联 12git remote add -f ai https://github.com/aoxu/ai.git git subtree add --prefix=ai ai master --squash 从远程仓库更新子目录 12git fetch ai master git subtree pull --prefix=ai ai --squash 从子目录push到远程仓库 1git subtree push --prefix=ai ai master Git 工具 - 子树合并]]></content>
-      <categories>
-        <category>devtech</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2013%2F12%2F13%2Fdetachedpersist%2F</url>
-    <content type="text"><![CDATA[分离实体持久化出错（PersistentObjectException: detached entity passed to persist）问题在Play!使用中，会用到Job来异步执行一些耗时的操作，此时很容易犯这样的错误： :::java public class SomeLongJob extends Job`&lt;Void&gt;` { private SomeModel model; public SomeLongJob(SomeModel model) { this.model = model; } @Override public void doJob() { model.someprop = &quot;new value&quot;; model.save(); } }此时执行后，会在save()方法处抛出异常：PersistentObjectException: detached entity passed to persist 这是因为对象是从外面传进来的，而（我想）doJob是另外一个新启动的线程，所以这里可能只是一个引用，而真正的对象在原来那个主线程中，这边可能就只是个分离的拷贝或只是个引用，所以无权进行持久化操作。尝试过使用 model.merge()，好像不报错了，但又好像没有真正保存了值，猜想是因为没有在主线程中再次执行真正的save()去持久化。 因此，为了彻底避免这样的复杂问题，还是采用比较简单的解决方案吧： :::java SomeLongJob extends Job`&lt;Void&gt;` { private Long id; public SomeLongJob(Long id) { this.id = id; } @Override public void doJob() { SomeModel model = SomeModel.findById(id); model.someprop = &quot;new value&quot;; model.save(); } }这样一来，只传入id即可，所有的操作都在doJob内部，应该说是统一的一个线程中，这样就没有问题了。]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
+        <tag>play1</tag>
+        <tag>session</tag>
       </tags>
   </entry>
   <entry>
     <title></title>
     <url>%2F2013%2F12%2F13%2Fdeepqa%2F</url>
     <content type="text"><![CDATA[Playframework热情交流群里的邮件讨论Freewind@play23月17日 10:21昨天有感于play源代码里的一些强大功能和精巧实现，提出了以下问题，这些问题在群里和几位朋友简单讨论过，但我觉得整理一下会有用。 play的一些打破常规的做法，让我非常欣赏和赞叹。希望大家不要仅满足于使用play，在有余力的情况下，多看看play的源代码，对自己java能力的进一步提高非常有帮助。当你能读懂甚至能独立实现一个类似play的框架时，就是真牛人了：） 有一些问题我也不知道答案，我有时间也会去读，共勉。 问题列表： play的hot reload是怎么实现的 有的库不能直接在play中使用，必须写一个插件以解决classloader的问题，为什么 action中向view中传参数时，可以render(a,b,c)，就直接过去了，不用专门传参数名””a””,””b””,””c””，这是怎么实现的 javabean不用写getter/setter，自动生成，是怎么实现的 其它类中调用javabean中的public field，但是最终将被转为getter/setter，怎么实现的 play中的template用的是groovy的gsp，但增加了自己的东西，比如tag等，是怎么实现的 User类继承Model后，可以使用findXxx这样的静态方法，这个方法是父类提供的，却能返回正确的子类类型，是怎么实现的 Action中直接调用另一个类，不用写return，但后面的代码就不再执行了，这是怎么实现的 play的session是基于cookie的，是怎么实现的 play中可以支持大量客户端的ajax应用，在action里，当接收到一个请求但没有取得需要的数据时，会暂停它的执行让出线程，等到有数据时再回到线程，发给客户端，是怎么实现的 public static void action(String name, String password)，play能根据name和password的名字，到request中取对应的数据，是怎么实现的？默认情况下，java程序编译后，参数名都会变，比如变成action(String a,String b) play的request,response,cookie等类，都是自己定义的，为什么却可以打包为war，部署到tomcat下？那边传过来的可是j2ee里的类 green@使用中3月17日 11:07很好的问题。谈谈自己的一些认识： play的hot reload是怎么实现的 Play 会尝试使用Java instrument来做类的热替换，不过这个过程成功率不高，因为限制很大，包括类方法的签名不能改变如果java instrument替换失效，play会重启，这样会重新装载application class loader，以便获得最新的应用类字节码参见 play.classloading.ApplicationClassloader.detectChanges() 有的库不能直接在play中使用，必须写一个插件以解决classloader的问题，为什么？ 能举例吗？ action中向view中传参数时，可以render(a,b,c)，就直接过去了，不用专门传参数名””a””,””b””,””c””，这是怎么实现的？ play使用本地变量名增强器对应用类进行增强，这个过程会获得参数名字信息并保存到线程变量（ThreadLocal）当中。同时控制器的render方法会尝试获得线程变量中的变量名字，将其放入renderArgs参见 play.classloading.enhancers.LocalvariablesNamesEnhancer 和 play.mvc.Controller.render() javabean不用写getter/setter，自动生成，是怎么实现的 参见 play.classloading.enhancers.PropertiesEnhancer另外不是不用写getter/setter，而是当你没有提供getter/setter方法的时候，play帮你提供一个默认的 其它类中调用javabean中的public field，但是最终将被转为getter/setter，怎么实现的 参见 play.classloading.enhancers.PropertiesEnhancer play中的template用的是groovy的gsp，但增加了自己的东西，比如tag等，是怎么实现的？ tag的实现有两种，一种是定义tag模板（/play/framework/templates），另一种是定义Java类/play/framework/src/play/templates/(FastTags.java|GroovyInlineTags.java))。调用机制在play.templates.GroovyTemplateCompiler.startTag()可以找到 User类继承Model后，可以使用findXxx这样的静态方法，这个方法是父类提供的，却能返回正确的子类类型，是怎么实现的？ 这是通过Java Generic机制实现的，如下代码所示： :::java public static `&lt;T extends Model&gt;` T findById(Object id) { throw new UnsupportedOperationException( &quot;&quot;Embedded entity does not support this method&quot;&quot;); } 其实Java编译器无法判断具体返回类型，只能说是Model的子类。这个机制也有缺陷，导致下面代码编译出错： :::java return (id == null) ? null : MyModel.findById(id); 你只能用一下代码替换： :::java if (null == id) return null; else return MyModel.findById(id); 另外在Model的各种find方法中很多都会抛出UnsupportedOperationException异常，之所以运行的时候没有抛出异常，也是因为通过增强器进行了代码注入。 Action中直接调用另一个类，不用写return，但后面的代码就不再执行了，这是怎么实现的？Controller的各种render方法最后都会抛出play.mvc.results.Result类型的异常 play的session是基于cookie的，是怎么实现的？很简单，在回应请求的时候play的session对象会被写入cookie，而读取请求的时候会从cookie生成session对象 play中可以支持大量客户端的ajax应用，在action里，当接收到一个请求但没有取得需要的数据时，会暂停它的执行让出线程，等到有数据时再回到线程，发给客户端，是怎么实现的？通过await()调用实现的。具体过程比较复杂，如果愿意探究，需要仔细研究Controller和ActionInvoker代码 public static void action(String name, String password)，play能根据name和password的名字，到request中取对应的数据，是怎么实现的？默认情况下，java程序编译后，参数名都会变，比如变成action(String a,String b)与问题3同理，不过使用LocalVariablesNamesTracer的换成了ActionInvoker，这个过程不仅仅是变量名传递，同时还有很复杂的变量类型绑定。具体参见ActionInvoker.getActionMethodArgs的代码 play的request,response,cookie等类，都是自己定义的，为什么却可以打包为war，部署到tomcat下？那边传过来的可是j2ee里的类不熟悉这方面的，大概是play.server.ServletWrapper做转换工作，参见play.server.ServletWrapper.service方法。 Freewind@play23月17日 11:27 比如使用Ebean，如果不写一个插件来处理classloader的问题，在play中无法使用。 Play在dev模式下，编译java源代码后，生成的字节码是放在内存中的，而不是以.class文件形式保存在硬盘上。这给其它一些库带来了麻烦。比如在Ebean的config中，需要传入Model类，Ebean会设法导入对应的.class文件。此时必须写一个插件，让Ebean能从play的classloader中找那些类。不然找不到会报错。]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F12%2F13%2Fhqlcount1%2F</url>
+    <content type="text"><![CDATA[一个Hql中count判断的写法:::java public static void test() { String hql = &quot;select o.teacher.id, o.teacher.goodStudentCount from Student o&quot; + &quot; group by teacher having count(*)&gt;o.teacher.goodStudentCount&quot;; List&lt;Long[]&gt; idCounts = Teacher.find(hql).fetch(); for (Long[] idCount:idCounts) { Logger.debug(&quot;id: %s, %s&quot;, idCount[0], idCount[1]); Long id = idCount[0]; } renderText(&quot;ok!&quot; + idCounts.size()); }]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F12%2F13%2Fcmdchinese%2F</url>
+    <content type="text"><![CDATA[Play在Windows的cmd窗口中中文乱码的解决办法play在cmd 下，system.out()输出的中文都是乱码 首先，可参考：cmd chcp命令切换字符格式 或参考：在Windows的CMD中如何设置支持UTF8编码? 如果 chcp 65001 / chcp 936 改变cmd字符集都不行 参考：http://www.oschina.net/news/19463/play-framework-1-2-2 方法如下： 安装目录下找到C:\Program Files\play-1.2.3\framework\pym\play 目录下的application.py 修改245行中的java_args.append(‘-Dfile.encoding=utf-8’)为 java_args.append(‘-Dfile.encoding=GBK’)（play-1.2.4中在258行，需要用带行号自动分行的编辑打开。） 保存之后重新运行]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F12%2F13%2Fdetachedpersist%2F</url>
+    <content type="text"><![CDATA[分离实体持久化出错（PersistentObjectException: detached entity passed to persist）问题在Play!使用中，会用到Job来异步执行一些耗时的操作，此时很容易犯这样的错误： :::java public class SomeLongJob extends Job`&lt;Void&gt;` { private SomeModel model; public SomeLongJob(SomeModel model) { this.model = model; } @Override public void doJob() { model.someprop = &quot;new value&quot;; model.save(); } }此时执行后，会在save()方法处抛出异常：PersistentObjectException: detached entity passed to persist 这是因为对象是从外面传进来的，而（我想）doJob是另外一个新启动的线程，所以这里可能只是一个引用，而真正的对象在原来那个主线程中，这边可能就只是个分离的拷贝或只是个引用，所以无权进行持久化操作。尝试过使用 model.merge()，好像不报错了，但又好像没有真正保存了值，猜想是因为没有在主线程中再次执行真正的save()去持久化。 因此，为了彻底避免这样的复杂问题，还是采用比较简单的解决方案吧： :::java SomeLongJob extends Job`&lt;Void&gt;` { private Long id; public SomeLongJob(Long id) { this.id = id; } @Override public void doJob() { SomeModel model = SomeModel.findById(id); model.someprop = &quot;new value&quot;; model.save(); } }这样一来，只传入id即可，所有的操作都在doJob内部，应该说是统一的一个线程中，这样就没有问题了。]]></content>
       <categories>
         <category>playscala</category>
       </categories>
@@ -746,15 +791,26 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[FunctionTest中如何取得session的值]]></title>
-    <url>%2F2013%2F12%2F13%2Ffunctiontestsession%2F</url>
-    <content type="text"><![CDATA[原文摘抄自：https://groups.google.com/d/msg/play-framework/-/iQLX-uLwHWsJ （可能因墙访问不了……我是在邮件列表中收集的） 需求和问题原问及简单翻译说明如下： Given a simple action:【简单给一个action如下：】 :::java public static void testAction() { session.put(&quot;worked&quot;, &quot;yes&quot;); }I want to test that the session is set:【我试着测试这个session是否被设置：】 :::java @Test public void setsTheSession() { Response response = GET(&quot;/test&quot;); assertEquals(&quot;yes&quot;, Scope.Session.current().get(&quot;worked&quot;)); }But Scope.Session.current() always returns an empty map. Any clues?【但Scope.Session.current()总是返回一个空的Map。有什么办法吗？】 关键回答原答及简单翻译如下： I don’t think that works because you are not in the context of a server request when in a test. You are just acting as a regular browser making a GET request.【我不认为可以那样写，因为在一个test中你不在服务请求的上下文中。你只是象一个普通的浏览器那样发送了一个GET请求。】If you want to set a cookie from a Controller you do this:【如果你想在Controller中设置cookie，你可以象这样：】response.setCookie(&quot;mycookie&quot;, &quot;myvalue&quot;, &quot;1d&quot;);{java}Then in your test you can do:【然后在你的测试中，你可以这样：】 :::java Http.Response response = GET(&quot;/home/cookie&quot;); assertEquals(&quot;myvalue&quot;, response.cookies.get(&quot;mycookie&quot;).value);For sessions you should take a look at this first:【而session方面，你就应该先看一下这个：】http://www.playframework.org/documentation/1.2.3/controllers#session “It’s important to understand that Session and Flash data are not stored in the server but are added to each subsequent HTTP Request, using the Cookie mechanism. So the data size is very limited (up to 4 KB) and you can only store String values.”【理解这点很重要：Session和Flash的数据并不是保存在服务端，而是通过Cookie的机制加在每一次的HTTP请求中。所以数据的大小是受限制的（最多到4KB）并且你只可以保存String字串值。】They are of course signed so they can’t be changed. If I write session.put(“testcookie”, “brian”) I get this in the response header:【它们当然是被加密的，所以你不能修改。如果我写session.put(“testcookie”, “brian”)，那么我将在response的header中得到：】&quot;PLAY_SESSION=31a4e4777b5950d78b9f3f88b02dfdb2361b5699-%00testcookie%3Abrian%00;Path=/&quot; This makes the job of testing actual session variables a little harder. I haven’t seen anything in the test code that does this for you. You have to go back to the play code to decode the session cookie to check for what you originally wanted to do. The function in playframework\framework\src\play\mvc\Scope.java restore() isn’t accessible so it looks like you have to either use reflection of some sort to call it or write your own session parse function like this (uses the secret from the application.conf to decode):【这使得在测试中使用session值变得有点困难。我在测试的代码中没找到什么可以帮你做这件事的办法。你必须回到Play!的代码去解码那个session cookie以便得到原本的值。这个方法就在playframework\framework\src\play\mvc\Scope.java restore()是不可访问的，所以可能你只好使用类似反射的方法去调用它或者照着写一个你自己的session parse 方法（使用application.conf中的secret码来解码），参考：】https://gist.github.com/1224015 Then you can assert your session code pretty much as you were doing:【然后你就可以用类似下面的办法校验你的session值了：】 :::java @Test public void setsTheSession() throws UnsupportedEncodingException { Http.Response response = GET(&quot;/home/cookie&quot;); Scope.Session session = parseSession(response.cookies.get(&quot;PLAY_SESSION&quot;).value); assertEquals(&quot;yes&quot;, session.get(&quot;worked&quot;)); }On a side note I have switched my functional tests to JWebUnit using the HtmlUnit driver. It has more assert helpers, xpath html parsing and uses rhino for js parsing… but alas you still have to “decode” the PLAY_SESSION either way.【另，我已经将我的functional test转到使用HtmlUnit driver的JWebUnit了。它有更多的校验工具，xpath的html解析工具和rhino的js解析工具等……当然，你还是可以使用”decode”去处理PLAY_SESSION的问题。】 个人建议：在Play!中最好还是只做Model层的单元测试即可，在Controller层中尽量少写业务逻辑代码，方法都往Model层集中，如果项目需要可加上Selenium的Web测试就足够了，实际感觉Functional Test有点鸡肋，不用也罢！]]></content>
+    <title><![CDATA[Play!中如何用module组织多个相关项目？]]></title>
+    <url>%2F2013%2F12%2F13%2Fmultiproject%2F</url>
+    <content type="text"><![CDATA[首先按业务需求划分为多个应用，应用就是用 play new xxx来创建的。 其次将公用部分划分为多个子项目或称子模块，就是用 play new-module创建的。 这些项目均并列导入eclipse中，应用引用相应需要的子项目，需要在application.conf中添加，有多个就添加多行： module.base=../base module.common=../common 在eclipse的项目属性中添加引用的子项目即可。 注：关键在于项目规划合理，子项目或公用项目中model层可以分包，如：com.xxx.pack，而controllers和views也可以分包，但要慎重使用，在引用时也有一点小特殊写法。]]></content>
       <categories>
         <category>play1x</category>
       </categories>
       <tags>
-        <tag>play1</tag>
-        <tag>session</tag>
+        <tag>play1x</tag>
+        <tag>module</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F12%2F13%2Foperationnotpermitted%2F</url>
+    <content type="text"><![CDATA[Operation not permitted 执行权限的问题在Linux系统中，正好项目放在原Windows的Fat32盘上，于是在执行play eclipsify的时候会报 Operation not permitted的错。 临时使用的话，只要使用root权限就可以正常执行。而Fat32的盘在Linux下是无法进行权限设置的，好像设置后还是无法记录下权限信息，所以要彻底解决这个问题就要将Fat32转为NTFS才行。]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>playscala</tag>
       </tags>
   </entry>
   <entry>
@@ -769,25 +825,15 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>%2F2013%2F12%2F13%2Fcacheremovetime%2F</url>
-    <content type="text"><![CDATA[移除Cache可以有时间参数吗？是的，可以，使用下面这样的语句即可： :::java Cache.set(&quot;some&quot;, null, 0)其中最后一个参数是时间，单位是秒。详见源代码。]]></content>
+    <title><![CDATA[如何同时使用http和https协议]]></title>
+    <url>%2F2013%2F12%2F13%2Fuserhttps%2F</url>
+    <content type="text"><![CDATA[首先看官方文档 用openssl命令生成自己的签名文档 openssl genrsa 1024 &gt; host.key openssl req -new -x509 -nodes -sha1 -days 365 -key host.key &gt; host.cert生成签名时需回答类似这样的问题： Country Name (2 letter code) [XX]: State or Province Name (full name) []: Locality Name (eg, city) [Default City]: Organization Name (eg, company) [Default Company Ltd]: Organizational Unit Name (eg, section) []: Common Name (eg, your name or your server&apos;s hostname) []: Email Address []:最终会得到两个文件：host.key和host.cert 然后在application.conf文件中配置如下： http.port=9000 https.port=9443 # X509 certificates certificate.key.file=conf/host.key certificate.file=conf/host.cert # In case your key file is password protected certificate.password=secret trustmanager.algorithm=JKS原问题及回答 You just need to have both http.port and https.port in the application.conf file. For the links you want to be different from the normal site, use the @@ notation: 你只需要在application.conf文件中配置http.port和https.port，然后在页面上使用如下链接即可： @@{Controller.action().secure()} =&gt;https://... @@{Controller.action()} =&gt; http://]]></content>
       <categories>
-        <category>playscala</category>
+        <category>play1x</category>
       </categories>
       <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2013%2F12%2F13%2Fhqlcount1%2F</url>
-    <content type="text"><![CDATA[一个Hql中count判断的写法:::java public static void test() { String hql = &quot;select o.teacher.id, o.teacher.goodStudentCount from Student o&quot; + &quot; group by teacher having count(*)&gt;o.teacher.goodStudentCount&quot;; List&lt;Long[]&gt; idCounts = Teacher.find(hql).fetch(); for (Long[] idCount:idCounts) { Logger.debug(&quot;id: %s, %s&quot;, idCount[0], idCount[1]); Long id = idCount[0]; } renderText(&quot;ok!&quot; + idCounts.size()); }]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
+        <tag>play1x</tag>
+        <tag>https</tag>
       </tags>
   </entry>
   <entry>
@@ -805,66 +851,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[如何同时使用http和https协议]]></title>
-    <url>%2F2013%2F12%2F13%2Fuserhttps%2F</url>
-    <content type="text"><![CDATA[首先看官方文档 用openssl命令生成自己的签名文档 openssl genrsa 1024 &gt; host.key openssl req -new -x509 -nodes -sha1 -days 365 -key host.key &gt; host.cert生成签名时需回答类似这样的问题： Country Name (2 letter code) [XX]: State or Province Name (full name) []: Locality Name (eg, city) [Default City]: Organization Name (eg, company) [Default Company Ltd]: Organizational Unit Name (eg, section) []: Common Name (eg, your name or your server&apos;s hostname) []: Email Address []:最终会得到两个文件：host.key和host.cert 然后在application.conf文件中配置如下： http.port=9000 https.port=9443 # X509 certificates certificate.key.file=conf/host.key certificate.file=conf/host.cert # In case your key file is password protected certificate.password=secret trustmanager.algorithm=JKS原问题及回答 You just need to have both http.port and https.port in the application.conf file. For the links you want to be different from the normal site, use the @@ notation: 你只需要在application.conf文件中配置http.port和https.port，然后在页面上使用如下链接即可： @@{Controller.action().secure()} =&gt;https://... @@{Controller.action()} =&gt; http://]]></content>
-      <categories>
-        <category>play1x</category>
-      </categories>
-      <tags>
-        <tag>play1x</tag>
-        <tag>https</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2013%2F12%2F13%2Foperationnotpermitted%2F</url>
-    <content type="text"><![CDATA[Operation not permitted 执行权限的问题在Linux系统中，正好项目放在原Windows的Fat32盘上，于是在执行play eclipsify的时候会报 Operation not permitted的错。 临时使用的话，只要使用root权限就可以正常执行。而Fat32的盘在Linux下是无法进行权限设置的，好像设置后还是无法记录下权限信息，所以要彻底解决这个问题就要将Fat32转为NTFS才行。]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Play!中如何用module组织多个相关项目？]]></title>
-    <url>%2F2013%2F12%2F13%2Fmultiproject%2F</url>
-    <content type="text"><![CDATA[首先按业务需求划分为多个应用，应用就是用 play new xxx来创建的。 其次将公用部分划分为多个子项目或称子模块，就是用 play new-module创建的。 这些项目均并列导入eclipse中，应用引用相应需要的子项目，需要在application.conf中添加，有多个就添加多行： module.base=../base module.common=../common 在eclipse的项目属性中添加引用的子项目即可。 注：关键在于项目规划合理，子项目或公用项目中model层可以分包，如：com.xxx.pack，而controllers和views也可以分包，但要慎重使用，在引用时也有一点小特殊写法。]]></content>
-      <categories>
-        <category>play1x</category>
-      </categories>
-      <tags>
-        <tag>play1x</tag>
-        <tag>module</tag>
-      </tags>
-  </entry>
-  <entry>
     <title></title>
     <url>%2F2013%2F12%2F13%2Fvalidateandsave%2F</url>
     <content type="text"><![CDATA[对像存储报错 validateAndSave问题问题：在存储对像时，同时存储该对像的关联对像，则会报错。\ 例：room为hotel的关联对像。 :::java public class Room { @ManyToOne public Hotel hotel; } :::java Hotel hotel = new Hotel(); Room room = new Room(hotel); room.validateAndSave();会报错。这是因为在保存room对象的时候，hotel对象还没有持久化，所以room对象里面要保存一个hotelId就无法取得了，故必须要先保存父对象，再保存子对象。 必须先将对像hotel存储，再存储一遍room对像。 :::java Hotel hotel = new Hotel(); hotel.validateAndSave(); Room room = new Room(hotel); room.validateAndSave();]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2013%2F12%2F13%2Fcmdchinese%2F</url>
-    <content type="text"><![CDATA[Play在Windows的cmd窗口中中文乱码的解决办法play在cmd 下，system.out()输出的中文都是乱码 首先，可参考：cmd chcp命令切换字符格式 或参考：在Windows的CMD中如何设置支持UTF8编码? 如果 chcp 65001 / chcp 936 改变cmd字符集都不行 参考：http://www.oschina.net/news/19463/play-framework-1-2-2 方法如下： 安装目录下找到C:\Program Files\play-1.2.3\framework\pym\play 目录下的application.py 修改245行中的java_args.append(‘-Dfile.encoding=utf-8’)为 java_args.append(‘-Dfile.encoding=GBK’)（play-1.2.4中在258行，需要用带行号自动分行的编辑打开。） 保存之后重新运行]]></content>
-      <categories>
-        <category>playscala</category>
-      </categories>
-      <tags>
-        <tag>playscala</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2013%2F10%2F26%2Ffunnyclassic%2F</url>
-    <content type="text"><![CDATA[有趣经典收集 纯爷们从不围观爆炸（英文歌词） 情人节程序员经典表白 一个不错的塔防Flash游戏]]></content>
       <categories>
         <category>playscala</category>
       </categories>
@@ -885,15 +874,13 @@
   </entry>
   <entry>
     <title></title>
-    <url>%2F2013%2F09%2F29%2Fdevlinks%2F</url>
-    <content type="text"><![CDATA[编程知识链接收集 Java 相关 java.util.logging.Logger使用详解 10 Java Regular Expression Examples You Should Know Java Regex cheat sheet]]></content>
+    <url>%2F2013%2F10%2F26%2Ffunnyclassic%2F</url>
+    <content type="text"><![CDATA[有趣经典收集 纯爷们从不围观爆炸（英文歌词） 情人节程序员经典表白 一个不错的塔防Flash游戏]]></content>
       <categories>
         <category>playscala</category>
       </categories>
       <tags>
-        <tag>Java</tag>
-        <tag>Regex</tag>
-        <tag>正则表达式</tag>
+        <tag>playscala</tag>
       </tags>
   </entry>
   <entry>
@@ -917,6 +904,19 @@
       </categories>
       <tags>
         <tag>playscala</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2013%2F09%2F29%2Fdevlinks%2F</url>
+    <content type="text"><![CDATA[编程知识链接收集 Java 相关 java.util.logging.Logger使用详解 10 Java Regular Expression Examples You Should Know Java Regex cheat sheet]]></content>
+      <categories>
+        <category>playscala</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Regex</tag>
+        <tag>正则表达式</tag>
       </tags>
   </entry>
   <entry>

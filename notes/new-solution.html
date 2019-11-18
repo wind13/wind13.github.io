@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.0.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content=",,,,,">
+
+
+<meta name="description" content="最新技术选型语言 Reason 可以让您编写简单，快速和优质的类型安全代码，同时利用 JavaScript 和 OCaml 的生态。 OCaml  is an industrial strength programming language supporting functional, imperative and object-oriented styles. 一种支持功能、命令和面向对象的工业">
+<meta name="keywords" content="Angular,TypeScript,React,React Native,Unit Test">
+<meta property="og:type" content="website">
+<meta property="og:title" content="最新技术选型">
+<meta property="og:url" content="http://wind13.github.io/notes/new-solution.html">
+<meta property="og:site_name" content="Wind13&#39;s Blog">
+<meta property="og:description" content="最新技术选型语言 Reason 可以让您编写简单，快速和优质的类型安全代码，同时利用 JavaScript 和 OCaml 的生态。 OCaml  is an industrial strength programming language supporting functional, imperative and object-oriented styles. 一种支持功能、命令和面向对象的工业">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-11-11T14:10:25.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="最新技术选型">
+<meta name="twitter:description" content="最新技术选型语言 Reason 可以让您编写简单，快速和优质的类型安全代码，同时利用 JavaScript 和 OCaml 的生态。 OCaml  is an industrial strength programming language supporting functional, imperative and object-oriented styles. 一种支持功能、命令和面向对象的工业">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Wind13's Blog" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://wind13.github.io/notes/new-solution.html">
+
+
+  <title>最新技术选型 | Wind13's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wind13's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+	<h1 class="post-title" itemprop="name headline">最新技术选型</h1>
+
+
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <h1 id="最新技术选型"><a href="#最新技术选型" class="headerlink" title="最新技术选型"></a>最新技术选型</h1><h2 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h2><ul>
+<li><a href="https://reasonml.github.io/zh-CN" target="_blank" rel="noopener">Reason</a> 可以让您编写简单，快速和优质的类型安全代码，同时利用 JavaScript 和 OCaml 的生态。</li>
+<li><a href="https://ocaml.org/" target="_blank" rel="noopener">OCaml</a>  is an industrial strength programming language supporting functional, imperative and object-oriented styles. 一种支持功能、命令和面向对象的工业强度编程语言，<strong>一种快速、实用且强类型的编程语言</strong></li>
+<li><a href="https://bucklescript.github.io/" target="_blank" rel="noopener">BuckleScript</a> 不是一个新的编程语言。 它只是将输入的 OCaml，通过一些调整，使其编译为干净、可读的 JavaScript 代码。</li>
+<li><a href="https://buckbuild.com/" target="_blank" rel="noopener">Buck</a> A high-performance build tool，可用于快速编译 Android, iOS, Java, Ocaml, Go 等</li>
+<li><a href="https://tree-sitter.github.io/tree-sitter/" target="_blank" rel="noopener">Tree-sitter</a> is an incremental parsing library. 可以解析各种语言的库。</li>
+<li><a href="http://julialang.org" target="_blank" rel="noopener">Julia</a> 可用于人工智能等领域</li>
+</ul>
+<h3 id="Utils"><a href="#Utils" class="headerlink" title="Utils"></a>Utils</h3><ul>
+<li><a href="https://ramdajs.com/" target="_blank" rel="noopener">ramba.js</a><ul>
+<li><a href="https://github.com/ramda/ramda/wiki/What-Function-Should-I-Use%3F" target="_blank" rel="noopener">What Function Should I Use?</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="加密"><a href="#加密" class="headerlink" title="加密"></a>加密</h4><ul>
+<li><p><a href="https://github.com/brix/crypto-js" target="_blank" rel="noopener">crypto-js</a> JavaScript library of crypto standards. 包含几乎所有标准加密库。</p>
+</li>
+<li><p><a href="https://github.com/dcodeIO/bcrypt.js" target="_blank" rel="noopener">bcrypt.js</a> Optimized bcrypt in plain JavaScript with zero dependencies. </p>
+</li>
+<li><p><a href="https://github.com/yolopunk/egg-bcrypt" target="_blank" rel="noopener">egg-bcrypt</a> Based on bcrypt.js for egg.js web framework.</p>
+</li>
+<li><p><a href="https://codahale.com/how-to-safely-store-a-password/" target="_blank" rel="noopener">How To Safely Store A Password</a></p>
+</li>
+<li><p><a href="https://paragonie.com/blog/2016/02/how-safely-store-password-in-2016" target="_blank" rel="noopener">How to Safely Store Your Users’ Passwords in 2016</a></p>
+</li>
+<li><p><a href="https://www.mongodb.com/blog/post/password-authentication-with-mongoose-part-1" target="_blank" rel="noopener">Password Authentication with Mongoose</a></p>
+</li>
+<li><p><a href="https://blog.couchbase.com/storing-password-data-safely-with-nodejs/" target="_blank" rel="noopener">Storing Password Data Safely with Node.js and Bcrypt</a></p>
+</li>
+</ul>
+<h2 id="Web-前端（JavaScript-ClojureScript）"><a href="#Web-前端（JavaScript-ClojureScript）" class="headerlink" title="Web 前端（JavaScript, ClojureScript）"></a>Web 前端（JavaScript, ClojureScript）</h2><h3 id="Web"><a href="#Web" class="headerlink" title="Web"></a>Web</h3><ul>
+<li><p>微前端 <a href="https://single-spa.js.org/" target="_blank" rel="noopener">single-spa</a></p>
+</li>
+<li><p><a href="https://aurelia.io/" target="_blank" rel="noopener">Aurelia</a> is a JavaScript client framework for web, mobile and desktop that leverages simple conventions to empower your creativity. 非常全面的前端框架，适合替换 Angular， Angular 学习曲线很陡峭，特殊的魔法太多。 而这个 Aurelia 则更直观简洁，使用最新的 ES6 技术，设计更合理也更易于实践。</p>
+<ul>
+<li><a href="https://ilikekillnerds.com/2015/03/aurelia-vs-react-js-based-on-actual-use/" target="_blank" rel="noopener">Aurelia vs. React.js: Based On Actual Use</a></li>
+<li><a href="https://www.valuecoders.com/blog/technology-and-apps/aurelia-js-framework-review-typescript-router/" target="_blank" rel="noopener">5 Benefits Of Choosing Aurelia js Over AngularJS</a></li>
+<li><a href="https://www.reddit.com/r/webdev/comments/5wtfc0/vue_vs_aurelia_in_existing_application/" target="_blank" rel="noopener">Vue vs Aurelia in existing application.</a></li>
+</ul>
+</li>
+<li><p><a href="https://github.com/immerjs/immer" target="_blank" rel="noopener">Immer</a> Create the next immutable state by mutating the current one. 与 MobX 相同的创建者，中年大叔。</p>
+</li>
+<li><p><a href="https://mobx.js.org/" target="_blank" rel="noopener">MobX</a> Simple, scalable state management. 超越 Redux 的库，更灵活，更简单，更函数式编程，更响应式编程。<a href="https://cn.mobx.js.org/" target="_blank" rel="noopener">中文文档</a></p>
+<ul>
+<li><a href="https://segmentfault.com/a/1190000006125797" target="_blank" rel="noopener">不懂函数式？用mobx来写react应用吧</a></li>
+<li><a href="https://segmentfault.com/a/1190000010745997" target="_blank" rel="noopener">更好用的数据流管理框架:Vanex发布了~</a></li>
+</ul>
+</li>
+<li><p><a href="https://github.com/xiamidaxia/tangram-react" target="_blank" rel="noopener">Tangram</a> Simple, React state management</p>
+</li>
+<li><p><a href="https://umijs.org/" target="_blank" rel="noopener">UmiJS</a> 极快的类 Next.js 的 React 应用框架。</p>
+</li>
+</ul>
+<h3 id="UI"><a href="#UI" class="headerlink" title="UI"></a>UI</h3><ul>
+<li><a href="https://rsuitejs.com/" target="_blank" rel="noopener">RSUITE</a> 一套 React 的 UI 组件库</li>
+<li><a href="https://adarshpastakia.github.io/aurelia-ui-framework/#/" target="_blank" rel="noopener">Aurelia UI Framework</a> A bespoke UI Framework for business applications, 比较专业的 UI 框架，使用 Aurelia 技术。 The MIT License (MIT)</li>
+<li><a href="https://materializecss.com/" target="_blank" rel="noopener">Materialize</a> A modern responsive front-end framework based on Material Design</li>
+<li><a href="https://aurelia-ui-toolkits.github.io/demo-materialize/" target="_blank" rel="noopener">Aurelia Materialize Bridge</a></li>
+<li><a href="http://www.semantic-ui.cn/" target="_blank" rel="noopener">Semantic UI</a></li>
+<li><a href="https://bitbucket.org/ged/aurelia-semantic-ui" target="_blank" rel="noopener">aurelia-semantic-ui</a> 开发状态，未到 alpha 版</li>
+<li><a href="http://ui.toast.com/" target="_blank" rel="noopener">TOAST UI</a> <a href="https://github.com/nhnent?q=tui" target="_blank" rel="noopener">Components</a><ul>
+<li><a href="https://github.com/nhnent/tui.calendar" target="_blank" rel="noopener">TOAST UI Calendar</a></li>
+<li><a href="https://github.com/nhnent/tui.image-editor" target="_blank" rel="noopener">TOAST UI ImageEditor</a></li>
+<li><a href="https://github.com/nhnent/tui.grid" target="_blank" rel="noopener">TOAST UI Grid</a></li>
+<li><a href="https://github.com/nhnent/tui.chart" target="_blank" rel="noopener">TOAST UI Chart</a></li>
+</ul>
+</li>
+<li><a href="https://www.freepik.com/" target="_blank" rel="noopener">FreePik</a> 免费失量图片</li>
+<li><a href="https://www.jianshu.com/p/2a8ce7075d79" target="_blank" rel="noopener">进阶攻略|前端最全的框架总结</a></li>
+<li><a href="www.uishijie.com">UI世界</a> 各种 UI 展示，仅图片，可供设计参考。</li>
+</ul>
+<h4 id="Layout-amp-Farewell-CSS"><a href="#Layout-amp-Farewell-CSS" class="headerlink" title="Layout &amp; Farewell CSS"></a>Layout &amp; <a href="https://moox.io/blog/farewell-css/" target="_blank" rel="noopener">Farewell CSS</a></h4><ul>
+<li><a href="https://postcss.org/" target="_blank" rel="noopener">PostCSS</a> A tool for transforming CSS with JavaScrip. 超越 Sass 和 Less 了。通过插件系统，也可以自定义插件，最终可以实现各种需求。<ul>
+<li><a href="http://julian.io/some-things-you-may-think-about-postcss-and-you-might-be-wrong/" target="_blank" rel="noopener">Some things you may think about PostCSS… and you might be wrong</a></li>
+<li><a href="https://davidtheclark.com/its-time-for-everyone-to-learn-about-postcss/" target="_blank" rel="noopener">It’s Time for Everyone to Learn About PostCSS What It Really Is; What It Really Does</a></li>
+<li><a href="https://webdesign.tutsplus.com/series/postcss-deep-dive--cms-889" target="_blank" rel="noopener">PostCSS Deep Dive</a> 详细教程</li>
+<li><a href="https://www.postcss.parts/" target="_blank" rel="noopener">PostCSS.parts</a> A searchable catalog of PostCSS plugins. 搜 PostCSS 的插件</li>
+<li><a href="https://github.com/jacobp100/es-css-modules" target="_blank" rel="noopener">es-css-modules</a> PostCSS plugin that combines CSS Modules and ES Imports.</li>
+<li><a href="https://www.jianshu.com/p/51ff1c8be301" target="_blank" rel="noopener">如何在react中使用antd+less+css modules</a></li>
+<li><a href="http://www.qingpingshan.com/jb/javascript/265294.html" target="_blank" rel="noopener">精度《请停止css-in-js的行为》</a></li>
+</ul>
+</li>
+<li><a href="https://preset-env.cssdb.org/" target="_blank" rel="noopener">postcss-preset-env</a> Use tomorrow’s CSS today.</li>
+<li><a href="https://yogalayout.com/" target="_blank" rel="noopener">Yoga</a> Flexible Layouts</li>
+</ul>
+<h4 id="CSS-in-JS"><a href="#CSS-in-JS" class="headerlink" title="CSS in JS"></a>CSS in JS</h4><ul>
+<li><a href="https://emotion.sh/" target="_blank" rel="noopener">emotion.sh</a></li>
+</ul>
+<h3 id="Web-2D"><a href="#Web-2D" class="headerlink" title="Web 2D"></a>Web 2D</h3><ul>
+<li><a href="https://alibaba.github.io/GCanvas/" target="_blank" rel="noopener">GCanvas</a> 淘宝开源</li>
+<li><a href="http://fabricjs.com/" target="_blank" rel="noopener">Fabric.js</a> provides interactive object model on top of canvas element. Fabric also has SVG-to-canvas (and canvas-to-SVG) parse. SVG 和 Canvas 互转库。</li>
+</ul>
+<h3 id="Web-3D"><a href="#Web-3D" class="headerlink" title="Web 3D"></a>Web 3D</h3><ul>
+<li><a href="https://alibaba.github.io/G3D" target="_blank" rel="noopener">G3D</a> 淘宝开源</li>
+</ul>
+<h3 id="CSS-in-js"><a href="#CSS-in-js" class="headerlink" title="CSS in js"></a>CSS in js</h3><ul>
+<li><a href="http://cssinjs.org/" target="_blank" rel="noopener">JSS</a></li>
+</ul>
+<h3 id="用户响应"><a href="#用户响应" class="headerlink" title="用户响应"></a>用户响应</h3><ul>
+<li><a href="https://alibaba.github.io/bindingx" target="_blank" rel="noopener">BindingX</a> 淘宝开源，将用户的操作转化为表达式，直接转化为原生应用，不通过 javascript 中转。</li>
+</ul>
+<h3 id="代码检查"><a href="#代码检查" class="headerlink" title="代码检查"></a>代码检查</h3><ul>
+<li><a href="https://github.com/dgraham/eslint-plugin-jquery" target="_blank" rel="noopener">eslint-plugin-jquery</a> Disallow jQuery functions with native equivalents. 如果有人试图使用 jQuery 功能，例如 $.ajax，CI 检查将会失败。</li>
+</ul>
+<h2 id="人工智能"><a href="#人工智能" class="headerlink" title="人工智能"></a>人工智能</h2><ul>
+<li><a href="https://zhuanlan.zhihu.com/p/35451395" target="_blank" rel="noopener">前端人工智能？TensorFlow.js 学会游戏通关</a></li>
+</ul>
+<h2 id="App-开发"><a href="#App-开发" class="headerlink" title="App 开发"></a>App 开发</h2><ul>
+<li><a href="http://www.appcelerator.com/" target="_blank" rel="noopener">AppCelerator</a></li>
+<li><a href="http://framework7.io/docs/introduction.html" target="_blank" rel="noopener">Framework7</a></li>
+<li><a href="https://taro.js.org/" target="_blank" rel="noopener">Taro</a> 一套遵循 React 语法规范的多端统一开发框架</li>
+<li><a href="https://cml.js.org/#/" target="_blank" rel="noopener">Chameleon</a> 一套代码运行多端，一端所见</li>
+</ul>
+<h2 id="Web-后端"><a href="#Web-后端" class="headerlink" title="Web 后端"></a>Web 后端</h2><ul>
+<li><a href="http://www.cnblogs.com/yangecnu/p/Introduction-CQRS.html" target="_blank" rel="noopener">命令查询职责分离模式(Command Query Responsibility Segregation，CQRS)</a></li>
+<li><a href="https://cheerio.js.org/" target="_blank" rel="noopener">cheerio</a> core jQuery designed specifically for the server.</li>
+</ul>
+<h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h3><ul>
+<li>需要底层性能优化时，可以考虑用 <a href="http://www.rust-lang.org/" target="_blank" rel="noopener">Rust</a><ul>
+<li><a href="https://mrale.ph/blog/2018/02/03/maybe-you-dont-need-rust-to-speed-up-your-js.html" target="_blank" rel="noopener">Maybe you don’t need Rust and WASM to speed up your JS</a></li>
+</ul>
+</li>
+<li><a href="https://blog.risingstack.com/how-to-use-rust-with-node-when-performance-matters/" target="_blank" rel="noopener">How to Use Rust with Node.js When Performance Matters</a></li>
+<li>其中提到为什么不用 <a href="https://nodejs.org/api/addons.html" target="_blank" rel="noopener">addon</a> 和 <a href="https://www.npmjs.com/package/nan" target="_blank" rel="noopener">nan</a>，如果需要访问 V8/libuv 就适合使用 native addons，否则可以尝试其他更好的方案。</li>
+<li><a href="https://github.com/RisingStack/node-with-rust" target="_blank" rel="noopener">node-with-rust</a> A demo use Rust from Node.</li>
+<li><a href="http://blog.chinaunix.net/uid-23069658-id-3959636.html" target="_blank" rel="noopener">Segmentation fault到底是何方妖孽</a> 解释了进程、程序、装载等概念。</li>
+<li><a href="http://docs.sequelizejs.com/" target="_blank" rel="noopener">Sequelize</a> ORM 库，用于连接各种关系型数据库，如：MySQL, PostgreSQL, SQLite 和 MSSQL 等。</li>
+</ul>
+<h3 id="基于-Egg-js-的技术选型"><a href="#基于-Egg-js-的技术选型" class="headerlink" title="基于 Egg.js 的技术选型"></a>基于 Egg.js 的技术选型</h3><ul>
+<li><a href="https://github.com/eggjs/awesome-egg" target="_blank" rel="noopener">Awesome Egg.js</a></li>
+<li><a href="https://cnodejs.org/" target="_blank" rel="noopener">CNode</a> <a href="https://github.com/cnodejs/egg-cnode" target="_blank" rel="noopener">源码</a></li>
+<li><a href="https://github.com/alibaba/beidou/blob/master/README-ZH.md" target="_blank" rel="noopener">北斗 Baidou 同构框架</a> 阿里巴巴开源框架</li>
+<li><a href="http://egg-born.org/" target="_blank" rel="noopener">EggBorn.js</a> 是一款顶级Javascript全栈开发框架。前端采用 Vue.js + Framework7 / Vue Router + Webpack，后端采用Koa.js + Egg.js，数据库采用mysql。</li>
+<li><a href="https://github.com/sfyr111/egg-commerce" target="_blank" rel="noopener">egg-commerce</a>egg / mysql 开发电商平台 集成支付宝面对面支付、手机网站唤醒APP支付。</li>
+<li><a href="https://github.com/seasonstar/egg-24time" target="_blank" rel="noopener">微信小程序社区全栈解决方案</a> 24小时社区</li>
+<li><a href="https://avetjs.github.io/avet/index-cn" target="_blank" rel="noopener">AVET</a> 一款更好的构建 React 同构应用框架，结合 Egg.js 和 Next.js，主要特色是服务端渲染，同构 React 应用。 2018年6月7日 注：起步阶段，不成熟，但可以关注发展。</li>
+<li><a href="https://github.com/DXY-F2E/api-mocker" target="_blank" rel="noopener">接口管理系统 - API Mocker</a> 成熟可用，采用技术：Egg.js, Vue.js, ElementUI, Mock.js, MongoDB, Mongoose, Ramda, ESLint 等。</li>
+</ul>
+<h3 id="API-tools"><a href="#API-tools" class="headerlink" title="API tools"></a>API tools</h3><ul>
+<li><a href="https://api-university.com/blog/why-do-i-need-openapi-swagger-or-raml/" target="_blank" rel="noopener">Why do I need OpenAPI, Swagger or RAML?</a></li>
+<li><a href="https://swagger.io/blog/api-strategy/difference-between-swagger-and-openapi/" target="_blank" rel="noopener">What Is the Difference Between Swagger and OpenAPI?</a></li>
+<li><a href="https://blogs.mulesoft.com/dev/api-dev/open-api-raml-better-together/" target="_blank" rel="noopener">Open API and RAML: Better Together</a> RAML as a modeling language and OAS as a description language.</li>
+</ul>
+<h3 id="无服务器计算"><a href="#无服务器计算" class="headerlink" title="无服务器计算"></a>无服务器计算</h3><ul>
+<li><a href="https://zhuanlan.zhihu.com/p/31086566" target="_blank" rel="noopener">Serverless vs 容器：Serverless终将胜出！</a></li>
+<li><a href="http://baijiahao.baidu.com/s?id=1578424223926160442" target="_blank" rel="noopener">数K8S无服务器风流人物，还得看Kubeless</a></li>
+<li><a href="https://www.v2ex.com/t/368299" target="_blank" rel="noopener">关于 Serverless 架构及平台选择，你知道多少？</a></li>
+<li><a href="http://blog.shurenyun.com/untitled-105/" target="_blank" rel="noopener">使微服务、容器趋向完美——Serverless架构你应当知道的二三事</a></li>
+</ul>
+<h4 id="服务选择"><a href="#服务选择" class="headerlink" title="服务选择"></a>服务选择</h4><ul>
+<li><a href="https://serverless.com/" target="_blank" rel="noopener">serverless.com</a></li>
+<li><a href="https://kubeless.io/" target="_blank" rel="noopener">kubeless.io</a> 似乎只提供了</li>
+<li><a href="https://fnproject.io/" target="_blank" rel="noopener">fnproject.io</a></li>
+<li><a href="https://hook.io/pricing" target="_blank" rel="noopener">hook.io</a> 免费每月 1k 请求，$10 每月 10k 请求。</li>
+<li><a href="https://spotinst.com/products/spotinst-functions/pricing/" target="_blank" rel="noopener">spotinst.com</a> 免费 1.5 million 请求，400,000 GB-seconds，没仔细理解到底免费了多少。注册时提示是14天的免费试用。</li>
+<li><a href="https://webtask.io/pricing" target="_blank" rel="noopener">webtask.io</a> 免费每秒一个请求。</li>
+<li><a href="https://iron.io" target="_blank" rel="noopener">IronFunctions</a> - the serverless microservices platform，仅免费全功能 14 天。</li>
+<li><a href="https://www.goodrain.com/" target="_blank" rel="noopener">好雨科技</a></li>
+<li><a href="daocloud.io">DaoCloud</a> 个人用户免费，组织套餐200元/5人/月，后加一人 80元/人/月</li>
+</ul>
+<h3 id="打包工具-及-包依赖管理工具"><a href="#打包工具-及-包依赖管理工具" class="headerlink" title="打包工具 及 包依赖管理工具"></a>打包工具 及 包依赖管理工具</h3><ul>
+<li><a href="https://rollupjs.org/" target="_blank" rel="noopener">rollup.js</a></li>
+<li><a href="https://webpack.js.org/" target="_blank" rel="noopener">webpack.js</a> <a href="https://www.webpackjs.com/" target="_blank" rel="noopener">中文网</a></li>
+<li><a href="https://parceljs.org/" target="_blank" rel="noopener">parcel.js</a> 极速零配置Web应用打包工具</li>
+<li><a href="https://blog.imaginea.com/comparing-javascript-module-bundlers-webpack-rollup-or-parcel/" target="_blank" rel="noopener">Comparing Javascript module bundlers : Webpack , Rollup or Parcel</a></li>
+<li><a href="https://jspm.io/" target="_blank" rel="noopener">JSPM - Native ES Modules CDN</a><ul>
+<li><a href="https://ilikekillnerds.com/2015/07/jspm-vs-webpack/" target="_blank" rel="noopener">Jspm vs Webpack</a></li>
+<li><a href="http://nervosax.com/2015/08/05/why-not-try-jspm-and-systemjs/" target="_blank" rel="noopener">Using browserify/webpack? Why not try jspm and SystemJS</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="抓包-HTTP-调试工具"><a href="#抓包-HTTP-调试工具" class="headerlink" title="抓包 HTTP 调试工具"></a>抓包 HTTP 调试工具</h3><ul>
+<li><a href="http://goddyzhao.me/nproxy/" target="_blank" rel="noopener">NProxy</a> A cli proxy tool specialised in file replacing，使用 JSON 配置代理的规则，非常简洁明了。同时也适合熟悉 Node.js 的开发人员使用。</li>
+<li><a href="https://github.com/AlloyTeam/Rythem" target="_blank" rel="noopener">Rythem</a> 腾讯 <a href="http://www.alloyteam.com/" target="_blank" rel="noopener">AlloyTeam</a> 开发的基于 Qt 的类似 Fiddler 工具</li>
+<li><a href="http://wproxy.org/whistle/" target="_blank" rel="noopener">whistle</a> 基于Node实现的跨平台web调试代理工具，主要用于查看、修改HTTP、HTTPS、Websocket的请求、响应，也可以作为HTTP代理服务器使用，<em>不同于Fiddler通过断点修改请求响应的方式，whistle采用的是类似配置系统hosts的方式</em>，一切操作都可以通过配置实现，支持域名、路径、正则表达式、通配符、通配路径等多种匹配方式，且可以通过Node模块扩展功能</li>
+</ul>
+<p>初步总结分析： Whistle 可能更好用些，功能更全面，而 NProxy 只是命令行工具，功能可能只局限在替换代理，也许未来会有基于它之上的更全面的工具吧。 Rythem 感觉较早，同时基于 Qt ，估计界面不是很好吧。</p>
+<h3 id="PHP-（动态解释性语言、低效、语法不喜欢）"><a href="#PHP-（动态解释性语言、低效、语法不喜欢）" class="headerlink" title="PHP （动态解释性语言、低效、语法不喜欢）"></a>PHP （动态解释性语言、低效、语法不喜欢）</h3><ul>
+<li><a href="https://www.joomla.org/" target="_blank" rel="noopener">Joomla</a> 企业网站</li>
+<li>[ThinkPHP] 商城、系统</li>
+<li>[WordPress]</li>
+<li><a href="https://www.golaravel.com/" target="_blank" rel="noopener">Laravel</a></li>
+</ul>
+<h2 id="DevOps"><a href="#DevOps" class="headerlink" title="DevOps"></a>DevOps</h2><h3 id="Compile-code"><a href="#Compile-code" class="headerlink" title="Compile code"></a>Compile code</h3><ul>
+<li><a href="https://github.com/google/closure-compiler" target="_blank" rel="noopener">Google Closure Compile</a> 需要用 Java 8 以上版本运行。<ul>
+<li><a href="https://segmentfault.com/a/1190000002575760" target="_blank" rel="noopener">使用Google Closure Compiler高级压缩Javascript代码</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="CI-CD-持续集成部署"><a href="#CI-CD-持续集成部署" class="headerlink" title="CI/CD 持续集成部署"></a>CI/CD 持续集成部署</h2><ul>
+<li><a href="https://jenkins.io/" target="_blank" rel="noopener">Jenkins</a><ul>
+<li><a href="https://www.eriwen.com/tools/continuous-integration-for-javascript/" target="_blank" rel="noopener">Continuous Integration for JavaScript</a></li>
+</ul>
+</li>
+<li><a href="https://travis-ci.org/" target="_blank" rel="noopener">Travis CI</a></li>
+<li><a href="http://hudson-ci.org/" target="_blank" rel="noopener">Hudson CI</a></li>
+<li><a href="https://www.atlassian.com/software/bamboo" target="_blank" rel="noopener">Bamboo CI</a></li>
+<li><a href="https://www.pmease.com/quickbuild" target="_blank" rel="noopener">QuickBuild</a></li>
+<li><a href="https://www.jetbrains.com/teamcity/" target="_blank" rel="noopener">TeamCity</a><ul>
+<li><a href="https://www.jianshu.com/p/255a484555d9" target="_blank" rel="noopener">持续集成：TeamCity 的安装和使用</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="Deploy-部署"><a href="#Deploy-部署" class="headerlink" title="Deploy 部署"></a>Deploy 部署</h2><ul>
+<li><a href="https://rancher.com/" target="_blank" rel="noopener">Rancher</a></li>
+<li><a href="http://www.cnblogs.com/pluse/p/8316914.html" target="_blank" rel="noopener">使用Cobbler批量部署Linux和Windows</a></li>
+</ul>
+<h2 id="云服务"><a href="#云服务" class="headerlink" title="云服务"></a>云服务</h2><ul>
+<li><a href="https://www.qingcloud.com/" target="_blank" rel="noopener">青云</a></li>
+<li><a href="http://www.youruncloud.com/" target="_blank" rel="noopener">有容云</a></li>
+</ul>
+<h2 id="Docker-UI"><a href="#Docker-UI" class="headerlink" title="Docker UI"></a>Docker UI</h2><ul>
+<li><p><a href="https://rancher.com/" target="_blank" rel="noopener">Rancher</a> is an open source software platform that enables organizations to run and manage Docker and Kubernetes in production.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker run -d --restart=unless-stopped -p 80:80 -p 443:443 rancher/rancher</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p><a href="https://github.com/francescou/docker-compose-ui" target="_blank" rel="noopener">Docker compose UI</a> is simple,run the below command and wait while Docker pulls the container from the Docker Hub.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">docker run \</span><br><span class="line">--name docker-compose-ui \</span><br><span class="line">-p 5000:5000 \</span><br><span class="line">-w /opt/docker-compose-projects/ \</span><br><span class="line">-v /var/run/docker.sock:/var/run/docker.sock \</span><br><span class="line">francescou/docker-compose-ui:1.13.0</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h2 id="Clojure-Script-语言路线"><a href="#Clojure-Script-语言路线" class="headerlink" title="Clojure/Script 语言路线"></a>Clojure/Script 语言路线</h2><h3 id="FrontEnd"><a href="#FrontEnd" class="headerlink" title="FrontEnd"></a>FrontEnd</h3><ul>
+<li><a href="http://hoplon.io" target="_blank" rel="noopener">Hoplon</a></li>
+</ul>
+<h3 id="BackEnd"><a href="#BackEnd" class="headerlink" title="BackEnd"></a>BackEnd</h3><ul>
+<li><a href="https://macchiato-framework.github.io/" target="_blank" rel="noopener">MACCHIATO</a> ClojureScript arrives on server.</li>
+</ul>
+<h3 id="编译工具"><a href="#编译工具" class="headerlink" title="编译工具"></a>编译工具</h3><ul>
+<li><a href="http://boot-clj.com/" target="_blank" rel="noopener">boot</a></li>
+<li><a href="http://shadow-cljs.org/" target="_blank" rel="noopener">shadow-cljs</a> 编译 ClojureScript 代码，需要 JVM 运行，可实现热加载刷新。</li>
+<li><a href="http://lumo-cljs.org/" target="_blank" rel="noopener">Lumo</a>  is a standalone ClojureScript environment that runs on Node.js and the V8 JavaScript engine.<ul>
+<li><a href="http://benzaporzan.me/blog/2018/3/26/lumo_brightening_the_horizons_for_clojurescripting/" target="_blank" rel="noopener">Lumo: Brightening the Horizons for Clojurescript’ing</a> Lumo 是写命令行脚本不错的选择，通过 cljs 语法写脚本，调用 Node.js 相应系统库的功能，执行几乎所有功能。</li>
+<li><a href="https://anmonteiro.com/2017/02/compiling-clojurescript-projects-without-the-jvm/" target="_blank" rel="noopener">Compiling ClojureScript Projects Without the JVM</a></li>
+<li><a href="http://planck-repl.org/" target="_blank" rel="noopener">Planck</a> Planck is a stand-alone ClojureScript REPL for macOS and Linux. 并不是编译工具，只是个命令行运行工具。 支持 REPL 功能。</li>
+</ul>
+</li>
+<li><a href="http://cljs-book.clj.im/" target="_blank" rel="noopener">ClojureScript 入门指南</a> 使用 Lumo 作为 REPL 和脚本的执行工具，使用 shadow-cljs 作为项目的建构工具。</li>
+<li><a href="https://figwheel.org/" target="_blank" rel="noopener">Figwheel</a> <a href="https://github.com/bhauman/lein-figwheel" target="_blank" rel="noopener">GitHub</a> builds your ClojureScript code and hot loads it into the browser as you are coding!</li>
+</ul>
+<h3 id="GraphQL-技术-参考-GraphQL-学习"><a href="#GraphQL-技术-参考-GraphQL-学习" class="headerlink" title="GraphQL 技术 参考 GraphQL 学习"></a>GraphQL 技术 <a href="2018-05-03-GraphQL-Learning.md">参考 GraphQL 学习</a></h3><ul>
+<li><a href="https://github.com/chentsulin/awesome-graphql" target="_blank" rel="noopener">Awesome GraphQL</a></li>
+<li><a href="https://lacinia.readthedocs.io/en/latest/" target="_blank" rel="noopener">Lacinia</a> is a library for implementing Facebook’s GraphQL specification in idiomatic Clojure. <a href="https://github.com/walmartlabs/lacinia" target="_blank" rel="noopener">Github site</a></li>
+</ul>
+<h3 id="Git-服务"><a href="#Git-服务" class="headerlink" title="Git 服务"></a>Git 服务</h3><ul>
+<li><a href="https://gogs.io/" target="_blank" rel="noopener">Gogs</a><ul>
+<li><a href="https://codegit.net" target="_blank" rel="noopener">CodeGit.net</a></li>
+</ul>
+</li>
+<li>GitLab</li>
+<li>GitHub</li>
+</ul>
+<h2 id="DB-数据库"><a href="#DB-数据库" class="headerlink" title="DB 数据库"></a>DB 数据库</h2><h3 id="无服务器数据库"><a href="#无服务器数据库" class="headerlink" title="无服务器数据库"></a>无服务器数据库</h3><ul>
+<li><a href="https://fauna.com/" target="_blank" rel="noopener">FaunaDB</a> Facebook 开源无服务器数据库</li>
+</ul>
+<h2 id="系统级编程"><a href="#系统级编程" class="headerlink" title="系统级编程"></a>系统级编程</h2><ul>
+<li>传统是用 C 或 C++，缺点是内存管理易出错，难度大。</li>
+<li>用 Golang，不过 Golang（和 Erlang 一样）“为服务器端大并发场景设计”的标签太明显（虽然用在非服务器端毫无问题），而且有GC。Golang 是设计云平台的脚本语言, 适合写业务逻辑.</li>
+<li>用 Rust 是比较好的选择，命令式的，无 GC 的，可以编译成紧凑的高性能的原生二进制代码的“系统编程语言”。<ul>
+<li><a href="https://blog.csdn.net/liigo/article/details/45757123" target="_blank" rel="noopener">为什么我说Rust是靠谱的编程语言</a></li>
+<li><a href="https://servo.org/" target="_blank" rel="noopener">Servo</a>, the Parallel Browser Engine Project. 用 Rust 语言开发的并发浏览器引擎</li>
+</ul>
+</li>
+</ul>
+<h2 id="商业模式"><a href="#商业模式" class="headerlink" title="商业模式"></a>商业模式</h2><ul>
+<li><a href="https://www.hamkd.com/" target="_blank" rel="noopener">谦太祥和 AICODER</a> 全栈项目实习生组 <a href="http://qtxh.ke.qq.com/" target="_blank" rel="noopener">腾讯课堂</a></li>
+</ul>
+<h2 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h2><ul>
+<li><a href="https://nqdeng.github.io/7-days-nodejs/" target="_blank" rel="noopener">七天学会NodeJS</a></li>
+<li><a href="https://github.com/alsotang/node-lessons" target="_blank" rel="noopener">《Node.js 包教不包会》</a></li>
+<li><a href="https://cnodejs.org/" target="_blank" rel="noopener">CNode</a> 社区为国内最专业的 Node.js 开源技术社区，致力于 Node.js 的技术研究。</li>
+</ul>
+<h2 id="命令行"><a href="#命令行" class="headerlink" title="命令行"></a>命令行</h2><ul>
+<li><a href="https://github.com/spf13/cobra" target="_blank" rel="noopener">Cobra Cli</a> 开发命令行工具的工具，Go 语言的牛X 工具。</li>
+<li>添加 vi-mode 到 on-my-zsh 中非常简单，只需添加：<code>plugins=(git vi-mode)</code> 即可。</li>
+</ul>
+<h2 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h2><ul>
+<li><a href="https://fblitho.com/" target="_blank" rel="noopener">Litho</a>: A declarative UI framework for Android</li>
+<li><a href="https://www.jianshu.com/p/c2771ff962a4" target="_blank" rel="noopener">最灵活的UI控件库：React Native UI Lib</a></li>
+</ul>
+<h2 id="iOS"><a href="#iOS" class="headerlink" title="iOS"></a>iOS</h2><ul>
+<li><a href="https://componentkit.org/" target="_blank" rel="noopener">ComponentKit</a> A React-Inspired View Framework for iOS</li>
+</ul>
+<h2 id="DB-SQL"><a href="#DB-SQL" class="headerlink" title="DB, SQL"></a>DB, SQL</h2><ul>
+<li>PostgreSQL 12，显著提升查询性能，特别是对大数据集，总的空间利用率方面。对 SQL 和 JSON 路径表达式的支持，优化公共表达式（WITH 查询）的执行，以及对生成列的支持等。引入了可插拨的表存取接口，允许开发者在表创建和使用时用不同的存取方式。</li>
+</ul>
+<h2 id="会议工具"><a href="#会议工具" class="headerlink" title="会议工具"></a>会议工具</h2><ul>
+<li><a href="https://zoom.us/pricing" target="_blank" rel="noopener">Zoom</a> 类似 Skype 的电话会议工具</li>
+<li><a href="https://hyshi.cn/" target="_blank" rel="noopener">会议室助手</a> 会议室预订助手<ul>
+<li>企业内部微信会议室预订系统</li>
+<li>免安装，网页和微信实时预订会议</li>
+<li>微信扫描会议室门口二维码查询预订状态</li>
+<li>支持 Outlook插件/会议显示</li>
+</ul>
+</li>
+<li><a href="https://mrbs.sourceforge.io/" target="_blank" rel="noopener">MRBS</a> is a free, GPL, web application using PHP and MySQL/pgsql for booking meeting rooms or other resources.</li>
+</ul>
+<h2 id="绘画工具"><a href="#绘画工具" class="headerlink" title="绘画工具"></a>绘画工具</h2><ul>
+<li><a href="http://www.seanbrakefield.com/index.html" target="_blank" rel="noopener">INFINITE STUDIO</a> 手机上的绘画工具，功能强大，收费。</li>
+</ul>
+<h2 id="音乐工具"><a href="#音乐工具" class="headerlink" title="音乐工具"></a>音乐工具</h2><ul>
+<li><a href="https://overtone.github.io/docs.html" target="_blank" rel="noopener">Overtone</a> Clojure 音乐库</li>
+</ul>
+<h2 id="笔记工具"><a href="#笔记工具" class="headerlink" title="笔记工具"></a>笔记工具</h2><ul>
+<li><a href="https://mdo-org.github.io/mdo/#/" target="_blank" rel="noopener">MDo</a> is a free, open source to-do app built to live inside your editor.</li>
+</ul>
+<h2 id="服务"><a href="#服务" class="headerlink" title="服务"></a>服务</h2><ul>
+<li><a href="https://www.mattermost.org/" target="_blank" rel="noopener">Mattermost</a> is an open source, self-hosted Slack-alternative. 开源的自建类似Slack聊天服务。</li>
+</ul>
+<h2 id="梯子-科学上网"><a href="#梯子-科学上网" class="headerlink" title="梯子-科学上网"></a>梯子-科学上网</h2><ul>
+<li><a href="https://github.com/xiaoming2028/FreeNet" target="_blank" rel="noopener">SSR/V2Ray/Brook 最全搭建教程</a></li>
+<li><a href="https://alanlee.fun/2018/05/18/ubuntu-ssr/" target="_blank" rel="noopener">在 Ubuntu 上使用 SSR 梯子</a></li>
+</ul>
+<h2 id="安全工具"><a href="#安全工具" class="headerlink" title="安全工具"></a>安全工具</h2><ul>
+<li><a href="https://chaitin.github.io/xray/#/?id=xray-090" target="_blank" rel="noopener">XRAY0.9.0</a> 一款功能强大的安全评估工具</li>
+</ul>
+<h2 id="下一代编辑器"><a href="#下一代编辑器" class="headerlink" title="下一代编辑器"></a>下一代编辑器</h2><ul>
+<li><a href="https://xi-editor.io/" target="_blank" rel="noopener">Xi-editor</a> by Google</li>
+<li><a href="https://github.com/atom-archive/xray" target="_blank" rel="noopener">Xray</a> by GitHub， Electron + Rust</li>
+</ul>
+
+        
+      </div>
+      
+      
+      
+    </div>
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Simon J S Wind13 Liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">92</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">106</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#最新技术选型"><span class="nav-number">1.</span> <span class="nav-text">最新技术选型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#语言"><span class="nav-number">1.1.</span> <span class="nav-text">语言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Utils"><span class="nav-number">1.1.1.</span> <span class="nav-text">Utils</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#加密"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">加密</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Web-前端（JavaScript-ClojureScript）"><span class="nav-number">1.2.</span> <span class="nav-text">Web 前端（JavaScript, ClojureScript）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Web"><span class="nav-number">1.2.1.</span> <span class="nav-text">Web</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#UI"><span class="nav-number">1.2.2.</span> <span class="nav-text">UI</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Layout-amp-Farewell-CSS"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">Layout &amp; Farewell CSS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CSS-in-JS"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">CSS in JS</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Web-2D"><span class="nav-number">1.2.3.</span> <span class="nav-text">Web 2D</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Web-3D"><span class="nav-number">1.2.4.</span> <span class="nav-text">Web 3D</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS-in-js"><span class="nav-number">1.2.5.</span> <span class="nav-text">CSS in js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户响应"><span class="nav-number">1.2.6.</span> <span class="nav-text">用户响应</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码检查"><span class="nav-number">1.2.7.</span> <span class="nav-text">代码检查</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#人工智能"><span class="nav-number">1.3.</span> <span class="nav-text">人工智能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#App-开发"><span class="nav-number">1.4.</span> <span class="nav-text">App 开发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Web-后端"><span class="nav-number">1.5.</span> <span class="nav-text">Web 后端</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-js"><span class="nav-number">1.5.1.</span> <span class="nav-text">Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基于-Egg-js-的技术选型"><span class="nav-number">1.5.2.</span> <span class="nav-text">基于 Egg.js 的技术选型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#API-tools"><span class="nav-number">1.5.3.</span> <span class="nav-text">API tools</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#无服务器计算"><span class="nav-number">1.5.4.</span> <span class="nav-text">无服务器计算</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#服务选择"><span class="nav-number">1.5.4.1.</span> <span class="nav-text">服务选择</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打包工具-及-包依赖管理工具"><span class="nav-number">1.5.5.</span> <span class="nav-text">打包工具 及 包依赖管理工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#抓包-HTTP-调试工具"><span class="nav-number">1.5.6.</span> <span class="nav-text">抓包 HTTP 调试工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP-（动态解释性语言、低效、语法不喜欢）"><span class="nav-number">1.5.7.</span> <span class="nav-text">PHP （动态解释性语言、低效、语法不喜欢）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DevOps"><span class="nav-number">1.6.</span> <span class="nav-text">DevOps</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Compile-code"><span class="nav-number">1.6.1.</span> <span class="nav-text">Compile code</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CI-CD-持续集成部署"><span class="nav-number">1.7.</span> <span class="nav-text">CI/CD 持续集成部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Deploy-部署"><span class="nav-number">1.8.</span> <span class="nav-text">Deploy 部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#云服务"><span class="nav-number">1.9.</span> <span class="nav-text">云服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Docker-UI"><span class="nav-number">1.10.</span> <span class="nav-text">Docker UI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Clojure-Script-语言路线"><span class="nav-number">1.11.</span> <span class="nav-text">Clojure/Script 语言路线</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#FrontEnd"><span class="nav-number">1.11.1.</span> <span class="nav-text">FrontEnd</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BackEnd"><span class="nav-number">1.11.2.</span> <span class="nav-text">BackEnd</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编译工具"><span class="nav-number">1.11.3.</span> <span class="nav-text">编译工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GraphQL-技术-参考-GraphQL-学习"><span class="nav-number">1.11.4.</span> <span class="nav-text">GraphQL 技术 参考 GraphQL 学习</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git-服务"><span class="nav-number">1.11.5.</span> <span class="nav-text">Git 服务</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DB-数据库"><span class="nav-number">1.12.</span> <span class="nav-text">DB 数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#无服务器数据库"><span class="nav-number">1.12.1.</span> <span class="nav-text">无服务器数据库</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#系统级编程"><span class="nav-number">1.13.</span> <span class="nav-text">系统级编程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#商业模式"><span class="nav-number">1.14.</span> <span class="nav-text">商业模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#学习资源"><span class="nav-number">1.15.</span> <span class="nav-text">学习资源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令行"><span class="nav-number">1.16.</span> <span class="nav-text">命令行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Android"><span class="nav-number">1.17.</span> <span class="nav-text">Android</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iOS"><span class="nav-number">1.18.</span> <span class="nav-text">iOS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DB-SQL"><span class="nav-number">1.19.</span> <span class="nav-text">DB, SQL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#会议工具"><span class="nav-number">1.20.</span> <span class="nav-text">会议工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#绘画工具"><span class="nav-number">1.21.</span> <span class="nav-text">绘画工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#音乐工具"><span class="nav-number">1.22.</span> <span class="nav-text">音乐工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#笔记工具"><span class="nav-number">1.23.</span> <span class="nav-text">笔记工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#服务"><span class="nav-number">1.24.</span> <span class="nav-text">服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#梯子-科学上网"><span class="nav-number">1.25.</span> <span class="nav-text">梯子-科学上网</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安全工具"><span class="nav-number">1.26.</span> <span class="nav-text">安全工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下一代编辑器"><span class="nav-number">1.27.</span> <span class="nav-text">下一代编辑器</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Simon J S Wind13 Liu</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname,
+            owner: 'wind13',
+            repo: 'wind13.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '567b199e73fe5024b689971fac5a78fc3da64821',
+            
+                client_id: 'b3eba2d74cdccd08c0bb'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

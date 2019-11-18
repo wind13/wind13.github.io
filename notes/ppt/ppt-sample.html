@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.0.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="Hexo, NexT">
+
+
+<meta name="description" content="vscode-revealAwesome VS code extension using The HTML Presentation Framework RevealjsCreated by Hakim El Hattab / @hakimel  Hello Therereveal.js enables you to create beautiful interactive slide decks">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wind13&#39;s Blog">
+<meta property="og:url" content="http://wind13.github.io/notes/ppt/ppt-sample.html">
+<meta property="og:site_name" content="Wind13&#39;s Blog">
+<meta property="og:description" content="vscode-revealAwesome VS code extension using The HTML Presentation Framework RevealjsCreated by Hakim El Hattab / @hakimel  Hello Therereveal.js enables you to create beautiful interactive slide decks">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-10-28T23:32:40.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Wind13&#39;s Blog">
+<meta name="twitter:description" content="vscode-revealAwesome VS code extension using The HTML Presentation Framework RevealjsCreated by Hakim El Hattab / @hakimel  Hello Therereveal.js enables you to create beautiful interactive slide decks">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Wind13's Blog" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://wind13.github.io/notes/ppt/ppt-sample.html">
+
+
+  <title> | Wind13's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wind13's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+	<h1 class="post-title" itemprop="name headline"></h1>
+
+
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <h1 id="vscode-reveal"><a href="#vscode-reveal" class="headerlink" title="vscode-reveal"></a>vscode-reveal</h1><h3 id="Awesome-VS-code-extension-using-The-HTML-Presentation-Framework-Revealjs"><a href="#Awesome-VS-code-extension-using-The-HTML-Presentation-Framework-Revealjs" class="headerlink" title="Awesome VS code extension using The HTML Presentation Framework Revealjs"></a>Awesome VS code extension using The HTML Presentation Framework Revealjs</h3><p><small>Created by <a href="http://hakim.se" target="_blank" rel="noopener">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel" target="_blank" rel="noopener">@hakimel</a></small></p>
+<hr>
+<h2 id="Hello-There"><a href="#Hello-There" class="headerlink" title="Hello There"></a>Hello There</h2><p>reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.</p>
+<hr>
+<h2 id="Vertical-Slides"><a href="#Vertical-Slides" class="headerlink" title="Vertical Slides"></a>Vertical Slides</h2><p>Slides can be nested inside of each other.</p>
+<p>Use the <em>Space</em> key to navigate through all slides.</p>
+<a href="#" class="navigate-down">
+    <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+</a>
+
+<p>–</p>
+<h2 id="Basement-Level-1"><a href="#Basement-Level-1" class="headerlink" title="Basement Level 1"></a>Basement Level 1</h2><p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+<p>–</p>
+<h2 id="Basement-Level-2"><a href="#Basement-Level-2" class="headerlink" title="Basement Level 2"></a>Basement Level 2</h2><p>That’s it, time to go back up.</p>
+<a href="#/2">
+    <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+</a>
+
+<hr>
+<h2 id="Slides"><a href="#Slides" class="headerlink" title="Slides"></a>Slides</h2><p>Not a coder? Not a problem. There’s a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank" rel="noopener">http://slides.com</a>.</p>
+<hr>
+<h2 id="Point-of-View"><a href="#Point-of-View" class="headerlink" title="Point of View"></a>Point of View</h2><p>Press <strong>ESC</strong> to enter the slide overview.</p>
+<p>Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js" target="_blank" rel="noopener">zoom.js</a>. Alt + click anywhere to zoom back out.</p>
+<hr>
+<h2 id="Touch-Optimized"><a href="#Touch-Optimized" class="headerlink" title="Touch Optimized"></a>Touch Optimized</h2><p>Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.</p>
+<hr>
+<pre><code>## Markdown support
+
+Write content using inline or external Markdown.
+Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).</code></pre><p>–</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">## Markdown support</span><br><span class="line"></span><br><span class="line">Write content using inline or external Markdown.</span><br><span class="line">Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="Fragments"><a href="#Fragments" class="headerlink" title="Fragments"></a>Fragments</h2><p>Hit the next arrow…</p>
+<p>… to step through …<br><span class="fragment">… a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+<p>Note:<br>This slide has fragments which are also stepped through in the notes window.</p>
+<p>–</p>
+<h2 id="Fragment-Styles"><a href="#Fragment-Styles" class="headerlink" title="Fragment Styles"></a>Fragment Styles</h2><p>There’s different types of fragments, like:</p>
+<p>grow    <!-- .element: class="fragment grow" --></p>
+<p>shrink  <!-- .element: class="fragment shrink" --></p>
+<p>fade-out    <!-- .element: class="fragment fade-out " --></p>
+<p>fade-up (also down, left and right!) <!-- .element: class="fragment fade-up" --></p>
+<p>current-visible <!-- .element: class="fragment current-visible" --></p>
+<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
+<hr>
+<h2 id="Transition-Styles"><a href="#Transition-Styles" class="headerlink" title="Transition Styles"></a>Transition Styles</h2><p>You can select from different transitions, like:<br><a href="?transition=none#/transitions">None</a> - <a href="?transition=fade#/transitions">Fade</a> - <a href="?transition=slide#/transitions">Slide</a> - <a href="?transition=convex#/transitions">Convex</a> - <a href="?transition=concave#/transitions">Concave</a> - <a href="?transition=zoom#/transitions">Zoom</a></p>
+<hr>
+<h2 id="Themes"><a href="#Themes" class="headerlink" title="Themes"></a>Themes</h2><p>reveal.js comes with a few themes built in:<br><a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -<br><a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -<br><a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -<br><a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -<br><a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -<br><a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br><br><a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -<br><a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -<br><a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -<br><a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -<br><a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a></p>
+<hr>
+<!-- .slide: data-background="#dddddd" -->
+<h2 id="Slide-Backgrounds"><a href="#Slide-Backgrounds" class="headerlink" title="Slide Backgrounds"></a>Slide Backgrounds</h2><p>Set <code>data-background=&quot;#dddddd&quot;</code> on a slide to change the background color. All CSS color formats are supported.<br>                        <a href="#" class="navigate-down"><br>                            <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"><br>                        </a></p>
+<p>–</p>
+<!-- .slide: data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" -->
+
+<h2 id="Image-Backgrounds"><a href="#Image-Backgrounds" class="headerlink" title="Image Backgrounds"></a>Image Backgrounds</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="comment">&lt;!-- .slide: data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" --&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>–</p>
+<!-- .slide: data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px" -->
+
+<h2 id="TILED-BACKGROUNDS"><a href="#TILED-BACKGROUNDS" class="headerlink" title="TILED BACKGROUNDS"></a>TILED BACKGROUNDS</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="comment">&lt;!-- .slide: data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px" --&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>–</p>
+<!-- .slide: data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000" -->
+
+<h2 id="Video-Backgrounds"><a href="#Video-Backgrounds" class="headerlink" title="Video Backgrounds"></a>Video Backgrounds</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="comment">&lt;!-- .slide: data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000" --&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>–</p>
+<!-- .slide: data-background="http://i.giphy.com/90F8aUepslB84.gif" -->
+
+<h2 id="…-and-GIFs"><a href="#…-and-GIFs" class="headerlink" title="… and GIFs!"></a>… and GIFs!</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="comment">&lt;!-- .slide: data-background="http://i.giphy.com/90F8aUepslB84.gif" --&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<!-- .slide: data-transition="slide" data-background="#4d7e65" data-background-transition="zoom" -->
+
+<h2 id="Background-Transitions"><a href="#Background-Transitions" class="headerlink" title="Background Transitions"></a>Background Transitions</h2><p>Different background transitions are available via the backgroundTransition option. This one’s called “zoom”.</p>
+<hr>
+<!-- .slide: data-transition="slide" data-background="#b5533c" data-background-transition="zoom" -->
+
+<h2 id="Background-Transitions-1"><a href="#Background-Transitions-1" class="headerlink" title="Background Transitions"></a>Background Transitions</h2><p>You can override background transitions per-slide.</p>
+<hr>
+<h2 id="Pretty-Code"><a href="#Pretty-Code" class="headerlink" title="Pretty Code"></a>Pretty Code</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">linkify</span>(<span class="params"> selector </span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span>( supports3DTransforms ) &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> nodes = <span class="built_in">document</span>.querySelectorAll( selector );</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>( <span class="keyword">var</span> i = <span class="number">0</span>, len = nodes.length; i &amp;lt; len; i++ ) &#123;</span><br><span class="line">      <span class="keyword">var</span> node = nodes[i];</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span>( !node.className ) &#123;</span><br><span class="line">        node.className += <span class="string">' roll'</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/" target="_blank" rel="noopener">highlight.js</a>.</p>
+<hr>
+<h2 id="Marvelous-List"><a href="#Marvelous-List" class="headerlink" title="Marvelous List"></a>Marvelous List</h2><ul>
+<li>No order here</li>
+<li>Or here</li>
+<li>Or here</li>
+<li>Or here</li>
+</ul>
+<hr>
+<h2 id="Fantastic-Ordered-List"><a href="#Fantastic-Ordered-List" class="headerlink" title="Fantastic Ordered List"></a>Fantastic Ordered List</h2><ol>
+<li>One is smaller than…</li>
+<li>Two is smaller than…</li>
+<li>Three!</li>
+</ol>
+<hr>
+<h2 id="Tabular-Tables"><a href="#Tabular-Tables" class="headerlink" title="Tabular Tables"></a>Tabular Tables</h2><table>
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td align="center">are neat</td>
+<td align="right">$1</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="Clever-Quotes"><a href="#Clever-Quotes" class="headerlink" title="Clever Quotes"></a>Clever Quotes</h2><p>These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">“The nice thing about standards is that there are so many to choose from”</q> and block:</p>
+<blockquote>
+<p>“For years there has been a theory that millions of monkeys typing at random on millions of typewriters would reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.”</p>
+</blockquote>
+<hr>
+<h2 id="Intergalactic-Interconnections"><a href="#Intergalactic-Interconnections" class="headerlink" title="Intergalactic Interconnections"></a>Intergalactic Interconnections</h2><p>You can link between slides internally, <a href="#/2/3">like this</a>.</p>
+<hr>
+<h2 id="Speaker-View"><a href="#Speaker-View" class="headerlink" title="Speaker View"></a>Speaker View</h2><p>There’s a <a href="https://github.com/hakimel/reveal.js#speaker-notes" target="_blank" rel="noopener">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+<p>Press the <em>S</em> key to try it out.</p>
+<aside class="notes">Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).</aside>
+
+<hr>
+<h2 id="Export-to-PDF"><a href="#Export-to-PDF" class="headerlink" title="Export to PDF"></a>Export to PDF</h2><p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export" target="_blank" rel="noopener">exported to PDF</a>, here’s an example:</p>
+<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
+
+<hr>
+<h2 id="Global-State"><a href="#Global-State" class="headerlink" title="Global State"></a>Global State</h2><p>Set <code>data-state=&quot;something&quot;</code> on a slide and <code>&quot;something&quot;</code> will be added as a class to the document element when the slide is open. This lets you apply broader style changes, like switching the page background.</p>
+<hr>
+<!-- .slide: data-state="customevent" -->
+
+<h2 id="State-Events"><a href="#State-Events" class="headerlink" title="State Events"></a>State Events</h2><p>Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Reveal.addEventListener( <span class="string">'customevent'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log( <span class="string">'"customevent" has fired'</span> );</span><br><span class="line">&#125; );</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="Take-a-Moment"><a href="#Take-a-Moment" class="headerlink" title="Take a Moment"></a>Take a Moment</h2><p>Press B or . on your keyboard to pause the presentation. This is helpful when you’re on stage and want to take distracting slides off the screen.</p>
+<hr>
+<h2 id="Much-more"><a href="#Much-more" class="headerlink" title="Much more"></a>Much more</h2><ul>
+<li>Right-to-left support</li>
+<li><a href="https://github.com/hakimel/reveal.js#api" target="_blank" rel="noopener">Extensive JavaScript API</a></li>
+<li><a href="https://github.com/hakimel/reveal.js#auto-sliding" target="_blank" rel="noopener">Auto-progression</a></li>
+<li><a href="https://github.com/hakimel/reveal.js#parallax-background" target="_blank" rel="noopener">Parallax backgrounds</a></li>
+<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings" target="_blank" rel="noopener">Custom keyboard bindings</a></li>
+</ul>
+<hr>
+<!-- .slide: style="text-align: left;" -->
+<h1 id="THE-END"><a href="#THE-END" class="headerlink" title="THE END"></a>THE END</h1><ul>
+<li><a href="http://slides.com" target="_blank" rel="noopener">Try the online editor</a>  </li>
+<li><a href="https://github.com/hakimel/reveal.js" target="_blank" rel="noopener">Source code &amp; documentation</a></li>
+</ul>
+
+        
+      </div>
+      
+      
+      
+    </div>
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Simon J S Wind13 Liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">92</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">106</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vscode-reveal"><span class="nav-number">1.</span> <span class="nav-text">vscode-reveal</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Awesome-VS-code-extension-using-The-HTML-Presentation-Framework-Revealjs"><span class="nav-number">1.0.1.</span> <span class="nav-text">Awesome VS code extension using The HTML Presentation Framework Revealjs</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hello-There"><span class="nav-number">1.1.</span> <span class="nav-text">Hello There</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vertical-Slides"><span class="nav-number">1.2.</span> <span class="nav-text">Vertical Slides</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Basement-Level-1"><span class="nav-number">1.3.</span> <span class="nav-text">Basement Level 1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Basement-Level-2"><span class="nav-number">1.4.</span> <span class="nav-text">Basement Level 2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Slides"><span class="nav-number">1.5.</span> <span class="nav-text">Slides</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Point-of-View"><span class="nav-number">1.6.</span> <span class="nav-text">Point of View</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Touch-Optimized"><span class="nav-number">1.7.</span> <span class="nav-text">Touch Optimized</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fragments"><span class="nav-number">1.8.</span> <span class="nav-text">Fragments</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fragment-Styles"><span class="nav-number">1.9.</span> <span class="nav-text">Fragment Styles</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Transition-Styles"><span class="nav-number">1.10.</span> <span class="nav-text">Transition Styles</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Themes"><span class="nav-number">1.11.</span> <span class="nav-text">Themes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Slide-Backgrounds"><span class="nav-number">1.12.</span> <span class="nav-text">Slide Backgrounds</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Image-Backgrounds"><span class="nav-number">1.13.</span> <span class="nav-text">Image Backgrounds</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TILED-BACKGROUNDS"><span class="nav-number">1.14.</span> <span class="nav-text">TILED BACKGROUNDS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Video-Backgrounds"><span class="nav-number">1.15.</span> <span class="nav-text">Video Backgrounds</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#…-and-GIFs"><span class="nav-number">1.16.</span> <span class="nav-text">… and GIFs!</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Background-Transitions"><span class="nav-number">1.17.</span> <span class="nav-text">Background Transitions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Background-Transitions-1"><span class="nav-number">1.18.</span> <span class="nav-text">Background Transitions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Pretty-Code"><span class="nav-number">1.19.</span> <span class="nav-text">Pretty Code</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Marvelous-List"><span class="nav-number">1.20.</span> <span class="nav-text">Marvelous List</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fantastic-Ordered-List"><span class="nav-number">1.21.</span> <span class="nav-text">Fantastic Ordered List</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tabular-Tables"><span class="nav-number">1.22.</span> <span class="nav-text">Tabular Tables</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Clever-Quotes"><span class="nav-number">1.23.</span> <span class="nav-text">Clever Quotes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Intergalactic-Interconnections"><span class="nav-number">1.24.</span> <span class="nav-text">Intergalactic Interconnections</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Speaker-View"><span class="nav-number">1.25.</span> <span class="nav-text">Speaker View</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Export-to-PDF"><span class="nav-number">1.26.</span> <span class="nav-text">Export to PDF</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Global-State"><span class="nav-number">1.27.</span> <span class="nav-text">Global State</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#State-Events"><span class="nav-number">1.28.</span> <span class="nav-text">State Events</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Take-a-Moment"><span class="nav-number">1.29.</span> <span class="nav-text">Take a Moment</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Much-more"><span class="nav-number">1.30.</span> <span class="nav-text">Much more</span></a></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#THE-END"><span class="nav-number">2.</span> <span class="nav-text">THE END</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Simon J S Wind13 Liu</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname,
+            owner: 'wind13',
+            repo: 'wind13.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '567b199e73fe5024b689971fac5a78fc3da64821',
+            
+                client_id: 'b3eba2d74cdccd08c0bb'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

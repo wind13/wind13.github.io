@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.0.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="Hexo, NexT">
+
+
+<meta name="description" content=".reveal code {     color: aquamarine; } .reveal ol, .reveal dl, .reveal ul {     width: 100%; }   Node.js 从入门到熟悉或放弃 :D对公事业部 刘郡晟 Simon Jun Sheng Liu    Node.js 概述 Node.js 官网 Node.js 中文网 Node.js 教程  RE">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wind13&#39;s Blog">
+<meta property="og:url" content="http://wind13.github.io/notes/ppt/ppt-nodejs.html">
+<meta property="og:site_name" content="Wind13&#39;s Blog">
+<meta property="og:description" content=".reveal code {     color: aquamarine; } .reveal ol, .reveal dl, .reveal ul {     width: 100%; }   Node.js 从入门到熟悉或放弃 :D对公事业部 刘郡晟 Simon Jun Sheng Liu    Node.js 概述 Node.js 官网 Node.js 中文网 Node.js 教程  RE">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-10-28T23:32:40.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Wind13&#39;s Blog">
+<meta name="twitter:description" content=".reveal code {     color: aquamarine; } .reveal ol, .reveal dl, .reveal ul {     width: 100%; }   Node.js 从入门到熟悉或放弃 :D对公事业部 刘郡晟 Simon Jun Sheng Liu    Node.js 概述 Node.js 官网 Node.js 中文网 Node.js 教程  RE">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Wind13's Blog" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://wind13.github.io/notes/ppt/ppt-nodejs.html">
+
+
+  <title> | Wind13's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wind13's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+	<h1 class="post-title" itemprop="name headline"></h1>
+
+
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <style>
+.reveal code {
+    color: aquamarine;
+}
+.reveal ol, .reveal dl, .reveal ul {
+    width: 100%;
+}
+</style>
+
+<h1 id="Node-js-从入门到熟悉或放弃-D"><a href="#Node-js-从入门到熟悉或放弃-D" class="headerlink" title="Node.js 从入门到熟悉或放弃 :D"></a>Node.js 从入门到熟悉或放弃 :D</h1><p>对公事业部 刘郡晟</p>
+<p>Simon Jun Sheng Liu</p>
+<hr>
+<!-- .slide: style="text-align: left;" -->
+
+<h2 id="Node-js-概述"><a href="#Node-js-概述" class="headerlink" title="Node.js 概述"></a>Node.js 概述</h2><ul>
+<li><a href="https://nodejs.org/" target="_blank" rel="noopener">Node.js 官网</a></li>
+<li><a href="http://nodejs.cn/" target="_blank" rel="noopener">Node.js 中文网</a></li>
+<li><a href="http://www.runoob.com/nodejs/nodejs-tutorial.html" target="_blank" rel="noopener">Node.js 教程</a></li>
+</ul>
+<h3 id="REPL-Read-Eval-Print-Loop-交互式解释器"><a href="#REPL-Read-Eval-Print-Loop-交互式解释器" class="headerlink" title="REPL(Read Eval Print Loop:交互式解释器)"></a>REPL(Read Eval Print Loop:交互式解释器)</h3><p>Chrome 开发者工具中的 Console 就是一个非常好的 REPL</p>
+<hr>
+<!-- .slide: style="text-align: left;" -->
+
+<h2 id="服务端JavaScript"><a href="#服务端JavaScript" class="headerlink" title="服务端JavaScript"></a>服务端JavaScript</h2><p>要实现在后台运行 JavaScript 代码，代码需要先被解释然后正确的执行。 Node.js 的原理正是如此，它使用了 Google 的 V8 虚拟机（ Google 的 Chrome 浏览器使用的 JavaScript 执行环境），来解释和执行 JavaScript 代码。</p>
+<p>除此之外，伴随着 Node.js 的还有许多有用的模块，它们可以简化很多重复的劳作，比如向终端输出字符串。</p>
+<p>因此， Node.js 事实上既是一个运行时环境，同时又是一个库。</p>
+<hr>
+<h2 id="NPM-常用命令"><a href="#NPM-常用命令" class="headerlink" title="NPM 常用命令"></a>NPM 常用命令</h2><ul>
+<li>初始化一个 Node.js 项目<ul>
+<li><code>npm init</code></li>
+</ul>
+</li>
+<li>安装依赖<ul>
+<li><code>npm install</code></li>
+<li><code>npm i --no-optional</code></li>
+<li><code>npm i --no-audit</code></li>
+</ul>
+</li>
+<li>自动更新<ul>
+<li><code>npm update</code></li>
+</ul>
+</li>
+<li>检查版本差距、检验安全性<ul>
+<li><code>npm outdate</code> 和 <code>npm audit</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<!-- .slide: style="text-align: left;" -->
+
+<h2 id="Node-版本管理"><a href="#Node-版本管理" class="headerlink" title="Node 版本管理"></a>Node 版本管理</h2><p>Node 有很多版本，甚至还有 io.js 这个衍生的分支，现在又合并回去了。</p>
+<ul>
+<li>nvm</li>
+<li>n</li>
+</ul>
+<p><a href="http://www.cnblogs.com/kaiye/p/4937191.html" target="_blank" rel="noopener">使用 nvm 管理不同版本的 node 与 npm</a><br><a href="http://www.yyyweb.com/4591.html" target="_blank" rel="noopener">管理 node 版本，选择 nvm 还是 n？</a></p>
+<p>Note:</p>
+<ul>
+<li><code>sudo n ls</code></li>
+<li><code>sudo n lts</code></li>
+<li><code>sudo n latest</code></li>
+<li><code>sudo n prune</code></li>
+</ul>
+<hr>
+<h2 id="进程与线程"><a href="#进程与线程" class="headerlink" title="进程与线程"></a>进程与线程</h2><ul>
+<li>创建一个进程就相当于启动一个应用；</li>
+<li>创建一个线程则是在应用中分出去的运行分支；</li>
+</ul>
+<h2 id="同步与异步"><a href="#同步与异步" class="headerlink" title="同步与异步"></a>同步与异步</h2><ul>
+<li>同步就是一件事交给别人做，但一直等他做完，拿到结果再去做下一件事；</li>
+<li>异步则是一件事交给别人做，自己去做别的事，等他完成拿到结果再回头做要做的事；</li>
+</ul>
+<hr>
+<h2 id="阻塞与非阻塞"><a href="#阻塞与非阻塞" class="headerlink" title="阻塞与非阻塞"></a>阻塞与非阻塞</h2><ul>
+<li>单线程会因同步而阻塞，需要用异步来实现非阻塞。</li>
+</ul>
+<p>参考 <a href="https://wind13.github.io/2018/05/22/baihua-async/">白话理解 Node.js 异步单线程</a></p>
+<hr>
+<h2 id="Callback-hell"><a href="#Callback-hell" class="headerlink" title="Callback hell"></a><a href="http://callbackhell.com/" target="_blank" rel="noopener">Callback hell</a></h2><p>函数式编程中，函数是一等公民，可以被当作参数传入，或被当做结果返回。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">欢迎并下单(<span class="string">'三鲜'</span>, <span class="string">'小份'</span>, <span class="string">'5 号桌'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">订单</span>) </span>&#123;</span><br><span class="line">  煮米线(订单.口味, 订单.份量, <span class="function"><span class="keyword">function</span>(<span class="params">米线</span>) </span>&#123;</span><br><span class="line">    上菜(米线, 订单.桌号, <span class="function"><span class="keyword">function</span>(<span class="params">米线</span>) </span>&#123;</span><br><span class="line">      吃(米线, <span class="function"><span class="keyword">function</span>(<span class="params">订单</span>) </span>&#123;</span><br><span class="line">        买单(订单, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">          找钱();</span><br><span class="line">          欢送();</span><br><span class="line">        &#125;)</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="如何避免-Callback-hell？"><a href="#如何避免-Callback-hell？" class="headerlink" title="如何避免 Callback hell？"></a>如何避免 Callback hell？</h2><ul>
+<li>给函数命名并拆分出去</li>
+<li>使用 <code>Promise/then</code>, <code>generator/yield</code>, <code>async/await</code> 等来改写</li>
+<li>参考 <a href="https://blog.csdn.net/shuaigeyjz1/article/details/76849860" target="_blank" rel="noopener">用Promise优化nodejs的callback hell</a></li>
+<li>参考 <a href="https://nya.io/Node-js/promise-in-nodejs-get-rid-of-callback-hell/" target="_blank" rel="noopener">在Node.js中使用promise摆脱回调金字塔</a></li>
+<li>参考 <a href="https://blog.suisuijiang.com/use-es6-generator-rewrite-callback/" target="_blank" rel="noopener">使用 ES6 的 Generator 函数改写异步回调金字塔</a></li>
+</ul>
+<hr>
+<h2 id="Node-js-的事件及生命周期"><a href="#Node-js-的事件及生命周期" class="headerlink" title="Node.js 的事件及生命周期"></a>Node.js 的事件及生命周期</h2><ul>
+<li><a href="https://www.zcfy.cc/article/node-js-event-loop-workflow-lifecycle-in-low-level-void-canvas" target="_blank" rel="noopener">Node.js 事件循环工作流程 &amp; 生命周期</a></li>
+<li><a href="http://voidcanvas.com/nodejs-event-loop/" target="_blank" rel="noopener">英文原文 Node.js event loop workflow &amp; lifecycle in low level – Void Canvas</a></li>
+</ul>
+<h3 id="不在事件循环中的回调"><a href="#不在事件循环中的回调" class="headerlink" title="不在事件循环中的回调"></a>不在事件循环中的回调</h3><ul>
+<li>nextTickQueue &amp; microTaskQueue: 即 <code>process.nextTick()</code> 和 <code>promise()</code> 任何时间完成后立刻执行；</li>
+</ul>
+<hr>
+<h2 id="事件循环中的顺序"><a href="#事件循环中的顺序" class="headerlink" title="事件循环中的顺序"></a>事件循环中的顺序</h2><ol>
+<li>Timer: 执行所有能执行的 <code>setTimeout</code>, <code>setInterval</code> 定时任务；</li>
+<li>Pending i/o callback: 执行所有完成了的 <code>callback</code> 和 <code>error handle</code> 方法；</li>
+<li>Idle, Prepare:  node 做一些内部操作；</li>
+<li>Poll: 文件读响应，新的 <code>socket</code> 或者 <code>http</code> 连接请求等；</li>
+<li>Check: 执行所有能执行的 <code>setImmediate</code> 任务；</li>
+<li>Close: 执行所有能执行的 <code>close callback</code> 任务，如果无任务了则退出；</li>
+</ol>
+<hr>
+<h2 id="Node-js-的-Web-开发框架"><a href="#Node-js-的-Web-开发框架" class="headerlink" title="Node.js 的 Web 开发框架"></a>Node.js 的 Web 开发框架</h2><ul>
+<li><a href="https://expressjs.com/" target="_blank" rel="noopener">Express.js 官网</a></li>
+<li><a href="http://www.expressjs.com.cn/" target="_blank" rel="noopener">Express.js 中文网</a></li>
+<li><a href="https://koajs.com/" target="_blank" rel="noopener">Koa.js 官网</a></li>
+<li><a href="https://koa.bootcss.com/" target="_blank" rel="noopener">Koa.js 中文网</a></li>
+<li><a href="https://eggjs.org/" target="_blank" rel="noopener">Egg.js 官网</a></li>
+</ul>
+<hr>
+<h2 id="Express-js-简介"><a href="#Express-js-简介" class="headerlink" title="Express.js 简介"></a>Express.js 简介</h2><ul>
+<li>Express 不对 Node.js 已有的特性进行二次抽象，只是在它之上扩展了 Web 应用所需的基本功能。</li>
+<li>Express 是一个自身功能极简，完全是由路由和中间件构成一个的 web 开发框架：从本质上来说，一个 Express 应用就是在调用各种中间件。</li>
+<li>不会了就查 <a href="http://www.expressjs.com.cn/4x/api.html" target="_blank" rel="noopener">Express 4.x API 中文手册</a></li>
+</ul>
+<hr>
+<h2 id="中间件（Middleware）"><a href="#中间件（Middleware）" class="headerlink" title="中间件（Middleware）"></a>中间件（Middleware）</h2><ul>
+<li>一个有三个参数：<code>req</code>, <code>res</code>, <code>next</code> 的函数。</li>
+<li>中间件的功能包括：<ul>
+<li>执行任何代码。</li>
+<li>修改请求和响应对象。</li>
+<li>终结请求-响应循环。</li>
+<li>调用堆栈中的下一个中间件。</li>
+</ul>
+</li>
+<li>中间件最终结果（二选一）：<ul>
+<li>终结请求-响应循环</li>
+<li>调用 next() 方法</li>
+</ul>
+</li>
+<li><a href="http://www.expressjs.com.cn/resources/middleware.html" target="_blank" rel="noopener">第三方中间件</a></li>
+</ul>
+<hr>
+<h2 id="中间件分类"><a href="#中间件分类" class="headerlink" title="中间件分类"></a>中间件分类</h2><ul>
+<li>应用级中间件: app.xxx</li>
+<li>路由级中间件: router.xxx</li>
+<li>错误处理中间件: 必须 (err, req, res, next) 四个参数</li>
+<li>内置中间件: 唯一内置 express.static(root, [options])</li>
+<li>第三方中间件: app.use(xxx());</li>
+</ul>
+<hr>
+<h2 id="错误处理中间件"><a href="#错误处理中间件" class="headerlink" title="错误处理中间件"></a>错误处理中间件</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">app.use(<span class="function"><span class="keyword">function</span>(<span class="params">err, req, res, next</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.error(err.stack);</span><br><span class="line">  res.status(<span class="number">500</span>).send(<span class="string">'Something broke!'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="内置中间件"><a href="#内置中间件" class="headerlink" title="内置中间件"></a>内置中间件</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">app.use(express.static(<span class="string">'public'</span>));</span><br><span class="line">app.use(express.static(<span class="string">'uploads'</span>));</span><br><span class="line">app.use(express.static(<span class="string">'files'</span>));</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="自定义中间件"><a href="#自定义中间件" class="headerlink" title="自定义中间件"></a>自定义中间件</h2><ul>
+<li>函数式编程思想</li>
+<li>写一个返回函数的函数即可</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = cookieParser</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">cookieParser</span> (<span class="params">secret, options</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> <span class="title">cookieParser</span> (<span class="params">req, res, next</span>) </span>&#123;</span><br><span class="line">    req.signedCookies = ...;</span><br><span class="line">    <span class="keyword">return</span> next();</span><br><span class="line">    or res.render(<span class="string">'regular'</span>);</span><br><span class="line">    or res.send(<span class="string">'User Info'</span>);</span><br><span class="line">    or res.end(req.params.id);</span><br><span class="line">    or next(<span class="string">'route'</span>); <span class="comment">//app 和 router 可以用来跳过剩余中间件，并交给下一个路由。</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="通过-hbs-使用-handlerbar-模板"><a href="#通过-hbs-使用-handlerbar-模板" class="headerlink" title="通过 hbs 使用 handlerbar 模板"></a>通过 hbs 使用 handlerbar 模板</h2><h4 id="安装-hbs-模块"><a href="#安装-hbs-模块" class="headerlink" title="安装 hbs 模块"></a>安装 hbs 模块</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hbs</span><br></pre></td></tr></table></figure>
+
+<h4 id="设置及使用模板"><a href="#设置及使用模板" class="headerlink" title="设置及使用模板"></a>设置及使用模板</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">app.set(<span class="string">'view engine'</span>, <span class="string">'hbs'</span>);</span><br><span class="line"></span><br><span class="line">app.get(<span class="string">'/hbs'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res, next</span>) </span>&#123;</span><br><span class="line">  res.render(<span class="string">'index'</span>, &#123; <span class="attr">title</span>: <span class="string">'Hey'</span>, <span class="attr">message</span>: <span class="string">'Hello there!'</span>&#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h4 id="使用-handlebars-helpers"><a href="#使用-handlebars-helpers" class="headerlink" title="使用 handlebars-helpers"></a>使用 handlebars-helpers</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save handlebars-helpers</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> helpers = <span class="built_in">require</span>(<span class="string">'handlebars-helpers'</span>)(</span><br><span class="line">  &#123;<span class="attr">handlebars</span>: hbs&#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="通过-consolidate-使用模板"><a href="#通过-consolidate-使用模板" class="headerlink" title="通过 consolidate 使用模板"></a>通过 consolidate 使用模板</h2><h4 id="安装模板"><a href="#安装模板" class="headerlink" title="安装模板"></a>安装模板</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save handlebars</span><br></pre></td></tr></table></figure>
+
+<h4 id="使用-consolidate-引入模板"><a href="#使用-consolidate-引入模板" class="headerlink" title="使用 consolidate 引入模板"></a>使用 consolidate 引入模板</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save consolidate</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> cons = <span class="built_in">require</span>(<span class="string">'consolidate'</span>);</span><br><span class="line">app.get(<span class="string">'/hbs'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">  cons.handlebars(<span class="string">'views/index.html'</span>, &#123; </span><br><span class="line">    title: <span class="string">'Hey'</span>, </span><br><span class="line">    message: <span class="string">'Hello there!'</span></span><br><span class="line">  &#125;, <span class="function"><span class="keyword">function</span>(<span class="params">err, html</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</span><br><span class="line">    res.send(html);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>Notes:</p>
+<ul>
+<li><a href="http://handlebarsjs.com/" target="_blank" rel="noopener">Handlebar.js</a></li>
+<li><a href="https://github.com/tj/consolidate.js" target="_blank" rel="noopener">Consolidate.js</a></li>
+<li><a href="https://fraserxu.me/2013/09/12/Using-Handlebarsjs-with-Expressjs/" target="_blank" rel="noopener">在Express项目中使用Handlebars模板引擎</a></li>
+</ul>
+<hr>
+<h2 id="fs-文件系统-一"><a href="#fs-文件系统-一" class="headerlink" title="fs 文件系统 一"></a>fs 文件系统 一</h2><ul>
+<li>大部分 fs 操作接受字符串、<code>Buffer</code>、或使用 <code>file</code>: 协议的 <code>URL</code> 对象作为文件路径。</li>
+<li>所有文件系统 API 中，除了 fs.FSWatcher() 和那些显式同步的方法之外，都使用了 libuv 的线程池。</li>
+<li>成功调用 fs.watch() 方法会返回一个新的 fs.FSWatcher 对象。</li>
+<li>成功调用 fs.createReadStream() 会返回一个新的 fs.ReadStream 对象。</li>
+<li>fs.Stats 对象提供了一个文件的信息。stats.isDirectory() 是否文件系统目录。</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>在 Windows 上 Node.js 遵循 per-drive 工作目录的理念。例如，fs.readdirSync(‘c:\‘) 可能会返回与 fs.readdirSync(‘c:’) 不同的结果。 </li>
+<li>在 POSIX 系统，内核为所有进程维护着一张当前打开着的文件与资源的表格。因此打开用完后要记得关闭，否则长期大量累积会造成内存溢出系统崩溃。</li>
+<li>在 ECMAScript 2015 (ES6) 引入 TypedArray 之前，JavaScript 语言没有读取或操作二进制数据流的机制。 Buffer 类被引入作为 Node.js API 的一部分，使其可以在 TCP 流或文件系统操作等场景中处理二进制数据流。</li>
+<li>Buffer 类在 Node.js 中是一个全局变量，因此无需使用 require(‘buffer’).Buffer。</li>
+</ul>
+<p>–</p>
+<h2 id="fs-文件系统-二"><a href="#fs-文件系统-二" class="headerlink" title="fs 文件系统 二"></a>fs 文件系统 二</h2><ul>
+<li><code>fs.createReadStream(path[, options])</code> 新建一个 <code>fs.ReadStream</code> 可读流。</li>
+<li><code>fs.createWriteStream(path[, options])</code> 新建一个 <code>fs.WriteStream</code> 可写流。</li>
+<li><code>fs.exists</code> 已被 <code>fs.stat()</code> 或 <code>fs.access()</code> 代替。</li>
+<li>最简单的方式就是写个小示例去试试，同时需要补一下 Linux 文件相关知识和命令。</li>
+</ul>
+<p>Note:</p>
+<h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><ul>
+<li><p><a href="https://github.com/zhaoqize/blog" target="_blank" rel="noopener">qize的博客</a></p>
+</li>
+<li><p><a href="https://www.cnblogs.com/zqzjs/p/6279229.html" target="_blank" rel="noopener">NodeJs之fs的读写删移监</a></p>
+</li>
+<li><p>不建议在调用 fs.open() 、 fs.readFile() 或 fs.writeFile() 之前使用 fs.access() 检查一个文件的可访问性。 如此处理会造成紊乱情况，因为其他进程可能在两个调用之间改变该文件的状态。 作为替代，用户代码应该直接打开/读取/写入文件，当文件无法访问时再处理错误。</p>
+</li>
+</ul>
+<hr>
+<h2 id="Node-js-异步错误处理问题"><a href="#Node-js-异步错误处理问题" class="headerlink" title="Node.js 异步错误处理问题"></a>Node.js 异步错误处理问题</h2><ul>
+<li>将错误从底层不断地向上层传递，直到错误到达某个层级有足够的信息去决定如何处理这个错误。</li>
+<li>用 <code>try ... catch</code> 实现异常处理流程。</li>
+<li>总是抛出一个继承自 Error 的对象，并附加上下文的属性。</li>
+<li>无法在异步代码中直接使用 <code>try ... catch</code> 来捕捉异常。Callback 中需要手动完成错误传递等。</li>
+</ul>
+<p>–</p>
+<h2 id="Node-js-异步错误解决方案"><a href="#Node-js-异步错误解决方案" class="headerlink" title="Node.js 异步错误解决方案"></a>Node.js 异步错误解决方案</h2><ul>
+<li>Promise 可以说是对同步任务和异步任务的一种一致的抽象。尽量避免手动创建 Promise，使用 Promise.promisify 函数自动完成转换。</li>
+<li><code>Promise</code>、<code>co/generator</code> 和 <code>asycn/await</code> 谁才是未来？</li>
+<li>EventEmitter 则提供了一个操作（甚至没有操作）对应多个结果的异步模型。</li>
+<li>终极错误捕捉手段：<code>process.on(&#39;uncaughtException&#39;)</code> 和 <code>process.on(&#39;unhandledRejection&#39;)</code></li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>参考 <a href="https://jysperm.me/2016/10/nodejs-error-handling/" target="_blank" rel="noopener">Node.js 错误处理实践</a></li>
+</ul>
+<hr>
+<h2 id="错误处理的最佳实践"><a href="#错误处理的最佳实践" class="headerlink" title="错误处理的最佳实践"></a>错误处理的最佳实践</h2><ul>
+<li>注意 Promise / callback chain 不要从中间断开</li>
+<li>只处理已知的、必须在这里处理的异常，其他异常继续向外抛出</li>
+<li>不要轻易地丢弃一个异常</li>
+<li>传递的过程中可以向 err 对象上添加属性，补充上下文</li>
+<li>如果还要继续抛出这个错误，就不要轻易打印日志</li>
+<li>错误汇总到 <strong>边界</strong> 处，用统一的、健壮的方式去处理</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>参考 <a href="https://mp.weixin.qq.com/s/pjyDni408qfZFR1_a4HJbQ" target="_blank" rel="noopener">NodeJS: 在 Express 中处理异步错误</a></li>
+</ul>
+<hr>
+<h2 id="导出-PDF、Excel"><a href="#导出-PDF、Excel" class="headerlink" title="导出 PDF、Excel"></a>导出 PDF、Excel</h2><ul>
+<li><a href="http://pdfkit.org/" target="_blank" rel="noopener">pdfkit</a> <a href="http://pdfkit.org/demo/browser.html" target="_blank" rel="noopener">演示页</a></li>
+<li><a href="http://pdfmake.org/" target="_blank" rel="noopener">pdfmake</a> <a href="http://pdfmake.org/playground.html" target="_blank" rel="noopener">演示页</a><ul>
+<li>pdfmake is <a href="https://github.com/bpampuch/pdfmake/blob/master/package.json" target="_blank" rel="noopener">based on</a> a truly amazing library pdfkit.</li>
+</ul>
+</li>
+<li><a href="https://github.com/dtjohnson/xlsx-populate" target="_blank" rel="noopener">xlsx ppopulate</a></li>
+</ul>
+<blockquote>
+<p>感谢 @Andy-axf 和 @Paul-pain2013 提供需求和相关技术细节信息</p>
+</blockquote>
+<hr>
+<h2 id="课后作业"><a href="#课后作业" class="headerlink" title="课后作业"></a>课后作业</h2><ul>
+<li>首页，显示欢迎信息，使用 handlebar 模板；</li>
+<li>做一个秘密文档页，读取文件系统的一个 markdown 格式的文档；</li>
+<li>秘密文档页需验证当前登录权限，未登录则报 403 错并跳转到登录界面；</li>
+<li>登录（secret.txt）时通过权限验证中间件成功跳转到之前要访问的界面；</li>
+<li>查看到秘密文档，由 markdown 解析为 HTML 显示，并有导出 pdf 功能；</li>
+<li>界面上有导航，可以退出登录。</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>报错使用 权限验证的 ErrorHandle 中间件跳转到 403 无权限界面；</li>
+</ul>
+<hr>
+<blockquote>
+<p>感谢 杨国虎、张西玲 及 </p>
+</blockquote>
+<blockquote>
+<p>能力中心 陶爱华 组织协调！</p>
+</blockquote>
+<p>Thank you!</p>
+<p>Q &amp; A</p>
+
+        
+      </div>
+      
+      
+      
+    </div>
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Simon J S Wind13 Liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">92</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">106</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Node-js-从入门到熟悉或放弃-D"><span class="nav-number">1.</span> <span class="nav-text">Node.js 从入门到熟悉或放弃 :D</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Node-js-概述"><span class="nav-number">1.1.</span> <span class="nav-text">Node.js 概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#REPL-Read-Eval-Print-Loop-交互式解释器"><span class="nav-number">1.1.1.</span> <span class="nav-text">REPL(Read Eval Print Loop:交互式解释器)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#服务端JavaScript"><span class="nav-number">1.2.</span> <span class="nav-text">服务端JavaScript</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NPM-常用命令"><span class="nav-number">1.3.</span> <span class="nav-text">NPM 常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Node-版本管理"><span class="nav-number">1.4.</span> <span class="nav-text">Node 版本管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进程与线程"><span class="nav-number">1.5.</span> <span class="nav-text">进程与线程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#同步与异步"><span class="nav-number">1.6.</span> <span class="nav-text">同步与异步</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#阻塞与非阻塞"><span class="nav-number">1.7.</span> <span class="nav-text">阻塞与非阻塞</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Callback-hell"><span class="nav-number">1.8.</span> <span class="nav-text">Callback hell</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何避免-Callback-hell？"><span class="nav-number">1.9.</span> <span class="nav-text">如何避免 Callback hell？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Node-js-的事件及生命周期"><span class="nav-number">1.10.</span> <span class="nav-text">Node.js 的事件及生命周期</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#不在事件循环中的回调"><span class="nav-number">1.10.1.</span> <span class="nav-text">不在事件循环中的回调</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件循环中的顺序"><span class="nav-number">1.11.</span> <span class="nav-text">事件循环中的顺序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Node-js-的-Web-开发框架"><span class="nav-number">1.12.</span> <span class="nav-text">Node.js 的 Web 开发框架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Express-js-简介"><span class="nav-number">1.13.</span> <span class="nav-text">Express.js 简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中间件（Middleware）"><span class="nav-number">1.14.</span> <span class="nav-text">中间件（Middleware）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中间件分类"><span class="nav-number">1.15.</span> <span class="nav-text">中间件分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#错误处理中间件"><span class="nav-number">1.16.</span> <span class="nav-text">错误处理中间件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内置中间件"><span class="nav-number">1.17.</span> <span class="nav-text">内置中间件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义中间件"><span class="nav-number">1.18.</span> <span class="nav-text">自定义中间件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通过-hbs-使用-handlerbar-模板"><span class="nav-number">1.19.</span> <span class="nav-text">通过 hbs 使用 handlerbar 模板</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装-hbs-模块"><span class="nav-number">1.19.0.1.</span> <span class="nav-text">安装 hbs 模块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置及使用模板"><span class="nav-number">1.19.0.2.</span> <span class="nav-text">设置及使用模板</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用-handlebars-helpers"><span class="nav-number">1.19.0.3.</span> <span class="nav-text">使用 handlebars-helpers</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通过-consolidate-使用模板"><span class="nav-number">1.20.</span> <span class="nav-text">通过 consolidate 使用模板</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装模板"><span class="nav-number">1.20.0.1.</span> <span class="nav-text">安装模板</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用-consolidate-引入模板"><span class="nav-number">1.20.0.2.</span> <span class="nav-text">使用 consolidate 引入模板</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#fs-文件系统-一"><span class="nav-number">1.21.</span> <span class="nav-text">fs 文件系统 一</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fs-文件系统-二"><span class="nav-number">1.22.</span> <span class="nav-text">fs 文件系统 二</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文档"><span class="nav-number">1.22.1.</span> <span class="nav-text">参考文档</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Node-js-异步错误处理问题"><span class="nav-number">1.23.</span> <span class="nav-text">Node.js 异步错误处理问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Node-js-异步错误解决方案"><span class="nav-number">1.24.</span> <span class="nav-text">Node.js 异步错误解决方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#错误处理的最佳实践"><span class="nav-number">1.25.</span> <span class="nav-text">错误处理的最佳实践</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#导出-PDF、Excel"><span class="nav-number">1.26.</span> <span class="nav-text">导出 PDF、Excel</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#课后作业"><span class="nav-number">1.27.</span> <span class="nav-text">课后作业</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Simon J S Wind13 Liu</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname,
+            owner: 'wind13',
+            repo: 'wind13.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '567b199e73fe5024b689971fac5a78fc3da64821',
+            
+                client_id: 'b3eba2d74cdccd08c0bb'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

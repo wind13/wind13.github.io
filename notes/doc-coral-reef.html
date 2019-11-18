@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.0.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="Hexo, NexT">
+
+
+<meta name="description" content="Coral Reef 项目 开发文档架构设计 参考 beidou + antd-admin 的示例实现。   参考：使用Node.js+Docker+GraphQL+MongoDB构建服务   数据库：MongoDB Web服务：beidou.js 即 egg.js 中间件：GraphQL 前端：Antd - react  代码库实际问题文档 markdown 编辑器库的选型：（已解决） 首先 D">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wind13&#39;s Blog">
+<meta property="og:url" content="http://wind13.github.io/notes/doc-coral-reef.html">
+<meta property="og:site_name" content="Wind13&#39;s Blog">
+<meta property="og:description" content="Coral Reef 项目 开发文档架构设计 参考 beidou + antd-admin 的示例实现。   参考：使用Node.js+Docker+GraphQL+MongoDB构建服务   数据库：MongoDB Web服务：beidou.js 即 egg.js 中间件：GraphQL 前端：Antd - react  代码库实际问题文档 markdown 编辑器库的选型：（已解决） 首先 D">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-10-28T23:32:40.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Wind13&#39;s Blog">
+<meta name="twitter:description" content="Coral Reef 项目 开发文档架构设计 参考 beidou + antd-admin 的示例实现。   参考：使用Node.js+Docker+GraphQL+MongoDB构建服务   数据库：MongoDB Web服务：beidou.js 即 egg.js 中间件：GraphQL 前端：Antd - react  代码库实际问题文档 markdown 编辑器库的选型：（已解决） 首先 D">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Wind13's Blog" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://wind13.github.io/notes/doc-coral-reef.html">
+
+
+  <title> | Wind13's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wind13's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+	<h1 class="post-title" itemprop="name headline"></h1>
+
+
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <h1 id="Coral-Reef-项目-开发文档"><a href="#Coral-Reef-项目-开发文档" class="headerlink" title="Coral Reef 项目 开发文档"></a>Coral Reef 项目 开发文档</h1><h2 id="架构设计"><a href="#架构设计" class="headerlink" title="架构设计"></a>架构设计</h2><ul>
+<li>参考 <a href="https://github.com/alibaba/beidou/tree/4841cb8cc95356cdcfb82d49096a502b46c50fb9/examples/antd-admin" target="_blank" rel="noopener">beidou + antd-admin</a> 的示例实现。</li>
+</ul>
+<blockquote>
+<p>参考：<a href="https://zhuanlan.zhihu.com/p/28861024" target="_blank" rel="noopener">使用Node.js+Docker+GraphQL+MongoDB构建服务</a></p>
+</blockquote>
+<ul>
+<li>数据库：MongoDB</li>
+<li>Web服务：beidou.js 即 egg.js</li>
+<li>中间件：GraphQL</li>
+<li>前端：Antd - react</li>
+</ul>
+<h2 id="代码库"><a href="#代码库" class="headerlink" title="代码库"></a>代码库</h2><h2 id="实际问题"><a href="#实际问题" class="headerlink" title="实际问题"></a>实际问题</h2><h3 id="文档-markdown-编辑器库的选型：（已解决）"><a href="#文档-markdown-编辑器库的选型：（已解决）" class="headerlink" title="文档 markdown 编辑器库的选型：（已解决）"></a>文档 markdown 编辑器库的选型：（已解决）</h3><ul>
+<li>首先 <a href="https://draftjs.org/docs/getting-started.html" target="_blank" rel="noopener">Draft.js</a> 是 Facebook 的生态，比较专业；</li>
+<li>其次 <a href="https://draftjs.org/" target="_blank" rel="noopener">Draft.js</a> 自定义了一种可扩展的文档格式，可用于保存到数据库中。</li>
+<li>目前选型：<ul>
+<li>react-mde</li>
+<li>显示用 <a href="https://github.com/showdownjs/showdown" target="_blank" rel="noopener">showdown</a> <a href="http://demo.showdownjs.com/" target="_blank" rel="noopener">demo</a></li>
+<li>代码美化用：<ul>
+<li><a href="https://github.com/showdownjs/prettify-extension" target="_blank" rel="noopener">prettify-extension</a></li>
+<li><a href="https://github.com/google/code-prettify" target="_blank" rel="noopener">code-prettify</a></li>
+</ul>
+</li>
+<li>字体图标：<a href="https://github.com/dbtek/showdown-icon" target="_blank" rel="noopener">showdown-icon</a> Glyphicon and font-awesome support in Markdown for Showdown.js</li>
+<li>文档目录：<a href="https://github.com/ravisorg/showdown-toc" target="_blank" rel="noopener">showdown-toc</a></li>
+</ul>
+</li>
+<li>未来考虑选型：<ul>
+<li><a href="https://markdown-plugin.spectrum.chat/" target="_blank" rel="noopener">draft-js-markdown-plugin</a> 自动编辑转换，支持代码高亮，不支持表格，最适合程序员的编辑器；</li>
+<li><a href="https://github.com/jpuri/draftjs-to-markdown" target="_blank" rel="noopener">DraftJS TO Markdown</a> 用于显示原始的 markdown 内容</li>
+</ul>
+</li>
+</ul>
+<h3 id="解决子组件定义-Head-中-Meta-数据的问题（已解决）"><a href="#解决子组件定义-Head-中-Meta-数据的问题（已解决）" class="headerlink" title="解决子组件定义 Head 中 Meta 数据的问题（已解决）"></a>解决子组件定义 Head 中 Meta 数据的问题（已解决）</h3><ul>
+<li><a href="https://github.com/nfl/react-helmet/issues/326" target="_blank" rel="noopener">You may be attempting to nest <helmet></helmet></a></li>
+<li>参考<a href="/source/_posts/2018-07-26-Ant-Design-React-Note.md">Ant Design React 使用记录</a></li>
+<li><a href="https://github.com/nfl/react-helmet" target="_blank" rel="noopener">react-helmet</a> A document head manager for React</li>
+</ul>
+<h3 id="编译后用-docker-compose-启动，报-import-语法错误（已解决）"><a href="#编译后用-docker-compose-启动，报-import-语法错误（已解决）" class="headerlink" title="编译后用 docker compose 启动，报 import 语法错误（已解决）"></a>编译后用 docker compose 启动，报 import 语法错误（已解决）</h3><ul>
+<li>初步判断是 babel 的问题，使用 babel 编译。</li>
+<li>解决方法：添加 react 的 preset 并运行 babel 编译源代码。</li>
+</ul>
+<h3 id="编译后启动，报-less-导入无法识别（已解决）"><a href="#编译后启动，报-less-导入无法识别（已解决）" class="headerlink" title="编译后启动，报 less 导入无法识别（已解决）"></a>编译后启动，报 less 导入无法识别（已解决）</h3><ul>
+<li>初步判断是 less 没有被编译导致，见<a href="https://stackoverflow.com/questions/43822021/how-to-make-babel-handle-less-files" target="_blank" rel="noopener">此问</a></li>
+<li><a href="https://www.jjinux.com/2018/04/javascript-porting-from-react-css.html" target="_blank" rel="noopener">JavaScript: Porting from react-css-modules to babel-plugin-react-css-modules (with Less)</a></li>
+<li><a href="https://github.com/gajus/babel-plugin-react-css-modules" target="_blank" rel="noopener">babel-plugin-react-css-modules</a></li>
+<li><a href="https://www.javascriptcn.com/read-36493.html" target="_blank" rel="noopener">babel-plugin-react-css-modules的配置</a> 考虑改写为这种写法，但仍存在一个问题就是 require(‘xxx.less’) 这一句可能报错。</li>
+</ul>
+<p>Try:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add babel-plugin-react-css-modules</span><br></pre></td></tr></table></figure>
+
+<p>尝试失败，不可用，这个插件要求对源代码进行一定的修改，使用 <code>styleName</code> 来重写样式，要完全调通就比较麻烦了，要修改 webpack 配置，以适应前端的编译，还要修改 babel 的配置，但初步尝试都不成功。</p>
+<p>目前找到这里：</p>
+<ul>
+<li><a href="https://github.com/alibaba/beidou/blob/master/packages/beidou-docs/zh/advanced/architecture.md#cssimage-%E7%AD%89%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%A6%82%E4%BD%95%E6%94%AF%E6%8C%81" target="_blank" rel="noopener">css、image 等文件服务端如何支持</a></li>
+</ul>
+<p>可能能找到相应的办法解决…… 经过仔细看文档，发现多删除了一个关键的隐藏目录 .isomorphic，保留它就一切正常了！ :D 可真是费了一番周折，差点就放弃了构建的想法。</p>
+<h3 id="部署到服务器（已解决）"><a href="#部署到服务器（已解决）" class="headerlink" title="部署到服务器（已解决）"></a>部署到服务器（已解决）</h3><ul>
+<li>提示 <code>docker-compose</code> 没这个命令<br>运行 <code>yum search docker-compose</code> 提示：</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker-compose.noarch : Multi-container orchestration for Docker</span><br><span class="line">kompose.x86_64 : Tool to move from 'docker-compose' to Kubernetes</span><br></pre></td></tr></table></figure>
+
+<p>于是找到了这个：Kubernetes + Compose = <a href="https://kompose.io/" target="_blank" rel="noopener">Kompose</a></p>
+<h3 id="不知道改错了哪里，现在开发模式前端代码修改不能热更新了（已解决）"><a href="#不知道改错了哪里，现在开发模式前端代码修改不能热更新了（已解决）" class="headerlink" title="不知道改错了哪里，现在开发模式前端代码修改不能热更新了（已解决）"></a>不知道改错了哪里，现在开发模式前端代码修改不能热更新了（已解决）</h3><ul>
+<li>初步看跟 webpack 的配置有关</li>
+<li>添加了默认的 webpack 配置并修改了 watch: true，正常了。</li>
+</ul>
+<h3 id="前端角色权限路由（已解决）"><a href="#前端角色权限路由（已解决）" class="headerlink" title="前端角色权限路由（已解决）"></a>前端角色权限路由（已解决）</h3><ul>
+<li><a href="https://reacttraining.com/react-router/web/example/auth-workflow" target="_blank" rel="noopener">解决思路 React-Router auth-workflow</a></li>
+</ul>
+<h3 id="运行-eggctrl-报错（已解决）"><a href="#运行-eggctrl-报错（已解决）" class="headerlink" title="运行 eggctrl 报错（已解决）"></a>运行 eggctrl 报错（已解决）</h3><p>原因：eggctrl 是 .bin 目录下的链接文件，在压缩打包时，这个文件会被修改，不再指向 node_modules 目录中的 js 文件。<br>解决：不用 eggctrl，而改用 <code>./node_modules/egg-scripts/bin/egg-scripts.js</code> 即可。</p>
+<h3 id="首次加载慢的问题"><a href="#首次加载慢的问题" class="headerlink" title="首次加载慢的问题"></a>首次加载慢的问题</h3><p>编译时，antd 是外部引用的，1.7MB，下载较慢，导致首次加载时要5秒以上，不过加载过后会缓存，所以之后的页面就会比较快了。</p>
+<p>改用 babel-plugin-import 的 webpack 编译后，可以不引用 antd 了，但 mainifest.js 变为 2.2MB，还是需要加载6秒以上。解决思路：</p>
+<ul>
+<li>1、尝试修改 babel 和 webpack 配置，能分散打包；</li>
+<li>2、恢复为 antd 外部引用，仅在升级 antd 时需要再次下载；</li>
+<li>另外，要考虑缓存对再次发布的影响，所以引用链接后面是否要加时间版本？</li>
+</ul>
+<h3 id="编译时遇到-Plugin-Preset-files-are-not-allowed-to-export-objects-only-functions-的错误"><a href="#编译时遇到-Plugin-Preset-files-are-not-allowed-to-export-objects-only-functions-的错误" class="headerlink" title="编译时遇到 Plugin/Preset files are not allowed to export objects, only functions. 的错误"></a>编译时遇到 <code>Plugin/Preset files are not allowed to export objects, only functions.</code> 的错误</h3><p>网上答案通常指向 babel 6 与 babel 7 共存的问题，发现 babel 7 以后，引入包都在 @babel/xxx 下了，尝试全部改用 7 的方式。</p>
+<ul>
+<li><a href="https://github.com/babel/babel-upgrade" target="_blank" rel="noopener">babel-upgrade</a> A tool for upgrading Babel versions (to v7): <code>npx babel-upgrade</code></li>
+</ul>
+<h3 id="相关资料"><a href="#相关资料" class="headerlink" title="相关资料"></a>相关资料</h3><ul>
+<li><a href="https://github.com/alibaba/beidou/blob/master/packages/beidou-docs/zh/basic/router.md#restful-%E9%A3%8E%E6%A0%BC%E7%9A%84-url-%E5%AE%9A%E4%B9%89" target="_blank" rel="noopener">RESTful 风格的 URL 定义</a></li>
+<li><a href="https://github.com/nikgraf/awesome-draft-js" target="_blank" rel="noopener">Awesome Draft.js</a></li>
+<li><a href="https://react-rte.org/" target="_blank" rel="noopener">react-rte</a> 编辑与预览分离，但缺少表格支持，代码高亮支持等；</li>
+<li><a href="https://rosey.github.io/markdown-draft-js/" target="_blank" rel="noopener">markdown-draft-js</a> 不支持表格，不支持代码高亮；</li>
+<li><a href="https://markdown-plugin.spectrum.chat/" target="_blank" rel="noopener">draft-js-markdown-plugin</a> 自动编辑转换，支持代码高亮，不支持表格，最适合程序员的编辑器；</li>
+<li><a href="https://springload.github.io/draftail/" target="_blank" rel="noopener">Draftail</a> </li>
+<li><a href="https://www.draft-js-plugins.com/" target="_blank" rel="noopener">DraftJS Plugins</a></li>
+<li><a href="https://github.com/jpuri/draftjs-to-markdown" target="_blank" rel="noopener">DraftJS TO Markdown</a></li>
+<li><a href="http://bitwiser.in/medium-draft/" target="_blank" rel="noopener">medium-draft</a> 最适合大众的编辑器，特别是国外 Medium 的用户。</li>
+<li><a href="https://read.douban.com/editor_ng" target="_blank" rel="noopener">豆瓣编辑器</a> 功能自定义较理想。</li>
+<li><a href="https://quilljs.com/" target="_blank" rel="noopener">Quill</a> Your powerful rich text editor. 国外较专业的编辑器。</li>
+<li><a href="http://ueditor.baidu.com/website/" target="_blank" rel="noopener">UEditor</a>是由百度web前端研发部开发所见即所得富文本web编辑器，具有轻量，可定制，注重用户体验等特点，开源基于MIT协议，允许自由使用和修改代码。</li>
+</ul>
+<h2 id="MongoDB-数据库连接"><a href="#MongoDB-数据库连接" class="headerlink" title="MongoDB 数据库连接"></a>MongoDB 数据库连接</h2><ul>
+<li>使用 <code>/Users/samliu/gits/projects/coral-reef/mongodb-server</code> docker compose 项目启动 MongoDB<ul>
+<li>其中 yml 文件中 command 屏蔽后即可不用密码登录。</li>
+<li>coral-reef db admin/rootadmin readWrite</li>
+<li>admin db admin/rootadmin readWrite</li>
+</ul>
+</li>
+<li>如何关联查询结果？<ul>
+<li><a href="http://mongoosejs.com/docs/populate.html" target="_blank" rel="noopener">Populate</a> You can reference documents in other collections.</li>
+</ul>
+</li>
+<li><a href="http://www.cnblogs.com/yaoxing/p/mongodb-backup-rules.html" target="_blank" rel="noopener">MongoDB的常规备份策略</a></li>
+</ul>
+<h2 id="常用文档"><a href="#常用文档" class="headerlink" title="常用文档"></a>常用文档</h2><ul>
+<li><p><a href="https://github.com/alibaba/beidou/blob/master/packages/beidou-docs/zh/core/i18n.md" target="_blank" rel="noopener">I18n 后端国际化</a></p>
+</li>
+<li><p><a href="https://github.com/yahoo/react-intl/wiki" target="_blank" rel="noopener">I18n 前端国际化</a></p>
+</li>
+<li><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank" rel="noopener">正则表达式</a></p>
+</li>
+<li><p><a href="https://blog.csdn.net/fxhflower/article/details/8255083" target="_blank" rel="noopener">密码的正则表达式</a></p>
+</li>
+<li><p><a href="https://github.com/yiminghe/async-validator#type" target="_blank" rel="noopener">表单校验</a></p>
+</li>
+<li><p><a href="https://github.com/eggjs/egg-graphql" target="_blank" rel="noopener">egg-graphql</a></p>
+</li>
+<li><p><a href="https://zhuanlan.zhihu.com/p/30604868" target="_blank" rel="noopener">在Egg中使用GraphQL</a></p>
+</li>
+<li><p><a href="https://blog.csdn.net/skh2015java/article/details/72850472" target="_blank" rel="noopener">linux系统下mongodb添加账号密码</a></p>
+</li>
+<li><p><a href="https://mongoosejs.com/docs/schematypes.html" target="_blank" rel="noopener">查看 Mongoose SchemeType</a></p>
+</li>
+<li><p><a href="https://webpack.js.org/configuration/" target="_blank" rel="noopener">Webpack config</a></p>
+</li>
+<li><p><a href="https://github.com/alibaba/beidou/blob/master/packages/beidou-webpack/README-ZH.md" target="_blank" rel="noopener">北斗 Webpack 插件 beidou-webpack 中文文档</a></p>
+</li>
+<li><p><a href="https://github.com/alibaba/beidou/blob/4841cb8cc95356cdcfb82d49096a502b46c50fb9/packages/beidou-webpack/config/config.default.js" target="_blank" rel="noopener">beidou-webpack config.default.js</a></p>
+</li>
+<li><input disabled type="checkbox"> <p>继续完善珊瑚礁项目平台</p>
+<ul>
+<li><input checked disabled type="checkbox"> 讨论话题优先级更高、顺便兼具平台反馈的功能，</li>
+<li><input disabled type="checkbox"> 类似 Coding 中的 Issue、Task 功能，但更简单一些，先从问题开始，必须以“？”结束标题，</li>
+</ul>
+</li>
+<li><input disabled type="checkbox"> <p>帮助 RM 组改进一些网页工作流程，尝试使用 TamperMonkey 来实现一些功能。需要等待下次审核工时的时候再尝试。</p>
+</li>
+<li><input checked disabled type="checkbox"> <p>先尝试用 TamperMonkey 来快捷填工时。</p>
+</li>
+</ul>
+<h2 id="启动邮件"><a href="#启动邮件" class="headerlink" title="启动邮件"></a>启动邮件</h2><p>珊瑚礁创新平台正式上线，网址：<a href="http://119.3.31.11:8666/，因为是公司内部的网站平台，所以不对外开放注册功能，需要登录平台的人员，请用你的中软邮箱发送邮件给" target="_blank" rel="noopener">http://119.3.31.11:8666/，因为是公司内部的网站平台，所以不对外开放注册功能，需要登录平台的人员，请用你的中软邮箱发送邮件给</a> liujunsheng@chinasofti.com ，按如下格式说明你的个人信息：</p>
+<ul>
+<li>姓名：张三</li>
+<li>邮箱：<a href="mailto:zhangsan001@chinasofti.com" target="_blank" rel="noopener">zhangsan001@chinasofti.com</a></li>
+<li>登录账号：zhangsan001 （默认是你的邮箱前面部分）</li>
+<li>性别：男</li>
+<li>所属部门：对公事业部 DBB 项目组 （此部分的准确信息可以在企业微信或与RM询问中查到）</li>
+<li>职位：中级 Java 开发</li>
+<li>擅长与爱好：Java 编程、羽毛球、唱歌</li>
+</ul>
+<p>我添加账号后会回复邮件，告知默认登录密码，登录后会提示修改密码，密码会加密保存在数据库中，可放心使用。</p>
+<p>平台现已正式运营，并非测试阶段的测试平台，内容是正式数据，公司相关人员都会陆续登录使用，定期会备份，请不要发太过随意的内容。</p>
+<p>平台鼓励大家发布自己的真实想法，让更多的人了解和知道你的创意，平台也会不断更新，以完善使用体验、增加新的功能。</p>
+<p>谢谢大家！</p>
+
+        
+      </div>
+      
+      
+      
+    </div>
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Simon J S Wind13 Liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">92</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">106</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Coral-Reef-项目-开发文档"><span class="nav-number">1.</span> <span class="nav-text">Coral Reef 项目 开发文档</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#架构设计"><span class="nav-number">1.1.</span> <span class="nav-text">架构设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码库"><span class="nav-number">1.2.</span> <span class="nav-text">代码库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实际问题"><span class="nav-number">1.3.</span> <span class="nav-text">实际问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文档-markdown-编辑器库的选型：（已解决）"><span class="nav-number">1.3.1.</span> <span class="nav-text">文档 markdown 编辑器库的选型：（已解决）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决子组件定义-Head-中-Meta-数据的问题（已解决）"><span class="nav-number">1.3.2.</span> <span class="nav-text">解决子组件定义 Head 中 Meta 数据的问题（已解决）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编译后用-docker-compose-启动，报-import-语法错误（已解决）"><span class="nav-number">1.3.3.</span> <span class="nav-text">编译后用 docker compose 启动，报 import 语法错误（已解决）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编译后启动，报-less-导入无法识别（已解决）"><span class="nav-number">1.3.4.</span> <span class="nav-text">编译后启动，报 less 导入无法识别（已解决）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署到服务器（已解决）"><span class="nav-number">1.3.5.</span> <span class="nav-text">部署到服务器（已解决）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不知道改错了哪里，现在开发模式前端代码修改不能热更新了（已解决）"><span class="nav-number">1.3.6.</span> <span class="nav-text">不知道改错了哪里，现在开发模式前端代码修改不能热更新了（已解决）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#前端角色权限路由（已解决）"><span class="nav-number">1.3.7.</span> <span class="nav-text">前端角色权限路由（已解决）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行-eggctrl-报错（已解决）"><span class="nav-number">1.3.8.</span> <span class="nav-text">运行 eggctrl 报错（已解决）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#首次加载慢的问题"><span class="nav-number">1.3.9.</span> <span class="nav-text">首次加载慢的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编译时遇到-Plugin-Preset-files-are-not-allowed-to-export-objects-only-functions-的错误"><span class="nav-number">1.3.10.</span> <span class="nav-text">编译时遇到 Plugin/Preset files are not allowed to export objects, only functions. 的错误</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相关资料"><span class="nav-number">1.3.11.</span> <span class="nav-text">相关资料</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MongoDB-数据库连接"><span class="nav-number">1.4.</span> <span class="nav-text">MongoDB 数据库连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用文档"><span class="nav-number">1.5.</span> <span class="nav-text">常用文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动邮件"><span class="nav-number">1.6.</span> <span class="nav-text">启动邮件</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Simon J S Wind13 Liu</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname,
+            owner: 'wind13',
+            repo: 'wind13.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '567b199e73fe5024b689971fac5a78fc3da64821',
+            
+                client_id: 'b3eba2d74cdccd08c0bb'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

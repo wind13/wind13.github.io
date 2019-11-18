@@ -115,7 +115,7 @@
 <meta property="og:site_name" content="Wind13&#39;s Blog">
 <meta property="og:description" content="参考：史上最浅显易懂的Git教程！  进入你的工作目录 cd yourworkpath  列出所有branch，当前所在branch前面有“*”号。 git branch -a  切换工作库 git checkout v1.5.1  合并另一个branch，通常是master git merge master  再切换回来 git checkout master  查看当前目录情况 git sta">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2018-08-24T02:58:30.000Z">
+<meta property="og:updated_time" content="2019-10-31T12:43:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常用Git命令说明">
 <meta name="twitter:description" content="参考：史上最浅显易懂的Git教程！  进入你的工作目录 cd yourworkpath  列出所有branch，当前所在branch前面有“*”号。 git branch -a  切换工作库 git checkout v1.5.1  合并另一个branch，通常是master git merge master  再切换回来 git checkout master  查看当前目录情况 git sta">
@@ -479,6 +479,16 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/wind13/xxx.git</span><br></pre></td></tr></table></figure>
 
 <ul>
+<li>查看分支详细信息</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -vv</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>更换本地分支对应的远程分支</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch --set-upstream-to=origin/master master</span><br></pre></td></tr></table></figure>
+
+<ul>
 <li>快速本地复制一个库到另一个目录，不带多余的文件：</li>
 </ul>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fast-export --all | (mkdir ../repobackup &amp;&amp; cd ../repobackup &amp;&amp; git init &amp;&amp; git fast-import &amp;&amp; git reset --hard HEAD)</span><br></pre></td></tr></table></figure>
@@ -612,7 +622,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2013/12/13/detachedpersist/" rel="next" title>
+              <a href="/2013/12/23/dateformat/" rel="next" title>
                 <i class="fa fa-chevron-left"></i> 
               </a>
             
@@ -622,8 +632,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2013/12/23/tracinterfacecustomization/" rel="prev" title>
-                 <i class="fa fa-chevron-right"></i>
+              <a href="/2013/12/23/easyuiform/" rel="prev" title="easyui中form表单的ajax实现">
+                easyui中form表单的ajax实现 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -718,7 +728,7 @@
                 
                 <div class="site-state-item site-state-tags">
                   <a href="/tags/index.html">
-                    <span class="site-state-item-count">104</span>
+                    <span class="site-state-item-count">106</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

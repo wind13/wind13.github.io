@@ -1,0 +1,2053 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.0.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="Hexo, NexT">
+
+
+<meta name="description" content="面试记录 title: Interview recordtags:  interview   面试题Alan 测试题的最佳答案： 第一题完全实现难度有点大，建议分数权重占 70%；  12var a = &apos;Tile 1 &amp;lt;br&amp;gt; Tile 2 &amp;lt;br /&amp;gt;   &amp;lt;br/&amp;gt; Tile 3 -  &amp;lt;brother follow Title3&amp;gt;&apos;;a.re">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wind13&#39;s Blog">
+<meta property="og:url" content="http://wind13.github.io/notes/interview.html">
+<meta property="og:site_name" content="Wind13&#39;s Blog">
+<meta property="og:description" content="面试记录 title: Interview recordtags:  interview   面试题Alan 测试题的最佳答案： 第一题完全实现难度有点大，建议分数权重占 70%；  12var a = &apos;Tile 1 &amp;lt;br&amp;gt; Tile 2 &amp;lt;br /&amp;gt;   &amp;lt;br/&amp;gt; Tile 3 -  &amp;lt;brother follow Title3&amp;gt;&apos;;a.re">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-10-28T23:32:40.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Wind13&#39;s Blog">
+<meta name="twitter:description" content="面试记录 title: Interview recordtags:  interview   面试题Alan 测试题的最佳答案： 第一题完全实现难度有点大，建议分数权重占 70%；  12var a = &apos;Tile 1 &amp;lt;br&amp;gt; Tile 2 &amp;lt;br /&amp;gt;   &amp;lt;br/&amp;gt; Tile 3 -  &amp;lt;brother follow Title3&amp;gt;&apos;;a.re">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Wind13's Blog" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://wind13.github.io/notes/interview.html">
+
+
+  <title> | Wind13's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wind13's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+	<h1 class="post-title" itemprop="name headline"></h1>
+
+
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <h1 id="面试记录"><a href="#面试记录" class="headerlink" title="面试记录"></a>面试记录</h1><hr>
+<p>title: Interview record<br>tags:</p>
+<ul>
+<li>interview</li>
+</ul>
+<hr>
+<h1 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h1><h2 id="Alan-测试题的最佳答案："><a href="#Alan-测试题的最佳答案：" class="headerlink" title="Alan 测试题的最佳答案："></a>Alan 测试题的最佳答案：</h2><ol>
+<li><p>第一题完全实现难度有点大，建议分数权重占 70%；</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="string">'Tile 1 &lt;br&gt; Tile 2 &lt;br /&gt;   &lt;br/&gt; Tile 3 -  &lt;brother follow Title3&gt;'</span>;</span><br><span class="line">a.replace(<span class="regexp">/&lt;br\s?\/?&gt;(\s*&lt;br\s?\/?&gt;)?/g</span>, <span class="string">'\n'</span>);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>第二题相对简单一点，建议分数权重占 30%；</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">messages.filter(<span class="function"><span class="params">i</span> =&gt;</span> &#123; <span class="keyword">return</span> i.fromMe &#125;).length;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="电话面试题"><a href="#电话面试题" class="headerlink" title="电话面试题"></a>电话面试题</h2><ul>
+<li>简介你的技术特长和优势</li>
+<li>Vue.js 与 React.js 与 Angular.js 的区别和优劣；</li>
+<li>在 Angular 中写 directive 要传哪些参数？</li>
+<li>React 的高阶组件 HOC 怎么用？</li>
+<li>对 Redux 中的 Reducer 的理解。</li>
+<li>前后端分离后的测试方法。</li>
+<li>英语读写听说能力如何？</li>
+<li>Git 的分支怎么建立</li>
+<li>正则表达式了解吗？ ()? 是什么意思？</li>
+<li>跨域问题的解决方案有哪些？各有什么利弊？</li>
+<li>未来的职业规划，目前最想提高的技能？</li>
+<li>项目管理<ul>
+<li>管理团队经验如何？</li>
+<li>项目代码的质量如何提高？ Code review 和 Unit test 等，XP 结对编程，类库、组件等。</li>
+<li>你对提高代码质量有什么心得体会。</li>
+</ul>
+</li>
+<li>算法题<ul>
+<li>一个人员列表数组，包含姓名和年龄，请说一下如何得到按年龄段分组的名单，如：90后:[张三，李四]。 答：for 循环</li>
+<li>假如有一个巨大的数组，如何用最有效的方法找到它的中值？不愿回答，直说不会。</li>
+</ul>
+</li>
+<li>智力题：<ul>
+<li>两部手机，100级台阶，最佳步骤测试多高摔坏。不愿回答，直说不会。</li>
+</ul>
+</li>
+</ul>
+<h1 id="面试记录-1"><a href="#面试记录-1" class="headerlink" title="面试记录"></a>面试记录</h1><h2 id="侯博"><a href="#侯博" class="headerlink" title="侯博"></a>侯博</h2><ul>
+<li>phone: 13991335665</li>
+<li>email: <a href="mailto:hobe2000@126.com" target="_blank" rel="noopener">hobe2000@126.com</a></li>
+<li>address: 西安</li>
+<li>age: 42 (1976.4.8)</li>
+<li>date: 2018.7.25</li>
+</ul>
+<p>结论：面试通过，技术方面达到前端高级水平，使用过 React, Redux, C# 等，具备英语读写能力，口语交流一般，对 Scrum 敏捷开发流程比较清晰，做过项目经理、产品经理，带过团队开发，对项目团队代码质量提升有较丰富经验，对后端 .Net 相关技术比较熟悉，沟通表达能力较强，推荐做 DTC 项目的高级前端开发或Team Leader甚至前端架构师。</p>
+<ul>
+<li>工作经验：<ul>
+<li>已经有 15 年以上软件前、后端开发工作经验，目前最熟悉的是 C#, .Net 和 React + Redux 前端技术；</li>
+<li>主要使用过 React, Redux, C#, ASP.Net 等；</li>
+</ul>
+</li>
+<li>技术能力：<ul>
+<li>对 React 熟悉；</li>
+<li>对 Redux 熟悉；</li>
+<li>对 C#, ASP.Net 熟悉；</li>
+</ul>
+</li>
+<li>项目管理经验：<ul>
+<li>有项目管理经验，对产品、项目等均有丰富经验；</li>
+<li>使用过 Git 及 SVN 的代码管理服务，对代码管理服务非常熟悉。</li>
+</ul>
+</li>
+<li>英文能力：<ul>
+<li>具备英文读写能力；</li>
+<li>口语交流一般；</li>
+</ul>
+</li>
+<li>沟通协调能力：<ul>
+<li>沟通能力较强，表达清晰；</li>
+</ul>
+</li>
+<li>学习能力：<ul>
+<li>技术学习能力较强，结合经验掌握新概念和新技术较快较深入；</li>
+</ul>
+</li>
+<li>稳定性：<ul>
+<li>稳定性较好，在之前葡萄城公司超过 5 年；</li>
+</ul>
+</li>
+</ul>
+<h2 id="张鹏飞"><a href="#张鹏飞" class="headerlink" title="张鹏飞"></a>张鹏飞</h2><ul>
+<li>phone: 18792965043</li>
+<li>email: <a href="mailto:410739452@qq.com" target="_blank" rel="noopener">410739452@qq.com</a></li>
+<li>address: 西安</li>
+<li>age: 31</li>
+<li>date: 2018.7.25</li>
+</ul>
+<p>结论：面试不通过，技术方面未达到前端高级水平，仅算中级水平，使用过 AngularJS, Vue, jQuery 等，具备英语读写能力，口语交流有困难，对 Scrum 敏捷开发流程了解，对后端 Java 技术了解并使用过，沟通表达能力欠佳，可考虑做 DBB 项目的中级前端开发。</p>
+<ul>
+<li>工作经验：<ul>
+<li>已经有 9 年以上软件前、后端开发工作经验，目前最熟悉的是 AngularJS ；</li>
+<li>主要使用过 AngularJS, Vue, jQuery 等；</li>
+</ul>
+</li>
+<li>技术能力：<ul>
+<li>对 AngularJS 熟悉；</li>
+<li>对 Vue 熟悉；</li>
+<li>对 jQuery 熟悉；</li>
+<li>对前后端整合、Java 有一定了解；</li>
+</ul>
+</li>
+<li>项目管理经验：<ul>
+<li>无项目管理经验；</li>
+<li>使用过 Git 及 SVN 的代码管理服务，对代码管理服务有所了解。</li>
+</ul>
+</li>
+<li>英文能力：<ul>
+<li>具备英文读写能力；</li>
+<li>口语交流有困难；</li>
+</ul>
+</li>
+<li>沟通协调能力：<ul>
+<li>沟通能力欠佳，表达模糊，沟通不清晰；</li>
+</ul>
+</li>
+<li>学习能力：<ul>
+<li>技术学习能力一般，掌握概念较模糊；</li>
+</ul>
+</li>
+<li>稳定性：<ul>
+<li>稳定性一般，在之前公司仅一年到两年；</li>
+</ul>
+</li>
+</ul>
+<h2 id="王森"><a href="#王森" class="headerlink" title="王森"></a>王森</h2><ul>
+<li>phone: 13279292556</li>
+<li>email: <a href="mailto:411259243@qq.com" target="_blank" rel="noopener">411259243@qq.com</a></li>
+<li>address: 西安</li>
+<li>age: 29 1987</li>
+<li>date: 2018.7.12</li>
+</ul>
+<p>结论：面试通过，技术方面达到前端高级水平，使用过 Redux, React, Dva, Antd 等，具备英语读写能力，口语交流有困难，对 Scrum 敏捷开发流程了解，对后端 Java 技术也有所了解，可以与后端顺畅交流，推荐做 DTC 项目的高级前端开发。</p>
+<ul>
+<li>工作经验：<ul>
+<li>已经有 7 年以上软件前端开发工作经验，目前最熟悉的是 React 技术生态；</li>
+<li>主要使用过 Redux, React, Dva, Antd, jQuery 等；</li>
+</ul>
+</li>
+<li>技术能力：<ul>
+<li>对 React.js 熟悉；</li>
+<li>对 Redux.js 熟悉；</li>
+<li>对 Dva 和 Antd 熟悉；</li>
+<li>对 jQuery 熟悉；</li>
+<li>对前后端整合、Java 及 .Net 都有一定了解；</li>
+</ul>
+</li>
+<li>项目管理经验：<ul>
+<li>曾做过一段时间 5 人小组管理，参与 10 人以内前端团队开发经验；</li>
+<li>使用过 Git 及 SVN 的代码管理服务，对代码管理服务有所了解。</li>
+</ul>
+</li>
+<li>英文能力：<ul>
+<li>具备英文读写能力；</li>
+<li>口语交流有困难；</li>
+<li>特殊技能：日语 接近二级水平。</li>
+</ul>
+</li>
+<li>沟通协调能力：<ul>
+<li>沟通能力尚可，表达清晰，一些基本的技术概念；</li>
+<li>有亲和力，沟通轻松；</li>
+</ul>
+</li>
+<li>学习能力：<ul>
+<li>技术学习能力较好，对前端技术兴趣较浓；</li>
+</ul>
+</li>
+<li>稳定性：<ul>
+<li>稳定性尚可，一般在一家公司都能持续一年到三年；</li>
+</ul>
+</li>
+</ul>
+<h2 id="Kent-电话面试-吴浩锋"><a href="#Kent-电话面试-吴浩锋" class="headerlink" title="Kent 电话面试 吴浩锋"></a>Kent 电话面试 吴浩锋</h2><ul>
+<li>phone: 15521132311</li>
+<li>email: <a href="mailto:greedisgood5000@163.com" target="_blank" rel="noopener">greedisgood5000@163.com</a></li>
+<li>address: 广州</li>
+<li>age: 29 1987 期望年薪 40 万</li>
+<li>date: 2018.7.2</li>
+</ul>
+<h2 id="董当"><a href="#董当" class="headerlink" title="董当"></a>董当</h2><ul>
+<li>phone: 18392978965</li>
+<li>email: <a href="mailto:dongdang219@126.com" target="_blank" rel="noopener">dongdang219@126.com</a></li>
+<li>address: 西安-长安区</li>
+<li>age: 29 1987.8.20</li>
+<li>date: 2018.7.2</li>
+</ul>
+<h3 id="Questions"><a href="#Questions" class="headerlink" title="Questions"></a>Questions</h3><ul>
+<li>AngularJS, React, Ext.js, jQuery</li>
+<li>.Net, Ajax, WebService</li>
+<li>2010 年在深圳，2014年回西安</li>
+<li>通过哪些方式自学呢？CSDN, Github, React 官网</li>
+</ul>
+<p>结论：面试通过，技术方面达到前端中级水平，使用过 Angular.js React 等，但不够深入，具备英语读写能力，口语交流有困难，对 Scrum 敏捷开发流程了解，对后端技术也有所了解，对 C# .Net能基本调试开发查错，推荐做 DBB/DTC 项目的中级前端开发。</p>
+<ul>
+<li>工作经验：<ul>
+<li>已经有 6 年以上软件前、后端开发工作经验，主要做前端开发；</li>
+<li>主要使用过 .Net C#, Angular.js 和 React.js 等；</li>
+</ul>
+</li>
+<li>技术能力：<ul>
+<li>对 Angular.js 1.x 熟悉;</li>
+<li>对 React.js 了解；</li>
+<li>对 前后端整合、C# 及 Java 都有一定了解；</li>
+</ul>
+</li>
+<li>项目管理经验：<ul>
+<li>没做过管理，参与 4 人前端团队开发经验；</li>
+<li>使用过 Git 及 SVN 的代码管理服务，对代码管理服务了解不够深入。</li>
+</ul>
+</li>
+<li>英文能力：<ul>
+<li>具备英文读写能力；</li>
+<li>口语交流有困难；</li>
+</ul>
+</li>
+<li>沟通协调能力：<ul>
+<li>沟通能力尚可，表达清晰，但一些基本的技术概念较模糊；</li>
+<li>有亲和力，适合技术人员之间的沟通；</li>
+</ul>
+</li>
+<li>学习能力：<ul>
+<li>技术学习能力较好，对前后端技术掌握不够深入；</li>
+</ul>
+</li>
+<li>稳定性：<ul>
+<li>稳定性尚可，一般都在一年以上；</li>
+</ul>
+</li>
+</ul>
+<h2 id="蔡锐"><a href="#蔡锐" class="headerlink" title="蔡锐"></a>蔡锐</h2><ul>
+<li>phone: 17791644019</li>
+<li>email: <a href="mailto:598832929@163.com" target="_blank" rel="noopener">598832929@163.com</a></li>
+<li>address: 西安</li>
+<li>age: 31 1987.8.20</li>
+<li>date: 2018.6.29</li>
+</ul>
+<ol>
+<li>Questions</li>
+</ol>
+<ul>
+<li>简介你的技术特长和优势</li>
+<li>AngularJS 用的哪个版本； 1.x and 2.x</li>
+<li>AngularJS 和 Vue.js 使用区别；laraver</li>
+<li>对 Redux 中的 Reducer 的理解。</li>
+<li>项目代码的质量如何提高？ 代码规范，Code review 和 Unit test 等，XP 结对编程，类库、组件等。</li>
+<li>写 directive 要传哪些参数？</li>
+<li>ES6 有哪些特性，async await 异步。</li>
+<li>业余爱好：下象棋，看 Vue 文档， ES6 的文档。 </li>
+</ul>
+<ol start="2">
+<li>Summary</li>
+</ol>
+<p>结论：面试通过，技术方面达到前端高级水平，熟悉 React.js Redux 等，Angular.js 三年前也使用过，具备英语读写能力，口语交流也可以，对 Scrum 敏捷开发流程熟悉，对后端技术也有所了解，擅长综合解决问题，对 C# 和 Java 都能基本调试开发查错，推荐做 DTC 项目的前端高级开发。</p>
+<ul>
+<li>工作经验：<ul>
+<li>已经有 6 年以上软件前、后端开发工作经验，主要做前端开发；</li>
+<li>主要使用过 .Net C#, React.js 和 Redux.js 等；</li>
+</ul>
+</li>
+<li>技术能力：<ul>
+<li>对 Javascript 熟悉；</li>
+<li>对 React.js 熟悉；</li>
+<li>对 Angular.js 1.x 了解;</li>
+<li>对 前后端整合、C# 及 Java 都有一定了解；</li>
+</ul>
+</li>
+<li>项目管理经验：<ul>
+<li>做过技术 Leader，有管理 3 人前端团队经验；</li>
+<li>使用过 Git 及 SVN 的代码管理服务，对代码管理服务比较熟悉。</li>
+</ul>
+</li>
+<li>英文能力：<ul>
+<li>具备英文读写能力；</li>
+<li>口语交流一般；</li>
+</ul>
+</li>
+<li>沟通协调能力：<ul>
+<li>沟通能力较强，表达清晰，特别是技术理解方面；</li>
+<li>有亲和力，适合技术人员之间的沟通；</li>
+</ul>
+</li>
+<li>学习能力：<ul>
+<li>技术学习能力较好，对前后端技术掌握较快，有一定的经验；</li>
+<li>在工作中积累经验，解决技术难题等。</li>
+</ul>
+</li>
+<li>稳定性：<ul>
+<li>稳定性较好，之前一直在奥博杰天工作，2015年从北京回到西安仍在这家公司；</li>
+</ul>
+</li>
+</ul>
+<h2 id="何书斌"><a href="#何书斌" class="headerlink" title="何书斌"></a>何书斌</h2><ul>
+<li>phone: 15667080079</li>
+<li>email: <a href="mailto:kun18591941901@sina.com" target="_blank" rel="noopener">kun18591941901@sina.com</a></li>
+<li>address: 西安 户口：安康</li>
+<li>age: 31 1987.10</li>
+<li>date: 2018.6.27</li>
+</ul>
+<ol>
+<li>Questions</li>
+</ol>
+<ul>
+<li>简介你的技术特长和优势</li>
+<li>AngularJS 用的哪个版本； 1.x and 2.x</li>
+<li>AngularJS 和 Vue.js 使用区别；laraver</li>
+<li>写 directive 要传哪些参数？</li>
+<li>ES6 有哪些特性，async await 异步。</li>
+<li>业余爱好：下象棋，看 Vue 文档， ES6 的文档。 </li>
+</ul>
+<ol start="2">
+<li>Summary</li>
+</ol>
+<p>结论：面试通过，技术方面达到前端高级水平，熟悉 Angular.js 1.x ，具备英语读写能力，口语交流一般，可以做 DBB 项目的前端高级开发。</p>
+<ul>
+<li>工作经验：<ul>
+<li>已经有 5 年以上软件前、后端开发工作经验，主要做前端开发；</li>
+<li>主要使用过 .Net C#, Angular.js 1.x 和 Vue.js 等；</li>
+</ul>
+</li>
+<li>技术能力：<ul>
+<li>对 Javascript 熟悉；</li>
+<li>对 Angular.js 1.x 熟悉;</li>
+<li>对 Vue.js 熟悉；</li>
+<li>对 React.js 仅知道；</li>
+<li>对 前后端整合、DevOps 及 Docker 有一定了解；</li>
+</ul>
+</li>
+<li>项目管理经验：<ul>
+<li>做过技术 Leader，有管理 6 人团队经验；</li>
+<li>使用过 Git 及 SVN 的代码管理服务，对代码管理服务比较熟悉。</li>
+</ul>
+</li>
+<li>英文能力：<ul>
+<li>具备英文读写能力；</li>
+<li>口语交流一般；</li>
+</ul>
+</li>
+<li>沟通协调能力：<ul>
+<li>沟通能力较强，表达清晰，特别是技术理解方面；</li>
+<li>有亲和力，适合技术人员之间的沟通；</li>
+</ul>
+</li>
+<li>学习能力：<ul>
+<li>技术学习能力较好，对前后端技术掌握较快，有一定的经验；</li>
+<li>在工作中积累经验，解决技术难题等。</li>
+</ul>
+</li>
+<li>稳定性：<ul>
+<li>稳定性较好，之前公司一般都至少工作两年以上；</li>
+</ul>
+</li>
+</ul>
+<h2 id="郑豪举"><a href="#郑豪举" class="headerlink" title="郑豪举"></a>郑豪举</h2><ul>
+<li>phone: 13389242197</li>
+<li>email: <a href="mailto:zhenghaoju700@163.com" target="_blank" rel="noopener">zhenghaoju700@163.com</a></li>
+<li>address: 西安</li>
+<li>age: 32 1986.09</li>
+<li>date: 2018.6.25</li>
+</ul>
+<ol>
+<li><p>Questions</p>
+<ul>
+<li>简介你的技术特长和优势</li>
+<li>Vue.js 与 React.js 与 Angular.js 的区别和优劣；</li>
+<li>React 的高阶组件怎么用？</li>
+<li>未问：假如有一个巨大的数组，如何用最有效的方法找到它的中值？</li>
+<li>未问：两部手机，100级台阶，最佳步骤测试多高摔坏。</li>
+<li>对 Redux 中的 Reducer 的理解。</li>
+<li>未问：前后端分离后的测试方法。</li>
+<li>后台返回一个人员列表数组，请说一下如何得到年龄大于30岁的人员名单数组。 答：for 循环</li>
+<li>英语读写听说能力如何？</li>
+<li>管理团队经验如何？ 学习《领导力》《学习型组织》等书籍。</li>
+<li>项目代码的质量如何提高？ ESLint、WebStorm。</li>
+</ul>
+</li>
+<li><p>Summary</p>
+</li>
+</ol>
+<ul>
+<li>工作经验：<ul>
+<li>已经有 7 年以上软件前、后端开发工作经验，主要做前端开发；</li>
+<li>主要使用过 Angular.js 1.x 和 YUI.js, dojo.js 等；</li>
+</ul>
+</li>
+<li>技术能力：<ul>
+<li>对 Javascript 熟悉；</li>
+<li>对 Angular.js 1.x 精通，写了开源的 ccms-components 组件库；</li>
+<li>对 Vue.js 仅知道；</li>
+<li>对 React.js 仅知道；</li>
+</ul>
+</li>
+<li>项目管理经验：<ul>
+<li>曾做过技术负责人，有管理 16 人团队经验；</li>
+<li>使用过 Git 及 SVN 的代码管理服务，对代码管理服务比较熟悉。</li>
+<li>擅长带新人，培训并快速提高新人技术水平。</li>
+</ul>
+</li>
+<li>英文能力：<ul>
+<li>具备英文读写能力；</li>
+<li>口语交流一般；</li>
+</ul>
+</li>
+<li>沟通协调能力：<ul>
+<li>沟通能力较强，表达清晰，特别是技术理解方面；</li>
+<li>有亲和力，非常适合技术人员之间的沟通；</li>
+</ul>
+</li>
+<li>学习能力：<ul>
+<li>技术学习能力较强，对前端技术掌握较快，经验较丰富；</li>
+<li>对团队管理、软件工程方面也比较感兴趣，阅读相关书籍等；</li>
+<li>在工作中积累经验，带新人学习技术等。</li>
+</ul>
+</li>
+<li>稳定性：<ul>
+<li>稳定性较好，之前公司一般都至少工作两年以上；</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>Result<br> 结论：面试通过，技术方面达到前端架构师水平，精通 Angular.js 1.x ，具备英语读写能力，口语交流一般，强烈推荐做 DBB 项目的前端架构师。</li>
+</ol>
+<h2 id="田欣"><a href="#田欣" class="headerlink" title="田欣"></a>田欣</h2><ul>
+<li>phone: 15809241208</li>
+<li>email: <a href="mailto:dalejace@163.com" target="_blank" rel="noopener">dalejace@163.com</a></li>
+<li>address: 西安</li>
+<li>sex: 女</li>
+<li>age: 30</li>
+<li>date: 2018.6.26</li>
+</ul>
+<ol>
+<li><p>Questions</p>
+<ul>
+<li>简介你的技术特长和优势</li>
+<li>Vue.js 与 React.js 与 Angular.js 的区别和优劣；</li>
+<li>React 的高阶组件怎么用？</li>
+<li>未问：假如有一个巨大的数组，如何用最有效的方法找到它的中值？不愿回答，直说不会。</li>
+<li>两部手机，100级台阶，最佳步骤测试多高摔坏。不愿回答，直说不会。</li>
+<li>对 Redux 中的 Reducer 的理解。</li>
+<li>未问：前后端分离后的测试方法。</li>
+<li>未问：后台返回一个人员列表数组，请说一下如何得到年龄大于30岁的人员名单数组。</li>
+<li>英语读写听说能力如何？</li>
+<li>管理团队经验如何？</li>
+<li>项目代码的质量如何提高？</li>
+</ul>
+</li>
+<li><p>Summary</p>
+</li>
+</ol>
+<ul>
+<li>工作经验：<ul>
+<li>已经有5年以上软件前、后端开发工作经验，主要做前端开发；</li>
+<li>主要使用过 Angular.js 和 jQuery.js 等；</li>
+</ul>
+</li>
+<li>技术能力：<ul>
+<li>对 Javascript 熟悉；</li>
+<li>对 Angular.js 熟悉；</li>
+<li>对 Vue.js 仅知道；</li>
+<li>对 React.js 仅知道；</li>
+</ul>
+</li>
+<li>项目管理经验：<ul>
+<li>主要做技术 Leader，管理 5 人以下团队经验；</li>
+<li>使用过 Git 的代码管理服务，对代码管理服务的深入了解不够。</li>
+</ul>
+</li>
+<li>英文能力：<ul>
+<li>具备英文读写能力；</li>
+<li>具备口语简单交流能力；</li>
+</ul>
+</li>
+<li>沟通协调能力：<ul>
+<li>沟通能力尚可，表达略显啰嗦；</li>
+<li>适合技术人员之间的沟通；</li>
+</ul>
+</li>
+<li>学习能力：<ul>
+<li>技术学习能力尚可，业余看些其他方面的书；</li>
+<li>主要在工作中学习技术，但缺乏深入研究和系统性。</li>
+</ul>
+</li>
+<li>稳定性：<ul>
+<li>稳定性较好，之前在西工大科信软件做多过个项目，从2013年至今；</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>Result<br> 结论: 技术方面仅到中级前端工程师水平，达不到高级水平，熟悉 Angular.js ，具备英语听说读写等能力，建议做 DBB 的前端开发职位。</li>
+</ol>
+<h2 id="曹鲜生"><a href="#曹鲜生" class="headerlink" title="曹鲜生"></a>曹鲜生</h2><ul>
+<li>phone: 18710333371</li>
+<li>email: <a href="mailto:14362743@qq.com" target="_blank" rel="noopener">14362743@qq.com</a></li>
+<li>address: 西安</li>
+<li>age: 36</li>
+<li>date: 2018.6.25</li>
+</ul>
+<ol>
+<li><p>Questions</p>
+<ul>
+<li>简介你的技术特长和优势</li>
+<li>Vue.js 与 React.js 与 Angular.js 的区别和优劣；</li>
+<li>React 的高阶组件怎么用？</li>
+<li>未问：假如有一个巨大的数组，如何用最有效的方法找到它的中值？不愿回答，直说不会。</li>
+<li>未问：两部手机，100级台阶，最佳步骤测试多高摔坏。不愿回答，直说不会。</li>
+<li>对 Redux 中的 Reducer 的理解。</li>
+<li>未问：前后端分离后的测试方法。</li>
+<li>后台返回一个人员列表数组，请说一下如何得到年龄大于30岁的人员名单数组。 答：for 循环</li>
+<li>英语读写听说能力如何？</li>
+<li>管理团队经验如何？</li>
+<li>项目代码的质量如何提高？</li>
+</ul>
+</li>
+<li><p>Summary</p>
+</li>
+</ol>
+<ul>
+<li>工作经验：<ul>
+<li>已经有10年以上软件前、后端开发工作经验，主要做前端开发；</li>
+<li>主要使用过 Angular.js 和 jQuery.js 等；</li>
+</ul>
+</li>
+<li>技术能力：<ul>
+<li>对 Javascript 熟悉；</li>
+<li>对 Angular.js 熟悉；</li>
+<li>对 Vue.js 仅知道；</li>
+<li>对 React.js 仅知道；</li>
+</ul>
+</li>
+<li>项目管理经验：<ul>
+<li>曾做过技术 Leader，管理 5 人以下团队经验；</li>
+<li>使用过 Git 及 SVN 的代码管理服务，对代码管理服务的深入了解不够。</li>
+</ul>
+</li>
+<li>英文能力：<ul>
+<li>具备英文读写能力；</li>
+<li>口语交流有困难；</li>
+</ul>
+</li>
+<li>沟通协调能力：<ul>
+<li>沟通能力尚可，表达基本清晰；</li>
+<li>有亲和力，适合技术人员之间的沟通；</li>
+</ul>
+</li>
+<li>学习能力：<ul>
+<li>技术学习能力尚可，业余看些前端方面的资讯；</li>
+<li>主要在工作中学习技术，因项目进度压力大，较少深入和系统研究。</li>
+</ul>
+</li>
+<li>稳定性：<ul>
+<li>稳定性还可以，之前公司一般都至少工作两年以上；</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>Result<br> 结论：面试通过，技术方面勉强达到高级前端工程师水平，熟悉 Angular.js ，具备英语读写能力，但口语交流有困难，适合 DBB 项目的前端开发职位。</li>
+</ol>
+<h2 id="王金刚"><a href="#王金刚" class="headerlink" title="王金刚"></a>王金刚</h2><ul>
+<li>phone: 15026835870</li>
+<li>email: <a href="mailto:wkylin@qq.com" target="_blank" rel="noopener">wkylin@qq.com</a></li>
+<li>address: 上海</li>
+<li>age: 35 (1983.08)</li>
+<li>date: 2018.6.20</li>
+</ul>
+<ol>
+<li><p>Questions</p>
+<ul>
+<li>简介你的技术特长和优势</li>
+<li>Vue.js 与 React.js 与 Angular.js 的区别和优劣；</li>
+<li>React 的高阶组件怎么用？</li>
+<li>假如有一个巨大的数组，如何用最有效的方法找到它的中值？不愿回答，直说不会。</li>
+<li>两部手机，100级台阶，最佳步骤测试多高摔坏。不愿回答，直说不会。</li>
+<li>未问：对 Redux 中的 Reducer 的理解。</li>
+<li>未问：前后端分离后的测试方法。</li>
+<li>英语读写听说能力如何？</li>
+<li>管理团队经验如何？</li>
+<li>项目代码的质量如何提高？</li>
+</ul>
+</li>
+<li><p>Summary</p>
+</li>
+</ol>
+<ul>
+<li>工作经验：<ul>
+<li>已经有多年软件前、后端开发工作经验，近几年主要做前端开发；</li>
+<li>主要使用过 Angular.js 和 Vue.js 等；</li>
+</ul>
+</li>
+<li>技术能力：<ul>
+<li>对 Javascript 熟悉；</li>
+<li>对 Angular.js 熟悉；</li>
+<li>对 Vue.js 熟悉；</li>
+<li>对 React.js 了解；</li>
+</ul>
+</li>
+<li>项目管理经验：<ul>
+<li>主要做技术 Leader，管理 10 人以下团队经验；</li>
+<li>使用过 Git 的代码管理服务，对代码管理服务的使用规范熟悉。</li>
+</ul>
+</li>
+<li>英文能力：<ul>
+<li>具备英文读写能力；</li>
+<li>具备口语简单交流能力；</li>
+</ul>
+</li>
+<li>沟通协调能力：<ul>
+<li>沟通能力尚可，表达略显啰嗦；</li>
+<li>语气比较有亲和力，适合技术人员之间的沟通；</li>
+</ul>
+</li>
+<li>学习能力：<ul>
+<li>技术学习能力较好；</li>
+<li>比较关注前端技术并实际应用；</li>
+</ul>
+</li>
+<li>稳定性：<ul>
+<li>稳定性较好，目前家人在西安，所以想从上海回西安工作；</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>Result<br> 结论: 技术方面达到高级前端工程师水平，达不到架构师水平，熟悉 Angular.js ，具备英语听说读写等能力，建议做 DBB 的技术 Leader 或 高级前端开发职位。</li>
+</ol>
+<h2 id="司建成"><a href="#司建成" class="headerlink" title="司建成"></a>司建成</h2><ul>
+<li>phone: 13991226667</li>
+<li>email: <a href="mailto:jasonsi@netease.com" target="_blank" rel="noopener">jasonsi@netease.com</a></li>
+<li>address: 西安</li>
+<li>age: 45</li>
+<li>date: 2018.6.20</li>
+</ul>
+<ol>
+<li><p>Questions</p>
+<ul>
+<li>简介你的技术特长和优势</li>
+<li>Vue.js 与 React.js 与 Angular.js 的区别和优劣；</li>
+<li>React 的高阶组件怎么用？</li>
+<li>假如有一个巨大的数组，如何用最有效的方法找到它的中值？不愿回答，直说不会。</li>
+<li>两部手机，100级台阶，最佳步骤测试多高摔坏。不愿回答，直说不会。</li>
+<li>未问：对 Redux 中的 Reducer 的理解。</li>
+<li>未问：前后端分离后的测试方法。</li>
+<li>英语读写听说能力如何？</li>
+<li>管理团队经验如何？</li>
+<li>项目代码的质量如何提高？</li>
+</ul>
+</li>
+<li><p>Summary</p>
+</li>
+</ol>
+<ul>
+<li>工作经验：<ul>
+<li>已经有多年软件前、后端开发工作经验，近两年主要做前端开发；</li>
+<li>主要使用过 React.js 和 jQuery 等；</li>
+</ul>
+</li>
+<li>技术能力：<ul>
+<li>对 Javascript 熟悉；</li>
+<li>对 React.js 熟悉；</li>
+<li>对 Jest.js 熟悉；</li>
+<li>对 Angular.js 技术仅了解；</li>
+</ul>
+</li>
+<li>项目管理经验：<ul>
+<li>主要做技术架构工作，没有管理团队经验；</li>
+<li>使用过 Git 的代码管理服务，对代码管理服务的使用规范熟悉。</li>
+</ul>
+</li>
+<li>英文能力：<ul>
+<li>具备英文读写能力；</li>
+<li>具备口语交流能力；</li>
+</ul>
+</li>
+<li>沟通协调能力：<ul>
+<li>沟通能力尚可，表达时而模糊；</li>
+<li>年资较高，略有些架子；</li>
+</ul>
+</li>
+<li>学习能力：<ul>
+<li>技术学习能力一般；业余主要看哲学、宗教等书籍；</li>
+<li>也会关注前端技术并了解；</li>
+</ul>
+</li>
+<li>稳定性：<ul>
+<li>稳定性一般，担心对公司规则多的情况会有排斥，目前在活跃网络在职状态；</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>Result<br> 结论: 技术方面达到架构师水平，熟悉 React.js，具备英语听说读写等能力，通过技术面试。</li>
+</ol>
+<h2 id="翟健钊"><a href="#翟健钊" class="headerlink" title="翟健钊"></a>翟健钊</h2><ul>
+<li>phone: 13468819167</li>
+<li>email: <a href="mailto:phoenixcraft@163.com" target="_blank" rel="noopener">phoenixcraft@163.com</a></li>
+<li>address: 西安长安区</li>
+<li>age: 34 (1984 年 6 月 23 日)</li>
+<li>date: 2018.5.29</li>
+</ul>
+<ol>
+<li><p>Questions</p>
+<ul>
+<li>简介你的技术特长</li>
+<li>Vue.js 与 React.js 与 Angular.js 的区别和优劣；</li>
+<li>假如有一个巨大的数组，如何用最有效的方法找到它的中值？</li>
+<li>英语读写听说能力如何？</li>
+<li>管理团队经验如何？</li>
+<li>项目代码的质量如何提高？</li>
+</ul>
+</li>
+<li><p>Summary</p>
+</li>
+</ol>
+<ul>
+<li>工作经验：<ul>
+<li>已经有多年软件前、后端开发工作经验，近三年主要做前端开发；</li>
+<li>主要使用过 Vue.js 和 jQuery 等；</li>
+</ul>
+</li>
+<li>技术能力：<ul>
+<li>对 Java 熟悉；</li>
+<li>对 Javascript 熟悉；</li>
+<li>对 Vue.js 熟悉；</li>
+<li>对 Angular.js 技术仅了解；</li>
+<li>对 React.js 技术仅了解；</li>
+</ul>
+</li>
+<li>项目管理经验：<ul>
+<li>带过 3 到 5 人团队；</li>
+<li>使用过 SVN Git 的代码管理服务，但对代码管理服务的使用规范了解一般。</li>
+</ul>
+</li>
+<li>英文能力：<ul>
+<li>具备英文读写能力；</li>
+<li>无法进行口语交流；</li>
+</ul>
+</li>
+<li>沟通协调能力：<ul>
+<li>沟通能力较佳，表达信息清晰；</li>
+<li>总体印象较好，可以抓住重点；</li>
+</ul>
+</li>
+<li>学习能力：<ul>
+<li>技术学习能力较强；</li>
+<li>可以深入学习技术知识并实践应用；</li>
+</ul>
+</li>
+<li>稳定性：<ul>
+<li>稳定性尚可，之前公司较长的在 2 年以上；</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>Result<br> 结论: 技术方面达到高级水平，熟悉 Vue.js，且有后端开发经验，对 Java，Spring 等技术也比较熟悉， React.js 和 Angular.js 了解可以快速学会，英语听说是弱项，但技术能力较好，通过面试。</li>
+</ol>
+<h2 id="杨健周"><a href="#杨健周" class="headerlink" title="杨健周"></a>杨健周</h2><ul>
+<li>phone: 15521101669</li>
+<li>email: <a href="mailto:276519862@qq.com" target="_blank" rel="noopener">276519862@qq.com</a></li>
+<li>address: 广州</li>
+<li>age: 30 (1987 年 8 月 24 日)</li>
+<li>date: 2018.5.14</li>
+</ul>
+<ol>
+<li><p>Questions</p>
+<ul>
+<li>简介你的技术特长</li>
+<li>Vue.js 与 React.js 与 Angular.js 的区别和优劣；</li>
+<li>假如有一个巨大的数组，如何用最有效的方法找到它的中值？</li>
+<li>英语读写听说能力如何？</li>
+<li>管理团队经验如何？</li>
+<li>项目代码的质量如何提高？</li>
+</ul>
+</li>
+<li><p>Summary</p>
+<ul>
+<li>工作经验：<ul>
+<li>已经有多年软件开发工作经验；</li>
+<li>主要使用过 Vue.js 和 Backbone.js；</li>
+</ul>
+</li>
+<li>技术能力：<ul>
+<li>对 Backbone.js 熟悉；</li>
+<li>对 Vue.js 使用过；</li>
+<li>对 Angular.js 技术仅了解；</li>
+<li>对 React.js 技术仅了解；</li>
+</ul>
+</li>
+<li>项目管理经验：<ul>
+<li>带过 3 到 5 人团队；</li>
+<li>使用过 SVN Git 的代码管理服务，但对代码管理服务的使用规范了解不多。</li>
+</ul>
+</li>
+<li>英文能力：<ul>
+<li>具备英文读写能力；</li>
+<li>可以进行口语交流；</li>
+</ul>
+</li>
+<li>沟通协调能力：<ul>
+<li>沟通能力一般，表达信息基本清晰；</li>
+<li>总体印象尚可，可以抓住重点；</li>
+</ul>
+</li>
+<li>学习能力：<ul>
+<li>局限于工作中应用的技术学习；</li>
+<li>并不能深入学习知识的关键，仅局限在普通应用；</li>
+</ul>
+</li>
+<li>稳定性：<ul>
+<li>稳定性尚可，之前公司较长的在 5 年以上；</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Result<br> 结论: 技术方面仅达到中级水平，且局限在 Vue.js， React.js 和 Angular.js 仅限了解，因此不通过。</p>
+</li>
+</ol>
+<h2 id="刘先生"><a href="#刘先生" class="headerlink" title="刘先生"></a>刘先生</h2><ul>
+<li>phone: 15812488801</li>
+<li>email: <a href="mailto:dodar@foxmail.com" target="_blank" rel="noopener">dodar@foxmail.com</a></li>
+<li>address: 广州</li>
+<li>age: 35</li>
+<li>date: 2018.5.9</li>
+</ul>
+<ol>
+<li>Questions</li>
+</ol>
+<ul>
+<li>简介你的技术擅长</li>
+<li>Vue.js 与 React.js 与 Angular.js 的区别和优劣；</li>
+<li>性能优化的理解</li>
+<li>组件库的设计思路和规划，具体举例增加的组件。</li>
+<li>英语读写听说能力如何</li>
+<li>管理团队经验</li>
+</ul>
+<ol>
+<li>Summary</li>
+</ol>
+<ul>
+<li>工作经验：<ul>
+<li>已经有 8 多年软件开发工作经验；</li>
+<li>未带过团队；</li>
+<li>主要做过VUE组件库、微信公众号等；</li>
+</ul>
+</li>
+<li>技术能力：<ul>
+<li>对 AngularJS 技术仅了解；</li>
+<li>对 React 技术仅了解；</li>
+</ul>
+</li>
+<li>项目管理经验：<ul>
+<li>未带过团队；</li>
+<li>使用过 SVN 的代码管理服务，对 Git 代码管理服务有所了解；</li>
+</ul>
+</li>
+<li>英文能力：<ul>
+<li>仅限英文一般的读写，可简单邮件沟通；</li>
+<li>无法进行口语交流；</li>
+</ul>
+</li>
+<li>沟通协调能力：<ul>
+<li>沟通能力一般，表达信息模糊；</li>
+<li>总体印象平庸，并不能很快地抓住重点；</li>
+</ul>
+</li>
+<li>学习能力：<ul>
+<li>局限于工作中应用的技术学习；</li>
+<li>并不能深入学习知识的关键，仅局限在普通应用；</li>
+</ul>
+</li>
+<li>稳定性：<ul>
+<li>稳定性一般，之前公司较长的在两年左右；</li>
+</ul>
+</li>
+</ul>
+<h3 id="结论-技术方面仅达到中级水平，且局限在-VUE，因此不通过。"><a href="#结论-技术方面仅达到中级水平，且局限在-VUE，因此不通过。" class="headerlink" title="结论: 技术方面仅达到中级水平，且局限在 VUE，因此不通过。"></a>结论: 技术方面仅达到中级水平，且局限在 VUE，因此不通过。</h3><h2 id="龚利华"><a href="#龚利华" class="headerlink" title="龚利华"></a>龚利华</h2><ul>
+<li>phone: 13824487840</li>
+<li>email: <a href="mailto:229108400@qq.com" target="_blank" rel="noopener">229108400@qq.com</a></li>
+<li>address: 广州</li>
+<li>age: 40</li>
+<li>date: 2018.4.11</li>
+</ul>
+<ol>
+<li>Questions</li>
+</ol>
+<ul>
+<li>为什么离开英维？公司发展不理想，团队人员始终在更换，自己成长较慢。</li>
+<li>React 的底层机制？没答上来。</li>
+<li>使用什么技术实现实时显示车辆动态？WebSocket</li>
+</ul>
+<ol>
+<li>Summary</li>
+</ol>
+<ul>
+<li>工作经验：<ul>
+<li>已经有 10 多年软件开发工作经验；</li>
+<li>带过 6 人的开发团队；</li>
+<li>主要做过电子商城、POS机系统、公从号后台等；</li>
+</ul>
+</li>
+<li>技术能力：<ul>
+<li>最熟悉的技术是 PHP 建站；用过的框架有：JoomLa, ThinkPHP, WordPress 等；</li>
+<li>对 React 技术仅限一般会用；</li>
+<li>对 Java 技术仅限一般会用；</li>
+<li>具有较好的业务分析理解能力，对电子商务相关开发比较有经验；</li>
+<li>具有较好的问题解决能力，认真负责；</li>
+</ul>
+</li>
+<li>项目管理经验：<ul>
+<li>带领 6 人开发团队，与香港沟通需求并计划开发任务，能够保证按时按质量地完成开发任务；</li>
+<li>使用过 SVN 的代码管理服务，对 Git 代码管理服务有所了解；</li>
+</ul>
+</li>
+<li>英文能力：<ul>
+<li>仅限英文一般的读写，可简单邮件沟通；</li>
+<li>无法进行口语交流；</li>
+</ul>
+</li>
+<li>沟通协调能力：<ul>
+<li>可带 8 人以内小团队进行软件开发项目管理；</li>
+<li>总体印象是稳重负责，缺乏洞察力，并不能很快地抓住重点；</li>
+</ul>
+</li>
+<li>学习能力：<ul>
+<li>局限于工作中应用的技术学习；</li>
+<li>有一定的钻研能力，但新技术视野缺失，需要较多的补课；</li>
+</ul>
+</li>
+<li>稳定性：<ul>
+<li>在英维网络工作 9 年 3 个月，年龄 40 岁，因此如果选择了合适的公司，相信稳定性比较好；</li>
+<li>但也有几家公司仅 1 年左右，可见如果不适合的话通常就是 1 年多会异动。</li>
+</ul>
+</li>
+</ul>
+<h3 id="结论-技术方面仅达到中级，技术上相对落后，局限在-PHP，英文能力较弱，软件开发经验较丰富，工作认真负责肯钻研，了解-React-一般应用，因此勉强通过，建议-DTC-项目组前端开发。"><a href="#结论-技术方面仅达到中级，技术上相对落后，局限在-PHP，英文能力较弱，软件开发经验较丰富，工作认真负责肯钻研，了解-React-一般应用，因此勉强通过，建议-DTC-项目组前端开发。" class="headerlink" title="结论: 技术方面仅达到中级，技术上相对落后，局限在 PHP，英文能力较弱，软件开发经验较丰富，工作认真负责肯钻研，了解 React 一般应用，因此勉强通过，建议 DTC 项目组前端开发。"></a>结论: 技术方面仅达到中级，技术上相对落后，局限在 PHP，英文能力较弱，软件开发经验较丰富，工作认真负责肯钻研，了解 React 一般应用，因此勉强通过，建议 DTC 项目组前端开发。</h3><h2 id="吴永泉"><a href="#吴永泉" class="headerlink" title="吴永泉"></a>吴永泉</h2><ul>
+<li>phone: 15989189051</li>
+<li>email: <a href="mailto:15989189051@163.com" target="_blank" rel="noopener">15989189051@163.com</a></li>
+<li>address: 广州</li>
+<li>age: 28</li>
+<li>date: 2018.3.14</li>
+</ul>
+<h3 id="Questions-1"><a href="#Questions-1" class="headerlink" title="Questions"></a>Questions</h3><ul>
+<li>例举一下 ES6, ES7 的主要特色或语法；<ul>
+<li>assign go</li>
+</ul>
+</li>
+<li>如何进行 React 应用的单元测试？</li>
+<li>讲一下 React + Redux 的数据流；<ul>
+<li>Store 管理整个系统数据。</li>
+</ul>
+</li>
+<li>例举应用 gulp 完成的功能；</li>
+<li>例举一下 git 版本管理的流程，pull request 的过程；</li>
+<li>例举一下 sed 命令的功能和使用场景；</li>
+<li>前后端如何分离开发的？</li>
+</ul>
+<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p>吴永泉，目前在广州微赋科技工作，英语阅读能力较强，口语交流一般。目前担任前端开发工程师和组长。主要技术擅长(10分制)：</p>
+<ul>
+<li>HTML,CSS (7)</li>
+<li>JavaScript (8)</li>
+<li>React.js (8)</li>
+<li>Redux.js (8)</li>
+<li>JavaScript (8)</li>
+<li>AngularJS 1.x (7)</li>
+<li>Node.js (7)</li>
+<li>webpack.js (6)</li>
+<li>Gulp (6)</li>
+<li>Vue.js (6)</li>
+<li>ASP.NET C# (5)</li>
+</ul>
+<p>注：6 分以上表示可以马上胜任相关工作，6 分以下表示曾经自学或了解过，要实际工作尚需进一步学习和熟悉。</p>
+<p>精通前端技术，特别是 React 相关技术栈，也实际应用过 AngularJS，对后端开发技术也有所了解，主要使用过 Node.js、ASP.NET、C#等，对 Java 和 Python 也有所了解。</p>
+<p>结论：可以作为高级前端开发人员录用，但达不到架构师水平，属于高级开发中的中级水平。</p>
+<h2 id="钟良文"><a href="#钟良文" class="headerlink" title="钟良文"></a>钟良文</h2><ul>
+<li>phone: 18559782167</li>
+<li>email: <a href="mailto:zhongliangwenwx@163.com" target="_blank" rel="noopener">zhongliangwenwx@163.com</a></li>
+<li>address: 广州增城区</li>
+<li>age: 31</li>
+</ul>
+<h3 id="Questions-2"><a href="#Questions-2" class="headerlink" title="Questions"></a>Questions</h3><ul>
+<li>前后端开发分离，rap 工具使用中自动化测试怎么实现？2更好些，Yapi 更好些，界面更好。</li>
+<li>多终端登录身份验证的解决思路；</li>
+<li>移植了蚂蚁金服开源了 angular 组件库 ng-antd</li>
+</ul>
+<h3 id="Summary-1"><a href="#Summary-1" class="headerlink" title="Summary"></a>Summary</h3><p>钟良文，目前在广州棒谷科技工作，之前在厦门工作，都是民营企业，所以英语口语交流有困难。目前担任前端架构组负责人，架构组共4人。主要技术擅长(10分制)：</p>
+<ul>
+<li>JavaScript (8)</li>
+<li>Angular 5.x (9)</li>
+<li>AngularJS 1.x (7)</li>
+<li>TypeScript (8)</li>
+<li>Gulp (9)</li>
+<li>React.js (5)</li>
+<li>Vue.js (4)</li>
+<li>Rap (7)</li>
+</ul>
+<p>注：6 分以上表示可以马上胜任相关工作，6 分以下表示曾经自学或了解过，要实际工作尚需进一步学习和熟悉。</p>
+<p>精通前端技术，特别是 Angular 5.x 全技术栈，个人因为之前的公司距离太远而希望更换工作。</p>
+<p>结论：可以作为前端架构师录用，对于前端开发将起到非常大的促进作用。缺陷是后端技术了解不多，英语口语交流一般。</p>
+<h2 id="陶侃"><a href="#陶侃" class="headerlink" title="陶侃"></a>陶侃</h2><ul>
+<li>phone: 15927006284</li>
+<li>email: <a href="mailto:9210063@qq.com" target="_blank" rel="noopener">9210063@qq.com</a></li>
+<li>address: 武汉</li>
+<li>age: 35</li>
+</ul>
+<h3 id="Summary-2"><a href="#Summary-2" class="headerlink" title="Summary"></a>Summary</h3><p>陶侃，主要工作过 IBM 和 HP 企业服务部两家公司，目前担任 Technical Team Leader，主要技术擅长(10分制)：</p>
+<ul>
+<li>JavaScript (7)</li>
+<li>Vue.js (9)</li>
+<li>React.js (6)</li>
+<li>Angular.js (2)</li>
+<li>SASS (7)</li>
+<li>TypeScript (4)</li>
+<li>Scala (3)</li>
+<li>Webpack (5)</li>
+</ul>
+<p>注：6 分以上表示可以马上胜任相关工作，6 分以下表示曾经自学或了解过，要实际工作尚需进一步学习和熟悉。</p>
+<p>对于前后端技术均有涉猎，个人更有把握的技术领域偏向前端，由于所在公司的原因，对后端技术掌握的范围较为陈旧和特殊。<br>英语读写没有问题，也具备一般的口语听说和沟通能力。<br>个人希望不断提高全栈技术发展，喜欢钻研和学习最新的技术，工作态度认真，可以接受到广州工作。</p>
+<p>结论：可以作为高级前端开发人员录用，但达不到架构师水平，属于高级开发中的中级水平。</p>
+
+        
+      </div>
+      
+      
+      
+    </div>
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Simon J S Wind13 Liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">92</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">106</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#面试记录"><span class="nav-number">1.</span> <span class="nav-text">面试记录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#面试题"><span class="nav-number">2.</span> <span class="nav-text">面试题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Alan-测试题的最佳答案："><span class="nav-number">2.1.</span> <span class="nav-text">Alan 测试题的最佳答案：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#电话面试题"><span class="nav-number">2.2.</span> <span class="nav-text">电话面试题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#面试记录-1"><span class="nav-number">3.</span> <span class="nav-text">面试记录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#侯博"><span class="nav-number">3.1.</span> <span class="nav-text">侯博</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#张鹏飞"><span class="nav-number">3.2.</span> <span class="nav-text">张鹏飞</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#王森"><span class="nav-number">3.3.</span> <span class="nav-text">王森</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Kent-电话面试-吴浩锋"><span class="nav-number">3.4.</span> <span class="nav-text">Kent 电话面试 吴浩锋</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#董当"><span class="nav-number">3.5.</span> <span class="nav-text">董当</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Questions"><span class="nav-number">3.5.1.</span> <span class="nav-text">Questions</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#蔡锐"><span class="nav-number">3.6.</span> <span class="nav-text">蔡锐</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#何书斌"><span class="nav-number">3.7.</span> <span class="nav-text">何书斌</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#郑豪举"><span class="nav-number">3.8.</span> <span class="nav-text">郑豪举</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#田欣"><span class="nav-number">3.9.</span> <span class="nav-text">田欣</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#曹鲜生"><span class="nav-number">3.10.</span> <span class="nav-text">曹鲜生</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#王金刚"><span class="nav-number">3.11.</span> <span class="nav-text">王金刚</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#司建成"><span class="nav-number">3.12.</span> <span class="nav-text">司建成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#翟健钊"><span class="nav-number">3.13.</span> <span class="nav-text">翟健钊</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#杨健周"><span class="nav-number">3.14.</span> <span class="nav-text">杨健周</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#刘先生"><span class="nav-number">3.15.</span> <span class="nav-text">刘先生</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#结论-技术方面仅达到中级水平，且局限在-VUE，因此不通过。"><span class="nav-number">3.15.1.</span> <span class="nav-text">结论: 技术方面仅达到中级水平，且局限在 VUE，因此不通过。</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#龚利华"><span class="nav-number">3.16.</span> <span class="nav-text">龚利华</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#结论-技术方面仅达到中级，技术上相对落后，局限在-PHP，英文能力较弱，软件开发经验较丰富，工作认真负责肯钻研，了解-React-一般应用，因此勉强通过，建议-DTC-项目组前端开发。"><span class="nav-number">3.16.1.</span> <span class="nav-text">结论: 技术方面仅达到中级，技术上相对落后，局限在 PHP，英文能力较弱，软件开发经验较丰富，工作认真负责肯钻研，了解 React 一般应用，因此勉强通过，建议 DTC 项目组前端开发。</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#吴永泉"><span class="nav-number">3.17.</span> <span class="nav-text">吴永泉</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Questions-1"><span class="nav-number">3.17.1.</span> <span class="nav-text">Questions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Summary"><span class="nav-number">3.17.2.</span> <span class="nav-text">Summary</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#钟良文"><span class="nav-number">3.18.</span> <span class="nav-text">钟良文</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Questions-2"><span class="nav-number">3.18.1.</span> <span class="nav-text">Questions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Summary-1"><span class="nav-number">3.18.2.</span> <span class="nav-text">Summary</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#陶侃"><span class="nav-number">3.19.</span> <span class="nav-text">陶侃</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Summary-2"><span class="nav-number">3.19.1.</span> <span class="nav-text">Summary</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Simon J S Wind13 Liu</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname,
+            owner: 'wind13',
+            repo: 'wind13.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '567b199e73fe5024b689971fac5a78fc3da64821',
+            
+                client_id: 'b3eba2d74cdccd08c0bb'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

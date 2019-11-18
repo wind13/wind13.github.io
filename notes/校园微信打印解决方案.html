@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.0.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content=",">
+
+
+<meta name="description" content="校园微信打印解决方案几个方案和思路 完善之前的打印程序，使其更稳定，更可维护和扩展；  1234567graph RL公众号后台服务 --&amp;gt; 公众号客户端打印接口服务端 --&amp;gt; 打印店客户端公众号后台服务 --&amp;gt; 打印接口服务端公众号后台服务 --&amp;gt; 文件保存服务文件保存服务 --&amp;gt; 打印接口服务端   使用易云打印接口，替换目前自己开发的客户端；  1234567g">
+<meta name="keywords" content="云打印">
+<meta property="og:type" content="website">
+<meta property="og:title" content="校园微信打印解决方案">
+<meta property="og:url" content="http://wind13.github.io/notes/校园微信打印解决方案.html">
+<meta property="og:site_name" content="Wind13&#39;s Blog">
+<meta property="og:description" content="校园微信打印解决方案几个方案和思路 完善之前的打印程序，使其更稳定，更可维护和扩展；  1234567graph RL公众号后台服务 --&amp;gt; 公众号客户端打印接口服务端 --&amp;gt; 打印店客户端公众号后台服务 --&amp;gt; 打印接口服务端公众号后台服务 --&amp;gt; 文件保存服务文件保存服务 --&amp;gt; 打印接口服务端   使用易云打印接口，替换目前自己开发的客户端；  1234567g">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-11-18T13:24:52.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="校园微信打印解决方案">
+<meta name="twitter:description" content="校园微信打印解决方案几个方案和思路 完善之前的打印程序，使其更稳定，更可维护和扩展；  1234567graph RL公众号后台服务 --&amp;gt; 公众号客户端打印接口服务端 --&amp;gt; 打印店客户端公众号后台服务 --&amp;gt; 打印接口服务端公众号后台服务 --&amp;gt; 文件保存服务文件保存服务 --&amp;gt; 打印接口服务端   使用易云打印接口，替换目前自己开发的客户端；  1234567g">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Wind13's Blog" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://wind13.github.io/notes/校园微信打印解决方案.html">
+
+
+  <title>校园微信打印解决方案 | Wind13's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wind13's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+	<h1 class="post-title" itemprop="name headline">校园微信打印解决方案</h1>
+
+
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <h1 id="校园微信打印解决方案"><a href="#校园微信打印解决方案" class="headerlink" title="校园微信打印解决方案"></a>校园微信打印解决方案</h1><h2 id="几个方案和思路"><a href="#几个方案和思路" class="headerlink" title="几个方案和思路"></a>几个方案和思路</h2><ul>
+<li>完善之前的打印程序，使其更稳定，更可维护和扩展；</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">graph RL</span><br><span class="line"></span><br><span class="line">公众号后台服务 --&gt; 公众号客户端</span><br><span class="line">打印接口服务端 --&gt; 打印店客户端</span><br><span class="line">公众号后台服务 --&gt; 打印接口服务端</span><br><span class="line">公众号后台服务 --&gt; 文件保存服务</span><br><span class="line">文件保存服务 --&gt; 打印接口服务端</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>使用易云打印接口，替换目前自己开发的客户端；</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">graph RL</span><br><span class="line"></span><br><span class="line">公众号后台服务 --&gt; 公众号客户端</span><br><span class="line">易云打印服务端 --&gt; 易云打印客户端</span><br><span class="line">公众号后台服务 --&gt; 易云打印服务端</span><br><span class="line">公众号后台服务 --&gt; 文件保存服务</span><br><span class="line">文件保存服务 --&gt; 易云打印服务端</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>用更稳定的技术框架重新开发客户端及服务端；（未来可尝试思路）</li>
+</ul>
+<h2 id="代码及服务管理"><a href="#代码及服务管理" class="headerlink" title="代码及服务管理"></a>代码及服务管理</h2><h3 id="公众号客户端代码"><a href="#公众号客户端代码" class="headerlink" title="公众号客户端代码"></a>公众号客户端代码</h3><h3 id="公众号后台服务代码"><a href="#公众号后台服务代码" class="headerlink" title="公众号后台服务代码"></a>公众号后台服务代码</h3><ul>
+<li>目前技术框架： ThinkPHP</li>
+</ul>
+<h3 id="打印店客户端代码"><a href="#打印店客户端代码" class="headerlink" title="打印店客户端代码"></a>打印店客户端代码</h3><h3 id="打印接口服务端代码"><a href="#打印接口服务端代码" class="headerlink" title="打印接口服务端代码"></a>打印接口服务端代码</h3><h2 id="易云打印"><a href="#易云打印" class="headerlink" title="易云打印"></a>易云打印</h2><ul>
+<li><a href="http://www.eyprint.com" target="_blank" rel="noopener">官网</a></li>
+<li><a href="http://www.eyprint.com/index.php?c=help&a=fee" target="_blank" rel="noopener">资费介绍</a></li>
+<li><a href="http://www.eyprint.com/index.php?c=help&a=api" target="_blank" rel="noopener">易云打印API接入说明</a></li>
+</ul>
+<h3 id="测试效果"><a href="#测试效果" class="headerlink" title="测试效果"></a>测试效果</h3><ul>
+<li>安装易云打印客户端到打印店的 windows 电脑上；</li>
+<li>运行 CloudPrintClient 程序；</li>
+<li>使用我们的用户名（手机号）和密码登录，勾选记住密码和自动登录；</li>
+<li>添加打印店打印机；</li>
+<li>添加界面锁密码（可以统一并告知打印店主），关闭后再重启；</li>
+<li>云打印客户端会缩小在右下角，服务会连接到易云服务器；</li>
+<li>此时再双击小图标会要求输入界面锁密码，输入后可以添加或删除打印机，不过一般店主就不需要改了；</li>
+<li>通过易云小程序登录商家账号，即可远程打印文件了；</li>
+</ul>
+<h3 id="接口打印"><a href="#接口打印" class="headerlink" title="接口打印"></a>接口打印</h3><ul>
+<li>同理可以通过调用相应的接口进行远程打印；</li>
+<li>用我们的用户名（手机号）和密码登录易云管理后台，点击开发者中心；</li>
+<li>便可以看到添加的打印机，再点击“申请API key”就可以看到一个字串；</li>
+<li>通过接口文档中的 URL 发送一个 Post 请求即可远程打印；</li>
+<li>客户的信息和上传的文件均可以保存在我们的服务器上；</li>
+<li>仅发送打印相关的信息给易云打印接口即可，如：文件地址、是否彩色、是否旋转、是否缩放、打印尺寸、份数、页边距、回调地址等；</li>
+<li>上传的文件可以通过我们的服务端程序控制，临时开放一个下载地址，待打印成功后收到回调请求时关闭下载地址即可。</li>
+<li>可能需要在微信公众号或微信小程序端开发一个打印预览和调整的功能，增加使用者的体验。</li>
+</ul>
+<h4 id="利弊分析"><a href="#利弊分析" class="headerlink" title="利弊分析"></a>利弊分析</h4><ul>
+<li>弊：打印店需下载易云打印的客户端，不利于我们的品牌形象统一，另外，懂行人会看出核心的技术路线；</li>
+<li>利：由易云打印第三方提供客户端及打印服务的稳定及服务器的支撑，后期即使打印请求压力增大，我们也只需要支付相应的服务费用即可，不用自己维护相应的服务器等。</li>
+<li>弊：打印服务由第三方提供，因此可能是我们不可控的因素之一，如果该公司出问题，会对我们的业务有连带的影响。</li>
+</ul>
+<hr>
+<h2 id="零点云打印"><a href="#零点云打印" class="headerlink" title="零点云打印"></a>零点云打印</h2><ul>
+<li><a href="https://yprinter.com/" target="_blank" rel="noopener">官网</a></li>
+<li><a href="https://yprinter.com/doc/doc" target="_blank" rel="noopener">开放 API</a></li>
+<li>不适合，更针对于餐饮零售打印小票。</li>
+</ul>
+<h2 id="技术选型"><a href="#技术选型" class="headerlink" title="技术选型"></a>技术选型</h2><h3 id="目前技术框架"><a href="#目前技术框架" class="headerlink" title="目前技术框架"></a>目前技术框架</h3><ul>
+<li>服务端采用 ThinkPHP 框架。</li>
+<li>公众号是 ThinkPHP 中的 wechat 目录的页面。</li>
+<li>客户端是 C# 调用第三方动态链接库 dll 实现打印机驱动和打印界面等。</li>
+<li>管理平台是 ThinkPHP 的 admin 目录的页面。</li>
+<li>数据库采用 MySQL ，使用 phpMyAdmin 管理。</li>
+</ul>
+<h2 id="未来技术选型"><a href="#未来技术选型" class="headerlink" title="未来技术选型"></a>未来技术选型</h2><ul>
+<li>考虑采用微服务架构 <a href="https://dapr.io/" target="_blank" rel="noopener">Dapr</a>，可容纳各种技术栈开发。</li>
+<li>服务端考虑采用 Node.js，使用 TypeScript 语言开发。</li>
+<li>网页界面考虑采用 Svelte 技术，或者 uni-app 框架，使用 JavaScript 或 TypeScript 开发。<ul>
+<li><a href="https://docs.alipay.com/mini/ide/download" target="_blank" rel="noopener">MiniProgramStudio 支付宝小程序开发工具</a></li>
+</ul>
+</li>
+<li>客户端可以考虑采用 <a href="https://electronjs.org/" target="_blank" rel="noopener">Electron</a> (<a href="https://simulatedgreg.gitbooks.io/electron-vue/" target="_blank" rel="noopener">Electron-Vue</a>) + <a href="https://neon-bindings.com/" target="_blank" rel="noopener">Neon</a> 或 另一款跨平台 GUI 开发框架。<ul>
+<li><a href="https://segmentfault.com/a/1190000018065373" target="_blank" rel="noopener">使用Rust + Electron开发跨平台桌面应用</a></li>
+<li><a href="https://nightfarmer.top/post/golang-GUI-QT/" target="_blank" rel="noopener">使用Golang跨平台GUI框架进行桌面应用程序开发</a></li>
+<li><a href="https://www.monodevelop.com/" target="_blank" rel="noopener">MonoDevelop</a></li>
+</ul>
+</li>
+<li>Catalyst，这一框架允许制作了 iPad 应用的开发人员将其快速引入 macOS</li>
+<li>CI 可以考虑用 <a href="https://flow.ci/" target="_blank" rel="noopener">flow.ci</a></li>
+</ul>
+<h2 id="其他相关"><a href="#其他相关" class="headerlink" title="其他相关"></a>其他相关</h2><ul>
+<li><a href="https://www.cnblogs.com/wtang/p/4295091.html" target="_blank" rel="noopener">Windows远程桌面打印机映射</a></li>
+<li><a href="https://wenku.baidu.com/u/%E6%97%A0%E7%97%852585655?from=wenku" target="_blank" rel="noopener">无病2585655</a> <a href="https://wenku.baidu.com/view/682604f45627a5e9856a561252d380eb63942364.html" target="_blank" rel="noopener">青糖智印</a></li>
+</ul>
+
+        
+      </div>
+      
+      
+      
+    </div>
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Simon J S Wind13 Liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">92</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">106</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#校园微信打印解决方案"><span class="nav-number">1.</span> <span class="nav-text">校园微信打印解决方案</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#几个方案和思路"><span class="nav-number">1.1.</span> <span class="nav-text">几个方案和思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码及服务管理"><span class="nav-number">1.2.</span> <span class="nav-text">代码及服务管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#公众号客户端代码"><span class="nav-number">1.2.1.</span> <span class="nav-text">公众号客户端代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#公众号后台服务代码"><span class="nav-number">1.2.2.</span> <span class="nav-text">公众号后台服务代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打印店客户端代码"><span class="nav-number">1.2.3.</span> <span class="nav-text">打印店客户端代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打印接口服务端代码"><span class="nav-number">1.2.4.</span> <span class="nav-text">打印接口服务端代码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#易云打印"><span class="nav-number">1.3.</span> <span class="nav-text">易云打印</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#测试效果"><span class="nav-number">1.3.1.</span> <span class="nav-text">测试效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#接口打印"><span class="nav-number">1.3.2.</span> <span class="nav-text">接口打印</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#利弊分析"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">利弊分析</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#零点云打印"><span class="nav-number">1.4.</span> <span class="nav-text">零点云打印</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#技术选型"><span class="nav-number">1.5.</span> <span class="nav-text">技术选型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#目前技术框架"><span class="nav-number">1.5.1.</span> <span class="nav-text">目前技术框架</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#未来技术选型"><span class="nav-number">1.6.</span> <span class="nav-text">未来技术选型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他相关"><span class="nav-number">1.7.</span> <span class="nav-text">其他相关</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Simon J S Wind13 Liu</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname,
+            owner: 'wind13',
+            repo: 'wind13.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '567b199e73fe5024b689971fac5a78fc3da64821',
+            
+                client_id: 'b3eba2d74cdccd08c0bb'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

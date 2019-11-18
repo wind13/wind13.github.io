@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.0.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="Hexo, NexT">
+
+
+<meta name="description" content="KeepassX Keepass 2.x 之 同步与触发器  德龙钢铁企业文化 按照说的做，按照做的说 干一件，成一件 快速反应，立即就办 会操心、敢着急、能解决 会操心 敢着急：底线在哪儿， 你能忍受什么，才反应你是什么； 敢负责任； 人员都变得很象，变成事实上的一言堂，缺乏多样性；      殷洪项目http://pd.thinkmacro.cn:5678/doc/ixd/aw-sc-mall">
+<meta property="og:type" content="website">
+<meta property="og:title" content="重要记录（不发布）">
+<meta property="og:url" content="http://wind13.github.io/notes/重要记录（不发布）.html">
+<meta property="og:site_name" content="Wind13&#39;s Blog">
+<meta property="og:description" content="KeepassX Keepass 2.x 之 同步与触发器  德龙钢铁企业文化 按照说的做，按照做的说 干一件，成一件 快速反应，立即就办 会操心、敢着急、能解决 会操心 敢着急：底线在哪儿， 你能忍受什么，才反应你是什么； 敢负责任； 人员都变得很象，变成事实上的一言堂，缺乏多样性；      殷洪项目http://pd.thinkmacro.cn:5678/doc/ixd/aw-sc-mall">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://wind13.github.io/notes/installed.png">
+<meta property="og:updated_time" content="2019-11-18T13:24:52.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="重要记录（不发布）">
+<meta name="twitter:description" content="KeepassX Keepass 2.x 之 同步与触发器  德龙钢铁企业文化 按照说的做，按照做的说 干一件，成一件 快速反应，立即就办 会操心、敢着急、能解决 会操心 敢着急：底线在哪儿， 你能忍受什么，才反应你是什么； 敢负责任； 人员都变得很象，变成事实上的一言堂，缺乏多样性；      殷洪项目http://pd.thinkmacro.cn:5678/doc/ixd/aw-sc-mall">
+<meta name="twitter:image" content="http://wind13.github.io/notes/installed.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Wind13's Blog" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://wind13.github.io/notes/重要记录（不发布）.html">
+
+
+  <title>重要记录（不发布） | Wind13's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wind13's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+	<h1 class="post-title" itemprop="name headline">重要记录（不发布）</h1>
+
+
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <h2 id="KeepassX"><a href="#KeepassX" class="headerlink" title="KeepassX"></a>KeepassX</h2><ul>
+<li><a href="https://www.cnblogs.com/gumuyueying/p/keepass2-sync-trigger.html" target="_blank" rel="noopener">Keepass 2.x 之 同步与触发器</a></li>
+</ul>
+<h2 id="德龙钢铁企业文化"><a href="#德龙钢铁企业文化" class="headerlink" title="德龙钢铁企业文化"></a>德龙钢铁企业文化</h2><ul>
+<li>按照说的做，按照做的说</li>
+<li>干一件，成一件</li>
+<li>快速反应，立即就办</li>
+<li>会操心、敢着急、能解决<ul>
+<li>会操心</li>
+<li>敢着急：底线在哪儿，<ul>
+<li>你能忍受什么，才反应你是什么；</li>
+<li>敢负责任；</li>
+<li>人员都变得很象，变成事实上的一言堂，缺乏多样性；</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="殷洪项目"><a href="#殷洪项目" class="headerlink" title="殷洪项目"></a>殷洪项目</h2><p><a href="http://pd.thinkmacro.cn:5678/doc/ixd/aw-sc-mall/" target="_blank" rel="noopener">http://pd.thinkmacro.cn:5678/doc/ixd/aw-sc-mall/</a><br><a href="http://pd.thinkmacro.cn:5678/doc/ixd/aw-sc-mall-admin/" target="_blank" rel="noopener">http://pd.thinkmacro.cn:5678/doc/ixd/aw-sc-mall-admin/</a><br>账号：aw-sc-mall<br>密码：aw-sc-mall@2018</p>
+<h2 id="DT讲师报名表"><a href="#DT讲师报名表" class="headerlink" title="DT讲师报名表"></a>DT讲师报名表</h2><p>2、自我推荐理由：</p>
+<p>身为软件架构师，需要进一步提高自身的设计思考能力、创新思维能力。</p>
+<p>个人长期研究软件开发相关技术，同时也不断关注创新相关的思维和方法，具备一定的英语和演讲能力，是中软讲师之一。</p>
+<p>希望在这次培训中进一步深入了解更多相关思维技巧和解决方案。</p>
+<h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><blockquote>
+<p>Authentication answers the question “who are you?” while authorization answers the question “are you allowed to see that?”</p>
+</blockquote>
+<h2 id="股票数据接口"><a href="#股票数据接口" class="headerlink" title="股票数据接口"></a>股票数据接口</h2><ul>
+<li><a href="http://www.liangyee.com/apiDetail/a1cc7246-c806-453b-9cbe-022b599360b8" target="_blank" rel="noopener">国内股票行情（免费</a> 100次 / 天</li>
+<li><a href="http://tushare.org/" target="_blank" rel="noopener">Tushare</a>是一个免费、开源的python财经数据接口包。</li>
+<li><a href="https://www.juhe.cn/docs/api/id/81" target="_blank" rel="noopener">聚合-股票查询</a> 免费会员100次/天 高级会员500次/天</li>
+<li><a href="https://www.juhe.cn/docs/api/id/21" target="_blank" rel="noopener">聚合-股票数据</a> 免费会员1000次/天高级会员5000次/天</li>
+</ul>
+<h2 id="VPN-翻墙相关"><a href="#VPN-翻墙相关" class="headerlink" title="VPN 翻墙相关"></a>VPN 翻墙相关</h2><p><a href="https://www.jianshu.com/p/1c670b5badf3" target="_blank" rel="noopener">成为极客-01: 命令行下模式下如何上网及翻墙?</a></p>
+<h2 id="zzq-云空间"><a href="#zzq-云空间" class="headerlink" title="zzq 云空间"></a>zzq 云空间</h2><p>我们的域名是： auto-ai.com.cn</p>
+<p>然后跳转到 ucloud.cn</p>
+<p>技术全部由UCloud 实现，只要测试功能能用就可以了</p>
+<p>console.auto-ai.com.cn</p>
+<p><a href="mailto:unisoundtest@ucloud.cn" target="_blank" rel="noopener">unisoundtest@ucloud.cn</a>  密码  unisoundtest？</p>
+<h2 id="华为云服务空间"><a href="#华为云服务空间" class="headerlink" title="华为云服务空间"></a>华为云服务空间</h2><p>IP: 119.3.31.11<br>username : simonliu<br>password: Chinasofti@2018/Wind13@Chinasofti<br>用 8088 端口 8000 到 9000 所有端口开放了。<br>所有可用端口：80 8080 443 22 10080 8088 45852</p>
+<p><img src="./installed.png" alt="Installed"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh simonliu@119.3.31.11</span><br><span class="line">scp release.tgz simonliu@119.3.31.11:/home/simonliu/</span><br></pre></td></tr></table></figure>
+
+<p>将用户加入 docker 组，参考：<a href="https://blog.csdn.net/xiojing825/article/details/79494408" target="_blank" rel="noopener">解决 ERROR</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gpasswd -a $&#123;USER&#125; docker</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><a href="http://www.cnblogs.com/gaojun/archive/2013/10/24/3385885.html" target="_blank" rel="noopener">Linux下查看/管理当前登录用户及用户操作历史记录</a></li>
+</ul>
+<h3 id="William-server"><a href="#William-server" class="headerlink" title="William server"></a>William server</h3><p>self server: 159.138.45.254 / williamjxj / Digital2018</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd browser/server</span><br><span class="line">node NodeJsHTTPSServer.js</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><a href="https://github.com/adobe-sign/AdobeSignJsSdk" target="_blank" rel="noopener">AdobeSignJsSdk</a></li>
+<li><a href="https://secure.echosign.com/public/static/oauthDoc.jsp" target="_blank" rel="noopener">Using OAuth to Access Adobe Sign APIs</a></li>
+</ul>
+<p>key:CBJCHBCAABAAoLcn4xPKBU5n0eRhyY6AXeI5Et0yBQpG<br>uri:<a href="https://119.3.31.11:8668/browser/rest-api-sample/api/oAuth/redirectUri" target="_blank" rel="noopener">https://119.3.31.11:8668/browser/rest-api-sample/api/oAuth/redirectUri</a><br>scope:agreement_send:account user_login:self<br><a href="mailto:williamjxj@119.3.31.11" target="_blank" rel="noopener">williamjxj@119.3.31.11</a>/Digital2018<br>客户端 ID：<br>CBJCHBCAABAAoLcn4xPKBU5n0eRhyY6AXeI5Et0yBQpG<br>客户端密码:<br>IxemNmDrYR3LCplB1p-kxR_dxfuVnMh7<br>注意：您必须妥善保存好自己的客户密钥。<br>重定向 URI：<br><a href="https://119.3.31.11:8668/browser/rest-api-sample/api/oAuth/redirectUri" target="_blank" rel="noopener">https://119.3.31.11:8668/browser/rest-api-sample/api/oAuth/redirectUri</a><br>注意：您的 OAuth 请求中指定的 redirectUri 必须属于此 URI 列表。您可以指定多个 URI 并以逗号分隔。<br>启用的范围</p>
+<p><a href="https://williamjxj.na2.echosign.com/account/accountSettingsPage#pageId::API_APPLICATIONS" target="_blank" rel="noopener">https://williamjxj.na2.echosign.com/account/accountSettingsPage#pageId::API_APPLICATIONS</a><br><a href="mailto:jiangxiaojun@chinasofti.com" target="_blank" rel="noopener">jiangxiaojun@chinasofti.com</a><br>williamjxj<br>Benjamin001<br>帐户ID：CBJCHBCAABAAlU-S-8lPyCReT_z7RH_54AaSIMAvf4d1<br>电话：13060412448</p>
+<p>oauth 2 protocal.<br>Apps<br>my app:CBJCHBCAABAAoLcn4xPKBU5n0eRhyY6AXeI5Et0yBQpG/IxemNmDrYR3LCplB1p-kxR_dxfuVnMh7<br>demo1:CBJCHBCAABAATf-JatMN2d4T-oifQxQ_XHrlEui1QaTd/lM4kJ7BTzoxqbLFjPiOAlkTRJA6sY94J</p>
+<p>另一个 IP: 122.112.212.18</p>
+<ul>
+<li><p><a href="http://119.3.31.11:8080/" target="_blank" rel="noopener">Tomcat</a></p>
+<ul>
+<li><a href="http://119.3.31.11:8080/ybt/login.html" target="_blank" rel="noopener">易报通企业服务平台</a></li>
+<li>后台服务：<a href="http://119.3.31.11:8080/approval/api/v1/invoice/sysLoginCon" target="_blank" rel="noopener">http://119.3.31.11:8080/approval/api/v1/invoice/sysLoginCon</a></li>
+</ul>
+</li>
+<li><p><a href="http://119.3.31.11:10080" target="_blank" rel="noopener">内部 GitLab</a> simon/liujshwind13</p>
+</li>
+</ul>
+<h2 id="公司可用Wifi："><a href="#公司可用Wifi：" class="headerlink" title="公司可用Wifi："></a>公司可用Wifi：</h2><p>Digital_Regional:Duigongqudao<br>TP-LINK_5G_A7D2:hsbchase<br>TP-LINK_A7D2:hsbchase<br>PT_TP:htjmt13579</p>
+<h2 id="硬件升级思路"><a href="#硬件升级思路" class="headerlink" title="硬件升级思路"></a>硬件升级思路</h2><ul>
+<li>换小米笔记本，卖苹果笔记本<ul>
+<li>8999元，配置升级，游戏通吃，存储、性能（i7-7700HQ的CPU 2.8 GHz 四核八线程，GeForce GTX1060 6GB显存，16G内存，256G+1TB硬盘，15寸 1920*1080）都大幅提升。</li>
+<li>苹果笔记本（2.4 GHz Intel Core i5，8G内存，256G硬盘，13寸）可卖4000元，补 5000 元。如不追求顶配，可考虑 5999元 的 i5 8G内存 256G+1T 的版本，这样只需补 2000元即可。</li>
+<li>使用体验考虑：<ul>
+<li>系统从 macOS 切换为 Windows 家庭版 + Office家庭和学生版2016，体验会下降吗？<ul>
+<li>目前常用软件：vscode, chrome, iterm，基本 windows 上体验一样，唯一 iterm 缺失，可考虑其他替代，编程体验变化应该不大。</li>
+<li>游戏体验不用说，肯定会大幅提升。</li>
+<li>办公体验也会有所提升，因为 Office 套件家庭正版，基础的应该够用，且易于跟市场接轨。</li>
+<li>与家里的 PC 机同系统，更易于同步使用。</li>
+<li>实在想用苹果系统，也可以参考安装黑苹果系统：<ul>
+<li><a href="http://www.miui.com/thread-11363672-1-1.html" target="_blank" rel="noopener">小米笔记本pro Win10+黑苹果macOS 10.13.3双系统</a></li>
+<li><a href="https://blog.daliansky.net/MacOS-installation-tutorial-XiaoMi-Pro-installation-process-records.html" target="_blank" rel="noopener">macOS安装教程兼小米Pro安装过程记录</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>性能应该是更快了，存储空间也更大了。</li>
+<li>苹果笔记本也可以考虑让小宝学习编程使用。</li>
+<li>设备更集中，占空间小，屏幕15寸也有所增大，与家中 PC 更好地协同，可借用外接显示器实现工作室功能等。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>更换新手机<ul>
+<li>性价比来说，小米 Max 3 比较好，但配置与目前手机 小米5s plus 比较接近，所以考虑等待小米 Max 4 或 5 的发布。</li>
+<li>另外一个选择就是游戏手机。</li>
+<li>还有就是小米 Mix 2S 全面屏，显得高大上，但也许用两天也就那样了。</li>
+</ul>
+</li>
+</ul>
+<h2 id="创新想法："><a href="#创新想法：" class="headerlink" title="创新想法："></a>创新想法：</h2><ul>
+<li>软件培训机构，针对各软件公司人才需求，视频教学，高起点低收费。</li>
+<li>软件工程管理思想总结。</li>
+<li>公司运营管理咨询教练。</li>
+<li>新技术论坛。</li>
+<li>Clojure 函数式编程 技术沙龙。</li>
+<li>汇丰业务线/恒生业务线业务架构总结。</li>
+</ul>
+<h2 id="有趣的工具："><a href="#有趣的工具：" class="headerlink" title="有趣的工具："></a>有趣的工具：</h2><ul>
+<li><a href="https://tampermonkey.net/" target="_blank" rel="noopener">Tampermonkey®</a>，可以在网页上添加自定义的脚本实现特殊功能。</li>
+<li><a href="https://greasyfork.org/zh-CN" target="_blank" rel="noopener">Greasy Fork</a> 一个提供用户脚本的网站。</li>
+<li><a href="https://openuserjs.org/" target="_blank" rel="noopener">OpenUserJS</a> 用户脚本网站，国外。</li>
+</ul>
+<h2 id="有用的文档："><a href="#有用的文档：" class="headerlink" title="有用的文档："></a>有用的文档：</h2><ul>
+<li><a href="https://httpstatuses.com/" target="_blank" rel="noopener">查看 http status</a></li>
+</ul>
+<h2 id="有用的技巧："><a href="#有用的技巧：" class="headerlink" title="有用的技巧："></a>有用的技巧：</h2><ul>
+<li>换 taobao 源</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">yarn config set phantomjs_cdnurl https://npm.taobao.org/mirrors/phantomjs/</span><br><span class="line">yarn config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/</span><br><span class="line">yarn config set registry https://registry.npm.taobao.org</span><br><span class="line">yarn config set chromedriver_cdnurl https://npm.taobao.org/mirrors/chromedriver</span><br><span class="line">yarn config set puppeteer_download_host=https://npm.taobao.org/mirrors</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><a href="https://mgw.dumatics.com/markdown-and-gantt-charts/" target="_blank" rel="noopener">Markdown and Gantt Charts</a></p>
+</li>
+<li><p><a href="https://www.e-learn.cn/content/qita/774614" target="_blank" rel="noopener">markdown - 画图</a></p>
+</li>
+<li><p><a href="https://mermaidjs.github.io/gantt.html" target="_blank" rel="noopener">Gant diagrams</a></p>
+</li>
+<li><p>本机 docker MongoDB 用户：root/rootadmin, admin/rootadmin</p>
+</li>
+</ul>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"_id"</span> : <span class="string">"admin.admin"</span>,</span><br><span class="line">    <span class="attr">"user"</span> : <span class="string">"admin"</span>,</span><br><span class="line">    <span class="attr">"db"</span> : <span class="string">"admin"</span>,</span><br><span class="line">    <span class="attr">"credentials"</span> : &#123;</span><br><span class="line">        <span class="attr">"SCRAM-SHA-1"</span> : &#123;</span><br><span class="line">            <span class="attr">"iterationCount"</span> : <span class="number">10000</span>,</span><br><span class="line">            <span class="attr">"salt"</span> : <span class="string">"FuPw8t0ynD14xESh3QW8BA=="</span>,</span><br><span class="line">            <span class="attr">"storedKey"</span> : <span class="string">"B3ch6B/5vJciv1yxctdG3aGamu0="</span>,</span><br><span class="line">            <span class="attr">"serverKey"</span> : <span class="string">"ObIZ67wys9PSoPtUGO2g5iHQWok="</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"roles"</span> : [ </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">"role"</span> : <span class="string">"root"</span>,</span><br><span class="line">            <span class="attr">"db"</span> : <span class="string">"admin"</span></span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3a5g2t98237e6s84q980b73c</span><br></pre></td></tr></table></figure>
+
+<p>Got <a href="https://github.com/Studio3T/robomongo/issues/638" target="_blank" rel="noopener">this issue</a> when use Robo 3T </p>
+<ul>
+<li><p><a href="https://blog.csdn.net/zchongr/article/details/50718211" target="_blank" rel="noopener">用小米路由搭建外网可访问的个人网站</a></p>
+</li>
+<li><p><a href="https://jingyan.baidu.com/article/e8cdb32b5bd08e37052bad80.html" target="_blank" rel="noopener">小米路由器MiWifi R1D 开启LAMP功能搭建服务器</a></p>
+</li>
+<li><p><a href="http://www.cnblogs.com/keithtt/p/6922378.html" target="_blank" rel="noopener">Mariadb修改root密码</a></p>
+</li>
+<li><p>Blog token: blog-editer <code>e089d25c73dbee8e5786118e5cb33e9b1ab45c95</code></p>
+</li>
+<li><p>技术公司招聘需要考核面试者，需要相应的考题和结论，这是一个可以做的事，但是一件很难的事。</p>
+</li>
+<li><p><a href="http://xclient.info/" target="_blank" rel="noopener">Hack mac soft</a></p>
+</li>
+<li><p><a href="https://www.waitsun.com/" target="_blank" rel="noopener">爱情守望者</a> 致力于分享最精彩的Mac软件</p>
+</li>
+<li><p><a href="https://docschina.org/" target="_blank" rel="noopener">印记中文——开源中文文档</a></p>
+</li>
+</ul>
+<h2 id="创新思维"><a href="#创新思维" class="headerlink" title="创新思维"></a>创新思维</h2><ul>
+<li><p>推荐书目：《你能看见大猩猩吗？》通过提升大脑注意到原本没注意到的事物（大猩猩），改善和增强创新能力。</p>
+<ul>
+<li><p>把想解决的问题记在脑里，然后就可以在其他时间不经意间找到解决的思路。</p>
+<blockquote>
+<p>做好准备，机会就会到来。 ——林肯，美国总统</p>
+</blockquote>
+</li>
+<li><p>不把问题完全抛诸脑后，也不把注意力都集中在问题上，你要做的就是寻找两者间的平衡点。</p>
+</li>
+<li><p>历史不断地证明，有了准备不一定有所发现，但是没有准备是一定不会有所发现的。</p>
+</li>
+<li><p>如果你始终按照相同的方式做事，你的成果也将是始终不变的。</p>
+</li>
+<li><p>少一点按部就班，就多一些趣味。</p>
+</li>
+<li><p>想要唤醒大脑，需要不断地用新鲜有趣的事物刺激你的大脑，让大脑保持对事物反应的灵敏性，对于常规程序变换方式去看，就如同一每一分每一秒都是新鲜的一样。</p>
+</li>
+<li><p>小契机往往是大成就的开端。</p>
+</li>
+<li><p>寻找新观点，大脑要保持预备状态，睁大双眼，认真地保持轻松有趣，全然清醒并充满好奇。</p>
+</li>
+</ul>
+</li>
+<li><p>本书相关名言</p>
+<ul>
+<li>世界上最难做到的事情就是看清眼前的事物。 —— 歌德</li>
+<li>人们只看到自己想要看到的东西。 —— 爱默生</li>
+<li>天才之所以成为天才，只是因为他们能够从不同的角度感知事物。 —— 威廉·詹姆斯</li>
+<li>若没有机会，即使有能力也是枉然。 —— 拿破仑</li>
+<li>所谓机智就是使那些看似无关的想法快速结合。 —— 马克·吐温</li>
+<li>事物最重要的层面，往往就是因为简单并且熟悉，就被我们忽视了。 —— 维特根斯坦</li>
+</ul>
+</li>
+</ul>
+<h2 id="公积金提取办理"><a href="#公积金提取办理" class="headerlink" title="公积金提取办理"></a>公积金提取办理</h2><ul>
+<li>身份证</li>
+<li>借款合同</li>
+<li>最近一期还款证明 - 在招行城东支行打印</li>
+<li>去网点办理提取</li>
+</ul>
+<ol>
+<li>带身份证、贷款银行卡（3593卡）到贷款银行打印还款证明。 招商银行和平路支行二楼办理。</li>
+<li>带身份证、借款合同、还款证明和绑定银行卡（3593卡）就近去公积金网点办理提取。 <a href="http://zfgjj.xa.gov.cn/wsbs/ywwd_nry5.jsp?urltype=tree.TreeTempUrl&wbtreeid=3716" target="_blank" rel="noopener">高新区办理网点地图</a><ul>
+<li>最佳选择是尽早（下午 4 点半公积金提取停止办理，因此最好下午两点前出发）去大差市一趟办完，先在招商银行和平路支行二楼打印还款证明，再在旁边的建设银行办公积金提取；</li>
+<li>如果时间不合适，可以另选时间从公司出发，坐 526 路（次选 高新 8 号线）到丈八四路口站下车去华夏银行锦业路支行办理。</li>
+</ul>
+</li>
+</ol>
+<h2 id="Hexo-使用技巧"><a href="#Hexo-使用技巧" class="headerlink" title="Hexo 使用技巧"></a>Hexo 使用技巧</h2><p>遇到类似 <code>unexpected token: :</code> 的问题，参考： <a href="https://segmentfault.com/a/1190000011042242" target="_blank" rel="noopener">https://segmentfault.com/a/1190000011042242</a><br>多半是因为代码块中放入了 <code>\{\{}}</code> ，而在括号里面又有其他内容，导致被解析而报错。 </p>
+<ul>
+<li><a href="https://www.jianshu.com/p/72408c410904" target="_blank" rel="noopener">Hexo 站点中添加文章目录以及归档</a></li>
+<li><a href="https://xuanwo.org/2014/08/14/hexo-usual-problem/" target="_blank" rel="noopener">Hexo 常见问题解决方案</a></li>
+<li><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo 官网中文版</a></li>
+<li><a href="http://www.cnblogs.com/syd192/p/6074323.html" target="_blank" rel="noopener">Hexo 的 Next 主题配置</a> 添加”关于我“页面</li>
+</ul>
+<h2 id="FaunaDB-cloud-keys"><a href="#FaunaDB-cloud-keys" class="headerlink" title="FaunaDB cloud keys"></a>FaunaDB cloud keys</h2><ul>
+<li><a href="https://dashboard.fauna.com/db" target="_blank" rel="noopener">云数据库管理台</a></li>
+<li>cscwfree: <code>fnACwKqEjAACAnbvTFVrh_VIBF_qy22nzdo3oQbq</code></li>
+<li>auth-user-client-key: <code>fnACyQ_NYRACCjFXB43rlagyM0IuU7zeq3za57au</code></li>
+<li>auth-user-server-key: <code>fnACyRAfSRACCRRBWczvDe3UJFY_J4gIWi58vi_S</code></li>
+</ul>
+<h2 id="Token"><a href="#Token" class="headerlink" title="Token"></a>Token</h2><ul>
+<li>gitlab ocr-web-client deploy token:</li>
+<li>gitlab+deploy-token-916: u9wBDxnC2JYihasfy1CM</li>
+</ul>
+<h2 id="GoodRain-keys"><a href="#GoodRain-keys" class="headerlink" title="GoodRain keys"></a>GoodRain keys</h2><p>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCy97mlKJo1xPoDYejmeK0bMhM6O/leVuLF/U0ry/NLWatfkl1R69NIX6TpW/hVFjGXRZTz56V37jLOVQWq24dQaLIXyFqxZwJnakZzX/b6K3sKb6Y+dDZdktcPEVLUQPWHs6gm0tUgbvgywulEVuTgAt5fYwa1rG48zmgCHlU4a6jWT8iQ9D2Lqpf4ZYZnUOOGB6AmaABfCBSCFDj8ihIz00Hp77s42gxRhn/iQJE9ZrDYWnxN0cUAxvLpB1jCANFR4Zc5FslHUp4tLVNMdDeqi8OPZMj4G6yWclwa3Uqfu7yd3gqik4nI1jaRLL9Lq/2GgA20MvCFWqtvcBJ2Tcv1 builder</p>
+<h2 id="regx"><a href="#regx" class="headerlink" title="regx"></a>regx</h2><h3 id="在紧挨着的中英文字符中间插入空格"><a href="#在紧挨着的中英文字符中间插入空格" class="headerlink" title="在紧挨着的中英文字符中间插入空格"></a>在紧挨着的中英文字符中间插入空格</h3><ul>
+<li>查找：<code>([^\x00-\xff])\b([\w\.]+)\b([^\x00-\xff])</code></li>
+<li>替换：<code>$1 $2 $3</code></li>
+</ul>
+<blockquote>
+<p>说明：其中 `[^\x00-\xff] 匹配双字节字符(包括汉字在内)</p>
+</blockquote>
+<h2 id="HR-RM"><a href="#HR-RM" class="headerlink" title="HR + RM"></a>HR + RM</h2><ul>
+<li><a href="http://mokahr.com/" target="_blank" rel="noopener">Moka，智能化的招聘CRM</a> 选择 Moka，让团队每一位成员都能高效的参与到招聘流程中。从今天起，告别混乱的招聘管理，拥抱全新的工作方式。 （预约产品演示、企业付费）</li>
+<li><a href="https://shimo.im/" target="_blank" rel="noopener">石墨文档</a></li>
+<li><a href="https://csihsbccmb.worktile.com" target="_blank" rel="noopener">Worktile</a></li>
+</ul>
+<h2 id="云空间购买"><a href="#云空间购买" class="headerlink" title="云空间购买"></a>云空间购买</h2><ul>
+<li>阿里云服务器 ECS 共享基本型 一年 约 800 元，建议初期买 两到三个，共2400元。</li>
+<li>后期如果有需求再添加。</li>
+</ul>
+<h2 id="Weekly-meeting"><a href="#Weekly-meeting" class="headerlink" title="Weekly meeting"></a>Weekly meeting</h2><ul>
+<li><a href="https://hakanforss.wordpress.com/2014/03/30/are-you-too-busy-to-improve-focus-on-the-system/" target="_blank" rel="noopener">Too busy to improve</a></li>
+</ul>
+<p>HMBP 问题：</p>
+<ul>
+<li>每天的招聘需求 Open demand 关不了。</li>
+<li>招聘没有 RR(Resource Replacement)，标准的流程逻辑是什么？紧急流程又是什么？</li>
+<li>与客户？分块对，但与 RR 分块不一样？</li>
+<li>真正的依据是什么？客户的需求落实到什么情况时就确定了？</li>
+<li>客户会变换 Skill level 对应的 RR，容易乱。</li>
+<li>需要一个全局的工作现状：<ul>
+<li>对招聘需求；<ul>
+<li>Open 几个，状态是什么？如 Offering, Onboarding, Onboard(发了 RDD), Deboard(出场、辞退) 等，要在谁那儿更新同步。</li>
+<li>职位要求：什么技能，什么级别，什么城市；</li>
+</ul>
+</li>
+<li>电话联系不上客户，发邮件客户也不回；</li>
+<li>两天之内安排二面，否则其他项目要同时推荐；</li>
+<li>Long agent 是多长？超过30天；要特殊处理。</li>
+<li>每周总结后，发 HR 群里。</li>
+</ul>
+</li>
+<li>需要各个岗位的科普知识介绍。</li>
+<li>客户想辞退只是口头说不能推人，要见到邮件才算数。</li>
+<li>与面试官的约时间：<ul>
+<li>初次约时间；</li>
+<li>最后修改时间确认；（要够更换面试官的时间）</li>
+<li>面试前提醒时间；（要够面试官准备）</li>
+</ul>
+</li>
+<li>不可能让 HR 帮你平衡资源；</li>
+<li>应聘人员要手工转推给某人，而不是共享？</li>
+<li>所有 GSI 开票，要更新状态，要催客户 PMO 走流程、改状态。 VSU 仲裁机构要审核后，才能开票。 定时发邮件列表给客户 AnJii 来操作。</li>
+<li>跟客户对项目；</li>
+<li>与员工 one one meeting 了解现状；</li>
+<li>与客户对接的 RM 固定？</li>
+<li>与面试官认识、对接等；</li>
+<li>结项的过程和方法；</li>
+</ul>
+<p>解决思路：</p>
+<ul>
+<li>同步的文档，只有一份，所有人去一个地方看，所有人在一个地方修改；</li>
+<li>书写标准的流程文档等；</li>
+</ul>
+<p>男人一辈子的工具之二 —— 博世电动螺丝刀<br><a href="http://piebbs.pconline.com.cn/topic-5363.html" target="_blank" rel="noopener">http://piebbs.pconline.com.cn/topic-5363.html</a></p>
+<p>男人一辈子的工具之三 —— 终极暴力百得冲击钻<br><a href="http://piebbs.pconline.com.cn/topic-8228.html" target="_blank" rel="noopener">http://piebbs.pconline.com.cn/topic-8228.html</a></p>
+<p>男人一辈子的工具之四 —— 电锯惊魂<br><a href="http://piebbs.pconline.com.cn/topic-9790.html" target="_blank" rel="noopener">http://piebbs.pconline.com.cn/topic-9790.html</a></p>
+<p>男人一辈子的工具之五 —— 博世电动锄草打边机<br><a href="http://piebbs.pconline.com.cn/topic-11772.html" target="_blank" rel="noopener">http://piebbs.pconline.com.cn/topic-11772.html</a></p>
+<p>男人一辈子的工具之六 —— 瑞士军刀冠军三剑客<br><a href="http://piebbs.pconline.com.cn/topic-14612.html" target="_blank" rel="noopener">http://piebbs.pconline.com.cn/topic-14612.html</a></p>
+<p>男人一辈子的工具之七 —— 钥匙链上的随身小工具 标红多魔<br><a href="http://piebbs.pconline.com.cn/topic-14696.html" target="_blank" rel="noopener">http://piebbs.pconline.com.cn/topic-14696.html</a></p>
+<p>男人一辈子的工具之八 —— 钱包里的工具百宝箱 瑞士卡<br><a href="http://piebbs.pconline.com.cn/topic-14816.html" target="_blank" rel="noopener">http://piebbs.pconline.com.cn/topic-14816.html</a></p>
+<p>男人一辈子的工具之九 —— 双立人厨刀五件套开箱<br><a href="http://piebbs.pconline.com.cn/topic-15167.html" target="_blank" rel="noopener">http://piebbs.pconline.com.cn/topic-15167.html</a></p>
+
+        
+      </div>
+      
+      
+      
+    </div>
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Simon J S Wind13 Liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">92</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">106</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#KeepassX"><span class="nav-number">1.</span> <span class="nav-text">KeepassX</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#德龙钢铁企业文化"><span class="nav-number">2.</span> <span class="nav-text">德龙钢铁企业文化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#殷洪项目"><span class="nav-number">3.</span> <span class="nav-text">殷洪项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DT讲师报名表"><span class="nav-number">4.</span> <span class="nav-text">DT讲师报名表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tips"><span class="nav-number">5.</span> <span class="nav-text">Tips</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#股票数据接口"><span class="nav-number">6.</span> <span class="nav-text">股票数据接口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#VPN-翻墙相关"><span class="nav-number">7.</span> <span class="nav-text">VPN 翻墙相关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zzq-云空间"><span class="nav-number">8.</span> <span class="nav-text">zzq 云空间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#华为云服务空间"><span class="nav-number">9.</span> <span class="nav-text">华为云服务空间</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#William-server"><span class="nav-number">9.1.</span> <span class="nav-text">William server</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公司可用Wifi："><span class="nav-number">10.</span> <span class="nav-text">公司可用Wifi：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#硬件升级思路"><span class="nav-number">11.</span> <span class="nav-text">硬件升级思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创新想法："><span class="nav-number">12.</span> <span class="nav-text">创新想法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有趣的工具："><span class="nav-number">13.</span> <span class="nav-text">有趣的工具：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有用的文档："><span class="nav-number">14.</span> <span class="nav-text">有用的文档：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有用的技巧："><span class="nav-number">15.</span> <span class="nav-text">有用的技巧：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创新思维"><span class="nav-number">16.</span> <span class="nav-text">创新思维</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公积金提取办理"><span class="nav-number">17.</span> <span class="nav-text">公积金提取办理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-使用技巧"><span class="nav-number">18.</span> <span class="nav-text">Hexo 使用技巧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FaunaDB-cloud-keys"><span class="nav-number">19.</span> <span class="nav-text">FaunaDB cloud keys</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Token"><span class="nav-number">20.</span> <span class="nav-text">Token</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GoodRain-keys"><span class="nav-number">21.</span> <span class="nav-text">GoodRain keys</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#regx"><span class="nav-number">22.</span> <span class="nav-text">regx</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在紧挨着的中英文字符中间插入空格"><span class="nav-number">22.1.</span> <span class="nav-text">在紧挨着的中英文字符中间插入空格</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HR-RM"><span class="nav-number">23.</span> <span class="nav-text">HR + RM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#云空间购买"><span class="nav-number">24.</span> <span class="nav-text">云空间购买</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Weekly-meeting"><span class="nav-number">25.</span> <span class="nav-text">Weekly meeting</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Simon J S Wind13 Liu</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname,
+            owner: 'wind13',
+            repo: 'wind13.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '567b199e73fe5024b689971fac5a78fc3da64821',
+            
+                client_id: 'b3eba2d74cdccd08c0bb'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

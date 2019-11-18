@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.0.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="Hexo, NexT">
+
+
+<meta name="description" content="ES6 AngularJS Training Schedule(1.5 hour/day) Day 1: Introduce each other, intro modern front-end technology etc. Best practice of GitHub, Agile and review code etc. Day 2: Setup and prepare environme">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wind13&#39;s Blog">
+<meta property="og:url" content="http://wind13.github.io/notes/training/es6-angularjs-training.html">
+<meta property="og:site_name" content="Wind13&#39;s Blog">
+<meta property="og:description" content="ES6 AngularJS Training Schedule(1.5 hour/day) Day 1: Introduce each other, intro modern front-end technology etc. Best practice of GitHub, Agile and review code etc. Day 2: Setup and prepare environme">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-10-28T23:32:40.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Wind13&#39;s Blog">
+<meta name="twitter:description" content="ES6 AngularJS Training Schedule(1.5 hour/day) Day 1: Introduce each other, intro modern front-end technology etc. Best practice of GitHub, Agile and review code etc. Day 2: Setup and prepare environme">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Wind13's Blog" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://wind13.github.io/notes/training/es6-angularjs-training.html">
+
+
+  <title> | Wind13's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wind13's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+	<h1 class="post-title" itemprop="name headline"></h1>
+
+
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <h1 id="ES6-AngularJS-Training"><a href="#ES6-AngularJS-Training" class="headerlink" title="ES6 AngularJS Training"></a>ES6 AngularJS Training</h1><hr>
+<h2 id="Schedule-1-5-hour-day"><a href="#Schedule-1-5-hour-day" class="headerlink" title="Schedule(1.5 hour/day)"></a>Schedule(1.5 hour/day)</h2><ul>
+<li>Day 1: Introduce each other, intro modern front-end technology etc. Best practice of GitHub, Agile and review code etc.</li>
+<li>Day 2: Setup and prepare environment and run demo. Try unit test, E2E test etc, create a new page and a component.</li>
+<li>Day 3: Create more complex and beautiful pages, connect to back-end RESTful API etc.</li>
+<li>Day 4: Combine all together and write documents.</li>
+<li>Day 5 (Optional): Summary, Q &amp; A, Free talk etc.</li>
+</ul>
+<hr>
+<h2 id="Lession-1"><a href="#Lession-1" class="headerlink" title="Lession 1"></a>Lession 1</h2><ul>
+<li>Introduce each other.</li>
+<li>Talk about develop concept</li>
+<li>Build your team and project.</li>
+<li>Intro Git and GitHub</li>
+<li>Prepare your develop environment</li>
+<li>Setup Goal! and split tasks and the first start step.</li>
+<li>List project questions.</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>相互介绍，了解对 AngularJS 及前端开发的情况。</li>
+<li>此次学习大家将学到很多“课外知识”，甚至很多人生智慧（鸡汤）。鸡汤还是要喝的，万一喝到鸡肉呢！</li>
+<li>有输出才能有真正的学习效果。本次将以一个作品做为最终的目标。</li>
+<li>设定目标、组建小组。全流程敏捷开发实践。结对编程、TDD 等。</li>
+<li>组内设置 Scrum master 和 Product owner 两职位，全部 Developer 兼任。</li>
+<li>第一个决定选择 Git 服务。在服务上创建项目，开库，创建任务，规范工作流程。</li>
+<li>安装 GitBash 及 VSCode 两个工具。</li>
+<li>介绍 markdown 语法和文档书写技巧。</li>
+<li>课后作业：<ul>
+<li>浏览 ES6 语法，重点理解 import, export 与 exports 的区别，整理成文档放在 Git 服务中。</li>
+<li>浏览 AngularJS 语法，重点理解 components 一章，整理成文档放在 Git 服务中。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Lession-2"><a href="#Lession-2" class="headerlink" title="Lession 2"></a>Lession 2</h2><ul>
+<li>Intro Node.js and AngularJS</li>
+<li>Agile and Scrum practice.</li>
+<li>Define API document.</li>
+<li>Write stories.</li>
+<li>Intro TDD and UDD.</li>
+<li>Write test case, Unit test and E2E test.</li>
+<li>Read JavaScript and ES6 document.</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>开始了解 AngularJS</li>
+</ul>
+<hr>
+<h2 id="Lession-3"><a href="#Lession-3" class="headerlink" title="Lession 3"></a>Lession 3</h2><ul>
+<li>Start with a skeleton.</li>
+<li>Introduce the folder and files.</li>
+<li>Introduce VSCode</li>
+<li>Introduce AngularJS module, controller, service</li>
+<li>Introduce Bootstrap 4</li>
+<li>Implement login component and page</li>
+<li>Npm install, start and install python server</li>
+</ul>
+<hr>
+<h2 id="Lession-4"><a href="#Lession-4" class="headerlink" title="Lession 4"></a>Lession 4</h2><ul>
+<li>Introduce XXS</li>
+<li>Introduce vi</li>
+<li>Introduce design priciple</li>
+<li>Implement user service</li>
+<li>Introduce Emmet</li>
+</ul>
+<hr>
+<h2 id="Lession-5"><a href="#Lession-5" class="headerlink" title="Lession 5"></a>Lession 5</h2><ul>
+<li>Introduce filter</li>
+<li>Thinking in component</li>
+<li>Try write a filter</li>
+<li>Use <a href="https://github.com/pratikborsadiya/vali-admin" target="_blank" rel="noopener">Vali Admin</a> in pages</li>
+</ul>
+<hr>
+<h2 id="Home-work-and-exam"><a href="#Home-work-and-exam" class="headerlink" title="Home work and exam"></a>Home work and exam</h2><blockquote>
+<p>Finish user login and user list page.</p>
+</blockquote>
+<ul>
+<li>Should use the skeleton;</li>
+<li>Should use users mock data;</li>
+<li>Should use a admin mock data to valid login.</li>
+<li>Normal user should not see edit button.</li>
+<li>Should use Vali Admin styles.</li>
+</ul>
+<h2 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h2><h3 id="共同问题："><a href="#共同问题：" class="headerlink" title="共同问题："></a>共同问题：</h3><ul>
+<li>缺乏独立思考和创新精神！</li>
+<li>提交时的 message 不够准确详细；</li>
+<li>README 未写；</li>
+<li>登录失败并无用户提示，仅有控制台的输出；</li>
+<li>无退出登录功能；</li>
+<li>自己实现的内容并不算多；</li>
+<li>从 URL 获取登录角色；</li>
+</ul>
+<h3 id="陈珂-作业-70分"><a href="#陈珂-作业-70分" class="headerlink" title="陈珂 作业 70分"></a>陈珂 <a href="https://github.com/Kobe154853/es6-ng-demo" target="_blank" rel="noopener">作业</a> 70分</h3><ul>
+<li>作业交得最早，界面和代码都较好。</li>
+</ul>
+<h3 id="吴炜（Vilit）-作业-70分"><a href="#吴炜（Vilit）-作业-70分" class="headerlink" title="吴炜（Vilit） 作业  70分"></a>吴炜（Vilit） <a href="https://github.com/Vilit005/vilit_angular_01.git" target="_blank" rel="noopener">作业</a>  70分</h3><ul>
+<li>写了一些学习的注释，帮助记忆，较好。</li>
+</ul>
+<h3 id="刘金霞-作业-60分"><a href="#刘金霞-作业-60分" class="headerlink" title="刘金霞 作业  60分"></a>刘金霞 <a href="https://github.com/Scarlet-Liu/angularjs-es6-multi-page" target="_blank" rel="noopener">作业</a>  60分</h3><ul>
+<li>用户名错误，无提示；</li>
+</ul>
+<h3 id="李先笙-作业-70分"><a href="#李先笙-作业-70分" class="headerlink" title="李先笙 作业 70分"></a>李先笙 <a href="https://github.com/Lcodering/jobTraining.git" target="_blank" rel="noopener">作业</a> 70分</h3><ul>
+<li>使用了一个新的登录界面样式，加分。</li>
+</ul>
+<h3 id="赵金辉-作业-65分"><a href="#赵金辉-作业-65分" class="headerlink" title="赵金辉 作业 65分"></a>赵金辉 <a href="https://github.com/zhaojinhui11/demo" target="_blank" rel="noopener">作业</a> 65分</h3><ul>
+<li>没有登录不了的提示，减分。</li>
+</ul>
+<h3 id="汪帅通-作业-60分"><a href="#汪帅通-作业-60分" class="headerlink" title="汪帅通 作业 60分"></a>汪帅通 <a href="https://github.com/wangshuaitong/angulartest.git" target="_blank" rel="noopener">作业</a> 60分</h3><ul>
+<li>有一份多余的拷贝在目录中，减分。</li>
+<li>CSS 路径有误，无法加载样式，减分。</li>
+</ul>
+<h3 id="童吉源-作业-65分"><a href="#童吉源-作业-65分" class="headerlink" title="童吉源 作业 65分"></a>童吉源 <a href="https://github.com/xsu000/angularjs_work.git" target="_blank" rel="noopener">作业</a> 65分</h3><ul>
+<li>多做了一个全选的功能，加分。</li>
+<li>无法登录</li>
+<li><code>users.json</code> 路径多了 /app/</li>
+</ul>
+<h3 id="高越-作业-65分"><a href="#高越-作业-65分" class="headerlink" title="高越 作业 65分"></a>高越 <a href="https://github.com/GyLeonardo/First-AngularJS-Demo" target="_blank" rel="noopener">作业</a> 65分</h3><ul>
+<li>使用 <code>btoa</code>，加分。</li>
+</ul>
+
+        
+      </div>
+      
+      
+      
+    </div>
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Simon J S Wind13 Liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">92</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">106</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ES6-AngularJS-Training"><span class="nav-number">1.</span> <span class="nav-text">ES6 AngularJS Training</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Schedule-1-5-hour-day"><span class="nav-number">1.1.</span> <span class="nav-text">Schedule(1.5 hour/day)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lession-1"><span class="nav-number">1.2.</span> <span class="nav-text">Lession 1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lession-2"><span class="nav-number">1.3.</span> <span class="nav-text">Lession 2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lession-3"><span class="nav-number">1.4.</span> <span class="nav-text">Lession 3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lession-4"><span class="nav-number">1.5.</span> <span class="nav-text">Lession 4</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lession-5"><span class="nav-number">1.6.</span> <span class="nav-text">Lession 5</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Home-work-and-exam"><span class="nav-number">1.7.</span> <span class="nav-text">Home work and exam</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Result"><span class="nav-number">1.8.</span> <span class="nav-text">Result</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#共同问题："><span class="nav-number">1.8.1.</span> <span class="nav-text">共同问题：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#陈珂-作业-70分"><span class="nav-number">1.8.2.</span> <span class="nav-text">陈珂 作业 70分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#吴炜（Vilit）-作业-70分"><span class="nav-number">1.8.3.</span> <span class="nav-text">吴炜（Vilit） 作业  70分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#刘金霞-作业-60分"><span class="nav-number">1.8.4.</span> <span class="nav-text">刘金霞 作业  60分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#李先笙-作业-70分"><span class="nav-number">1.8.5.</span> <span class="nav-text">李先笙 作业 70分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#赵金辉-作业-65分"><span class="nav-number">1.8.6.</span> <span class="nav-text">赵金辉 作业 65分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#汪帅通-作业-60分"><span class="nav-number">1.8.7.</span> <span class="nav-text">汪帅通 作业 60分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#童吉源-作业-65分"><span class="nav-number">1.8.8.</span> <span class="nav-text">童吉源 作业 65分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高越-作业-65分"><span class="nav-number">1.8.9.</span> <span class="nav-text">高越 作业 65分</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Simon J S Wind13 Liu</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname,
+            owner: 'wind13',
+            repo: 'wind13.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '567b199e73fe5024b689971fac5a78fc3da64821',
+            
+                client_id: 'b3eba2d74cdccd08c0bb'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

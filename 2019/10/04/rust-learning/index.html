@@ -115,7 +115,7 @@
 <meta property="og:site_name" content="Wind13&#39;s Blog">
 <meta property="og:description" content="Rust LearningReferences Julia、Rust、F#、Go编程语言游览和感想 Rust, Julia, and Go_ Disruptive New Programming Languages Changing the Face of C 新兴的函数式编程语言（如 Elixir 或 Elm） 从实际应用角度来看，Rust更偏向于底层，旨在替换C语言与C++，Golang旨在替">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-06T10:02:20.000Z">
+<meta property="og:updated_time" content="2019-10-28T23:41:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Rust Learning">
 <meta name="twitter:description" content="Rust LearningReferences Julia、Rust、F#、Go编程语言游览和感想 Rust, Julia, and Go_ Disruptive New Programming Languages Changing the Face of C 新兴的函数式编程语言（如 Elixir 或 Elm） 从实际应用角度来看，Rust更偏向于底层，旨在替换C语言与C++，Golang旨在替">
@@ -428,6 +428,9 @@
 </li>
 <li>Rust与go在网上吵的比较大区别是，Rust有泛型，而Go没有。</li>
 <li>做网络服务选Go， 上手比较简单。做系统用Rust, 它就是未来的系统语言。</li>
+<li><a href="http://wiki.jikexueyuan.com/project/rust-primer/ffi/compiling-rust-to-lib.html" target="_blank" rel="noopener">将Rust编译成库</a></li>
+<li><a href="https://www.cnblogs.com/chenxizhang/p/4760674.html" target="_blank" rel="noopener">Rust初步（六）：在C#中使用Rust组件</a></li>
+<li><a href="https://www.oschina.net/translate/rust-vs-cpp" target="_blank" rel="noopener">Rust vs. C++：性能大比拼</a></li>
 <li><a href="https://blog.csdn.net/xiangxianghehe/article/details/53471936" target="_blank" rel="noopener">如何利用科大源提速Cargo和Rust</a></li>
 <li><a href="https://os.phil-opp.com/" target="_blank" rel="noopener">Writing an OS in Rust</a></li>
 <li><a href="https://web.stanford.edu/class/cs140e/" target="_blank" rel="noopener">CS140E: Operating Systems Design and Implementation</a></li>
@@ -443,7 +446,31 @@
 <h2 id="Learn-web"><a href="#Learn-web" class="headerlink" title="Learn web"></a>Learn web</h2><ul>
 <li><a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="noopener">MDN web docs</a></li>
 </ul>
-<h2 id="Key-points"><a href="#Key-points" class="headerlink" title="Key points"></a>Key points</h2><h3 id="数据竞争"><a href="#数据竞争" class="headerlink" title="数据竞争"></a>数据竞争</h3><blockquote>
+<h2 id="Key-points"><a href="#Key-points" class="headerlink" title="Key points"></a>Key points</h2><ul>
+<li>理解所有权：<a href="https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html" target="_blank" rel="noopener">What is Ownership</a><ul>
+<li>Copy</li>
+<li>Move</li>
+<li>Clone</li>
+</ul>
+</li>
+<li>理解引用和借用：<a href="https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html?highlight=borrow#references-and-borrowing" target="_blank" rel="noopener">References and Borrowing</a><ul>
+<li>&amp; 引用</li>
+<li>(&amp;) 借用<ul>
+<li><blockquote>
+<p>We call having references as function parameters <em>borrowing</em></p>
+</blockquote>
+</li>
+<li>我们称“将引用作为函数参数”为“借用”</li>
+</ul>
+</li>
+<li><ul>
+<li>解引用</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="数据竞争"><a href="#数据竞争" class="headerlink" title="数据竞争"></a>数据竞争</h3><blockquote>
 <p>对于所有的类型T和任意的生命周期参数‘a，都能衍生出两种类型：&amp;’a T 和 &amp;mut ‘a T。</p>
 </blockquote>
 <blockquote>
@@ -678,7 +705,7 @@
                 
                 <div class="site-state-item site-state-tags">
                   <a href="/tags/index.html">
-                    <span class="site-state-item-count">104</span>
+                    <span class="site-state-item-count">106</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

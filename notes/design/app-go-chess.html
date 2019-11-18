@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.0.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="Hexo, NexT">
+
+
+<meta name="description" content="棋妙 App 开发策划分析需求整理概述（在棋妙，很奇妙） 围棋社交平台 围棋赛事信息 围棋分析评论  模块首页展示 全国资讯 省内资讯  个人信息 昵称、年龄、性别、级别、棋龄、约棋区域、妙贝  妙贝管理 获取：充值购买、完成任务 使用：发布任务、平台二手市场交易  发现棋妙 寻找棋手 寻找棋校 寻找老师 寻找棋座  论坛关注 各类围棋社群列表，可添加关注 社群主页 社群聊天  好友 好友列表 好">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wind13&#39;s Blog">
+<meta property="og:url" content="http://wind13.github.io/notes/design/app-go-chess.html">
+<meta property="og:site_name" content="Wind13&#39;s Blog">
+<meta property="og:description" content="棋妙 App 开发策划分析需求整理概述（在棋妙，很奇妙） 围棋社交平台 围棋赛事信息 围棋分析评论  模块首页展示 全国资讯 省内资讯  个人信息 昵称、年龄、性别、级别、棋龄、约棋区域、妙贝  妙贝管理 获取：充值购买、完成任务 使用：发布任务、平台二手市场交易  发现棋妙 寻找棋手 寻找棋校 寻找老师 寻找棋座  论坛关注 各类围棋社群列表，可添加关注 社群主页 社群聊天  好友 好友列表 好">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-10-28T23:32:40.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Wind13&#39;s Blog">
+<meta name="twitter:description" content="棋妙 App 开发策划分析需求整理概述（在棋妙，很奇妙） 围棋社交平台 围棋赛事信息 围棋分析评论  模块首页展示 全国资讯 省内资讯  个人信息 昵称、年龄、性别、级别、棋龄、约棋区域、妙贝  妙贝管理 获取：充值购买、完成任务 使用：发布任务、平台二手市场交易  发现棋妙 寻找棋手 寻找棋校 寻找老师 寻找棋座  论坛关注 各类围棋社群列表，可添加关注 社群主页 社群聊天  好友 好友列表 好">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Wind13's Blog" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://wind13.github.io/notes/design/app-go-chess.html">
+
+
+  <title> | Wind13's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wind13's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+	<h1 class="post-title" itemprop="name headline"></h1>
+
+
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <h1 id="棋妙-App-开发策划分析"><a href="#棋妙-App-开发策划分析" class="headerlink" title="棋妙 App 开发策划分析"></a>棋妙 App 开发策划分析</h1><h2 id="需求整理"><a href="#需求整理" class="headerlink" title="需求整理"></a>需求整理</h2><h3 id="概述（在棋妙，很奇妙）"><a href="#概述（在棋妙，很奇妙）" class="headerlink" title="概述（在棋妙，很奇妙）"></a>概述（在棋妙，很奇妙）</h3><ul>
+<li>围棋社交平台</li>
+<li>围棋赛事信息</li>
+<li>围棋分析评论</li>
+</ul>
+<h3 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h3><h4 id="首页展示"><a href="#首页展示" class="headerlink" title="首页展示"></a>首页展示</h4><ul>
+<li>全国资讯</li>
+<li>省内资讯</li>
+</ul>
+<h4 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h4><ul>
+<li>昵称、年龄、性别、级别、棋龄、约棋区域、妙贝</li>
+</ul>
+<h4 id="妙贝管理"><a href="#妙贝管理" class="headerlink" title="妙贝管理"></a>妙贝管理</h4><ul>
+<li>获取：充值购买、完成任务</li>
+<li>使用：发布任务、平台二手市场交易</li>
+</ul>
+<h4 id="发现棋妙"><a href="#发现棋妙" class="headerlink" title="发现棋妙"></a>发现棋妙</h4><ul>
+<li>寻找棋手</li>
+<li>寻找棋校</li>
+<li>寻找老师</li>
+<li>寻找棋座</li>
+</ul>
+<h4 id="论坛关注"><a href="#论坛关注" class="headerlink" title="论坛关注"></a>论坛关注</h4><ul>
+<li>各类围棋社群列表，可添加关注</li>
+<li>社群主页</li>
+<li>社群聊天</li>
+</ul>
+<h4 id="好友"><a href="#好友" class="headerlink" title="好友"></a>好友</h4><ul>
+<li>好友列表</li>
+<li>好友详情</li>
+<li>好友点评</li>
+</ul>
+<h4 id="任务（残局）"><a href="#任务（残局）" class="headerlink" title="任务（残局）"></a>任务（残局）</h4><ul>
+<li>平台任务</li>
+<li>个人任务</li>
+<li>围棋宝藏（二手市场）</li>
+</ul>
+<h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><ul>
+<li>App 名称“棋妙”较有新意，口号：“在棋妙，很奇妙”也不错。</li>
+<li>需求创意概念较大，虽然只是围棋这一个垂直领域，但模块设计考虑大而全，很多模块仅那一个单独模块都是一个大公司的量级。比如：社群聊天和好友，基本类似微信的功能；妙贝交易、二手市场，基本类似Q币及闲鱼的功能；这些模块如果开发简陋，将无人喜欢用，但如果要达到用户愿意用这些而不是用微信、闲鱼等，开发能力和成本考虑又基本不太可能。</li>
+<li>需求设计缺少独特的亮点，界面虽然看似简单，却低估了背后复杂的后台技术、运营规则、巨量数据支持的难度，同时上线这么多模块功能，不仅不会吸引用户，反而因为运营服务质量的低下而遭到用户的遗弃。</li>
+</ul>
+<blockquote>
+<p>因此，建议再思考以下一些问题后进一步完善设计：</p>
+</blockquote>
+<ul>
+<li>如果这些模块功能，仅留一个功能，你会留下哪个？</li>
+<li>用户不删除这个 App 的最大理由是什么？如：我不删除“虾米音乐”的原因是偶尔想听个歌儿的时候会打开它，至于里面还有还有论坛好友、资讯新闻、养虾米小游戏什么的，我根本不在乎也不会用。</li>
+<li>或者说用小程序快速开发一个原形，一两个月内推向市场，从一个功能开始，会发布什么功能？一个只有一个功能的小程序，如：微信乘车码、车来了、微信发票等。背后的技术复杂度，市场运营难度实际已经非常之高，但却有不可替代性，一经推出就成为大众的默认选择。</li>
+<li>软件生命周期的规律通常是单点突破，抓住用户后，再不断迭代，谨慎扩展相关功能，重点突出软件个性特点，这样才有可能逐渐发展起来。</li>
+<li>市面上已有的围棋社区类应用、小程序、网站有哪些？是否有相应的比较和分析？现在要开发的这个 App 在技术、市场运营等方面有哪些独有的特色？</li>
+<li>软件 App 不同于普通的实物商品，一手交钱、一手交货，完成交易，两不相欠，软件 App 一经推出是需要不断维护、扩展、升级的，相应的信息、服务都需要跟上，一个小小的 App 背后都可能是一家庞然大物般的跨国公司在支持，数千万的工作人员夜以继日地工作维护才得以生存，所以考虑过这个棋妙 App 的开发成本、运营成本了吗？盈利点又在哪里呢？用户真的愿意花钱吗？用户愿意花的钱可以支撑起这些庞大的开发、运营成本吗？</li>
+<li>预计的用户量会是多少？日均访问量是多少？同时并发访问量高峰会是多少？需要多少的服务器集群资源来支持？这些服务器资源、带宽资源、固定域名IP资源的年租用费用需要多少？</li>
+</ul>
+<h2 id="开发方案分析"><a href="#开发方案分析" class="headerlink" title="开发方案分析"></a>开发方案分析</h2><h3 id="一、依目前需求设计开发"><a href="#一、依目前需求设计开发" class="headerlink" title="一、依目前需求设计开发"></a>一、依目前需求设计开发</h3><blockquote>
+<p>如果一定要按此需求开发制作，分析如下：</p>
+</blockquote>
+<ul>
+<li>粗略估计需要四大块开发工作：<ul>
+<li>棋妙后端服务</li>
+<li>棋妙管理界面</li>
+<li>棋妙 App（Android）</li>
+<li>棋妙 App (iOS）</li>
+</ul>
+</li>
+<li>考虑到这些功能模块真正做到可用，需要至少三到四名中高级开发人员三个月到半年的开发时间，部分兼职、部分专职平均每人每月一万元收入，也需要 10万~24万。如果资金不足或者时间不够，都难免会导致应付交差式的开发，软件结果将差强人意，或者后期可维护、可扩展性不强，无法长期运营、使用和更新发展。</li>
+<li>作为专业的软件开发者，我个人是不愿意接手类似的大而全的项目的，除了浪费委托人的资金，也浪费自己的时间，做出来的产品并不能收到预想的效果，最终沦为无人使用的僵尸 App，被人们遗忘。</li>
+</ul>
+<h3 id="二、用小程序精品试水"><a href="#二、用小程序精品试水" class="headerlink" title="二、用小程序精品试水"></a>二、用小程序精品试水</h3><blockquote>
+<p>采用微信小程序的思路重新构思需求、设计和开发</p>
+</blockquote>
+<ul>
+<li><p>从只做一个独特的功能开始，做精做出特色，让用户愿意使用和长期留存。</p>
+</li>
+<li><p>采用微信小程序开发，节省资金和时间成本，利用微信海量的用户和生态。</p>
+</li>
+<li><p>需要三大块开发工作：</p>
+<ul>
+<li>棋妙后端服务</li>
+<li>棋妙管理界面</li>
+<li>棋妙微信小程序</li>
+</ul>
+</li>
+<li><p>考虑到前期只需做精一个功能模块，仅需要两个高级开发人员，两到三个月时间完成，成本可控制在 6 万元以内。后期再根据市场反应，持续维护旧模块、扩展新模块，</p>
+</li>
+<li><p>如果市场反应不好，无法找来进一步融资，这笔风险投资也就作罢。如果市场反应不错，可考虑注册公司运营，进一步寻找融资并追加投资，请专业人员共同开发运营，给用户提供更深度有价值的服务，介时一些规则更复杂、技术要求更高的功能就可以逐渐上线了，如：妙贝（虚拟币）等。</p>
+</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><blockquote>
+<p>需要进一步精简需求、突出重点，在软件设计和运营计划上有比较完善的、精品单点突破的方案，再真正投入时间、资金和人力进行实际开发，否则容易浪费资源，给自己和合作人造成不必要的损失。</p>
+</blockquote>
+
+        
+      </div>
+      
+      
+      
+    </div>
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Simon J S Wind13 Liu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">92</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    <span class="site-state-item-count">106</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#棋妙-App-开发策划分析"><span class="nav-number">1.</span> <span class="nav-text">棋妙 App 开发策划分析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#需求整理"><span class="nav-number">1.1.</span> <span class="nav-text">需求整理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#概述（在棋妙，很奇妙）"><span class="nav-number">1.1.1.</span> <span class="nav-text">概述（在棋妙，很奇妙）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模块"><span class="nav-number">1.1.2.</span> <span class="nav-text">模块</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#首页展示"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">首页展示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#个人信息"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">个人信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#妙贝管理"><span class="nav-number">1.1.2.3.</span> <span class="nav-text">妙贝管理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#发现棋妙"><span class="nav-number">1.1.2.4.</span> <span class="nav-text">发现棋妙</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#论坛关注"><span class="nav-number">1.1.2.5.</span> <span class="nav-text">论坛关注</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#好友"><span class="nav-number">1.1.2.6.</span> <span class="nav-text">好友</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#任务（残局）"><span class="nav-number">1.1.2.7.</span> <span class="nav-text">任务（残局）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#需求分析"><span class="nav-number">1.2.</span> <span class="nav-text">需求分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发方案分析"><span class="nav-number">1.3.</span> <span class="nav-text">开发方案分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、依目前需求设计开发"><span class="nav-number">1.3.1.</span> <span class="nav-text">一、依目前需求设计开发</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、用小程序精品试水"><span class="nav-number">1.3.2.</span> <span class="nav-text">二、用小程序精品试水</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">1.4.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Simon J S Wind13 Liu</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname,
+            owner: 'wind13',
+            repo: 'wind13.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '567b199e73fe5024b689971fac5a78fc3da64821',
+            
+                client_id: 'b3eba2d74cdccd08c0bb'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
