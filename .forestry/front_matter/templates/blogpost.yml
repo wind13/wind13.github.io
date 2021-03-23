@@ -1,4 +1,31 @@
 ---
 label: blogpost
 hide_body: false
-fields: []
+fields:
+- name: created_date
+  type: datetime
+  label: Created Date
+  description: The date of article created.
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Content
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
