@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>图像处理 on 世风十三学堂</title>
-    <link>https://wind13.gitee.io/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/</link>
+    <link>https://wind13.github.io/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/</link>
     <description>Recent content in 图像处理 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 22 Jun 2019 19:59:26 +0800</lastBuildDate>
     
-	<atom:link href="https://wind13.gitee.io/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wind13.github.io/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>非局部均值滤波算法</title>
-      <link>https://wind13.gitee.io/post/2019/non-local-mean-filter/</link>
+      <link>https://wind13.github.io/post/2019/non-local-mean-filter/</link>
       <pubDate>Sat, 22 Jun 2019 19:59:26 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2019/non-local-mean-filter/</guid>
+      <guid>https://wind13.github.io/post/2019/non-local-mean-filter/</guid>
       <description>需求问题 关于图像降噪处理： 非局部均值滤波（non-local mean filter）基于块（block-wise）的算法怎么实现？编程语言类型为 python 解释 对添加了噪声的图像做nlm滤波：对每一个像素点（记为当前点），设定一个以其为中心的大小为p1*p2 的当前块，然后再设定一个以其为中心的大小</description>
     </item>
     

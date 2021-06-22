@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>fizzbuzz on 世风十三学堂</title>
-    <link>https://wind13.gitee.io/tags/fizzbuzz/</link>
+    <link>https://wind13.github.io/tags/fizzbuzz/</link>
     <description>Recent content in fizzbuzz on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 16 Jul 2020 12:26:22 +0800</lastBuildDate>
     
-	<atom:link href="https://wind13.gitee.io/tags/fizzbuzz/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wind13.github.io/tags/fizzbuzz/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>复习 FizzBuzz</title>
-      <link>https://wind13.gitee.io/post/2020/fizz-buzz-revise/</link>
+      <link>https://wind13.github.io/post/2020/fizz-buzz-revise/</link>
       <pubDate>Thu, 16 Jul 2020 12:26:22 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2020/fizz-buzz-revise/</guid>
+      <guid>https://wind13.github.io/post/2020/fizz-buzz-revise/</guid>
       <description>复习 FizzBuzz 题目 游戏的规则是： 让所有学生，假设为 100 人拍成一队，然后按顺序报数。 学生报数时，如果所报数字是3的倍数，那么不能说该数字，而要说Fizz；如果所报数字是5的倍数，那么要说Buzz。 需求问题： 被3和5整除返回什么？ 有的同学就直接脑补了： 脑补一：能被3和5整除，那就是先被3整除呗</description>
     </item>
     

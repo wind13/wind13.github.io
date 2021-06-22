@@ -2,192 +2,192 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>收集与记录 on 世风十三学堂</title>
-    <link>https://wind13.gitee.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/</link>
+    <link>https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/</link>
     <description>Recent content in 收集与记录 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 24 Mar 2021 11:37:15 +0800</lastBuildDate>
     
-	<atom:link href="https://wind13.gitee.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Digital Garden</title>
-      <link>https://wind13.gitee.io/post/2021/blog.digital-garden/</link>
+      <link>https://wind13.github.io/post/2021/blog.digital-garden/</link>
       <pubDate>Wed, 24 Mar 2021 11:37:15 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2021/blog.digital-garden/</guid>
+      <guid>https://wind13.github.io/post/2021/blog.digital-garden/</guid>
       <description>Digital Garden 源自以下文章的启发： [[#idea|tag.idea]] My blog is a digital garden, not a blog Joel Hooks at egghead.io Stop Giving af and Start Writing More 重新思考“博客”的概念和定位，确实不应该把个人网站当作博客来看，每篇文章都要精心打磨，有些麻烦，作者的思考是把它当作“数字花园”，我也有同感的，就象我在 Dendron 里记录了很多东西，但在博客上并没有发布多少。 看作博客，随着时</description>
     </item>
     
     <item>
       <title>摘录《原则》动画重点</title>
-      <link>https://wind13.gitee.io/post/2021/learn.principles/</link>
+      <link>https://wind13.github.io/post/2021/learn.principles/</link>
       <pubDate>Tue, 16 Feb 2021 11:08:11 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2021/learn.principles/</guid>
+      <guid>https://wind13.github.io/post/2021/learn.principles/</guid>
       <description>摘录《原则》动画重点 Ray Dalio 瑞·达利欧 微博全球视频精选Premium Podcast: 文森说书 Instagram: vincent_reading 为什么需要建立原则 每次遇到问题都要思考一次，很容易纠结，可以矛盾的两边都照顾不好。 为生活中不同类别的问题，整理出应该遵循的原则。每次使用原则所带来的结果，都可能微调原则的内容，最后的原则就越来越符合自己</description>
     </item>
     
     <item>
       <title>吴军《见识》读书笔记</title>
-      <link>https://wind13.gitee.io/post/2021/wujun-horizons/</link>
+      <link>https://wind13.github.io/post/2021/wujun-horizons/</link>
       <pubDate>Sun, 17 Jan 2021 09:00:12 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2021/wujun-horizons/</guid>
+      <guid>https://wind13.github.io/post/2021/wujun-horizons/</guid>
       <description>吴军《见识》读书笔记 前面几章一直在看，没想着记录，只摘个目录吧，以后重看时再补一下…… 上篇 商业的本质 第一章 商业的本质 第二章 创业不等于从0到1 第三章 以小博大的颠覆式创新 第四章 拒绝伪工作者 第五章 职场的误区与破解方法 第六章 理性的投资观 第六章 理性的投资观 下篇 人生的智慧 第七章 幸福是目的，成</description>
     </item>
     
     <item>
       <title>听邵恒头条《怎么用“福格行为模型”战胜拖延症？》记录</title>
-      <link>https://wind13.gitee.io/post/2021/fogg-behavior-model-stop-procratinating/</link>
+      <link>https://wind13.github.io/post/2021/fogg-behavior-model-stop-procratinating/</link>
       <pubDate>Sat, 16 Jan 2021 14:05:52 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2021/fogg-behavior-model-stop-procratinating/</guid>
+      <guid>https://wind13.github.io/post/2021/fogg-behavior-model-stop-procratinating/</guid>
       <description>听邵恒头条《怎么用“福格行为模型”战胜拖延症？》记录 概念介绍 国外专门研究拖延症的网站：Deprocrastination How to stop procrastinating by using the Fogg Behavior Model 美国斯坦福大学教授：布莱恩·福格（Brian Fogg） 尼尔·埃亚尔《上瘾：让用户养成使用习惯的四大产品逻辑》的理论基础也是 Fogg Model Fogg Model: Behavior = Motivation + Ability</description>
     </item>
     
     <item>
       <title>《实现模式》学习笔记</title>
-      <link>https://wind13.gitee.io/post/2020/implementation-patterns-learn/</link>
+      <link>https://wind13.github.io/post/2020/implementation-patterns-learn/</link>
       <pubDate>Sat, 05 Dec 2020 23:12:40 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2020/implementation-patterns-learn/</guid>
+      <guid>https://wind13.github.io/post/2020/implementation-patterns-learn/</guid>
       <description>Learning 《Implementation Patterns》 —— 编写可读的代码 在软件开发中有大量的开销都被用在理解现有代码上了。 范围的管理对于软件开发和写书都一样重要。 好的代码是有意义的。 软件要取得商业成功或者被广泛使用，“好的代码质量”即不必要也不充分。 尽管代码质量不能保证美好的未来，但</description>
     </item>
     
     <item>
       <title>Jenkins 学习笔记</title>
-      <link>https://wind13.gitee.io/post/2020/jenkins-learning/</link>
+      <link>https://wind13.github.io/post/2020/jenkins-learning/</link>
       <pubDate>Sat, 10 Oct 2020 09:31:01 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2020/jenkins-learning/</guid>
+      <guid>https://wind13.github.io/post/2020/jenkins-learning/</guid>
       <description>每个 Jenkins 用户都应该知道这三个最佳实践 轻量化 Jenkins 最佳实践 Jenkins管道最佳实践Top 10 不仅一个代码库可以支持多个Multibranch Job，实际上多个Multibranch Job可以共用同一个代码库，这里面就用到marker的功能。所以作为一个Jenkins管理员，我最纠结的就是</description>
     </item>
     
     <item>
       <title>Learn Elixir</title>
-      <link>https://wind13.gitee.io/post/2020/learn-elixir/</link>
+      <link>https://wind13.github.io/post/2020/learn-elixir/</link>
       <pubDate>Tue, 08 Sep 2020 22:50:16 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2020/learn-elixir/</guid>
+      <guid>https://wind13.github.io/post/2020/learn-elixir/</guid>
       <description>参考资料 GOTO 2019 • The Soul of Erlang and Elixir • Saša Jurić http://elixir-lang.com/ https://elixirschool.com/zh-hans/ macOS 上的安装 brew install elixir Edward 的课程~ Captcha TDD in Elixir 01 - 练习的第一小步 - 实现最基本的验证码比对 Captcha TDD in Elixir 02 - 练习的第二小步 - 实现带次数的验证码比对 Captcha TDD in Elixir 03 - 练习的第三小步 - 验证码服务化(进程化) Captcha TDD in Elixir 03_2 - 第三小步成果的命令行方式使用示例 Captcha TDD in Elixir 04</description>
     </item>
     
     <item>
       <title>先进管理思想建议方案</title>
-      <link>https://wind13.gitee.io/post/2020/manage-system/</link>
+      <link>https://wind13.github.io/post/2020/manage-system/</link>
       <pubDate>Wed, 12 Aug 2020 17:00:17 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2020/manage-system/</guid>
+      <guid>https://wind13.github.io/post/2020/manage-system/</guid>
       <description>公司层面：OKR 管理思想 概述：OKR（Objectives and Key Results）即目标与关键成果法，是一套明确和跟踪目标及其完成情况的管理工具和方法。 OKR的主要目标是明确公司和团队的“目标”以及明确每个目标达成的可衡量的“关键结果”。OKR被定义为“一个重要的思考框架与不断发展的</description>
     </item>
     
     <item>
       <title>Umi vs Nuxt vs Ng-alain</title>
-      <link>https://wind13.gitee.io/post/2020/umi-vs-nuxt-vs-ngalain/</link>
+      <link>https://wind13.github.io/post/2020/umi-vs-nuxt-vs-ngalain/</link>
       <pubDate>Tue, 28 Jul 2020 11:17:13 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2020/umi-vs-nuxt-vs-ngalain/</guid>
+      <guid>https://wind13.github.io/post/2020/umi-vs-nuxt-vs-ngalain/</guid>
       <description>概述和思考 很多时候前端开发人员会面对眼花缭乱的框架很难选择。 标题所说的选择实质是三大阵营（React, Vue 和 Angular）的选择。 三个底层框架各有所长，亮点在于： React：更接近函数式编程思想，单向数据流比较清晰，jsx 是不错的创新，熟悉后可结合函数式编程写出比较优雅的组件代码</description>
     </item>
     
     <item>
       <title>罗胖谈新时代的学习方法</title>
-      <link>https://wind13.gitee.io/post/2020/luojishiwei-2015-last/</link>
+      <link>https://wind13.github.io/post/2020/luojishiwei-2015-last/</link>
       <pubDate>Sun, 05 Jul 2020 11:01:47 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2020/luojishiwei-2015-last/</guid>
+      <guid>https://wind13.github.io/post/2020/luojishiwei-2015-last/</guid>
       <description>重温《罗辑思维》2015年最后一期 跟着人学 而不是跟着书本学，先降低我们的知识负担，它帮助我们筛选和归纳。 概念 通过掌握一个一个的新概念，搭建起我们的知识框架，再进来新的信息，我们知道把它放在哪儿？ 脏东西就是放错了地方的东西。 缝合 只有通过自己表达一次，才能知道去哪儿找。 教育就是那些我</description>
     </item>
     
     <item>
       <title>RPC 相关学习</title>
-      <link>https://wind13.gitee.io/post/2020/learn-rpc/</link>
+      <link>https://wind13.github.io/post/2020/learn-rpc/</link>
       <pubDate>Tue, 02 Jun 2020 21:28:33 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2020/learn-rpc/</guid>
+      <guid>https://wind13.github.io/post/2020/learn-rpc/</guid>
       <description>各家官网 gRPC Apache Dubbo™ 是一款高性能Java RPC框架。 SOFARPC 介绍 相关资料 重点资料 RPC 协议之争和选型要点 对于 RPC 框架，在架构上能够支持多语言非常重要。不同的业务场景，适合不同的语言，例如后端复杂业务逻辑使用 Java 开发效率更高，对于 API 网关或者边缘服务，适合 GO 语言。对于一些序列化框架，由于使用了</description>
     </item>
     
     <item>
       <title>樊登读书 《深度工作》 Deep Work Rules 听书记录</title>
-      <link>https://wind13.gitee.io/post/2020/fdds-deep-work-rules/</link>
+      <link>https://wind13.github.io/post/2020/fdds-deep-work-rules/</link>
       <pubDate>Thu, 05 Mar 2020 08:32:16 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2020/fdds-deep-work-rules/</guid>
+      <guid>https://wind13.github.io/post/2020/fdds-deep-work-rules/</guid>
       <description>概述 手机等现代工具，控制、瓜分我们的精力和时间，长此以往，大脑会形成一种生理上的疾病——心智残疾。 深度工作：无干扰、专注、职业活动，使认知能力达到极限。能够创造新价值、提升技能，且难以复制。 浮浅工作：干扰、事务性任务。不创造新价值，容易复制。 未来三种人会越来越贵： 能与机器对话的人</description>
     </item>
     
     <item>
       <title>危机时期可做的六件事</title>
-      <link>https://wind13.gitee.io/post/2020/what-we-can-do-in-crisis/</link>
+      <link>https://wind13.github.io/post/2020/what-we-can-do-in-crisis/</link>
       <pubDate>Sun, 23 Feb 2020 14:41:45 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2020/what-we-can-do-in-crisis/</guid>
+      <guid>https://wind13.github.io/post/2020/what-we-can-do-in-crisis/</guid>
       <description>今天看了樊登2月16日的直播录像，应该说对中小企业及创业者会有很大的启发和帮助，记录重点思路如下： 危机中可做的六件事 战略方面：转变为重信息、线上、分散（分布式）、反脆弱的模式； 内部培训：统一理念，增进感情，增进交流，提高领导力； 营销研发：打通销售通路，尝试更有效的营销方法； 公关合</description>
     </item>
     
     <item>
       <title>得到听书《坚持，一种可以养成的习惯》笔记</title>
-      <link>https://wind13.gitee.io/post/2020/dedao-keep-habit/</link>
+      <link>https://wind13.github.io/post/2020/dedao-keep-habit/</link>
       <pubDate>Fri, 21 Feb 2020 10:20:43 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2020/dedao-keep-habit/</guid>
+      <guid>https://wind13.github.io/post/2020/dedao-keep-habit/</guid>
       <description>得到听书《坚持，一种可以养成的习惯》笔记 坚持不下去的真相 习惯引力：阻碍坚持的力量。 个人思考：类似舒适区，所以要形成某个习惯就要把这事变成自己的舒适区， 习惯坚持的三种类型和三个阶段 三种类型： 行为习惯：写日记、整理家务等，一个月左右能养成习惯 身体习惯：减肥、早睡早起等，三个月左右能养</description>
     </item>
     
     <item>
       <title>观围棋历史与计算机的感想</title>
-      <link>https://wind13.gitee.io/post/2020/weiqi-game-computer/</link>
+      <link>https://wind13.github.io/post/2020/weiqi-game-computer/</link>
       <pubDate>Sun, 02 Feb 2020 16:33:26 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2020/weiqi-game-computer/</guid>
+      <guid>https://wind13.github.io/post/2020/weiqi-game-computer/</guid>
       <description>今天在家看一个很早的纪录片《【CCTV纪录片】两千年来的那些游戏【全7集】》，一开始就提到计算机围棋，说在1991年广州中山大学的化学系退休教授陈志行开发了围棋游戏《手谈》，到2005年，这款游戏已经打败了全世界其他的同类游戏，但是在与真正的人类棋手相比时，棋力依然很低，只相当于</description>
     </item>
     
     <item>
       <title>非局部均值滤波算法</title>
-      <link>https://wind13.gitee.io/post/2019/non-local-mean-filter/</link>
+      <link>https://wind13.github.io/post/2019/non-local-mean-filter/</link>
       <pubDate>Sat, 22 Jun 2019 19:59:26 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2019/non-local-mean-filter/</guid>
+      <guid>https://wind13.github.io/post/2019/non-local-mean-filter/</guid>
       <description>需求问题 关于图像降噪处理： 非局部均值滤波（non-local mean filter）基于块（block-wise）的算法怎么实现？编程语言类型为 python 解释 对添加了噪声的图像做nlm滤波：对每一个像素点（记为当前点），设定一个以其为中心的大小为p1*p2 的当前块，然后再设定一个以其为中心的大小</description>
     </item>
     
     <item>
       <title>OCR 开发研究</title>
-      <link>https://wind13.gitee.io/post/2018/ocr-develop-research/</link>
+      <link>https://wind13.github.io/post/2018/ocr-develop-research/</link>
       <pubDate>Sat, 02 Jun 2018 18:39:26 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2018/ocr-develop-research/</guid>
+      <guid>https://wind13.github.io/post/2018/ocr-develop-research/</guid>
       <description>遇到问题： 鉴权问题： 百度 API 需要首先创建应用，并且设置应用调用接口范围，如果不包含相应接口，后期在调用时会遇到 error_code = 6 (No permission to access data) 的错误提示。 创建应用后，每个应用会有相应的 AK(API Key) 和 SK (Secret Key)，可以用这两样来生成 token 用于接口调用验证。 另外百度个别接口会要求“真人认证”、“企业认证”等特殊要</description>
     </item>
     
     <item>
       <title>常用Git命令说明</title>
-      <link>https://wind13.gitee.io/post/2013/2013-12-23-gitoftenused/</link>
+      <link>https://wind13.github.io/post/2013/2013-12-23-gitoftenused/</link>
       <pubDate>Mon, 23 Dec 2013 16:00:11 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2013/2013-12-23-gitoftenused/</guid>
+      <guid>https://wind13.github.io/post/2013/2013-12-23-gitoftenused/</guid>
       <description>参考：史上最浅显易懂的Git教程！ 进入你的工作目录 cd yourworkpath 列出所有branch，当前所在branch前面有“*”号。 git branch -a 切换工作库 git checkout v1.5.1 合并另一个branch，通常是master git merge master 再切换回来 git checkout master 查看当前目录情况 git status 将当前目录中的修改提交到相应的库（branch）中 git commit -m &amp;ld</description>
     </item>
     
     <item>
       <title>Javascript框架及相关知识</title>
-      <link>https://wind13.gitee.io/post/2013/2013-12-24-jsframework/</link>
+      <link>https://wind13.github.io/post/2013/2013-12-24-jsframework/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2013/2013-12-24-jsframework/</guid>
+      <guid>https://wind13.github.io/post/2013/2013-12-24-jsframework/</guid>
       <description>综合框架 arale.js{:target=&amp;rdquo;_blank&amp;rdquo;} 支付宝的前端基础类库 Arale 基于 SeaJS 和 jQuery 等，目前新构建 2.0 版本。 demo: 计算器{:target=&amp;rdquo;_blank&amp;rdquo;} KISSY{:target=&amp;rdquo;_blank&amp;rdquo;} 是由淘宝前端攻城师们发起创建的一个开源 JS 类库。 Ender.js{:target=&amp;rdquo;_blank&amp;rdquo;} - Ender is a full featured package manager for your browser. 作者 Dustin Diaz{:target=&amp;rdquo;_blank&amp;rdquo;} 模块加载框架 Javascript模块化{:target=&amp;rdquo</description>
     </item>
     
     <item>
       <title>jQuery EasyUI 1.2.5 ChangeLog</title>
-      <link>https://wind13.gitee.io/post/2013/2013-12-23-version1.2.5/</link>
+      <link>https://wind13.github.io/post/2013/2013-12-23-version1.2.5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2013/2013-12-23-version1.2.5/</guid>
+      <guid>https://wind13.github.io/post/2013/2013-12-23-version1.2.5/</guid>
       <description>Bug tabs: When add a new tab panel with href property, the content page is loaded twice. fixed. form: Failed to call &amp;lsquo;load&amp;rsquo; method to load form input with complex name. fixed. draggable: End drag in ie9, the cursor cannot be restored. fixed. Improvement panel: The tools can be defined via html markup. tabs: Call &amp;lsquo;close&amp;rsquo; method to close specified tab panel, users can pass tab title or index of tab panel. Other methods such &amp;lsquo;select&amp;rsquo;,&amp;lsquo;getTab&amp;rsquo; and &amp;lsquo;exists&amp;rsquo; are similar to &amp;lsquo;close&amp;rsquo; method. tabs: Add &amp;lsquo;getTabIndex&amp;rsquo; method. tabs: Users can define mini tools on tabs. tree: The mouse must move a specified distance to begin drag and drop operation. resizable: Add &amp;lsquo;options&amp;rsquo;,&amp;lsquo;enable&amp;rsquo; and &amp;lsquo;disable&amp;rsquo; methods. numberbox: Allow users to change number format. datagrid: The subgrid is supported now. searchbox: Add &amp;lsquo;selectName&amp;rsquo; method to select searching type name.</description>
     </item>
     

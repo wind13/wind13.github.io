@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vant on 世风十三学堂</title>
-    <link>https://wind13.gitee.io/tags/vant/</link>
+    <link>https://wind13.github.io/tags/vant/</link>
     <description>Recent content in Vant on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 29 Jun 2020 15:18:18 +0800</lastBuildDate>
     
-	<atom:link href="https://wind13.gitee.io/tags/vant/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wind13.github.io/tags/vant/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>小程序开发框架选型</title>
-      <link>https://wind13.gitee.io/post/2020/weapp-framework/</link>
+      <link>https://wind13.github.io/post/2020/weapp-framework/</link>
       <pubDate>Mon, 29 Jun 2020 15:18:18 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2020/weapp-framework/</guid>
+      <guid>https://wind13.github.io/post/2020/weapp-framework/</guid>
       <description>WePY 最大的优点是非侵入式设计，可以与原生开发同时进行； 基于 Vue Observer 实现数据绑定； 可进行个性化定制的编译； 可以预测的缺陷是： 更接近原生开发，缺少封装的组件，大量组件工作需要自己做。 可以使用基于 WePY 的组件库，加快开发速度。 BeeUi 是基于wepy的一套小程序开发组件库 参考 MinUI 是基于微信小程序自定义组件</description>
     </item>
     

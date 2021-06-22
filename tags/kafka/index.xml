@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kafka on 世风十三学堂</title>
-    <link>https://wind13.gitee.io/tags/kafka/</link>
+    <link>https://wind13.github.io/tags/kafka/</link>
     <description>Recent content in Kafka on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 05 Jun 2020 14:40:52 +0800</lastBuildDate>
     
-	<atom:link href="https://wind13.gitee.io/tags/kafka/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wind13.github.io/tags/kafka/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Iot 物联网相关学习</title>
-      <link>https://wind13.gitee.io/post/2020/iot-learn/</link>
+      <link>https://wind13.github.io/post/2020/iot-learn/</link>
       <pubDate>Fri, 05 Jun 2020 14:40:52 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2020/iot-learn/</guid>
+      <guid>https://wind13.github.io/post/2020/iot-learn/</guid>
       <description>主流框架 SiteWhere 是一个面向物联网（IoT）的工业级开源应用支持平台。它提供了基于多租户微服务的基础架构，其中包括构建和部署IoT应用程序所需的关键功能。 SiteWhere基础架构和微服务部署在Kubernetes上，允许部署内部部署或几乎任何云提供商。 Apache Kafka，Zookeeper和</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GTD on 世风十三学堂</title>
-    <link>https://wind13.gitee.io/tags/gtd/</link>
+    <link>https://wind13.github.io/tags/gtd/</link>
     <description>Recent content in GTD on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 29 Jan 2020 11:32:02 +0800</lastBuildDate>
     
-	<atom:link href="https://wind13.gitee.io/tags/gtd/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wind13.github.io/tags/gtd/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>从 《WunderList 奇妙清单》到 《To do 微软待办》的思考</title>
-      <link>https://wind13.gitee.io/post/2020/wunder-list-to-do-thinking/</link>
+      <link>https://wind13.github.io/post/2020/wunder-list-to-do-thinking/</link>
       <pubDate>Wed, 29 Jan 2020 11:32:02 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2020/wunder-list-to-do-thinking/</guid>
+      <guid>https://wind13.github.io/post/2020/wunder-list-to-do-thinking/</guid>
       <description>整件事的大概背景： 微软于 2015 年收购《奇妙清单》，收购价格据悉在 1 亿到 2 亿美元之间，创始人 Reber 雷伯 也加入微软并继续带领应用团队。两年后，原《奇妙清单》团队为微软开发的《To-Do》问世，这款应用将逐步取代《奇妙清单》，微软也为老用户提供了迁移通道。2019年12月10日 微软宣布将于20</description>
     </item>
     

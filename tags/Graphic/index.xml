@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Graphic on 世风十三学堂</title>
-    <link>https://wind13.gitee.io/tags/graphic/</link>
+    <link>https://wind13.github.io/tags/graphic/</link>
     <description>Recent content in Graphic on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 10 Feb 2018 11:32:40 +0000</lastBuildDate>
     
-	<atom:link href="https://wind13.gitee.io/tags/graphic/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wind13.github.io/tags/graphic/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SVG 相关学习</title>
-      <link>https://wind13.gitee.io/post/2018/2018-02-10-svg-%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0/</link>
+      <link>https://wind13.github.io/post/2018/2018-02-10-svg-%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Sat, 10 Feb 2018 11:32:40 +0000</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2018/2018-02-10-svg-%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0/</guid>
+      <guid>https://wind13.github.io/post/2018/2018-02-10-svg-%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0/</guid>
       <description>JavaScript library SVG.js The lightweight library for manipulating and animating SVG. Bonsai A lightweight graphics library with an intuitive graphics API and an SVG renderer. Snap.svg The JavaScript SVG library for the modern web Draw library 15个最佳SVG的JavaScript库 推荐 SVG 图标素材网站 IconFont.cn 国内图标库网站 国内外社交网站矢量图标 FlatIcon The largest database of free icons available in PNG, SVG, EPS, PSD and BASE 64 formats. Worldvectorlogo 矢量标志的所有品牌 完全免费和无限制 Tools Gravit Designer 一款跨平台的设计工具，可以在 AppStore 中直接</description>
     </item>
     

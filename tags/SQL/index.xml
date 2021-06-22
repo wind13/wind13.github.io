@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SQL on 世风十三学堂</title>
-    <link>https://wind13.gitee.io/tags/sql/</link>
+    <link>https://wind13.github.io/tags/sql/</link>
     <description>Recent content in SQL on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     
-	<atom:link href="https://wind13.gitee.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wind13.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>DB, SQL 技术相关</title>
-      <link>https://wind13.gitee.io/post/2016/2016-12-18-db-collection/</link>
+      <link>https://wind13.github.io/post/2016/2016-12-18-db-collection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2016/2016-12-18-db-collection/</guid>
+      <guid>https://wind13.github.io/post/2016/2016-12-18-db-collection/</guid>
       <description>DB, SQL 技术相关 Presto（中文站）是一个运行在多台服务器上的分布式系统。</description>
     </item>
     

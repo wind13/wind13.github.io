@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>工程化 on 世风十三学堂</title>
-    <link>https://wind13.gitee.io/tags/%E5%B7%A5%E7%A8%8B%E5%8C%96/</link>
+    <link>https://wind13.github.io/tags/%E5%B7%A5%E7%A8%8B%E5%8C%96/</link>
     <description>Recent content in 工程化 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 19 Feb 2021 16:51:17 +0800</lastBuildDate>
     
-	<atom:link href="https://wind13.gitee.io/tags/%E5%B7%A5%E7%A8%8B%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wind13.github.io/tags/%E5%B7%A5%E7%A8%8B%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>前端工程化学习笔记</title>
-      <link>https://wind13.gitee.io/post/2021/learn-front-end-engineer/</link>
+      <link>https://wind13.github.io/post/2021/learn-front-end-engineer/</link>
       <pubDate>Fri, 19 Feb 2021 16:51:17 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2021/learn-front-end-engineer/</guid>
+      <guid>https://wind13.github.io/post/2021/learn-front-end-engineer/</guid>
       <description>前端工程化学习笔记 拉勾教育《前端工程化精讲》课程 开发效率 脚手架（Scaffold）工具 快速生成 基础代码和目录 package.json, *.lock 文件 项目技术栈 webpack 配置文件 检查工具、单元测试工具 最佳实践 自定义模板 云开发 无代码工具 脚手架工具 Yeoman 通用的，用于一些开发流程里特定片段代码的生成 Create-React-App(CRA) react-rewired customize-cra react-scripts 开发流程集成工具 Vue CLI 有交</description>
     </item>
     

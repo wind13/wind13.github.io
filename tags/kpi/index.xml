@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>KPI on 世风十三学堂</title>
-    <link>https://wind13.gitee.io/tags/kpi/</link>
+    <link>https://wind13.github.io/tags/kpi/</link>
     <description>Recent content in KPI on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 26 Mar 2020 10:08:34 +0800</lastBuildDate>
     
-	<atom:link href="https://wind13.gitee.io/tags/kpi/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wind13.github.io/tags/kpi/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>OKR 思考</title>
-      <link>https://wind13.gitee.io/post/2020/okr-thinking/</link>
+      <link>https://wind13.github.io/post/2020/okr-thinking/</link>
       <pubDate>Thu, 26 Mar 2020 10:08:34 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2020/okr-thinking/</guid>
+      <guid>https://wind13.github.io/post/2020/okr-thinking/</guid>
       <description>讨论 OKR 的对话片段 说：OKR 总结就几个字：定目标，追进展，拿结果 问：更关键的是说，什么样的目标？怎么观察进展？获得怎样的结果？ 答：这就牵扯到工作细节了。先明确目标，然后一定要将目标写下来。查看进展可以利用工作清单，最好就是任务管理工具。结果就是相应的反馈。当然也要科学合理的制定目标</description>
     </item>
     

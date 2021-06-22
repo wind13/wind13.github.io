@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>session on 世风十三学堂</title>
-    <link>https://wind13.gitee.io/tags/session/</link>
+    <link>https://wind13.github.io/tags/session/</link>
     <description>Recent content in session on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     
-	<atom:link href="https://wind13.gitee.io/tags/session/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wind13.github.io/tags/session/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>FunctionTest中如何取得session的值</title>
-      <link>https://wind13.gitee.io/post/2013/2013-12-13-functiontestsession/</link>
+      <link>https://wind13.github.io/post/2013/2013-12-13-functiontestsession/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2013/2013-12-13-functiontestsession/</guid>
+      <guid>https://wind13.github.io/post/2013/2013-12-13-functiontestsession/</guid>
       <description>原文摘抄自：https://groups.google.com/d/msg/play-framework/-/iQLX-uLwHWsJ （可能因墙访问不了……我是在邮件列表中收集的） 需求和问题 原问及简单翻译说明如下： Given a simple action:【简单给一个action如下：】 :::java public static void testAction() { session.put(&amp;quot;worked&amp;quot;,</description>
     </item>
     

@@ -2,65 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>play1x on 世风十三学堂</title>
-    <link>https://wind13.gitee.io/tags/play1x/</link>
+    <link>https://wind13.github.io/tags/play1x/</link>
     <description>Recent content in play1x on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     
-	<atom:link href="https://wind13.gitee.io/tags/play1x/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wind13.github.io/tags/play1x/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Play!中如何用module组织多个相关项目？</title>
-      <link>https://wind13.gitee.io/post/2013/2013-12-13-multiproject/</link>
+      <link>https://wind13.github.io/post/2013/2013-12-13-multiproject/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2013/2013-12-13-multiproject/</guid>
+      <guid>https://wind13.github.io/post/2013/2013-12-13-multiproject/</guid>
       <description>首先按业务需求划分为多个应用，应用就是用 play new xxx来创建的。 其次将公用部分划分为多个子项目或称子模块，就是用 play new-module创建的。 这些项目均并列导入eclipse中，应用引用相应需要的子项目，需要在application.conf中添加，有多个就添加多行： module.base=../base module.common=../common 在eclip</description>
     </item>
     
     <item>
       <title>Play!技巧问答</title>
-      <link>https://wind13.gitee.io/post/2014/2014-02-26-playqaindex/</link>
+      <link>https://wind13.github.io/post/2014/2014-02-26-playqaindex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2014/2014-02-26-playqaindex/</guid>
+      <guid>https://wind13.github.io/post/2014/2014-02-26-playqaindex/</guid>
       <description>Play!中如何用module组织多个相关项目 FunctionTest测试中如何取得Session值 Xml域名空间（WS.(url).get().getXml()无法取得带命名空间Document对象）识别问题 在Play!中如何实现类似过滤器的功能 如何同时使用http和https</description>
     </item>
     
     <item>
       <title>Xml 域名空间识别问题</title>
-      <link>https://wind13.gitee.io/post/2013/2013-09-26-xmlawarenamespace/</link>
+      <link>https://wind13.github.io/post/2013/2013-09-26-xmlawarenamespace/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2013/2013-09-26-xmlawarenamespace/</guid>
+      <guid>https://wind13.github.io/post/2013/2013-09-26-xmlawarenamespace/</guid>
       <description>相关文档见：官方ticket任务#823 Yes, this is correct. In the .getXML function the namespace ness is not set. 是的，有这个问题。在.getXML方法中允许命名空间（namespace）没有设置。 This line should be changed from: 这一行应该从这样： :::java DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder(); to: 变成： :::java DocumentBuilderFactory xmlFact = DocumentBuilderFactory.newInstance(); xmlFact.setNamespace(true); DocumentBuilder builder = xmlFact.newDocumentBuilder(); The same problem exists in the XML lib in the getDocument function: 同样的问题在XML的包里的getDo</description>
     </item>
     
     <item>
       <title>Xml 域名空间识别问题</title>
-      <link>https://wind13.gitee.io/post/2013/2013-12-13-xmldomainbug/</link>
+      <link>https://wind13.github.io/post/2013/2013-12-13-xmldomainbug/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2013/2013-12-13-xmldomainbug/</guid>
+      <guid>https://wind13.github.io/post/2013/2013-12-13-xmldomainbug/</guid>
       <description>相关文档见：官方ticket任务#823 Yes, this is correct. In the .getXML function the namespace ness is not set. 是的，有这个问题。在.getXML方法中允许命名空间（namespace）没有设置。 This line should be changed from: 这一行应该从这样： :::java DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder(); to: 变成： :::java DocumentBuilderFactory xmlFact = DocumentBuilderFactory.newInstance(); xmlFact.setNamespace(true); DocumentBuilder builder = xmlFact.newDocumentBuilder(); The same problem exists in the XML lib in the getDocument function: 同样的问题在XML的包里的getDo</description>
     </item>
     
     <item>
       <title>在Play!中如何实现类似过滤器的功能？</title>
-      <link>https://wind13.gitee.io/post/2013/2013-12-13-filterallcontroller/</link>
+      <link>https://wind13.github.io/post/2013/2013-12-13-filterallcontroller/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2013/2013-12-13-filterallcontroller/</guid>
+      <guid>https://wind13.github.io/post/2013/2013-12-13-filterallcontroller/</guid>
       <description>如果是单个Controller要实现过滤，只需写一个public static 的方法，加上@Before注解即可达到执行所有action前先执行这个方法的目的。 如果想实现全局即整个站点的action都被过滤，就需要写个BaseController（名字随便起，如SuperController</description>
     </item>
     
     <item>
       <title>如何同时使用http和https协议</title>
-      <link>https://wind13.gitee.io/post/2013/2013-12-13-userhttps/</link>
+      <link>https://wind13.github.io/post/2013/2013-12-13-userhttps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2013/2013-12-13-userhttps/</guid>
+      <guid>https://wind13.github.io/post/2013/2013-12-13-userhttps/</guid>
       <description>首先看官方文档 用openssl命令生成自己的签名文档 openssl genrsa 1024 &amp;gt; host.key openssl req -new -x509 -nodes -sha1 -days 365 -key host.key &amp;gt; host.cert 生成签名时需回答类似这样的问题： Country Name (2 letter code) [XX]: State or Province Name (full name) []: Locality Name (eg, city) [Default City]: Organization Name (eg, company) [Default Company Ltd]: Organizational Unit Name (eg, section) []: Common Name (eg, your name or your server&#39;s hostname) []: Email Address []: 最终会得到两个文件：host.key和host.cert 然后在appli</description>
     </item>
     

@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>瓶颈 on 世风十三学堂</title>
-    <link>https://wind13.gitee.io/tags/%E7%93%B6%E9%A2%88/</link>
+    <link>https://wind13.github.io/tags/%E7%93%B6%E9%A2%88/</link>
     <description>Recent content in 瓶颈 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 12 Aug 2020 17:00:17 +0800</lastBuildDate>
     
-	<atom:link href="https://wind13.gitee.io/tags/%E7%93%B6%E9%A2%88/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wind13.github.io/tags/%E7%93%B6%E9%A2%88/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>先进管理思想建议方案</title>
-      <link>https://wind13.gitee.io/post/2020/manage-system/</link>
+      <link>https://wind13.github.io/post/2020/manage-system/</link>
       <pubDate>Wed, 12 Aug 2020 17:00:17 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2020/manage-system/</guid>
+      <guid>https://wind13.github.io/post/2020/manage-system/</guid>
       <description>公司层面：OKR 管理思想 概述：OKR（Objectives and Key Results）即目标与关键成果法，是一套明确和跟踪目标及其完成情况的管理工具和方法。 OKR的主要目标是明确公司和团队的“目标”以及明确每个目标达成的可衡量的“关键结果”。OKR被定义为“一个重要的思考框架与不断发展的</description>
     </item>
     
     <item>
       <title>技术方案要从解决现实世界的问题开始</title>
-      <link>https://wind13.gitee.io/post/2020/business-optimize/</link>
+      <link>https://wind13.github.io/post/2020/business-optimize/</link>
       <pubDate>Sun, 24 May 2020 11:25:06 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2020/business-optimize/</guid>
+      <guid>https://wind13.github.io/post/2020/business-optimize/</guid>
       <description>技术方案要从解决现实世界的问题开始 技术群里讨论一个技术方案的问题，大概描述如下： 一个单据处理系统，上游系统会不断产生新的单据，数量比较大，频率也比较高； 当前系统分为两个环节，一个接单环节，一个转单环节； 接单环节负责将单据入库；保存数据库目前速度跟得上，可以保证上游系统的单据全部入</description>
     </item>
     

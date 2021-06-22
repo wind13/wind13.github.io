@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>egghead on 世风十三学堂</title>
-    <link>https://wind13.gitee.io/tags/egghead/</link>
+    <link>https://wind13.github.io/tags/egghead/</link>
     <description>Recent content in egghead on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 24 Mar 2021 11:37:15 +0800</lastBuildDate>
     
-	<atom:link href="https://wind13.gitee.io/tags/egghead/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wind13.github.io/tags/egghead/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Digital Garden</title>
-      <link>https://wind13.gitee.io/post/2021/blog.digital-garden/</link>
+      <link>https://wind13.github.io/post/2021/blog.digital-garden/</link>
       <pubDate>Wed, 24 Mar 2021 11:37:15 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2021/blog.digital-garden/</guid>
+      <guid>https://wind13.github.io/post/2021/blog.digital-garden/</guid>
       <description>Digital Garden 源自以下文章的启发： [[#idea|tag.idea]] My blog is a digital garden, not a blog Joel Hooks at egghead.io Stop Giving af and Start Writing More 重新思考“博客”的概念和定位，确实不应该把个人网站当作博客来看，每篇文章都要精心打磨，有些麻烦，作者的思考是把它当作“数字花园”，我也有同感的，就象我在 Dendron 里记录了很多东西，但在博客上并没有发布多少。 看作博客，随着时</description>
     </item>
     

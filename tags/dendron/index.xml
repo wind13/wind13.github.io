@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dendron on 世风十三学堂</title>
-    <link>https://wind13.gitee.io/tags/dendron/</link>
+    <link>https://wind13.github.io/tags/dendron/</link>
     <description>Recent content in Dendron on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 03 Jan 2021 11:24:11 +0800</lastBuildDate>
     
-	<atom:link href="https://wind13.gitee.io/tags/dendron/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wind13.github.io/tags/dendron/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>终极笔记 Dendron</title>
-      <link>https://wind13.gitee.io/post/2021/ultimate-pkm-solution-dendron/</link>
+      <link>https://wind13.github.io/post/2021/ultimate-pkm-solution-dendron/</link>
       <pubDate>Sun, 03 Jan 2021 11:24:11 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2021/ultimate-pkm-solution-dendron/</guid>
+      <guid>https://wind13.github.io/post/2021/ultimate-pkm-solution-dendron/</guid>
       <description>我想每个知识工作者都会有自己的个人知识管理解决方案，而且也都在不断地进化和改善中，还记得最早的时候，我们是没有这些概念的，那时候，不管把信息记在哪儿，随手记下来就算了，用过之后也就忘了或者删掉了。慢慢地我们意识到一些信息可能是有用的，需要保留下来的，于是我们用各种方式进行保存，建</description>
     </item>
     

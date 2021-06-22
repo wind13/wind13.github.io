@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CI/CD on 世风十三学堂</title>
-    <link>https://wind13.gitee.io/tags/ci/cd/</link>
+    <link>https://wind13.github.io/tags/ci/cd/</link>
     <description>Recent content in CI/CD on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 09 Aug 2020 11:02:19 +0800</lastBuildDate>
     
-	<atom:link href="https://wind13.gitee.io/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wind13.github.io/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>开发团队能力</title>
-      <link>https://wind13.gitee.io/post/2020/team-ability.md/</link>
+      <link>https://wind13.github.io/post/2020/team-ability.md/</link>
       <pubDate>Sun, 09 Aug 2020 11:02:19 +0800</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2020/team-ability.md/</guid>
+      <guid>https://wind13.github.io/post/2020/team-ability.md/</guid>
       <description>结论 以终为始（TDD）+ 工程思维（CI/CD）， 团队能做好这两方面，就可以达到 80分了。 以终为始 这个词来自《高效能人士的7个习惯》，是指做事情要先明确目标，以目标为出发点来思考做法，这恰好和极限编程中的 TDD 一样，团队需要将需求拆解为较小的可实现的目标，再由此目标写出相应的单元测试或</description>
     </item>
     

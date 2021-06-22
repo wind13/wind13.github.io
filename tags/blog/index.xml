@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on 世风十三学堂</title>
-    <link>https://wind13.gitee.io/tags/blog/</link>
+    <link>https://wind13.github.io/tags/blog/</link>
     <description>Recent content in Blog on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 21 Sep 2018 10:25:07 +0000</lastBuildDate>
     
-	<atom:link href="https://wind13.gitee.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wind13.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>当日笔记-20180921</title>
-      <link>https://wind13.gitee.io/post/2018/2018-09-21-daily-note-20180921/</link>
+      <link>https://wind13.github.io/post/2018/2018-09-21-daily-note-20180921/</link>
       <pubDate>Fri, 21 Sep 2018 10:25:07 +0000</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2018/2018-09-21-daily-note-20180921/</guid>
+      <guid>https://wind13.github.io/post/2018/2018-09-21-daily-note-20180921/</guid>
       <description>准备做的事 [x] 尝试使用 Hugo； 目录结构： archetypes：包括内容类型，在创建新内容时自动生成内容的配置 content：包括网站内容，全部使用markdown格式 layouts：包括了网站的模版，决定内容如何呈现 static：包括了css, js, fonts, media等，决定网站的外观 常用</description>
     </item>
     
     <item>
       <title>2018年第一折腾</title>
-      <link>https://wind13.gitee.io/post/2018/2018-01-23-2018-first-shot/</link>
+      <link>https://wind13.github.io/post/2018/2018-01-23-2018-first-shot/</link>
       <pubDate>Tue, 23 Jan 2018 16:19:50 +0000</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2018/2018-01-23-2018-first-shot/</guid>
+      <guid>https://wind13.github.io/post/2018/2018-01-23-2018-first-shot/</guid>
       <description>花了两天时间，绕了些弯路，总算把 Blog 搞得差不多满意了，用了 Next! 的主题，用了 hexo 的服务技术。 之前用的 JekyllBootstrap，本来还能凑合用，但是那个项目很长时间都没再维护更新了，仅有的几个主题也看烦了，影响了写博客和记录的心情，中间还转而去用一些笔记工具，用到高级功能又要收费，想</description>
     </item>
     
     <item>
       <title>收集的盒子</title>
-      <link>https://wind13.gitee.io/post/2016/2016-08-26-collection-box/</link>
+      <link>https://wind13.github.io/post/2016/2016-08-26-collection-box/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wind13.gitee.io/post/2016/2016-08-26-collection-box/</guid>
+      <guid>https://wind13.github.io/post/2016/2016-08-26-collection-box/</guid>
       <description>链接收集 网页设计巅峰之作{:target=&amp;rdquo;_blank&amp;rdquo;} MDX Markdown for the component era, 在 markdown 文档中加入 JSX 组件，可用于 React 项目。 为 Web 开发者提供的 16 本优秀的 E-BOOK{:target=&amp;rdquo;_blank&amp;rdquo;} 语义化版本 2.0.0{:target=&amp;rdquo;_blank&amp;rdquo;} 软件的版本号不是随便乱起的，这里有相应的说明和规范。 Publish Websites Like a BOSS B]{:target=&amp;rdquo;_blank&amp;rdquo;} 发布静态网站、Blog 的系统，与 Jekyll-Bootstrap 类似吧~ Static</description>
     </item>
     
