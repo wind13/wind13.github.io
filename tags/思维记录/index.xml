@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>思维记录 on 世风十三学堂</title>
+    <link>https://wind13.gitee.io/tags/%E6%80%9D%E7%BB%B4%E8%AE%B0%E5%BD%95/</link>
+    <description>Recent content in 思维记录 on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 19 May 2020 10:11:29 +0800</lastBuildDate>
+    
+	<atom:link href="https://wind13.gitee.io/tags/%E6%80%9D%E7%BB%B4%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>思考落实到文字</title>
+      <link>https://wind13.gitee.io/post/2020/thinking-to-text/</link>
+      <pubDate>Tue, 19 May 2020 10:11:29 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/thinking-to-text/</guid>
+      <description>倡议大家把自己的思考都记录到自己的博客或者公众号上，把思维落实到 markdown 这样的纯文本中，其自带的优势可参看此文：《纯文本的威力》 我们将思考仔细地整理成文字，虽然相对直接说会更耗时间，但看的人却可以很快地了解整个思路，而且有以下一些好处： 中途不会被打断，一些论点可能刚一说出来，就会面临争</description>
+    </item>
+    
+  </channel>
+</rss>

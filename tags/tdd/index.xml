@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TDD on 世风十三学堂</title>
+    <link>https://wind13.gitee.io/tags/tdd/</link>
+    <description>Recent content in TDD on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 18 Mar 2021 17:34:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://wind13.gitee.io/tags/tdd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>E2E tests, Integrated tests vs Collaboration and Contract Tests</title>
+      <link>https://wind13.gitee.io/post/2021/blog.collaboration-contract-tests/</link>
+      <pubDate>Thu, 18 Mar 2021 17:34:44 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2021/blog.collaboration-contract-tests/</guid>
+      <description>E2E tests, Integrated tests vs Collaboration and Contract tests 测试金字塔 参考以下文章，减少 E2E 测试的比例，Google 的建议：70% unit tests, 20% integration tests, and 10% end-to-end tests. Just Say No to More End-to-End Tests 这样看来， Pact.io 类似的功能相当于 Integration tests 层，可能是目前大多数团队所忽略的部分？ 然而看到下面这篇和系列文章，又说 Integrated Tests are a Scam(坑/骗局) Integrated Tests Are A Scam Series 下面这篇又说 Integration Test 不同</description>
+    </item>
+    
+    <item>
+      <title>参与 Element3 TDD 的感受</title>
+      <link>https://wind13.gitee.io/post/2021/element3-tdd-thinking/</link>
+      <pubDate>Sun, 07 Feb 2021 09:48:33 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2021/element3-tdd-thinking/</guid>
+      <description>参与 Element3 开源项目，使用 TDD 的一些感受 本文已被掘金花果山技术团队转载 TDD的困惑 很多项目团队并没有使用 TDD （测试驱动开发）的开发方式，我想这在目前的开发团队中占比非常高，特别是中小型公司的前端开发团队，几乎可以说是“全军覆没”，为什么？原因可能是以下所列的一些： TDD 太麻烦，增加了工作量 TDD 太</description>
+    </item>
+    
+    <item>
+      <title>《实现模式》学习笔记</title>
+      <link>https://wind13.gitee.io/post/2020/implementation-patterns-learn/</link>
+      <pubDate>Sat, 05 Dec 2020 23:12:40 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/implementation-patterns-learn/</guid>
+      <description>Learning 《Implementation Patterns》 —— 编写可读的代码 在软件开发中有大量的开销都被用在理解现有代码上了。 范围的管理对于软件开发和写书都一样重要。 好的代码是有意义的。 软件要取得商业成功或者被广泛使用，“好的代码质量”即不必要也不充分。 尽管代码质量不能保证美好的未来，但</description>
+    </item>
+    
+    <item>
+      <title>软件开发团队如何高质量、高效率？</title>
+      <link>https://wind13.gitee.io/post/2020/software-develop-improve/</link>
+      <pubDate>Sun, 09 Aug 2020 18:30:17 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/software-develop-improve/</guid>
+      <description>这个话题很大，也不简单，有很多本书都从不同的角度在讲这个事情，比如《人月神话》、《人件》、《项目管理修炼之道》、《硝烟中的scrum和XP》等。 不过，此文不想那么系统全面地讨论这个问题，而是希望以一个非常直白的方式来讨论一下，以便使完全没有接触过软件工程的人也能有个感性的认识，而</description>
+    </item>
+    
+    <item>
+      <title>开发团队能力</title>
+      <link>https://wind13.gitee.io/post/2020/team-ability.md/</link>
+      <pubDate>Sun, 09 Aug 2020 11:02:19 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/team-ability.md/</guid>
+      <description>结论 以终为始（TDD）+ 工程思维（CI/CD）， 团队能做好这两方面，就可以达到 80分了。 以终为始 这个词来自《高效能人士的7个习惯》，是指做事情要先明确目标，以目标为出发点来思考做法，这恰好和极限编程中的 TDD 一样，团队需要将需求拆解为较小的可实现的目标，再由此目标写出相应的单元测试或</description>
+    </item>
+    
+    <item>
+      <title>复习 FizzBuzz</title>
+      <link>https://wind13.gitee.io/post/2020/fizz-buzz-revise/</link>
+      <pubDate>Thu, 16 Jul 2020 12:26:22 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/fizz-buzz-revise/</guid>
+      <description>复习 FizzBuzz 题目 游戏的规则是： 让所有学生，假设为 100 人拍成一队，然后按顺序报数。 学生报数时，如果所报数字是3的倍数，那么不能说该数字，而要说Fizz；如果所报数字是5的倍数，那么要说Buzz。 需求问题： 被3和5整除返回什么？ 有的同学就直接脑补了： 脑补一：能被3和5整除，那就是先被3整除呗</description>
+    </item>
+    
+  </channel>
+</rss>

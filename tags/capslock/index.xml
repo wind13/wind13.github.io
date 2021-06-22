@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Capslock on 世风十三学堂</title>
+    <link>https://wind13.gitee.io/tags/capslock/</link>
+    <description>Recent content in Capslock on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 03 Jun 2020 13:28:34 +0800</lastBuildDate>
+    
+	<atom:link href="https://wind13.gitee.io/tags/capslock/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>我的 Windows 开发环境</title>
+      <link>https://wind13.gitee.io/post/2020/my-windows-dev-env/</link>
+      <pubDate>Wed, 03 Jun 2020 13:28:34 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/my-windows-dev-env/</guid>
+      <description>需安装的软件工具 注：如果国外文件下载不了，可尝试国内下载 Google scoop 或 Chocolatey 安装好 choco 或 scoop 后，可以通过命令安装其他软件，个人可以维护一个常用的软件列表，写成一个脚本，这样每次一台新的 Windows 系统，就可以通过这个脚本完成80~90%的装机工作了。 Wox Github Download 里面还会附带 Python 和 Everything 的安装文件。 cmder，安装好之</description>
+    </item>
+    
+  </channel>
+</rss>

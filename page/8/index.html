@@ -1,2427 +1,1051 @@
-<!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next mist use-motion" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="theme-color" content="#222">
-
-
-
-  
-  
-  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
-
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
-
-
-
-
-
-
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Mist',
-    version: '6.0.2',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-  
-
-
-
-
-  
-  <meta name="keywords" content="Hexo, NexT">
-
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Wind13&#39;s Blog">
-<meta property="og:url" content="http://wind13.github.io/page/8/index.html">
-<meta property="og:site_name" content="Wind13&#39;s Blog">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Wind13&#39;s Blog">
-
-
-
-  <link rel="alternate" href="/atom.xml" title="Wind13's Blog" type="application/atom+xml">
-
-
-
-
-  <link rel="canonical" href="http://wind13.github.io/page/8/">
-
-
-  <title>Wind13's Blog</title>
-  
-
-
-
-
-
-
-
-
-
-  <noscript>
-  <style type="text/css">
-    .use-motion .motion-element,
-    .use-motion .brand,
-    .use-motion .menu-item,
-    .sidebar-inner,
-    .use-motion .post-block,
-    .use-motion .pagination,
-    .use-motion .comments,
-    .use-motion .post-header,
-    .use-motion .post-body,
-    .use-motion .collection-title { opacity: initial; }
-
-    .use-motion .logo,
-    .use-motion .site-title,
-    .use-motion .site-subtitle {
-      opacity: initial;
-      top: initial;
-    }
-
-    .use-motion {
-      .logo-line-before i { left: initial; }
-      .logo-line-after i { right: initial; }
-    }
-  </style>
-</noscript>
-
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta name="generator" content="Hugo 0.58.3" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>世风十三学堂 | 终身成长、正念编程的全栈架构师，TDD极限敏捷教练咨询师，企业长期增长咨询师</title>
+    <meta property="og:title" content="世风十三学堂 | 终身成长、正念编程的全栈架构师，TDD极限敏捷教练咨询师，企业长期增长咨询师">
+    <meta property="og:type" content="website">
+    <meta name="Keywords" content="Programing">
+    <meta name="description" content="This is the blog of Wind13">
+    <meta property="og:url" content="https://wind13.gitee.io/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <link rel="alternate" type="application/rss+xml+xml" href="https://wind13.gitee.io/index.xml" title="世风十三学堂" />
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="/kityminder/mindmap.css?_=1416390706100" type="text/css" rel="stylesheet" />
+    <link href="/kityminder/kityminder.core.css?_=1416390706100" type="text/css" rel="stylesheet" />
+    <script src="/kityminder/kity.min.js?_=1416390706100" charset="utf-8"></script>
+    <script src="/kityminder/kityminder.core.min.js?_=1416390706100" charset="utf-8"></script>
+    <script src="/kityminder/mindmap.min.js?_=1416390706100" charset="utf-8"></script>
+
+    
+
+
+    
+    
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"> <div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Wind13's Blog</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-      
-        <p class="site-subtitle"></p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
-        </li>
-      
-
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="javascript:;" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
-        </li>
-      
-    </ul>
-  
-
-  
-    <div class="site-search">
-      
-  <div class="popup search-popup local-search-popup">
-  <div class="local-search-header clearfix">
-    <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-    <div class="local-search-input-wrapper">
-      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
-    </div>
-  </div>
-  <div id="local-search-result"></div>
-</div>
-
-
-
-    </div>
-  
-</nav>
-
-
-  
-
-
-
- </div>
-    </header>
-
-    
-
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/23/confession214/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Simon J S Wind13 Liu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wind13's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
                 
-                <a class="post-title-link" href="/2013/12/23/confession214/" itemprop="url">未命名</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-12-23T00:00:00+00:00">2013-12-23</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/playscala/" itemprop="url" rel="index"><span itemprop="name">playscala</span></a></span>
-
+                    <h1>
+                        <a id="logo" href="https://wind13.gitee.io/">
+                            世风十三学堂
+                        </a>
+                    </h1>
                 
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          情人节程序员经典表白我能把整个世界都抽象成一个类……
-但是没办法把你变成我的对象…… 
-想让你成为私有常量，外部函数无法访问你……
-又想让你变成全局常量，在整个生命周期随时随地都可以调用你……
-因为世界上没有这样的常量……
-所以我无法定义你……
-我可以重载甚至覆盖任何一种方法……
-但是我却不能重载对
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2013/12/23/confession214/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/23/version1.2.5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Simon J S Wind13 Liu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wind13's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2013/12/23/version1.2.5/" itemprop="url">jQuery EasyUI 1.2.5 ChangeLog</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-12-23T00:00:00+00:00">2013-12-23</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/devtech-js/" itemprop="url" rel="index"><span itemprop="name">devtech js</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-Bug
-
-tabs: When add a new tab panel with href property, the content page is loaded twice. fixed.
-form: Failed to call ‘load’ method to load form inpu
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2013/12/23/version1.2.5/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/cacheremovetime/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Simon J S Wind13 Liu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wind13's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2013/12/13/cacheremovetime/" itemprop="url">未命名</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-12-13T00:00:00+00:00">2013-12-13</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/playscala/" itemprop="url" rel="index"><span itemprop="name">playscala</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          移除Cache可以有时间参数吗？是的，可以，使用下面这样的语句即可：
-:::java
-Cache.set(&quot;some&quot;, null, 0)其中最后一个参数是时间，单位是秒。详见源代码。
-
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2013/12/13/cacheremovetime/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/functiontestsession/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Simon J S Wind13 Liu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wind13's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2013/12/13/functiontestsession/" itemprop="url">FunctionTest中如何取得session的值</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-12-13T00:00:00+00:00">2013-12-13</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/play1x/" itemprop="url" rel="index"><span itemprop="name">play1x</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          原文摘抄自：https://groups.google.com/d/msg/play-framework/-/iQLX-uLwHWsJ （可能因墙访问不了……我是在邮件列表中收集的）
-需求和问题原问及简单翻译说明如下：
-Given a simple action:【简单给一个action如下：】
-:
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2013/12/13/functiontestsession/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/deepqa/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Simon J S Wind13 Liu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wind13's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2013/12/13/deepqa/" itemprop="url">未命名</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-12-13T00:00:00+00:00">2013-12-13</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/playscala/" itemprop="url" rel="index"><span itemprop="name">playscala</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Playframework热情交流群里的邮件讨论Freewind@play23月17日 10:21昨天有感于play源代码里的一些强大功能和精巧实现，提出了以下问题，这些问题在群里和几位朋友简单讨论过，但我觉得整理一下会有用。
-play的一些打破常规的做法，让我非常欣赏和赞叹。希望大家不要仅满足于使
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2013/12/13/deepqa/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/hqlcount1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Simon J S Wind13 Liu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wind13's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2013/12/13/hqlcount1/" itemprop="url">未命名</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-12-13T00:00:00+00:00">2013-12-13</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/playscala/" itemprop="url" rel="index"><span itemprop="name">playscala</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          一个Hql中count判断的写法:::java
-    public static void test() {
-        String hql = &quot;select o.teacher.id, o.teacher.goodStudentCount from Student o&quot
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2013/12/13/hqlcount1/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/cmdchinese/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Simon J S Wind13 Liu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wind13's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2013/12/13/cmdchinese/" itemprop="url">未命名</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-12-13T00:00:00+00:00">2013-12-13</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/playscala/" itemprop="url" rel="index"><span itemprop="name">playscala</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Play在Windows的cmd窗口中中文乱码的解决办法play在cmd 下，system.out()输出的中文都是乱码
-首先，可参考：cmd chcp命令切换字符格式
-或参考：在Windows的CMD中如何设置支持UTF8编码?
-如果 chcp 65001 / chcp 936 改变cmd字符集都
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2013/12/13/cmdchinese/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/detachedpersist/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Simon J S Wind13 Liu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wind13's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2013/12/13/detachedpersist/" itemprop="url">未命名</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-12-13T00:00:00+00:00">2013-12-13</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/playscala/" itemprop="url" rel="index"><span itemprop="name">playscala</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          分离实体持久化出错（PersistentObjectException: detached entity passed to persist）问题在Play!使用中，会用到Job来异步执行一些耗时的操作，此时很容易犯这样的错误：
-:::java
-public class SomeLongJob ex
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2013/12/13/detachedpersist/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/filterallcontroller/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Simon J S Wind13 Liu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wind13's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2013/12/13/filterallcontroller/" itemprop="url">在Play!中如何实现类似过滤器的功能？</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-12-13T00:00:00+00:00">2013-12-13</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/play1x/" itemprop="url" rel="index"><span itemprop="name">play1x</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          如果是单个Controller要实现过滤，只需写一个public static 的方法，加上@Before注解即可达到执行所有action前先执行这个方法的目的。
-如果想实现全局即整个站点的action都被过滤，就需要写个BaseController（名字随便起，如SuperController，A
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2013/12/13/filterallcontroller/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wind13.github.io/2013/12/13/multiproject/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Simon J S Wind13 Liu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wind13's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2013/12/13/multiproject/" itemprop="url">Play!中如何用module组织多个相关项目？</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-12-13T00:00:00+00:00">2013-12-13</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/play1x/" itemprop="url" rel="index"><span itemprop="name">play1x</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-首先按业务需求划分为多个应用，应用就是用 play new xxx来创建的。
-
-其次将公用部分划分为多个子项目或称子模块，就是用 play new-module创建的。
-
-这些项目均并列导入eclipse中，应用引用相应需要的子项目，需要在application.conf中添加，有多个就添加多行：
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2013/12/13/multiproject/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">Simon J S Wind13 Liu</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">92</span>
-                    <span class="site-state-item-name">日志</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  <a href="/categories/index.html">
-                    <span class="site-state-item-count">15</span>
-                    <span class="site-state-item-name">分类</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  <a href="/tags/index.html">
-                    <span class="site-state-item-count">106</span>
-                    <span class="site-state-item-name">标签</span>
-                  </a>
-                </div>
-              
-            </nav>
-          
-
-          
-            <div class="feed-link motion-element">
-              <a href="/atom.xml" rel="alternate">
-                <i class="fa fa-rss"></i>
-                RSS
-              </a>
+                <p class="description">终身成长、正念编程的全栈架构师，TDD极限敏捷教练咨询师，企业长期增长咨询师</p>
             </div>
-          
-
-          
-
-          
-          
-
-          
-          
-
-          
-            
-          
-          
-
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="https://wind13.gitee.io/">首页</a>
+                    
+                    <a  href="https://wind13.gitee.io/page/recommend/" title="推荐">推荐</a>
+                    
+                    <a  href="https://wind13.gitee.io/page/painting/" title="绘画">绘画</a>
+                    
+                    <a  href="https://wind13.gitee.io/archives/" title="归档">归档</a>
+                    
+                    <a  href="https://wind13.gitee.io/page/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
         </div>
-      </section>
-
-      
-
-      
-
     </div>
-  </aside>
+</header>
 
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
 
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://wind13.gitee.io/post/2018/2018-03-24-2018-3-23-singer-feeling/" title="2018年3月23日这期“歌手”听后感">2018年3月23日这期“歌手”听后感</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2018年3月24日
+        </date>
         
-      </div>
-    </main>
+        <div class="post-content">
+            2018年3月23日这期“歌手”听后感 这一期两位歌手都唱了崔健的歌，腾格尔唱《从头再来》，华晨宇唱《假行僧》，可见崔健中国摇滚之父的称号不是虚的。 从1993年大学时听过崔健的歌后，就将他奉为中国甚至世界摇滚中最为独特另类的一个，后来在几十年中，偶尔再听还是那么独特，不管时代如何变……
+        </div>
+        <p class="readmore"><a href="https://wind13.gitee.io/post/2018/2018-03-24-2018-3-23-singer-feeling/">阅读全文</a></p>
+    </article>
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://wind13.gitee.io/post/2018/2018-03-05-why-new-os-zh/" title="为什么说一个全新的操作系统是必要的？">为什么说一个全新的操作系统是必要的？</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2018年3月5日
+        </date>
+        
+        <div class="post-content">
+            注：此文是 OSv 官网介绍的文章，感觉对于理解 OSv 很有帮助，特翻译如下，原文地址 Today’s cloud-based applications run a heavyweight stack: the hypervisor, which divides the hardware resources among virtual machines; the operating system, which divides the virtual machine’s resources among applications; and the application server, which divides the application’s resources among the end users. 当今的云应用都运行在一个非常重的技术栈上： Hypervisor (虚拟机管理程序) ，要将硬件资……
+        </div>
+        <p class="readmore"><a href="https://wind13.gitee.io/post/2018/2018-03-05-why-new-os-zh/">阅读全文</a></p>
+    </article>
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://wind13.gitee.io/post/2018/2018-02-10-svg-%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0/" title="SVG 相关学习">SVG 相关学习</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2018年2月10日
+        </date>
+        
+        <div class="post-content">
+            JavaScript library SVG.js The lightweight library for manipulating and animating SVG. Bonsai A lightweight graphics library with an intuitive graphics API and an SVG renderer. Snap.svg The JavaScript SVG library for the modern web Draw library 15个最佳SVG的JavaScript库 推荐 SVG 图标素材网站 IconFont.cn 国内图标库网站 国内外社交网站矢量图标 FlatIcon The largest database of free icons available in PNG, SVG, EPS, PSD and BASE 64 formats. Worldvectorlogo 矢量标志的所有品牌 完全免费和无限制 Tools Gravit Designer 一款跨平台的设计工具，可以在 AppStore 中直接……
+        </div>
+        <p class="readmore"><a href="https://wind13.gitee.io/post/2018/2018-02-10-svg-%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0/">阅读全文</a></p>
+    </article>
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://wind13.gitee.io/post/2018/2018-02-07-docker-%E5%AD%A6%E4%B9%A0/" title="Docker 学习">Docker 学习</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2018年2月7日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='https://wind13.gitee.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0'>研究与学习</a></span>
+            
+            <span class="meta-category"><a href='https://wind13.gitee.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF'>软件与技术</a></span>
+            
+        </div>
+        
+        <div class="post-content">
+            Docker 学习 快速入门心法 官网文档也好，网上其他的教程也好，都非常有“耐心”，一点点地教你怎么理解和使用 docker，但我在看这些教程和文档的时候其实很着急，因为我只想快速入门并且用起来，而且最好是按最佳实践的路子用起来，而不是象个初学者那样慢慢摸索。但就是没人把这条捷径说清楚…… 下面我……
+        </div>
+        <p class="readmore"><a href="https://wind13.gitee.io/post/2018/2018-02-07-docker-%E5%AD%A6%E4%B9%A0/">阅读全文</a></p>
+    </article>
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://wind13.gitee.io/post/2018/2018-02-07-computer-vision-%E5%AD%A6%E4%B9%A0/" title="Computer Vision 学习">Computer Vision 学习</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2018年2月7日
+        </date>
+        
+        <div class="post-content">
+            Computer Vision Library What are pros and cons of OpenCV and TensorFlow for computer vision? ccv A Modern Computer Vision Library SimpleCV Computer Vision platform using Python. Blepo Computer Vision Library Python教程 OpenCV vs VXL vs LTI: Performance Test I recently read this comparison of four vision libraries: OpenCV, VXL, LTI and OpenCV with IPP. It was in the book Learning Learning OpenCV: Computer Vision with the OpenCV Library, authored by the creators of OpenCV themselves. For those who aren&rsquo;t familiar with these libraries, here&rsquo;s a brief introduction. VXL VXL stands for Vision something Library. It is a C++ library that implements several common computer vision algorithms and related functionality. The idea is to replace the &lsquo;X&rsquo; with one of the several letters: VGL = Vision Geometry Library VIL = Vision Image processing……
+        </div>
+        <p class="readmore"><a href="https://wind13.gitee.io/post/2018/2018-02-07-computer-vision-%E5%AD%A6%E4%B9%A0/">阅读全文</a></p>
+    </article>
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://wind13.gitee.io/post/2018/2018-01-24-two-lock-file-confuse/" title="两个 Lock 文件的迷惑">两个 Lock 文件的迷惑</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2018年1月24日
+        </date>
+        
+        <div class="post-content">
+            从 npm 5 开始，执行后就多出了一个 package-lock.json 的文件，如果在用 yarn 的话，就会有个疑惑，yarn.lock 和这个 package-lock.json 到底用哪个呢？要不要保存入 git 库呢？ 通过参考这两个链接： Should I commit yarn.lock and package-lock.json files? Idea: support package-lock.json from npm 5 得到信息如下： 都是为了记录准确的版本，使用时最好二选一，开发团队内部协商一致后，把另一种舍弃，即尽量不要……
+        </div>
+        <p class="readmore"><a href="https://wind13.gitee.io/post/2018/2018-01-24-two-lock-file-confuse/">阅读全文</a></p>
+    </article>
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://wind13.gitee.io/post/2018/2018-01-23-fight-with-digital-games/" title="不沉迷电子游戏的心法">不沉迷电子游戏的心法</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2018年1月23日
+        </date>
+        
+        <div class="post-content">
+            前言 游戏估计是所有动物的本能吧，至少看上去是人类的本能了，从两三岁的小孩开始，就已经每天都在游戏了，而自从有了电子游戏之后，就出现了一种新的问题：沉迷电子游戏的问题。 个人也是沉迷“患者”，甚至目前也还是，一天的游戏时间加一起估计有5个小时左右，如果是周末不上班，则可能到10多个小……
+        </div>
+        <p class="readmore"><a href="https://wind13.gitee.io/post/2018/2018-01-23-fight-with-digital-games/">阅读全文</a></p>
+    </article>
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://wind13.gitee.io/post/2018/2018-01-23-2018-first-shot/" title="2018年第一折腾">2018年第一折腾</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2018年1月23日
+        </date>
+        
+        <div class="post-content">
+            花了两天时间，绕了些弯路，总算把 Blog 搞得差不多满意了，用了 Next! 的主题，用了 hexo 的服务技术。 之前用的 JekyllBootstrap，本来还能凑合用，但是那个项目很长时间都没再维护更新了，仅有的几个主题也看烦了，影响了写博客和记录的心情，中间还转而去用一些笔记工具，用到高级功能又要收费，想……
+        </div>
+        <p class="readmore"><a href="https://wind13.gitee.io/post/2018/2018-01-23-2018-first-shot/">阅读全文</a></p>
+    </article>
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://wind13.gitee.io/post/2017/2017-12-31-index/" title="Wind13 的 Blog 之 原来的首页">Wind13 的 Blog 之 原来的首页</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2017年12月31日
+        </date>
+        
+        <div class="post-content">
+            学用Play!和Scala做软件 本站收集Play1.x相关 停止SSH，用Play!吧 Play!技巧问答 国内一些使用Play!框架的网站 Xml 域名空间识别问题 Playing Play!系列之一：Play框架的暴力美学 Playing Play!系列之二：再见Servlet，Play框架的启动 Playing Play!系列之三：不……
+        </div>
+        <p class="readmore"><a href="https://wind13.gitee.io/post/2017/2017-12-31-index/">阅读全文</a></p>
+    </article>
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https://wind13.gitee.io/post/2017/2017-02-23-play2x-compare-play1x/" title="Playframework 1.4.x 与Playframework 2.5.x 选型比较">Playframework 1.4.x 与Playframework 2.5.x 选型比较</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2017年2月23日
+        </date>
+        
+        <div class="post-content">
+            Playframework 1.4.x 与Playframework 2.5.x 选型比较 Playframework 2.5.x 优势： 文档齐全，持续更新； 支持更多最新的技术，更清晰的底层技术； 完全异步的HTTP编程模型； 通过 Comet, long-polling and WebSockets 给客户端提供持续的连接； 通过 Akka 的 Actor 模型提供响应高并发的系统； 使用 Akka Streams Filters Streaming response bodies Request body parsers WebSockets Streaming WS client responses 使用 Websocket 使用 Ebean 或 JPA 和 Anorm（用于Sc……
+        </div>
+        <p class="readmore"><a href="https://wind13.gitee.io/post/2017/2017-02-23-play2x-compare-play1x/">阅读全文</a></p>
+    </article>
+    
+    
 
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Simon J S Wind13 Liu</span>
 
-  
 
-  
+<ol class="page-navigator">
+    
+    <li class="prev">
+        <a href="https://wind13.gitee.io/page/7/">上一页</a>
+    </li>
+    
+
+    
+
+    
+        
+        
+    
+    
+
+    
+        
+        
+        <li >
+            <a href="https://wind13.gitee.io/">1</a>
+        </li>
+        
+    
+        
+        <li>
+            <span>...</span>
+        </li>
+        
+    
+        
+        
+        <li >
+            <a href="https://wind13.gitee.io/page/6/">6</a>
+        </li>
+        
+    
+        
+        
+        <li >
+            <a href="https://wind13.gitee.io/page/7/">7</a>
+        </li>
+        
+    
+        
+        
+        <li  class="current">
+            <a href="https://wind13.gitee.io/page/8/">8</a>
+        </li>
+        
+    
+        
+        
+        <li >
+            <a href="https://wind13.gitee.io/page/9/">9</a>
+        </li>
+        
+    
+        
+        
+        <li >
+            <a href="https://wind13.gitee.io/page/10/">10</a>
+        </li>
+        
+    
+        
+        <li>
+            <span>...</span>
+        </li>
+        
+    
+        
+        
+        <li >
+            <a href="https://wind13.gitee.io/page/15/">15</a>
+        </li>
+        
+    
+
+    
+    
+
+    <li class="next">
+        <a href="https://wind13.gitee.io/page/9/">下一页</a>
+    </li>
+    
+</ol>
+
+
+
+
 </div>
 
 
+                </div>
 
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='https://wind13.gitee.io/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="site" value="https://wind13.gitee.io/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
+    </li>
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
+    </li>
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
+    </li>
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
+    </li>
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2021/element3-tdd-thinking/" title="参与 Element3 TDD 的感受">参与 Element3 TDD 的感受</a>
+    </li>
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2021/wujun-horizons/" title="吴军《见识》读书笔记">吴军《见识》读书笔记</a>
+    </li>
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2021/fogg-behavior-model-stop-procratinating/" title="听邵恒头条《怎么用“福格行为模型”战胜拖延症？》记录">听邵恒头条《怎么用“福格行为模型”战胜拖延症？》记录</a>
+    </li>
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2021/ultimate-pkm-solution-dendron/" title="终极笔记 Dendron">终极笔记 Dendron</a>
+    </li>
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2020/new-solutions/" title="最新技术选型">最新技术选型</a>
+    </li>
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2020/implementation-patterns-learn/" title="《实现模式》学习笔记">《实现模式》学习笔记</a>
+    </li>
+    
+</ul>
+    </section>
 
+    
 
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li><a href="https://wind13.gitee.io/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (13)</a></li>
+    
+    <li><a href="https://wind13.gitee.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (22)</a></li>
+    
+    <li><a href="https://wind13.gitee.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (20)</a></li>
+    
+    <li><a href="https://wind13.gitee.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
+    
+    <li><a href="https://wind13.gitee.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (11)</a></li>
+    
+    <li><a href="https://wind13.gitee.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (35)</a></li>
+    
+</ul>
+    </section>
 
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="https://wind13.gitee.io/tags/access/">Access</a>
+    
+    <a href="https://wind13.gitee.io/tags/android/">Android</a>
+    
+    <a href="https://wind13.gitee.io/tags/angular/">angular</a>
+    
+    <a href="https://wind13.gitee.io/tags/angularjs/">angularjs</a>
+    
+    <a href="https://wind13.gitee.io/tags/antd/">AntD</a>
+    
+    <a href="https://wind13.gitee.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.gitee.io/tags/backbone/">backbone</a>
+    
+    <a href="https://wind13.gitee.io/tags/baidu/">baidu</a>
+    
+    <a href="https://wind13.gitee.io/tags/beeui/">BeeUi</a>
+    
+    <a href="https://wind13.gitee.io/tags/blog/">Blog</a>
+    
+    <a href="https://wind13.gitee.io/tags/boook/">boook</a>
+    
+    <a href="https://wind13.gitee.io/tags/capslock/">Capslock</a>
+    
+    <a href="https://wind13.gitee.io/tags/chado.js/">Chado.js</a>
+    
+    <a href="https://wind13.gitee.io/tags/ci/cd/">CI/CD</a>
+    
+    <a href="https://wind13.gitee.io/tags/clojure/">clojure</a>
+    
+    <a href="https://wind13.gitee.io/tags/code/">code</a>
+    
+    <a href="https://wind13.gitee.io/tags/code-review/">code review</a>
+    
+    <a href="https://wind13.gitee.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.gitee.io/tags/datavers/">Datavers</a>
+    
+    <a href="https://wind13.gitee.io/tags/db/">DB</a>
+    
+    <a href="https://wind13.gitee.io/tags/dendron/">Dendron</a>
+    
+    <a href="https://wind13.gitee.io/tags/devops/">DevOps</a>
+    
+    <a href="https://wind13.gitee.io/tags/devtech-java/">devtech java</a>
+    
+    <a href="https://wind13.gitee.io/tags/digital-garden/">digital-garden</a>
+    
+    <a href="https://wind13.gitee.io/tags/docker/">Docker</a>
+    
+    <a href="https://wind13.gitee.io/tags/dubbo/">dubbo</a>
+    
+    <a href="https://wind13.gitee.io/tags/easyui/">easyui</a>
+    
+    <a href="https://wind13.gitee.io/tags/egghead/">egghead</a>
+    
+    <a href="https://wind13.gitee.io/tags/element3/">Element3</a>
+    
+    <a href="https://wind13.gitee.io/tags/elementui/">ElementUI</a>
+    
+    <a href="https://wind13.gitee.io/tags/elixir/">Elixir</a>
+    
+    <a href="https://wind13.gitee.io/tags/erlang/">Erlang</a>
+    
+    <a href="https://wind13.gitee.io/tags/es6/">ES6</a>
+    
+    <a href="https://wind13.gitee.io/tags/esc/">Esc</a>
+    
+    <a href="https://wind13.gitee.io/tags/essay/">essay</a>
+    
+    <a href="https://wind13.gitee.io/tags/evernote/">Evernote</a>
+    
+    <a href="https://wind13.gitee.io/tags/filter/">filter</a>
+    
+    <a href="https://wind13.gitee.io/tags/fizzbuzz/">fizzbuzz</a>
+    
+    <a href="https://wind13.gitee.io/tags/framework/">framework</a>
+    
+    <a href="https://wind13.gitee.io/tags/freebsd/">FreeBSD</a>
+    
+    <a href="https://wind13.gitee.io/tags/game/">game</a>
+    
+    <a href="https://wind13.gitee.io/tags/games/">games</a>
+    
+    <a href="https://wind13.gitee.io/tags/getxml/">getXML</a>
+    
+    <a href="https://wind13.gitee.io/tags/git/">git</a>
+    
+    <a href="https://wind13.gitee.io/tags/gitlab/">Gitlab</a>
+    
+    <a href="https://wind13.gitee.io/tags/golang/">golang</a>
+    
+    <a href="https://wind13.gitee.io/tags/google/">Google</a>
+    
+    <a href="https://wind13.gitee.io/tags/graphic/">Graphic</a>
+    
+    <a href="https://wind13.gitee.io/tags/graphql/">GraphQL</a>
+    
+    <a href="https://wind13.gitee.io/tags/grpc/">grpc</a>
+    
+    <a href="https://wind13.gitee.io/tags/gtd/">GTD</a>
+    
+    <a href="https://wind13.gitee.io/tags/hexo/">hexo</a>
+    
+    <a href="https://wind13.gitee.io/tags/https/">https</a>
+    
+    <a href="https://wind13.gitee.io/tags/hugo/">hugo</a>
+    
+    <a href="https://wind13.gitee.io/tags/hypervisor/">Hypervisor</a>
+    
+    <a href="https://wind13.gitee.io/tags/index/">index</a>
+    
+    <a href="https://wind13.gitee.io/tags/iot/">IOT</a>
+    
+    <a href="https://wind13.gitee.io/tags/iterm2/">iterm2</a>
+    
+    <a href="https://wind13.gitee.io/tags/java/">Java</a>
+    
+    <a href="https://wind13.gitee.io/tags/javascript/">javascript</a>
+    
+    <a href="https://wind13.gitee.io/tags/jenkins/">Jenkins</a>
+    
+    <a href="https://wind13.gitee.io/tags/json/">json</a>
+    
+    <a href="https://wind13.gitee.io/tags/julia/">Julia</a>
+    
+    <a href="https://wind13.gitee.io/tags/kafka/">Kafka</a>
+    
+    <a href="https://wind13.gitee.io/tags/kpi/">KPI</a>
+    
+    <a href="https://wind13.gitee.io/tags/learn/">learn</a>
+    
+    <a href="https://wind13.gitee.io/tags/linux/">Linux</a>
+    
+    <a href="https://wind13.gitee.io/tags/love/">love</a>
+    
+    <a href="https://wind13.gitee.io/tags/mac-osx/">Mac osx</a>
+    
+    <a href="https://wind13.gitee.io/tags/macro/">macro</a>
+    
+    <a href="https://wind13.gitee.io/tags/manjaro/">Manjaro</a>
+    
+    <a href="https://wind13.gitee.io/tags/mapapi/">mapapi</a>
+    
+    <a href="https://wind13.gitee.io/tags/markdown/">Markdown</a>
+    
+    <a href="https://wind13.gitee.io/tags/midi/">midi</a>
+    
+    <a href="https://wind13.gitee.io/tags/mido/">mido</a>
+    
+    <a href="https://wind13.gitee.io/tags/mindmap/">mindmap</a>
+    
+    <a href="https://wind13.gitee.io/tags/module/">module</a>
+    
+    <a href="https://wind13.gitee.io/tags/mqtt/">MQTT</a>
+    
+    <a href="https://wind13.gitee.io/tags/multibranch/">Multibranch</a>
+    
+    <a href="https://wind13.gitee.io/tags/music/">music</a>
+    
+    <a href="https://wind13.gitee.io/tags/namespace/">namespace</a>
+    
+    <a href="https://wind13.gitee.io/tags/neovim/">NeoVim</a>
+    
+    <a href="https://wind13.gitee.io/tags/netlify/">netlify</a>
+    
+    <a href="https://wind13.gitee.io/tags/next/">next</a>
+    
+    <a href="https://wind13.gitee.io/tags/ng/">Ng</a>
+    
+    <a href="https://wind13.gitee.io/tags/node.js/">Node.js</a>
+    
+    <a href="https://wind13.gitee.io/tags/nodejs/">Nodejs</a>
+    
+    <a href="https://wind13.gitee.io/tags/npm/">npm</a>
+    
+    <a href="https://wind13.gitee.io/tags/nuxt/">Nuxt</a>
+    
+    <a href="https://wind13.gitee.io/tags/ocr/">OCR</a>
+    
+    <a href="https://wind13.gitee.io/tags/okr/">OKR</a>
+    
+    <a href="https://wind13.gitee.io/tags/opencv/">OpenCV</a>
+    
+    <a href="https://wind13.gitee.io/tags/os/">OS</a>
+    
+    <a href="https://wind13.gitee.io/tags/osv/">OSv</a>
+    
+    <a href="https://wind13.gitee.io/tags/package-lock.json/">package-lock.json</a>
+    
+    <a href="https://wind13.gitee.io/tags/pact.io/">Pact.io</a>
+    
+    <a href="https://wind13.gitee.io/tags/pain-text/">pain text</a>
+    
+    <a href="https://wind13.gitee.io/tags/para/">para</a>
+    
+    <a href="https://wind13.gitee.io/tags/pc/">pc</a>
+    
+    <a href="https://wind13.gitee.io/tags/piano/">piano</a>
+    
+    <a href="https://wind13.gitee.io/tags/pipeline/">PipeLine</a>
+    
+    <a href="https://wind13.gitee.io/tags/play1/">play1</a>
+    
+    <a href="https://wind13.gitee.io/tags/play1x/">play1x</a>
+    
+    <a href="https://wind13.gitee.io/tags/play2-scala/">play2 scala</a>
+    
+    <a href="https://wind13.gitee.io/tags/playframework/">playframework</a>
+    
+    <a href="https://wind13.gitee.io/tags/playscala/">playscala</a>
+    
+    <a href="https://wind13.gitee.io/tags/powerapps/">PowerApps</a>
+    
+    <a href="https://wind13.gitee.io/tags/powermill/">powermill</a>
+    
+    <a href="https://wind13.gitee.io/tags/ppt/">PPT</a>
+    
+    <a href="https://wind13.gitee.io/tags/promise/">Promise</a>
+    
+    <a href="https://wind13.gitee.io/tags/python/">python</a>
+    
+    <a href="https://wind13.gitee.io/tags/qa/">QA</a>
+    
+    <a href="https://wind13.gitee.io/tags/ray-dalio/">Ray Dalio</a>
+    
+    <a href="https://wind13.gitee.io/tags/re-natal/">re-natal</a>
+    
+    <a href="https://wind13.gitee.io/tags/react/">react</a>
+    
+    <a href="https://wind13.gitee.io/tags/react-native/">react native</a>
+    
+    <a href="https://wind13.gitee.io/tags/react-route/">react-route</a>
+    
+    <a href="https://wind13.gitee.io/tags/redux/">redux</a>
+    
+    <a href="https://wind13.gitee.io/tags/regex/">Regex</a>
+    
+    <a href="https://wind13.gitee.io/tags/rpc/">rpc</a>
+    
+    <a href="https://wind13.gitee.io/tags/ruby/">Ruby</a>
+    
+    <a href="https://wind13.gitee.io/tags/rust/">rust</a>
+    
+    <a href="https://wind13.gitee.io/tags/second-brain/">second-brain</a>
+    
+    <a href="https://wind13.gitee.io/tags/session/">session</a>
+    
+    <a href="https://wind13.gitee.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.gitee.io/tags/spacevim/">SpaceVim</a>
+    
+    <a href="https://wind13.gitee.io/tags/sql/">SQL</a>
+    
+    <a href="https://wind13.gitee.io/tags/ssh/">ssh</a>
+    
+    <a href="https://wind13.gitee.io/tags/static-site/">Static Site</a>
+    
+    <a href="https://wind13.gitee.io/tags/svg/">SVG</a>
+    
+    <a href="https://wind13.gitee.io/tags/tdd/">TDD</a>
+    
+    <a href="https://wind13.gitee.io/tags/text/">text</a>
+    
+    <a href="https://wind13.gitee.io/tags/toc/">TOC</a>
+    
+    <a href="https://wind13.gitee.io/tags/tomorrow-theme/">tomorrow-theme</a>
+    
+    <a href="https://wind13.gitee.io/tags/tools/">tools</a>
+    
+    <a href="https://wind13.gitee.io/tags/typescript/">TypeScript</a>
+    
+    <a href="https://wind13.gitee.io/tags/umi/">Umi</a>
+    
+    <a href="https://wind13.gitee.io/tags/uml/">uml</a>
+    
+    <a href="https://wind13.gitee.io/tags/unit-test/">Unit Test</a>
+    
+    <a href="https://wind13.gitee.io/tags/unix/">Unix</a>
+    
+    <a href="https://wind13.gitee.io/tags/vant/">Vant</a>
+    
+    <a href="https://wind13.gitee.io/tags/vi/">vi</a>
+    
+    <a href="https://wind13.gitee.io/tags/vim/">vim</a>
+    
+    <a href="https://wind13.gitee.io/tags/vimrc/">vimrc</a>
+    
+    <a href="https://wind13.gitee.io/tags/vlang/">vlang</a>
+    
+    <a href="https://wind13.gitee.io/tags/vue/">Vue</a>
+    
+    <a href="https://wind13.gitee.io/tags/vue3/">Vue3</a>
+    
+    <a href="https://wind13.gitee.io/tags/weapp/">weapp</a>
+    
+    <a href="https://wind13.gitee.io/tags/webpack/">Webpack</a>
+    
+    <a href="https://wind13.gitee.io/tags/weui/">WeUI</a>
+    
+    <a href="https://wind13.gitee.io/tags/wind13/">wind13</a>
+    
+    <a href="https://wind13.gitee.io/tags/windows/">Windows</a>
+    
+    <a href="https://wind13.gitee.io/tags/word%E6%96%87%E6%A1%A3/">Word文档</a>
+    
+    <a href="https://wind13.gitee.io/tags/wux/">Wux</a>
+    
+    <a href="https://wind13.gitee.io/tags/xml/">xml</a>
+    
+    <a href="https://wind13.gitee.io/tags/yarn/">yarn</a>
+    
+    <a href="https://wind13.gitee.io/tags/yarn.lock/">yarn.lock</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%B8%80%E5%9B%BE/">一图</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%B8%96%E9%A3%8E%E5%8D%81%E4%B8%89%E5%AD%A6%E5%A0%82/">世风十三学堂</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%B9%A0%E6%83%AF/">习惯</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%B9%A6%E7%B1%8D/">书籍</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E6%97%B6%E4%BB%A3/">互联网时代</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%BA%B2%E5%AD%90%E6%95%99%E8%82%B2/">亲子教育</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%BA%BA%E6%9C%88%E7%A5%9E%E8%AF%9D/">人月神话</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%BA%BA%E7%94%9F/">人生</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%BB%A5%E7%BB%88%E4%B8%BA%E5%A7%8B/">以终为始</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%BC%81%E4%B8%9A%E7%AE%A1%E7%90%86/">企业管理</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%85%AC%E5%8F%B8%E7%AE%A1%E7%90%86/">公司管理</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%87%8F%E8%82%A5/">减肥</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/">函数式编程</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%88%98%E9%82%A6/">刘邦</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%88%9B%E6%84%8F%E7%B2%BE%E8%8B%B1/">创意精英</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%88%9B%E6%96%B0/">创新</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%88%9D%E5%AD%A6%E8%80%85/">初学者</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%88%B6%E7%BA%A6%E7%90%86%E8%AE%BA/">制约理论</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%89%8D%E7%AB%AF/">前端</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%8C%A0%E5%BF%83/">匠心</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%8D%8E%E6%99%A8%E5%AE%87/">华晨宇</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%8E%9F%E5%88%99/">原则</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%90%B4%E5%86%9B/">吴军</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%9B%A2%E9%98%9F%E6%95%88%E7%8E%87/">团队效率</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%9B%B4%E6%A3%8B/">围棋</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/">图像处理</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%A4%A7%E8%87%AA%E7%84%B6/">大自然</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/">学习方法</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%AE%8F%E7%BC%96%E7%A8%8B/">宏编程</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">小程序</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%B4%94%E5%81%A5/">崔健</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%B7%A5%E4%BD%9C%E5%AE%A4/">工作室</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%B7%A5%E7%A8%8B%E5%8C%96/">工程化</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%B7%A5%E7%A8%8B%E6%80%9D%E7%BB%B4/">工程思维</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%B7%B4%E8%8F%B2%E7%89%B9/">巴菲特</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/">开发环境</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%BC%82%E6%AD%A5/">异步</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%BE%97%E5%88%B0/">得到</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%BE%97%E5%88%B0-app/">得到 App</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%BE%97%E5%88%B0app/">得到App</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">微服务</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%BE%AE%E8%BD%AF/">微软</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%BF%83%E6%99%BA%E6%AE%8B%E7%96%BE/">心智残疾</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">思维导图</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%80%9D%E7%BB%B4%E8%AE%B0%E5%BD%95/">思维记录</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%89%8B%E6%9C%BA/">手机</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B/">技术选型</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%8A%95%E8%B5%84/">投资</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%8B%96%E5%BB%B6%E7%97%87/">拖延症</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%8E%98%E9%87%91/">掘金</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%95%8F%E6%8D%B7/">敏捷</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%95%99%E8%82%B2/">教育</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%95%B0%E6%8E%A7%E5%8A%A0%E5%B7%A5/">数控加工</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85/">新冠疫情</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%97%8B%E8%BD%AE%E7%BA%BF/">旋轮线</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/">时间管理</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%98%A5%E8%8A%82/">春节</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%99%BA%E6%85%A7/">智慧</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/">最佳实践</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%9C%80%E9%80%9F%E9%99%8D%E7%BA%BF/">最速降线</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0/">有道云笔记</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%9D%8E%E7%AC%91%E6%9D%A5/">李笑来</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/">极限编程</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%A8%8A%E7%99%BB/">樊登</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%A8%8A%E7%99%BB%E8%AF%BB%E4%B9%A6/">樊登读书</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%AD%8C%E6%89%8B/">歌手</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%AD%A3%E5%BF%B5%E7%BC%96%E7%A8%8B/">正念编程</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%B2%B3%E9%A9%AC/">河马</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%B3%A8%E6%84%8F%E5%8A%9B/">注意力</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/">流程图</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%B5%8B%E8%AF%95%E9%87%91%E5%AD%97%E5%A1%94/">测试金字塔</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%B5%8B%E8%AF%95%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91/">测试驱动开发</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%B7%B1%E5%BA%A6%E5%B7%A5%E4%BD%9C/">深度工作</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%B8%B8%E6%88%8F/">游戏</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%81%B5%E6%84%9F/">灵感</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%86%B5%E5%A2%9E/">熵增</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%89%A9%E8%81%94%E7%BD%91/">物联网</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/">王者荣耀</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%8E%8B%E9%98%B3%E6%98%8E/">王阳明</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%91%9E%E8%BE%BE%E5%88%A9%E6%AC%A7/">瑞·达利欧</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%93%B6%E9%A2%88/">瓶颈</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%94%98%E7%89%B9%E5%9B%BE/">甘特图</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%95%AA%E8%8C%84%E5%B7%A5%E4%BD%9C%E6%B3%95/">番茄工作法</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%96%AB%E6%83%85/">疫情</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%97%9B%E8%8B%A6/">痛苦</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%9F%A5%E8%AF%86%E6%98%9F%E7%90%83/">知识星球</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%9F%B3%E5%A2%A8/">石墨</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%A2%8E%E7%89%87/">碎片</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%A4%BA%E6%84%8F%E5%9B%BE/">示意图</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%A5%9D%E6%84%BF/">祝愿</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/">福格行为模型</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%AC%AC3%E9%80%89%E6%8B%A9/">第3选择</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%AE%97%E6%B3%95/">算法</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%AE%A1%E7%90%86%E6%80%9D%E6%83%B3/">管理思想</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%B3%96%E5%B0%BF%E7%97%85/">糖尿病</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%B3%BB%E7%BB%9F/">系统</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%B3%BB%E7%BB%9F%E6%97%B6%E5%8C%BA/">系统时区</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%BA%AF%E6%96%87%E6%9C%AC/">纯文本</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%BA%B3%E5%BE%B7%E6%8B%89/">纳德拉</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%BB%88%E8%BA%AB%E5%AD%A6%E4%B9%A0/">终身学习</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/">编程开发</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%BD%97%E8%83%96/">罗胖</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%BD%97%E8%BE%91%E6%80%9D%E7%BB%B4/">罗辑思维</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%84%91%E5%9B%BE/">脑图</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%87%AA%E5%BE%8B/">自律</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%88%92%E9%80%82%E5%8C%BA/">舒适区</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%8A%B1%E6%9E%9C%E5%B1%B1%E6%8A%80%E6%9C%AF%E5%9B%A2%E9%98%9F/">花果山技术团队</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%A7%81%E8%AF%86/">见识</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">解决方案</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%B0%B7%E6%AD%8C/">谷歌</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%B4%A2%E5%AF%8C%E8%87%AA%E7%94%B1/">财富自由</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">软件开发</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%BF%87%E6%BB%A4%E5%99%A8/">过滤器</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%BF%90%E6%B0%94/">运气</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%BF%BD%E6%B1%82/">追求</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E9%87%8D%E6%9E%84/">重构</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E9%98%BF%E5%B0%94%E8%8C%A8%E6%B5%B7%E9%BB%98%E7%97%87/">阿尔茨海默症</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A/">非暴力沟通</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E9%A2%86%E5%AF%BC%E5%8A%9B/">领导力</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E9%AB%98%E8%B4%A8%E9%87%8F/">高质量</a>
+    
+</div>
+    </section>
 
-
-
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
         
-
-
-
-
-
-
-
+        <li>
+            <a target="_blank" href="http://extremeprogramming.cn/" title="极限编程中国">极限编程中国</a>
+        </li>
         
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
+        <li>
+            <a target="_blank" href="https://outmanzzq.github.io/" title="outmanzzq">运维朋友的博客</a>
+        </li>
         
-      </div>
-    
-
-    
-      <div id="needsharebutton-float">
-        <span class="btn">
-          <i class="fa fa-share-alt" aria-hidden="true"></i>
-        </span>
-      </div>
-    
-
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
-
-
-
-  
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-<!-- LOCAL: You can save these files to your site and update links -->
-    
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://wind13.gitee.io/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+    <div class="container">
+        &copy; 2021 <a href="https://wind13.gitee.io/">世风十三学堂 By 世风十三</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         
-        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
+    </div>
+</footer>
 
-    
-      <style>
-        a.gitment-editor-footer-tip { display: none; }
-        .gitment-container.gitment-footer-container { display: none; }
-      </style>
-    
 
-    
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
 
 
 
 
-
-
-  
-
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    var isXml = true;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length === 0) {
-      search_path = "search.xml";
-    } else if (/json$/i.test(search_path)) {
-      isXml = false;
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    var onPopupClose = function (e) {
-      $('.popup').hide();
-      $('#local-search-input').val('');
-      $('.search-result-list').remove();
-      $('#no-result').remove();
-      $(".local-search-pop-overlay").remove();
-      $('body').css('overflow', '');
-    }
-
-    function proceedsearch() {
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
-        .css('overflow', 'hidden');
-      $('.search-popup-overlay').click(onPopupClose);
-      $('.popup').toggle();
-      var $localSearchInput = $('#local-search-input');
-      $localSearchInput.attr("autocapitalize", "none");
-      $localSearchInput.attr("autocorrect", "off");
-      $localSearchInput.focus();
-    }
-
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-      'use strict';
-
-      // start loading animation
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
-          '<div id="search-loading-icon">' +
-          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
-          '</div>' +
-          '</div>')
-        .css('overflow', 'hidden');
-      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
-
-      $.ajax({
-        url: path,
-        dataType: isXml ? "xml" : "json",
-        async: true,
-        success: function(res) {
-          // get the contents from search data
-          isfetched = true;
-          $('.popup').detach().appendTo('.header-inner');
-          var datas = isXml ? $("entry", res).map(function() {
-            return {
-              title: $("title", this).text(),
-              content: $("content",this).text(),
-              url: $("url" , this).text()
-            };
-          }).get() : res;
-          var input = document.getElementById(search_id);
-          var resultContent = document.getElementById(content_id);
-          var inputEventFunction = function() {
-            var searchText = input.value.trim().toLowerCase();
-            var keywords = searchText.split(/[\s\-]+/);
-            if (keywords.length > 1) {
-              keywords.push(searchText);
-            }
-            var resultItems = [];
-            if (searchText.length > 0) {
-              // perform local searching
-              datas.forEach(function(data) {
-                var isMatch = false;
-                var hitCount = 0;
-                var searchTextCount = 0;
-                var title = data.title.trim();
-                var titleInLowerCase = title.toLowerCase();
-                var content = data.content.trim().replace(/<[^>]+>/g,"");
-                var contentInLowerCase = content.toLowerCase();
-                var articleUrl = decodeURIComponent(data.url);
-                var indexOfTitle = [];
-                var indexOfContent = [];
-                // only match articles with not empty titles
-                if(title != '') {
-                  keywords.forEach(function(keyword) {
-                    function getIndexByWord(word, text, caseSensitive) {
-                      var wordLen = word.length;
-                      if (wordLen === 0) {
-                        return [];
-                      }
-                      var startPosition = 0, position = [], index = [];
-                      if (!caseSensitive) {
-                        text = text.toLowerCase();
-                        word = word.toLowerCase();
-                      }
-                      while ((position = text.indexOf(word, startPosition)) > -1) {
-                        index.push({position: position, word: word});
-                        startPosition = position + wordLen;
-                      }
-                      return index;
-                    }
-
-                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
-                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
-                  });
-                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
-                    isMatch = true;
-                    hitCount = indexOfTitle.length + indexOfContent.length;
-                  }
-                }
-
-                // show search results
-
-                if (isMatch) {
-                  // sort index by position of keyword
-
-                  [indexOfTitle, indexOfContent].forEach(function (index) {
-                    index.sort(function (itemLeft, itemRight) {
-                      if (itemRight.position !== itemLeft.position) {
-                        return itemRight.position - itemLeft.position;
-                      } else {
-                        return itemLeft.word.length - itemRight.word.length;
-                      }
-                    });
-                  });
-
-                  // merge hits into slices
-
-                  function mergeIntoSlice(text, start, end, index) {
-                    var item = index[index.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    var hits = [];
-                    var searchTextCountInSlice = 0;
-                    while (position + word.length <= end && index.length != 0) {
-                      if (word === searchText) {
-                        searchTextCountInSlice++;
-                      }
-                      hits.push({position: position, length: word.length});
-                      var wordEnd = position + word.length;
-
-                      // move to next position of hit
-
-                      index.pop();
-                      while (index.length != 0) {
-                        item = index[index.length - 1];
-                        position = item.position;
-                        word = item.word;
-                        if (wordEnd > position) {
-                          index.pop();
-                        } else {
-                          break;
-                        }
-                      }
-                    }
-                    searchTextCount += searchTextCountInSlice;
-                    return {
-                      hits: hits,
-                      start: start,
-                      end: end,
-                      searchTextCount: searchTextCountInSlice
-                    };
-                  }
-
-                  var slicesOfTitle = [];
-                  if (indexOfTitle.length != 0) {
-                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
-                  }
-
-                  var slicesOfContent = [];
-                  while (indexOfContent.length != 0) {
-                    var item = indexOfContent[indexOfContent.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    // cut out 100 characters
-                    var start = position - 20;
-                    var end = position + 80;
-                    if(start < 0){
-                      start = 0;
-                    }
-                    if (end < position + word.length) {
-                      end = position + word.length;
-                    }
-                    if(end > content.length){
-                      end = content.length;
-                    }
-                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
-                  }
-
-                  // sort slices in content by search text's count and hits' count
-
-                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
-                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
-                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
-                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
-                      return sliceRight.hits.length - sliceLeft.hits.length;
-                    } else {
-                      return sliceLeft.start - sliceRight.start;
-                    }
-                  });
-
-                  // select top N slices in content
-
-                  var upperBound = parseInt('1');
-                  if (upperBound >= 0) {
-                    slicesOfContent = slicesOfContent.slice(0, upperBound);
-                  }
-
-                  // highlight title and content
-
-                  function highlightKeyword(text, slice) {
-                    var result = '';
-                    var prevEnd = slice.start;
-                    slice.hits.forEach(function (hit) {
-                      result += text.substring(prevEnd, hit.position);
-                      var end = hit.position + hit.length;
-                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
-                      prevEnd = end;
-                    });
-                    result += text.substring(prevEnd, slice.end);
-                    return result;
-                  }
-
-                  var resultItem = '';
-
-                  if (slicesOfTitle.length != 0) {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
-                  } else {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
-                  }
-
-                  slicesOfContent.forEach(function (slice) {
-                    resultItem += "<a href='" + articleUrl + "'>" +
-                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
-                      "...</p>" + "</a>";
-                  });
-
-                  resultItem += "</li>";
-                  resultItems.push({
-                    item: resultItem,
-                    searchTextCount: searchTextCount,
-                    hitCount: hitCount,
-                    id: resultItems.length
-                  });
-                }
-              })
-            };
-            if (keywords.length === 1 && keywords[0] === "") {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
-            } else if (resultItems.length === 0) {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
-            } else {
-              resultItems.sort(function (resultLeft, resultRight) {
-                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
-                  return resultRight.searchTextCount - resultLeft.searchTextCount;
-                } else if (resultLeft.hitCount !== resultRight.hitCount) {
-                  return resultRight.hitCount - resultLeft.hitCount;
-                } else {
-                  return resultRight.id - resultLeft.id;
-                }
-              });
-              var searchResultList = '<ul class=\"search-result-list\">';
-              resultItems.forEach(function (result) {
-                searchResultList += result.item;
-              })
-              searchResultList += "</ul>";
-              resultContent.innerHTML = searchResultList;
-            }
-          }
-
-          if ('auto' === 'auto') {
-            input.addEventListener('input', inputEventFunction);
-          } else {
-            $('.search-icon').click(inputEventFunction);
-            input.addEventListener('keypress', function (event) {
-              if (event.keyCode === 13) {
-                inputEventFunction();
-              }
-            });
-          }
-
-          // remove loading animation
-          $(".local-search-pop-overlay").remove();
-          $('body').css('overflow', '');
-
-          proceedsearch();
-        }
-      });
-    }
-
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched === false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-    });
-
-    $('.popup-btn-close').click(onPopupClose);
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-    $(document).on('keyup', function (event) {
-      var shouldDismissSearchPopup = event.which === 27 &&
-        $('.search-popup').is(':visible');
-      if (shouldDismissSearchPopup) {
-        onPopupClose();
-      }
-    });
-  </script>
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-
-  
-  
-  
-  <script src="/lib/needsharebutton/needsharebutton.js"></script>
-
-  <script>
-    
-      pbOptions = {};
-      
-          pbOptions.iconStyle = "box";
-      
-          pbOptions.boxForm = "horizontal";
-      
-          pbOptions.position = "bottomCenter";
-      
-          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
-      
-      new needShareButton('#needsharebutton-postbottom', pbOptions);
-    
-    
-      flOptions = {};
-      
-          flOptions.iconStyle = "box";
-      
-          flOptions.boxForm = "horizontal";
-      
-          flOptions.position = "middleRight";
-      
-          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
-      
-      new needShareButton('#needsharebutton-float', flOptions);
-    
-  </script>
-
-  
-
-  
-
-  
-
-  
-
-  
 
 </body>
+
 </html>

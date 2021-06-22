@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iterm2 on 世风十三学堂</title>
+    <link>https://wind13.gitee.io/tags/iterm2/</link>
+    <description>Recent content in iterm2 on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    
+	<atom:link href="https://wind13.gitee.io/tags/iterm2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vim 使用思路、最佳实践再整理</title>
+      <link>https://wind13.gitee.io/post/2014/2014-04-30-vim-best-practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2014/2014-04-30-vim-best-practices/</guid>
+      <description>以下是初入门时的姿势，现在完全不用这么麻烦，直接用dot-vimrc即可。 在 Mac OS X 上使用 Vim 真的是很享受，所以决定要用好这个工具，以下记录下本人的最佳实践： 首先面临一个选择，是用 MacVim 还是 终端（Terminate）？我的选择是终端，不过我进一步选择了 iTerm2，功能强大些，界面漂亮些</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TypeScript on 世风十三学堂</title>
+    <link>https://wind13.gitee.io/tags/typescript/</link>
+    <description>Recent content in TypeScript on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 28 Dec 2020 16:49:11 +0800</lastBuildDate>
+    
+	<atom:link href="https://wind13.gitee.io/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>最新技术选型</title>
+      <link>https://wind13.gitee.io/post/2020/new-solutions/</link>
+      <pubDate>Mon, 28 Dec 2020 16:49:11 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/new-solutions/</guid>
+      <description>最新技术选型 语言 Reason 可以让您编写简单，快速和优质的类型安全代码，同时利用 JavaScript 和 OCaml 的生态。 OCaml is an industrial strength programming language supporting functional, imperative and object-oriented styles. 一种支持功能、命令和面向对象的工业强度编程语言，一种快速、实用且强类型的编程语言 BuckleScript 不是一个新的编程语言。 它只是将输入的 OCaml，通过一些调整，使其编译为干净、可读的 JavaScript 代</description>
+    </item>
+    
+    <item>
+      <title>RPC 相关学习</title>
+      <link>https://wind13.gitee.io/post/2020/learn-rpc/</link>
+      <pubDate>Tue, 02 Jun 2020 21:28:33 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/learn-rpc/</guid>
+      <description>各家官网 gRPC Apache Dubbo™ 是一款高性能Java RPC框架。 SOFARPC 介绍 相关资料 重点资料 RPC 协议之争和选型要点 对于 RPC 框架，在架构上能够支持多语言非常重要。不同的业务场景，适合不同的语言，例如后端复杂业务逻辑使用 Java 开发效率更高，对于 API 网关或者边缘服务，适合 GO 语言。对于一些序列化框架，由于使用了</description>
+    </item>
+    
+    <item>
+      <title>GraphQL 学习</title>
+      <link>https://wind13.gitee.io/post/2018/2018-05-03-graphql-learning/</link>
+      <pubDate>Thu, 03 May 2018 08:55:25 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-05-03-graphql-learning/</guid>
+      <description>实践 Using GraphQL with MongoDB Testing a GraphQL Server using Jest using-dataloader-to-batch-requests How GraphQL Replaces Redux js Client Bind GraphQL data to your UI with one function call. 相关网站 GraphQL CN A query language for APIs. 一种用于 API 的查询语言。 GraphQL 最佳实践 awesome-graphql The Fullstack Tutorial for GraphQL Youtube 视频教程 GraphiQL A graphical interactive in-browser GraphQL IDE. Live demo Lacinia - GraphQL for Clojure，Github Repo 一套 GraphQL 规范的完整实现，致力于维护对规范的外部兼容。 alumbra Simple &amp;amp; Elegant GraphQL for Clojure! graphql-clj A Clojure library designed to provide GraphQL implementation. 流行的服</description>
+    </item>
+    
+    <item>
+      <title>Angular 学习</title>
+      <link>https://wind13.gitee.io/post/2019/angular-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2019/angular-learning/</guid>
+      <description>相关框架 JHipster JHipster is a development platform to generate, develop and deploy Spring Boot + Angular Web applications and Spring microservices. 问题 在 AngularJS 的 controller 中： $scope.pageTitle = dbData.getTitle();，已知该标题从数据库中取出后不会被修改和变化，如下在模板中的写法最好的方式是：【A】 A. &amp;lt;h1 ng-bind=&amp;quot;::pageTitle&amp;quot;&amp;gt;&amp;lt;/h1&amp;gt; B. &amp;lt;h1&amp;gt;&amp;lt;%=pageTitle%&amp;gt;&amp;lt;/h1&amp;gt; C. &amp;lt;h1&amp;gt;\{\{::pageTitle\}\}&amp;lt;/h1&amp;gt; D. &amp;lt;h1&amp;gt;\{\{pageTitle\}\}&amp;lt;/h1&amp;gt; E. &amp;lt;h1 ng-bind=&amp;quot;pageTitle&amp;quot;&amp;gt;&amp;lt;/h1&amp;gt; 修改 model 数据后，自动更新界面上的显示内容，或者在界面上修改内容，更新 model</description>
+    </item>
+    
+  </channel>
+</rss>

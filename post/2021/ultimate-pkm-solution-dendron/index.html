@@ -1,0 +1,1021 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>终极笔记 Dendron | 世风十三学堂</title>
+    <meta property="og:title" content="终极笔记 Dendron - 世风十三学堂">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2021-01-03T11:24:11&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2021-01-03T11:24:11&#43;08:00'>
+        
+    <meta name="Keywords" content="Programing">
+    <meta name="description" content="终极笔记 Dendron">
+        
+    <meta name="author" content="世风十三">
+    <meta property="og:url" content="https://wind13.gitee.io/post/2021/ultimate-pkm-solution-dendron/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="/kityminder/mindmap.css?_=1416390706100" type="text/css" rel="stylesheet" />
+    <link href="/kityminder/kityminder.core.css?_=1416390706100" type="text/css" rel="stylesheet" />
+    <script src="/kityminder/kity.min.js?_=1416390706100" charset="utf-8"></script>
+    <script src="/kityminder/kityminder.core.min.js?_=1416390706100" charset="utf-8"></script>
+    <script src="/kityminder/mindmap.min.js?_=1416390706100" charset="utf-8"></script>
+
+    
+
+
+    
+    
+</head>
+
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://wind13.gitee.io/">
+                        世风十三学堂
+                    </a>
+                
+                <p class="description">终身成长、正念编程的全栈架构师，TDD极限敏捷教练咨询师，企业长期增长咨询师</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="https://wind13.gitee.io/">首页</a>
+                    
+                    <a  href="https://wind13.gitee.io/page/recommend/" title="推荐">推荐</a>
+                    
+                    <a  href="https://wind13.gitee.io/page/painting/" title="绘画">绘画</a>
+                    
+                    <a  href="https://wind13.gitee.io/archives/" title="归档">归档</a>
+                    
+                    <a  href="https://wind13.gitee.io/page/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">终极笔记 Dendron</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2021年1月3日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='https://wind13.gitee.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0'>研究与学习</a></span>
+            
+            <span class="meta-category"><a href='https://wind13.gitee.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF'>软件与技术</a></span>
+            
+        </div>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="post-content">
+            
+
+<p>我想每个知识工作者都会有自己的个人知识管理解决方案，而且也都在不断地进化和改善中，还记得最早的时候，我们是没有这些概念的，那时候，不管把信息记在哪儿，随手记下来就算了，用过之后也就忘了或者删掉了。慢慢地我们意识到一些信息可能是有用的，需要保留下来的，于是我们用各种方式进行保存，建一些文件夹，分一些目录，分门别类，把要保存的信息记录在 Word 文件中，放在这些目录里，或者是在邮箱里设置相应的目录存放邮箱里有用的邮件，或者是在微信收藏、QQ 收藏，个人云空间，QQ 文档、石墨、飞书文档等等，再后来，更有意识的人会使用商业解决方案，比如用 Evernote，One Note 等，最近热起来的 <a href="https://roamresearch.com/">Roam research</a> 和国内版 <a href="https://roamedit.com/">Roam Edit</a>则代表了最新的双向关联的理念。</p>
+
+<p>不管怎么说，都是可以解决一定范围的问题的，同时可能也会感觉到在某些方面有所不便，比如：隐私问题、自由灵活扩展问题、检索查询问题、归类整理问题、支持渐近演进问题、空间功能收费问题等，有些时候收藏就只停留在收藏的阶段，尘封之后，再很少发挥什么作用。</p>
+
+<p>我个人的知识管理方案也是经历过了很多次的变化和演进，用过了很多的工具和方法，比如：各门户的博客、Evernote、印象笔记、蚂蚁笔记、有道云笔记、Jekyll+Github、Hexo+Github、Hugo + Gitee，等等</p>
+
+<p>总得来说都是各有利弊，直到我最近看到了这个 <a href="https://dendron.so/">Dendron</a>，作者是个非常聪明的软件开发者，使用重命名代替了文件夹的管理，结合很多软件编程的先进思想，打造了这样一个开源产品，真正让我感觉是找到了一个理想的终极笔记解决方案，当然也只是对于现在的我来说比较理想，对于很多不是程序员的知识工作者来说，也许在某些方面会觉得也不那么理想吧，这也是我一直想说的一个观念，人的欣赏感觉是各不相同的，跟每个人的当前知识水平、技能水平都有直接的关系，就好像很多人（包括我自己目前也）不太容易欣赏交响乐的美妙一样，喜欢一些事物本身也是有一定的门槛的。就如同一些源代码在我们程序员眼里就有美丑区别和高下之分，而在大众眼里就都是一片片英文字母、如同天书一般难懂，更不用说欣赏了。</p>
+
+<h2 id="需求">需求</h2>
+
+<p>首先我从需求角度说明一下：</p>
+
+<h3 id="自由保存">自由保存</h3>
+
+<p>自由比较重要，经得起时间的考验，我们之所以更换过很多次解决方法，就是因为总是觉得不够满意，那么不管是什么解决方案，不能依赖于某个平台或者工具，当我们想要更换其他工具时，它必须是开放的。 所以有一些平台或者工具虽然使用起来比较好用，但如果进去容易出来难，那么我会劝你谨慎考虑，不要轻易使用这样的平台，否则有一天你的资料和信息，想要迁出到自己的电脑上时，将非常痛苦。</p>
+
+<h3 id="方便阅读-易于记忆">方便阅读、易于记忆</h3>
+
+<p>随时随地可以查看，同时查看的效果还要比较好。</p>
+
+<p>易于记忆是针对人的大脑的，目前比较好的理论就是脑图理论，人更喜欢通过看脑图来留下印象。</p>
+
+<h3 id="方便编辑书写">方便编辑书写</h3>
+
+<p>编辑纯文本的工具，世界上还有比程序员的工具更好的吗？程序员每天的工作内容就是处理代码、书写文档等。</p>
+
+<p>UTF-8 编码，这一点还是要提一下的， Windows 的系统使用 GBK 编码，每次跨平台时就会出来乱码，非常麻烦。还有就是换行符 LF 和 CT-LF 的区别，也很麻烦。 所以这个编译器必须能够很清晰、简易地处理这些问题。</p>
+
+<h3 id="支持各种格式编程-插图片-链接-公式-表格-流程图-uml图-脑图等">支持各种格式编程、插图片、链接、公式、表格、流程图、UML图、脑图等</h3>
+
+<p>通常面对这样的需求，很多人会找来 N 多个工具集，当然也可以，如果能用一个工具完成这些功能，岂不是更好？VSCode 加上插件实际上就可以支持这所有功能。</p>
+
+<h3 id="易于整理">易于整理</h3>
+
+<p>我们所收集和记录的信息内容，并不可能一开始就记录完美，很多时候可能需要后期不断地完善，那么就需要能够很方便地移动、拆分、合并、重命名、更换目录等操作。</p>
+
+<h3 id="支持查询-替换等">支持查询、替换等</h3>
+
+<p>这个是软件能给我们带来的最大便利之一，很多平台对这个支持都非常有限，甚至没有这一功能，那么你收集的资料就如同深藏在大山里的宝藏，根本发挥不了应有的作用。</p>
+
+<p>然而这也又是程序员所最擅长的一项了，程序员使用的工具，哪个没有搜索功能呢？ 当前文件搜索/替换，全部文件搜索/替换，正则表达式搜索/替换等，只有你想不到……</p>
+
+<h3 id="版本管理">版本管理</h3>
+
+<p>程序员管理纯文本信息的最佳方案，经过多年的进化，目前已经基本稳定成行业最佳标准，没有之一。</p>
+
+<h3 id="方便发布博客">方便发布博客</h3>
+
+<p>每个优秀的程序员，都应该有自己的博客，那么就有一个需求，就是从自己日常的笔记中快速地发布到博客中。</p>
+
+<h3 id="兼具任务管理-日记等功能">兼具任务管理、日记等功能</h3>
+
+<p>既然平常的笔记都用这个工具了，那么每日的日记当然应该很方便地在这里记录，那每天做的事情、任务都应该可以在这里记录。</p>
+
+<h2 id="其他解决方案的主要劣势">其他解决方案的主要劣势</h2>
+
+<h3 id="word-文件夹">Word + 文件夹</h3>
+
+<p>不方便整理、查询，阅读和编辑也有点麻烦，没有版本控制，格式不统一，调整格式也比较麻烦，各软件版本有兼容问题。</p>
+
+<h3 id="evernote-有道云笔记-蚂蚁笔记-qq文档-石墨文档等">Evernote、有道云笔记、蚂蚁笔记、QQ文档、石墨文档等</h3>
+
+<p>依赖商业平台，有容量限制，有隐私顾虑，不能非常自由地保存，长期未支持 markdown，目前虽已支持，但可能还有兼容性问题，扩展性不强，不够灵活。 大部分有自己的快捷键方式，很少支持 vi 操作。</p>
+
+<h3 id="hexo-hugo-博客">Hexo, Hugo 博客</h3>
+
+<p>私密文档的保存问题，调整目录不方便，只适合按时间发布到网站的博客工作模式，通常也就只支持一个网站。</p>
+
+<h3 id="roam-research-roam-edit-等">Roam Research， Roam Edit 等</h3>
+
+<p>毕竟是别人的平台，隐私和自由依旧是个问题，商业平台的空间和功能收费也是个问题。</p>
+
+<h3 id="obsidian">Obsidian</h3>
+
+<p>这个不错，推荐使用，如果更熟悉用 VSCode 的话，可以用 Dendron 插件。</p>
+
+<h2 id="dendron">Dendron</h2>
+
+<p>下面我直接说一下我的感受，关于 Dendron 最好的一些方面：</p>
+
+<h3 id="纯文本-markdown">纯文本 markdown</h3>
+
+<p>见另一篇文章：<a href="/post/2019/power-of-plain-text">《纯文本的威力》</a>，不依赖任何特定的软件工具，可以选择自己最熟悉、最喜欢的文本编辑工具。 当然这里推荐使用：VSCode + Dendron插件 + Vim插件</p>
+
+<h3 id="git-版本控制">Git 版本控制</h3>
+
+<p>最好的版本控制解决方案，已成为行业标准。可以方便地保存在各个 Git 服务平台上，如：Github, Gitee 等，同时借助各种 Git 工具，可以方便地管理文档的历史版本，可以方便地比较任意两个版本的异同等。参考：<a href="/post/2020/git-work">Git 的实际应用</a></p>
+
+<h3 id="目录结构灵活">目录结构灵活</h3>
+
+<p>这是 Dendron 创新的特点之一，用修改文件名来解决改目录的问题</p>
+
+<h3 id="code-snippets">code snippets</h3>
+
+<p>这是利用 VSCode 编辑器的特点之一，可以快捷编辑，写过代码用过 snippets 的朋友都知道。</p>
+
+<h3 id="schema">Schema</h3>
+
+<p>支持模板大纲，更清晰地形成自己知识结构的模式等，可发挥的空间很大。</p>
+
+<h3 id="vscode-生态">VSCode 生态</h3>
+
+<p>VSCode 已成为现代编程的最佳工具，有丰富的功能插件和解决方案，对纯文本处理有最强的支持，对 markdown 也可以通过插件做各式各样的支持。</p>
+
+<h3 id="支持-vi-快捷键及各种快捷键">支持 vi 快捷键及各种快捷键</h3>
+
+<p>这是个人的喜好，但建议你也学会，参考网上：编辑器之神与神的编辑器之争</p>
+
+<h3 id="发布静态网站">发布静态网站</h3>
+
+<p>可支持各子目录单独发布到静态网站，需要一点学习门槛。</p>
+
+<h2 id="总结">总结</h2>
+
+<p>上面举例的各种解决方案其实是几种解决问题的思维模式不同所产生的解决方案不同，Dendron 是典型的开源社区编程思维的解决方案，虽然初看起来有一点学习曲线，但从根本上是给了使用者最大的自由发挥空间，同时又提供了最强大和最彻底的工具生态支持。 通常这类的解决方案都是从最底层、最核心的用户需求引出了最纯粹的解决思路，至于人性化界面、操作等，可以在这之后不断发展出来，就如同 Git 这个工具的思想一样，最核心的功能和设计是科学合理的，那么最初是用命令行的模式操作的，后面可以不断在这些基础上，衍生出各式各样的图形化操作界面，以及象 Lazygit 这样的快捷操作方式等。</p>
+
+<p>在编程的世界，很多新人会感觉非常迷茫，面对海量的技术知识，不知道该学什么，学哪些重点，在这些方面我个人的自觉经历还是有一些心得和体会的，就象今天介绍的这个 Dendron 的笔记技术，了解并熟练使用它，可能需要一些前置条件，如何达到这样的境界呢？非常建议每个人都能找到自己的导师，帮你快速地入门提升，身边找不到合适的导师时，可以加入“世风十三学堂”（知识星球/微信公众号），我来远程帮助你少走弯路少掉坑，进入更广阔、更专业的<a href="/post/2020/mindfulness-programming/">正念编程</a>世界。</p>
+
+<h2 id="扩展阅读">扩展阅读</h2>
+
+<ul>
+<li><a href="http://www.woshipm.com/evaluating/4018062.html">Roam research：一款颠覆传统的个人笔记类产品</a></li>
+</ul>
+
+        </div>
+
+        
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/2020/thinking-to-text/">思考落实到文字</a></li>
+        
+        <li><a href="/post/2019/power-of-plain-text/">纯文本的威力</a></li>
+        
+        <li><a href="/post/2020/new-solutions/">最新技术选型</a></li>
+        
+        <li><a href="/post/2020/implementation-patterns-learn/">《实现模式》学习笔记</a></li>
+        
+        <li><a href="/post/2020/feeling-powerapps/">对于微软 PowerApps 的使用感受</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='https://wind13.gitee.io/tags/dendron'>Dendron</a></li>
+                
+                <li><a href='https://wind13.gitee.io/tags/%E7%BA%AF%E6%96%87%E6%9C%AC'>纯文本</a></li>
+                
+                <li><a href='https://wind13.gitee.io/tags/pain-text'>pain text</a></li>
+                
+                <li><a href='https://wind13.gitee.io/tags/hexo'>Hexo</a></li>
+                
+                <li><a href='https://wind13.gitee.io/tags/hugo'>Hugo</a></li>
+                
+                <li><a href='https://wind13.gitee.io/tags/evernote'>Evernote</a></li>
+                
+                <li><a href='https://wind13.gitee.io/tags/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0'>有道云笔记</a></li>
+                
+                <li><a href='https://wind13.gitee.io/tags/word%E6%96%87%E6%A1%A3'>Word文档</a></li>
+                
+                <li><a href='https://wind13.gitee.io/tags/%E7%9F%B3%E5%A2%A8'>石墨</a></li>
+                
+            </ul>
+            
+        </div>
+    </article>
+    
+    
+
+    
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "wind13/wind13.github.io"
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
+</div>
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='https://wind13.gitee.io/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="site" value="https://wind13.gitee.io/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
+    </li>
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
+    </li>
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
+    </li>
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
+    </li>
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2021/element3-tdd-thinking/" title="参与 Element3 TDD 的感受">参与 Element3 TDD 的感受</a>
+    </li>
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2021/wujun-horizons/" title="吴军《见识》读书笔记">吴军《见识》读书笔记</a>
+    </li>
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2021/fogg-behavior-model-stop-procratinating/" title="听邵恒头条《怎么用“福格行为模型”战胜拖延症？》记录">听邵恒头条《怎么用“福格行为模型”战胜拖延症？》记录</a>
+    </li>
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2021/ultimate-pkm-solution-dendron/" title="终极笔记 Dendron">终极笔记 Dendron</a>
+    </li>
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2020/new-solutions/" title="最新技术选型">最新技术选型</a>
+    </li>
+    
+    <li>
+        <a href="https://wind13.gitee.io/post/2020/implementation-patterns-learn/" title="《实现模式》学习笔记">《实现模式》学习笔记</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li><a href="https://wind13.gitee.io/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (13)</a></li>
+    
+    <li><a href="https://wind13.gitee.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (22)</a></li>
+    
+    <li><a href="https://wind13.gitee.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (20)</a></li>
+    
+    <li><a href="https://wind13.gitee.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
+    
+    <li><a href="https://wind13.gitee.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (11)</a></li>
+    
+    <li><a href="https://wind13.gitee.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (35)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="https://wind13.gitee.io/tags/access/">Access</a>
+    
+    <a href="https://wind13.gitee.io/tags/android/">Android</a>
+    
+    <a href="https://wind13.gitee.io/tags/angular/">angular</a>
+    
+    <a href="https://wind13.gitee.io/tags/angularjs/">angularjs</a>
+    
+    <a href="https://wind13.gitee.io/tags/antd/">AntD</a>
+    
+    <a href="https://wind13.gitee.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.gitee.io/tags/backbone/">backbone</a>
+    
+    <a href="https://wind13.gitee.io/tags/baidu/">baidu</a>
+    
+    <a href="https://wind13.gitee.io/tags/beeui/">BeeUi</a>
+    
+    <a href="https://wind13.gitee.io/tags/blog/">Blog</a>
+    
+    <a href="https://wind13.gitee.io/tags/boook/">boook</a>
+    
+    <a href="https://wind13.gitee.io/tags/capslock/">Capslock</a>
+    
+    <a href="https://wind13.gitee.io/tags/chado.js/">Chado.js</a>
+    
+    <a href="https://wind13.gitee.io/tags/ci/cd/">CI/CD</a>
+    
+    <a href="https://wind13.gitee.io/tags/clojure/">clojure</a>
+    
+    <a href="https://wind13.gitee.io/tags/code/">code</a>
+    
+    <a href="https://wind13.gitee.io/tags/code-review/">code review</a>
+    
+    <a href="https://wind13.gitee.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.gitee.io/tags/datavers/">Datavers</a>
+    
+    <a href="https://wind13.gitee.io/tags/db/">DB</a>
+    
+    <a href="https://wind13.gitee.io/tags/dendron/">Dendron</a>
+    
+    <a href="https://wind13.gitee.io/tags/devops/">DevOps</a>
+    
+    <a href="https://wind13.gitee.io/tags/devtech-java/">devtech java</a>
+    
+    <a href="https://wind13.gitee.io/tags/digital-garden/">digital-garden</a>
+    
+    <a href="https://wind13.gitee.io/tags/docker/">Docker</a>
+    
+    <a href="https://wind13.gitee.io/tags/dubbo/">dubbo</a>
+    
+    <a href="https://wind13.gitee.io/tags/easyui/">easyui</a>
+    
+    <a href="https://wind13.gitee.io/tags/egghead/">egghead</a>
+    
+    <a href="https://wind13.gitee.io/tags/element3/">Element3</a>
+    
+    <a href="https://wind13.gitee.io/tags/elementui/">ElementUI</a>
+    
+    <a href="https://wind13.gitee.io/tags/elixir/">Elixir</a>
+    
+    <a href="https://wind13.gitee.io/tags/erlang/">Erlang</a>
+    
+    <a href="https://wind13.gitee.io/tags/es6/">ES6</a>
+    
+    <a href="https://wind13.gitee.io/tags/esc/">Esc</a>
+    
+    <a href="https://wind13.gitee.io/tags/essay/">essay</a>
+    
+    <a href="https://wind13.gitee.io/tags/evernote/">Evernote</a>
+    
+    <a href="https://wind13.gitee.io/tags/filter/">filter</a>
+    
+    <a href="https://wind13.gitee.io/tags/fizzbuzz/">fizzbuzz</a>
+    
+    <a href="https://wind13.gitee.io/tags/framework/">framework</a>
+    
+    <a href="https://wind13.gitee.io/tags/freebsd/">FreeBSD</a>
+    
+    <a href="https://wind13.gitee.io/tags/game/">game</a>
+    
+    <a href="https://wind13.gitee.io/tags/games/">games</a>
+    
+    <a href="https://wind13.gitee.io/tags/getxml/">getXML</a>
+    
+    <a href="https://wind13.gitee.io/tags/git/">git</a>
+    
+    <a href="https://wind13.gitee.io/tags/gitlab/">Gitlab</a>
+    
+    <a href="https://wind13.gitee.io/tags/golang/">golang</a>
+    
+    <a href="https://wind13.gitee.io/tags/google/">Google</a>
+    
+    <a href="https://wind13.gitee.io/tags/graphic/">Graphic</a>
+    
+    <a href="https://wind13.gitee.io/tags/graphql/">GraphQL</a>
+    
+    <a href="https://wind13.gitee.io/tags/grpc/">grpc</a>
+    
+    <a href="https://wind13.gitee.io/tags/gtd/">GTD</a>
+    
+    <a href="https://wind13.gitee.io/tags/hexo/">hexo</a>
+    
+    <a href="https://wind13.gitee.io/tags/https/">https</a>
+    
+    <a href="https://wind13.gitee.io/tags/hugo/">hugo</a>
+    
+    <a href="https://wind13.gitee.io/tags/hypervisor/">Hypervisor</a>
+    
+    <a href="https://wind13.gitee.io/tags/index/">index</a>
+    
+    <a href="https://wind13.gitee.io/tags/iot/">IOT</a>
+    
+    <a href="https://wind13.gitee.io/tags/iterm2/">iterm2</a>
+    
+    <a href="https://wind13.gitee.io/tags/java/">Java</a>
+    
+    <a href="https://wind13.gitee.io/tags/javascript/">javascript</a>
+    
+    <a href="https://wind13.gitee.io/tags/jenkins/">Jenkins</a>
+    
+    <a href="https://wind13.gitee.io/tags/json/">json</a>
+    
+    <a href="https://wind13.gitee.io/tags/julia/">Julia</a>
+    
+    <a href="https://wind13.gitee.io/tags/kafka/">Kafka</a>
+    
+    <a href="https://wind13.gitee.io/tags/kpi/">KPI</a>
+    
+    <a href="https://wind13.gitee.io/tags/learn/">learn</a>
+    
+    <a href="https://wind13.gitee.io/tags/linux/">Linux</a>
+    
+    <a href="https://wind13.gitee.io/tags/love/">love</a>
+    
+    <a href="https://wind13.gitee.io/tags/mac-osx/">Mac osx</a>
+    
+    <a href="https://wind13.gitee.io/tags/macro/">macro</a>
+    
+    <a href="https://wind13.gitee.io/tags/manjaro/">Manjaro</a>
+    
+    <a href="https://wind13.gitee.io/tags/mapapi/">mapapi</a>
+    
+    <a href="https://wind13.gitee.io/tags/markdown/">Markdown</a>
+    
+    <a href="https://wind13.gitee.io/tags/midi/">midi</a>
+    
+    <a href="https://wind13.gitee.io/tags/mido/">mido</a>
+    
+    <a href="https://wind13.gitee.io/tags/mindmap/">mindmap</a>
+    
+    <a href="https://wind13.gitee.io/tags/module/">module</a>
+    
+    <a href="https://wind13.gitee.io/tags/mqtt/">MQTT</a>
+    
+    <a href="https://wind13.gitee.io/tags/multibranch/">Multibranch</a>
+    
+    <a href="https://wind13.gitee.io/tags/music/">music</a>
+    
+    <a href="https://wind13.gitee.io/tags/namespace/">namespace</a>
+    
+    <a href="https://wind13.gitee.io/tags/neovim/">NeoVim</a>
+    
+    <a href="https://wind13.gitee.io/tags/netlify/">netlify</a>
+    
+    <a href="https://wind13.gitee.io/tags/next/">next</a>
+    
+    <a href="https://wind13.gitee.io/tags/ng/">Ng</a>
+    
+    <a href="https://wind13.gitee.io/tags/node.js/">Node.js</a>
+    
+    <a href="https://wind13.gitee.io/tags/nodejs/">Nodejs</a>
+    
+    <a href="https://wind13.gitee.io/tags/npm/">npm</a>
+    
+    <a href="https://wind13.gitee.io/tags/nuxt/">Nuxt</a>
+    
+    <a href="https://wind13.gitee.io/tags/ocr/">OCR</a>
+    
+    <a href="https://wind13.gitee.io/tags/okr/">OKR</a>
+    
+    <a href="https://wind13.gitee.io/tags/opencv/">OpenCV</a>
+    
+    <a href="https://wind13.gitee.io/tags/os/">OS</a>
+    
+    <a href="https://wind13.gitee.io/tags/osv/">OSv</a>
+    
+    <a href="https://wind13.gitee.io/tags/package-lock.json/">package-lock.json</a>
+    
+    <a href="https://wind13.gitee.io/tags/pact.io/">Pact.io</a>
+    
+    <a href="https://wind13.gitee.io/tags/pain-text/">pain text</a>
+    
+    <a href="https://wind13.gitee.io/tags/para/">para</a>
+    
+    <a href="https://wind13.gitee.io/tags/pc/">pc</a>
+    
+    <a href="https://wind13.gitee.io/tags/piano/">piano</a>
+    
+    <a href="https://wind13.gitee.io/tags/pipeline/">PipeLine</a>
+    
+    <a href="https://wind13.gitee.io/tags/play1/">play1</a>
+    
+    <a href="https://wind13.gitee.io/tags/play1x/">play1x</a>
+    
+    <a href="https://wind13.gitee.io/tags/play2-scala/">play2 scala</a>
+    
+    <a href="https://wind13.gitee.io/tags/playframework/">playframework</a>
+    
+    <a href="https://wind13.gitee.io/tags/playscala/">playscala</a>
+    
+    <a href="https://wind13.gitee.io/tags/powerapps/">PowerApps</a>
+    
+    <a href="https://wind13.gitee.io/tags/powermill/">powermill</a>
+    
+    <a href="https://wind13.gitee.io/tags/ppt/">PPT</a>
+    
+    <a href="https://wind13.gitee.io/tags/promise/">Promise</a>
+    
+    <a href="https://wind13.gitee.io/tags/python/">python</a>
+    
+    <a href="https://wind13.gitee.io/tags/qa/">QA</a>
+    
+    <a href="https://wind13.gitee.io/tags/ray-dalio/">Ray Dalio</a>
+    
+    <a href="https://wind13.gitee.io/tags/re-natal/">re-natal</a>
+    
+    <a href="https://wind13.gitee.io/tags/react/">react</a>
+    
+    <a href="https://wind13.gitee.io/tags/react-native/">react native</a>
+    
+    <a href="https://wind13.gitee.io/tags/react-route/">react-route</a>
+    
+    <a href="https://wind13.gitee.io/tags/redux/">redux</a>
+    
+    <a href="https://wind13.gitee.io/tags/regex/">Regex</a>
+    
+    <a href="https://wind13.gitee.io/tags/rpc/">rpc</a>
+    
+    <a href="https://wind13.gitee.io/tags/ruby/">Ruby</a>
+    
+    <a href="https://wind13.gitee.io/tags/rust/">rust</a>
+    
+    <a href="https://wind13.gitee.io/tags/second-brain/">second-brain</a>
+    
+    <a href="https://wind13.gitee.io/tags/session/">session</a>
+    
+    <a href="https://wind13.gitee.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.gitee.io/tags/spacevim/">SpaceVim</a>
+    
+    <a href="https://wind13.gitee.io/tags/sql/">SQL</a>
+    
+    <a href="https://wind13.gitee.io/tags/ssh/">ssh</a>
+    
+    <a href="https://wind13.gitee.io/tags/static-site/">Static Site</a>
+    
+    <a href="https://wind13.gitee.io/tags/svg/">SVG</a>
+    
+    <a href="https://wind13.gitee.io/tags/tdd/">TDD</a>
+    
+    <a href="https://wind13.gitee.io/tags/text/">text</a>
+    
+    <a href="https://wind13.gitee.io/tags/toc/">TOC</a>
+    
+    <a href="https://wind13.gitee.io/tags/tomorrow-theme/">tomorrow-theme</a>
+    
+    <a href="https://wind13.gitee.io/tags/tools/">tools</a>
+    
+    <a href="https://wind13.gitee.io/tags/typescript/">TypeScript</a>
+    
+    <a href="https://wind13.gitee.io/tags/umi/">Umi</a>
+    
+    <a href="https://wind13.gitee.io/tags/uml/">uml</a>
+    
+    <a href="https://wind13.gitee.io/tags/unit-test/">Unit Test</a>
+    
+    <a href="https://wind13.gitee.io/tags/unix/">Unix</a>
+    
+    <a href="https://wind13.gitee.io/tags/vant/">Vant</a>
+    
+    <a href="https://wind13.gitee.io/tags/vi/">vi</a>
+    
+    <a href="https://wind13.gitee.io/tags/vim/">vim</a>
+    
+    <a href="https://wind13.gitee.io/tags/vimrc/">vimrc</a>
+    
+    <a href="https://wind13.gitee.io/tags/vlang/">vlang</a>
+    
+    <a href="https://wind13.gitee.io/tags/vue/">Vue</a>
+    
+    <a href="https://wind13.gitee.io/tags/vue3/">Vue3</a>
+    
+    <a href="https://wind13.gitee.io/tags/weapp/">weapp</a>
+    
+    <a href="https://wind13.gitee.io/tags/webpack/">Webpack</a>
+    
+    <a href="https://wind13.gitee.io/tags/weui/">WeUI</a>
+    
+    <a href="https://wind13.gitee.io/tags/wind13/">wind13</a>
+    
+    <a href="https://wind13.gitee.io/tags/windows/">Windows</a>
+    
+    <a href="https://wind13.gitee.io/tags/word%E6%96%87%E6%A1%A3/">Word文档</a>
+    
+    <a href="https://wind13.gitee.io/tags/wux/">Wux</a>
+    
+    <a href="https://wind13.gitee.io/tags/xml/">xml</a>
+    
+    <a href="https://wind13.gitee.io/tags/yarn/">yarn</a>
+    
+    <a href="https://wind13.gitee.io/tags/yarn.lock/">yarn.lock</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%B8%80%E5%9B%BE/">一图</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%B8%96%E9%A3%8E%E5%8D%81%E4%B8%89%E5%AD%A6%E5%A0%82/">世风十三学堂</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%B9%A0%E6%83%AF/">习惯</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%B9%A6%E7%B1%8D/">书籍</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E6%97%B6%E4%BB%A3/">互联网时代</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%BA%B2%E5%AD%90%E6%95%99%E8%82%B2/">亲子教育</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%BA%BA%E6%9C%88%E7%A5%9E%E8%AF%9D/">人月神话</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%BA%BA%E7%94%9F/">人生</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%BB%A5%E7%BB%88%E4%B8%BA%E5%A7%8B/">以终为始</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E4%BC%81%E4%B8%9A%E7%AE%A1%E7%90%86/">企业管理</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%85%AC%E5%8F%B8%E7%AE%A1%E7%90%86/">公司管理</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%87%8F%E8%82%A5/">减肥</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/">函数式编程</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%88%98%E9%82%A6/">刘邦</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%88%9B%E6%84%8F%E7%B2%BE%E8%8B%B1/">创意精英</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%88%9B%E6%96%B0/">创新</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%88%9D%E5%AD%A6%E8%80%85/">初学者</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%88%B6%E7%BA%A6%E7%90%86%E8%AE%BA/">制约理论</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%89%8D%E7%AB%AF/">前端</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%8C%A0%E5%BF%83/">匠心</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%8D%8E%E6%99%A8%E5%AE%87/">华晨宇</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%8E%9F%E5%88%99/">原则</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%90%B4%E5%86%9B/">吴军</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%9B%A2%E9%98%9F%E6%95%88%E7%8E%87/">团队效率</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%9B%B4%E6%A3%8B/">围棋</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/">图像处理</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%A4%A7%E8%87%AA%E7%84%B6/">大自然</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/">学习方法</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%AE%8F%E7%BC%96%E7%A8%8B/">宏编程</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">小程序</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%B4%94%E5%81%A5/">崔健</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%B7%A5%E4%BD%9C%E5%AE%A4/">工作室</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%B7%A5%E7%A8%8B%E5%8C%96/">工程化</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%B7%A5%E7%A8%8B%E6%80%9D%E7%BB%B4/">工程思维</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%B7%B4%E8%8F%B2%E7%89%B9/">巴菲特</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/">开发环境</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%BC%82%E6%AD%A5/">异步</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%BE%97%E5%88%B0/">得到</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%BE%97%E5%88%B0-app/">得到 App</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%BE%97%E5%88%B0app/">得到App</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">微服务</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%BE%AE%E8%BD%AF/">微软</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E5%BF%83%E6%99%BA%E6%AE%8B%E7%96%BE/">心智残疾</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">思维导图</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%80%9D%E7%BB%B4%E8%AE%B0%E5%BD%95/">思维记录</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%89%8B%E6%9C%BA/">手机</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B/">技术选型</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%8A%95%E8%B5%84/">投资</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%8B%96%E5%BB%B6%E7%97%87/">拖延症</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%8E%98%E9%87%91/">掘金</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%95%8F%E6%8D%B7/">敏捷</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%95%99%E8%82%B2/">教育</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%95%B0%E6%8E%A7%E5%8A%A0%E5%B7%A5/">数控加工</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85/">新冠疫情</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%97%8B%E8%BD%AE%E7%BA%BF/">旋轮线</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/">时间管理</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%98%A5%E8%8A%82/">春节</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%99%BA%E6%85%A7/">智慧</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/">最佳实践</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%9C%80%E9%80%9F%E9%99%8D%E7%BA%BF/">最速降线</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0/">有道云笔记</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%9D%8E%E7%AC%91%E6%9D%A5/">李笑来</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/">极限编程</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%A8%8A%E7%99%BB/">樊登</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%A8%8A%E7%99%BB%E8%AF%BB%E4%B9%A6/">樊登读书</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%AD%8C%E6%89%8B/">歌手</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%AD%A3%E5%BF%B5%E7%BC%96%E7%A8%8B/">正念编程</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%B2%B3%E9%A9%AC/">河马</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%B3%A8%E6%84%8F%E5%8A%9B/">注意力</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/">流程图</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%B5%8B%E8%AF%95%E9%87%91%E5%AD%97%E5%A1%94/">测试金字塔</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%B5%8B%E8%AF%95%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91/">测试驱动开发</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%B7%B1%E5%BA%A6%E5%B7%A5%E4%BD%9C/">深度工作</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E6%B8%B8%E6%88%8F/">游戏</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%81%B5%E6%84%9F/">灵感</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%86%B5%E5%A2%9E/">熵增</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%89%A9%E8%81%94%E7%BD%91/">物联网</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/">王者荣耀</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%8E%8B%E9%98%B3%E6%98%8E/">王阳明</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%91%9E%E8%BE%BE%E5%88%A9%E6%AC%A7/">瑞·达利欧</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%93%B6%E9%A2%88/">瓶颈</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%94%98%E7%89%B9%E5%9B%BE/">甘特图</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%95%AA%E8%8C%84%E5%B7%A5%E4%BD%9C%E6%B3%95/">番茄工作法</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%96%AB%E6%83%85/">疫情</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%97%9B%E8%8B%A6/">痛苦</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%9F%A5%E8%AF%86%E6%98%9F%E7%90%83/">知识星球</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%9F%B3%E5%A2%A8/">石墨</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%A2%8E%E7%89%87/">碎片</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%A4%BA%E6%84%8F%E5%9B%BE/">示意图</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%A5%9D%E6%84%BF/">祝愿</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/">福格行为模型</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%AC%AC3%E9%80%89%E6%8B%A9/">第3选择</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%AE%97%E6%B3%95/">算法</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%AE%A1%E7%90%86%E6%80%9D%E6%83%B3/">管理思想</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%B3%96%E5%B0%BF%E7%97%85/">糖尿病</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%B3%BB%E7%BB%9F/">系统</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%B3%BB%E7%BB%9F%E6%97%B6%E5%8C%BA/">系统时区</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%BA%AF%E6%96%87%E6%9C%AC/">纯文本</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%BA%B3%E5%BE%B7%E6%8B%89/">纳德拉</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%BB%88%E8%BA%AB%E5%AD%A6%E4%B9%A0/">终身学习</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/">编程开发</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%BD%97%E8%83%96/">罗胖</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E7%BD%97%E8%BE%91%E6%80%9D%E7%BB%B4/">罗辑思维</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%84%91%E5%9B%BE/">脑图</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%87%AA%E5%BE%8B/">自律</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%88%92%E9%80%82%E5%8C%BA/">舒适区</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%8A%B1%E6%9E%9C%E5%B1%B1%E6%8A%80%E6%9C%AF%E5%9B%A2%E9%98%9F/">花果山技术团队</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%A7%81%E8%AF%86/">见识</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">解决方案</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%B0%B7%E6%AD%8C/">谷歌</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%B4%A2%E5%AF%8C%E8%87%AA%E7%94%B1/">财富自由</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">软件开发</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%BF%87%E6%BB%A4%E5%99%A8/">过滤器</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%BF%90%E6%B0%94/">运气</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E8%BF%BD%E6%B1%82/">追求</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E9%87%8D%E6%9E%84/">重构</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E9%98%BF%E5%B0%94%E8%8C%A8%E6%B5%B7%E9%BB%98%E7%97%87/">阿尔茨海默症</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A/">非暴力沟通</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E9%A2%86%E5%AF%BC%E5%8A%9B/">领导力</a>
+    
+    <a href="https://wind13.gitee.io/tags/%E9%AB%98%E8%B4%A8%E9%87%8F/">高质量</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="http://extremeprogramming.cn/" title="极限编程中国">极限编程中国</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://outmanzzq.github.io/" title="outmanzzq">运维朋友的博客</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://wind13.gitee.io/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+    <div class="container">
+        &copy; 2021 <a href="https://wind13.gitee.io/">世风十三学堂 By 世风十三</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    
+    
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+
+</body>
+
+</html>

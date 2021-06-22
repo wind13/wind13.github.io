@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>midi on 世风十三学堂</title>
+    <link>https://wind13.gitee.io/tags/midi/</link>
+    <description>Recent content in midi on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 25 Jan 2020 16:00:11 +0800</lastBuildDate>
+    
+	<atom:link href="https://wind13.gitee.io/tags/midi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Music Programming</title>
+      <link>https://wind13.gitee.io/post/2020/music-programming/</link>
+      <pubDate>Sat, 25 Jan 2020 16:00:11 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/music-programming/</guid>
+      <description>前阵子有一天，脑子里突然有个很有趣的想法，能不能用编程来写音乐？主要是基于几个思路，一是说纯文本可以编程可以做很多事，能画图什么的，能不能做音乐呢？另一个就是自己一直对音乐有很大的兴趣，但是自己又没有深入学习和研究，年轻时弹了一阵子吉他，后来也因为手指和手部肌肉疼放弃了，可能是没</description>
+    </item>
+    
+  </channel>
+</rss>

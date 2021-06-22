@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mindmap on 世风十三学堂</title>
+    <link>https://wind13.gitee.io/tags/mindmap/</link>
+    <description>Recent content in mindmap on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 31 Jan 2020 13:40:37 +0800</lastBuildDate>
+    
+	<atom:link href="https://wind13.gitee.io/tags/mindmap/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo 中 显示 MindMap 思维导图</title>
+      <link>https://wind13.gitee.io/post/2020/hugo-mind-map/</link>
+      <pubDate>Fri, 31 Jan 2020 13:40:37 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/hugo-mind-map/</guid>
+      <description>目前比较好的脑图方案 一个是在 Hugo 里用 Markdown 写，在浏览器中预览。 另一个是用 Markdown 写后，通过 Typora 导出 opml 格式，再导入幕布后即可查看。 还有就是使用 PlantUML 插件 在 VSCode 中写 markdown 画脑图。 还有一个就是用 vscode-mindmap 插件，编辑 kityminder *.km 文件即可，这个功能与百度脑图用的是同一个技术，只是还没找到导入导出的功能。 效果如下： - 根目录 - 一级目</description>
+    </item>
+    
+  </channel>
+</rss>

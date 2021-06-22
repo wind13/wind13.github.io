@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>计算机 on 世风十三学堂</title>
+    <link>https://wind13.gitee.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+    <description>Recent content in 计算机 on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 02 Feb 2020 16:33:26 +0800</lastBuildDate>
+    
+	<atom:link href="https://wind13.gitee.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>观围棋历史与计算机的感想</title>
+      <link>https://wind13.gitee.io/post/2020/weiqi-game-computer/</link>
+      <pubDate>Sun, 02 Feb 2020 16:33:26 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/weiqi-game-computer/</guid>
+      <description>今天在家看一个很早的纪录片《【CCTV纪录片】两千年来的那些游戏【全7集】》，一开始就提到计算机围棋，说在1991年广州中山大学的化学系退休教授陈志行开发了围棋游戏《手谈》，到2005年，这款游戏已经打败了全世界其他的同类游戏，但是在与真正的人类棋手相比时，棋力依然很低，只相当于</description>
+    </item>
+    
+  </channel>
+</rss>

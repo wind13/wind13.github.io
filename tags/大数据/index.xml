@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>大数据 on 世风十三学堂</title>
+    <link>https://wind13.gitee.io/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/</link>
+    <description>Recent content in 大数据 on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 24 May 2020 11:25:06 +0800</lastBuildDate>
+    
+	<atom:link href="https://wind13.gitee.io/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>技术方案要从解决现实世界的问题开始</title>
+      <link>https://wind13.gitee.io/post/2020/business-optimize/</link>
+      <pubDate>Sun, 24 May 2020 11:25:06 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/business-optimize/</guid>
+      <description>技术方案要从解决现实世界的问题开始 技术群里讨论一个技术方案的问题，大概描述如下： 一个单据处理系统，上游系统会不断产生新的单据，数量比较大，频率也比较高； 当前系统分为两个环节，一个接单环节，一个转单环节； 接单环节负责将单据入库；保存数据库目前速度跟得上，可以保证上游系统的单据全部入</description>
+    </item>
+    
+    <item>
+      <title>《智能时代》读书笔记</title>
+      <link>https://wind13.gitee.io/post/2016/2016-09-18-data-time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-09-18-data-time/</guid>
+      <description>第一章 数据——人类建造文明的基石 使用数据的标准流程： 1. 获取数据 1. 分析数据 1. 建立模型 1. 预测未知 完美的镜头里面的透镜其实不应该是球面镜，而应该是某种复杂的曲面，这样才能使画面不变形，但这样的镜头在设计和制作上要求非常复杂而难以实现，相反如同日本的镜头生产一样，采用多个球面透镜来组合虽</description>
+    </item>
+    
+  </channel>
+</rss>

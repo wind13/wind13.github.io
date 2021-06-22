@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>纯文本 on 世风十三学堂</title>
+    <link>https://wind13.gitee.io/tags/%E7%BA%AF%E6%96%87%E6%9C%AC/</link>
+    <description>Recent content in 纯文本 on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 03 Jan 2021 11:24:11 +0800</lastBuildDate>
+    
+	<atom:link href="https://wind13.gitee.io/tags/%E7%BA%AF%E6%96%87%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>终极笔记 Dendron</title>
+      <link>https://wind13.gitee.io/post/2021/ultimate-pkm-solution-dendron/</link>
+      <pubDate>Sun, 03 Jan 2021 11:24:11 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2021/ultimate-pkm-solution-dendron/</guid>
+      <description>我想每个知识工作者都会有自己的个人知识管理解决方案，而且也都在不断地进化和改善中，还记得最早的时候，我们是没有这些概念的，那时候，不管把信息记在哪儿，随手记下来就算了，用过之后也就忘了或者删掉了。慢慢地我们意识到一些信息可能是有用的，需要保留下来的，于是我们用各种方式进行保存，建</description>
+    </item>
+    
+    <item>
+      <title>思考落实到文字</title>
+      <link>https://wind13.gitee.io/post/2020/thinking-to-text/</link>
+      <pubDate>Tue, 19 May 2020 10:11:29 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/thinking-to-text/</guid>
+      <description>倡议大家把自己的思考都记录到自己的博客或者公众号上，把思维落实到 markdown 这样的纯文本中，其自带的优势可参看此文：《纯文本的威力》 我们将思考仔细地整理成文字，虽然相对直接说会更耗时间，但看的人却可以很快地了解整个思路，而且有以下一些好处： 中途不会被打断，一些论点可能刚一说出来，就会面临争</description>
+    </item>
+    
+    <item>
+      <title>纯文本的威力</title>
+      <link>https://wind13.gitee.io/post/2019/power-of-plain-text/</link>
+      <pubDate>Tue, 15 Oct 2019 06:28:01 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2019/power-of-plain-text/</guid>
+      <description>“Keep Knowledge in Pain Text（用纯文本保存知识）” 纯文本能做的事 所有的软件源代码都是纯文本！ 纯文本是即可以让机器运行，又可以让人类阅读的内容形式。 Unix 系统的底层设计充分利用了纯文本的独特性。 做 PPT 演示 国产框架工具，建议用 revealjs 功能更强些，更国际化、标准化些。 用 revealjs 转 Asciidoctor 文档为 PPT Asciidoctor 用 Ruby 写的将 AsciiDoc 文本</description>
+    </item>
+    
+  </channel>
+</rss>

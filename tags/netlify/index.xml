@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>netlify on 世风十三学堂</title>
+    <link>https://wind13.gitee.io/tags/netlify/</link>
+    <description>Recent content in netlify on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 22 Sep 2018 01:53:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://wind13.gitee.io/tags/netlify/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>当日笔记-20180922</title>
+      <link>https://wind13.gitee.io/post/2018/2018-09-22-daily-note-20180922/</link>
+      <pubDate>Sat, 22 Sep 2018 01:53:04 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-09-22-daily-note-20180922/</guid>
+      <description>Hugo 研究 对 Hugo 有点着迷了，看到了 Youtube 上面的教程，非常详细而直观，同时还可以练习英语听力，看自己感兴趣的英语视频内容应该是学英语最佳的途径之一了。 然后发现了这个 netlify 网站 ，号称：Everything you need to deploy your project. 在静态网站的基础上，扩展很多功能 Auth/Form/Lamda 等，包括部署 CI/CD 等，单人免费，多人收费。考虑到结合</description>
+    </item>
+    
+  </channel>
+</rss>

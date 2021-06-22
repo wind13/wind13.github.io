@@ -1,0 +1,1388 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>世风十三学堂</title>
+    <link>https://wind13.gitee.io/</link>
+    <description>Recent content on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 24 Apr 2021 09:05:05 +0800</lastBuildDate>
+    
+	<atom:link href="https://wind13.gitee.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>推荐阅读</title>
+      <link>https://wind13.gitee.io/page/recommend/</link>
+      <pubDate>Sat, 24 Apr 2021 09:05:05 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/page/recommend/</guid>
+      <description>教育方向 正念编程——知识星球：世风十三学堂 好书推荐——个人觉得应该读的书 技术方向 纯文本的威力 终极笔记 Dendron 参与 Element3 TDD 的感受 微软 PowerApps 的使用感受 复习 FizzBuzz 管理方向 摘录《原则》动画重点 非暴力沟通在公司管理中的思考 先进管理思想建议方案 亲子教育和领导力 软件工程 软件开发团队如何高质量、高效率？ 开发团队能</description>
+    </item>
+    
+    <item>
+      <title>Digital Garden</title>
+      <link>https://wind13.gitee.io/post/2021/blog.digital-garden/</link>
+      <pubDate>Wed, 24 Mar 2021 11:37:15 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2021/blog.digital-garden/</guid>
+      <description>Digital Garden 源自以下文章的启发： [[#idea|tag.idea]] My blog is a digital garden, not a blog Joel Hooks at egghead.io Stop Giving af and Start Writing More 重新思考“博客”的概念和定位，确实不应该把个人网站当作博客来看，每篇文章都要精心打磨，有些麻烦，作者的思考是把它当作“数字花园”，我也有同感的，就象我在 Dendron 里记录了很多东西，但在博客上并没有发布多少。 看作博客，随着时</description>
+    </item>
+    
+    <item>
+      <title>E2E tests, Integrated tests vs Collaboration and Contract Tests</title>
+      <link>https://wind13.gitee.io/post/2021/blog.collaboration-contract-tests/</link>
+      <pubDate>Thu, 18 Mar 2021 17:34:44 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2021/blog.collaboration-contract-tests/</guid>
+      <description>E2E tests, Integrated tests vs Collaboration and Contract tests 测试金字塔 参考以下文章，减少 E2E 测试的比例，Google 的建议：70% unit tests, 20% integration tests, and 10% end-to-end tests. Just Say No to More End-to-End Tests 这样看来， Pact.io 类似的功能相当于 Integration tests 层，可能是目前大多数团队所忽略的部分？ 然而看到下面这篇和系列文章，又说 Integrated Tests are a Scam(坑/骗局) Integrated Tests Are A Scam Series 下面这篇又说 Integration Test 不同</description>
+    </item>
+    
+    <item>
+      <title>前端工程化学习笔记</title>
+      <link>https://wind13.gitee.io/post/2021/learn-front-end-engineer/</link>
+      <pubDate>Fri, 19 Feb 2021 16:51:17 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2021/learn-front-end-engineer/</guid>
+      <description>前端工程化学习笔记 拉勾教育《前端工程化精讲》课程 开发效率 脚手架（Scaffold）工具 快速生成 基础代码和目录 package.json, *.lock 文件 项目技术栈 webpack 配置文件 检查工具、单元测试工具 最佳实践 自定义模板 云开发 无代码工具 脚手架工具 Yeoman 通用的，用于一些开发流程里特定片段代码的生成 Create-React-App(CRA) react-rewired customize-cra react-scripts 开发流程集成工具 Vue CLI 有交</description>
+    </item>
+    
+    <item>
+      <title>摘录《原则》动画重点</title>
+      <link>https://wind13.gitee.io/post/2021/learn.principles/</link>
+      <pubDate>Tue, 16 Feb 2021 11:08:11 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2021/learn.principles/</guid>
+      <description>摘录《原则》动画重点 Ray Dalio 瑞·达利欧 微博全球视频精选Premium Podcast: 文森说书 Instagram: vincent_reading 为什么需要建立原则 每次遇到问题都要思考一次，很容易纠结，可以矛盾的两边都照顾不好。 为生活中不同类别的问题，整理出应该遵循的原则。每次使用原则所带来的结果，都可能微调原则的内容，最后的原则就越来越符合自己</description>
+    </item>
+    
+    <item>
+      <title>参与 Element3 TDD 的感受</title>
+      <link>https://wind13.gitee.io/post/2021/element3-tdd-thinking/</link>
+      <pubDate>Sun, 07 Feb 2021 09:48:33 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2021/element3-tdd-thinking/</guid>
+      <description>参与 Element3 开源项目，使用 TDD 的一些感受 本文已被掘金花果山技术团队转载 TDD的困惑 很多项目团队并没有使用 TDD （测试驱动开发）的开发方式，我想这在目前的开发团队中占比非常高，特别是中小型公司的前端开发团队，几乎可以说是“全军覆没”，为什么？原因可能是以下所列的一些： TDD 太麻烦，增加了工作量 TDD 太</description>
+    </item>
+    
+    <item>
+      <title>吴军《见识》读书笔记</title>
+      <link>https://wind13.gitee.io/post/2021/wujun-horizons/</link>
+      <pubDate>Sun, 17 Jan 2021 09:00:12 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2021/wujun-horizons/</guid>
+      <description>吴军《见识》读书笔记 前面几章一直在看，没想着记录，只摘个目录吧，以后重看时再补一下…… 上篇 商业的本质 第一章 商业的本质 第二章 创业不等于从0到1 第三章 以小博大的颠覆式创新 第四章 拒绝伪工作者 第五章 职场的误区与破解方法 第六章 理性的投资观 第六章 理性的投资观 下篇 人生的智慧 第七章 幸福是目的，成</description>
+    </item>
+    
+    <item>
+      <title>听邵恒头条《怎么用“福格行为模型”战胜拖延症？》记录</title>
+      <link>https://wind13.gitee.io/post/2021/fogg-behavior-model-stop-procratinating/</link>
+      <pubDate>Sat, 16 Jan 2021 14:05:52 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2021/fogg-behavior-model-stop-procratinating/</guid>
+      <description>听邵恒头条《怎么用“福格行为模型”战胜拖延症？》记录 概念介绍 国外专门研究拖延症的网站：Deprocrastination How to stop procrastinating by using the Fogg Behavior Model 美国斯坦福大学教授：布莱恩·福格（Brian Fogg） 尼尔·埃亚尔《上瘾：让用户养成使用习惯的四大产品逻辑》的理论基础也是 Fogg Model Fogg Model: Behavior = Motivation + Ability</description>
+    </item>
+    
+    <item>
+      <title>终极笔记 Dendron</title>
+      <link>https://wind13.gitee.io/post/2021/ultimate-pkm-solution-dendron/</link>
+      <pubDate>Sun, 03 Jan 2021 11:24:11 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2021/ultimate-pkm-solution-dendron/</guid>
+      <description>我想每个知识工作者都会有自己的个人知识管理解决方案，而且也都在不断地进化和改善中，还记得最早的时候，我们是没有这些概念的，那时候，不管把信息记在哪儿，随手记下来就算了，用过之后也就忘了或者删掉了。慢慢地我们意识到一些信息可能是有用的，需要保留下来的，于是我们用各种方式进行保存，建</description>
+    </item>
+    
+    <item>
+      <title>最新技术选型</title>
+      <link>https://wind13.gitee.io/post/2020/new-solutions/</link>
+      <pubDate>Mon, 28 Dec 2020 16:49:11 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/new-solutions/</guid>
+      <description>最新技术选型 语言 Reason 可以让您编写简单，快速和优质的类型安全代码，同时利用 JavaScript 和 OCaml 的生态。 OCaml is an industrial strength programming language supporting functional, imperative and object-oriented styles. 一种支持功能、命令和面向对象的工业强度编程语言，一种快速、实用且强类型的编程语言 BuckleScript 不是一个新的编程语言。 它只是将输入的 OCaml，通过一些调整，使其编译为干净、可读的 JavaScript 代</description>
+    </item>
+    
+    <item>
+      <title>《实现模式》学习笔记</title>
+      <link>https://wind13.gitee.io/post/2020/implementation-patterns-learn/</link>
+      <pubDate>Sat, 05 Dec 2020 23:12:40 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/implementation-patterns-learn/</guid>
+      <description>Learning 《Implementation Patterns》 —— 编写可读的代码 在软件开发中有大量的开销都被用在理解现有代码上了。 范围的管理对于软件开发和写书都一样重要。 好的代码是有意义的。 软件要取得商业成功或者被广泛使用，“好的代码质量”即不必要也不充分。 尽管代码质量不能保证美好的未来，但</description>
+    </item>
+    
+    <item>
+      <title>对于微软 PowerApps 的使用感受</title>
+      <link>https://wind13.gitee.io/post/2020/feeling-powerapps/</link>
+      <pubDate>Wed, 25 Nov 2020 09:57:44 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/feeling-powerapps/</guid>
+      <description>感受 非常依赖微软的生态系统，基本上就是原来单机版的 Office 搬上了云端，再加上一些快捷功能生成手机/平板 App 和网站等。 生成的 App 实际上是运行在 PowerApps 这个超级 App 基础上，相当于小程序之于微信，不同的是，小程序支持代码开发（支持 JavaScript 等语言，有更高的可控性和灵活性），而微软的 PowerApps 不太支持代码开发，主张的是通</description>
+    </item>
+    
+    <item>
+      <title>亲子教育和领导力</title>
+      <link>https://wind13.gitee.io/post/2020/education-leadership/</link>
+      <pubDate>Tue, 13 Oct 2020 09:23:23 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/education-leadership/</guid>
+      <description>很多次听樊登讲书里亲子教育相关的内容时，都会勾起我自己的一些反思和回忆，也同时会想到公司的日常管理和沟通问题。 樊登老师也明显是意识到这两者之间的很多相似、相通之处的，在他讲领导力、沟通的课程上多次提到亲子教育中的一些案例。 今天看《在远远的背后带领》这期樊登讲书视频时，又再次联想到</description>
+    </item>
+    
+    <item>
+      <title>Jenkins 学习笔记</title>
+      <link>https://wind13.gitee.io/post/2020/jenkins-learning/</link>
+      <pubDate>Sat, 10 Oct 2020 09:31:01 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/jenkins-learning/</guid>
+      <description>每个 Jenkins 用户都应该知道这三个最佳实践 轻量化 Jenkins 最佳实践 Jenkins管道最佳实践Top 10 不仅一个代码库可以支持多个Multibranch Job，实际上多个Multibranch Job可以共用同一个代码库，这里面就用到marker的功能。所以作为一个Jenkins管理员，我最纠结的就是</description>
+    </item>
+    
+    <item>
+      <title>Learn Elixir</title>
+      <link>https://wind13.gitee.io/post/2020/learn-elixir/</link>
+      <pubDate>Tue, 08 Sep 2020 22:50:16 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/learn-elixir/</guid>
+      <description>参考资料 GOTO 2019 • The Soul of Erlang and Elixir • Saša Jurić http://elixir-lang.com/ https://elixirschool.com/zh-hans/ macOS 上的安装 brew install elixir Edward 的课程~ Captcha TDD in Elixir 01 - 练习的第一小步 - 实现最基本的验证码比对 Captcha TDD in Elixir 02 - 练习的第二小步 - 实现带次数的验证码比对 Captcha TDD in Elixir 03 - 练习的第三小步 - 验证码服务化(进程化) Captcha TDD in Elixir 03_2 - 第三小步成果的命令行方式使用示例 Captcha TDD in Elixir 04</description>
+    </item>
+    
+    <item>
+      <title>正念编程——知识星球：世风十三学堂</title>
+      <link>https://wind13.gitee.io/post/2020/mindfulness-programming/</link>
+      <pubDate>Sun, 30 Aug 2020 17:43:29 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/mindfulness-programming/</guid>
+      <description>发心与起源 受到樊登读书会的很多影响，抽出了这个词：正念，有几个方面的考虑： 走正道，做正确的事 使用正确的方法 学习道层面的心法 长期主义，慢慢进步 传统的师徒教授方式很有效果 多年的经验，帮你少走弯路 追求思维方式的改变和升级 不同于传统的培训、技术教程之类 为什么说报培训班不好？ 看技术教程、看</description>
+    </item>
+    
+    <item>
+      <title>心学技艺——人生终极追求</title>
+      <link>https://wind13.gitee.io/post/2020/mind-wish-woo/</link>
+      <pubDate>Sun, 30 Aug 2020 17:21:32 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/mind-wish-woo/</guid>
+      <description>心学技艺——人生终极追求 心：各种心态性情，修心养性，如恒心、耐心、良心、细心、同理心、平常心、佛心、道心、仁心…… 学：各种学科、科学，如数学、物理学、化学、生物学、心理学、经济学、哲学、医学、工程学、机械学、电子学、金融学、文学、天文学…… 技：各种技术，如编程、修摩托、造汽车、造</description>
+    </item>
+    
+    <item>
+      <title>非暴力沟通在公司管理中的思考</title>
+      <link>https://wind13.gitee.io/post/2020/nonviolent-communication-thinking/</link>
+      <pubDate>Sat, 15 Aug 2020 11:23:47 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/nonviolent-communication-thinking/</guid>
+      <description>今天再看了樊登讲书的视频：《非暴力沟通》（Nonviolent Communication: A Language of Life），查阅相关资料时注意到这个英文名，直译过来就是《非暴力沟通：一种生活的语言》，作为一个从事编程开发工作的人来说，对“语言”是有一种特殊的情节的，既然是一种生活的语言，为什么不认真学习和了解一下呢？ 书中</description>
+    </item>
+    
+    <item>
+      <title>先进管理思想建议方案</title>
+      <link>https://wind13.gitee.io/post/2020/manage-system/</link>
+      <pubDate>Wed, 12 Aug 2020 17:00:17 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/manage-system/</guid>
+      <description>公司层面：OKR 管理思想 概述：OKR（Objectives and Key Results）即目标与关键成果法，是一套明确和跟踪目标及其完成情况的管理工具和方法。 OKR的主要目标是明确公司和团队的“目标”以及明确每个目标达成的可衡量的“关键结果”。OKR被定义为“一个重要的思考框架与不断发展的</description>
+    </item>
+    
+    <item>
+      <title>软件开发团队如何高质量、高效率？</title>
+      <link>https://wind13.gitee.io/post/2020/software-develop-improve/</link>
+      <pubDate>Sun, 09 Aug 2020 18:30:17 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/software-develop-improve/</guid>
+      <description>这个话题很大，也不简单，有很多本书都从不同的角度在讲这个事情，比如《人月神话》、《人件》、《项目管理修炼之道》、《硝烟中的scrum和XP》等。 不过，此文不想那么系统全面地讨论这个问题，而是希望以一个非常直白的方式来讨论一下，以便使完全没有接触过软件工程的人也能有个感性的认识，而</description>
+    </item>
+    
+    <item>
+      <title>开发团队能力</title>
+      <link>https://wind13.gitee.io/post/2020/team-ability.md/</link>
+      <pubDate>Sun, 09 Aug 2020 11:02:19 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/team-ability.md/</guid>
+      <description>结论 以终为始（TDD）+ 工程思维（CI/CD）， 团队能做好这两方面，就可以达到 80分了。 以终为始 这个词来自《高效能人士的7个习惯》，是指做事情要先明确目标，以目标为出发点来思考做法，这恰好和极限编程中的 TDD 一样，团队需要将需求拆解为较小的可实现的目标，再由此目标写出相应的单元测试或</description>
+    </item>
+    
+    <item>
+      <title>Umi vs Nuxt vs Ng-alain</title>
+      <link>https://wind13.gitee.io/post/2020/umi-vs-nuxt-vs-ngalain/</link>
+      <pubDate>Tue, 28 Jul 2020 11:17:13 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/umi-vs-nuxt-vs-ngalain/</guid>
+      <description>概述和思考 很多时候前端开发人员会面对眼花缭乱的框架很难选择。 标题所说的选择实质是三大阵营（React, Vue 和 Angular）的选择。 三个底层框架各有所长，亮点在于： React：更接近函数式编程思想，单向数据流比较清晰，jsx 是不错的创新，熟悉后可结合函数式编程写出比较优雅的组件代码</description>
+    </item>
+    
+    <item>
+      <title>Rust in IoT</title>
+      <link>https://wind13.gitee.io/post/2020/rust-in-iot/</link>
+      <pubDate>Sat, 25 Jul 2020 22:09:48 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/rust-in-iot/</guid>
+      <description>引用一篇国外的网文： 主要内容是解释为什么重写了原来的 Python 的程序。 Architecturally, the existing architecture was incapable of scaling to other technologies or changing direction without massive amounts of effort. The business had just been forced to change to MQTT from another IaaS provider because of licensing cost concerns, and the cutover took nearly a year. With new devices released every year (e.g. BLE, Wifi, Z-Wave, Zigbee, arbitrary REST APIs) the business wants to be able to change IoT stacks quickly to adapt to new technology. There were technical debt items nobody understood or was prepared to resolve. (Did I mention that none of the original programmers were still around to fix bugs or answer questions?) Fixing obvious issues in</description>
+    </item>
+    
+    <item>
+      <title>折腾 NeoVim 和 SpaceVim</title>
+      <link>https://wind13.gitee.io/post/2020/neovim-spacevim/</link>
+      <pubDate>Fri, 24 Jul 2020 22:51:39 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/neovim-spacevim/</guid>
+      <description>网上乱逛，听说 NeoVim 比 Vim 先进还快，虽然也有说不值得换的，不管，折腾，然后还发现了 SpaceVim，听说适合初级水平的 vimer，没问题，折腾，全换，从 Vim 换到 NeoVim，再从 oh-my-vim 换到 SpaceVim，这编程器就是有无限的魅力让人想不断地折腾尝鲜。 安装完 SpaceVim 后，常会遇到一个报错提示： :help vimproc m</description>
+    </item>
+    
+    <item>
+      <title>复习 FizzBuzz</title>
+      <link>https://wind13.gitee.io/post/2020/fizz-buzz-revise/</link>
+      <pubDate>Thu, 16 Jul 2020 12:26:22 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/fizz-buzz-revise/</guid>
+      <description>复习 FizzBuzz 题目 游戏的规则是： 让所有学生，假设为 100 人拍成一队，然后按顺序报数。 学生报数时，如果所报数字是3的倍数，那么不能说该数字，而要说Fizz；如果所报数字是5的倍数，那么要说Buzz。 需求问题： 被3和5整除返回什么？ 有的同学就直接脑补了： 脑补一：能被3和5整除，那就是先被3整除呗</description>
+    </item>
+    
+    <item>
+      <title>Git 的实际应用</title>
+      <link>https://wind13.gitee.io/post/2020/git-work/</link>
+      <pubDate>Sun, 12 Jul 2020 22:01:41 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/git-work/</guid>
+      <description>Git 的实际应用 软件版本的重要性 总得有个版本是可用的 总能回到思路清晰的时候 要能追溯到变更的过程 多人协作避免冲突 可以检查合并的代码 Git 的基本概念和功能 本地和远端 初始化 init 提交 commit 拉取 pull 推送 push 分支 branch，如同泳道 标签 tag 发布 release 暂存 stash 变基 rebase 合并 merge 关键的区别： merge vs rebase FF or conflict 详细见网文： Git：合</description>
+    </item>
+    
+    <item>
+      <title>罗胖谈新时代的学习方法</title>
+      <link>https://wind13.gitee.io/post/2020/luojishiwei-2015-last/</link>
+      <pubDate>Sun, 05 Jul 2020 11:01:47 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/luojishiwei-2015-last/</guid>
+      <description>重温《罗辑思维》2015年最后一期 跟着人学 而不是跟着书本学，先降低我们的知识负担，它帮助我们筛选和归纳。 概念 通过掌握一个一个的新概念，搭建起我们的知识框架，再进来新的信息，我们知道把它放在哪儿？ 脏东西就是放错了地方的东西。 缝合 只有通过自己表达一次，才能知道去哪儿找。 教育就是那些我</description>
+    </item>
+    
+    <item>
+      <title>《授权——如何激发全员领导力》樊登读书视频记录</title>
+      <link>https://wind13.gitee.io/post/2020/turn-the-ship-around/</link>
+      <pubDate>Sat, 04 Jul 2020 13:26:17 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/turn-the-ship-around/</guid>
+      <description>英文书名：《Turn the Ship Around》 通往“领导者——领导者”模式 桥梁：掌控 实现“掌控”的方法： 寻找“掌控”的“遗传基因”，并改写它。 用新的行为举止开启新的思维方式。 用简短的早期谈话提高工作效率。 使用“我计划”……“因为……”流程。 克制提供解决方案的冲动。 消除“自上而下”的监管体</description>
+    </item>
+    
+    <item>
+      <title>小程序开发框架选型</title>
+      <link>https://wind13.gitee.io/post/2020/weapp-framework/</link>
+      <pubDate>Mon, 29 Jun 2020 15:18:18 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/weapp-framework/</guid>
+      <description>WePY 最大的优点是非侵入式设计，可以与原生开发同时进行； 基于 Vue Observer 实现数据绑定； 可进行个性化定制的编译； 可以预测的缺陷是： 更接近原生开发，缺少封装的组件，大量组件工作需要自己做。 可以使用基于 WePY 的组件库，加快开发速度。 BeeUi 是基于wepy的一套小程序开发组件库 参考 MinUI 是基于微信小程序自定义组件</description>
+    </item>
+    
+    <item>
+      <title>Iot 物联网相关学习</title>
+      <link>https://wind13.gitee.io/post/2020/iot-learn/</link>
+      <pubDate>Fri, 05 Jun 2020 14:40:52 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/iot-learn/</guid>
+      <description>主流框架 SiteWhere 是一个面向物联网（IoT）的工业级开源应用支持平台。它提供了基于多租户微服务的基础架构，其中包括构建和部署IoT应用程序所需的关键功能。 SiteWhere基础架构和微服务部署在Kubernetes上，允许部署内部部署或几乎任何云提供商。 Apache Kafka，Zookeeper和</description>
+    </item>
+    
+    <item>
+      <title>我的 Windows 开发环境</title>
+      <link>https://wind13.gitee.io/post/2020/my-windows-dev-env/</link>
+      <pubDate>Wed, 03 Jun 2020 13:28:34 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/my-windows-dev-env/</guid>
+      <description>需安装的软件工具 注：如果国外文件下载不了，可尝试国内下载 Google scoop 或 Chocolatey 安装好 choco 或 scoop 后，可以通过命令安装其他软件，个人可以维护一个常用的软件列表，写成一个脚本，这样每次一台新的 Windows 系统，就可以通过这个脚本完成80~90%的装机工作了。 Wox Github Download 里面还会附带 Python 和 Everything 的安装文件。 cmder，安装好之</description>
+    </item>
+    
+    <item>
+      <title>RPC 相关学习</title>
+      <link>https://wind13.gitee.io/post/2020/learn-rpc/</link>
+      <pubDate>Tue, 02 Jun 2020 21:28:33 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/learn-rpc/</guid>
+      <description>各家官网 gRPC Apache Dubbo™ 是一款高性能Java RPC框架。 SOFARPC 介绍 相关资料 重点资料 RPC 协议之争和选型要点 对于 RPC 框架，在架构上能够支持多语言非常重要。不同的业务场景，适合不同的语言，例如后端复杂业务逻辑使用 Java 开发效率更高，对于 API 网关或者边缘服务，适合 GO 语言。对于一些序列化框架，由于使用了</description>
+    </item>
+    
+    <item>
+      <title>《重新定义公司》摘录</title>
+      <link>https://wind13.gitee.io/post/2020/redefine-company-summary/</link>
+      <pubDate>Sat, 30 May 2020 11:56:22 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/redefine-company-summary/</guid>
+      <description>极度重视招聘 Thank god it is Friday. 周五吐槽大会。 祷文不会因为重复而失色。 Keep learning 每年50本书 领导者多做自我反省 Think big 往大了想，1、此创新是否影响数十亿人；2、是否与现有方法截然不同；3、是否有一定的可行性； 最糟糕的发明是遥控器，静音键特别小，确认键特别大。因为设计人考虑能否收到钱。 首席创新官？管理</description>
+    </item>
+    
+    <item>
+      <title>技术方案要从解决现实世界的问题开始</title>
+      <link>https://wind13.gitee.io/post/2020/business-optimize/</link>
+      <pubDate>Sun, 24 May 2020 11:25:06 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/business-optimize/</guid>
+      <description>技术方案要从解决现实世界的问题开始 技术群里讨论一个技术方案的问题，大概描述如下： 一个单据处理系统，上游系统会不断产生新的单据，数量比较大，频率也比较高； 当前系统分为两个环节，一个接单环节，一个转单环节； 接单环节负责将单据入库；保存数据库目前速度跟得上，可以保证上游系统的单据全部入</description>
+    </item>
+    
+    <item>
+      <title>思考落实到文字</title>
+      <link>https://wind13.gitee.io/post/2020/thinking-to-text/</link>
+      <pubDate>Tue, 19 May 2020 10:11:29 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/thinking-to-text/</guid>
+      <description>倡议大家把自己的思考都记录到自己的博客或者公众号上，把思维落实到 markdown 这样的纯文本中，其自带的优势可参看此文：《纯文本的威力》 我们将思考仔细地整理成文字，虽然相对直接说会更耗时间，但看的人却可以很快地了解整个思路，而且有以下一些好处： 中途不会被打断，一些论点可能刚一说出来，就会面临争</description>
+    </item>
+    
+    <item>
+      <title>OKR 思考</title>
+      <link>https://wind13.gitee.io/post/2020/okr-thinking/</link>
+      <pubDate>Thu, 26 Mar 2020 10:08:34 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/okr-thinking/</guid>
+      <description>讨论 OKR 的对话片段 说：OKR 总结就几个字：定目标，追进展，拿结果 问：更关键的是说，什么样的目标？怎么观察进展？获得怎样的结果？ 答：这就牵扯到工作细节了。先明确目标，然后一定要将目标写下来。查看进展可以利用工作清单，最好就是任务管理工具。结果就是相应的反馈。当然也要科学合理的制定目标</description>
+    </item>
+    
+    <item>
+      <title>樊登读书 《深度工作》 Deep Work Rules 听书记录</title>
+      <link>https://wind13.gitee.io/post/2020/fdds-deep-work-rules/</link>
+      <pubDate>Thu, 05 Mar 2020 08:32:16 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/fdds-deep-work-rules/</guid>
+      <description>概述 手机等现代工具，控制、瓜分我们的精力和时间，长此以往，大脑会形成一种生理上的疾病——心智残疾。 深度工作：无干扰、专注、职业活动，使认知能力达到极限。能够创造新价值、提升技能，且难以复制。 浮浅工作：干扰、事务性任务。不创造新价值，容易复制。 未来三种人会越来越贵： 能与机器对话的人</description>
+    </item>
+    
+    <item>
+      <title>PowerMill 宏编程研究</title>
+      <link>https://wind13.gitee.io/post/2020/powermill-macro/</link>
+      <pubDate>Wed, 04 Mar 2020 12:04:22 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/powermill-macro/</guid>
+      <description>概述 PowerMill 是一款大型数控加工软件，其中有二次开发和宏的功能，初步浏览了一下官方帮助文档，感觉总体来说是比较简单的，主要是用编程知识中的函数方法、循环和判断逻辑等基础知识，重点要结合业务需求来实际应用即可。 示例代码解读 简单的循环 FOREACH Bottles IN {10,9,8,7,6,5,4,3,2,1} 直译：每个 Bottles 在 10~1 这段数字中 意译：把 10~1 这些数字循环，</description>
+    </item>
+    
+    <item>
+      <title>绘画作品集</title>
+      <link>https://wind13.gitee.io/page/painting/</link>
+      <pubDate>Tue, 03 Mar 2020 14:21:05 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/page/painting/</guid>
+      <description>我家的雪儿 春天的自拍 一盆多肉 混乱的大卫 无名的焦虑 庞德公（学混子曰的画法） 钢丝画乔布斯 钢丝地面 儿子画的自行车 儿子的涂鸦</description>
+    </item>
+    
+    <item>
+      <title>最速降线——旋轮线</title>
+      <link>https://wind13.gitee.io/post/2020/speed-most/</link>
+      <pubDate>Sun, 23 Feb 2020 16:58:46 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/speed-most/</guid>
+      <description>今天看了《最速降线问题》，得到了旋轮线的结果，其中对我的启发是，粒子在轨迹的每时每刻都处在最佳的加速状态，平衡着速度和加速度的最佳配比，前半段主要提高加速度，后半段速度起来了，就更多地利用速度。 光的性质就是始终处于最佳状态，始终在寻找最佳轨迹，所谓最佳，就是寻找最省时、最省能量的</description>
+    </item>
+    
+    <item>
+      <title>危机时期可做的六件事</title>
+      <link>https://wind13.gitee.io/post/2020/what-we-can-do-in-crisis/</link>
+      <pubDate>Sun, 23 Feb 2020 14:41:45 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/what-we-can-do-in-crisis/</guid>
+      <description>今天看了樊登2月16日的直播录像，应该说对中小企业及创业者会有很大的启发和帮助，记录重点思路如下： 危机中可做的六件事 战略方面：转变为重信息、线上、分散（分布式）、反脆弱的模式； 内部培训：统一理念，增进感情，增进交流，提高领导力； 营销研发：打通销售通路，尝试更有效的营销方法； 公关合</description>
+    </item>
+    
+    <item>
+      <title>操作系统全图谱树</title>
+      <link>https://wind13.gitee.io/post/2020/os-tree-map/</link>
+      <pubDate>Sat, 22 Feb 2020 04:19:46 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/os-tree-map/</guid>
+      <description>目前操作系统都有哪些？它们之间都是什么关系？有哪些渊源？ - 操作系统 - Unix System V - Solaris - Aix - IRIX（Silicon GraphicsInc.，一般用简称：SGI）IRIX可以在SGI公司的RISC型电脑上运行，即是采行32位、64位MIPS架构的SGI工作站、服务器。 - BSD Unix - BSD(Berkeley Software Distribution)(BSD License) 需要</description>
+    </item>
+    
+    <item>
+      <title>得到听书《坚持，一种可以养成的习惯》笔记</title>
+      <link>https://wind13.gitee.io/post/2020/dedao-keep-habit/</link>
+      <pubDate>Fri, 21 Feb 2020 10:20:43 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/dedao-keep-habit/</guid>
+      <description>得到听书《坚持，一种可以养成的习惯》笔记 坚持不下去的真相 习惯引力：阻碍坚持的力量。 个人思考：类似舒适区，所以要形成某个习惯就要把这事变成自己的舒适区， 习惯坚持的三种类型和三个阶段 三种类型： 行为习惯：写日记、整理家务等，一个月左右能养成习惯 身体习惯：减肥、早睡早起等，三个月左右能养</description>
+    </item>
+    
+    <item>
+      <title>好书推荐——个人觉得应该读的书</title>
+      <link>https://wind13.gitee.io/post/2020/books-for-com/</link>
+      <pubDate>Thu, 20 Feb 2020 17:40:11 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/books-for-com/</guid>
+      <description>最近疫情紧张，不如在家读书，少出门，以下是个人觉得比较值得了解并阅读的书目： 人生观书目 《活好》日野原重明，105岁，讲述生命、爱、死亡，讲述孤独、疾病、朋友、亲人……令人感动，也给予人智慧。 《重来 Rework》更为简单有效的商业思维。 《高效能人士的七个习惯》 这是一本可能被书名误导</description>
+    </item>
+    
+    <item>
+      <title>观围棋历史与计算机的感想</title>
+      <link>https://wind13.gitee.io/post/2020/weiqi-game-computer/</link>
+      <pubDate>Sun, 02 Feb 2020 16:33:26 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/weiqi-game-computer/</guid>
+      <description>今天在家看一个很早的纪录片《【CCTV纪录片】两千年来的那些游戏【全7集】》，一开始就提到计算机围棋，说在1991年广州中山大学的化学系退休教授陈志行开发了围棋游戏《手谈》，到2005年，这款游戏已经打败了全世界其他的同类游戏，但是在与真正的人类棋手相比时，棋力依然很低，只相当于</description>
+    </item>
+    
+    <item>
+      <title>Hugo 中 显示 MindMap 思维导图</title>
+      <link>https://wind13.gitee.io/post/2020/hugo-mind-map/</link>
+      <pubDate>Fri, 31 Jan 2020 13:40:37 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/hugo-mind-map/</guid>
+      <description>目前比较好的脑图方案 一个是在 Hugo 里用 Markdown 写，在浏览器中预览。 另一个是用 Markdown 写后，通过 Typora 导出 opml 格式，再导入幕布后即可查看。 还有就是使用 PlantUML 插件 在 VSCode 中写 markdown 画脑图。 还有一个就是用 vscode-mindmap 插件，编辑 kityminder *.km 文件即可，这个功能与百度脑图用的是同一个技术，只是还没找到导入导出的功能。 效果如下： - 根目录 - 一级目</description>
+    </item>
+    
+    <item>
+      <title>从 《WunderList 奇妙清单》到 《To do 微软待办》的思考</title>
+      <link>https://wind13.gitee.io/post/2020/wunder-list-to-do-thinking/</link>
+      <pubDate>Wed, 29 Jan 2020 11:32:02 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/wunder-list-to-do-thinking/</guid>
+      <description>整件事的大概背景： 微软于 2015 年收购《奇妙清单》，收购价格据悉在 1 亿到 2 亿美元之间，创始人 Reber 雷伯 也加入微软并继续带领应用团队。两年后，原《奇妙清单》团队为微软开发的《To-Do》问世，这款应用将逐步取代《奇妙清单》，微软也为老用户提供了迁移通道。2019年12月10日 微软宣布将于20</description>
+    </item>
+    
+    <item>
+      <title>Music Programming</title>
+      <link>https://wind13.gitee.io/post/2020/music-programming/</link>
+      <pubDate>Sat, 25 Jan 2020 16:00:11 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/music-programming/</guid>
+      <description>前阵子有一天，脑子里突然有个很有趣的想法，能不能用编程来写音乐？主要是基于几个思路，一是说纯文本可以编程可以做很多事，能画图什么的，能不能做音乐呢？另一个就是自己一直对音乐有很大的兴趣，但是自己又没有深入学习和研究，年轻时弹了一阵子吉他，后来也因为手指和手部肌肉疼放弃了，可能是没</description>
+    </item>
+    
+    <item>
+      <title>2020年庚子春节祝愿</title>
+      <link>https://wind13.gitee.io/post/2020/chinese-new-year-wish/</link>
+      <pubDate>Thu, 23 Jan 2020 17:18:01 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/chinese-new-year-wish/</guid>
+      <description>今天是己亥猪年除夕，明天就是庚子鼠年。 老家这边还是传统的过年气象，家家贴春联，时不时有些远处的鞭炮声，路过小巷子有时还会闻到猪肉白菜粉条大烩菜的味道。 不过今年春节人们最关注的新闻却是武汉的疫情，如同2003年的 SARS 一样，也是一场呼吸道传染的疾病。不知道这次要持续多久，估计两三个月是</description>
+    </item>
+    
+    <item>
+      <title>Manjaro 系统使用记录</title>
+      <link>https://wind13.gitee.io/post/2019/manjaro-os-usage/</link>
+      <pubDate>Fri, 20 Dec 2019 19:39:26 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2019/manjaro-os-usage/</guid>
+      <description>前几天（今天是2019年12月20日）把 Deepin 系统从 D 盘（1T 硬盘）上删除了，在固态硬盘上开出了 80G 硬盘空间安装个 Manjaro KDE 玩儿一下，中间因为分区操作失误，差点把整个 D 盘给弄丢了，还好冷静地找办法解决，试了很多工具，其中 DiskGenius 是可以找回分区表的，但到最后一步居然提示要收费，好像还要两三百吧，不甘</description>
+    </item>
+    
+    <item>
+      <title>从 Github 搬家到 Gitee 了</title>
+      <link>https://wind13.gitee.io/post/2019/move-blog-from-github-to-gitee/</link>
+      <pubDate>Sat, 14 Dec 2019 17:00:57 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2019/move-blog-from-github-to-gitee/</guid>
+      <description>今天忙活了一天，把博客从 GitHub 搬到 Gitee 了。 主要是一方面在国内 Gitee 的速度更快些，代码相关的服务和功能也是很不错的。 另外，就是从 Hexo 变成了 Hugo，主要也是考虑到 Hugo 的简洁和高效。</description>
+    </item>
+    
+    <item>
+      <title>关于我</title>
+      <link>https://wind13.gitee.io/page/about/</link>
+      <pubDate>Thu, 12 Dec 2019 19:40:05 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/page/about/</guid>
+      <description>微信公众号：世风十三学堂 wind13class 微博：世风十三学堂 终身成长、正念编程的全栈架构师 多年软件公司全栈工程师、架构师从业经历； 业余时间希望帮助更多的年轻人提高； 带新人学徒正念编程 世风十三-B站 有合作可联系邮箱：wind13AT163DOTcom TDD极限敏捷教练咨询师 极限编程合作社 支持者 有软</description>
+    </item>
+    
+    <item>
+      <title>纯文本的威力</title>
+      <link>https://wind13.gitee.io/post/2019/power-of-plain-text/</link>
+      <pubDate>Tue, 15 Oct 2019 06:28:01 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2019/power-of-plain-text/</guid>
+      <description>“Keep Knowledge in Pain Text（用纯文本保存知识）” 纯文本能做的事 所有的软件源代码都是纯文本！ 纯文本是即可以让机器运行，又可以让人类阅读的内容形式。 Unix 系统的底层设计充分利用了纯文本的独特性。 做 PPT 演示 国产框架工具，建议用 revealjs 功能更强些，更国际化、标准化些。 用 revealjs 转 Asciidoctor 文档为 PPT Asciidoctor 用 Ruby 写的将 AsciiDoc 文本</description>
+    </item>
+    
+    <item>
+      <title>如何用写代码的方式谈恋爱</title>
+      <link>https://wind13.gitee.io/post/2019/2019-10-07-how-to-love-like-code/</link>
+      <pubDate>Mon, 07 Oct 2019 03:27:59 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2019/2019-10-07-how-to-love-like-code/</guid>
+      <description>个人同步公众号文章 (内含歌曲 QQ 视频) 我们做编程的男士，都被贴上了“直男”的标签，整天都跟电脑打交道，喜欢看着代码一行一行的，但是面对女孩儿就显得很笨拙了，那有没有一种谈恋爱的方式是象写代码一样呢？这是个有趣的问题。 一般人只要有小学五年级以上的知识水平就可以开始学习编程了，然而正式</description>
+    </item>
+    
+    <item>
+      <title>Rust Learning</title>
+      <link>https://wind13.gitee.io/post/2019/2019-10-04-rust-learning/</link>
+      <pubDate>Fri, 04 Oct 2019 01:32:49 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2019/2019-10-04-rust-learning/</guid>
+      <description>Rust Learning References Julia、Rust、F#、Go编程语言游览和感想 Rust, Julia, and Go_ Disruptive New Programming Languages Changing the Face of C 新兴的函数式编程语言（如 Elixir 或 Elm） 从实际应用角度来看，Rust更偏向于底层，旨在替换C语言与C++，Golang旨在替换Java与C#。 Rust语言本身不依赖于虚拟机与GC，没有运行时，跨平台，主</description>
+    </item>
+    
+    <item>
+      <title>Julia Learning</title>
+      <link>https://wind13.gitee.io/post/2019/julia-learning/</link>
+      <pubDate>Thu, 03 Oct 2019 10:09:37 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2019/julia-learning/</guid>
+      <description>Julia Learning Julia Install Brew brew cask install julia Normal Download and install it as julia.app Add it into your profile, for me it is .zshrc file: # Julia # /Applications/Julia-1.2.app/Contents/Resources/julia/bin/ export PATH=&amp;quot;/Applications/Julia-1.2.app/Contents/Resources/julia/bin/:$PATH&amp;quot;</description>
+    </item>
+    
+    <item>
+      <title>编程自立之道</title>
+      <link>https://wind13.gitee.io/post/2019/2019-10-02-programming-dao/</link>
+      <pubDate>Wed, 02 Oct 2019 04:58:25 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2019/2019-10-02-programming-dao/</guid>
+      <description>编程自立之道 在开始之前，有耐心的朋友可以先看一下这篇 InfoQ 翻译的文章从第1行代码到百万年薪 ，我是如何在8个月内做到的？，英文原文在此：How I Went from First Line of Code to $226K Job Offer in 8 Months，没耐心的我可以简要介绍内容如下： 作者 Jason Zedde 在 2018年6月24日写下了第一行 JavaScript 代码，当时他有一个经济学学位</description>
+    </item>
+    
+    <item>
+      <title>别了，王者荣耀</title>
+      <link>https://wind13.gitee.io/post/2020/good-bye-wang-zhe-rong-yao/</link>
+      <pubDate>Sun, 29 Sep 2019 09:28:05 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/good-bye-wang-zhe-rong-yao/</guid>
+      <description>别了，王者荣耀 2019年9月30日 我又双叒叕卸载了王者荣耀！ 到今天 2020年2月6日 我已经四个月没有再安装和玩儿它了，以后应该也很少玩儿了，除非…… 嘿嘿…… 你猜？ 这段时间刻意让自己思考生命更有意义的事情，逐渐也有了更多的时间做更多其他的事情。 生活（与家人相处）、工作（编程、记录等</description>
+    </item>
+    
+    <item>
+      <title>函数式编程资料收集</title>
+      <link>https://wind13.gitee.io/post/2019/2019-09-18-functional-programming-ref/</link>
+      <pubDate>Wed, 18 Sep 2019 03:27:21 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2019/2019-09-18-functional-programming-ref/</guid>
+      <description>概念 函数式编程入门教程（阮一峰） 回答了为什么要用函数式编程思维？ 面向函数范式编程(Functional programming) 说明了对面向对象编程的区别的关系，是可以互补共用的。 Kotlin极简教程：第8章 函数式编程 其中 Y组合子(Y - Combinator) ——匿名递归函数，解决匿名函数如何递归的问题。以及很多 Kotlin 的函数式编</description>
+    </item>
+    
+    <item>
+      <title>非局部均值滤波算法</title>
+      <link>https://wind13.gitee.io/post/2019/non-local-mean-filter/</link>
+      <pubDate>Sat, 22 Jun 2019 19:59:26 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2019/non-local-mean-filter/</guid>
+      <description>需求问题 关于图像降噪处理： 非局部均值滤波（non-local mean filter）基于块（block-wise）的算法怎么实现？编程语言类型为 python 解释 对添加了噪声的图像做nlm滤波：对每一个像素点（记为当前点），设定一个以其为中心的大小为p1*p2 的当前块，然后再设定一个以其为中心的大小</description>
+    </item>
+    
+    <item>
+      <title>当日笔记-20180925</title>
+      <link>https://wind13.gitee.io/post/2018/2018-09-25-daily-note-20180925/</link>
+      <pubDate>Tue, 25 Sep 2018 08:25:28 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-09-25-daily-note-20180925/</guid>
+      <description>小程序 小程序的全栈开发新时代 数学 读懂世纪难题“黎曼猜想”和其历史 黎曼猜想仍旧，素数依然孤独 黎曼猜想，及其解释（上） 黎曼猜想，及其解释（下） 神奇而有趣的素数 素数（质数）就是除了 1 和自身，不能再被其他整数整除的数字。 第一个问题：下一个素数的规律是什么？ 2 的倍数即是所有偶数。 3 的倍数，</description>
+    </item>
+    
+    <item>
+      <title>当日笔记-20180922</title>
+      <link>https://wind13.gitee.io/post/2018/2018-09-22-daily-note-20180922/</link>
+      <pubDate>Sat, 22 Sep 2018 01:53:04 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-09-22-daily-note-20180922/</guid>
+      <description>Hugo 研究 对 Hugo 有点着迷了，看到了 Youtube 上面的教程，非常详细而直观，同时还可以练习英语听力，看自己感兴趣的英语视频内容应该是学英语最佳的途径之一了。 然后发现了这个 netlify 网站 ，号称：Everything you need to deploy your project. 在静态网站的基础上，扩展很多功能 Auth/Form/Lamda 等，包括部署 CI/CD 等，单人免费，多人收费。考虑到结合</description>
+    </item>
+    
+    <item>
+      <title>当日笔记-20180921</title>
+      <link>https://wind13.gitee.io/post/2018/2018-09-21-daily-note-20180921/</link>
+      <pubDate>Fri, 21 Sep 2018 10:25:07 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-09-21-daily-note-20180921/</guid>
+      <description>准备做的事 [x] 尝试使用 Hugo； 目录结构： archetypes：包括内容类型，在创建新内容时自动生成内容的配置 content：包括网站内容，全部使用markdown格式 layouts：包括了网站的模版，决定内容如何呈现 static：包括了css, js, fonts, media等，决定网站的外观 常用</description>
+    </item>
+    
+    <item>
+      <title>在得到 App 上听书《知识的边界》和《走近2050》感悟</title>
+      <link>https://wind13.gitee.io/post/2018/2018-09-21-book-comprehend/</link>
+      <pubDate>Fri, 21 Sep 2018 05:58:46 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-09-21-book-comprehend/</guid>
+      <description>人类已经进入互联网时代，互联网对人类的很多方面产生了巨大而深远的影响，有些方面在商业和科技的促进下转变得比较快，比如电子商务、信息搜索、出行交通等，但有些方面就显得相对落后，如：政府效能、教育培训、人才评定等，通常受阻于政策、传统、观念、制度等。 特别是教育培训方面，目前的学校教育</description>
+    </item>
+    
+    <item>
+      <title>go 语言学习</title>
+      <link>https://wind13.gitee.io/post/2018/2018-09-19-go-learn/</link>
+      <pubDate>Wed, 19 Sep 2018 09:56:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-09-19-go-learn/</guid>
+      <description>安装、升级、卸载等 官网 中文官网教程 Golang 速查表 安装简单，按官网的说明来就好了，macOS 上就是下载个 pkg 的包双击安装即可。 卸载也简单，删除那个 /usr/local/go 的目录即可。 升级官网上没提，搜了一下基本就是先卸载再安装，我试了一下直接安装最新下载的也可以，会提示发现旧版本，确定后会自动卸载再安装。 国际惯</description>
+    </item>
+    
+    <item>
+      <title>再见了 Redux （翻译）</title>
+      <link>https://wind13.gitee.io/post/2018/2018-09-05-goodbye-redux-cn/</link>
+      <pubDate>Wed, 05 Sep 2018 09:35:11 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-09-05-goodbye-redux-cn/</guid>
+      <description>作者：Jack Scott 原文（英语） 国内网可能访问不到……大致翻译如下： 本文主要分析了一下我们过去为什么需要 Redux，而为什么以后又不再需要了。 在过去的几年里，互联网技术已经转向用前端 JavaScript 框架来实现网站和手机应用，以达到更好的用户体验。这非常棒 🔥 ，我个人很欣赏这些框架提供的灵活性。 但是灵</description>
+    </item>
+    
+    <item>
+      <title>在 vscode 的 vi 模式下，按中文标点移动光标的方法</title>
+      <link>https://wind13.gitee.io/post/2018/2018-08-27-vscode-vi-segment-chinese-punctuation/</link>
+      <pubDate>Mon, 27 Aug 2018 10:03:51 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-08-27-vscode-vi-segment-chinese-punctuation/</guid>
+      <description>问题描述 首先，vscode 是目前最好的编程工具，未来前途也无可限量，其次 vi 的快捷键模式也是最高效的键盘输入模式，在 vscode 中可以添加 vi 快捷键的支持（在首选项-按键映射扩展中可以安装 Vim 即可，或在插件商店搜索：@recommended:keymaps 也能添加）。 但是在编辑中文时会有一个问题</description>
+    </item>
+    
+    <item>
+      <title>如何保持专注高效地工作</title>
+      <link>https://wind13.gitee.io/post/2018/2018-07-31-how-to-focus-work/</link>
+      <pubDate>Tue, 31 Jul 2018 10:19:58 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-07-31-how-to-focus-work/</guid>
+      <description>问题和现象 小张喜欢做运维技术研究，特别是最新的 k8s 技术，在应聘时选择了一家公司，就是因为这家公司有相关的 k8s 方面的技术栈，然而到了这家公司一段时间后，感觉最近工作越来越压力大，越来越不顺利。 具体的一个事例是这样的，公司需要安装一套监控系统，小张本来是会直接部署服务器的，然而对技术的热</description>
+    </item>
+    
+    <item>
+      <title>Ant Design React 使用记录</title>
+      <link>https://wind13.gitee.io/post/2018/2018-07-26-ant-design-react-note/</link>
+      <pubDate>Thu, 26 Jul 2018 09:22:11 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-07-26-ant-design-react-note/</guid>
+      <description>遇到的问题 Table 组件的服务端分页问题 Table 表格 仔细看了一下，虽然 mock 中的数据是全部数据集，但是是模拟远程数据库的概念的，每次返回到客户端的数据还是单个页面的数据，所以这里可以理解为本身的设计就是支持服务端分页的。 路由带参数问题 Route props - match 下载 Excel 模板的问题 Using Node.js to download files 后端文档路径： http://jp-open-service.thinkmacro.cn/swagger-ui.html Form 相关参考： http://react-component.github.io/form/</description>
+    </item>
+    
+    <item>
+      <title>OCR 开发研究</title>
+      <link>https://wind13.gitee.io/post/2018/ocr-develop-research/</link>
+      <pubDate>Sat, 02 Jun 2018 18:39:26 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/ocr-develop-research/</guid>
+      <description>遇到问题： 鉴权问题： 百度 API 需要首先创建应用，并且设置应用调用接口范围，如果不包含相应接口，后期在调用时会遇到 error_code = 6 (No permission to access data) 的错误提示。 创建应用后，每个应用会有相应的 AK(API Key) 和 SK (Secret Key)，可以用这两样来生成 token 用于接口调用验证。 另外百度个别接口会要求“真人认证”、“企业认证”等特殊要</description>
+    </item>
+    
+    <item>
+      <title>白话理解 Node.js 异步单线程</title>
+      <link>https://wind13.gitee.io/post/2018/2018-05-22-baihua-async/</link>
+      <pubDate>Tue, 22 May 2018 10:37:39 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-05-22-baihua-async/</guid>
+      <description>Nginx 和 Node.js 都是多进程单线程的。它通过事件轮询（event loop Node.js 事件循环）来实现并行操作，因此，我们要尽可能的避免阻塞操作，取而代之，多使用非阻塞操作。参考 Understanding the node.js event loop 主线程和子线程，这里说的单线程，是说主线程只有一个，所以要把阻塞的运算处理分拆到子线程中去运行。 使用回调函数 以非阻塞操作进</description>
+    </item>
+    
+    <item>
+      <title>GraphQL 学习</title>
+      <link>https://wind13.gitee.io/post/2018/2018-05-03-graphql-learning/</link>
+      <pubDate>Thu, 03 May 2018 08:55:25 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-05-03-graphql-learning/</guid>
+      <description>实践 Using GraphQL with MongoDB Testing a GraphQL Server using Jest using-dataloader-to-batch-requests How GraphQL Replaces Redux js Client Bind GraphQL data to your UI with one function call. 相关网站 GraphQL CN A query language for APIs. 一种用于 API 的查询语言。 GraphQL 最佳实践 awesome-graphql The Fullstack Tutorial for GraphQL Youtube 视频教程 GraphiQL A graphical interactive in-browser GraphQL IDE. Live demo Lacinia - GraphQL for Clojure，Github Repo 一套 GraphQL 规范的完整实现，致力于维护对规范的外部兼容。 alumbra Simple &amp;amp; Elegant GraphQL for Clojure! graphql-clj A Clojure library designed to provide GraphQL implementation. 流行的服</description>
+    </item>
+    
+    <item>
+      <title>一图看懂 AntD 的结构</title>
+      <link>https://wind13.gitee.io/post/2018/2018-03-29-one-pic-know-antd/</link>
+      <pubDate>Thu, 29 Mar 2018 03:07:53 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-03-29-one-pic-know-antd/</guid>
+      <description>个人理解，仅供参考！ 在开发时，仅需关注图中的那些 *.js 文件即可。</description>
+    </item>
+    
+    <item>
+      <title>2018年3月23日这期“歌手”听后感</title>
+      <link>https://wind13.gitee.io/post/2018/2018-03-24-2018-3-23-singer-feeling/</link>
+      <pubDate>Sat, 24 Mar 2018 07:49:23 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-03-24-2018-3-23-singer-feeling/</guid>
+      <description>2018年3月23日这期“歌手”听后感 这一期两位歌手都唱了崔健的歌，腾格尔唱《从头再来》，华晨宇唱《假行僧》，可见崔健中国摇滚之父的称号不是虚的。 从1993年大学时听过崔健的歌后，就将他奉为中国甚至世界摇滚中最为独特另类的一个，后来在几十年中，偶尔再听还是那么独特，不管时代如何变</description>
+    </item>
+    
+    <item>
+      <title>为什么说一个全新的操作系统是必要的？</title>
+      <link>https://wind13.gitee.io/post/2018/2018-03-05-why-new-os-zh/</link>
+      <pubDate>Mon, 05 Mar 2018 04:12:25 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-03-05-why-new-os-zh/</guid>
+      <description>注：此文是 OSv 官网介绍的文章，感觉对于理解 OSv 很有帮助，特翻译如下，原文地址 Today’s cloud-based applications run a heavyweight stack: the hypervisor, which divides the hardware resources among virtual machines; the operating system, which divides the virtual machine’s resources among applications; and the application server, which divides the application’s resources among the end users. 当今的云应用都运行在一个非常重的技术栈上： Hypervisor (虚拟机管理程序) ，要将硬件资</description>
+    </item>
+    
+    <item>
+      <title>SVG 相关学习</title>
+      <link>https://wind13.gitee.io/post/2018/2018-02-10-svg-%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Sat, 10 Feb 2018 11:32:40 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-02-10-svg-%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0/</guid>
+      <description>JavaScript library SVG.js The lightweight library for manipulating and animating SVG. Bonsai A lightweight graphics library with an intuitive graphics API and an SVG renderer. Snap.svg The JavaScript SVG library for the modern web Draw library 15个最佳SVG的JavaScript库 推荐 SVG 图标素材网站 IconFont.cn 国内图标库网站 国内外社交网站矢量图标 FlatIcon The largest database of free icons available in PNG, SVG, EPS, PSD and BASE 64 formats. Worldvectorlogo 矢量标志的所有品牌 完全免费和无限制 Tools Gravit Designer 一款跨平台的设计工具，可以在 AppStore 中直接</description>
+    </item>
+    
+    <item>
+      <title>Docker 学习</title>
+      <link>https://wind13.gitee.io/post/2018/2018-02-07-docker-%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Wed, 07 Feb 2018 16:18:26 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-02-07-docker-%E5%AD%A6%E4%B9%A0/</guid>
+      <description>Docker 学习 快速入门心法 官网文档也好，网上其他的教程也好，都非常有“耐心”，一点点地教你怎么理解和使用 docker，但我在看这些教程和文档的时候其实很着急，因为我只想快速入门并且用起来，而且最好是按最佳实践的路子用起来，而不是象个初学者那样慢慢摸索。但就是没人把这条捷径说清楚…… 下面我</description>
+    </item>
+    
+    <item>
+      <title>Computer Vision 学习</title>
+      <link>https://wind13.gitee.io/post/2018/2018-02-07-computer-vision-%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Wed, 07 Feb 2018 16:17:34 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-02-07-computer-vision-%E5%AD%A6%E4%B9%A0/</guid>
+      <description>Computer Vision Library What are pros and cons of OpenCV and TensorFlow for computer vision? ccv A Modern Computer Vision Library SimpleCV Computer Vision platform using Python. Blepo Computer Vision Library Python教程 OpenCV vs VXL vs LTI: Performance Test I recently read this comparison of four vision libraries: OpenCV, VXL, LTI and OpenCV with IPP. It was in the book Learning Learning OpenCV: Computer Vision with the OpenCV Library, authored by the creators of OpenCV themselves. For those who aren&amp;rsquo;t familiar with these libraries, here&amp;rsquo;s a brief introduction. VXL VXL stands for Vision something Library. It is a C++ library that implements several common computer vision algorithms and related functionality. The idea is to replace the &amp;lsquo;X&amp;rsquo; with one of the several letters: VGL = Vision Geometry Library VIL = Vision Image processing</description>
+    </item>
+    
+    <item>
+      <title>两个 Lock 文件的迷惑</title>
+      <link>https://wind13.gitee.io/post/2018/2018-01-24-two-lock-file-confuse/</link>
+      <pubDate>Wed, 24 Jan 2018 16:54:08 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-01-24-two-lock-file-confuse/</guid>
+      <description>从 npm 5 开始，执行后就多出了一个 package-lock.json 的文件，如果在用 yarn 的话，就会有个疑惑，yarn.lock 和这个 package-lock.json 到底用哪个呢？要不要保存入 git 库呢？ 通过参考这两个链接： Should I commit yarn.lock and package-lock.json files? Idea: support package-lock.json from npm 5 得到信息如下： 都是为了记录准确的版本，使用时最好二选一，开发团队内部协商一致后，把另一种舍弃，即尽量不要</description>
+    </item>
+    
+    <item>
+      <title>不沉迷电子游戏的心法</title>
+      <link>https://wind13.gitee.io/post/2018/2018-01-23-fight-with-digital-games/</link>
+      <pubDate>Tue, 23 Jan 2018 16:46:21 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-01-23-fight-with-digital-games/</guid>
+      <description>前言 游戏估计是所有动物的本能吧，至少看上去是人类的本能了，从两三岁的小孩开始，就已经每天都在游戏了，而自从有了电子游戏之后，就出现了一种新的问题：沉迷电子游戏的问题。 个人也是沉迷“患者”，甚至目前也还是，一天的游戏时间加一起估计有5个小时左右，如果是周末不上班，则可能到10多个小</description>
+    </item>
+    
+    <item>
+      <title>2018年第一折腾</title>
+      <link>https://wind13.gitee.io/post/2018/2018-01-23-2018-first-shot/</link>
+      <pubDate>Tue, 23 Jan 2018 16:19:50 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2018/2018-01-23-2018-first-shot/</guid>
+      <description>花了两天时间，绕了些弯路，总算把 Blog 搞得差不多满意了，用了 Next! 的主题，用了 hexo 的服务技术。 之前用的 JekyllBootstrap，本来还能凑合用，但是那个项目很长时间都没再维护更新了，仅有的几个主题也看烦了，影响了写博客和记录的心情，中间还转而去用一些笔记工具，用到高级功能又要收费，想</description>
+    </item>
+    
+    <item>
+      <title>Wind13 的 Blog 之 原来的首页</title>
+      <link>https://wind13.gitee.io/post/2017/2017-12-31-index/</link>
+      <pubDate>Sun, 31 Dec 2017 16:19:50 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2017/2017-12-31-index/</guid>
+      <description>学用Play!和Scala做软件 本站收集Play1.x相关 停止SSH，用Play!吧 Play!技巧问答 国内一些使用Play!框架的网站 Xml 域名空间识别问题 Playing Play!系列之一：Play框架的暴力美学 Playing Play!系列之二：再见Servlet，Play框架的启动 Playing Play!系列之三：不</description>
+    </item>
+    
+    <item>
+      <title>Playframework 1.4.x 与Playframework 2.5.x 选型比较</title>
+      <link>https://wind13.gitee.io/post/2017/2017-02-23-play2x-compare-play1x/</link>
+      <pubDate>Thu, 23 Feb 2017 16:19:50 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2017/2017-02-23-play2x-compare-play1x/</guid>
+      <description>Playframework 1.4.x 与Playframework 2.5.x 选型比较 Playframework 2.5.x 优势： 文档齐全，持续更新； 支持更多最新的技术，更清晰的底层技术； 完全异步的HTTP编程模型； 通过 Comet, long-polling and WebSockets 给客户端提供持续的连接； 通过 Akka 的 Actor 模型提供响应高并发的系统； 使用 Akka Streams Filters Streaming response bodies Request body parsers WebSockets Streaming WS client responses 使用 Websocket 使用 Ebean 或 JPA 和 Anorm（用于Sc</description>
+    </item>
+    
+    <item>
+      <title>技术选型之我见</title>
+      <link>https://wind13.gitee.io/post/2017/2017-02-05-tech-select/</link>
+      <pubDate>Sun, 05 Feb 2017 16:19:50 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2017/2017-02-05-tech-select/</guid>
+      <description>技术选型之我见 技术选型是各个技术团队架构师所面临的挑战之一，也是重要的决策之一，关系到团队技术发展的大方向，甚至决定着项目未来生存的生命力和寿命长短。 然而要做好这件选型的决策却是不那么简单，同时也没有什么特定的标准。 个人所见： 首先，要见多识广； 既然是说选型，那就要有所选择，也就是</description>
+    </item>
+    
+    <item>
+      <title>我的Mac OS X 开发环境和 Vim 的设置</title>
+      <link>https://wind13.gitee.io/post/2014/2014-05-13-my-macosx-vimrc/</link>
+      <pubDate>Tue, 13 May 2014 19:34:21 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2014/2014-05-13-my-macosx-vimrc/</guid>
+      <description>系统设置 需要将CapsLock键改为Esc键，以方便Vi习惯。方法：安装 PCKeyboardHack，将CapsLock键的值从51改为53即可。 Deepin 系统的更换方法：修改键盘映射，但对于 vscode 好像不行。 Eclipse 设置 添加Vrapper插件，以便使用Vi习惯。update url: http://vrapper.sourceforge.net/update-site/stable 添加Js的编辑环境，</description>
+    </item>
+    
+    <item>
+      <title>常用Git命令说明</title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-23-gitoftenused/</link>
+      <pubDate>Mon, 23 Dec 2013 16:00:11 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-23-gitoftenused/</guid>
+      <description>参考：史上最浅显易懂的Git教程！ 进入你的工作目录 cd yourworkpath 列出所有branch，当前所在branch前面有“*”号。 git branch -a 切换工作库 git checkout v1.5.1 合并另一个branch，通常是master git merge master 再切换回来 git checkout master 查看当前目录情况 git status 将当前目录中的修改提交到相应的库（branch）中 git commit -m &amp;ld</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-09-29-devlinks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-09-29-devlinks/</guid>
+      <description>编程知识链接收集 Java 相关 java.util.logging.Logger使用详解 10 Java Regular Expression Examples You Should Know Java Regex cheat sheet</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-09-29-learnself/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-09-29-learnself/</guid>
+      <description>编程自学之路 很多爱好编程，喜欢Play框架的朋友，开始的时候找不到门道，这里抛砖引玉，给大家分享一些经验…… 首先，心要正。 没错，如同武侠小说中的上乘武功一样，必须讲究心法，心术不正者必定会走火入魔。 其次，道要高。 所谓魔高一尺，道高一丈，老子的道家思想的智慧，时至今日，如果每个人都</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-09-29-tocterm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-09-29-tocterm/</guid>
+      <description>TOC 术语 TOC：Theory Of Constraints 约束理论（限制理论）瓶颈理论 F5：Focus Five Step 聚焦五步骤 I-E-S-E-GB识别Identify，挖尽Exploit， 迁就Subordinate，松绑Etevate，重返Go Back TA：Throughput Account 有效产出会计 T: Throughput 生产量，有效产出 I（1）：I</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-10-26-betterplan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-10-26-betterplan/</guid>
+      <description>如何制定和落实一项有效的改善方案？ 一、问题和参考答案 1、是否感觉公司在推行一个变革甚至一个简单的任务时，都会遇到员工的阻力或是简单应付？ 参考答案： 是的，存在而且很多时候会是这样。 2、他们为什么会阻止或仅仅是应付公司的改善方案呢？ 参考答案： 人不抗拒改变，只是他没有看到改变后的好处。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-10-26-funnyclassic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-10-26-funnyclassic/</guid>
+      <description>有趣经典收集 纯爷们从不围观爆炸（英文歌词） 情人节程序员经典表白 一个不错的塔防Flash游戏</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-13-cacheremovetime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-13-cacheremovetime/</guid>
+      <description>移除Cache可以有时间参数吗？ 是的，可以，使用下面这样的语句即可： :::java Cache.set(&amp;quot;some&amp;quot;, null, 0) 其中最后一个参数是时间，单位是秒。详见源代码。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-13-cmdchinese/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-13-cmdchinese/</guid>
+      <description>Play在Windows的cmd窗口中中文乱码的解决办法 play在cmd 下，system.out()输出的中文都是乱码 首先，可参考：cmd chcp命令切换字符格式 或参考：在Windows的CMD中如何设置支持UTF8编码? 如果 chcp 65001 / chcp 936 改变cmd字符集都不行 参考：http://w</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-13-deepqa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-13-deepqa/</guid>
+      <description>Playframework热情交流群里的邮件讨论 Freewind@play23月17日 10:21 昨天有感于play源代码里的一些强大功能和精巧实现，提出了以下问题，这些问题在群里和几位朋友简单讨论过，但我觉得整理一下会有用。 play的一些打破常规的做法，让我非常欣赏和赞叹。希望大家不要仅</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-13-detachedpersist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-13-detachedpersist/</guid>
+      <description>分离实体持久化出错（PersistentObjectException: detached entity passed to persist）问题 在Play!使用中，会用到Job来异步执行一些耗时的操作，此时很容易犯这样的错误： :::java public class SomeLongJob extends Job`&amp;lt;Void&amp;gt;` { private SomeModel model; public SomeLongJob(SomeModel model) { this.model = model; } @Override public void doJob() { model.someprop = &amp;quot;new value&amp;quot;; model.save(); } } 此时执行后，会在save()方法处抛出</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-13-hqlcount1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-13-hqlcount1/</guid>
+      <description>一个Hql中count判断的写法 :::java public static void test() { String hql = &amp;quot;select o.teacher.id, o.teacher.goodStudentCount from Student o&amp;quot; + &amp;quot; group by teacher having count(*)&amp;gt;o.teacher.goodStudentCount&amp;quot;; List&amp;lt;Long[]&amp;gt; idCounts = Teacher.find(hql).fetch(); for (Long[] idCount:idCounts) { Logger.debug(&amp;quot;id: %s, %s&amp;quot;, idCount[0], idCount[1]); Long id = idCount[0]; } renderText(&amp;quot;ok!&amp;quot; + idCounts.size()); }</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-13-longpolling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-13-longpolling/</guid>
+      <description>Play!支持Comet-style或Long-polling这样的请求 参考官方文档 核心实现思想：通过在action中使用await(&amp;hellip;);可以使http请求暂停在服务端，直到有符合的结果才返回。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-13-operationnotpermitted/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-13-operationnotpermitted/</guid>
+      <description>Operation not permitted 执行权限的问题 在Linux系统中，正好项目放在原Windows的Fat32盘上，于是在执行play eclipsify的时候会报 Operation not permitted的错。 临时使用的话，只要使用root权限就可以正常执行。而Fat32的盘在Linux下是无法进行权限设置的，好像设置后还是无法</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-13-validateandsave/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-13-validateandsave/</guid>
+      <description>对像存储报错 validateAndSave问题 问题：在存储对像时，同时存储该对像的关联对像，则会报错。\ 例： room为hotel的关联对像。 :::java public class Room { @ManyToOne public Hotel hotel; } :::java Hotel hotel = new Hotel(); Room room = new Room(hotel); room.validateAndSave(); 会报错。这是因为在保存room对象的时候，hotel对象还没有持久化，所以room对象里面要保存</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-23-computerqa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-23-computerqa/</guid>
+      <description>电脑使用及编程知识问答 网易闪电邮和网易邮箱助手有什么区别，如何选择？ 网易闪电邮是功能比较全面的邮箱客户端，可以同时支持其他邮箱的邮件收发，类似Foxmail和Outlook这样的邮箱软件。而网易邮箱助手则是个轻客户端，只能连接网易的邮箱，提供来信提醒和桌面预览等功能。如果你还想用</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-23-confession214/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-23-confession214/</guid>
+      <description>情人节程序员经典表白 我能把整个世界都抽象成一个类…… 但是没办法把你变成我的对象…… 想让你成为私有常量，外部函数无法访问你…… 又想让你变成全局常量，在整个生命周期随时随地都可以调用你…… 因为世界上没有这样的常量…… 所以我无法定义你…… 我可以重载甚至覆盖任何一种方法…… 但是我却不能重</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-23-coolguydontlookatexplosions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-23-coolguydontlookatexplosions/</guid>
+      <description>Cool Guys Don&amp;rsquo;t Look At Explosions 纯爷们儿从不围观爆炸！ Cool guys don&#39;t look at explosions They blow things up and then walk away Who&#39;s got time to watch an explosion? Because cool guys have errands that they have to walk to.. Keep walkin&#39;, keep shinin&#39; Don&#39;t look back keep on walkin&#39; Keep struttin&#39; slow motion The more you ignore it, the cooler you look Samberg: Ladies &amp;amp; gentlemen, please join me in welcoming.. Mr. Neil Diamond! Will Ferrell: ha ha ha....Where are we?! Cool guys don&#39;t look at explosions They stride for it in their diamond covered boots They wear jumpsuits with glitter and rhinestones And walk away in slow motion.. Keep walkin, you&#39;re cruisin.. Cherry Cherry...Sweet Caroline.. Denzel walks... Will Smith walks... Mark Wahlberg is wearin a hat! Samberg: Going solo....JJ</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-23-dateformat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-23-dateformat/</guid>
+      <description>String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型 通常情况下可用Date.valueOf(String)直接转换; String类型格式：&amp;rdquo;yyyy-MM-dd&amp;rdquo; Date.valueOf(&amp;ldquo;yyyy-MM-dd&amp;rdquo;) 例： :::java String sd = &amp;quot;2012-01-12&amp;quot;; Date sdate = Date.valueOf(sd); 但当String类型格式为&amp;rdquo;yyyy-MM-dd HH:mm:ss&amp;rd</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-23-gitolitesetup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-23-gitolitesetup/</guid>
+      <description>CentOS下使用Gitolite架构Git服务的步骤 在服务端创建专用用户，如：git，可考虑不设置密码，从而无法用密码登录服务器。 在管理员电脑上创建管理员密钥对，并（通过U盘或root账号）拷贝到服务器上，之后添加到git用户目录的.ssh/authorized_keys文件中</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-23-htmlunitdriverjavascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-23-htmlunitdriverjavascript/</guid>
+      <description>HtmlUnitDriver中javascript的支持问题 参见：http://code.google.com/p/selenium/issues/detail?id=371#c4，看不到的元素或ajax异步更新的元素，都可能遇到无法取得或取得旧数据的问题。 和：http://co</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-23-tracinterfacecustomization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-23-tracinterfacecustomization/</guid>
+      <description>定制Trac界面 原文地址 介绍 该页面旨提供有关如何定制Trac界面的建议. 话题涵盖了编辑HTML模板和CSS文件, 但不包含程序代码本身. 这些话题想要向用户展示如何更改Trac的外观来满足他们特定的要求. 项目Logo和图标 定制Trac界面最简单的部分是logo和站点的图标. 他们都可以</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-28-playwebsites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-28-playwebsites/</guid>
+      <description>国内使用Play!框架的网站 拼车群 土椒网 泡椒网 中国地质大学 美之家家居网 雷猴（据说是） 吃得易 CNSPOC云课程平台 取号啦</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-29-c461mubuntusteup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-29-c461mubuntusteup/</guid>
+      <description>联想C461M安装Ubuntu13.10问题 本人的笔记本：联想旭日C461M，买来后安装的是Vista系统，用起来很不习惯，速度也慢，现在喜欢上了Linux的系统， 不喜欢Windows系统，WinXP微软也放弃维护了，于是前一年安装Fedora系统，使用还算正常，但是发现软件升级</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2014/2014-01-09-modulemissing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2014/2014-01-09-modulemissing/</guid>
+      <description>无法加载pdf等module的问题 简单地加载pdf的Module，如官网所述： play -&amp;gt; pdf 1.0 然而却提示无法加载。 尝试运行： play install pdf-1.0 提示：Cannot fetch the modules list from %%http://www.playframework.org/modules%% 后在playframework群中找到答案，是因为要用.com域名才能获取。 需要修改此文件：{PLAY_HOME}/framew</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2014/2014-01-09-ubuntueclipse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2014/2014-01-09-ubuntueclipse/</guid>
+      <description>Ubuntu下Eclipse完美安装方案 Ubuntu下直接apt-get安装Eclipse的问题 直接安装的版本较低，我用Ubuntu13.10安装的是Eclipse3.8，而要用ScalaIDE，最好是4.x以上版本。 其次是Eclipse的菜单显示问题，点击后看不到下拉菜单。 完美</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2014/2014-02-26-hqlleftjoin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2014/2014-02-26-hqlleftjoin/</guid>
+      <description>数据库相关 HQL 中 left join 的写法 用 Play 查询数据时，遇到关联对象的查询时，需要使用 left join 的语句，但与我们习惯的 SQL 语句不同，HQL 的写法和思路是面向对象的，所以下面就记录一些可用的例句供实际使用时参考： 查询教的学生中有年龄大于30的老师 hql = &amp;quot;select distinct o from Teacher o, Student r left join r.teacher h where r.age&amp;gt;=?&amp;quot;; Datomic 信息模型</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2014/2014-03-31-project-site/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2014/2014-03-31-project-site/</guid>
+      <description> 项目管理的网站服务 layout: post categories : manage agile title: 项目管理的网站服务 tagline: &amp;ldquo;Git is Great!&amp;rdquo; tags : [scurm, git, project, agile, free] lang: zh
+分享一些项目管理的网站：
+敏捷软件开发思想的项目管理网站服务：  teambition：可免费创建有限数量的项目，界面友好。 trello.com：永久免费，但空间有限（10MB），界面友好。  Git 托管的网站服务：  Github：程序界无人不知，无人不晓，免费创建公有库，私有库要收费。 Bitbucket： 免费创建公有库， 同时可免费创建有限的私有 Git 库。 Git.oschina：开源中国社区提供的 Git 库服务，可免费创建最多1000个公有或私有库。  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2016/2016-08-28-clojure-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-08-28-clojure-learning/</guid>
+      <description>Clojure/Script 学习 layout: post title: &amp;ldquo;Clojure Learning&amp;rdquo; description: &amp;ldquo;&amp;rdquo; category: devtech/clojure tags: [clojure, GraphQL]
+RESTful Service Framework  Luminus 综合 web 框架，其中（查看 Profiles 详细包含内容）包含 RESTful Services 的实现。  Immutant Web server Hiccup HTML Template Compojure API Sweet web apis with Compojure &amp;amp; Swagger  Arachne is a full, highly modular web development framework for Clojure. It emphasizes ease, simplicity, and a solid, scalable design. Hoplon ClojureScript Web Framework，如果只做一些网页，不多的动态效果，特别是你的技术栈还没有加入 React，而是在用 jQuery，而此时想试用 clojure script，那就可以试试这个 Hoplon 框架。  What is Hoplon? 说明了 hoplon 不同于 react 这类的使用虚拟 Dom 的框架的区别之处。  Precept A declarative programming framework, Precept is a framework for creating reactive web applications using a rules engine, declarative logic, and relational data modeling. Pedestal is a sturdy(坚实的) and reliable(可靠的) base for services and APIs. Liberator (Github repo) is a Clojure library for building RESTful applications. Compojure is a small routing library for Ring that allows web applications to be composed of small, independent parts.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://wind13.gitee.io/post/2016/2016-08-28-react-native-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-08-28-react-native-learning/</guid>
+      <description>React Native 相关学习 layout: post title: &amp;ldquo;React Native Learning&amp;rdquo; description: &amp;ldquo;&amp;rdquo; category: devtech/react tags: [react native] top: true
+React 相关  React 官网 Ant Design 蚂蚁金服ui库 Ant Design Pro 上手备忘录 Bi Sheng 转化 markdown 文档为静态单页面 React 应用 從零開始學 ReactJS React 中文文档 React 最佳实践——那些 React 没告诉你但很重要的事 基于 Jest + Enzyme 的 React 单元测试 How to debug Jest tests with VSCode react-motion React 动画效果库 redux-saga 实践总结 集成方案：  React + Redux + RESTfulAPI React + Relay + GraphQL  Relay： 全新的React数据获取框架 antizer ClojureScript library for Ant Design React UI components React Loadable A higher order component for loading components with promises. 用 promise 加载组件的高阶组件，可用于 React 显示加载、代码分离、服务端渲染等。 roadhog Cli tool for creating react apps, configurable version of create-react-app. 创建可配置的 React 应用的命令行工具，集成了 Jest, Enzyme 等。  在组件间共享函数的方法： 参考此文：通过示例理解 React 的 render props 技巧
+ render props, 更适合只读的函数，例如跟踪滚动条、鼠标动作等； HOC(High order component), 更适合较复杂的方法，如 local storage 等；  相关文档资料  react-devtools React Developer Tools 比 React Native 更好的选择：Flutter 使用 Dart 语言编写 App。 React Native是原生开发的末日吗？ React Native: Is it the end of native development?</description>
+    </item>
+    
+    <item>
+      <title>4clojure problem solving</title>
+      <link>https://wind13.gitee.io/post/2016/2016-09-20-4clojure-problem-solving/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-09-20-4clojure-problem-solving/</guid>
+      <description>14 题以前答案一般没啥区别，略过…… #15 #(* % 2) adereth&amp;rsquo;s solution: * 2 #16 format &amp;quot;Hello, %s!&amp;quot; adereth&amp;rsquo;s solution: #(str &amp;quot;Hello, &amp;quot; % &amp;quot;!&amp;quot;) #17 &#39;(6 7 8) adereth&amp;rsquo;s solution: [6 7 8] #18 &#39;(6 7) adereth&amp;rsquo;s solution: &#39;(6 7) #19 #(peek (vec %)) adereth&amp;rsquo;s solution: (comp first reverse) #20 #(nth (reverse %) 1) adereth&amp;rsquo;s solution: (comp second reverse) #21 (fn getn [ary n] (if (= n 0) (first ary) (getn (rest ary) (dec n)))) adereth&amp;rsquo;s solution: #(first (drop %2 %1)) #22 #(reduce (fn [a b] (inc a)) 0 %) adereth&amp;rsquo;s solution: (fn [sequence] (reduce (fn [acc v] (inc acc)) 0 sequence)) #23 #(reduce (fn [rs ls] (cons ls rs)) [] %) adereth&amp;rsquo;s solution: (fn [s] (loop [result [] s s] (if (seq s) (recur (concat [(first s)]</description>
+    </item>
+    
+    <item>
+      <title>Android Learing</title>
+      <link>https://wind13.gitee.io/post/2016/2016-08-28-android-learing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-08-28-android-learing/</guid>
+      <description>Android 开发学习 准备工作 安装 JDK，Gradle，Android SDK 等； 首先装 SDKMan，先别急去一个个下载，这里介绍就是安装其他开发工具的工具： 这是专为开发人员准备的安装工具！网速好的话，一句话搞定： curl -s &amp;quot;https://get.sdkman.io&amp;quot; | bash 安装 Gradle，点击看一下最新的命令，本文书写时还是 3.0 版本，如下: sdk install gradle</description>
+    </item>
+    
+    <item>
+      <title>Angular 2 相关学习</title>
+      <link>https://wind13.gitee.io/post/2016/2016-11-08-learn-angular-v2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-11-08-learn-angular-v2/</guid>
+      <description>基础 I18n 官方文档如此{:target=&amp;rdquo;_blank&amp;rdquo;}，目前的解决方案似乎很麻烦。 Angular 2 Components: Inputs and Outputs{:target=&amp;rdquo;_blank&amp;rdquo;} The impure AsyncPipe{:target=&amp;rdquo;_blank&amp;rdquo;} Angular2 管道（pipes）{:target=&amp;rdquo;_blank&amp;rdquo;} [Angular 2] Build a select dropdown with *ngFor in Angular 2{:target=&amp;rdquo;_blank&amp;rdquo;} JavaScript Array Methods Reference{:target=&amp;rdquo;_blank&amp;rdquo;} JavaScript Modules: A Beginner’s Guide{:target=&amp;rdquo;_blank&amp;rdquo;} 问题</description>
+    </item>
+    
+    <item>
+      <title>Angular 学习</title>
+      <link>https://wind13.gitee.io/post/2019/angular-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2019/angular-learning/</guid>
+      <description>相关框架 JHipster JHipster is a development platform to generate, develop and deploy Spring Boot + Angular Web applications and Spring microservices. 问题 在 AngularJS 的 controller 中： $scope.pageTitle = dbData.getTitle();，已知该标题从数据库中取出后不会被修改和变化，如下在模板中的写法最好的方式是：【A】 A. &amp;lt;h1 ng-bind=&amp;quot;::pageTitle&amp;quot;&amp;gt;&amp;lt;/h1&amp;gt; B. &amp;lt;h1&amp;gt;&amp;lt;%=pageTitle%&amp;gt;&amp;lt;/h1&amp;gt; C. &amp;lt;h1&amp;gt;\{\{::pageTitle\}\}&amp;lt;/h1&amp;gt; D. &amp;lt;h1&amp;gt;\{\{pageTitle\}\}&amp;lt;/h1&amp;gt; E. &amp;lt;h1 ng-bind=&amp;quot;pageTitle&amp;quot;&amp;gt;&amp;lt;/h1&amp;gt; 修改 model 数据后，自动更新界面上的显示内容，或者在界面上修改内容，更新 model</description>
+    </item>
+    
+    <item>
+      <title>Back to the blog</title>
+      <link>https://wind13.gitee.io/post/2016/2016-08-26-back-to-the-blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-08-26-back-to-the-blog/</guid>
+      <description>回归 Blog 有一段时间没有更新Blog了，有些时候用Lofter，因为方便而且容易分享，而技术、思路的收集则用Evernote，本来用得还挺好的，但Evernote加了限制，只能支持两个客户端什么的，于是转用有道云笔记，有道云笔记升级到2.x版，结果里面的查询太烂了，查到关键字在某些文</description>
+    </item>
+    
+    <item>
+      <title>Backbone 路向何方？</title>
+      <link>https://wind13.gitee.io/post/2014/2014-05-07-migrate-backbone-to/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2014/2014-05-07-migrate-backbone-to/</guid>
+      <description>情况背景 使用 Backbone 开发 Web App 之后，特别是较大型的项目，会发现因为缺少一些关键的功能（如：双向绑定等）代码越来越多且复杂，从而导致后期扩展和更新越来越困难，因此从基本框架层面需要考虑改善，以便使整个框架更有条理，更易组织，更易扩展、复用、重构等…… 目前可以想到的有三个方向： 在 Backbone 基础上结合</description>
+    </item>
+    
+    <item>
+      <title>DB, SQL 技术相关</title>
+      <link>https://wind13.gitee.io/post/2016/2016-12-18-db-collection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-12-18-db-collection/</guid>
+      <description>DB, SQL 技术相关 Presto（中文站）是一个运行在多台服务器上的分布式系统。</description>
+    </item>
+    
+    <item>
+      <title>DevOps技术相关</title>
+      <link>https://wind13.gitee.io/post/2016/2016-12-18-devops-collection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-12-18-devops-collection/</guid>
+      <description>DevOps技术相关 相关链接 Ansible中文权威指南 所有重复的IT工作可以被自动化并分享给其他组员。 Choosing a deployment tool - ansible vs puppet vs chef vs salt 相关观点 Puppet is a similar tool to Chef Vagrant is a tool for developers and a toy for admins, you can quickly stand up a development environment with vagrant, e.g. I want to develop an android app, grab an IDE from vagrant, I think it will be overtaken by Docker soon. 我现在使用的是阿里容器服务: https://cs.console.aliyun.com ，配合阿里的虚拟</description>
+    </item>
+    
+    <item>
+      <title>easyui中form表单的ajax实现</title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-23-easyuiform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-23-easyuiform/</guid>
+      <description>示例代码如下： $(&#39;#ff&#39;).form({ url:$(this).attr(&amp;quot;&amp;quot;action&amp;quot;&amp;quot;), onSubmit:function(){ return $(this).form(&#39;validate&#39;); }, success:function(data){ alert(data); } }); 其中url的值是取的form中的action属性，故需注意填写form的相应属性，当然也可以为&amp;rsquo;/controller_name/action_name&amp;rsquo;。</description>
+    </item>
+    
+    <item>
+      <title>FunctionTest中如何取得session的值</title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-13-functiontestsession/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-13-functiontestsession/</guid>
+      <description>原文摘抄自：https://groups.google.com/d/msg/play-framework/-/iQLX-uLwHWsJ （可能因墙访问不了……我是在邮件列表中收集的） 需求和问题 原问及简单翻译说明如下： Given a simple action:【简单给一个action如下：】 :::java public static void testAction() { session.put(&amp;quot;worked&amp;quot;,</description>
+    </item>
+    
+    <item>
+      <title>Ionic 2 相关学习</title>
+      <link>https://wind13.gitee.io/post/2016/2016-11-08-learn-ionic-v2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-11-08-learn-ionic-v2/</guid>
+      <description>基础 ionic2文档整理 A Guide to Styling an Ionic 2 Application Tips &amp;amp; Tricks for Styling Ionic 2 Applications User-Selected Style Themes in an Ionic 2 Application Vonic简明教程（一）：起步{:target=&amp;rdquo;_blank&amp;rdquo;} SQLite plugin{:target=&amp;rdquo;_blank&amp;rdquo;} Cordova plugin NativeStorage{:target=&amp;rdquo;_blank&amp;rdquo;} Debugging Ionic 2 Apps in Chrome from Visual Studio Code{:target=&amp;rdquo;_blank&amp;rdquo;} Ionic 2 Conference Application{:target=&amp;rdquo;_blank&amp;rdquo;} Ionically Speaking{:target=&amp;rdquo;_blank&amp;rdquo;} 问题 I18n 官方文档如此{:target=&amp;rdquo;_blank&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Javascript框架及相关知识</title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-24-jsframework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-24-jsframework/</guid>
+      <description>综合框架 arale.js{:target=&amp;rdquo;_blank&amp;rdquo;} 支付宝的前端基础类库 Arale 基于 SeaJS 和 jQuery 等，目前新构建 2.0 版本。 demo: 计算器{:target=&amp;rdquo;_blank&amp;rdquo;} KISSY{:target=&amp;rdquo;_blank&amp;rdquo;} 是由淘宝前端攻城师们发起创建的一个开源 JS 类库。 Ender.js{:target=&amp;rdquo;_blank&amp;rdquo;} - Ender is a full featured package manager for your browser. 作者 Dustin Diaz{:target=&amp;rdquo;_blank&amp;rdquo;} 模块加载框架 Javascript模块化{:target=&amp;rdquo</description>
+    </item>
+    
+    <item>
+      <title>jQuery EasyUI 1.2.5 ChangeLog</title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-23-version1.2.5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-23-version1.2.5/</guid>
+      <description>Bug tabs: When add a new tab panel with href property, the content page is loaded twice. fixed. form: Failed to call &amp;lsquo;load&amp;rsquo; method to load form input with complex name. fixed. draggable: End drag in ie9, the cursor cannot be restored. fixed. Improvement panel: The tools can be defined via html markup. tabs: Call &amp;lsquo;close&amp;rsquo; method to close specified tab panel, users can pass tab title or index of tab panel. Other methods such &amp;lsquo;select&amp;rsquo;,&amp;lsquo;getTab&amp;rsquo; and &amp;lsquo;exists&amp;rsquo; are similar to &amp;lsquo;close&amp;rsquo; method. tabs: Add &amp;lsquo;getTabIndex&amp;rsquo; method. tabs: Users can define mini tools on tabs. tree: The mouse must move a specified distance to begin drag and drop operation. resizable: Add &amp;lsquo;options&amp;rsquo;,&amp;lsquo;enable&amp;rsquo; and &amp;lsquo;disable&amp;rsquo; methods. numberbox: Allow users to change number format. datagrid: The subgrid is supported now. searchbox: Add &amp;lsquo;selectName&amp;rsquo; method to select searching type name.</description>
+    </item>
+    
+    <item>
+      <title>Play!中如何用module组织多个相关项目？</title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-13-multiproject/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-13-multiproject/</guid>
+      <description>首先按业务需求划分为多个应用，应用就是用 play new xxx来创建的。 其次将公用部分划分为多个子项目或称子模块，就是用 play new-module创建的。 这些项目均并列导入eclipse中，应用引用相应需要的子项目，需要在application.conf中添加，有多个就添加多行： module.base=../base module.common=../common 在eclip</description>
+    </item>
+    
+    <item>
+      <title>Play!技巧问答</title>
+      <link>https://wind13.gitee.io/post/2014/2014-02-26-playqaindex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2014/2014-02-26-playqaindex/</guid>
+      <description>Play!中如何用module组织多个相关项目 FunctionTest测试中如何取得Session值 Xml域名空间（WS.(url).get().getXml()无法取得带命名空间Document对象）识别问题 在Play!中如何实现类似过滤器的功能 如何同时使用http和https</description>
+    </item>
+    
+    <item>
+      <title>Play2/Scala 相关</title>
+      <link>https://wind13.gitee.io/post/2014/2014-04-25-play2x-links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2014/2014-04-25-play2x-links/</guid>
+      <description>Scala 课堂 Scala Tutorial: Getting Started with Scala Play2开发的CMS系统</description>
+    </item>
+    
+    <item>
+      <title>Re-natal 报错分析列表</title>
+      <link>https://wind13.gitee.io/post/2016/2016-09-03-re-natal-error-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-09-03-re-natal-error-list/</guid>
+      <description>Assert failed: c customEval figwheel-bridge.js:75 &amp;lt;unknown&amp;gt; figwheel-bridge.js:88 &amp;lt;unknown&amp;gt; JSTimers.js:47 引入的控件不可用？ Uncaugh [object object] 可能是db.cljs里的检查项不合格。 Spec check failed: {:cljs.spec/problems {[] {:pred map?, :val nil, :via [:xumu-app.db/app-db], :in []}}} 传入参数为nil，不符合db.cljs中spec的检查项。 undefined is not an object (evaluating &#39;nextState.routes.forEach&#39;) NavigationScenesReducer NavigationScenesReducer.js:116 NavigationTransitioner NavigationTransitioner.js:92 可能是sub.cljs加载错误，修改reg-sub为reg-sub-raw即可。 console.error: &amp;quot;Error rendering component (in env.android.main.reloader &amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>UML tools of Mac OSX 苹果系统下的建模工具</title>
+      <link>https://wind13.gitee.io/post/2014/2014-03-27-uml-tools-of-mac-osx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2014/2014-03-27-uml-tools-of-mac-osx/</guid>
+      <description>今天工作时需要设计一下程序的架构，即建模工作，这件事用纯文本似乎较难完成（本人是纯文本的 funs）。用手绘软件（Gimp, SketchBookExpress）也不太方便，失量图软件（Inkscape，LibreOfficeDraw）也要从画方框开始也不方便，毕竟是模块化的图形，还</description>
+    </item>
+    
+    <item>
+      <title>Vim 使用思路、最佳实践再整理</title>
+      <link>https://wind13.gitee.io/post/2014/2014-04-30-vim-best-practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2014/2014-04-30-vim-best-practices/</guid>
+      <description>以下是初入门时的姿势，现在完全不用这么麻烦，直接用dot-vimrc即可。 在 Mac OS X 上使用 Vim 真的是很享受，所以决定要用好这个工具，以下记录下本人的最佳实践： 首先面临一个选择，是用 MacVim 还是 终端（Terminate）？我的选择是终端，不过我进一步选择了 iTerm2，功能强大些，界面漂亮些</description>
+    </item>
+    
+    <item>
+      <title>Xml 域名空间识别问题</title>
+      <link>https://wind13.gitee.io/post/2013/2013-09-26-xmlawarenamespace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-09-26-xmlawarenamespace/</guid>
+      <description>相关文档见：官方ticket任务#823 Yes, this is correct. In the .getXML function the namespace ness is not set. 是的，有这个问题。在.getXML方法中允许命名空间（namespace）没有设置。 This line should be changed from: 这一行应该从这样： :::java DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder(); to: 变成： :::java DocumentBuilderFactory xmlFact = DocumentBuilderFactory.newInstance(); xmlFact.setNamespace(true); DocumentBuilder builder = xmlFact.newDocumentBuilder(); The same problem exists in the XML lib in the getDocument function: 同样的问题在XML的包里的getDo</description>
+    </item>
+    
+    <item>
+      <title>Xml 域名空间识别问题</title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-13-xmldomainbug/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-13-xmldomainbug/</guid>
+      <description>相关文档见：官方ticket任务#823 Yes, this is correct. In the .getXML function the namespace ness is not set. 是的，有这个问题。在.getXML方法中允许命名空间（namespace）没有设置。 This line should be changed from: 这一行应该从这样： :::java DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder(); to: 变成： :::java DocumentBuilderFactory xmlFact = DocumentBuilderFactory.newInstance(); xmlFact.setNamespace(true); DocumentBuilder builder = xmlFact.newDocumentBuilder(); The same problem exists in the XML lib in the getDocument function: 同样的问题在XML的包里的getDo</description>
+    </item>
+    
+    <item>
+      <title>《智能时代》读书笔记</title>
+      <link>https://wind13.gitee.io/post/2016/2016-09-18-data-time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-09-18-data-time/</guid>
+      <description>第一章 数据——人类建造文明的基石 使用数据的标准流程： 1. 获取数据 1. 分析数据 1. 建立模型 1. 预测未知 完美的镜头里面的透镜其实不应该是球面镜，而应该是某种复杂的曲面，这样才能使画面不变形，但这样的镜头在设计和制作上要求非常复杂而难以实现，相反如同日本的镜头生产一样，采用多个球面透镜来组合虽</description>
+    </item>
+    
+    <item>
+      <title>《清晰思考的艺术》读书笔记</title>
+      <link>https://wind13.gitee.io/post/2016/2016-09-20-the-art-of-clear-thinking-note/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-09-20-the-art-of-clear-thinking-note/</guid>
+      <description>幸存偏误 只（看到、统计）（幸存的、媒体报道的、成功的）（案例、公司、明星）等，而得到错误的结论。 如：股票指数不能代表一个国家的经济。 如：畅销图书和成功教练都值得怀疑。 游泳选手身材错觉 在游泳选手和化妆品模特那里，美丽是一种选择标准，而不是结果。 远离成功自助图书，因为写这些书的人都天</description>
+    </item>
+    
+    <item>
+      <title>《用系统来工作》部分摘抄</title>
+      <link>https://wind13.gitee.io/post/2016/2016-09-18-system-working/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-09-18-system-working/</guid>
+      <description>自立和富足出现在系统建立起来之后。 你只要暂时把部分时间和精力，投入到有步骤的、一次性的建立过程中，就可以得到长久的自由、富足和宁静。 第一步是开窍，体验一种觉醒，让你时刻留意人生的各个独立系统。 一下子理顺人生的零乱杂合状态是不可能的；它无法从整体上治理。整治任何复杂事物都需要一次一</description>
+    </item>
+    
+    <item>
+      <title>停止SSH，用Play!吧</title>
+      <link>https://wind13.gitee.io/post/2013/2013-09-29-stopsshgoplay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-09-29-stopsshgoplay/</guid>
+      <description>Created 星期六 25 二月 2012 先看一段Playframework热情交流群（QQG：168013302）里的聊天记录： 木马@学生 09:59:13 &amp;gt; 实现个功能..要调用service接口的方法, 方法又在他的impl里面实现, impl里面又是调用dao层接口, &amp;gt; dao层接口又是在dao的impl里面实现, dao</description>
+    </item>
+    
+    <item>
+      <title>关于 Code review 的思考</title>
+      <link>https://wind13.gitee.io/post/2016/2016-09-10-code-review-thinking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-09-10-code-review-thinking/</guid>
+      <description>今天看了陈皓的《从Code Review 谈如何做技术》一文，笔记一些有启发的重点如下： 首先要清晰思考 很多时候，人思考问题不清楚，很大一部分原因是因为把很多问题混为一谈。 Code Review 的好处： 主要是让代码可以更好地组织起来，更易读，有更高的维护性，同时可以达到知识共享，找到bug只是其中的副产品。 代码的</description>
+    </item>
+    
+    <item>
+      <title>在Play!中如何实现类似过滤器的功能？</title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-13-filterallcontroller/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-13-filterallcontroller/</guid>
+      <description>如果是单个Controller要实现过滤，只需写一个public static 的方法，加上@Before注解即可达到执行所有action前先执行这个方法的目的。 如果想实现全局即整个站点的action都被过滤，就需要写个BaseController（名字随便起，如SuperController</description>
+    </item>
+    
+    <item>
+      <title>如何同时使用http和https协议</title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-13-userhttps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-13-userhttps/</guid>
+      <description>首先看官方文档 用openssl命令生成自己的签名文档 openssl genrsa 1024 &amp;gt; host.key openssl req -new -x509 -nodes -sha1 -days 365 -key host.key &amp;gt; host.cert 生成签名时需回答类似这样的问题： Country Name (2 letter code) [XX]: State or Province Name (full name) []: Locality Name (eg, city) [Default City]: Organization Name (eg, company) [Default Company Ltd]: Organizational Unit Name (eg, section) []: Common Name (eg, your name or your server&#39;s hostname) []: Email Address []: 最终会得到两个文件：host.key和host.cert 然后在appli</description>
+    </item>
+    
+    <item>
+      <title>归档</title>
+      <link>https://wind13.gitee.io/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/archives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>微信小程序相关学习</title>
+      <link>https://wind13.gitee.io/post/2016/2016-09-24-weixin-xiao-cheng-xu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-09-24-weixin-xiao-cheng-xu/</guid>
+      <description>收集链接 微信小应用资源汇总整理 WePY 让小程序支持组件化开发的框架 Github 微信小程序wepy框架开发资源汇总 开发微信小程序入门前 微信小程序设计指南 CSS参考手册 首个微信小程序开发教程！ 微信小程序简易教程 微信web开发者工具 微信小程序分享1：开发环境的配置 wechat-weapp-gank 一个图片App示例 wxapp-cli: 一个简单的微信小</description>
+    </item>
+    
+    <item>
+      <title>搜索</title>
+      <link>https://wind13.gitee.io/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>收集的盒子</title>
+      <link>https://wind13.gitee.io/post/2016/2016-08-26-collection-box/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-08-26-collection-box/</guid>
+      <description>链接收集 网页设计巅峰之作{:target=&amp;rdquo;_blank&amp;rdquo;} MDX Markdown for the component era, 在 markdown 文档中加入 JSX 组件，可用于 React 项目。 为 Web 开发者提供的 16 本优秀的 E-BOOK{:target=&amp;rdquo;_blank&amp;rdquo;} 语义化版本 2.0.0{:target=&amp;rdquo;_blank&amp;rdquo;} 软件的版本号不是随便乱起的，这里有相应的说明和规范。 Publish Websites Like a BOSS B]{:target=&amp;rdquo;_blank&amp;rdquo;} 发布静态网站、Blog 的系统，与 Jekyll-Bootstrap 类似吧~ Static</description>
+    </item>
+    
+    <item>
+      <title>李笑来《把时间当朋友》笔记</title>
+      <link>https://wind13.gitee.io/post/2016/2016-10-08-time-friend-lixiaolai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-10-08-time-friend-lixiaolai/</guid>
+      <description>什么是心智 一个人的心智，就是其过往获得的一切知识及经验的总和，包括基于这些知识和经验造就的思考方法、思考模式。</description>
+    </item>
+    
+    <item>
+      <title>李笑来《通往财富自由之路》笔记</title>
+      <link>https://wind13.gitee.io/post/2016/2016-09-06-note-lixiaolai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-09-06-note-lixiaolai/</guid>
+      <description>财富自由的定义 首先要在语言上有准确的概念，才能思考清晰，并且要能在行动上指导自己。 分享的概念：好东西必须先是自己的，再拿出来跟人分享。 个人财富自由：某个人再也不用为了满足生活必须而出售自己的时间了。 把原来一份的时间卖出更多份，或是不需要出售自己的时间，在自己创造的平台上获取财富。</description>
+    </item>
+    
+    <item>
+      <title>百度地图使用相关资料</title>
+      <link>https://wind13.gitee.io/post/2016/2016-08-28-baidu-map-usage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-08-28-baidu-map-usage/</guid>
+      <description>百度地图接口 MKMapViewListener 地图显示事件监听器。 该接口监听地图显示事件，用户需要实现该接口以处理相应事件。 百度地图程序包 com.baidu.mapapi.map 地图展示与操作相关方法，覆盖物相关方法</description>
+    </item>
+    
+    <item>
+      <title>编程初学者的捷径</title>
+      <link>https://wind13.gitee.io/post/2016/2016-09-16-shortcut-for-programming-beginners/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2016/2016-09-16-shortcut-for-programming-beginners/</guid>
+      <description>注：本文将不断更新或添加链接 有没有捷径？ 一听到“捷径”这个词，很多人就会感觉是个负面的意思，人不应该走捷径，而应该踏实努力、步步为营。所以，这里我们要先讨论一下这个问题：有没有捷径？ 既然题目取了“编程初学者的捷径”，当然就是说有捷径的，为什么说有？是因为事物发展的基本规律如此，一</description>
+    </item>
+    
+    <item>
+      <title>编程技术相关</title>
+      <link>https://wind13.gitee.io/post/2014/2014-01-09-otherrelay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2014/2014-01-09-otherrelay/</guid>
+      <description>Java 相关 String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型 java 类对象初始化顺序 JavaScript相关 JavaScript框架 easyui 相关 easyui中form表单的ajax实现 版本1.2.5改进说明 自动化测试（抓数据）相关 关于HtmlUnitDriver无法支持所有javascript效果的问题 G</description>
+    </item>
+    
+    <item>
+      <title>罗辑思维听后记录</title>
+      <link>https://wind13.gitee.io/post/2014/2014-01-10-luojisiwei/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2014/2014-01-10-luojisiwei/</guid>
+      <description>2013年罗辑思维 第19期：在一起 有后代 在线优酷观看 如果你不知道学一个知识有什么用，没有学习它的动力时，可以听一下这一讲，世间万物的知识其实是相互关联的，不要刻意将自己局限在某个专业的思维之中。 第36期：大家都有拖延症 在线优酷观看 如果你感觉自己总是会拖延一些重要的事情，听听这一讲</description>
+    </item>
+    
+  </channel>
+</rss>

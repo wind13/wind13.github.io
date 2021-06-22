@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MQTT on 世风十三学堂</title>
+    <link>https://wind13.gitee.io/tags/mqtt/</link>
+    <description>Recent content in MQTT on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 25 Jul 2020 22:09:48 +0800</lastBuildDate>
+    
+	<atom:link href="https://wind13.gitee.io/tags/mqtt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rust in IoT</title>
+      <link>https://wind13.gitee.io/post/2020/rust-in-iot/</link>
+      <pubDate>Sat, 25 Jul 2020 22:09:48 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/rust-in-iot/</guid>
+      <description>引用一篇国外的网文： 主要内容是解释为什么重写了原来的 Python 的程序。 Architecturally, the existing architecture was incapable of scaling to other technologies or changing direction without massive amounts of effort. The business had just been forced to change to MQTT from another IaaS provider because of licensing cost concerns, and the cutover took nearly a year. With new devices released every year (e.g. BLE, Wifi, Z-Wave, Zigbee, arbitrary REST APIs) the business wants to be able to change IoT stacks quickly to adapt to new technology. There were technical debt items nobody understood or was prepared to resolve. (Did I mention that none of the original programmers were still around to fix bugs or answer questions?) Fixing obvious issues in</description>
+    </item>
+    
+  </channel>
+</rss>

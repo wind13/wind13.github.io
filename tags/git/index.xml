@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on 世风十三学堂</title>
+    <link>https://wind13.gitee.io/tags/git/</link>
+    <description>Recent content in git on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 12 Jul 2020 22:01:41 +0800</lastBuildDate>
+    
+	<atom:link href="https://wind13.gitee.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Git 的实际应用</title>
+      <link>https://wind13.gitee.io/post/2020/git-work/</link>
+      <pubDate>Sun, 12 Jul 2020 22:01:41 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/git-work/</guid>
+      <description>Git 的实际应用 软件版本的重要性 总得有个版本是可用的 总能回到思路清晰的时候 要能追溯到变更的过程 多人协作避免冲突 可以检查合并的代码 Git 的基本概念和功能 本地和远端 初始化 init 提交 commit 拉取 pull 推送 push 分支 branch，如同泳道 标签 tag 发布 release 暂存 stash 变基 rebase 合并 merge 关键的区别： merge vs rebase FF or conflict 详细见网文： Git：合</description>
+    </item>
+    
+    <item>
+      <title>常用Git命令说明</title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-23-gitoftenused/</link>
+      <pubDate>Mon, 23 Dec 2013 16:00:11 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-23-gitoftenused/</guid>
+      <description>参考：史上最浅显易懂的Git教程！ 进入你的工作目录 cd yourworkpath 列出所有branch，当前所在branch前面有“*”号。 git branch -a 切换工作库 git checkout v1.5.1 合并另一个branch，通常是master git merge master 再切换回来 git checkout master 查看当前目录情况 git status 将当前目录中的修改提交到相应的库（branch）中 git commit -m &amp;ld</description>
+    </item>
+    
+  </channel>
+</rss>

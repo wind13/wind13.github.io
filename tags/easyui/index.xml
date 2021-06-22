@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>easyui on 世风十三学堂</title>
+    <link>https://wind13.gitee.io/tags/easyui/</link>
+    <description>Recent content in easyui on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    
+	<atom:link href="https://wind13.gitee.io/tags/easyui/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>easyui中form表单的ajax实现</title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-23-easyuiform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-23-easyuiform/</guid>
+      <description>示例代码如下： $(&#39;#ff&#39;).form({ url:$(this).attr(&amp;quot;&amp;quot;action&amp;quot;&amp;quot;), onSubmit:function(){ return $(this).form(&#39;validate&#39;); }, success:function(data){ alert(data); } }); 其中url的值是取的form中的action属性，故需注意填写form的相应属性，当然也可以为&amp;rsquo;/controller_name/action_name&amp;rsquo;。</description>
+    </item>
+    
+    <item>
+      <title>jQuery EasyUI 1.2.5 ChangeLog</title>
+      <link>https://wind13.gitee.io/post/2013/2013-12-23-version1.2.5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2013/2013-12-23-version1.2.5/</guid>
+      <description>Bug tabs: When add a new tab panel with href property, the content page is loaded twice. fixed. form: Failed to call &amp;lsquo;load&amp;rsquo; method to load form input with complex name. fixed. draggable: End drag in ie9, the cursor cannot be restored. fixed. Improvement panel: The tools can be defined via html markup. tabs: Call &amp;lsquo;close&amp;rsquo; method to close specified tab panel, users can pass tab title or index of tab panel. Other methods such &amp;lsquo;select&amp;rsquo;,&amp;lsquo;getTab&amp;rsquo; and &amp;lsquo;exists&amp;rsquo; are similar to &amp;lsquo;close&amp;rsquo; method. tabs: Add &amp;lsquo;getTabIndex&amp;rsquo; method. tabs: Users can define mini tools on tabs. tree: The mouse must move a specified distance to begin drag and drop operation. resizable: Add &amp;lsquo;options&amp;rsquo;,&amp;lsquo;enable&amp;rsquo; and &amp;lsquo;disable&amp;rsquo; methods. numberbox: Allow users to change number format. datagrid: The subgrid is supported now. searchbox: Add &amp;lsquo;selectName&amp;rsquo; method to select searching type name.</description>
+    </item>
+    
+  </channel>
+</rss>

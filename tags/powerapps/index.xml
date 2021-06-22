@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PowerApps on 世风十三学堂</title>
+    <link>https://wind13.gitee.io/tags/powerapps/</link>
+    <description>Recent content in PowerApps on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 25 Nov 2020 09:57:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://wind13.gitee.io/tags/powerapps/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>对于微软 PowerApps 的使用感受</title>
+      <link>https://wind13.gitee.io/post/2020/feeling-powerapps/</link>
+      <pubDate>Wed, 25 Nov 2020 09:57:44 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/feeling-powerapps/</guid>
+      <description>感受 非常依赖微软的生态系统，基本上就是原来单机版的 Office 搬上了云端，再加上一些快捷功能生成手机/平板 App 和网站等。 生成的 App 实际上是运行在 PowerApps 这个超级 App 基础上，相当于小程序之于微信，不同的是，小程序支持代码开发（支持 JavaScript 等语言，有更高的可控性和灵活性），而微软的 PowerApps 不太支持代码开发，主张的是通</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>最速降线 on 世风十三学堂</title>
+    <link>https://wind13.gitee.io/tags/%E6%9C%80%E9%80%9F%E9%99%8D%E7%BA%BF/</link>
+    <description>Recent content in 最速降线 on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 23 Feb 2020 16:58:46 +0800</lastBuildDate>
+    
+	<atom:link href="https://wind13.gitee.io/tags/%E6%9C%80%E9%80%9F%E9%99%8D%E7%BA%BF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>最速降线——旋轮线</title>
+      <link>https://wind13.gitee.io/post/2020/speed-most/</link>
+      <pubDate>Sun, 23 Feb 2020 16:58:46 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/speed-most/</guid>
+      <description>今天看了《最速降线问题》，得到了旋轮线的结果，其中对我的启发是，粒子在轨迹的每时每刻都处在最佳的加速状态，平衡着速度和加速度的最佳配比，前半段主要提高加速度，后半段速度起来了，就更多地利用速度。 光的性质就是始终处于最佳状态，始终在寻找最佳轨迹，所谓最佳，就是寻找最省时、最省能量的</description>
+    </item>
+    
+  </channel>
+</rss>

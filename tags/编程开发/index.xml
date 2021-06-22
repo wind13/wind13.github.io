@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编程开发 on 世风十三学堂</title>
+    <link>https://wind13.gitee.io/tags/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/</link>
+    <description>Recent content in 编程开发 on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 05 Dec 2020 23:12:40 +0800</lastBuildDate>
+    
+	<atom:link href="https://wind13.gitee.io/tags/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>《实现模式》学习笔记</title>
+      <link>https://wind13.gitee.io/post/2020/implementation-patterns-learn/</link>
+      <pubDate>Sat, 05 Dec 2020 23:12:40 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/implementation-patterns-learn/</guid>
+      <description>Learning 《Implementation Patterns》 —— 编写可读的代码 在软件开发中有大量的开销都被用在理解现有代码上了。 范围的管理对于软件开发和写书都一样重要。 好的代码是有意义的。 软件要取得商业成功或者被广泛使用，“好的代码质量”即不必要也不充分。 尽管代码质量不能保证美好的未来，但</description>
+    </item>
+    
+  </channel>
+</rss>

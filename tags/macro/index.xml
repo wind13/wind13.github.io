@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>macro on 世风十三学堂</title>
+    <link>https://wind13.gitee.io/tags/macro/</link>
+    <description>Recent content in macro on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 04 Mar 2020 12:04:22 +0800</lastBuildDate>
+    
+	<atom:link href="https://wind13.gitee.io/tags/macro/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PowerMill 宏编程研究</title>
+      <link>https://wind13.gitee.io/post/2020/powermill-macro/</link>
+      <pubDate>Wed, 04 Mar 2020 12:04:22 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/powermill-macro/</guid>
+      <description>概述 PowerMill 是一款大型数控加工软件，其中有二次开发和宏的功能，初步浏览了一下官方帮助文档，感觉总体来说是比较简单的，主要是用编程知识中的函数方法、循环和判断逻辑等基础知识，重点要结合业务需求来实际应用即可。 示例代码解读 简单的循环 FOREACH Bottles IN {10,9,8,7,6,5,4,3,2,1} 直译：每个 Bottles 在 10~1 这段数字中 意译：把 10~1 这些数字循环，</description>
+    </item>
+    
+  </channel>
+</rss>

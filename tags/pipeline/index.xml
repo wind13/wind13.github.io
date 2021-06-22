@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PipeLine on 世风十三学堂</title>
+    <link>https://wind13.gitee.io/tags/pipeline/</link>
+    <description>Recent content in PipeLine on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 10 Oct 2020 09:31:01 +0800</lastBuildDate>
+    
+	<atom:link href="https://wind13.gitee.io/tags/pipeline/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jenkins 学习笔记</title>
+      <link>https://wind13.gitee.io/post/2020/jenkins-learning/</link>
+      <pubDate>Sat, 10 Oct 2020 09:31:01 +0800</pubDate>
+      
+      <guid>https://wind13.gitee.io/post/2020/jenkins-learning/</guid>
+      <description>每个 Jenkins 用户都应该知道这三个最佳实践 轻量化 Jenkins 最佳实践 Jenkins管道最佳实践Top 10 不仅一个代码库可以支持多个Multibranch Job，实际上多个Multibranch Job可以共用同一个代码库，这里面就用到marker的功能。所以作为一个Jenkins管理员，我最纠结的就是</description>
+    </item>
+    
+  </channel>
+</rss>
