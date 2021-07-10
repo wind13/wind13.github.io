@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="天地图"/>
+    <title>天地图－地图API－范例－画面</title>
+    <script type="text/javascript" src="http://api.tianditu.gov.cn/api?v=4.0&tk=72b0b8e82b55fcad0b82d72d7acfcd46"></script>
+    <style type="text/css">body,html{width:100%;height:100%;margin:0;font-family:"Microsoft YaHei"}#mapDiv{width:100%;height:400px}input,b,p{margin-left:5px;font-size:14px}</style>
+    <script>
+        var map;
+        var zoom = 12;
+        function onLoad() {
+            //初始化地图对象
+            map = new T.Map("mapDiv");
+            //设置显示地图的中心点和级别
+            map.centerAndZoom(new T.LngLat(108.93109, 34.89094), zoom);
+            var points = [];
+            points.push(new T.LngLat(108.87203, 34.92103));
+            points.push(new T.LngLat(108.93727, 34.93537));
+            points.push(new T.LngLat(109.00126, 34.8723));
+            points.push(new T.LngLat(108.92819, 34.85156));
+            points.push(new T.LngLat(108.86113, 34.8703));
+            //创建面对象
+            var polygon = new T.Polygon(points,{
+                color: "blue", weight: 3, opacity: 0.5, fillColor: "#FFFFFF", fillOpacity: 0.5
+            });
+            //向地图上添加面
+            map.addOverLay(polygon);
+            var point = new T.LngLat(108.92745, 34.8575);
+            marker = new T.Marker(point);// 创建标注
+            map.addOverLay(marker);             // 将标注添加到地图中
+            marker.enableDragging();
+            marker.addEventListener("dragend", function () {
+              console.log(marker.getLngLat());
+            });
+
+            var infoWin1 = new T.InfoWindow();
+            var v = '<video src="blob:https://data.vod.itc.cn/5mp4?file=/61/29/Ow9v38FRUtnhekkFTx38ZD.mp4&key=mujFE-QDhHRj3BsIB3NqMF-Id2VkINpE&ca=1&prod=56&pt=1&pg=1&start=-1" style="transform: rotate(0deg) scale(1);">             </video>';
+            var sContent =
+                "<div style='margin:0px;'>" +
+                "<div style='margin:10px 10px; width: 300px; height: 220px' padding: 20px;>" +
+                  v +
+                "</div>" +
+                "</div>";
+            infoWin1.setContent(sContent);
+            marker.addEventListener("click", function () {
+                marker.openInfoWindow(infoWin1);
+            });// 将标注添加到地图中
+        }
+    </script>
+</head>
+<body onLoad="onLoad()">
+<div id="mapDiv" ></div>
+<p>本示例演示如何在地图上添加面。</p>
+</body>
+</html>
