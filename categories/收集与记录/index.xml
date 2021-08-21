@@ -6,10 +6,19 @@
     <description>Recent content in 收集与记录 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 24 Mar 2021 11:37:15 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 21 Aug 2021 12:29:07 +0800</lastBuildDate>
     
 	<atom:link href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</title>
+      <link>https://wind13.github.io/post/2021/nodejs-fullstack-solution/</link>
+      <pubDate>Sat, 21 Aug 2021 12:29:07 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/post/2021/nodejs-fullstack-solution/</guid>
+      <description>JamStack WHAT IS JAMSTACK? A GUIDE FOR BUSINESS PEOPLE These decisions include the following: How you’ll manage the project/code Where you’ll store your content What software will build your site How your build process will be automated Where your site will be published What services and APIs your live site will use Best Practices Entire Project on a CDN Modern Build Tools Automated Builds Atomic Deploys: No changes go live until all changed files have been uploaded. Instant Cache Invalidation: Making sure your CDN can handle instant cache purges. Everything Lives in Git: Git clone, install any needed dependencies with a standard procedure (like npm install), and be ready to run the full project locally. No databases to clone, no complex installs. History LAMP(Linux, Apache, MySQL, PHP/Perl/Python) stack &amp;mdash;&amp;gt; MEAN(MongoDB,</description>
+    </item>
     
     <item>
       <title>Digital Garden</title>

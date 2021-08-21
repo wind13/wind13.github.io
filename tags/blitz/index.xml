@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blitz on 世风十三学堂</title>
+    <link>https://wind13.github.io/tags/blitz/</link>
+    <description>Recent content in Blitz on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 21 Aug 2021 12:29:07 +0800</lastBuildDate>
+    
+	<atom:link href="https://wind13.github.io/tags/blitz/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</title>
+      <link>https://wind13.github.io/post/2021/nodejs-fullstack-solution/</link>
+      <pubDate>Sat, 21 Aug 2021 12:29:07 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/post/2021/nodejs-fullstack-solution/</guid>
+      <description>JamStack WHAT IS JAMSTACK? A GUIDE FOR BUSINESS PEOPLE These decisions include the following: How you’ll manage the project/code Where you’ll store your content What software will build your site How your build process will be automated Where your site will be published What services and APIs your live site will use Best Practices Entire Project on a CDN Modern Build Tools Automated Builds Atomic Deploys: No changes go live until all changed files have been uploaded. Instant Cache Invalidation: Making sure your CDN can handle instant cache purges. Everything Lives in Git: Git clone, install any needed dependencies with a standard procedure (like npm install), and be ready to run the full project locally. No databases to clone, no complex installs. History LAMP(Linux, Apache, MySQL, PHP/Perl/Python) stack &amp;mdash;&amp;gt; MEAN(MongoDB,</description>
+    </item>
+    
+  </channel>
+</rss>

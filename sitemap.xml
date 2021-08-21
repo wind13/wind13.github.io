@@ -3,23 +3,73 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://wind13.github.io/page/</loc>
-    <lastmod>2021-04-24T09:05:05+08:00</lastmod>
+    <loc>https://wind13.github.io/tags/blitz/</loc>
+    <lastmod>2021-08-21T12:29:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wind13.github.io/categories/</loc>
+    <lastmod>2021-08-21T12:29:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wind13.github.io/tags/jamstack/</loc>
+    <lastmod>2021-08-21T12:29:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wind13.github.io/tags/nodejs/</loc>
+    <lastmod>2021-08-21T12:29:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wind13.github.io/post/2021/nodejs-fullstack-solution/</loc>
+    <lastmod>2021-08-21T12:29:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wind13.github.io/post/</loc>
+    <lastmod>2021-08-21T12:29:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wind13.github.io/tags/redwood/</loc>
+    <lastmod>2021-08-21T12:29:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wind13.github.io/tags/</loc>
+    <lastmod>2021-08-21T12:29:07+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://wind13.github.io/</loc>
+    <lastmod>2021-08-21T12:29:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2021-08-21T12:29:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wind13.github.io/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
+    <lastmod>2021-08-21T12:29:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2021-08-21T12:29:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wind13.github.io/page/</loc>
     <lastmod>2021-04-24T09:05:05+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://wind13.github.io/page/recommend/</loc>
     <lastmod>2021-04-24T09:05:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wind13.github.io/categories/</loc>
-    <lastmod>2021-03-24T11:37:15+08:00</lastmod>
   </url>
   
   <url>
@@ -48,27 +98,12 @@
   </url>
   
   <url>
-    <loc>https://wind13.github.io/post/</loc>
-    <lastmod>2021-03-24T11:37:15+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wind13.github.io/tags/second-brain/</loc>
     <lastmod>2021-03-24T11:37:15+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wind13.github.io/tags/</loc>
-    <lastmod>2021-03-24T11:37:15+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/</loc>
-    <lastmod>2021-03-24T11:37:15+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2021-03-24T11:37:15+08:00</lastmod>
   </url>
   
@@ -99,11 +134,6 @@
   
   <url>
     <loc>https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2021-03-18T17:34:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2021-03-18T17:34:44+08:00</lastmod>
   </url>
   
@@ -439,11 +469,6 @@
   
   <url>
     <loc>https://wind13.github.io/tags/android-%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2020-10-11T13:48:22+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wind13.github.io/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
     <lastmod>2020-10-11T13:48:22+08:00</lastmod>
   </url>
   
@@ -849,11 +874,6 @@
   
   <url>
     <loc>https://wind13.github.io/tags/kafka/</loc>
-    <lastmod>2020-06-05T14:40:52+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wind13.github.io/tags/nodejs/</loc>
     <lastmod>2020-06-05T14:40:52+08:00</lastmod>
   </url>
   

@@ -77,6 +77,22 @@
     <article class="post">
         <header>
             <h1 class="post-title">
+                <a href="https://wind13.github.io/post/2018/2018-05-22-baihua-async/" title="白话理解 Node.js 异步单线程">白话理解 Node.js 异步单线程</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2018年5月22日
+        </date>
+        
+        <div class="post-content">
+            Nginx 和 Node.js 都是多进程单线程的。它通过事件轮询（event loop Node.js 事件循环）来实现并行操作，因此，我们要尽可能的避免阻塞操作，取而代之，多使用非阻塞操作。参考 Understanding the node.js event loop 主线程和子线程，这里说的单线程，是说主线程只有一个，所以要把阻塞的运算处理分拆到子线程中去运行。 使用回调函数 以非阻塞操作进……
+        </div>
+        <p class="readmore"><a href="https://wind13.github.io/post/2018/2018-05-22-baihua-async/">阅读全文</a></p>
+    </article>
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
                 <a href="https://wind13.github.io/post/2018/2018-05-03-graphql-learning/" title="GraphQL 学习">GraphQL 学习</a>
             </h1>
         </header>
@@ -227,22 +243,6 @@
         <p class="readmore"><a href="https://wind13.github.io/post/2018/2018-01-23-fight-with-digital-games/">阅读全文</a></p>
     </article>
     
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="https://wind13.github.io/post/2018/2018-01-23-2018-first-shot/" title="2018年第一折腾">2018年第一折腾</a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            2018年1月23日
-        </date>
-        
-        <div class="post-content">
-            花了两天时间，绕了些弯路，总算把 Blog 搞得差不多满意了，用了 Next! 的主题，用了 hexo 的服务技术。 之前用的 JekyllBootstrap，本来还能凑合用，但是那个项目很长时间都没再维护更新了，仅有的几个主题也看烦了，影响了写博客和记录的心情，中间还转而去用一些笔记工具，用到高级功能又要收费，想……
-        </div>
-        <p class="readmore"><a href="https://wind13.github.io/post/2018/2018-01-23-2018-first-shot/">阅读全文</a></p>
-    </article>
-    
     
 
 
@@ -357,6 +357,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
     </li>
     
@@ -392,10 +396,6 @@
         <a href="https://wind13.github.io/post/2020/new-solutions/" title="最新技术选型">最新技术选型</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2020/implementation-patterns-learn/" title="《实现模式》学习笔记">《实现模式》学习笔记</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -409,13 +409,13 @@
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (23)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (21)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (22)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (12)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (36)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (37)</a></li>
     
 </ul>
     </section>
@@ -445,6 +445,8 @@
     <a href="https://wind13.github.io/tags/baidu/">baidu</a>
     
     <a href="https://wind13.github.io/tags/beeui/">BeeUi</a>
+    
+    <a href="https://wind13.github.io/tags/blitz/">Blitz</a>
     
     <a href="https://wind13.github.io/tags/blog/">Blog</a>
     
@@ -543,6 +545,8 @@
     <a href="https://wind13.github.io/tags/iot/">IOT</a>
     
     <a href="https://wind13.github.io/tags/iterm2/">iterm2</a>
+    
+    <a href="https://wind13.github.io/tags/jamstack/">JamStack</a>
     
     <a href="https://wind13.github.io/tags/java/">Java</a>
     
@@ -663,6 +667,8 @@
     <a href="https://wind13.github.io/tags/react-route/">react-route</a>
     
     <a href="https://wind13.github.io/tags/redux/">redux</a>
+    
+    <a href="https://wind13.github.io/tags/redwood/">RedWood</a>
     
     <a href="https://wind13.github.io/tags/regex/">Regex</a>
     
