@@ -6,10 +6,37 @@
     <description>Recent content in Tags on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 21 Aug 2021 12:29:07 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 13 Sep 2021 22:18:22 +0800</lastBuildDate>
     
 	<atom:link href="https://wind13.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Power Apps</title>
+      <link>https://wind13.github.io/tags/power-apps/</link>
+      <pubDate>Mon, 13 Sep 2021 22:18:22 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/tags/power-apps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Power Platform</title>
+      <link>https://wind13.github.io/tags/power-platform/</link>
+      <pubDate>Mon, 13 Sep 2021 22:18:22 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/tags/power-platform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>低代码</title>
+      <link>https://wind13.github.io/tags/%E4%BD%8E%E4%BB%A3%E7%A0%81/</link>
+      <pubDate>Mon, 13 Sep 2021 22:18:22 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/tags/%E4%BD%8E%E4%BB%A3%E7%A0%81/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Blitz</title>
@@ -2028,7 +2055,7 @@
     </item>
     
     <item>
-      <title>AntD</title>
+      <title>antd</title>
       <link>https://wind13.github.io/tags/antd/</link>
       <pubDate>Thu, 26 Jul 2018 09:22:11 +0000</pubDate>
       
