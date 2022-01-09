@@ -6,10 +6,64 @@
     <description>Recent content in Tags on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 20 Nov 2021 17:02:32 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 09 Jan 2022 12:23:45 +0800</lastBuildDate>
     
 	<atom:link href="https://wind13.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>chkdsk</title>
+      <link>https://wind13.github.io/tags/chkdsk/</link>
+      <pubDate>Sun, 09 Jan 2022 12:23:45 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/tags/chkdsk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>macOS</title>
+      <link>https://wind13.github.io/tags/macos/</link>
+      <pubDate>Sun, 09 Jan 2022 12:23:45 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mounty</title>
+      <link>https://wind13.github.io/tags/mounty/</link>
+      <pubDate>Sun, 09 Jan 2022 12:23:45 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/tags/mounty/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NTFS</title>
+      <link>https://wind13.github.io/tags/ntfs/</link>
+      <pubDate>Sun, 09 Jan 2022 12:23:45 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/tags/ntfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seagate</title>
+      <link>https://wind13.github.io/tags/seagate/</link>
+      <pubDate>Sun, 09 Jan 2022 12:23:45 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/tags/seagate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>数据恢复</title>
+      <link>https://wind13.github.io/tags/%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D/</link>
+      <pubDate>Sun, 09 Jan 2022 12:23:45 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/tags/%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>KPI</title>
@@ -579,7 +633,7 @@
     </item>
     
     <item>
-      <title>react</title>
+      <title>React</title>
       <link>https://wind13.github.io/tags/react/</link>
       <pubDate>Mon, 28 Dec 2020 16:49:11 +0800</pubDate>
       
@@ -804,7 +858,7 @@
     </item>
     
     <item>
-      <title>Clojure</title>
+      <title>clojure</title>
       <link>https://wind13.github.io/tags/clojure/</link>
       <pubDate>Tue, 08 Sep 2020 22:50:16 +0800</pubDate>
       

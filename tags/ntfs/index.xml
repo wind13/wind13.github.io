@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NTFS on 世风十三学堂</title>
+    <link>https://wind13.github.io/tags/ntfs/</link>
+    <description>Recent content in NTFS on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 09 Jan 2022 12:23:45 +0800</lastBuildDate>
+    
+	<atom:link href="https://wind13.github.io/tags/ntfs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>不要用 Mounty，一次惊险的数据恢复记录</title>
+      <link>https://wind13.github.io/post/2022/do-not-use-mounty-disk-data-recovery/</link>
+      <pubDate>Sun, 09 Jan 2022 12:23:45 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/post/2022/do-not-use-mounty-disk-data-recovery/</guid>
+      <description>不要用 Mounty，一次惊险的数据恢复记录 不愿看前情啰嗦的，可以直接看最后的总结…… macOS 无法读写 NTFS 格式的硬盘 Mounty for NTFS A tiny tool to re-mount write-protected NTFS volumes under macOS in read-write mode. 尝试使用这个工具，可以拷贝写入 NTFS 的硬盘，但不稳定，在拷贝一大堆资料时，突然资料盘的这个原目录里的资料看不见了，转到 Win10 系统提示无法打开。 因为资料</description>
+    </item>
+    
+  </channel>
+</rss>
