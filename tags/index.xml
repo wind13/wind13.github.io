@@ -6,10 +6,64 @@
     <description>Recent content in Tags on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 09 Jan 2022 12:23:45 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Jan 2022 19:51:10 +0800</lastBuildDate>
     
 	<atom:link href="https://wind13.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Canvas App</title>
+      <link>https://wind13.github.io/tags/canvas-app/</link>
+      <pubDate>Sat, 15 Jan 2022 19:51:10 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/tags/canvas-app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dataverse</title>
+      <link>https://wind13.github.io/tags/dataverse/</link>
+      <pubDate>Sat, 15 Jan 2022 19:51:10 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/tags/dataverse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JamStack</title>
+      <link>https://wind13.github.io/tags/jamstack/</link>
+      <pubDate>Sat, 15 Jan 2022 19:51:10 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/tags/jamstack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Model Driven App</title>
+      <link>https://wind13.github.io/tags/model-driven-app/</link>
+      <pubDate>Sat, 15 Jan 2022 19:51:10 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/tags/model-driven-app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Power Platform</title>
+      <link>https://wind13.github.io/tags/power-platform/</link>
+      <pubDate>Sat, 15 Jan 2022 19:51:10 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/tags/power-platform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Resources</title>
+      <link>https://wind13.github.io/tags/web-resources/</link>
+      <pubDate>Sat, 15 Jan 2022 19:51:10 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/tags/web-resources/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>chkdsk</title>
@@ -129,15 +183,6 @@
     </item>
     
     <item>
-      <title>Power Platform</title>
-      <link>https://wind13.github.io/tags/power-platform/</link>
-      <pubDate>Mon, 13 Sep 2021 22:18:22 +0800</pubDate>
-      
-      <guid>https://wind13.github.io/tags/power-platform/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>低代码</title>
       <link>https://wind13.github.io/tags/%E4%BD%8E%E4%BB%A3%E7%A0%81/</link>
       <pubDate>Mon, 13 Sep 2021 22:18:22 +0800</pubDate>
@@ -152,15 +197,6 @@
       <pubDate>Sat, 21 Aug 2021 12:29:07 +0800</pubDate>
       
       <guid>https://wind13.github.io/tags/blitz/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>JamStack</title>
-      <link>https://wind13.github.io/tags/jamstack/</link>
-      <pubDate>Sat, 21 Aug 2021 12:29:07 +0800</pubDate>
-      
-      <guid>https://wind13.github.io/tags/jamstack/</guid>
       <description></description>
     </item>
     
@@ -633,7 +669,7 @@
     </item>
     
     <item>
-      <title>React</title>
+      <title>react</title>
       <link>https://wind13.github.io/tags/react/</link>
       <pubDate>Mon, 28 Dec 2020 16:49:11 +0800</pubDate>
       

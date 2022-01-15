@@ -6,10 +6,19 @@
     <description>Recent content in 软件与技术 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 09 Jan 2022 12:23:45 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Jan 2022 19:51:10 +0800</lastBuildDate>
     
 	<atom:link href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>在 Power Platform 上实践 JamStack 架构思想</title>
+      <link>https://wind13.github.io/post/2022/powerplatform-jamstack/</link>
+      <pubDate>Sat, 15 Jan 2022 19:51:10 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/post/2022/powerplatform-jamstack/</guid>
+      <description>Power Apps 上的问题 在 Power Platform 中，微软官方的工具是使用 Canvas App 来构建前端界面， Model Driven App 可以实现固定模式的一些操作界面，类似我们常说的 CRUD 增删改查等操作，还有一些简单的流程操作界面，比如审批流程什么的，不过 Model Driven App 的界面模式单一，可定制化的能力不足，通常无法满足用户多样的需求，很多细节也不太容易灵活处理</description>
+    </item>
     
     <item>
       <title>不要用 Mounty，一次惊险的数据恢复记录</title>
