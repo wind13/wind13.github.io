@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Static Site on 世风十三学堂</title>
@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://wind13.github.io/post/2016/2016-08-26-collection-box/</guid>
-      <description>链接收集 网页设计巅峰之作{:target=&amp;rdquo;_blank&amp;rdquo;} MDX Markdown for the component era, 在 markdown 文档中加入 JSX 组件，可用于 React 项目。 为 Web 开发者提供的 16 本优秀的 E-BOOK{:target=&amp;rdquo;_blank&amp;rdquo;} 语义化版本 2.0.0{:target=&amp;rdquo;_blank&amp;rdquo;} 软件的版本号不是随便乱起的，这里有相应的说明和规范。 Publish Websites Like a BOSS B]{:target=&amp;rdquo;_blank&amp;rdquo;} 发布静态网站、Blog 的系统，与 Jekyll-Bootstrap 类似吧~ Static</description>
+      <description>链接收集 网页设计巅峰之作 MDX Markdown for the component era, 在 markdown 文档中加入 JSX 组件，可用于 React 项目。 为 Web 开发者提供的 16 本优秀的 E-BOOK 语义化版本 2.0.0 软件的版本号不是随便乱起的，这里有相应的说明和规范。 Publish Websites Like a BOSS B] 发布静态网站、Blog 的系统，与 Jekyll-Bootstrap 类似吧~ Static - Static Site Generator 用 Clojure 发布静态网站、Blog 的系统，有空可以试试。 StackEdit 浏</description>
     </item>
     
   </channel>

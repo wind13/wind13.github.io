@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>easyui on 世风十三学堂</title>
@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://wind13.github.io/post/2013/2013-12-23-easyuiform/</guid>
-      <description>示例代码如下： $(&#39;#ff&#39;).form({ url:$(this).attr(&amp;quot;&amp;quot;action&amp;quot;&amp;quot;), onSubmit:function(){ return $(this).form(&#39;validate&#39;); }, success:function(data){ alert(data); } }); 其中url的值是取的form中的action属性，故需注意填写form的相应属性，当然也可以为&amp;rsquo;/controller_name/action_name&amp;rsquo;。</description>
+      <description>示例代码如下： $(&amp;#39;#ff&amp;#39;).form({ url:$(this).attr(&amp;#34;&amp;#34;action&amp;#34;&amp;#34;), onSubmit:function(){ return $(this).form(&amp;#39;validate&amp;#39;); }, success:function(data){ alert(data); } }); 其中url的值是取的form中的action属性，故需注意填写form的相应属性，当然也可以为&amp;rsquo;/controller_name/action_name&amp;rsquo;。</description>
     </item>
     
     <item>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>devtech java on 世风十三学堂</title>
@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://wind13.github.io/post/2013/2013-12-23-dateformat/</guid>
-      <description>String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型 通常情况下可用Date.valueOf(String)直接转换; String类型格式：&amp;rdquo;yyyy-MM-dd&amp;rdquo; Date.valueOf(&amp;ldquo;yyyy-MM-dd&amp;rdquo;) 例： :::java String sd = &amp;quot;2012-01-12&amp;quot;; Date sdate = Date.valueOf(sd); 但当String类型格式为&amp;rdquo;yyyy-MM-dd HH:mm:ss&amp;rd</description>
+      <description>String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型 通常情况下可用Date.valueOf(String)直接转换; String类型格式：&amp;ldquo;yyyy-MM-dd&amp;rdquo; Date.valueOf(&amp;ldquo;yyyy-MM-dd&amp;rdquo;) 例： :::java String sd = &amp;quot;2012-01-12&amp;quot;; Date sdate = Date.valueOf(sd); 但当String类型格式为&amp;quot;yyyy-MM-dd HH:mm:ss&amp;quo</description>
     </item>
     
   </channel>

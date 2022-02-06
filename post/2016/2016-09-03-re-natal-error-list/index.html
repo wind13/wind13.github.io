@@ -90,179 +90,119 @@
         
         
         <div class="post-content">
-            
-
-<pre><code>Assert failed: c
+            <pre><code>Assert failed: c
 customEval
     figwheel-bridge.js:75
 &lt;unknown&gt;
     figwheel-bridge.js:88
 &lt;unknown&gt;
     JSTimers.js:47
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>引入的控件不可用？</li>
 </ul>
-
-<hr />
-
+<hr>
 <pre><code>Uncaugh [object object]
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>可能是db.cljs里的检查项不合格。</li>
 </ul>
-
-<hr />
-
+<hr>
 <pre><code>Spec check failed: {:cljs.spec/problems {[] {:pred map?, :val nil, :via [:xumu-app.db/app-db], :in []}}}
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>传入参数为nil，不符合db.cljs中spec的检查项。</li>
 </ul>
-
-<hr />
-
+<hr>
 <pre><code>undefined is not an object (evaluating 'nextState.routes.forEach')
 NavigationScenesReducer
     NavigationScenesReducer.js:116
 NavigationTransitioner
     NavigationTransitioner.js:92
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>可能是sub.cljs加载错误，修改reg-sub为reg-sub-raw即可。</li>
 </ul>
-
-<hr />
-
+<hr>
 <pre><code>console.error: &quot;Error rendering component (in env.android.main.reloader &gt; xumu_app.android.core.app_root)&quot;
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>可能是lein figwheel android未启动，或关闭了。</li>
 </ul>
-
-<hr />
-
+<hr>
 <pre><code>Error validating module options: child &quot;platform&quot; fails because [&quot;platform&quot; must be a string]
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>未知原因：添加了dispatch 方法到按钮上即报此错。</li>
 </ul>
-
-<hr />
-
+<hr>
 <pre><code>Cannot read property 'rowIdentities' of undefined
 Constructor.render
     ListView.js:362
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>ListView 的参数错误</li>
 <li>参见<a href="http://stackoverflow.com/questions/35068905/the-data-source-property-isnt-propagated-from-reagent-to-the-render-method-of-t">这里</a></li>
 </ul>
-
-<hr />
-
+<hr>
 <pre><code>Assert failed: Missing tconfig key: :compiled-dictionary
 (:compiled-dictionary tconfig)
 customEval
     figwheel-bridge.js:75
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>应该是在i18n_l10n.cljs文件中少定义了:compiled-dictionary这项吧~</li>
 </ul>
-
-<hr />
-
+<hr>
 <pre><code>Assert failed: Invalid tconfig key: :dictionary
 (not (:dictionary tconfig))
 customEval
     figwheel-bridge.js:75
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>无效的key？</li>
 </ul>
-
-<hr />
-
+<hr>
 <pre><code>iOS build error
 'React/RCTView.h' file not found #374
  Open
 IOS build failed #392
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>原因参见 <a href="https://github.com/lelandrichardson/react-native-maps/issues/371">#371</a></li>
 </ul>
-
-<hr />
-
+<hr>
 <pre><code>Requiring unknown module &quot;xxxx&quot;....
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>因为没有加载，在figwheel模式下需要运行 <code>re-natal use-component some-library/Component</code></li>
 </ul>
-
-<hr />
-
+<hr>
 <pre><code>onlyChild must be passed a children with exactly one child
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>通常是因为某个元素如：TouchableHighlight 不允许里面有多个子节点而报的错，检查相应的元素内部是否有多个子节点的情况，修改为只有一个子节点即可。</li>
-
-<li><p>详细参见<a href="http://willi.am/blog/2015/05/08/react-native-fix-for-invariant-violation-onlychild-must-be-passed-a-children-with-exactly-one-child/">此文</a>。</p>
-
+<li>详细参见<a href="http://willi.am/blog/2015/05/08/react-native-fix-for-invariant-violation-onlychild-must-be-passed-a-children-with-exactly-one-child/">此文</a>。</li>
+</ul>
 <pre><code>undefined is not an object (evaluating 'this.props.children.props.children')
 stackedPresent
-ListItem.js:336
+    ListItem.js:336
 getInitialStyle
-ListItem.js:41
+    ListItem.js:41
 prepareRootProps
-ListItem.js:290
+    ListItem.js:290
 render
-ListItem.js:548
-</code></pre></li>
-
-<li><p>因为 List 下面含有非 ListItem 的元素。</p></li>
+    ListItem.js:548
+</code></pre><ul>
+<li>因为 List 下面含有非 ListItem 的元素。</li>
 </ul>
-
-<hr />
-
+<hr>
 <pre><code>Error while updating property 'justifyContent' in shadow node of type: RCTView
 updateShadowNodeProp
     ViewManagersPropertyCache.java:109
 setProperty
     ViewManagerPropertyUpdater.java:150
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>设置的 justifyContent 属性错误，必须是 space-around 等形式。</li>
 </ul>
-
-<hr />
-
+<hr>
 <pre><code>Assert failed: c
 customEval
     figwheel-bridge.js:75
 &lt;unknown&gt;
     figwheel-bridge.js:88
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>某个组件、控件有问题，不能正确render。</li>
 </ul>
-
-<hr />
-
+<hr>
 <pre><code>console.error: &quot;goog.require could not find: figwheel.connect&quot;
 error
     YellowBox.js:60
@@ -272,16 +212,11 @@ customEval
     figwheel-bridge.js:81
 &lt;unknown&gt;
     figwheel-bridge.js:109
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>修改了 project.clj 导致的错误，引用了错误的库，退回修改后正常。</li>
 </ul>
-
-<hr />
-
-<h3 id="另外-请参考">另外，请参考：</h3>
-
+<hr>
+<h3 id="另外请参考">另外，请参考：</h3>
 <ul>
 <li><a href="http://blog.csdn.net/xiangzhihong8/article/details/52223578">React native开发中常见的错误</a></li>
 </ul>
@@ -297,6 +232,8 @@ customEval
     <h2>See Also</h2>
     <ul class="listing">
         
+        <li><a href="/post/2022/develop-team-problem/">关于KPI与开发团队效能问题的讨论</a></li>
+        
         <li><a href="/post/2022/powerplatform-jamstack/">在 Power Platform 上实践 JamStack 架构思想</a></li>
         
         <li><a href="/post/2022/do-not-use-mounty-disk-data-recovery/">不要用 Mounty，一次惊险的数据恢复记录</a></li>
@@ -304,8 +241,6 @@ customEval
         <li><a href="/post/2021/note-of-right-measurement/">笔记——正确的度量指标</a></li>
         
         <li><a href="/post/2021/blog.low-code-problems/">低代码开发的问题 Low Code Problems</a></li>
-        
-        <li><a href="/post/2021/nodejs-fullstack-solution/">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a></li>
         
     </ul>
 </div>
@@ -359,6 +294,10 @@ customEval
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/powerplatform-jamstack/" title="在 Power Platform 上实践 JamStack 架构思想">在 Power Platform 上实践 JamStack 架构思想</a>
     </li>
     
@@ -394,10 +333,6 @@ customEval
         <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/element3-tdd-thinking/" title="参与 Element3 TDD 的感受">参与 Element3 TDD 的感受</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -409,13 +344,13 @@ customEval
     
     <li><a href="https://wind13.github.io/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (16)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (13)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
     
@@ -464,7 +399,7 @@ customEval
     
     <a href="https://wind13.github.io/tags/ci/cd/">CI/CD</a>
     
-    <a href="https://wind13.github.io/tags/clojure/">clojure</a>
+    <a href="https://wind13.github.io/tags/clojure/">Clojure</a>
     
     <a href="https://wind13.github.io/tags/code/">code</a>
     
@@ -564,7 +499,7 @@ customEval
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">Julia</a>
+    <a href="https://wind13.github.io/tags/julia/">julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -680,7 +615,7 @@ customEval
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">react</a>
+    <a href="https://wind13.github.io/tags/react/">React</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     

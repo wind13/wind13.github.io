@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GraphQL on 世风十三学堂</title>
+    <link>https://wind13.github.io/tags/graphql/</link>
+    <description>Recent content in GraphQL on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 05 Sep 2018 09:35:11 +0000</lastBuildDate>
+    
+	<atom:link href="https://wind13.github.io/tags/graphql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>再见了 Redux （翻译）</title>
+      <link>https://wind13.github.io/post/2018/2018-09-05-goodbye-redux-cn/</link>
+      <pubDate>Wed, 05 Sep 2018 09:35:11 +0000</pubDate>
+      
+      <guid>https://wind13.github.io/post/2018/2018-09-05-goodbye-redux-cn/</guid>
+      <description>作者：Jack Scott 原文（英语） 国内网可能访问不到……大致翻译如下： 本文主要分析了一下我们过去为什么需要 Redux，而为什么以后又不再需要了。 在过去的几年里，互联网技术已经转向用前端 JavaScript 框架来实现网站和手机应用，以达到更好的用户体验。这非常棒 🔥 ，我个人很欣赏这些框架提供的灵活性。 但是灵</description>
+    </item>
+    
+    <item>
+      <title>GraphQL 学习</title>
+      <link>https://wind13.github.io/post/2018/2018-05-03-graphql-learning/</link>
+      <pubDate>Thu, 03 May 2018 08:55:25 +0000</pubDate>
+      
+      <guid>https://wind13.github.io/post/2018/2018-05-03-graphql-learning/</guid>
+      <description>实践 Using GraphQL with MongoDB Testing a GraphQL Server using Jest using-dataloader-to-batch-requests How GraphQL Replaces Redux js Client Bind GraphQL data to your UI with one function call. 相关网站 GraphQL CN A query language for APIs. 一种用于 API 的查询语言。 GraphQL 最佳实践 awesome-graphql The Fullstack Tutorial for GraphQL Youtube 视频教程 GraphiQL A graphical interactive in-browser GraphQL IDE. Live demo Lacinia - GraphQL for Clojure，Github Repo 一套 GraphQL 规范的完整实现，致力于维护对规范的外部兼容。 alumbra Simple &amp;amp; Elegant GraphQL for Clojure! graphql-clj A Clojure library designed to provide GraphQL implementation. 流行的服</description>
+    </item>
+    
+  </channel>
+</rss>

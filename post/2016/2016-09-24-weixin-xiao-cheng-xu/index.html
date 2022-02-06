@@ -90,10 +90,7 @@
         
         
         <div class="post-content">
-            
-
-<h2 id="收集链接">收集链接</h2>
-
+            <h2 id="收集链接">收集链接</h2>
 <ul>
 <li><a href="https://github.com/Aufree/awesome-wechat-weapp/blob/master/README.md">微信小应用资源汇总整理</a></li>
 <li><a href="https://tencent.github.io/wepy/">WePY</a> 让小程序支持组件化开发的框架 <a href="https://github.com/Tencent/wepy">Github</a></li>
@@ -112,48 +109,62 @@
 <li><a href="https://zhuanlan.zhihu.com/p/29794331">微信小程序 | 47，下载文件与保存文件</a></li>
 <li><a href="https://segmentfault.com/a/1190000011649217">小程序测试方案初探</a></li>
 </ul>
-
 <h2 id="重要知识点">重要知识点</h2>
-
 <ul>
-<li>rpx 是微信定义的像素单位，动态布局标量。</li>
-
-<li><p>执行顺序： App Launch&ndash;&gt;App Show&ndash;&gt;onLoad&ndash;&gt;onShow&ndash;&gt;onReady。</p>
-
+<li>
+<p>rpx 是微信定义的像素单位，动态布局标量。</p>
+</li>
+<li>
+<p>执行顺序： App Launch&ndash;&gt;App Show&ndash;&gt;onLoad&ndash;&gt;onShow&ndash;&gt;onReady。</p>
 <ul>
-<li>App.onLaunch</li>
-<li>App.onShow</li>
-<li>index.onLoad（首次）</li>
-<li>index.onShow（由App.onShow驱动）</li>
-
-<li><p>index.onReady（我准备好互动了，可以操作了）</p></li>
-
-<li><p>进入后台时：</p></li>
-
-<li><p>app.onHide</p></li>
-
-<li><p>index.onHide</p></li>
-
-<li><p>恢复前台显示时：</p></li>
-
-<li><p>app.onShow</p></li>
-
-<li><p>index.onShow</p></li>
-</ul></li>
-
-<li><p><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/event.html#%E4%BA%8B%E4%BB%B6%E8%AF%A6%E8%A7%A3">事件详解</a></p></li>
-
-<li><p>与 bind 不同， catch 会阻止事件向上冒泡。</p></li>
-
-<li><p>一个 mut-bind 触发后，如果事件冒泡到其他节点上，其他节点上的 mut-bind 绑定函数不会被触发，但 bind 绑定函数和 catch 绑定函数依旧会被触发。换而言之，所有 mut-bind 是“互斥”的，只会有其中一个绑定函数被触发。同时，它完全不影响 bind 和 catch 的绑定效果。</p></li>
-
-<li><p>mark 和 dataset 很相似，主要区别在于： mark 会包含从触发事件的节点到根节点上所有的 mark: 属性值；而 dataset 仅包含一个节点的 data- 属性值。</p></li>
-
-<li><p><a href="https://segmentfault.com/a/1190000006980941#articleHeader2">破解方法</a> （测试发现有问题，不能用。）</p></li>
+<li>
+<p>App.onLaunch</p>
+</li>
+<li>
+<p>App.onShow</p>
+</li>
+<li>
+<p>index.onLoad（首次）</p>
+</li>
+<li>
+<p>index.onShow（由App.onShow驱动）</p>
+</li>
+<li>
+<p>index.onReady（我准备好互动了，可以操作了）</p>
+</li>
+<li>
+<p>进入后台时：</p>
+<ul>
+<li>app.onHide</li>
+<li>index.onHide</li>
 </ul>
-
+</li>
+<li>
+<p>恢复前台显示时：</p>
+<ul>
+<li>app.onShow</li>
+<li>index.onShow</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/event.html#%E4%BA%8B%E4%BB%B6%E8%AF%A6%E8%A7%A3">事件详解</a></p>
+</li>
+<li>
+<p>与 bind 不同， catch 会阻止事件向上冒泡。</p>
+</li>
+<li>
+<p>一个 mut-bind 触发后，如果事件冒泡到其他节点上，其他节点上的 mut-bind 绑定函数不会被触发，但 bind 绑定函数和 catch 绑定函数依旧会被触发。换而言之，所有 mut-bind 是“互斥”的，只会有其中一个绑定函数被触发。同时，它完全不影响 bind 和 catch 的绑定效果。</p>
+</li>
+<li>
+<p>mark 和 dataset 很相似，主要区别在于： mark 会包含从触发事件的节点到根节点上所有的 mark: 属性值；而 dataset 仅包含一个节点的 data- 属性值。</p>
+</li>
+<li>
+<p><a href="https://segmentfault.com/a/1190000006980941#articleHeader2">破解方法</a> （测试发现有问题，不能用。）</p>
+</li>
+</ul>
 <h2 id="遇到的问题">遇到的问题</h2>
-
 <ul>
 <li>加载 util.js 在开发工具中可以正常执行，但在真机上会出现无数据白屏。</li>
 <li>怀疑问题是 exports 的方法不规范，参考：<a href="https://www.jianshu.com/p/2431adaa97bf">微信小程序中module.exports和exports的区别</a></li>
@@ -171,6 +182,8 @@
     <h2>See Also</h2>
     <ul class="listing">
         
+        <li><a href="/post/2022/develop-team-problem/">关于KPI与开发团队效能问题的讨论</a></li>
+        
         <li><a href="/post/2022/powerplatform-jamstack/">在 Power Platform 上实践 JamStack 架构思想</a></li>
         
         <li><a href="/post/2022/do-not-use-mounty-disk-data-recovery/">不要用 Mounty，一次惊险的数据恢复记录</a></li>
@@ -178,8 +191,6 @@
         <li><a href="/post/2021/note-of-right-measurement/">笔记——正确的度量指标</a></li>
         
         <li><a href="/post/2021/blog.low-code-problems/">低代码开发的问题 Low Code Problems</a></li>
-        
-        <li><a href="/post/2021/nodejs-fullstack-solution/">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a></li>
         
     </ul>
 </div>
@@ -225,6 +236,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/powerplatform-jamstack/" title="在 Power Platform 上实践 JamStack 架构思想">在 Power Platform 上实践 JamStack 架构思想</a>
     </li>
     
@@ -260,10 +275,6 @@
         <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/element3-tdd-thinking/" title="参与 Element3 TDD 的感受">参与 Element3 TDD 的感受</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -275,13 +286,13 @@
     
     <li><a href="https://wind13.github.io/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (16)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (13)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
     
@@ -330,7 +341,7 @@
     
     <a href="https://wind13.github.io/tags/ci/cd/">CI/CD</a>
     
-    <a href="https://wind13.github.io/tags/clojure/">clojure</a>
+    <a href="https://wind13.github.io/tags/clojure/">Clojure</a>
     
     <a href="https://wind13.github.io/tags/code/">code</a>
     
@@ -430,7 +441,7 @@
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">Julia</a>
+    <a href="https://wind13.github.io/tags/julia/">julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -546,7 +557,7 @@
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">react</a>
+    <a href="https://wind13.github.io/tags/react/">React</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     

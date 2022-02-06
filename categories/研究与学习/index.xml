@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>研究与学习 on 世风十三学堂</title>
@@ -125,7 +125,7 @@
       <pubDate>Fri, 31 Jan 2020 13:40:37 +0800</pubDate>
       
       <guid>https://wind13.github.io/post/2020/hugo-mind-map/</guid>
-      <description>目前比较好的脑图方案 一个是在 Hugo 里用 Markdown 写，在浏览器中预览。 另一个是用 Markdown 写后，通过 Typora 导出 opml 格式，再导入幕布后即可查看。 还有就是使用 PlantUML 插件 在 VSCode 中写 markdown 画脑图。 还有一个就是用 vscode-mindmap 插件，编辑 kityminder *.km 文件即可，这个功能与百度脑图用的是同一个技术，只是还没找到导入导出的功能。 效果如下： - 根目录 - 一级目</description>
+      <description>目前比较好的脑图方案 一个是在 Hugo 里用 Markdown 写，在浏览器中预览。 另一个是用 Markdown 写后，通过 Typora 导出 opml 格式，再导入幕布后即可查看。 还有就是使用 PlantUML 插件 在 VSCode 中写 markdown 画脑图。 还有一个就是用 vscode-mindmap 插件，编辑 kityminder *.km 文件即可，这个功能与百度脑图用的是同一个技术，只是还没找到导入导出的功能。 效果如下： 根目录 一级目录1</description>
     </item>
     
     <item>
@@ -152,7 +152,7 @@
       <pubDate>Thu, 03 Oct 2019 10:09:37 +0800</pubDate>
       
       <guid>https://wind13.github.io/post/2019/julia-learning/</guid>
-      <description>Julia Learning Julia Install Brew brew cask install julia Normal Download and install it as julia.app Add it into your profile, for me it is .zshrc file: # Julia # /Applications/Julia-1.2.app/Contents/Resources/julia/bin/ export PATH=&amp;quot;/Applications/Julia-1.2.app/Contents/Resources/julia/bin/:$PATH&amp;quot;</description>
+      <description>Julia Learning Julia Install Brew brew cask install julia Normal Download and install it as julia.app Add it into your profile, for me it is .zshrc file: # Julia # /Applications/Julia-1.2.app/Contents/Resources/julia/bin/ export PATH=&amp;#34;/Applications/Julia-1.2.app/Contents/Resources/julia/bin/:$PATH&amp;#34;</description>
     </item>
     
     <item>

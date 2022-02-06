@@ -94,10 +94,7 @@
         
         
         <div class="post-content">
-            
-
-<h2 id="安装-升级-卸载等">安装、升级、卸载等</h2>
-
+            <h2 id="安装升级卸载等">安装、升级、卸载等</h2>
 <ul>
 <li><a href="https://golang.org/">官网</a></li>
 <li><a href="https://tour.go-zh.org/welcome/1">中文官网教程</a></li>
@@ -106,16 +103,12 @@
 <li>卸载也简单，删除那个 <code>/usr/local/go</code> 的目录即可。</li>
 <li>升级官网上没提，搜了一下基本就是先卸载再安装，我试了一下直接安装最新下载的也可以，会提示发现旧版本，确定后会自动卸载再安装。</li>
 </ul>
-
-<h2 id="国际惯例-hello-world">国际惯例：Hello world!</h2>
-
+<h2 id="国际惯例hello-world">国际惯例：Hello world!</h2>
 <ul>
 <li>参考：<a href="http://www.cnblogs.com/ghj1976/archive/2013/03/24/2979668.html">Go安装的设置问题：GOROOT，GOPATH</a></li>
 <li>学习项目：<a href="https://github.com/wind13/golang-learn">Learn golang notes</a></li>
 </ul>
-
 <h2 id="名词概念">名词概念</h2>
-
 <ul>
 <li>程序实体：变量、常量、函数、结构体和接口等的统称。</li>
 <li>标识符：各个程序实体的名字。可以是任何 Unicode 编码可以表示的字母字符（甚至中文，但不推荐）、数字以及下划线等，但首字母不能是数字。</li>
@@ -124,51 +117,41 @@
 <li>GOPATH：Go 语言的源码文件都需要存放在环境变量 GOPATH 包含的某个工作区（目录）中的 src 目录下的某个代码包（目录）中。</li>
 <li><code>*string</code> 是字符串的指针类型，而不是字符串类型。</li>
 <li><code>:=</code> 是重定义变量类型并赋值，可以改变外部变量类型和值，而 <code>=</code> 只能赋给相同类型的值，类型不对时编译期会报错。</li>
-
-<li><p>类似 toString() 方法的接口：</p>
-
-<pre><code class="language-go">type Stringer interface {
-String() string
-}
-</code></pre></li>
-
-<li><p>Channel and go routines, 同一时间只允许一个 go routine 访问 channel，所以可以用这个机制来进行安全稳定的 concurrency 并发编程。</p></li>
-
-<li><p><code>go run -race main.go</code> Running with race detector. 使用竞跑模式运行，各 goroutine 会争抢优先级，方便发现一些隐藏的多 goroutine 运行时冲突问题。</p></li>
+<li>类似 toString() 方法的接口：</li>
 </ul>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Stringer</span> <span style="color:#66d9ef">interface</span> {
+    <span style="color:#a6e22e">String</span>() <span style="color:#66d9ef">string</span>
+}
+</code></pre></div><ul>
+<li>Channel and go routines, 同一时间只允许一个 go routine 访问 channel，所以可以用这个机制来进行安全稳定的 concurrency 并发编程。</li>
+<li><code>go run -race main.go</code> Running with race detector. 使用竞跑模式运行，各 goroutine 会争抢优先级，方便发现一些隐藏的多 goroutine 运行时冲突问题。</li>
+</ul>
 <h2 id="初学者入门">初学者入门</h2>
-
 <p>极客时间的那个 《Go语言核心 36 讲》 显然不是针对初学者的，所以要先看看以下内容：</p>
-
 <ul>
 <li><a href="https://tour.golang.org">官方教程</a></li>
 </ul>
-
 <h2 id="高级内容">高级内容</h2>
-
 <ul>
 <li><a href="https://www.youtube.com/watch?v=QDDwwePbDtw">Advanced Go Concurrency Patterns</a> 介绍了 goroutine 编程的一些高级模式和技巧，如：
-
 <ul>
 <li>for select 循环</li>
 <li>select nil channel case</li>
 <li>run race detector</li>
 <li>service channel, reply channels(chan chan error)</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h2 id="web-framework">Web Framework</h2>
-
 <ul>
 <li><a href="https://iris-go.com/">iris</a> 号称最快的 web 框架，因为基于fasthttp性能非常的好，需要考虑的是如果选它做web框架，你的代码将难以迁移到别的框架上,因为它实现了和标准库net/http不一样的接口。 看了一下文档，相当全面。</li>
 <li><a href="https://gohugo.io/">Hugo</a> The world’s fastest framework for building websites 静态网站生成器
-
 <ul>
 <li><a href="https://jimmysong.io/posts/building-github-pages-with-hugo/">零基础使用Hugo和GitHub Pages创建自己的博客</a> 非常专业的博客</li>
 <li><a href="https://gohugo.io/getting-started/usage/">Basic Usage</a> 基础使用方法介绍</li>
 <li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Host on GitHub</a> 官方文档</li>
-</ul></li>
+</ul>
+</li>
 <li><a href="https://echo.labstack.com/">Echo</a> 最流行的框架，功能、文档齐全</li>
 <li><a href="http://revel.github.io/">Revel</a> 全栈框架，但<a href="https://github.com/diyan/go-web-framework-comparsion">据说</a>不太合 golang 的语法习惯。 借鉴的java和scala语言的 play框架 的很多想法。</li>
 <li><a href="https://github.com/go-martini/martini">Martini</a> <a href="https://www.restapiexample.com/rest-api-tutorial/golang-tutorial/popular-golang-web-framework-2017/">据说</a>是最易用的 web 框架，是一个强大为了编写模块化Web应用而生的GO语言框架。</li>
@@ -179,33 +162,24 @@ String() string
 <li><a href="https://colobu.com/2016/04/06/the-fastest-golang-web-framework/">谁是最快的Go Web框架</a></li>
 <li><a href="http://www.cnblogs.com/sunshine-anycall/p/4967432.html">使用Golang（Margini）+Mongodb打造你的第一个站点</a></li>
 </ul>
-
 <h2 id="graphql">GraphQL</h2>
-
 <ul>
 <li><a href="https://linux.cn/article-8524-1.html">GraphQL 用例：使用 Golang 和 PostgreSQL 构建一个博客引擎 API</a></li>
 <li><a href="https://github.com/nilstgmd/graphql-starter-kit">GraphQL Starter Kit for GoLang</a> A GraphQL server example written in GoLang integrating with Cassandra and MongoDB.</li>
 <li><a href="https://github.com/graphql-go/graphql">graphql-go/graphql</a> An implementation of GraphQL for Go / Golang</li>
 </ul>
-
 <h2 id="常见问题">常见问题</h2>
-
 <h3 id="重复定义">重复定义</h3>
-
 <ul>
-<li>遇到 <code>no new variables on left side of :=</code> 报错，说明左边的变量被重复定义了，去上面的代码中找同名的变量，一定有，解决方法就是换个变量名。</li>
+<li>遇到 <code>no new variables on left side of := </code> 报错，说明左边的变量被重复定义了，去上面的代码中找同名的变量，一定有，解决方法就是换个变量名。</li>
 </ul>
-
 <h3 id="通道锁死">通道锁死</h3>
-
 <ul>
 <li><code>fatal error: all goroutines are asleep - deadlock!</code></li>
 <li>一般发生在通道中没内容，而不断从通道取值时，另一种情况是向通道送值，但没放在单独的 goroutine 中。</li>
 <li>解决思路，一个是将通道送值放在 go func 即 goroutine 中，另外就是取值用 for select 后要有退出机制，在恰当的条件时 return 就可以退出，实在没有合适的条件，可以用 time.After 设置超时退出。</li>
 </ul>
-
 <h2 id="文件组织规则">文件组织规则</h2>
-
 <ul>
 <li>同目录的代码包声明要一致；</li>
 <li>代码包声明可以与目录名称不同；</li>
@@ -213,9 +187,7 @@ String() string
 <li>internal 代码包仅能被当前模块的其他代码引用，即模块级私有。</li>
 <li>同目录中只能有一个入口函数 main，否则会被（vscode）警告，算是最佳实践吧。</li>
 </ul>
-
 <h2 id="go-相关项目">Go 相关项目</h2>
-
 <ul>
 <li><a href="https://www.docker.com/">Docker</a> 容器</li>
 <li><a href="https://github.com/spf13/cobra">Cobra Cli</a> 开发命令行工具的工具，Go 语言的牛 X 工具。</li>
@@ -223,155 +195,151 @@ String() string
 <li><a href="https://github.com/spf13/afero">Afero</a> A FileSystem Abstraction System for Go</li>
 <li><a href="https://github.com/go-vgo/robotgo/blob/master/README_zh.md">Robotgo</a> Golang 跨平台自动化系统，控制键盘鼠标位图和读取屏幕，窗口句柄以及全局事件监听</li>
 </ul>
-
-<h2 id="练习题-web-crawler-https-tour-golang-org-concurrency-10">练习题：<a href="https://tour.golang.org/concurrency/10">Web Crawler</a></h2>
-
+<h2 id="练习题web-crawlerhttpstourgolangorgconcurrency10">练习题：<a href="https://tour.golang.org/concurrency/10">Web Crawler</a></h2>
 <p>终于完成了整个学习，最后这道题记录如下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
-<pre><code class="language-go">package main
-
-import (
-	&quot;fmt&quot;
-	&quot;sync&quot;
-	&quot;time&quot;
+<span style="color:#f92672">import</span> (
+	<span style="color:#e6db74">&#34;fmt&#34;</span>
+	<span style="color:#e6db74">&#34;sync&#34;</span>
+	<span style="color:#e6db74">&#34;time&#34;</span>
 )
 
-type Fetcher interface {
-	// Fetch returns the body of URL and
-	// a slice of URLs found on that page.
-	Fetch(url string) (body string, urls []string, err error)
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Fetcher</span> <span style="color:#66d9ef">interface</span> {
+	<span style="color:#75715e">// Fetch returns the body of URL and
+</span><span style="color:#75715e"></span>	<span style="color:#75715e">// a slice of URLs found on that page.
+</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">Fetch</span>(<span style="color:#a6e22e">url</span> <span style="color:#66d9ef">string</span>) (<span style="color:#a6e22e">body</span> <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">urls</span> []<span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">err</span> <span style="color:#66d9ef">error</span>)
 }
 
-const TIMEOUT = 3
-const MAX_DEPTH = 4
-var queue = make(chan Job)
-var successes = make(chan map[string]string)
-var errors = make(chan map[string]string)
-var history = History{h: make(map[string]Job)}
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">TIMEOUT</span> = <span style="color:#ae81ff">3</span>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">MAX_DEPTH</span> = <span style="color:#ae81ff">4</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">queue</span> = make(<span style="color:#66d9ef">chan</span> <span style="color:#a6e22e">Job</span>)
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">successes</span> = make(<span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#66d9ef">string</span>)
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">errors</span> = make(<span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#66d9ef">string</span>)
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">history</span> = <span style="color:#a6e22e">History</span>{<span style="color:#a6e22e">h</span>: make(<span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#a6e22e">Job</span>)}
 
-type Job struct {
-	url   string
-	depth int
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Job</span> <span style="color:#66d9ef">struct</span> {
+	<span style="color:#a6e22e">url</span>   <span style="color:#66d9ef">string</span>
+	<span style="color:#a6e22e">depth</span> <span style="color:#66d9ef">int</span>
 }
 
-// History is safe to use concurrently.
-type History struct {
-	h   map[string]Job
-	mux sync.Mutex
+<span style="color:#75715e">// History is safe to use concurrently.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">History</span> <span style="color:#66d9ef">struct</span> {
+	<span style="color:#a6e22e">h</span>   <span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#a6e22e">Job</span>
+	<span style="color:#a6e22e">mux</span> <span style="color:#a6e22e">sync</span>.<span style="color:#a6e22e">Mutex</span>
 }
 
-// Inc increments the history
-func (c *History) Add(url string, depth int) {
-	c.mux.Lock()
-	// Lock so only one goroutine at a time can access the map c.h.
-	_, exist := c.h[url]
-	if !exist {
-		c.h[url] = Job{url, depth}
-		queue &lt;- Job{url, depth}
+<span style="color:#75715e">// Inc increments the history
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">c</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">History</span>) <span style="color:#a6e22e">Add</span>(<span style="color:#a6e22e">url</span> <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">depth</span> <span style="color:#66d9ef">int</span>) {
+	<span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">mux</span>.<span style="color:#a6e22e">Lock</span>()
+	<span style="color:#75715e">// Lock so only one goroutine at a time can access the map c.h.
+</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">exist</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">h</span>[<span style="color:#a6e22e">url</span>]
+	<span style="color:#66d9ef">if</span> !<span style="color:#a6e22e">exist</span> {
+		<span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">h</span>[<span style="color:#a6e22e">url</span>] = <span style="color:#a6e22e">Job</span>{<span style="color:#a6e22e">url</span>, <span style="color:#a6e22e">depth</span>}
+		<span style="color:#a6e22e">queue</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">Job</span>{<span style="color:#a6e22e">url</span>, <span style="color:#a6e22e">depth</span>}
 	}
-	c.mux.Unlock()
+	<span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">mux</span>.<span style="color:#a6e22e">Unlock</span>()
 }
 
-func fetchWeb(url string, depth int, fetcher Fetcher) {
-	if depth &lt;= 0 {
-		return
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">fetchWeb</span>(<span style="color:#a6e22e">url</span> <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">depth</span> <span style="color:#66d9ef">int</span>, <span style="color:#a6e22e">fetcher</span> <span style="color:#a6e22e">Fetcher</span>) {
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">depth</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">0</span> {
+		<span style="color:#66d9ef">return</span>
 	}
-	body, uris, err := fetcher.Fetch(url)
-	if err != nil {
-		// fmt.Println(err)
-		errors &lt;- map[string]string{url: err.Error()}
-		return
+	<span style="color:#a6e22e">body</span>, <span style="color:#a6e22e">uris</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">fetcher</span>.<span style="color:#a6e22e">Fetch</span>(<span style="color:#a6e22e">url</span>)
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#75715e">// fmt.Println(err)
+</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">errors</span> <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#66d9ef">string</span>{<span style="color:#a6e22e">url</span>: <span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">Error</span>()}
+		<span style="color:#66d9ef">return</span>
 	}
-	// fmt.Printf(&quot;found: %s %q\n&quot;, url, body)
-	successes &lt;- map[string]string{url: body}
-	for _, u := range uris {
-		history.Add(u, depth-1)
+	<span style="color:#75715e">// fmt.Printf(&#34;found: %s %q\n&#34;, url, body)
+</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">successes</span> <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#66d9ef">string</span>{<span style="color:#a6e22e">url</span>: <span style="color:#a6e22e">body</span>}
+	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">u</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">uris</span> {
+		<span style="color:#a6e22e">history</span>.<span style="color:#a6e22e">Add</span>(<span style="color:#a6e22e">u</span>, <span style="color:#a6e22e">depth</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)
 	}
 }
 
-// Crawl uses fetcher to recursively crawl
-// pages starting with url, to a maximum of depth.
-func Crawl(url string, depth int, fetcher Fetcher) {
-	quit := time.After(TIMEOUT * time.Second) // Timeout
-	// Fetch URLs in parallel.
-	// Don't fetch the same URL twice.
-	// This implementation doesn't do either:
-	go history.Add(&quot;https://golang.org/&quot;, 4)
-	for {
-		select {
-		case q := &lt;-queue:
-			// fmt.Println(q)
-			go fetchWeb(q.url, q.depth, fetcher)
-		case s := &lt;-successes:
-			for url, body := range s {
-				fmt.Println(url, body)
+<span style="color:#75715e">// Crawl uses fetcher to recursively crawl
+</span><span style="color:#75715e">// pages starting with url, to a maximum of depth.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Crawl</span>(<span style="color:#a6e22e">url</span> <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">depth</span> <span style="color:#66d9ef">int</span>, <span style="color:#a6e22e">fetcher</span> <span style="color:#a6e22e">Fetcher</span>) {
+	<span style="color:#a6e22e">quit</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">After</span>(<span style="color:#a6e22e">TIMEOUT</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Second</span>) <span style="color:#75715e">// Timeout
+</span><span style="color:#75715e"></span>	<span style="color:#75715e">// Fetch URLs in parallel.
+</span><span style="color:#75715e"></span>	<span style="color:#75715e">// Don&#39;t fetch the same URL twice.
+</span><span style="color:#75715e"></span>	<span style="color:#75715e">// This implementation doesn&#39;t do either:
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">go</span> <span style="color:#a6e22e">history</span>.<span style="color:#a6e22e">Add</span>(<span style="color:#e6db74">&#34;https://golang.org/&#34;</span>, <span style="color:#ae81ff">4</span>)
+	<span style="color:#66d9ef">for</span> {
+		<span style="color:#66d9ef">select</span> {
+		<span style="color:#66d9ef">case</span> <span style="color:#a6e22e">q</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">queue</span>:
+			<span style="color:#75715e">// fmt.Println(q)
+</span><span style="color:#75715e"></span>			<span style="color:#66d9ef">go</span> <span style="color:#a6e22e">fetchWeb</span>(<span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">url</span>, <span style="color:#a6e22e">q</span>.<span style="color:#a6e22e">depth</span>, <span style="color:#a6e22e">fetcher</span>)
+		<span style="color:#66d9ef">case</span> <span style="color:#a6e22e">s</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">successes</span>:
+			<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">url</span>, <span style="color:#a6e22e">body</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">s</span> {
+				<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">url</span>, <span style="color:#a6e22e">body</span>)
 			}
-		case e := &lt;-errors:
-			for url, err := range e {
-				fmt.Println(url, err)
+		<span style="color:#66d9ef">case</span> <span style="color:#a6e22e">e</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">errors</span>:
+			<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">url</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">e</span> {
+				<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">url</span>, <span style="color:#a6e22e">err</span>)
 			}
-		case &lt;-quit:
-			fmt.Println(&quot;quit&quot;)
-			return
+		<span style="color:#66d9ef">case</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">quit</span>:
+			<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;quit&#34;</span>)
+			<span style="color:#66d9ef">return</span>
 		}
 	}
 }
 
-func main() {
-	Crawl(&quot;https://golang.org/&quot;, MAX_DEPTH, fetcher)
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">Crawl</span>(<span style="color:#e6db74">&#34;https://golang.org/&#34;</span>, <span style="color:#a6e22e">MAX_DEPTH</span>, <span style="color:#a6e22e">fetcher</span>)
 }
 
-// fakeFetcher is Fetcher that returns canned results.
-type fakeFetcher map[string]*fakeResult
+<span style="color:#75715e">// fakeFetcher is Fetcher that returns canned results.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">fakeFetcher</span> <span style="color:#66d9ef">map</span>[<span style="color:#66d9ef">string</span>]<span style="color:#f92672">*</span><span style="color:#a6e22e">fakeResult</span>
 
-type fakeResult struct {
-	body string
-	urls []string
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">fakeResult</span> <span style="color:#66d9ef">struct</span> {
+	<span style="color:#a6e22e">body</span> <span style="color:#66d9ef">string</span>
+	<span style="color:#a6e22e">urls</span> []<span style="color:#66d9ef">string</span>
 }
 
-func (f fakeFetcher) Fetch(url string) (string, []string, error) {
-	if res, ok := f[url]; ok {
-		return res.body, res.urls, nil
+<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">f</span> <span style="color:#a6e22e">fakeFetcher</span>) <span style="color:#a6e22e">Fetch</span>(<span style="color:#a6e22e">url</span> <span style="color:#66d9ef">string</span>) (<span style="color:#66d9ef">string</span>, []<span style="color:#66d9ef">string</span>, <span style="color:#66d9ef">error</span>) {
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">ok</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">f</span>[<span style="color:#a6e22e">url</span>]; <span style="color:#a6e22e">ok</span> {
+		<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">body</span>, <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">urls</span>, <span style="color:#66d9ef">nil</span>
 	}
-	return &quot;&quot;, nil, fmt.Errorf(&quot;not found: %s&quot;, url)
+	<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;&#34;</span>, <span style="color:#66d9ef">nil</span>, <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Errorf</span>(<span style="color:#e6db74">&#34;not found: %s&#34;</span>, <span style="color:#a6e22e">url</span>)
 }
 
-// fetcher is a populated fakeFetcher.
-var fetcher = fakeFetcher{
-	&quot;https://golang.org/&quot;: &amp;fakeResult{
-		&quot;The Go Programming Language&quot;,
-		[]string{
-			&quot;https://golang.org/pkg/&quot;,
-			&quot;https://golang.org/cmd/&quot;,
+<span style="color:#75715e">// fetcher is a populated fakeFetcher.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">fetcher</span> = <span style="color:#a6e22e">fakeFetcher</span>{
+	<span style="color:#e6db74">&#34;https://golang.org/&#34;</span>: <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">fakeResult</span>{
+		<span style="color:#e6db74">&#34;The Go Programming Language&#34;</span>,
+		[]<span style="color:#66d9ef">string</span>{
+			<span style="color:#e6db74">&#34;https://golang.org/pkg/&#34;</span>,
+			<span style="color:#e6db74">&#34;https://golang.org/cmd/&#34;</span>,
 		},
 	},
-	&quot;https://golang.org/pkg/&quot;: &amp;fakeResult{
-		&quot;Packages&quot;,
-		[]string{
-			&quot;https://golang.org/&quot;,
-			&quot;https://golang.org/cmd/&quot;,
-			&quot;https://golang.org/pkg/fmt/&quot;,
-			&quot;https://golang.org/pkg/os/&quot;,
+	<span style="color:#e6db74">&#34;https://golang.org/pkg/&#34;</span>: <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">fakeResult</span>{
+		<span style="color:#e6db74">&#34;Packages&#34;</span>,
+		[]<span style="color:#66d9ef">string</span>{
+			<span style="color:#e6db74">&#34;https://golang.org/&#34;</span>,
+			<span style="color:#e6db74">&#34;https://golang.org/cmd/&#34;</span>,
+			<span style="color:#e6db74">&#34;https://golang.org/pkg/fmt/&#34;</span>,
+			<span style="color:#e6db74">&#34;https://golang.org/pkg/os/&#34;</span>,
 		},
 	},
-	&quot;https://golang.org/pkg/fmt/&quot;: &amp;fakeResult{
-		&quot;Package fmt&quot;,
-		[]string{
-			&quot;https://golang.org/&quot;,
-			&quot;https://golang.org/pkg/&quot;,
+	<span style="color:#e6db74">&#34;https://golang.org/pkg/fmt/&#34;</span>: <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">fakeResult</span>{
+		<span style="color:#e6db74">&#34;Package fmt&#34;</span>,
+		[]<span style="color:#66d9ef">string</span>{
+			<span style="color:#e6db74">&#34;https://golang.org/&#34;</span>,
+			<span style="color:#e6db74">&#34;https://golang.org/pkg/&#34;</span>,
 		},
 	},
-	&quot;https://golang.org/pkg/os/&quot;: &amp;fakeResult{
-		&quot;Package os&quot;,
-		[]string{
-			&quot;https://golang.org/&quot;,
-			&quot;https://golang.org/pkg/&quot;,
+	<span style="color:#e6db74">&#34;https://golang.org/pkg/os/&#34;</span>: <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">fakeResult</span>{
+		<span style="color:#e6db74">&#34;Package os&#34;</span>,
+		[]<span style="color:#66d9ef">string</span>{
+			<span style="color:#e6db74">&#34;https://golang.org/&#34;</span>,
+			<span style="color:#e6db74">&#34;https://golang.org/pkg/&#34;</span>,
 		},
 	},
 }
 
-</code></pre>
-
+</code></pre></div>
         </div>
 
         
@@ -437,6 +405,10 @@ var fetcher = fakeFetcher{
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/powerplatform-jamstack/" title="在 Power Platform 上实践 JamStack 架构思想">在 Power Platform 上实践 JamStack 架构思想</a>
     </li>
     
@@ -472,10 +444,6 @@ var fetcher = fakeFetcher{
         <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/element3-tdd-thinking/" title="参与 Element3 TDD 的感受">参与 Element3 TDD 的感受</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -487,13 +455,13 @@ var fetcher = fakeFetcher{
     
     <li><a href="https://wind13.github.io/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (16)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (13)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
     
@@ -542,7 +510,7 @@ var fetcher = fakeFetcher{
     
     <a href="https://wind13.github.io/tags/ci/cd/">CI/CD</a>
     
-    <a href="https://wind13.github.io/tags/clojure/">clojure</a>
+    <a href="https://wind13.github.io/tags/clojure/">Clojure</a>
     
     <a href="https://wind13.github.io/tags/code/">code</a>
     
@@ -642,7 +610,7 @@ var fetcher = fakeFetcher{
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">Julia</a>
+    <a href="https://wind13.github.io/tags/julia/">julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -758,7 +726,7 @@ var fetcher = fakeFetcher{
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">react</a>
+    <a href="https://wind13.github.io/tags/react/">React</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     

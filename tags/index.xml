@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 世风十三学堂</title>
@@ -6,10 +6,37 @@
     <description>Recent content in Tags on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 15 Jan 2022 19:51:10 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 06 Feb 2022 04:47:11 +0000</lastBuildDate>
     
 	<atom:link href="https://wind13.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>KPI</title>
+      <link>https://wind13.github.io/tags/kpi/</link>
+      <pubDate>Sun, 06 Feb 2022 04:47:11 +0000</pubDate>
+      
+      <guid>https://wind13.github.io/tags/kpi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TOC</title>
+      <link>https://wind13.github.io/tags/toc/</link>
+      <pubDate>Sun, 06 Feb 2022 04:47:11 +0000</pubDate>
+      
+      <guid>https://wind13.github.io/tags/toc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>极限编程</title>
+      <link>https://wind13.github.io/tags/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Sun, 06 Feb 2022 04:47:11 +0000</pubDate>
+      
+      <guid>https://wind13.github.io/tags/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Canvas App</title>
@@ -116,15 +143,6 @@
       <pubDate>Sun, 09 Jan 2022 12:23:45 +0800</pubDate>
       
       <guid>https://wind13.github.io/tags/%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>KPI</title>
-      <link>https://wind13.github.io/tags/kpi/</link>
-      <pubDate>Sat, 20 Nov 2021 17:02:32 +0800</pubDate>
-      
-      <guid>https://wind13.github.io/tags/kpi/</guid>
       <description></description>
     </item>
     
@@ -453,15 +471,6 @@
     </item>
     
     <item>
-      <title>极限编程</title>
-      <link>https://wind13.github.io/tags/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/</link>
-      <pubDate>Sun, 07 Feb 2021 09:48:33 +0800</pubDate>
-      
-      <guid>https://wind13.github.io/tags/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>测试驱动开发</title>
       <link>https://wind13.github.io/tags/%E6%B5%8B%E8%AF%95%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91/</link>
       <pubDate>Sun, 07 Feb 2021 09:48:33 +0800</pubDate>
@@ -669,7 +678,7 @@
     </item>
     
     <item>
-      <title>react</title>
+      <title>React</title>
       <link>https://wind13.github.io/tags/react/</link>
       <pubDate>Mon, 28 Dec 2020 16:49:11 +0800</pubDate>
       
@@ -894,7 +903,7 @@
     </item>
     
     <item>
-      <title>clojure</title>
+      <title>Clojure</title>
       <link>https://wind13.github.io/tags/clojure/</link>
       <pubDate>Tue, 08 Sep 2020 22:50:16 +0800</pubDate>
       
@@ -993,15 +1002,6 @@
     </item>
     
     <item>
-      <title>TOC</title>
-      <link>https://wind13.github.io/tags/toc/</link>
-      <pubDate>Wed, 12 Aug 2020 17:00:17 +0800</pubDate>
-      
-      <guid>https://wind13.github.io/tags/toc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>制约理论</title>
       <link>https://wind13.github.io/tags/%E5%88%B6%E7%BA%A6%E7%90%86%E8%AE%BA/</link>
       <pubDate>Wed, 12 Aug 2020 17:00:17 +0800</pubDate>
@@ -1052,15 +1052,6 @@
       <pubDate>Sun, 09 Aug 2020 18:30:17 +0800</pubDate>
       
       <guid>https://wind13.github.io/tags/%E9%AB%98%E8%B4%A8%E9%87%8F/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CI/CD</title>
-      <link>https://wind13.github.io/tags/ci/cd/</link>
-      <pubDate>Sun, 09 Aug 2020 11:02:19 +0800</pubDate>
-      
-      <guid>https://wind13.github.io/tags/ci/cd/</guid>
       <description></description>
     </item>
     
@@ -2028,7 +2019,7 @@
     </item>
     
     <item>
-      <title>Julia</title>
+      <title>julia</title>
       <link>https://wind13.github.io/tags/julia/</link>
       <pubDate>Fri, 04 Oct 2019 01:32:49 +0000</pubDate>
       
@@ -2492,6 +2483,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://wind13.github.io/tags/baidu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CI/CD</title>
+      <link>https://wind13.github.io/tags/ci/cd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wind13.github.io/tags/ci/cd/</guid>
       <description></description>
     </item>
     

@@ -90,19 +90,13 @@
         
         
         <div class="post-content">
-            
-
-<h1 id="数据库相关">数据库相关</h1>
-
+            <h1 id="数据库相关">数据库相关</h1>
 <h2 id="hql-中-left-join-的写法">HQL 中 left join 的写法</h2>
-
 <p>用 Play 查询数据时，遇到关联对象的查询时，需要使用 left join 的语句，但与我们习惯的 SQL 语句不同，HQL 的写法和思路是面向对象的，所以下面就记录一些可用的例句供实际使用时参考：</p>
-
 <pre><code>查询教的学生中有年龄大于30的老师
 hql = &quot;select distinct o from Teacher o, Student r left join r.teacher h where r.age&gt;=?&quot;;
 </code></pre>
-
-<h2 id="datomic-信息模型-http-www-infoq-com-cn-articles-datomic-information-model"><a href="http://www.infoq.com/cn/articles/Datomic-Information-Model">Datomic 信息模型</a></h2>
+<h2 id="datomic-信息模型httpwwwinfoqcomcnarticlesdatomic-information-model"><a href="http://www.infoq.com/cn/articles/Datomic-Information-Model">Datomic 信息模型</a></h2>
 
         </div>
 
@@ -115,15 +109,15 @@ hql = &quot;select distinct o from Teacher o, Student r left join r.teacher h wh
     <h2>See Also</h2>
     <ul class="listing">
         
-        <li><a href="/post/2013/2013-12-23-confession214/"></a></li>
+        <li><a href="/post/2013/2013-12-13-operationnotpermitted/"></a></li>
         
-        <li><a href="/post/2013/2013-12-23-coolguydontlookatexplosions/"></a></li>
+        <li><a href="/post/2013/2013-12-13-cacheremovetime/"></a></li>
         
-        <li><a href="/post/2013/2013-12-13-cmdchinese/"></a></li>
+        <li><a href="/post/2013/2013-12-13-validateandsave/"></a></li>
         
-        <li><a href="/post/2013/2013-12-23-htmlunitdriverjavascript/"></a></li>
+        <li><a href="/post/2013/2013-09-29-learnself/"></a></li>
         
-        <li><a href="/post/2013/2013-12-23-tracinterfacecustomization/"></a></li>
+        <li><a href="/post/2013/2013-12-13-longpolling/"></a></li>
         
     </ul>
 </div>
@@ -173,6 +167,10 @@ hql = &quot;select distinct o from Teacher o, Student r left join r.teacher h wh
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/powerplatform-jamstack/" title="在 Power Platform 上实践 JamStack 架构思想">在 Power Platform 上实践 JamStack 架构思想</a>
     </li>
     
@@ -208,10 +206,6 @@ hql = &quot;select distinct o from Teacher o, Student r left join r.teacher h wh
         <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/element3-tdd-thinking/" title="参与 Element3 TDD 的感受">参与 Element3 TDD 的感受</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -223,13 +217,13 @@ hql = &quot;select distinct o from Teacher o, Student r left join r.teacher h wh
     
     <li><a href="https://wind13.github.io/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (16)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (13)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
     
@@ -278,7 +272,7 @@ hql = &quot;select distinct o from Teacher o, Student r left join r.teacher h wh
     
     <a href="https://wind13.github.io/tags/ci/cd/">CI/CD</a>
     
-    <a href="https://wind13.github.io/tags/clojure/">clojure</a>
+    <a href="https://wind13.github.io/tags/clojure/">Clojure</a>
     
     <a href="https://wind13.github.io/tags/code/">code</a>
     
@@ -378,7 +372,7 @@ hql = &quot;select distinct o from Teacher o, Student r left join r.teacher h wh
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">Julia</a>
+    <a href="https://wind13.github.io/tags/julia/">julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -494,7 +488,7 @@ hql = &quot;select distinct o from Teacher o, Student r left join r.teacher h wh
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">react</a>
+    <a href="https://wind13.github.io/tags/react/">React</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     

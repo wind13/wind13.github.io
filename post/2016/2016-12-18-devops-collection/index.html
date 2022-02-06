@@ -90,71 +90,51 @@
         
         
         <div class="post-content">
-            
-
-<h1 id="devops技术相关">DevOps技术相关</h1>
-
+            <h1 id="devops技术相关">DevOps技术相关</h1>
 <h2 id="相关链接">相关链接</h2>
-
 <ul>
 <li><a href="http://www.ansible.com.cn/">Ansible中文权威指南</a> 所有重复的IT工作可以被自动化并分享给其他组员。</li>
 <li><a href="https://gist.github.com/jaceklaskowski/bd3d06489ec004af6ed9">Choosing a deployment tool - ansible vs puppet vs chef vs salt</a></li>
 </ul>
-
 <h2 id="相关观点">相关观点</h2>
-
 <ul>
 <li>Puppet is a similar tool to Chef</li>
 <li>Vagrant is a tool for developers and a toy for admins, you can quickly stand up a development environment with vagrant, e.g. I want to develop an android app, grab an IDE from vagrant, I think it will be overtaken by Docker soon.</li>
 <li>我现在使用的是阿里容器服务: <a href="https://cs.console.aliyun.com">https://cs.console.aliyun.com</a> ，配合阿里的虚拟主机以及代码托管(code.aliyun.com)，实在不能再方便。</li>
-<li>创业圈的docker服务，我比较推荐<a href="http://daocloud.io，很久以前我还去他们家上海总部做过使用开发demo，这是一家很有工程师文化的企业，而且里面确实有好几个国内docker界顶级玩家。">http://daocloud.io，很久以前我还去他们家上海总部做过使用开发demo，这是一家很有工程师文化的企业，而且里面确实有好几个国内docker界顶级玩家。</a></li>
+<li>创业圈的docker服务，我比较推荐http://daocloud.io，很久以前我还去他们家上海总部做过使用开发demo，这是一家很有工程师文化的企业，而且里面确实有好几个国内docker界顶级玩家。</li>
 <li>假如你用的是VPS或者AWS什么的 首选Rex <a href="http://rexify.org/">http://rexify.org/</a> 次选Ansible <a href="http://ansible.cc/">http://ansible.cc/</a></li>
 </ul>
-
-<h2 id="docker-vagrant">Docker &gt; Vagrant</h2>
-
+<h2 id="docker--vagrant">Docker &gt; Vagrant</h2>
 <p>那针对国内可以流畅使用docker但无法正常使用vagrant的情况，作如何处理呢？</p>
-
 <p>我们团队的解决方案是将服务器部署的docker编排脚本(docker-compose)直接修改参数以适应Local开发。每次开发前，docker-compose up -d，再配以各类脚本。结果是，这样开发起来比在硅谷用Vagrant还要爽！！Vagrant所有的操作都可以用在docker中一样做，例如:
 复制文件: vagrant scp; docker cp
 ssh: vagrant ssh; docker-compose exec CONTAINER /bin/sh
 所以，到最后，我们发现，开发部署都用docker还有一个额外好处，vagrant的开发环境到部署环境还是存在差异的，而我们开发用的起docker集群的编排脚本无需经过调试直接复制到服务器端就能一行命令解决部署:
 docker-compose up -d</p>
-
 <p>What you developed is what will be deployed. 谢谢!</p>
-
 <h2 id="vagrant-国内使用">Vagrant 国内使用</h2>
-
 <ul>
 <li><a href="https://blog.csdn.net/dafei1288/article/details/105828516">Vagrant使用国内镜像安装插件和box镜像</a></li>
 </ul>
-
 <p><code>vagrant init centos7 https://mirrors.ustc.edu.cn/centos-cloud/centos/7/vagrant/x86_64/images/CentOS-7.box</code></p>
-
 <ul>
-<li><p><a href="https://scotch.io/tutorials/how-to-create-a-vagrant-base-box-from-an-existing-one">Create a Vagrant Base Box from an Existing One</a></p></li>
-
-<li><p>当共享文件夹时，遇到报错：</p>
-
+<li>
+<p><a href="https://scotch.io/tutorials/how-to-create-a-vagrant-base-box-from-an-existing-one">Create a Vagrant Base Box from an Existing One</a></p>
+</li>
+<li>
+<p>当共享文件夹时，遇到报错：</p>
+</li>
+</ul>
 <pre><code>Vagrant was unable to mount VirtualBox shared folders. This is usually
 because the filesystem &quot;vboxsf&quot; is not available.
 ...
 unknown filesystem type 'vboxsf'
-</code></pre></li>
-</ul>
-
-<p>尝试运行此命令：</p>
-
-<pre><code class="language-sh">vagrant plugin install vagrant-vbguest
-</code></pre>
-
-<p>运行后解决了问题，下面是其他一些相关的命令，仅做备份：</p>
-
-<pre><code class="language-sh">vagrant vbguest
+</code></pre><p>尝试运行此命令：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">vagrant plugin install vagrant-vbguest
+</code></pre></div><p>运行后解决了问题，下面是其他一些相关的命令，仅做备份：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">vagrant vbguest
 vagrant plugin install vagrant-winnfsd
-</code></pre>
-
-<ul>
+</code></pre></div><ul>
 <li><a href="https://www.iamle.com/archives/2011.htmld">让Vagrant在Windwos下支持使用NFS/SMB共享文件夹从而解决目录共享IO缓慢的问题</a></li>
 </ul>
 
@@ -173,11 +153,11 @@ vagrant plugin install vagrant-winnfsd
         
         <li><a href="/post/2020/team-ability.md/">开发团队能力</a></li>
         
+        <li><a href="/post/2022/develop-team-problem/">关于KPI与开发团队效能问题的讨论</a></li>
+        
         <li><a href="/post/2022/powerplatform-jamstack/">在 Power Platform 上实践 JamStack 架构思想</a></li>
         
         <li><a href="/post/2022/do-not-use-mounty-disk-data-recovery/">不要用 Mounty，一次惊险的数据恢复记录</a></li>
-        
-        <li><a href="/post/2021/note-of-right-measurement/">笔记——正确的度量指标</a></li>
         
     </ul>
 </div>
@@ -227,6 +207,10 @@ vagrant plugin install vagrant-winnfsd
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/powerplatform-jamstack/" title="在 Power Platform 上实践 JamStack 架构思想">在 Power Platform 上实践 JamStack 架构思想</a>
     </li>
     
@@ -262,10 +246,6 @@ vagrant plugin install vagrant-winnfsd
         <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/element3-tdd-thinking/" title="参与 Element3 TDD 的感受">参与 Element3 TDD 的感受</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -277,13 +257,13 @@ vagrant plugin install vagrant-winnfsd
     
     <li><a href="https://wind13.github.io/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (16)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (13)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
     
@@ -332,7 +312,7 @@ vagrant plugin install vagrant-winnfsd
     
     <a href="https://wind13.github.io/tags/ci/cd/">CI/CD</a>
     
-    <a href="https://wind13.github.io/tags/clojure/">clojure</a>
+    <a href="https://wind13.github.io/tags/clojure/">Clojure</a>
     
     <a href="https://wind13.github.io/tags/code/">code</a>
     
@@ -432,7 +412,7 @@ vagrant plugin install vagrant-winnfsd
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">Julia</a>
+    <a href="https://wind13.github.io/tags/julia/">julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -548,7 +528,7 @@ vagrant plugin install vagrant-winnfsd
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">react</a>
+    <a href="https://wind13.github.io/tags/react/">React</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     

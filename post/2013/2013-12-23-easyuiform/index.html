@@ -91,19 +91,16 @@
         
         <div class="post-content">
             <p>示例代码如下：</p>
-
-<pre><code class="language-java">	$('#ff').form({
-	    url:$(this).attr(&quot;&quot;action&quot;&quot;),
-	    onSubmit:function(){
-	        return $(this).form('validate');
-	    },
-	    success:function(data){
-	        alert(data);
-	    }
-	});
-</code></pre>
-
-<p>其中url的值是取的form中的action属性，故需注意填写form的相应属性，当然也可以为&rsquo;/controller_name/action_name&rsquo;。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">	$<span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">&#39;#</span>ff<span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">form</span><span style="color:#f92672">({</span>
+	    url<span style="color:#f92672">:</span>$<span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">).</span><span style="color:#a6e22e">attr</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;&#34;</span>action<span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">),</span>
+	    onSubmit<span style="color:#f92672">:</span>function<span style="color:#f92672">(){</span>
+	        <span style="color:#66d9ef">return</span> $<span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">).</span><span style="color:#a6e22e">form</span><span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">&#39;</span>validate<span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">);</span>
+	    <span style="color:#f92672">},</span>
+	    success<span style="color:#f92672">:</span>function<span style="color:#f92672">(</span>data<span style="color:#f92672">){</span>
+	        alert<span style="color:#f92672">(</span>data<span style="color:#f92672">);</span>
+	    <span style="color:#f92672">}</span>
+	<span style="color:#f92672">});</span>
+</code></pre></div><p>其中url的值是取的form中的action属性，故需注意填写form的相应属性，当然也可以为&rsquo;/controller_name/action_name&rsquo;。</p>
 
         </div>
 
@@ -118,13 +115,13 @@
         
         <li><a href="/post/2013/2013-12-23-version1.2.5/">jQuery EasyUI 1.2.5 ChangeLog</a></li>
         
+        <li><a href="/post/2022/develop-team-problem/">关于KPI与开发团队效能问题的讨论</a></li>
+        
         <li><a href="/post/2022/powerplatform-jamstack/">在 Power Platform 上实践 JamStack 架构思想</a></li>
         
         <li><a href="/post/2022/do-not-use-mounty-disk-data-recovery/">不要用 Mounty，一次惊险的数据恢复记录</a></li>
         
         <li><a href="/post/2021/note-of-right-measurement/">笔记——正确的度量指标</a></li>
-        
-        <li><a href="/post/2021/blog.low-code-problems/">低代码开发的问题 Low Code Problems</a></li>
         
     </ul>
 </div>
@@ -174,6 +171,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/powerplatform-jamstack/" title="在 Power Platform 上实践 JamStack 架构思想">在 Power Platform 上实践 JamStack 架构思想</a>
     </li>
     
@@ -209,10 +210,6 @@
         <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/element3-tdd-thinking/" title="参与 Element3 TDD 的感受">参与 Element3 TDD 的感受</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -224,13 +221,13 @@
     
     <li><a href="https://wind13.github.io/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (16)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (13)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
     
@@ -279,7 +276,7 @@
     
     <a href="https://wind13.github.io/tags/ci/cd/">CI/CD</a>
     
-    <a href="https://wind13.github.io/tags/clojure/">clojure</a>
+    <a href="https://wind13.github.io/tags/clojure/">Clojure</a>
     
     <a href="https://wind13.github.io/tags/code/">code</a>
     
@@ -379,7 +376,7 @@
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">Julia</a>
+    <a href="https://wind13.github.io/tags/julia/">julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -495,7 +492,7 @@
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">react</a>
+    <a href="https://wind13.github.io/tags/react/">React</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     

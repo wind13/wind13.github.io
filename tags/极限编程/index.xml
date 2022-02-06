@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>极限编程 on 世风十三学堂</title>
@@ -6,10 +6,19 @@
     <description>Recent content in 极限编程 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 07 Feb 2021 09:48:33 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 06 Feb 2022 04:47:11 +0000</lastBuildDate>
     
 	<atom:link href="https://wind13.github.io/tags/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>关于KPI与开发团队效能问题的讨论</title>
+      <link>https://wind13.github.io/post/2022/develop-team-problem/</link>
+      <pubDate>Sun, 06 Feb 2022 04:47:11 +0000</pubDate>
+      
+      <guid>https://wind13.github.io/post/2022/develop-team-problem/</guid>
+      <description>今天在微信群里讨论开发团队效能的问题，话题是由 小L 提问 “KPI设定的指标有啥啊，评分时候是用数据还是靠主观？有罚么？”开始…… 有群友 小F 建议： 靠事实，不建议有罚…… 数据和主观都有不靠谱的地方，多维度评估。 接着 小L 问道: 那指标一般定哪些？我们现在用：bug解决用时、线上问题解决率…</description>
+    </item>
     
     <item>
       <title>参与 Element3 TDD 的感受</title>

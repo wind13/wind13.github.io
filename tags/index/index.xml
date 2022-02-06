@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>index on 世风十三学堂</title>
@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://wind13.github.io/post/2014/2014-01-09-otherrelay/</guid>
-      <description>Java 相关 String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型 java 类对象初始化顺序 JavaScript相关 JavaScript框架 easyui 相关 easyui中form表单的ajax实现 版本1.2.5改进说明 自动化测试（抓数据）相关 关于HtmlUnitDriver无法支持所有javascript效果的问题 G</description>
+      <description>Java 相关 String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型 java 类对象初始化顺序 JavaScript相关 JavaScript框架 easyui 相关 easyui中form表单的ajax实现 [版本1.2.5改进说明]({% post_url 2013-12-23-version1.2.5 %}) 自动化测试（抓数据）相关 关于HtmlUnitDriver无法支持所有javascri</description>
     </item>
     
   </channel>

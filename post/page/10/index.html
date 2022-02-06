@@ -79,6 +79,33 @@
     <article class="post">
         <header>
             <h1 class="post-title">
+                <a href="https://wind13.github.io/post/2013/2013-12-23-gitoftenused/" title="常用Git命令说明">常用Git命令说明</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2013年12月23日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0'>研究与学习</a></span>
+            
+            <span class="meta-category"><a href='https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95'>收集与记录</a></span>
+            
+        </div>
+        
+        <div class="post-content">
+            参考：史上最浅显易懂的Git教程！ 进入你的工作目录 cd yourworkpath 列出所有branch，当前所在branch前面有“*”号。 git branch -a 切换工作库 git checkout v1.5.1 合并另一个branch，通常是master git merge master 再切换回来 git checkout master 查看当前目录情况 git status 将当前目录中的修改提交到相应的库（branch）中 git commit -m &ld……
+        </div>
+        <p class="readmore"><a href="https://wind13.github.io/post/2013/2013-12-23-gitoftenused/">阅读全文</a></p>
+    </article>
+    
+    
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
                 <a href="https://wind13.github.io/post/2014/2014-01-10-luojisiwei/" title="罗辑思维听后记录">罗辑思维听后记录</a>
             </h1>
         </header>
@@ -105,7 +132,7 @@
         </date>
         
         <div class="post-content">
-            Java 相关 String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型 java 类对象初始化顺序 JavaScript相关 JavaScript框架 easyui 相关 easyui中form表单的ajax实现 版本1.2.5改进说明 自动化测试（抓数据）相关 关于HtmlUnitDriver无法支持所有javascript效果的问题 G……
+            Java 相关 String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型 java 类对象初始化顺序 JavaScript相关 JavaScript框架 easyui 相关 easyui中form表单的ajax实现 [版本1.2.5改进说明]({% post_url 2013-12-23-version1.2.5 %}) 自动化测试（抓数据）相关 关于HtmlUnitDriver无法支持所有javascri……
         </div>
         <p class="readmore"><a href="https://wind13.github.io/post/2014/2014-01-09-otherrelay/">阅读全文</a></p>
     </article>
@@ -195,7 +222,7 @@
         </date>
         
         <div class="post-content">
-            链接收集 网页设计巅峰之作{:target=&rdquo;_blank&rdquo;} MDX Markdown for the component era, 在 markdown 文档中加入 JSX 组件，可用于 React 项目。 为 Web 开发者提供的 16 本优秀的 E-BOOK{:target=&rdquo;_blank&rdquo;} 语义化版本 2.0.0{:target=&rdquo;_blank&rdquo;} 软件的版本号不是随便乱起的，这里有相应的说明和规范。 Publish Websites Like a BOSS B]{:target=&rdquo;_blank&rdquo;} 发布静态网站、Blog 的系统，与 Jekyll-Bootstrap 类似吧~ Static……
+            链接收集 网页设计巅峰之作 MDX Markdown for the component era, 在 markdown 文档中加入 JSX 组件，可用于 React 项目。 为 Web 开发者提供的 16 本优秀的 E-BOOK 语义化版本 2.0.0 软件的版本号不是随便乱起的，这里有相应的说明和规范。 Publish Websites Like a BOSS B] 发布静态网站、Blog 的系统，与 Jekyll-Bootstrap 类似吧~ Static - Static Site Generator 用 Clojure 发布静态网站、Blog 的系统，有空可以试试。 StackEdit 浏……
         </div>
         <p class="readmore"><a href="https://wind13.github.io/post/2016/2016-08-26-collection-box/">阅读全文</a></p>
     </article>
@@ -234,24 +261,6 @@
             首先看官方文档 用openssl命令生成自己的签名文档 openssl genrsa 1024 &gt; host.key openssl req -new -x509 -nodes -sha1 -days 365 -key host.key &gt; host.cert 生成签名时需回答类似这样的问题： Country Name (2 letter code) [XX]: State or Province Name (full name) []: Locality Name (eg, city) [Default City]: Organization Name (eg, company) [Default Company Ltd]: Organizational Unit Name (eg, section) []: Common Name (eg, your name or your server's hostname) []: Email Address []: 最终会得到两个文件：host.key和host.cert 然后在appli……
         </div>
         <p class="readmore"><a href="https://wind13.github.io/post/2013/2013-12-13-userhttps/">阅读全文</a></p>
-    </article>
-    
-    
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="https://wind13.github.io/post/2013/2013-12-13-filterallcontroller/" title="在Play!中如何实现类似过滤器的功能？">在Play!中如何实现类似过滤器的功能？</a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            1年1月1日
-        </date>
-        
-        <div class="post-content">
-            如果是单个Controller要实现过滤，只需写一个public static 的方法，加上@Before注解即可达到执行所有action前先执行这个方法的目的。 如果想实现全局即整个站点的action都被过滤，就需要写个BaseController（名字随便起，如SuperController……
-        </div>
-        <p class="readmore"><a href="https://wind13.github.io/post/2013/2013-12-13-filterallcontroller/">阅读全文</a></p>
     </article>
     
     
@@ -368,6 +377,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/powerplatform-jamstack/" title="在 Power Platform 上实践 JamStack 架构思想">在 Power Platform 上实践 JamStack 架构思想</a>
     </li>
     
@@ -403,10 +416,6 @@
         <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/element3-tdd-thinking/" title="参与 Element3 TDD 的感受">参与 Element3 TDD 的感受</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -418,13 +427,13 @@
     
     <li><a href="https://wind13.github.io/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (16)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (13)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
     
@@ -473,7 +482,7 @@
     
     <a href="https://wind13.github.io/tags/ci/cd/">CI/CD</a>
     
-    <a href="https://wind13.github.io/tags/clojure/">clojure</a>
+    <a href="https://wind13.github.io/tags/clojure/">Clojure</a>
     
     <a href="https://wind13.github.io/tags/code/">code</a>
     
@@ -573,7 +582,7 @@
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">Julia</a>
+    <a href="https://wind13.github.io/tags/julia/">julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -689,7 +698,7 @@
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">react</a>
+    <a href="https://wind13.github.io/tags/react/">React</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     

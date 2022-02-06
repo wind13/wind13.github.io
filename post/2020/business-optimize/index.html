@@ -103,93 +103,88 @@
         
         
         <div class="post-content">
-            
-
-<h1 id="技术方案要从解决现实世界的问题开始">技术方案要从解决现实世界的问题开始</h1>
-
+            <h1 id="技术方案要从解决现实世界的问题开始">技术方案要从解决现实世界的问题开始</h1>
 <p>技术群里讨论一个技术方案的问题，大概描述如下：</p>
-
 <ul>
 <li>一个单据处理系统，上游系统会不断产生新的单据，数量比较大，频率也比较高；</li>
 <li>当前系统分为两个环节，一个接单环节，一个转单环节；</li>
 <li>接单环节负责将单据入库；保存数据库目前速度跟得上，可以保证上游系统的单据全部入库；</li>
-<li>转单环节需要将新入库的单据，根据一些复杂的逻辑进行检查、处理、转换、拷贝、再保存到其他数据表中等，相对耗时，速度较慢，目前大概是 <sup>1</sup>&frasl;<sub>20</sub> 的速度；</li>
+<li>转单环节需要将新入库的单据，根据一些复杂的逻辑进行检查、处理、转换、拷贝、再保存到其他数据表中等，相对耗时，速度较慢，目前大概是 1/20 的速度；</li>
 </ul>
-
 <p>群里大家首先给的建议就是在转单环节水平扩展，多加几台机器就好了，然后就是一些具体的技术建议，比如：异步、map-reduce、消息队列、微服务、K8S扩展、定时任务等等。</p>
-
 <p>我的思考是这样的：</p>
-
 <blockquote>
 <p>瓶颈找到了，就要按照瓶颈的处理容量来设计整个系统的吞吐量了。</p>
 </blockquote>
-
 <p>这个是基于 TOC 理论来思考的，这个理论建议人们先找到系统的瓶颈，并根据瓶颈来挖掘整个系统的产出效率。</p>
-
 <blockquote>
 <p>首先，计算一下，目前的转单能力，是否能应付上游的推单呢？如果不行，那么就要想办法加强转单环节的能力。 首先，将接单和转单分拆成两个独立的步骤，互不影响。</p>
 </blockquote>
-
-<p>得到答复是转单的速度在 <sup>1</sup>&frasl;<sub>20</sub> 的级别。于是建议如下：</p>
-
+<p>得到答复是转单的速度在 1/20 的级别。于是建议如下：</p>
 <blockquote>
 <p>那么接单独立后，就可以保证所有推单正常接单。</p>
-
+</blockquote>
+<blockquote>
 <p>转单环节，需要扩展能力20倍，两个方面去思考：</p>
-
+</blockquote>
+<blockquote>
 <p>一、处理能力中，有哪些是必须环节，有没有不太必要的环节可以精减？有没有可以分拆成高级处理等的可能？如 100%订单经简单处理，特殊情况再高级处理等；</p>
-
+</blockquote>
+<blockquote>
 <p>二、横向扩展处理环节，能不能多部署很多处理环节，并行进行，处理环节独立成微服务并自动触发等。</p>
-
+</blockquote>
+<blockquote>
 <p>仔细分析转单环节，看是否能精减，是否可以将 1:20 变成 1:15甚至 1:10</p>
-
+</blockquote>
+<blockquote>
 <p>另外，就是将转单环节变成并行的、多线程的。</p>
-
+</blockquote>
+<blockquote>
 <p>还有一个思考点，就是接单环节，分析一下，是否真的需要 100% 入库，可否提前过滤？有时候，业务上的一个需求分析，可能让程序简单许多。</p>
 </blockquote>
-
 <p>于是整理了一下建议如下：</p>
-
 <blockquote>
 <p>1、 业务上再梳理、权衡一下必要的精减。</p>
-
+</blockquote>
+<blockquote>
 <p>2、 分拆接单和转单为两个分离的过程。</p>
-
+</blockquote>
+<blockquote>
 <p>3、 接单可否过滤部分。</p>
-
+</blockquote>
+<blockquote>
 <p>4、 转单可否并行多线程处理。</p>
 </blockquote>
-
 <p>另外，我考虑到了测试性能的重要性，建议如下：</p>
-
 <blockquote>
 <p>不管怎么说，目前看上面的描述，需求是要所有单都通过接单和转单环节，原来的方案只是将接单的一些工作移到转单环节，让转单成了瓶颈，业务梳理，可以将环节再拆分细化一些，再看具体是转单环节中的哪一些地方，这需要测试性能的手段能跟上，很快地找出性能环节。</p>
-
+</blockquote>
+<blockquote>
 <p>通过测试性能，不断地尝试改变瓶颈环节的解决方案，应该能慢慢找到好的解决方法。</p>
-
+</blockquote>
+<blockquote>
 <p>比如加缓存、比如读写分离，比如多线程并行，都要试了才知道效果。所以测试要能跟得上。</p>
-
+</blockquote>
+<blockquote>
 <p>现在 1:20，明显扛不住，可能成本压力又使得公司不愿意上那么多服务器，那么业务梳理和沟通可能是个方向，就是先减压，能不能有些处理先不做。</p>
-
+</blockquote>
+<blockquote>
 <p>或者有些处理区别地做，并不是所有单都做，只是特殊单才做。</p>
-
+</blockquote>
+<blockquote>
 <p>我通常更相信是可以找到权衡点的，是可以精减的，真的处理那么多都有业务价值吗？</p>
-
+</blockquote>
+<blockquote>
 <p><strong>只做必须的、高价值的处理。</strong></p>
 </blockquote>
-
 <p>讨论中发现，大多数技术人员都更偏向于具体的技术解决方案，较少从需求本身或者分析问题本身这些方面去思考，这不能不说是技术人员的一个很大的局限和习惯，那就是假定需求已经确定，不可改变，也就是将这个前提默认固化下来了。</p>
-
 <p>这也是本文真正想讨论和提醒广大技术人员的一个重点，我们使用技术来帮助业务主要是解决现实世界的问题的，而问题的前半段通常是市场人员、需求分析人员提供的，技术人员通常就习惯性地假设这些已经确定和固化了，这个习惯会非常阻碍我们理解和解决现实世界的问题。同时也会给后半段技术的实现带来非常大的困难和误区，导致花费巨大的成本也解决不好甚至是解决不了真正的现实世界的问题。</p>
-
 <p>就如上述案例所说的情况，大多数技术人员，在听到这个案例后，首先就已经确认了一个固化的前提，那就是所有单据，必须通过所有的接单和转单环节，然后就是想各种办法去保证所有单据都完全经过所有流程。也许我们真正要解决现实中的问题，应该先问下面这些问题：</p>
-
 <ul>
 <li>这些单据是什么单据？做什么用的？</li>
 <li>这些单据为什么要保存？为什么要处理？处理成什么样？</li>
 <li>处理完的数据，谁要用？怎么用？用来做什么？</li>
 </ul>
-
 <p>也许有了这些问题的答案，整个流程的优化，会有一些更好、更简洁的思路，好的开发人员并不缺技术解决方案，而需要的是更好地与现实世界的问题充分结合的能力。</p>
 
         </div>
@@ -271,6 +266,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/powerplatform-jamstack/" title="在 Power Platform 上实践 JamStack 架构思想">在 Power Platform 上实践 JamStack 架构思想</a>
     </li>
     
@@ -306,10 +305,6 @@
         <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/element3-tdd-thinking/" title="参与 Element3 TDD 的感受">参与 Element3 TDD 的感受</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -321,13 +316,13 @@
     
     <li><a href="https://wind13.github.io/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (16)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (13)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
     
@@ -376,7 +371,7 @@
     
     <a href="https://wind13.github.io/tags/ci/cd/">CI/CD</a>
     
-    <a href="https://wind13.github.io/tags/clojure/">clojure</a>
+    <a href="https://wind13.github.io/tags/clojure/">Clojure</a>
     
     <a href="https://wind13.github.io/tags/code/">code</a>
     
@@ -476,7 +471,7 @@
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">Julia</a>
+    <a href="https://wind13.github.io/tags/julia/">julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -592,7 +587,7 @@
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">react</a>
+    <a href="https://wind13.github.io/tags/react/">React</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
