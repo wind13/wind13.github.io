@@ -91,11 +91,15 @@
         
         <div class="post-content">
             <p>首先看<a href="http://www.playframework.org/documentation/1.2.3/production#https">官方文档</a></p>
+
 <p>用openssl命令生成自己的签名文档</p>
+
 <pre><code>openssl genrsa 1024 &gt; host.key
 openssl req -new -x509 -nodes -sha1 -days 365 -key host.key &gt; host.cert
 </code></pre>
+
 <p>生成签名时需回答类似这样的问题：</p>
+
 <pre><code>Country Name (2 letter code) [XX]:
 State or Province Name (full name) []:
 Locality Name (eg, city) [Default City]:
@@ -104,8 +108,11 @@ Organizational Unit Name (eg, section) []:
 Common Name (eg, your name or your server's hostname) []:
 Email Address []:
 </code></pre>
+
 <p>最终会得到两个文件：host.key和host.cert</p>
+
 <p>然后在application.conf文件中配置如下：</p>
+
 <pre><code>http.port=9000
 https.port=9443
 
@@ -116,9 +123,13 @@ certificate.file=conf/host.cert
 certificate.password=secret
 trustmanager.algorithm=JKS
 </code></pre>
+
 <p><a href="http://stackoverflow.com/questions/6114104/play-framework-https-and-http-at-the-same-time">原问题及回答</a></p>
+
 <p>You just need to have both http.port and https.port in the application.conf file. For the links you want to be different from the normal site, use the @@ notation:</p>
+
 <p>你只需要在application.conf文件中配置http.port和https.port，然后在页面上使用如下链接即可：</p>
+
 <pre><code>@@{Controller.action().secure()} =&gt;https://...
 
 
@@ -196,6 +207,10 @@ trustmanager.algorithm=JKS
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -231,10 +246,6 @@ trustmanager.algorithm=JKS
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -248,13 +259,13 @@ trustmanager.algorithm=JKS
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -278,6 +289,10 @@ trustmanager.algorithm=JKS
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -308,6 +323,8 @@ trustmanager.algorithm=JKS
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -401,7 +418,7 @@ trustmanager.algorithm=JKS
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -517,7 +534,7 @@ trustmanager.algorithm=JKS
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -539,11 +556,15 @@ trustmanager.algorithm=JKS
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     

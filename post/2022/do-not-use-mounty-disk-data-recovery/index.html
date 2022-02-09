@@ -103,20 +103,34 @@
         
         
         <div class="post-content">
-            <h2 id="不要用-mounty一次惊险的数据恢复记录">不要用 Mounty，一次惊险的数据恢复记录</h2>
+            
+
+<h2 id="不要用-mounty-一次惊险的数据恢复记录">不要用 Mounty，一次惊险的数据恢复记录</h2>
+
 <p>不愿看前情啰嗦的，可以直接看最后的总结……</p>
+
 <p>macOS 无法读写 NTFS 格式的硬盘</p>
+
 <ul>
 <li><a href="https://mounty.app/">Mounty for NTFS</a> A tiny tool to re-mount write-protected NTFS volumes under macOS in read-write mode.</li>
 </ul>
+
 <p>尝试使用这个工具，可以拷贝写入 NTFS 的硬盘，但不稳定，在拷贝一大堆资料时，突然资料盘的这个原目录里的资料看不见了，转到 Win10 系统提示无法打开。</p>
+
 <p>因为资料内容非常多，也不想丢失，于是到处找方法，为此下载了一些恢复硬盘数据的工具，还搞得系统中了 360 全家桶的招，又费了很多时间清除垃圾软件，感觉还没清理干净，还是先处理好数据丢失的问题……</p>
+
 <p>后来就去恢复数据软件的易我官网下载了软件，看到有购买的菜单，但还是想着只用一下，是不是可以免费？于是下载安装后开始扫描，进度很慢，但为了恢复收藏的资料，让笔记本电脑一晚上没关机。</p>
+
 <p>同时，去 Seagate 的官网看了一下，有个 Seagate tools，下载安装了，看到有些检测功能，试了一下短检测，很快完成，但没有结果，说都正常，试着点了一下长检测，就几乎不动了，等了很久，就点停止了，又试了一下“龙修复”，也是几乎不动，等了很久，最终放弃了。</p>
+
 <p>用易我软件扫描到第二天早上，一看才到70%，看了一下列出来的文件，也感觉很零乱，并非当初保存的资料文件，扫描进度也不再增加，想了一下应该差不多了，于是停止了扫描，全选扫描出来的文件，点击恢复，结果弹出窗口，提示关注公众号能免费恢复 248 MB 的数据，要购买 7 天 88 元，终身版300多，想了一下这个方法应该不行。</p>
+
 <p>带着沮丧的心情又在网上查了一下，看到有人提到 <code>chkdsk</code> 命令可以恢复数据，而且对于 NTFS 的格式效果非常好，于是尝试运行 <code>chkdsk E: /f</code>，先是提示硬盘被占用，要不要强行解除，试着关了可能的软件，运行后还是提示，于是干脆输入“Y”强行执行了，没想到，不一会儿的功夫，提示找回了一些文件链接，再打开硬盘一看，之前的资料都恢复了！</p>
+
 <p>后来在 Seagate 官网上才发现，有专用于 macOS 的驱动，可以支持读写 NTFS 硬盘，于是安装后测试，果然稳定多了，没再出现搞丢目录的情况了。</p>
+
 <h2 id="总结">总结</h2>
+
 <ul>
 <li>移动硬盘，如果经常与 Windows 系统连接，那么最好格式化为 NTFS 格式，这样数据安全性比较好，用 <code>chkdsk</code> 命令可以恢复丢失的数据。</li>
 <li>如果经常与 macOS 系统连接，那么最好格式化为 ExFat 格式，使用 GUID 分区，这个格式支持得更宽泛，也可用于 Windows 系统。</li>
@@ -202,6 +216,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -237,10 +255,6 @@
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -254,13 +268,13 @@
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -284,6 +298,10 @@
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -314,6 +332,8 @@
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -407,7 +427,7 @@
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -523,7 +543,7 @@
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -545,11 +565,15 @@
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     

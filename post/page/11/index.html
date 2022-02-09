@@ -79,6 +79,24 @@
     <article class="post">
         <header>
             <h1 class="post-title">
+                <a href="https://wind13.github.io/post/2013/2013-12-13-userhttps/" title="如何同时使用http和https协议">如何同时使用http和https协议</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            1年1月1日
+        </date>
+        
+        <div class="post-content">
+            首先看官方文档 用openssl命令生成自己的签名文档 openssl genrsa 1024 &gt; host.key openssl req -new -x509 -nodes -sha1 -days 365 -key host.key &gt; host.cert 生成签名时需回答类似这样的问题： Country Name (2 letter code) [XX]: State or Province Name (full name) []: Locality Name (eg, city) [Default City]: Organization Name (eg, company) [Default Company Ltd]: Organizational Unit Name (eg, section) []: Common Name (eg, your name or your server's hostname) []: Email Address []: 最终会得到两个文件：host.key和host.cert 然后在appli……
+        </div>
+        <p class="readmore"><a href="https://wind13.github.io/post/2013/2013-12-13-userhttps/">阅读全文</a></p>
+    </article>
+    
+    
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
                 <a href="https://wind13.github.io/post/2013/2013-12-13-filterallcontroller/" title="在Play!中如何实现类似过滤器的功能？">在Play!中如何实现类似过滤器的功能？</a>
             </h1>
         </header>
@@ -123,7 +141,7 @@
         </date>
         
         <div class="post-content">
-            Created 星期六 25 二月 2012 先看一段Playframework热情交流群（QQG：168013302）里的聊天记录： 木马@学生 09:59:13 实现个功能..要调用service接口的方法, 方法又在他的impl里面实现, impl里面又是调用dao层接口, dao层接口又是在dao的impl里面实现, dao的i……
+            Created 星期六 25 二月 2012 先看一段Playframework热情交流群（QQG：168013302）里的聊天记录： 木马@学生 09:59:13 &gt; 实现个功能..要调用service接口的方法, 方法又在他的impl里面实现, impl里面又是调用dao层接口, &gt; dao层接口又是在dao的impl里面实现, dao……
         </div>
         <p class="readmore"><a href="https://wind13.github.io/post/2013/2013-09-29-stopsshgoplay/">阅读全文</a></p>
     </article>
@@ -177,7 +195,7 @@
         </date>
         
         <div class="post-content">
-            第一章 数据——人类建造文明的基石 使用数据的标准流程： 获取数据 分析数据 建立模型 预测未知 完美的镜头里面的透镜其实不应该是球面镜，而应该是某种复杂的曲面，这样才能使画面不变形，但这样的镜头在设计和制作上要求非常复杂而难以实现，相反如同日本的镜头生产一样，采用多个球面透镜来组合虽然显得笨……
+            第一章 数据——人类建造文明的基石 使用数据的标准流程： 1. 获取数据 1. 分析数据 1. 建立模型 1. 预测未知 完美的镜头里面的透镜其实不应该是球面镜，而应该是某种复杂的曲面，这样才能使画面不变形，但这样的镜头在设计和制作上要求非常复杂而难以实现，相反如同日本的镜头生产一样，采用多个球面透镜来组合虽……
         </div>
         <p class="readmore"><a href="https://wind13.github.io/post/2016/2016-09-18-data-time/">阅读全文</a></p>
     </article>
@@ -234,33 +252,6 @@
             以下是初入门时的姿势，现在完全不用这么麻烦，直接用dot-vimrc即可。 在 Mac OS X 上使用 Vim 真的是很享受，所以决定要用好这个工具，以下记录下本人的最佳实践： 首先面临一个选择，是用 MacVim 还是 终端（Terminate）？我的选择是终端，不过我进一步选择了 iTerm2，功能强大些，界面漂亮些……
         </div>
         <p class="readmore"><a href="https://wind13.github.io/post/2014/2014-04-30-vim-best-practices/">阅读全文</a></p>
-    </article>
-    
-    
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="https://wind13.github.io/post/2014/2014-03-27-uml-tools-of-mac-osx/" title="UML tools of Mac OSX 苹果系统下的建模工具">UML tools of Mac OSX 苹果系统下的建模工具</a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            1年1月1日
-        </date>
-        
-        <div class="post-meta">
-            <span>|</span>
-            
-            <span class="meta-category"><a href='https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF'>软件与技术</a></span>
-            
-            <span class="meta-category"><a href='https://wind13.github.io/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C'>实践与经验</a></span>
-            
-        </div>
-        
-        <div class="post-content">
-            今天工作时需要设计一下程序的架构，即建模工作，这件事用纯文本似乎较难完成（本人是纯文本的 funs）。用手绘软件（Gimp, SketchBookExpress）也不太方便，失量图软件（Inkscape，LibreOfficeDraw）也要从画方框开始也不方便，毕竟是模块化的图形，还……
-        </div>
-        <p class="readmore"><a href="https://wind13.github.io/post/2014/2014-03-27-uml-tools-of-mac-osx/">阅读全文</a></p>
     </article>
     
     
@@ -377,6 +368,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -412,10 +407,6 @@
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -429,13 +420,13 @@
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -459,6 +450,10 @@
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -489,6 +484,8 @@
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -582,7 +579,7 @@
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -698,7 +695,7 @@
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -720,11 +717,15 @@
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     

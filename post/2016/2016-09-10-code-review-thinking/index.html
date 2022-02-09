@@ -90,12 +90,20 @@
         
         
         <div class="post-content">
-            <p>今天看了陈皓的<a href="http://coolshell.cn/articles/11432.html">《从Code Review 谈如何做技术》</a>一文，笔记一些有启发的重点如下：</p>
+            
+
+<p>今天看了陈皓的<a href="http://coolshell.cn/articles/11432.html">《从Code Review 谈如何做技术》</a>一文，笔记一些有启发的重点如下：</p>
+
 <h2 id="首先要清晰思考">首先要清晰思考</h2>
+
 <p><strong>很多时候，人思考问题不清楚，很大一部分原因是因为把很多问题混为一谈。</strong></p>
+
 <h2 id="code-review-的好处">Code Review 的好处：</h2>
+
 <p><strong>主要是让代码可以更好地组织起来，更易读，有更高的维护性，同时可以达到知识共享，找到bug只是其中的副产品。</strong></p>
+
 <h2 id="代码的质量级别">代码的质量级别：</h2>
+
 <ol>
 <li>可编译</li>
 <li>可运行</li>
@@ -104,39 +112,42 @@
 <li>可维护</li>
 <li>可重用</li>
 </ol>
+
 <p><strong>通过自动化测试可达到第3级；</strong></p>
+
 <p><strong>通过 Code Review 至少会在第4级甚至更高</strong></p>
-<h2 id="code-review-做不起来没效果的问题和原因如下">Code Review 做不起来，没效果的问题和原因如下：</h2>
+
+<h2 id="code-review-做不起来-没效果的问题和原因如下">Code Review 做不起来，没效果的问题和原因如下：</h2>
+
 <ul>
 <li>人员能力不足；即不知道什么是好代码，什么是不好的代码。</li>
 <li>结果更重要；不关注质量、成长，急功近利。</li>
 <li>人员的态度问题；完事交差心态，自扫门前雪心态。</li>
 <li>需求变化问题；代码生命同期短就算了（如一次性Demo等，而现实中这样的项目其实不多），正常的项目如果需求变化快，代码质量要求反而更高，要能不断适应快速变化的需求。</li>
 <li>时间不够；这是需求管理和项目管理不善的问题，需另外解决，思路如下：
+
 <ul>
-<li>梳理需求，分析清楚哪些该做，哪些不该做；
-<ul>
+<li>梳理需求，分析清楚哪些该做，哪些不该做；</li>
 <li>拿到需求后问几个问题：为什么要做？业务影响度有多大？有多少用户受益？回答不清这些问题，没有数据支持就不做。</li>
 <li>产品经理的成长：
+
 <ul>
 <li>不但对用户把握得很好，也对软件工艺把握得很好。</li>
 <li>不但会开出外在的功能性需求，也同样会开出内在的让软件系统更完善的非功能性需求。</li>
 <li>不是在迁就用户，而是引导用户。</li>
 <li>不会无限制地加功能，而是把握产品灵魂，控制并简化功能。</li>
 <li>会为要做的和不做的需求感到同样的自豪。</li>
-</ul>
-</li>
+</ul></li>
 <li>做事情是要讲效率的。</li>
 <li>需求总是会变化的，不要抱怨需求变化太快。应该抱怨的是为什么我们没有把握好方向？老变？没有应对好这些变化？</li>
 <li>当你忙得象牲口一样时，想一下是不是因为自己做事的时候就象牲口一样思考？</li>
-</ul>
-</li>
 <li>寻求资源，不重复造轮子，进一步减少必须要做的需求；</li>
 <li>分解需求，设定合理的进度目标；</li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <h2 id="对技术人员的培养">对技术人员的培养：</h2>
+
 <ul>
 <li>写每一个模块，都 Code Review 和 Refactor 至 Elegant （优雅）的级别；</li>
 <li>经常学习并分享好的技术文章；</li>
@@ -144,8 +155,11 @@
 <li>拒绝或简化不合理的需求并征得所有（Stakeholder）利益相关者的同意；</li>
 <li>对自己负责，内心中坚持尽可能高的标准，尽量不对骨感的现实妥协，如果妥协得受不了了就选择离开吧~</li>
 </ul>
+
 <h2 id="个人感悟">【个人感悟】：</h2>
+
 <p>Code Review 确实是最有益的编程实践，甚至没有“之一”，然而骨感的现实是80%的开发者做不到（80/20法则应该在此处适用），即使是做到的20%，其中80%还是被逼的，呵呵……包括我在内也是这样，因此需要想办法冲破这些心结和障碍登上那个新的台阶！</p>
+
 <ul>
 <li>从 Review 自己的代码开始做起，每每为自己的优雅代码而欢颜颂唱，或为自己的愚蠢蹩脚而痛斥凌骂：“垃圾！Shite！一坨翔！&amp;#@……”；</li>
 <li>多读别人的代码，特别是好的开源项目的代码，建立与好代码的“亲切感”，见到优雅的代码如沐春风一般，这感觉应该就差不多了；</li>
@@ -163,6 +177,8 @@
     <h2>See Also</h2>
     <ul class="listing">
         
+        <li><a href="/post/2022/nodejs-secure-config/">Nodejs Secure Config 配置加密方案</a></li>
+        
         <li><a href="/post/2022/develop-team-problem/">关于KPI与开发团队效能问题的讨论</a></li>
         
         <li><a href="/post/2022/powerplatform-jamstack/">在 Power Platform 上实践 JamStack 架构思想</a></li>
@@ -170,8 +186,6 @@
         <li><a href="/post/2022/do-not-use-mounty-disk-data-recovery/">不要用 Mounty，一次惊险的数据恢复记录</a></li>
         
         <li><a href="/post/2021/note-of-right-measurement/">笔记——正确的度量指标</a></li>
-        
-        <li><a href="/post/2021/blog.low-code-problems/">低代码开发的问题 Low Code Problems</a></li>
         
     </ul>
 </div>
@@ -221,6 +235,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -256,10 +274,6 @@
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -273,13 +287,13 @@
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -303,6 +317,10 @@
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -333,6 +351,8 @@
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -426,7 +446,7 @@
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -542,7 +562,7 @@
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -564,11 +584,15 @@
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     

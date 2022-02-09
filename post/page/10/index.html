@@ -79,6 +79,33 @@
     <article class="post">
         <header>
             <h1 class="post-title">
+                <a href="https://wind13.github.io/post/2014/2014-05-13-my-macosx-vimrc/" title="我的Mac OS X 开发环境和 Vim 的设置">我的Mac OS X 开发环境和 Vim 的设置</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2014年5月13日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF'>软件与技术</a></span>
+            
+            <span class="meta-category"><a href='https://wind13.github.io/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C'>实践与经验</a></span>
+            
+        </div>
+        
+        <div class="post-content">
+            系统设置 需要将CapsLock键改为Esc键，以方便Vi习惯。方法：安装 PCKeyboardHack，将CapsLock键的值从51改为53即可。 Deepin 系统的更换方法：修改键盘映射，但对于 vscode 好像不行。 Eclipse 设置 添加Vrapper插件，以便使用Vi习惯。update url: http://vrapper.sourceforge.net/update-site/stable 添加Js的编辑环境，……
+        </div>
+        <p class="readmore"><a href="https://wind13.github.io/post/2014/2014-05-13-my-macosx-vimrc/">阅读全文</a></p>
+    </article>
+    
+    
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
                 <a href="https://wind13.github.io/post/2013/2013-12-23-gitoftenused/" title="常用Git命令说明">常用Git命令说明</a>
             </h1>
         </header>
@@ -132,7 +159,7 @@
         </date>
         
         <div class="post-content">
-            Java 相关 String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型 java 类对象初始化顺序 JavaScript相关 JavaScript框架 easyui 相关 easyui中form表单的ajax实现 [版本1.2.5改进说明]({% post_url 2013-12-23-version1.2.5 %}) 自动化测试（抓数据）相关 关于HtmlUnitDriver无法支持所有javascri……
+            Java 相关 String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型 java 类对象初始化顺序 JavaScript相关 JavaScript框架 easyui 相关 easyui中form表单的ajax实现 版本1.2.5改进说明 自动化测试（抓数据）相关 关于HtmlUnitDriver无法支持所有javascript效果的问题 G……
         </div>
         <p class="readmore"><a href="https://wind13.github.io/post/2014/2014-01-09-otherrelay/">阅读全文</a></p>
     </article>
@@ -222,7 +249,7 @@
         </date>
         
         <div class="post-content">
-            链接收集 网页设计巅峰之作 MDX Markdown for the component era, 在 markdown 文档中加入 JSX 组件，可用于 React 项目。 为 Web 开发者提供的 16 本优秀的 E-BOOK 语义化版本 2.0.0 软件的版本号不是随便乱起的，这里有相应的说明和规范。 Publish Websites Like a BOSS B] 发布静态网站、Blog 的系统，与 Jekyll-Bootstrap 类似吧~ Static - Static Site Generator 用 Clojure 发布静态网站、Blog 的系统，有空可以试试。 StackEdit 浏……
+            链接收集 网页设计巅峰之作{:target=&rdquo;_blank&rdquo;} MDX Markdown for the component era, 在 markdown 文档中加入 JSX 组件，可用于 React 项目。 为 Web 开发者提供的 16 本优秀的 E-BOOK{:target=&rdquo;_blank&rdquo;} 语义化版本 2.0.0{:target=&rdquo;_blank&rdquo;} 软件的版本号不是随便乱起的，这里有相应的说明和规范。 Publish Websites Like a BOSS B]{:target=&rdquo;_blank&rdquo;} 发布静态网站、Blog 的系统，与 Jekyll-Bootstrap 类似吧~ Static……
         </div>
         <p class="readmore"><a href="https://wind13.github.io/post/2016/2016-08-26-collection-box/">阅读全文</a></p>
     </article>
@@ -243,24 +270,6 @@
             收集链接 微信小应用资源汇总整理 WePY 让小程序支持组件化开发的框架 Github 微信小程序wepy框架开发资源汇总 开发微信小程序入门前 微信小程序设计指南 CSS参考手册 首个微信小程序开发教程！ 微信小程序简易教程 微信web开发者工具 微信小程序分享1：开发环境的配置 wechat-weapp-gank 一个图片App示例 wxapp-cli: 一个简单的微信小……
         </div>
         <p class="readmore"><a href="https://wind13.github.io/post/2016/2016-09-24-weixin-xiao-cheng-xu/">阅读全文</a></p>
-    </article>
-    
-    
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="https://wind13.github.io/post/2013/2013-12-13-userhttps/" title="如何同时使用http和https协议">如何同时使用http和https协议</a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            1年1月1日
-        </date>
-        
-        <div class="post-content">
-            首先看官方文档 用openssl命令生成自己的签名文档 openssl genrsa 1024 &gt; host.key openssl req -new -x509 -nodes -sha1 -days 365 -key host.key &gt; host.cert 生成签名时需回答类似这样的问题： Country Name (2 letter code) [XX]: State or Province Name (full name) []: Locality Name (eg, city) [Default City]: Organization Name (eg, company) [Default Company Ltd]: Organizational Unit Name (eg, section) []: Common Name (eg, your name or your server's hostname) []: Email Address []: 最终会得到两个文件：host.key和host.cert 然后在appli……
-        </div>
-        <p class="readmore"><a href="https://wind13.github.io/post/2013/2013-12-13-userhttps/">阅读全文</a></p>
     </article>
     
     
@@ -377,6 +386,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -412,10 +425,6 @@
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -429,13 +438,13 @@
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -459,6 +468,10 @@
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -489,6 +502,8 @@
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -582,7 +597,7 @@
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -698,7 +713,7 @@
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -720,11 +735,15 @@
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     

@@ -103,11 +103,16 @@
         
         
         <div class="post-content">
-            <h2 id="jamstack">JamStack</h2>
+            
+
+<h2 id="jamstack">JamStack</h2>
+
 <ul>
 <li><a href="https://pagepro.co/blog/what-is-jamstack/">WHAT IS JAMSTACK? A GUIDE FOR BUSINESS PEOPLE</a></li>
 </ul>
+
 <p>These decisions include the following:</p>
+
 <ul>
 <li>How you’ll manage the project/code</li>
 <li>Where you’ll store your content</li>
@@ -116,7 +121,9 @@
 <li>Where your site will be published</li>
 <li>What services and APIs your live site will use</li>
 </ul>
-<h2 id="best-practiceshttpsjamstackorgbest-practices"><a href="https://jamstack.org/best-practices/">Best Practices</a></h2>
+
+<h2 id="best-practices-https-jamstack-org-best-practices"><a href="https://jamstack.org/best-practices/">Best Practices</a></h2>
+
 <ul>
 <li>Entire Project on a CDN</li>
 <li>Modern Build Tools</li>
@@ -125,37 +132,54 @@
 <li>Instant Cache Invalidation: Making sure your CDN can handle instant cache purges.</li>
 <li>Everything Lives in Git: Git clone, install any needed dependencies with a standard procedure (like npm install), and be ready to run the full project locally. No databases to clone, no complex installs.</li>
 </ul>
+
 <h2 id="history">History</h2>
+
 <p>LAMP(Linux, Apache, MySQL, PHP/Perl/Python) stack &mdash;&gt;
 MEAN(MongoDB, Express.js, Angular/React/Vue, and Node.js) stack &mdash;&gt;
 JAM(JavaScript, APIs and Markup) stack</p>
+
 <ul>
 <li><a href="https://kalinchernev.github.io/learn-gatsbyjs">Learn Gatsby.js</a></li>
 </ul>
+
 <h2 id="the-fullstack-react-framework">The Fullstack React Framework</h2>
-<h3 id="blitzhttpsblitzjscom--nextjs--react-hook-form--prismajs--中文站httpswwwblitzjscn"><a href="https://blitzjs.com/">Blitz</a> = Next.js + React Hook Form + Prisma.js  <a href="https://www.blitzjs.cn/">中文站</a></h3>
+
+<h3 id="blitz-https-blitzjs-com-next-js-react-hook-form-prisma-js-中文站-https-www-blitzjs-cn"><a href="https://blitzjs.com/">Blitz</a> = Next.js + React Hook Form + Prisma.js  <a href="https://www.blitzjs.cn/">中文站</a></h3>
+
 <ol>
 <li>Blitz is inspired by Ruby on Rails, and built on [[#NextJS|tag.NextJS]], [[#prisma|tag.prisma]], [[#SQLite|tag.SQLite]], [[#GraphQL|tag.GraphQL]].  Why use Blitz instead of Next.js?</li>
 <li>Fullstack instead of Frontend</li>
 <li>Data Layer:
-- You don&rsquo;t need to build an API and do data fetching from the frontend.
-- Essentially, Blitz abstracts your API into a compile step.
-- You can continue doing data fetching via REST or GraphQL like you&rsquo;ve always done.
-- Blitz doesn&rsquo;t restrict this in any way.</li>
+
+<ul>
+<li>You don&rsquo;t need to build an API and do data fetching from the frontend.</li>
+<li>Essentially, Blitz abstracts your API into a compile step.</li>
+<li>You can continue doing data fetching via REST or GraphQL like you&rsquo;ve always done.</li>
+<li>Blitz doesn&rsquo;t restrict this in any way.</li>
+</ul></li>
 <li>Built-in Authentication</li>
 <li>Conventions: Blitz brings a number of conventions for things like how to organize your files and how to structure your routes.</li>
 <li>Code Scaffolding not code generation, Blitz is a huge fan of code scaffolding and in the future will add your own custom scaffold templates.</li>
 <li>Recipes are one-line commands for scaffolding code into your project from an <a href="https://www.mdxjs.cn/">MDX</a> recipe on npm or a git repository. They are written via MDX and can be composed like React components.
-- <code>blitz install tailwind</code> <a href="https://tailwindcss.com/">tailwind CSS</a> 工具式 class 风格的 CSS 库
-- <code>blitz install material-ui</code> <a href="https://material-ui.com/">MATERIAL-UI</a> <a href="https://material-ui.com/zh/">中文版</a> Google 推出的 UI 组件库</li>
+
+<ul>
+<li><code>blitz install tailwind</code> <a href="https://tailwindcss.com/">tailwind CSS</a> 工具式 class 风格的 CSS 库</li>
+<li><code>blitz install material-ui</code> <a href="https://material-ui.com/">MATERIAL-UI</a> <a href="https://material-ui.com/zh/">中文版</a> Google 推出的 UI 组件库</li>
+</ul></li>
 <li>New App Development: Set up okay for eslint, prettier, husky git hooks, etc.</li>
 <li>Relaxed Restrictions: You can separate and organize your pages in any way you want. Examples:
-- <code>app/pages/</code> could contain the homepage and pages like &ldquo;about&rdquo;
-- <code>app/products/pages/</code> could contain all the pages related to products
-- <code>app/admin/pages/</code> could contain all pages related to the backend admin section</li>
+
+<ul>
+<li><code>app/pages/</code> could contain the homepage and pages like &ldquo;about&rdquo;</li>
+<li><code>app/products/pages/</code> could contain all the pages related to products</li>
+<li><code>app/admin/pages/</code> could contain all pages related to the backend admin section</li>
+</ul></li>
 <li><a href="https://blog.logrocket.com/building-a-fullstack-react-application-with-blitz-js/">Building a fullstack React application with Blitz.js.</a></li>
 </ol>
+
 <h4 id="基于-blitz-开发的项目">基于 Blitz 开发的项目</h4>
+
 <ul>
 <li><a href="https://github.com/blitz-js/awesome-blitzjs">Awesome Blitz.js</a></li>
 <li><a href="https://quirrel.dev/">Quirrel</a> makes job queues simple as cake.</li>
@@ -163,7 +187,9 @@ JAM(JavaScript, APIs and Markup) stack</p>
 <li><a href="https://github.com/ganeshmani/recipe-app-blitzjs">Recipe App</a> 一个很简单的食谱 App，就三个字段：名称、描述和上传图片。</li>
 <li><a href="https://kalle.app/">Kalle.app</a> 一个会议管理的 App demo，源码： <a href="https://github.com/kalle-app/kalle">Github</a></li>
 </ul>
-<h3 id="redwoodjshttpsredwoodjscom"><a href="https://redwoodjs.com/">RedwoodJS</a></h3>
+
+<h3 id="redwoodjs-https-redwoodjs-com"><a href="https://redwoodjs.com/">RedwoodJS</a></h3>
+
 <ul>
 <li>RedwoodJS Bringing full-stack to the Jamstack. Built on React, GraphQL, and Prisma</li>
 <li>Using Storybook for components display.</li>
@@ -171,66 +197,74 @@ JAM(JavaScript, APIs and Markup) stack</p>
 <li>Login [[#Netlify|tag.Netlify]] by Github account.</li>
 <li><a href="https://blog.logrocket.com/blitz-vs-redwood/">build a full stack application using redwood</a></li>
 </ul>
-<h3 id="blitzjs-vs-redwoodjshttpsbloglogrocketcomblitz-vs-redwood"><a href="https://blog.logrocket.com/blitz-vs-redwood/">Blitz.js vs. RedwoodJS</a></h3>
+
+<h3 id="blitz-js-vs-redwoodjs-https-blog-logrocket-com-blitz-vs-redwood"><a href="https://blog.logrocket.com/blitz-vs-redwood/">Blitz.js vs. RedwoodJS</a></h3>
+
 <ul>
-<li>
-<p>Blitz.js</p>
+<li>Blitz.js
+
 <ul>
 <li>Blitz.js enables you to request the database from the client itself using Prisma.</li>
 <li>For data management on the client side, Blitz uses <a href="https://github.com/tannerlinsley/react-query">React Query</a> under the hood</li>
 <li>Blitz uses Prisma to manage the database connection and schemas.</li>
-</ul>
-</li>
-<li>
-<p>Redwood.js</p>
+</ul></li>
+
+<li><p>Redwood.js</p>
+
 <ul>
 <li>Redwood uses Prisma to connect with the database. Once it fetches the data, it returns to the client.</li>
-<li>Redwood follows the monorepo pattern. To add any library to the client or server side, use the following command.</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">yarn workspace web add react-query
+
+<li><p>Redwood follows the monorepo pattern. To add any library to the client or server side, use the following command.</p>
+
+<pre><code class="language-sh">yarn workspace web add react-query
 yarn workspace api add jsonwebtoken
-</code></pre></div></li>
-<li>
-<p>结论： 作者更倾向于 Blitz.js，因为不限制使用 GraphQL，二者都可以快速开发。</p>
-</li>
+</code></pre></li>
+</ul></li>
+
+<li><p>结论： 作者更倾向于 Blitz.js，因为不限制使用 GraphQL，二者都可以快速开发。</p></li>
 </ul>
-<h3 id="react-frameworks-redwood-vs-blitzhttpswwwindiehackerscompostreact-frameworks-redwood-vs-blitz-1c66190774"><a href="https://www.indiehackers.com/post/react-frameworks-redwood-vs-blitz-1c66190774">React frameworks: Redwood vs Blitz</a></h3>
+
+<h3 id="react-frameworks-redwood-vs-blitz-https-www-indiehackers-com-post-react-frameworks-redwood-vs-blitz-1c66190774"><a href="https://www.indiehackers.com/post/react-frameworks-redwood-vs-blitz-1c66190774">React frameworks: Redwood vs Blitz</a></h3>
+
 <ul>
 <li>Redwood is built on React, GraphQL, and Prisma.</li>
 <li>Blitz is built on top of Next.js (which is built on top of React)</li>
 <li>What I noticed is Redwood using js, <a href="https://redwoodjs.com/docs/typescript.html#web">ts is development</a>, but Blitz using ts.</li>
 </ul>
+
 <h2 id="vue">Vue</h2>
-<h3 id="gridsomehttpsgridsomeorg-a-jamstack-framework-for-vuejs"><a href="https://gridsome.org/">Gridsome</a> A Jamstack framework for Vue.js</h3>
-<h2 id="blitzjs-选择哪个-form-框架呢">Blitz.js 选择哪个 Form 框架呢？</h2>
+
+<h3 id="gridsome-https-gridsome-org-a-jamstack-framework-for-vue-js"><a href="https://gridsome.org/">Gridsome</a> A Jamstack framework for Vue.js</h3>
+
+<h2 id="blitz-js-选择哪个-form-框架呢">Blitz.js 选择哪个 Form 框架呢？</h2>
+
 <ul>
 <li><a href="https://final-form.org/react">React Final Form</a> (which released two years ago. 2019-10-30) gzipped 3.3kB + 5.4kB (Final Form)
+
 <ul>
-<li><a href="https://final-form.org/">Final Form</a>  gzipped 5.4kB
-<ul>
+<li><a href="https://final-form.org/">Final Form</a>  gzipped 5.4kB</li>
 <li>作者原来维护 <a href="https://redux-form.com/">Redux Form</a>，改正了很多错误。 (which released four years ago. 2019-10-30) gzipped 22.5kB</li>
 <li>是通用的，不信赖任何框架的，因为之后出了 Hooks，所以独立出了 React Final Form。</li>
-</ul>
-</li>
 <li><a href="https://github.com/final-form/react-final-form-html5-validation">React Final Form HTML5 Validation</a> 针对H5的 Form 检验功能</li>
-</ul>
-</li>
+</ul></li>
 <li><a href="https://formik.org/">Formik</a> Build forms in React, without the tears. gzipped 12.7kB.</li>
 <li><a href="https://react-hook-form.com/">React Hook Form</a> (which released seven months ago. 2019-10-30) 仅是 Formik 一半大小</li>
 <li><a href="https://blog.logrocket.com/react-hook-form-vs-formik-a-technical-and-performance-comparison/">React Hook Form vs. Formik: A technical and performance comparison</a>  2019-10-30
+
 <ul>
 <li>Conclution: <strong>React Hook Form win!</strong></li>
-</ul>
-</li>
+</ul></li>
 <li><a href="https://blog.jslancer.com/blog/2020/07/21/a-comparison-of-formik-final-form-and-react-hoo-form/">A comparison of formik, final-form and react-hook-form</a>
+
 <ul>
 <li>Conclution: <strong>React Hook Form win!</strong></li>
-</ul>
-</li>
+</ul></li>
 <li><a href="https://dev.to/doaashafik/formik-vs-react-hook-form-aei">Formik VS React Hook Form Part I</a></li>
 <li><a href="https://dev.to/doaashafik/formik-vs-react-hook-form-cases-part-ii-3ofj">Formik vs React-hook-form Cases Part II</a></li>
 </ul>
+
 <h3 id="结论">结论：</h3>
+
 <ul>
 <li>Formik 不用考虑了，上面有些比较的文章已经说明不如 React Hook Form</li>
 <li>Final Form 国内访问不到</li>
@@ -314,6 +348,10 @@ yarn workspace api add jsonwebtoken
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -349,10 +387,6 @@ yarn workspace api add jsonwebtoken
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -366,13 +400,13 @@ yarn workspace api add jsonwebtoken
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -396,6 +430,10 @@ yarn workspace api add jsonwebtoken
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -426,6 +464,8 @@ yarn workspace api add jsonwebtoken
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -519,7 +559,7 @@ yarn workspace api add jsonwebtoken
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -635,7 +675,7 @@ yarn workspace api add jsonwebtoken
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -657,11 +697,15 @@ yarn workspace api add jsonwebtoken
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     

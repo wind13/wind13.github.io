@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>julia on 世风十三学堂</title>
+    <title>Julia on 世风十三学堂</title>
     <link>https://wind13.github.io/tags/julia/</link>
-    <description>Recent content in julia on 世风十三学堂</description>
+    <description>Recent content in Julia on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 04 Oct 2019 01:32:49 +0000</lastBuildDate>
@@ -26,7 +26,7 @@
       <pubDate>Thu, 03 Oct 2019 10:09:37 +0800</pubDate>
       
       <guid>https://wind13.github.io/post/2019/julia-learning/</guid>
-      <description>Julia Learning Julia Install Brew brew cask install julia Normal Download and install it as julia.app Add it into your profile, for me it is .zshrc file: # Julia # /Applications/Julia-1.2.app/Contents/Resources/julia/bin/ export PATH=&amp;#34;/Applications/Julia-1.2.app/Contents/Resources/julia/bin/:$PATH&amp;#34;</description>
+      <description>Julia Learning Julia Install Brew brew cask install julia Normal Download and install it as julia.app Add it into your profile, for me it is .zshrc file: # Julia # /Applications/Julia-1.2.app/Contents/Resources/julia/bin/ export PATH=&amp;quot;/Applications/Julia-1.2.app/Contents/Resources/julia/bin/:$PATH&amp;quot;</description>
     </item>
     
   </channel>

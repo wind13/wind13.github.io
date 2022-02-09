@@ -105,24 +105,34 @@
         
         
         <div class="post-content">
-            <h2 id="各家官网">各家官网</h2>
+            
+
+<h2 id="各家官网">各家官网</h2>
+
 <ul>
 <li><a href="https://grpc.io">gRPC</a></li>
 <li><a href="http://dubbo.apache.org/zh-cn/">Apache Dubbo™</a> 是一款高性能Java RPC框架。</li>
 <li><a href="https://www.sofastack.tech/projects/sofa-rpc/overview/">SOFARPC 介绍</a></li>
 </ul>
+
 <h2 id="相关资料">相关资料</h2>
+
 <h3 id="重点资料">重点资料</h3>
+
 <ul>
 <li><a href="https://zhuanlan.zhihu.com/p/59516670">RPC 协议之争和选型要点</a></li>
 </ul>
+
 <blockquote>
 <p>对于 RPC 框架，在架构上能够支持多语言非常重要。不同的业务场景，适合不同的语言，例如后端复杂业务逻辑使用 Java 开发效率更高，对于 API 网关或者边缘服务，适合 GO 语言。对于一些序列化框架，由于使用了一些特定语言的特性，例如 Exception、泛型等，这对于跨语言演进是个灾难，像 protostuff 就绑定了 Java 语言。</p>
 </blockquote>
+
 <ul>
 <li><a href="https://my.oschina.net/u/2359792/blog/1836013">grpc typescript 实例</a> 这个实现漂亮！</li>
 </ul>
+
 <h3 id="参考资料">参考资料</h3>
+
 <ul>
 <li><a href="https://blog.csdn.net/chenguolinblog/article/details/90607551">【基础】RPC、JSON-RPC和HTTP区别</a></li>
 <li><a href="https://www.cnblogs.com/linkstar/p/10895791.html">谈谈RPC——golang中jsonrpc和grpc的使用</a></li>
@@ -131,58 +141,63 @@
 <li><a href="https://www.jianshu.com/p/32b2cd64f833">RPC选型</a></li>
 <li><a href="https://thoughtworksinc.github.io/microbuilder/1-overview.html">Microbuilder</a> is a toolkit that helps you build system across micro-services implemented in various languages communicating via RESTful JSON API.</li>
 </ul>
+
 <blockquote>
 <p>RPC 更像是熟人之间的对话，HTTP 更多的陌生人之间的约定。</p>
-</blockquote>
-<blockquote>
+
 <p>其实rpc没有我们想的很复杂，它与http的使用上面差别也不是很大，但是从服务的角度来说，确实rpc更多适用于内部服务的调用，这样服务的调用会非常方便，就像在使用本地服务一样。同时我们也对比了jsonrpc和grpc从实现的角度上面来说jsonrpc实现起来更加方便一些，不过grpc从性能和使用的角度来说更加稳健一些。</p>
 </blockquote>
+
 <h2 id="关于-rpc-和-restful-的比较">关于 RPC 和 RESTful 的比较</h2>
+
 <ul>
 <li><a href="https://www.zhihu.com/question/28570307">WEB开发中，使用JSON-RPC好，还是RESTful API好？</a></li>
 </ul>
+
 <blockquote>
 <p>RESTful API在很多实际项目中并不实用。因此真的做了项目，你可能会发现只能用HTTP+JSON来定义接口，无法严格遵守REST风格。一些业务逻辑或者动作，很难被看作资源。</p>
-</blockquote>
-<blockquote>
+
 <p>所以不是RESTful不好（实际上『真·REST』有许多巨大的优点是RPC无法企及的），而是绝大多数程序员根本掌握不了。那么与其写一个半吊子的伪RESTful API，同志们还是老老实实写RPC API吧。</p>
-</blockquote>
-<blockquote>
+
 <p>简而言之，JSON-RPC无法像REST一样享受HTTP的各种优点(standard interface, stateless, cache..)，又必须承担HTTP作为基于文本的协议，payload过大传输的成本以及序列化反序列化的开销。</p>
-</blockquote>
-<blockquote>
+
 <p>抛开技术，从应用层面来说大概前端工程师会更喜欢RESTful，而后端工程师会更喜欢JSON-RPC。</p>
-</blockquote>
-<blockquote>
+
 <p>RPC更偏向内部调用，REST更偏向外部调用。</p>
 </blockquote>
+
 <h2 id="主流-rpc-框架">主流 RPC 框架</h2>
+
 <ul>
-<li>grpc —— <a href="https://grpc.io">https://grpc.io</a>， 这个是国外比较流行的，有 google 背书，支持多语言，听说使用的公司也比较多，看上去是比较成熟的框架。
+<li>grpc —— <a href="https://grpc.io，">https://grpc.io，</a> 这个是国外比较流行的，有 google 背书，支持多语言，听说使用的公司也比较多，看上去是比较成熟的框架。
+
 <ul>
 <li>grpc的扩展性，多语言可支持的特点，导致选型方面的优势是无可替代的。</li>
-</ul>
-</li>
+</ul></li>
 <li>Thrift 是一个轻量级、跨语言的开源RPC框架，并且能够根据 *.thrift 文件自动生成联合代码。</li>
 <li>sofa —— <a href="https://tech.antfin.com/sofa">https://tech.antfin.com/sofa</a> 这个是国内阿里开源的，目前阿里开源的 Eggjs 框架也开源了基于 sofa 的最佳实践。</li>
 <li>DUBBO —— 阿里开源的 java RPC 框架</li>
 <li><a href="https://gitee.com/zycgit/hasor">Hasor</a>是一套基于 Java 语言的开发框架，区别于其它框架的是 Hasor 有着自己一套完整的体系，同时还可以和先有技术体系做到完美融合。它包含：IoC/Aop容器框架、Web框架、Jdbc框架、RSF分布式RPC框架、DataQL引擎，等几块。
+
 <ul>
 <li><a href="https://gitee.com/zycgit/hasor/blob/master/hasor-rsf/README.md">分布式 RPC 服务框架</a></li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <h3 id="参考资料-1">参考资料</h3>
+
 <ul>
 <li><a href="https://blog.csdn.net/qicosmos/article/details/52386920">什么样的RPC才是好用的RPC</a> 国内各个 RPC 框架比较。</li>
 <li><a href="https://www.bbsmax.com/A/8Bz88lVOzx/">RSF 分布式 RPC 服务框架的分层设计</a> 基于 Hasor 构建</li>
 <li><a href="http://www.zerorpc.io/">zerorpc</a> An easy to use, intuitive（直觉的）, and cross-language RPC
+
 <ul>
 <li><a href="https://github.com/0rpc/zerorpc-node">zerorpc-node</a></li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <h2 id="nodejs-生态中的-rpc">Nodejs 生态中的 RPC</h2>
+
 <ul>
 <li><a href="https://segmentfault.com/a/1190000005102984">一个浏览器和NodeJS通用的RPC框架</a></li>
 <li><a href="https://cnodejs.org/topic/5cf349f91fe902120f31b47a">Node.js与RPC 的实践方案-Eggjs使用sofa-rpc-node模块</a></li>
@@ -267,6 +282,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -302,10 +321,6 @@
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -319,13 +334,13 @@
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -349,6 +364,10 @@
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -379,6 +398,8 @@
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -472,7 +493,7 @@
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -588,7 +609,7 @@
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -610,11 +631,15 @@
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     

@@ -103,20 +103,30 @@
         
         
         <div class="post-content">
-            <h2 id="概述">概述</h2>
+            
+
+<h2 id="概述">概述</h2>
+
 <p>PowerMill 是一款大型数控加工软件，其中有二次开发和宏的功能，初步浏览了一下官方帮助文档，感觉总体来说是比较简单的，主要是用编程知识中的函数方法、循环和判断逻辑等基础知识，重点要结合业务需求来实际应用即可。</p>
+
 <!-- 软件下载：https://pan.baidu.com/s/1jnzZfToVzaclwTrXh2aeIQ 提取码：2770 大小：3.6G -->
+
 <h2 id="示例代码解读">示例代码解读</h2>
+
 <h3 id="简单的循环">简单的循环</h3>
-<pre><code class="language-mac" data-lang="mac">FOREACH Bottles IN {10,9,8,7,6,5,4,3,2,1}
-</code></pre><blockquote>
-<p>直译：每个 Bottles 在 10~1 这段数字中</p>
-</blockquote>
+
+<pre><code class="language-mac">FOREACH Bottles IN {10,9,8,7,6,5,4,3,2,1}
+</code></pre>
+
 <blockquote>
+<p>直译：每个 Bottles 在 10~1 这段数字中</p>
+
 <p>意译：把 10~1 这些数字循环，用 Bottles 这个变量代表每一项，执行如下操作：</p>
 </blockquote>
+
 <h3 id="简单的修改文件夹文件">简单的修改文件夹文件</h3>
-<pre><code class="language-mac" data-lang="mac">DIALOGS MESSAGE OFF
+
+<pre><code class="language-mac">DIALOGS MESSAGE OFF
 DIALOGS ERROR OFF
 STRING a= &quot;请输入主轴转速：&quot;
 int q= &quot;3000&quot;
@@ -126,32 +136,34 @@ FOREACH c IN folder('TOOLPATH') {
 }
 DIALOGS MESSAGE ON
 DIALOGS ERROR ON
-</code></pre><pre><code class="language-mac" data-lang="mac">FOREACH c IN folder('TOOLPATH') {
+</code></pre>
+
+<pre><code class="language-mac">FOREACH c IN folder('TOOLPATH') {
   EDIT PAR &quot;entity('toolpath',$c.name).SpindleSpeed.Value&quot; $q
 }
-</code></pre><blockquote>
-<p>直译： 每个 c 在 文件夹 &lsquo;TOOLPATH&rsquo; 中</p>
-</blockquote>
+</code></pre>
+
 <blockquote>
+<p>直译： 每个 c 在 文件夹 &lsquo;TOOLPATH&rsquo; 中</p>
+
 <p>意译：</p>
 </blockquote>
-<pre><code class="language-mac" data-lang="mac">在文件夹 'TOOLPATH' 中循环，每一项用 c 这个变量代表， 执行如下操作 {
+
+<pre><code class="language-mac">在文件夹 'TOOLPATH' 中循环，每一项用 c 这个变量代表， 执行如下操作 {
    编辑 PAR &quot;entity('toolpath', $c.name) 的 SpindleSpeed 的 Value 值 变为 $q 
   // 这里 $c.name 就是目录中每一项，通常是文件，文件的名称 name
 }
-</code></pre><blockquote>
-<p>&ldquo;.&rdquo; 可以理解为 “的”</p>
-</blockquote>
+</code></pre>
+
 <blockquote>
+<p>&rdquo;.&rdquo; 可以理解为 “的”</p>
+
 <p>文件夹中的每一项，其实就是文件， c, $c 就是文件，定义时不用加 $，使用时要加 $</p>
-</blockquote>
-<blockquote>
+
 <p>entity 应该是个方法，转换某个文件中的 &lsquo;toolpath&rsquo; 节点为一个实例/实体 ，应该就是机器直接能运行的东西。</p>
-</blockquote>
-<blockquote>
+
 <p>EDIT 是编辑的意思 ， PAR 不太清楚，有点象“参数”的意思 。</p>
-</blockquote>
-<blockquote>
+
 <p>SpindleSpeed 应该就是刀头转速的具体节点位置。</p>
 </blockquote>
 
@@ -230,6 +242,10 @@ DIALOGS ERROR ON
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -265,10 +281,6 @@ DIALOGS ERROR ON
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -282,13 +294,13 @@ DIALOGS ERROR ON
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -312,6 +324,10 @@ DIALOGS ERROR ON
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -342,6 +358,8 @@ DIALOGS ERROR ON
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -435,7 +453,7 @@ DIALOGS ERROR ON
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -551,7 +569,7 @@ DIALOGS ERROR ON
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -573,11 +591,15 @@ DIALOGS ERROR ON
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     

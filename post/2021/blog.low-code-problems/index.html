@@ -103,24 +103,40 @@
         
         
         <div class="post-content">
-            <h1 id="低代码开发的问题">低代码开发的问题</h1>
+            
+
+<h1 id="低代码开发的问题">低代码开发的问题</h1>
+
 <p>低代码/无代码开发如今也成为了一个热门话题，而我自己也深入到一个 Power Platform 的项目实践中，有了一些体会了，也分享一些自己的想法，供大家参考。</p>
+
 <h2 id="低代码开发会很快吗">低代码开发会很快吗？</h2>
+
 <p>第一印象确实如此，我使用的是微软的 Power Platform，整个过程就象是早些年使用 Access 数据库一样（我认为 Power Apps 就是基于当年的 Access 开发的，把 Access 搬上了云就成了现在的 Power Apps 了。），建了一个数据表，设计好字段，维护数据的界面（Model-driven App）就已经有了，填上些数据，然后再一些简单的操作，在 Canvas App 上面摆好控件，连接上数据，相应的功能也就出来了，而且很快就能发布到手机、平板或电脑上测试和使用了。</p>
+
 <p>市面上还有一些其他的解决方案，都没有深入使用，不做评论，相信各有特色，如果是基于代码开发，只是增加了程序员的便利性这类的，应该还好，毕竟必要时还可以用代码来进行后续的开发，但如果象微软这样，完全封闭的开发的模式，对于长期战略性的项目可就不乐观了。</p>
+
 <p>总体的感觉就是，类似 Power Platform 这样的低代码或无代码开发，只适合做一些短生命周期（几个月）、小场景应用（公司内、部门内）、简单业务逻辑（局部、单一需求）、不多于三人（再多就容易混乱和失控）协同开发的原型或演示性项目，仅用于个人或少数人群解决一个具体而简单的临时性问题比较适合。 对于公司长期战略性的业务或产品，最好不要采用，因为迟早都会面临不得不推翻重做的境地。</p>
-<h2 id="为什么会被称为行业毒瘤">为什么会被称为“行业毒瘤”？</h2>
+
+<h2 id="为什么会被称为-行业毒瘤">为什么会被称为“行业毒瘤”？</h2>
+
 <p>详见此文<a href="https://mp.weixin.qq.com/s/nux9xJko6N1tLTK23-ZbzA">《“行业毒瘤”低代码》</a></p>
+
 <p>文中徐昊认为以降低程序员门槛为目的的低代码是行业毒瘤。主要原因有以下三点：</p>
+
 <ul>
 <li>第一，低代码平台预设的使用人群永远是初级、入门的人</li>
 <li>第二，低代码平台暗藏巨大的变革成本</li>
 <li>第三，风口不代表长期发展，低代码其实是个伪需求</li>
 </ul>
+
 <p>我个人是有同感的，真正专业的开发人员的价值常常是被低估的，虽然市面上有所谓10陪效程序员、百倍效程序员的说法，但现实中却通常并没有这样的“待遇”，行业内外其实也没有很好的评估方法，软件开发人员的水平参差不齐，鱼龙混杂，再加上软件知识本身的复杂和广博，让软件从业人员很难用一套什么样的标准来简单衡量。</p>
+
 <p>然而真正专业和高效的软件开发人员，确实可以让公司的开发走上正轨，少走弯路，累积价值，短期也许看不出很大的差异，甚至感觉有些慢、有些麻烦，但长期下来，必然会有巨大的不同，产出真正易于扩展、易于维护可不断适应市场需求变化的产品和服务，同时也会积累一批高素质的开发人员，一支技术过硬的开发团队，从而给公司带来真正长期的核心竞争力。</p>
+
 <p>下面以 Power Platform 为例，具体说一下其中包含的问题。</p>
+
 <h2 id="微软的-power-platform-实际使用中有哪些问题">微软的 Power Platform 实际使用中有哪些问题？</h2>
+
 <ul>
 <li>整个开发环境都在网页上，极大地依赖网速和浏览器加载效率。</li>
 <li>所有微软网页界面上的 bug 都将会是开发过程中的障碍。</li>
@@ -138,10 +154,15 @@
 <li>没有单元测试、自动化测试等工程化开发实践，虽然有一个预览版的测试功能，但基本不可用于项目实战。</li>
 <li>简单易用的界面，让新手开发人员习惯于短平快的开发模式，不愿意或不习惯深入的思考，从而导致软件的整个开发和构建缺乏设计思想，只是功能简单地堆砌，无法方便地修改和维护，很多时候会因为设计的缺陷导致无法进一步深入开发或调整的成本大到难以接受。</li>
 </ul>
+
 <h2 id="引深的一些思考">引深的一些思考</h2>
+
 <p>实际项目中，由于采用低代码开发的人员，通常编程素养并不深厚，很多甚至只是业务人员，使用低代码平台时依旧延用 Excel 的建表思维，一张大表包含想要的所有字段，造成大量的冗余和重复，界面以及逻辑等也是代码的直接堆叠，较少考虑重用性和扩展性等，大量的 Hard code，大量啰嗦的 if else 判断语句，任意多层嵌套的 for 循环等，很多逻辑写到后期连开发者自己也搞不清楚具体的逻辑走向了。</p>
+
 <p>所以，即使是使用低代码平台做开发，你也会发现，代码编程素养深厚的开发人员会使用得更加专业和顺畅，然而这些人员肯定是更热爱代码编程的开放性和灵活性的，对于代码开发的大量工程实践也都非常熟悉，所有开发过程中可能遇到的问题也都已经有相应的解决思路和方案。</p>
+
 <p>再说一些反面的示例，就拿写文档来说，新手小白会用什么写文档？自然是 Office 中的 Word 啦，这正好就象是低代码平台的概念，直观的界面，简单的操作，把入门门槛降到最低，大量的市场宣传和垄断效应，让大量用户先入为主，之后导致因为大量人使用，很多人也不得不勉为其难地使用，因为别人给你发来的文档是 Word 格式的啊！ Word 文档自然有各式各样的问题，比如：</p>
+
 <ul>
 <li>不同的软件版本无法或不能正常打开不同版本保存的文档</li>
 <li>格式封闭，无法利用其他工具处理</li>
@@ -151,36 +172,52 @@
 <li>不方便进行文档版本管理</li>
 <li>复杂文档将图片、表格、视频、甚至宏一起混杂其中，文件巨大，打开维护困难甚至崩溃损坏。</li>
 </ul>
+
 <p>然而专业人士都用哪些工具来写文档呢？ 初级的使用 Evernote 等云平台，中高级的都会使用各式各样的 Markdown 文档创作工具，最终都回归到事物的本质，文字内容和格式样式的分离，一点点的学习成本，带来的长期收益却是无穷的。 当然更专业的 Latax 可以作为撰写论文、出版书籍的专业排版系统，功能强大而稳定就更不用说了。 Markdown 在这中间完美平衡了这些，已经被广泛接受和使用，更多请参见：<a href="/post/2019/power-of-plain-text/">纯文本的威力</a> 。</p>
+
 <p>说到这里，我必须提及另一个技术： Git，行内人士肯定都知道，这现在几乎是专业开发人员的命，也许真的不过份，网上和现实中应该可以找到大量这样的实例，如：</p>
+
 <ul>
 <li><a href="https://www.cnblogs.com/wiggin-Z/p/13637150.html">感谢visual studio(git插件)救我一命</a></li>
 <li><a href="https://www.cnblogs.com/techflow/p/13962540.html">操作失误不要慌，这个命令给你的Git一次反悔的机会</a></li>
 </ul>
+
 <p>我自己当然也有过多次体会，所以才会这么夸张地说。 Git 技术也是这样的，第一印象会觉得好麻烦，特别是对于新人小白，会觉得要记那么多命令才能使用，然而 Git 功能的强大，开放和灵活则是行内人士所共同认可的，底层扎实了，操作界面的问题就好解决了，于是乎就有了 SourceTree，TortoiseGit 等 GUI 的工具，还有 LazyGit 这样的快捷命令和终端界面等来简化命令操作等，如今 VSCode， IDEA Intellij 等开发工具也都深度集成了 Git 和各类 Git 插件等。</p>
+
 <p>以上这两个示例是想揭示，低代码、无代码开发模式与代码开发模式，就好像：</p>
+
 <ul>
 <li>微软的 Office Word 软件和 Markdown 的比较一样</li>
 <li>微软早期的 VSS (Visual Source Safe) 和 Git 的比较一样</li>
 </ul>
+
 <p>尽量前者上手容易，界面友好，但它们远离了事物的本质，对于新手小白做一些临时的事务很有帮助，但长远来看，如果要做一些专业的产品或服务，还是要选择开放的、灵活的、无依赖的、功能专一而强大的解决方案才是上策。</p>
+
 <p>低代码平台开发的软件最终将随着时间的推移，越来越难以适应业务的变化，越来越难以实现新的需求，旧的功能也难以维护和优化，软件应用逐渐走向凋亡，之后不得已还得再找专业人员来解决问题、修改维护或者重写一套新的软件系统。</p>
+
 <p>回到敏捷软件宣言第一句：</p>
+
 <blockquote>
 <p><strong>个体和互动</strong> 高于 流程和工具</p>
 </blockquote>
+
 <p>和第三句：</p>
+
 <blockquote>
 <p><strong>客户合作</strong> 高于 合同谈判</p>
 </blockquote>
+
 <p>我在想：是不是因为客户、业务人员和开发人员不能很顺畅和深入地沟通，从而导致了低代码开发平台的盛行？</p>
+
 <p>这里可能会引出一些更深层次的问题：</p>
+
 <ul>
 <li>组织架构中有哪些设计特点从根本上阻碍了敏捷软件开发的落地？</li>
 <li>怎么就逼得业务人员想要亲自上手用低代码平台做开发了？</li>
 <li>怎么就逼得IT领导选择低代码平台而放弃了原来成熟的代码开发了？</li>
 <li>怎么就让新手小白、业务部门和IT领导都觉得低代码开发更方便快捷，而代码开发缓慢、复杂和艰难呢？</li>
 </ul>
+
 <p>也许这些问题可以在极限编程合作社共同翻译的《敏捷组织设计》中找到启发吧？:) 敬请期待……</p>
 
         </div>
@@ -256,6 +293,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -291,10 +332,6 @@
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -308,13 +345,13 @@
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -338,6 +375,10 @@
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -368,6 +409,8 @@
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -461,7 +504,7 @@
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -577,7 +620,7 @@
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -599,11 +642,15 @@
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     

@@ -103,119 +103,130 @@
         
         
         <div class="post-content">
-            <h1 id="前端工程化学习笔记">前端工程化学习笔记</h1>
+            
+
+<h1 id="前端工程化学习笔记">前端工程化学习笔记</h1>
+
 <blockquote>
 <p>拉勾教育《前端工程化精讲》课程</p>
 </blockquote>
-<p><img src="/images/lagou-front-end-engineer.jpg" alt="课程二维码"></p>
+
+<p><img src="/images/lagou-front-end-engineer.jpg" alt="课程二维码" /></p>
+
 <h2 id="开发效率">开发效率</h2>
+
 <ul>
 <li>脚手架（Scaffold）工具
+
 <ul>
-<li>快速生成
-<ul>
+<li>快速生成</li>
 <li>基础代码和目录</li>
 <li>package.json, *.lock 文件</li>
 <li>项目技术栈</li>
 <li>webpack 配置文件</li>
 <li>检查工具、单元测试工具</li>
-</ul>
-</li>
 <li>最佳实践</li>
 <li>自定义模板</li>
-</ul>
-</li>
+</ul></li>
 <li>云开发</li>
 <li>无代码工具</li>
 </ul>
+
 <h3 id="脚手架工具">脚手架工具</h3>
+
 <ul>
 <li>Yeoman 通用的，用于一些开发流程里特定片段代码的生成</li>
 <li>Create-React-App(CRA)
+
 <ul>
 <li>react-rewired</li>
 <li>customize-cra</li>
 <li>react-scripts 开发流程集成工具</li>
-</ul>
-</li>
+</ul></li>
 <li>Vue CLI 有交互定制化选项
+
 <ul>
 <li>@vue/cli 全局命令</li>
 <li>@vue/cli-service 项目内集成工具</li>
 <li>@vue/cli-plugin- 功能插件系统</li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <h3 id="webpack">webpack</h3>
+
 <ul>
 <li>loaders
+
 <ul>
 <li>bable-loader</li>
-</ul>
-</li>
+</ul></li>
 <li>plugins</li>
 <li>optimize
+
 <ul>
 <li>TerserPlugin 压缩 js</li>
 <li>splitChunks 自动分包</li>
-</ul>
-</li>
+</ul></li>
 <li>resolve
+
 <ul>
 <li>PnpWebpackPlugin 加速使用 Yarn 模块安装和解析</li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <h3 id="定制化脚手架模板">定制化脚手架模板</h3>
+
 <ul>
 <li>团队内部定制，统一风格，减少重复事务</li>
 <li>Yeoman 生成器（Generator）
+
 <ul>
-<li>writing()
-<ul>
+<li>writing()</li>
 <li>copyTpl()</li>
-</ul>
-</li>
 <li>install()</li>
-</ul>
-</li>
+</ul></li>
 <li>CRA 自定义模板
+
 <ul>
 <li>README.md</li>
 <li>package.json</li>
 <li>template.json</li>
-<li>template 目录
-<ul>
+<li>template 目录</li>
 <li>public/index.html</li>
 <li>src/index.js</li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
 <li>Vue CLI
+
 <ul>
 <li>meta.js/json</li>
 <li><code>vue init [template-name] [app-name]</code></li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <h3 id="浏览器的热更新">浏览器的热更新</h3>
+
 <ul>
 <li>webpack-dev-server</li>
 </ul>
+
 <p>类似的技术：</p>
+
 <ul>
 <li>Auto Compile 自动编译</li>
 <li>Live Reload 自动刷新</li>
 <li>HMR(Hot Module Replacement) 模块热替换</li>
 </ul>
+
 <h4 id="webpack-配置">webpack 配置</h4>
+
 <ul>
 <li>watch 自动编译： <code>npm run build:watch</code></li>
 <li>reload 自动刷新： <code>npm run dev:reload</code>， /sockjs-node websocket 连接，刷新后一些操作或数据会消失。</li>
 <li>hmr 模块热替换：<code>npm run dev:hmr</code>， <code>hot:true</code> ，新增 <code>style-loader</code> 和 <code>css-loader</code></li>
 </ul>
+
 <h4 id="webpack-术语">webpack 术语</h4>
+
 <ul>
 <li>module 代码模块</li>
 <li>chunk 包含多个 module</li>
@@ -223,91 +234,114 @@
 <li>bundling</li>
 <li>asset/bundle</li>
 </ul>
+
 <h2 id="构建效率">构建效率</h2>
+
 <h3 id="打包提效">打包提效</h3>
+
 <ul>
 <li>提升当前环节任务的工作效率</li>
 <li>提升优化效果，减少传递给下一环节任务的数据量，从而提升后续环节的工作效率</li>
 </ul>
+
 <h3 id="面向-js-的压缩工具">面向 js 的压缩工具</h3>
+
 <ul>
 <li><a href="https://terser.org/">Terser</a>整体上比UglifyJS好些</li>
 <li>Webpack 4 中内置了 TerserWebpackPlugin</li>
 </ul>
+
 <h3 id="面向-css-的压缩工具">面向 css 的压缩工具</h3>
+
 <ul>
 <li>CSSMinimizerWebpackPlugin 支持缓存和多进程</li>
 <li>三个插件都默认基于 <a href="https://cssnano.co/">cssnano</a></li>
 <li>设置为 <code>chunks:'all'</code> 可以将所有信赖都进行分包处理，从而减少了重复引入相同模块代码的情况。</li>
 </ul>
+
 <h3 id="tree-shaking">Tree Shaking</h3>
+
 <ul>
 <li>使用 ES6 类型的模块才能进行 Tree Shaking， commonjs 不支持。</li>
 <li>以 default 方式引入的模块，无法被 Tree Shaking，这也是为什么说不要用 <code>export default</code> 的原因之一。</li>
 <li>只有 sideEffects 为 false 的信赖包（或不在 sideEffects 对应数组中的文件），才可以被 Tree Shaking
+
 <ul>
 <li>如 lodash 替换为 <code>lodash-es</code>，就可以 Tree Shaking，因为 <code>lodash-es</code> 的 package.json 中描述： <code>sideEffects: false</code></li>
-</ul>
-</li>
+</ul></li>
 <li>在 Babel 7 之前 modules 默认为 <code>commonjs</code>，不能被 Tree Shaking，而在 Babel 7以后， <code>＠babel/preset-env</code> 中默认为 <code>auto</code>，则可以使 ES6 的模块被 Tree Shaking</li>
 </ul>
+
 <h3 id="缓存优化">缓存优化</h3>
+
 <ul>
 <li>Webpack4 内置压缩插件 TerserWebpackPlugin，默认开启了缓存参数。</li>
 <li>Babel-loader
+
 <ul>
 <li>cacheDirectory: 默认为 false，改为 true 则默认目录，改为目录时，则为指定目录。</li>
 <li>cacheIdentifier: 计算缓存标识符，决定缓存是否被命中。</li>
 <li>cacheCompression: 默认为 true</li>
-</ul>
-</li>
+</ul></li>
 <li>Cache-loader 存储的 Buffer 形式的数据处理效率更高</li>
 <li>尽可能将不变的处理成本高的模块打入单独 Chunk，以便利用缓存。</li>
 <li>使用 splitChunks 优化缓存利用率</li>
 <li>注意在 CI/CD 中，要将缓存设置到公共缓存目录下保留，以免清除了缓存，反而低效。</li>
 </ul>
-<h3 id="增量构建只编译打包所改动的文件">增量构建：只编译打包所改动的文件</h3>
+
+<h3 id="增量构建-只编译打包所改动的文件">增量构建：只编译打包所改动的文件</h3>
+
 <ul>
 <li>增量构建效果：watch 配置为 true，且 cache 配置为 true 就可以实现增量效果。</li>
 <li>Webpack 4 中， 一般情况下 cache 默认为 false，而在开发模式开启 watch配置时， cache 默认为 true</li>
 <li>基于内存的缓存数据无法运用到生产环境中。</li>
 <li>Webpack 5 中支持基于文件系统的持久化缓存。</li>
 </ul>
+
 <h3 id="webpack5-的优化细节">Webpack5 的优化细节</h3>
+
 <ul>
-<li>Persistent Caching 持久化缓存</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">cache</span><span style="color:#f92672">:</span> {
-  <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;filesystem&#39;</span>,
-  <span style="color:#a6e22e">cacheDirectory</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;...&#39;</span>,
-  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;...&#39;</span>, <span style="color:#75715e">// name 可以保留之前的多套缓存，切换时缓存失效，恢复时则再次使用之前的缓存。
-</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">cacheLocation</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">path</span>.<span style="color:#a6e22e">resolve</span>(), <span style="color:#75715e">//覆盖 cacheDirectory 和 name
-</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">buildDependencies</span><span style="color:#f92672">:</span> {<span style="color:#a6e22e">defaultWebpack</span><span style="color:#f92672">:</span> []}, <span style="color:#75715e">// 当信赖项变化时，构建缓存失效。
-</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">version</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">NODE_ENV</span>, <span style="color:#75715e">// 不同环境切换时，缓存失效。
-</span><span style="color:#75715e"></span>}
-</code></pre></div><ul>
+<li><p>Persistent Caching 持久化缓存</p>
+
+<pre><code class="language-js">cache: {
+type: 'filesystem',
+cacheDirectory: '...',
+name: '...', // name 可以保留之前的多套缓存，切换时缓存失效，恢复时则再次使用之前的缓存。
+cacheLocation: path.resolve(), //覆盖 cacheDirectory 和 name
+buildDependencies: {defaultWebpack: []}, // 当信赖项变化时，构建缓存失效。
+version: process.env.NODE_ENV, // 不同环境切换时，缓存失效。
+}
+</code></pre>
+
+<ul>
 <li>Webpack 5 会忽略插件的缓存设置，由引擎自身提供构建各环节的缓存读写逻辑。</li>
-<li>Tree Shaking
+</ul></li>
+
+<li><p>Tree Shaking</p>
+
 <ul>
 <li>增加了对嵌套模块的导出跟踪功能，能够找到内层未使用的模块属性。</li>
 <li>optimization.innerGraph 生产环境默认开启。</li>
 <li>支持了一些 CommonJS 风格模块代码的静态分析功能。</li>
-</ul>
-</li>
-<li>Logs 增加了许多内部处理过程日志
+</ul></li>
+
+<li><p>Logs 增加了许多内部处理过程日志</p>
+
 <ul>
 <li>stats: {logging: &ldquo;verbose&rdquo;}</li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <blockquote>
 <p>Webpack 5 稳定版本，于 2020年10月10日发布。</p>
 </blockquote>
-<h3 id="无包构建不打包的构建">无包构建（不打包的构建）</h3>
+
+<h3 id="无包构建-不打包的构建">无包构建（不打包的构建）</h3>
+
 <ul>
 <li>在构建时只需处理模块的编译而无须打包，把模块间的依赖关系完全交给浏览器来处理。</li>
 <li>这种通过浏览器原生的模块进行解析的方式称： Native-ESM (Native ES Module)</li>
-<li>支持 ES Module 的现代浏览器，会忽略 type=&quot;nomodule&rdquo; 属性的 script，这通常用于旧浏览器的降级方案。</li>
+<li>支持 ES Module 的现代浏览器，会忽略 type=&ldquo;nomodule&rdquo; 属性的 script，这通常用于旧浏览器的降级方案。</li>
 <li>带有 <code>type=&quot;module&quot;</code>属性的 script 在浏览器中通过 defer 的方式异步执行（异步下载，不阻塞 HTML，顺次执行）</li>
 <li>带有 <code>type=&quot;module&quot;</code>属性且带有 <code>async</code> 属性的 script，在浏览器中通过 async 的方式异步执行，按下载完成顺序执行。</li>
 <li>即使多次加载相同模块，也只会执行一次。</li>
@@ -315,18 +349,24 @@
 <li>模块内信赖的引用，只支持相对路径和 URL 方式，不支持直接包名开头的方式。</li>
 <li>模块内信赖的引用，只支持MIME Type 为 <code>text/javascript</code> 方式的模块，不支持其他如 CSS 类型文件的加载。</li>
 </ul>
+
 <p>无包构建的优点：</p>
+
 <ul>
 <li>构建速度快，尤其是初次构建速度快很多。</li>
 <li>按需编译，根据入口模块分析加载所需模块，编译过程按需处理。</li>
 <li>增量构建速度快</li>
 </ul>
+
 <p>无包构建的缺点：</p>
+
 <ul>
 <li>浏览器网络请求数量剧增，对于稳定性和访问性能要求高的生产环境较难接受。 支持 HTTP/2 的服务器会好些。</li>
 <li>浏览器的兼容性，对于需要兼容旧浏览器的项目生产环境下不能使用。</li>
 </ul>
+
 <h4 id="vite">Vite</h4>
+
 <ul>
 <li>在开发环境下基于 Native-ESM 处理构建过程，只编译不打包</li>
 <li>在生产环境下则基于 Rollup 打包。</li>
@@ -340,14 +380,19 @@
 <li>仅限于 Vue3 以上版本，不兼容更低版本的 Vue。</li>
 <li>内置了对 Vue 的大量构建优化，有更好的开发体验。</li>
 </ul>
+
 <h4 id="snowpack">Snowpack</h4>
+
 <ul>
 <li>基本与 Vite 类似，主要差异：在生产环境下默认使用无包构建而非打包模式。</li>
 <li>提供较完善的插件体系，支持用户和社区发布自定义插件，而 Vite 未提供自定义插件的相关文档。</li>
 <li>如需打包功能，则可引入打包插件： ＠snowpack/plugin-webpack 和 @snowpack/pluin-parcel，暂未提供 Rollup 对应的插件。</li>
 </ul>
+
 <h2 id="部署效率">部署效率</h2>
+
 <h3 id="一般部署流程">一般部署流程</h3>
+
 <ol>
 <li>获取代码</li>
 <li>安装信赖</li>
@@ -356,37 +401,50 @@
 <li>推送代码</li>
 <li>重启服务</li>
 </ol>
+
 <h3 id="本地部署的问题">本地部署的问题</h3>
+
 <ol>
 <li>环境一致性问题：使用远程统一的部署系统，可以避免不同开发人员的本地环境差异性。同时，部署系统的工作环境也可以与线上服务环境保持一致，从而降低环境不一致的风险。</li>
 <li>过程一致性问题：通过部署系统将完整处理过程写入代码，减少本地人工操作的风险，同时，系统可以记录每次部署操作的细节日志，方便跟踪问题。</li>
 <li>可回溯性问题：日志可帮助定位问题，构建产物包也会被分别保存，方便问题排查和快速回滚发布。</li>
 <li>人员分工问题：个别开发者会需要中断当前工作，无法快速响应多人的发布请求，如果多人都有权限发布，又会混乱。</li>
 </ol>
+
 <h3 id="流行的代码部署工具">流行的代码部署工具</h3>
+
 <h4 id="jenkins">Jenkins</h4>
+
 <ul>
 <li>完全免费的开源产品</li>
 <li>有丰富的插件系统</li>
 <li>有 API 调用功能</li>
 </ul>
+
 <h4 id="circleci">CircleCI</h4>
+
 <ul>
 <li>云端服务，免费仅一个 Job 及环境限制等。</li>
 <li>收费版本支持更多构建数、环境，企业内部使用本地化搭建也是收费的。</li>
 </ul>
+
 <h4 id="github-actions-gha">Github Actions (GHA)</h4>
+
 <ul>
 <li>对公开仓库、自运维执行器的情况下免费。</li>
 <li>对私有仓库超过额度的免费执行时间和存储空间后收费。</li>
 </ul>
+
 <h4 id="gitlab-ci">Gitlab CI</h4>
+
 <ul>
 <li>社区版本免费，商业版本收费</li>
 <li>使用 <code>.gitlab-ci.yml</code> 配置 CI/CD 流程</li>
 <li>需要单独安装执行器： <code>gitlab-runner</code></li>
 </ul>
+
 <h3 id="信赖安装效率优化">信赖安装效率优化</h3>
+
 <ul>
 <li>npm</li>
 <li>Yarn</li>
@@ -394,103 +452,130 @@
 <li>Yarn v2</li>
 <li>pnpm</li>
 </ul>
+
 <p>获取执行时间：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">time npm i
+
+<pre><code class="language-sh">time npm i
 time yarn
 time pnpm i
-</code></pre></div><p>总体执行时间： <code>npm &lt; pnpm &lt; Yarn v1 PnP &lt; Yarn v1 &lt; Yarn v2</code></p>
+</code></pre>
+
+<p>总体执行时间： <code>npm &lt; pnpm &lt; Yarn v1 PnP &lt; Yarn v1 &lt; Yarn v2</code></p>
+
 <p>Lock 文件主要优化的是信赖解析阶段的时间。</p>
+
 <h4 id="优化思路">优化思路</h4>
+
 <ul>
-<li>提升信赖下载速度
+<li><p>提升信赖下载速度</p>
+
 <ul>
 <li>注册国内下载源 <code>yarn/npm config set registry xxxx</code></li>
-<li>二进制下载源，解决 node-sass, puppeteer 等的下载问题</li>
-</ul>
-</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">npm config set sass-binary-site https://npm.taobao.org/mirrors/node-sass
+
+<li><p>二进制下载源，解决 node-sass, puppeteer 等的下载问题</p>
+
+<pre><code class="language-sh">npm config set sass-binary-site https://npm.taobao.org/mirrors/node-sass
 npm config set puppeteer_download_host https://npm.taobao.org/mirrors
-</code></pre></div><ul>
-<li>多项目共用信赖缓存
+</code></pre></li>
+</ul></li>
+
+<li><p>多项目共用信赖缓存</p>
+
 <ul>
 <li>让使用相同信赖工具的项目共用相同服务器</li>
 <li>让技术栈相同的项目共用相同的服务器</li>
-</ul>
-</li>
-<li>在 CI 系统中对项目的持久化缓存数据做单独的备份与还原。</li>
-<li>打包阶段提升压缩效率的工具：
+</ul></li>
+
+<li><p>在 CI 系统中对项目的持久化缓存数据做单独的备份与还原。</p></li>
+
+<li><p>打包阶段提升压缩效率的工具：</p>
+
 <ul>
 <li>Pigz 2xGzip ~ 4xGzip， 与 Gzip 兼容。</li>
 <li>Zstd 15xGzip ~ 16xGzip， 与 Gzip 不兼容。</li>
 <li>原因主要是并行处理，CPU和内存的占用会比较高。</li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <h3 id="容器化方案">容器化方案</h3>
+
 <ul>
 <li>node:14 镜像，包含 node14 和 Yarn 的 Linux 系统环境。</li>
 </ul>
+
 <h4 id="镜像阶段">镜像阶段</h4>
+
 <ul>
-<li>构建镜像的具体内容写在 Dockerfile 文件中</li>
+<li><p>构建镜像的具体内容写在 Dockerfile 文件中</p>
+
+<pre><code class="language-Dockerfile">FROM node:12-slim
+RUN apt-get update
+RUN apt-get install -y git
+RUN apt-get install -y build-essential
+RUN apt-get install -y curl
+</code></pre></li>
+
+<li><p>在 Dockerfile 所在目录执行构建命令：</p>
+
+<pre><code class="language-sh">docker build --network host --tag foo:bar .
+</code></pre></li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> node:12-slim</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> apt-get update<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> apt-get install -y git<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> apt-get install -y build-essential<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> apt-get install -y curl<span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><ul>
-<li>在 Dockerfile 所在目录执行构建命令：</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">docker build --network host --tag foo:bar .
-</code></pre></div><h4 id="容器阶段">容器阶段</h4>
+
+<h4 id="容器阶段">容器阶段</h4>
+
 <ul>
 <li>基于项目的工作镜像创建执行部署过程的容器</li>
-<li>操作容器执行相应的各部署环节：获取代码、安装信赖、执行构建、产物打包、推送产物等。</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># 创建容器</span>
+
+<li><p>操作容器执行相应的各部署环节：获取代码、安装信赖、执行构建、产物打包、推送产物等。</p>
+
+<pre><code class="language-sh"># 创建容器
 docker run -dit --name container_1 foo:bar bash
 
-<span style="color:#75715e"># 容器内执行命令</span>
+# 容器内执行命令
 docker exec -it container_1 xxxx
-</code></pre></div><h4 id="挑战及建议">挑战及建议</h4>
+</code></pre></li>
+</ul>
+
+<h4 id="挑战及建议">挑战及建议</h4>
+
 <ol>
-<li>缓存问题</li>
+<li>缓存问题
+
+<ol>
 <li>信赖缓存：生成容器时挂载宿主环境信赖缓存目录，安装目录缓存。</li>
 <li>构建缓存：在宿主环境中创建构建缓存目录并挂载到容器中，并在项目构建配置中将缓存目录设置为该目录。</li>
-<li>性能问题</li>
+</ol></li>
+<li>性能问题
+
+<ol>
 <li>容器资源限制：在创建容器时，可以通过参数来限制容器使用的 CPU 核心数和内存大小。</li>
 <li>copy-to-write：在使用容器化部署时，需要尽量避免将可变数据写入镜像中。</li>
+</ol></li>
 </ol>
+
 <h3 id="搭建高效部署系统">搭建高效部署系统</h3>
+
 <ul>
-<li>
-<p>产物部署分两种模式：</p>
+<li><p>产物部署分两种模式：</p>
+
 <ul>
 <li>Push 模式：通过 scp 等方式推送到目标服务器，并执行解压、重启等发布流程。</li>
 <li>Pull 模式：提供下载接口，由下游发布环节调用下载获取，然后执行解压、重启等发布流程。</li>
+</ul></li>
+
+<li><p>部署服务器环境准备：全局信赖工具、系统配置文件、环境变量、目录规划、监控及清理策略。</p></li>
+
+<li><p>Webhook：在部署系统中新增接收 Webhook 消息的路由，将此 Webhook 接口地址写入 CVS 系统的 Webhook 列表中，并配置相应参数，如：只监听特定分支或只监听 Tag Push 等。</p></li>
+
+<li><p>任务队列：需限制同时执行任务数（Concurrency）避免过多任务同时执行，耗尽计算资源。</p></li>
+
+<li><p>构建任务与插件系统</p></li>
+
+<li><p>任务命令与子进程</p></li>
+
+<li><p>状态、事件与 Socket</p></li>
 </ul>
-</li>
-<li>
-<p>部署服务器环境准备：全局信赖工具、系统配置文件、环境变量、目录规划、监控及清理策略。</p>
-</li>
-<li>
-<p>Webhook：在部署系统中新增接收 Webhook 消息的路由，将此 Webhook 接口地址写入 CVS 系统的 Webhook 列表中，并配置相应参数，如：只监听特定分支或只监听 Tag Push 等。</p>
-</li>
-<li>
-<p>任务队列：需限制同时执行任务数（Concurrency）避免过多任务同时执行，耗尽计算资源。</p>
-</li>
-<li>
-<p>构建任务与插件系统</p>
-</li>
-<li>
-<p>任务命令与子进程</p>
-</li>
-<li>
-<p>状态、事件与 Socket</p>
-</li>
-</ul>
+
 <blockquote>
 <p>目前个人理解，使用类似 Gitlab CI 的功能，可以不用深入这么多细节，只需配置好 <code>.gitlab-ci.yml</code> 即可。</p>
 </blockquote>
@@ -572,6 +657,10 @@ docker exec -it container_1 xxxx
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -607,10 +696,6 @@ docker exec -it container_1 xxxx
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -624,13 +709,13 @@ docker exec -it container_1 xxxx
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -654,6 +739,10 @@ docker exec -it container_1 xxxx
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -684,6 +773,8 @@ docker exec -it container_1 xxxx
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -777,7 +868,7 @@ docker exec -it container_1 xxxx
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -893,7 +984,7 @@ docker exec -it container_1 xxxx
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -915,11 +1006,15 @@ docker exec -it container_1 xxxx
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     

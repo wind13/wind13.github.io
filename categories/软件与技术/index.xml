@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>软件与技术 on 世风十三学堂</title>
@@ -6,10 +6,19 @@
     <description>Recent content in 软件与技术 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 15 Jan 2022 19:51:10 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 09 Feb 2022 21:30:33 +0800</lastBuildDate>
     
 	<atom:link href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Nodejs Secure Config 配置加密方案</title>
+      <link>https://wind13.github.io/post/2022/nodejs-secure-config/</link>
+      <pubDate>Wed, 09 Feb 2022 21:30:33 +0800</pubDate>
+      
+      <guid>https://wind13.github.io/post/2022/nodejs-secure-config/</guid>
+      <description>Node.js 启动后台服务，通常都要连接数据库，或者连接第三方接口等，这里就会有一些账号密码之类的需要提供，我们当然不能把这些私密的内容保存在代码库中，这样是非常不安全的。 比较简单的方式是保存在 .env.production 这样的文件中，而这文件不会提交到代码库，而是在部署时再放到相应的运行环境中。 即使是这样，也比较麻</description>
+    </item>
     
     <item>
       <title>在 Power Platform 上实践 JamStack 架构思想</title>
@@ -233,7 +242,7 @@
       <pubDate>Fri, 31 Jan 2020 13:40:37 +0800</pubDate>
       
       <guid>https://wind13.github.io/post/2020/hugo-mind-map/</guid>
-      <description>目前比较好的脑图方案 一个是在 Hugo 里用 Markdown 写，在浏览器中预览。 另一个是用 Markdown 写后，通过 Typora 导出 opml 格式，再导入幕布后即可查看。 还有就是使用 PlantUML 插件 在 VSCode 中写 markdown 画脑图。 还有一个就是用 vscode-mindmap 插件，编辑 kityminder *.km 文件即可，这个功能与百度脑图用的是同一个技术，只是还没找到导入导出的功能。 效果如下： 根目录 一级目录1</description>
+      <description>目前比较好的脑图方案 一个是在 Hugo 里用 Markdown 写，在浏览器中预览。 另一个是用 Markdown 写后，通过 Typora 导出 opml 格式，再导入幕布后即可查看。 还有就是使用 PlantUML 插件 在 VSCode 中写 markdown 画脑图。 还有一个就是用 vscode-mindmap 插件，编辑 kityminder *.km 文件即可，这个功能与百度脑图用的是同一个技术，只是还没找到导入导出的功能。 效果如下： - 根目录 - 一级目</description>
     </item>
     
     <item>
@@ -269,7 +278,7 @@
       <pubDate>Thu, 03 Oct 2019 10:09:37 +0800</pubDate>
       
       <guid>https://wind13.github.io/post/2019/julia-learning/</guid>
-      <description>Julia Learning Julia Install Brew brew cask install julia Normal Download and install it as julia.app Add it into your profile, for me it is .zshrc file: # Julia # /Applications/Julia-1.2.app/Contents/Resources/julia/bin/ export PATH=&amp;#34;/Applications/Julia-1.2.app/Contents/Resources/julia/bin/:$PATH&amp;#34;</description>
+      <description>Julia Learning Julia Install Brew brew cask install julia Normal Download and install it as julia.app Add it into your profile, for me it is .zshrc file: # Julia # /Applications/Julia-1.2.app/Contents/Resources/julia/bin/ export PATH=&amp;quot;/Applications/Julia-1.2.app/Contents/Resources/julia/bin/:$PATH&amp;quot;</description>
     </item>
     
     <item>
@@ -350,7 +359,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://wind13.github.io/post/2013/2013-12-24-jsframework/</guid>
-      <description>综合框架 arale.js{:target=&amp;rdquo;_blank&amp;rdquo;} 支付宝的前端基础类库 Arale 基于 SeaJS 和 jQuery 等，目前新构建 2.0 版本。 demo: 计算器{:target=&amp;rdquo;_blank&amp;rdquo;} KISSY{:target=&amp;rdquo;_blank&amp;rdquo;} 是由淘宝前端攻城师们发起创建的一个开源 JS 类库。 Ender.js{:target=&amp;rdquo;_blank&amp;rdquo;} - Ender is a full featured package manager for your browser. 作者 Dustin Diaz{:target=&amp;rdquo;_blank&amp;rdquo;} 模块加载框架 Javascript模块化 Seajs{:target=&amp;rdquo;_blank&amp;rdquo;} 由支付宝团队开源，基于（Co</description>
+      <description>综合框架 arale.js{:target=&amp;rdquo;_blank&amp;rdquo;} 支付宝的前端基础类库 Arale 基于 SeaJS 和 jQuery 等，目前新构建 2.0 版本。 demo: 计算器{:target=&amp;rdquo;_blank&amp;rdquo;} KISSY{:target=&amp;rdquo;_blank&amp;rdquo;} 是由淘宝前端攻城师们发起创建的一个开源 JS 类库。 Ender.js{:target=&amp;rdquo;_blank&amp;rdquo;} - Ender is a full featured package manager for your browser. 作者 Dustin Diaz{:target=&amp;rdquo;_blank&amp;rdquo;} 模块加载框架 Javascript模块化{:target=&amp;rdquo</description>
     </item>
     
     <item>

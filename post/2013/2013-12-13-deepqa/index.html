@@ -90,16 +90,24 @@
         
         
         <div class="post-content">
-            <h1 id="playframework热情交流群里的邮件讨论">Playframework热情交流群里的邮件讨论</h1>
-<h3 id="freewindplay23月17日-1021">Freewind@play23月17日 10:21</h3>
+            
+
+<h1 id="playframework热情交流群里的邮件讨论">Playframework热情交流群里的邮件讨论</h1>
+
+<h3 id="freewind-play23月17日-10-21">Freewind@play23月17日 10:21</h3>
+
 <p>昨天有感于play源代码里的一些强大功能和精巧实现，提出了以下问题，这些问题在群里和几位朋友简单讨论过，但我觉得整理一下会有用。</p>
+
 <p>play的一些打破常规的做法，让我非常欣赏和赞叹。希望大家不要仅满足于使用play，在有余力的情况下，多看看play的源代码，对自己java能力的进一步提高非常有帮助。当你能读懂甚至能独立实现一个类似play的框架时，就是真牛人了：）</p>
+
 <p>有一些问题我也不知道答案，我有时间也会去读，共勉。</p>
+
 <p>问题列表：</p>
+
 <ol>
 <li>play的hot reload是怎么实现的</li>
 <li>有的库不能直接在play中使用，必须写一个插件以解决classloader的问题，为什么</li>
-<li>action中向view中传参数时，可以render(a,b,c)，就直接过去了，不用专门传参数名&quot;&ldquo;a&rdquo;&rdquo;,&ldquo;&ldquo;b&rdquo;&rdquo;,&ldquo;&ldquo;c&rdquo;&quot;，这是怎么实现的</li>
+<li>action中向view中传参数时，可以render(a,b,c)，就直接过去了，不用专门传参数名&rdquo;&ldquo;a&rdquo;&ldquo;,&rdquo;&ldquo;b&rdquo;&ldquo;,&rdquo;&ldquo;c&rdquo;&ldquo;，这是怎么实现的</li>
 <li>javabean不用写getter/setter，自动生成，是怎么实现的</li>
 <li>其它类中调用javabean中的public field，但是最终将被转为getter/setter，怎么实现的</li>
 <li>play中的template用的是groovy的gsp，但增加了自己的东西，比如tag等，是怎么实现的</li>
@@ -110,116 +118,92 @@
 <li>public static void action(String name, String password)，play能根据name和password的名字，到request中取对应的数据，是怎么实现的？默认情况下，java程序编译后，参数名都会变，比如变成action(String a,String b)</li>
 <li>play的request,response,cookie等类，都是自己定义的，为什么却可以打包为war，部署到tomcat下？那边传过来的可是j2ee里的类</li>
 </ol>
-<h3 id="green使用中3月17日-1107">green@使用中3月17日 11:07</h3>
+
+<h3 id="green-使用中3月17日-11-07">green@使用中3月17日 11:07</h3>
+
 <p>很好的问题。谈谈自己的一些认识：</p>
+
 <ol>
-<li>play的hot reload是怎么实现的</li>
-</ol>
-<blockquote>
-<p>Play 会尝试使用Java instrument来做类的热替换，不过这个过程成功率不高，因为限制很大，包括类方法的签名不能改变
-如果java instrument替换失效，play会重启，这样会重新装载application class loader，以便获得最新的应用类字节码
-参见 play.classloading.ApplicationClassloader.detectChanges()</p>
-</blockquote>
-<ol start="2">
-<li>有的库不能直接在play中使用，必须写一个插件以解决classloader的问题，为什么？</li>
-</ol>
-<blockquote>
-<p>能举例吗？</p>
-</blockquote>
-<ol start="3">
-<li>action中向view中传参数时，可以render(a,b,c)，就直接过去了，不用专门传参数名&quot;&ldquo;a&rdquo;&rdquo;,&ldquo;&ldquo;b&rdquo;&rdquo;,&ldquo;&ldquo;c&rdquo;&quot;，这是怎么实现的？</li>
-</ol>
-<blockquote>
-<p>play使用本地变量名增强器对应用类进行增强，这个过程会获得参数名字信息并保存到线程变量（ThreadLocal）当中。
-同时控制器的render方法会尝试获得线程变量中的变量名字，将其放入renderArgs
-参见 play.classloading.enhancers.LocalvariablesNamesEnhancer 和 play.mvc.Controller.render()</p>
-</blockquote>
-<ol start="4">
-<li>javabean不用写getter/setter，自动生成，是怎么实现的</li>
-</ol>
-<blockquote>
-<p>参见 play.classloading.enhancers.PropertiesEnhancer
-另外不是不用写getter/setter，而是当你没有提供getter/setter方法的时候，play帮你提供一个默认的</p>
-</blockquote>
-<ol start="5">
-<li>其它类中调用javabean中的public field，但是最终将被转为getter/setter，怎么实现的</li>
-</ol>
-<blockquote>
-<p>参见 play.classloading.enhancers.PropertiesEnhancer</p>
-</blockquote>
-<ol start="6">
-<li>play中的template用的是groovy的gsp，但增加了自己的东西，比如tag等，是怎么实现的？</li>
-</ol>
-<blockquote>
-<p>tag的实现有两种，一种是定义tag模板（/play/framework/templates），另一种是定义Java类/play/framework/src/play/templates/(FastTags.java|GroovyInlineTags.java))。
-调用机制在play.templates.GroovyTemplateCompiler.startTag()可以找到</p>
-</blockquote>
-<ol start="7">
-<li>User类继承Model后，可以使用findXxx这样的静态方法，这个方法是父类提供的，却能返回正确的子类类型，是怎么实现的？</li>
-</ol>
-<blockquote>
-<p>这是通过Java Generic机制实现的，如下代码所示：</p>
-</blockquote>
-<pre><code>:::java
-    public static `&lt;T extends Model&gt;` T findById(Object id) {
+<li>play的hot reload是怎么实现的
+&gt; Play 会尝试使用Java instrument来做类的热替换，不过这个过程成功率不高，因为限制很大，包括类方法的签名不能改变
+&gt; 如果java instrument替换失效，play会重启，这样会重新装载application class loader，以便获得最新的应用类字节码
+&gt; 参见 play.classloading.ApplicationClassloader.detectChanges()</li>
+<li>有的库不能直接在play中使用，必须写一个插件以解决classloader的问题，为什么？
+&gt; 能举例吗？</li>
+<li>action中向view中传参数时，可以render(a,b,c)，就直接过去了，不用专门传参数名&rdquo;&ldquo;a&rdquo;&ldquo;,&rdquo;&ldquo;b&rdquo;&ldquo;,&rdquo;&ldquo;c&rdquo;&ldquo;，这是怎么实现的？
+&gt; play使用本地变量名增强器对应用类进行增强，这个过程会获得参数名字信息并保存到线程变量（ThreadLocal）当中。
+&gt; 同时控制器的render方法会尝试获得线程变量中的变量名字，将其放入renderArgs
+&gt; 参见 play.classloading.enhancers.LocalvariablesNamesEnhancer 和 play.mvc.Controller.render()</li>
+<li>javabean不用写getter/setter，自动生成，是怎么实现的
+&gt; 参见 play.classloading.enhancers.PropertiesEnhancer
+&gt; 另外不是不用写getter/setter，而是当你没有提供getter/setter方法的时候，play帮你提供一个默认的</li>
+<li>其它类中调用javabean中的public field，但是最终将被转为getter/setter，怎么实现的
+&gt; 参见 play.classloading.enhancers.PropertiesEnhancer</li>
+<li>play中的template用的是groovy的gsp，但增加了自己的东西，比如tag等，是怎么实现的？
+&gt; tag的实现有两种，一种是定义tag模板（/play/framework/templates），另一种是定义Java类/play/framework/src/play/templates/(FastTags.java|GroovyInlineTags.java))。
+&gt; 调用机制在play.templates.GroovyTemplateCompiler.startTag()可以找到</li>
+
+<li><dl>
+<dt>&gt; 这是通过Java Generic机制实现的，如下代码所示：</dt>
+</dl>
+
+<dl>
+<dt>&gt; 这是通过Java Generic机制实现的，如下代码所示：</dt>
+</dl>
+
+<dl>
+<dt>&gt; 这是通过Java Generic机制实现的，如下代码所示：</dt>
+</dl>
+
+<dl>
+<dt>�如下代码所示：</dt>
+</dl>
+
+<p>:::java
+    public static <code>&lt;T extends Model&gt;</code> T findById(Object id) {
         throw new UnsupportedOperationException(
-                &quot;&quot;Embedded entity does not support this method&quot;&quot;);
-    }
-</code></pre>
+                &ldquo;&ldquo;Embedded entity does not support this method&rdquo;&ldquo;);
+    }</p></li>
+</ol>
+
 <blockquote>
 <p>其实Java编译器无法判断具体返回类型，只能说是Model的子类。这个机制也有缺陷，导致下面代码编译出错：</p>
 </blockquote>
+
 <pre><code>:::java
 return (id == null) ? null : MyModel.findById(id);
 </code></pre>
+
 <blockquote>
 <p>你只能用一下代码替换：</p>
 </blockquote>
+
 <pre><code>:::java
 if (null == id) return null;
 else return MyModel.findById(id);
 </code></pre>
+
 <blockquote>
-<p>另外在Model的各种find方法中很多都会抛出UnsupportedOperationException异常，之所以运行的时候没有抛出异常，也是因为通过增强器进行了代码注入。</p>
+<p>另外在Model的各种find方法中很多都会抛出UnsupportedOperationException异常，之所以运行的时候没有抛出异常，也是因为通过增强器进行了代码注入。
+8. Action中直接调用另一个类，不用写return，但后面的代码就不再执行了，这是怎么实现的？
+Controller的各种render方法最后都会抛出play.mvc.results.Result类型的异常
+9. play的session是基于cookie的，是怎么实现的？
+很简单，在回应请求的时候play的session对象会被写入cookie，而读取请求的时候会从cookie生成session对象
+10. play中可以支持大量客户端的ajax应用，在action里，当接收到一个请求但没有取得需要的数据时，会暂停它的执行让出线程，等到有数据时再回到线程，发给客户端，是怎么实现的？
+通过await()调用实现的。具体过程比较复杂，如果愿意探究，需要仔细研究Controller和ActionInvoker代码
+11. public static void action(String name, String password)，play能根据name和password的名字，到request中取对应的数据，是怎么实现的？默认情况下，java程序编译后，参数名都会变，比如变成action(String a,String b)
+与问题3同理，不过使用LocalVariablesNamesTracer的换成了ActionInvoker，这个过程不仅仅是变量名传递，同时还有很复杂的变量类型绑定。具体参见ActionInvoker.getActionMethodArgs的代码
+12. play的request,response,cookie等类，都是自己定义的，为什么却可以打包为war，部署到tomcat下？那边传过来的可是j2ee里的类
+不熟悉这方面的，大概是play.server.ServletWrapper做转换工作，参见play.server.ServletWrapper.service方法。</p>
 </blockquote>
-<ol start="8">
-<li>Action中直接调用另一个类，不用写return，但后面的代码就不再执行了，这是怎么实现的？</li>
+
+<h3 id="freewind-play23月17日-11-27">Freewind@play23月17日 11:27</h3>
+
+<ol>
+<li>比如使用Ebean，如果不写一个插件来处理classloader的问题，在play中无法使用。
+&gt; Play在dev模式下，编译java源代码后，生成的字节码是放在内存中的，而不是以.class文件形式保存在硬盘上。这给其它一些库带来了麻烦。
+&gt; 比如在Ebean的config中，需要传入Model类，Ebean会设法导入对应的.class文件。此时必须写一个插件，让Ebean能从play的classloader中找那些类。不然找不到会报错。</li>
 </ol>
-<blockquote>
-<p>Controller的各种render方法最后都会抛出play.mvc.results.Result类型的异常</p>
-</blockquote>
-<ol start="9">
-<li>play的session是基于cookie的，是怎么实现的？</li>
-</ol>
-<blockquote>
-<p>很简单，在回应请求的时候play的session对象会被写入cookie，而读取请求的时候会从cookie生成session对象</p>
-</blockquote>
-<ol start="10">
-<li>play中可以支持大量客户端的ajax应用，在action里，当接收到一个请求但没有取得需要的数据时，会暂停它的执行让出线程，等到有数据时再回到线程，发给客户端，是怎么实现的？</li>
-</ol>
-<blockquote>
-<p>通过await()调用实现的。具体过程比较复杂，如果愿意探究，需要仔细研究Controller和ActionInvoker代码</p>
-</blockquote>
-<ol start="11">
-<li>public static void action(String name, String password)，play能根据name和password的名字，到request中取对应的数据，是怎么实现的？默认情况下，java程序编译后，参数名都会变，比如变成action(String a,String b)</li>
-</ol>
-<blockquote>
-<p>与问题3同理，不过使用LocalVariablesNamesTracer的换成了ActionInvoker，这个过程不仅仅是变量名传递，同时还有很复杂的变量类型绑定。具体参见ActionInvoker.getActionMethodArgs的代码</p>
-</blockquote>
-<ol start="12">
-<li>play的request,response,cookie等类，都是自己定义的，为什么却可以打包为war，部署到tomcat下？那边传过来的可是j2ee里的类</li>
-</ol>
-<blockquote>
-<p>不熟悉这方面的，大概是play.server.ServletWrapper做转换工作，参见play.server.ServletWrapper.service方法。</p>
-</blockquote>
-<h3 id="freewindplay23月17日-1127">Freewind@play23月17日 11:27</h3>
-<ol start="2">
-<li>比如使用Ebean，如果不写一个插件来处理classloader的问题，在play中无法使用。</li>
-</ol>
-<blockquote>
-<p>Play在dev模式下，编译java源代码后，生成的字节码是放在内存中的，而不是以.class文件形式保存在硬盘上。这给其它一些库带来了麻烦。
-比如在Ebean的config中，需要传入Model类，Ebean会设法导入对应的.class文件。此时必须写一个插件，让Ebean能从play的classloader中找那些类。不然找不到会报错。</p>
-</blockquote>
 
         </div>
 
@@ -232,15 +216,15 @@ else return MyModel.findById(id);
     <h2>See Also</h2>
     <ul class="listing">
         
-        <li><a href="/post/2013/2013-12-23-coolguydontlookatexplosions/"></a></li>
+        <li><a href="/post/2013/2013-12-23-confession214/"></a></li>
         
-        <li><a href="/post/2014/2014-02-26-hqlleftjoin/"></a></li>
+        <li><a href="/post/2013/2013-12-13-hqlcount1/"></a></li>
         
         <li><a href="/post/2013/2013-12-23-tracinterfacecustomization/"></a></li>
         
-        <li><a href="/post/2013/2013-12-29-c461mubuntusteup/"></a></li>
+        <li><a href="/post/2013/2013-09-29-tocterm/"></a></li>
         
-        <li><a href="/post/2013/2013-12-23-confession214/"></a></li>
+        <li><a href="/post/2014/2014-01-09-modulemissing/"></a></li>
         
     </ul>
 </div>
@@ -290,6 +274,10 @@ else return MyModel.findById(id);
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -325,10 +313,6 @@ else return MyModel.findById(id);
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -342,13 +326,13 @@ else return MyModel.findById(id);
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -372,6 +356,10 @@ else return MyModel.findById(id);
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -402,6 +390,8 @@ else return MyModel.findById(id);
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -495,7 +485,7 @@ else return MyModel.findById(id);
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -611,7 +601,7 @@ else return MyModel.findById(id);
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -633,11 +623,15 @@ else return MyModel.findById(id);
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     

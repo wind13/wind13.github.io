@@ -103,210 +103,260 @@
         
         
         <div class="post-content">
-            <p>参考：<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">史上最浅显易懂的Git教程！</a></p>
+            
+
+<p>参考：<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">史上最浅显易懂的Git教程！</a></p>
+
 <ul>
-<li>
-<p>进入你的工作目录</p>
-<p><code>cd yourworkpath</code></p>
-</li>
-<li>
-<p>列出所有branch，当前所在branch前面有“*”号。</p>
-<p><code>git branch -a</code></p>
-</li>
-<li>
-<p>切换工作库</p>
-<p>git checkout v1.5.1</p>
-</li>
-<li>
-<p>合并另一个branch，通常是master</p>
-<p>git merge master</p>
-</li>
-<li>
-<p>再切换回来</p>
-<p>git checkout master</p>
-</li>
-<li>
-<p>查看当前目录情况</p>
-<p>git status</p>
-</li>
-<li>
-<p>将当前目录中的修改提交到相应的库（branch）中</p>
-<p>git commit -m &ldquo;&ldquo;此处添加修改说明&rdquo;&rdquo;</p>
-</li>
-<li>
-<p>从远程库中合并最新状态</p>
-<p>git pull</p>
-</li>
+<li>进入你的工作目录</li>
 </ul>
+
+<p><code>cd yourworkpath</code></p>
+
+<ul>
+<li>列出所有branch，当前所在branch前面有“*”号。</li>
+</ul>
+
+<p><code>git branch -a</code></p>
+
+<ul>
+<li>切换工作库</li>
+</ul>
+
+<p>git checkout v1.5.1</p>
+
+<ul>
+<li>合并另一个branch，通常是master</li>
+</ul>
+
+<p>git merge master</p>
+
+<ul>
+<li>再切换回来</li>
+</ul>
+
+<p>git checkout master</p>
+
+<ul>
+<li>查看当前目录情况</li>
+</ul>
+
+<p>git status</p>
+
+<ul>
+<li>将当前目录中的修改提交到相应的库（branch）中</li>
+</ul>
+
+<p>git commit -m &ldquo;&ldquo;此处添加修改说明&rdquo;&rdquo;</p>
+
+<ul>
+<li>从远程库中合并最新状态</li>
+</ul>
+
+<p>git pull</p>
+
 <p>注：当使用git pull命令的时候如果提示有本地文件修改了，无法合并的时候，我们可以放弃本地修改（注意放弃的修改将不可恢复），然后再更新；
 如果不想放弃本地修改，可以先提交，然后再合并更新。
 如果要放弃本地修改后更新：</p>
+
 <p>git reset &ndash;hard
-git pull</p>
+  git pull</p>
+
 <ul>
-<li>
-<p>将合并后的状态并入远程库中。</p>
+<li>将合并后的状态并入远程库中。</li>
+</ul>
+
 <p>git push origin master</p>
-</li>
-<li>
-<p>如果是在分支上开发则为：</p>
+
+<ul>
+<li>如果是在分支上开发则为：</li>
+</ul>
+
 <p>git push origin v1.5.1</p>
-</li>
-<li>
-<p>取消某个文件的版本控制，但实际不删除这个文件：</p>
-<p>git rm &ndash;cached somefile.txt</p>
-</li>
-</ul>
-<blockquote>
-<p>然后再修改目录下的.gitignore文件，添加上这个文件的相应忽略即可。</p>
-</blockquote>
+
 <ul>
-<li>
-<p>查看每一行的改动：</p>
+<li>取消某个文件的版本控制，但实际不删除这个文件：</li>
+</ul>
+
+<p>git rm &ndash;cached somefile.txt
+&gt; 然后再修改目录下的.gitignore文件，添加上这个文件的相应忽略即可。</p>
+
+<ul>
+<li>查看每一行的改动：</li>
+</ul>
+
 <p>git blame <code>&lt;filename&gt;</code></p>
-</li>
-<li>
-<p>git 查看一个文件的所有修改历史</p>
+
+<ul>
+<li>git 查看一个文件的所有修改历史</li>
+</ul>
+
 <p>git log &ndash;pretty=oneline <code>&lt;filename&gt;</code></p>
-</li>
-<li>
-<p>创建一个分支并切换到这个分支工作，通常可用于临时进行一些测试性的开发，如果要保留这个dirty的分支内容，可以commit上去，随时再切换回master就象一切没发生过。</p>
+
+<ul>
+<li>创建一个分支并切换到这个分支工作，通常可用于临时进行一些测试性的开发，如果要保留这个dirty的分支内容，可以commit上去，随时再切换回master就象一切没发生过。</li>
+</ul>
+
 <p>git checkout -b dirty</p>
-</li>
-<li>
-<p>如果这个测试性的开发需要被接受合并到主干master，只要切换到master再合并即可：</p>
+
+<ul>
+<li>如果这个测试性的开发需要被接受合并到主干master，只要切换到master再合并即可：</li>
+</ul>
+
 <p>git checkout master
-git merge dirty</p>
-</li>
-<li>
-<p>丢弃加入缓存区（即git add的准备提交的文件）的修改，分别退回到当前版本、上一个版本、上上一个版本、前99个版本、某特定 id 版本：</p>
+  git merge dirty</p>
+
+<ul>
+<li>丢弃加入缓存区（即git add的准备提交的文件）的修改，分别退回到当前版本、上一个版本、上上一个版本、前99个版本、某特定 id 版本：</li>
+</ul>
+
 <p>git reset &ndash;hard HEAD
-git reset &ndash;hard HEAD^
-git reset &ndash;hard HEAD^^
-git reset &ndash;hand HEAD~99
-git reset &ndash;hard 322542re342</p>
-</li>
-<li>
-<p>查看过去和未来的版本 id 等信息：</p>
+    git reset &ndash;hard HEAD^
+    git reset &ndash;hard HEAD^^
+    git reset &ndash;hand HEAD~99
+    git reset &ndash;hard 322542re342</p>
+
+<ul>
+<li><p>查看过去和未来的版本 id 等信息：</p>
+
 <p>git log
-git reflog</p>
-</li>
-<li>
-<p>丢弃某个文件的修改，和SVN的revert命令一样</p>
+git reflog</p></li>
+
+<li><p>丢弃某个文件的修改，和SVN的revert命令一样</p></li>
+</ul>
+
 <p>git checkout &ndash; comefile.txt</p>
-</li>
-<li>
-<p>丢弃本地所有文件的修改，和SVN的revert命令一样</p>
-</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  git checkout -- *.*
-</code></pre></div><ul>
-<li>查看当前路径下的远程库情况：</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git remote -v
-</code></pre></div><ul>
-<li>添加远程库路径</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git remote add origin https://github.com/wind13/xxx.git
-</code></pre></div><ul>
-<li>查看分支详细信息</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git branch -vv
-</code></pre></div><ul>
-<li>更换本地分支对应的远程分支</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git branch --set-upstream-to<span style="color:#f92672">=</span>origin/master master
-</code></pre></div><ul>
-<li>显示当前设置及来源</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git config --list --show-origin
-</code></pre></div><ul>
-<li>本地删除除master以外所有分支</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git branch | grep -v <span style="color:#e6db74">&#34;master&#34;</span> | xargs git branch -D
-</code></pre></div><ul>
-<li>保存当前修改，切换到 master 并删除 master 以外所有分支</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git stash <span style="color:#f92672">&amp;&amp;</span> git checkout master <span style="color:#f92672">&amp;&amp;</span> git branch | grep -v <span style="color:#e6db74">&#34;master&#34;</span> | xargs git branch -D
-</code></pre></div><ul>
-<li>快速本地复制一个库到另一个目录，不带多余的文件：</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git fast-export --all | <span style="color:#f92672">(</span>mkdir ../repobackup <span style="color:#f92672">&amp;&amp;</span> cd ../repobackup <span style="color:#f92672">&amp;&amp;</span> git init <span style="color:#f92672">&amp;&amp;</span> git fast-import <span style="color:#f92672">&amp;&amp;</span> git reset --hard HEAD<span style="color:#f92672">)</span>
-</code></pre></div><ul>
-<li>
-<p>分拆代码库</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git filter-branch --prune-empty --subdirectory-filter ./folder/to/subrepo/ branch-name
+
+<ul>
+<li><p>丢弃本地所有文件的修改，和SVN的revert命令一样</p>
+
+<pre><code class="language-shell">git checkout -- *.*
+</code></pre></li>
+
+<li><p>查看当前路径下的远程库情况：</p>
+
+<pre><code class="language-shell">git remote -v
+</code></pre></li>
+
+<li><p>添加远程库路径</p>
+
+<pre><code class="language-shell">git remote add origin https://github.com/wind13/xxx.git
+</code></pre></li>
+
+<li><p>查看分支详细信息</p>
+
+<pre><code class="language-shell">git branch -vv
+</code></pre></li>
+
+<li><p>更换本地分支对应的远程分支</p>
+
+<pre><code class="language-shell">git branch --set-upstream-to=origin/master master
+</code></pre></li>
+
+<li><p>显示当前设置及来源</p>
+
+<pre><code class="language-shell">git config --list --show-origin
+</code></pre></li>
+
+<li><p>本地删除除master以外所有分支</p>
+
+<pre><code class="language-sh">git branch | grep -v &quot;master&quot; | xargs git branch -D
+</code></pre></li>
+
+<li><p>保存当前修改，切换到 master 并删除 master 以外所有分支</p>
+
+<pre><code class="language-sh">git stash &amp;&amp; git checkout master &amp;&amp; git branch | grep -v &quot;master&quot; | xargs git branch -D
+</code></pre></li>
+
+<li><p>快速本地复制一个库到另一个目录，不带多余的文件：</p>
+
+<pre><code class="language-shell">git fast-export --all | (mkdir ../repobackup &amp;&amp; cd ../repobackup &amp;&amp; git init &amp;&amp; git fast-import &amp;&amp; git reset --hard HEAD)
+</code></pre></li>
+
+<li><p>分拆代码库</p>
+
+<pre><code class="language-shell">git filter-branch --prune-empty --subdirectory-filter ./folder/to/subrepo/ branch-name
 git filter-branch --prune-empty --subdirectory-filter ./folder/to/subrepo/ -- --all
-</code></pre></div><ul>
-<li>
-<p>如果分拆有误，想退回</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git reflog
-</code></pre></div><p>查看到具体要回到哪个点，记住HEAD{n}里面那个数字n；
+</code></pre>
+
+<ul>
+<li><p>如果分拆有误，想退回</p>
+
+<pre><code class="language-shell">git reflog
+</code></pre></li>
+</ul>
+
+<p>查看到具体要回到哪个点，记住HEAD{n}里面那个数字n；
 然后再执行 reset 回到那个位置：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git reset --hard HEAD@<span style="color:#f92672">{</span>n<span style="color:#f92672">}</span>
-</code></pre></div></li>
-</ul>
-</li>
-</ul>
+
+<pre><code class="language-shell">git reset --hard HEAD@{n}
+</code></pre></li>
+
+<li><p><a href="https://medium.com/@schhajed/git-how-to-split-subdirectory-to-separate-repository-ab0dcff6a82a">Git — How to Split Git SubDirectory into Separate Repository?</a></p></li>
+
+<li><p><a href="http://aoxuis.me/post/2013-08-06-git-subtree">使用GIT SUBTREE集成项目到子目录</a></p>
+
 <ul>
-<li><a href="https://medium.com/@schhajed/git-how-to-split-subdirectory-to-separate-repository-ab0dcff6a82a">Git — How to Split Git SubDirectory into Separate Repository?</a></li>
+<li><p>第一次添加子目录，建立与git项目的关联</p>
+
+<pre><code class="language-shell">git remote add -f ai https://github.com/aoxu/ai.git  
+git subtree add --prefix=ai ai master --squash
+</code></pre></li>
+
+<li><p>从远程仓库更新子目录</p>
+
+<pre><code class="language-shell">git fetch ai master  
+git subtree pull --prefix=ai ai --squash
+</code></pre></li>
+
+<li><p>从子目录push到远程仓库</p>
+
+<pre><code class="language-shell">git subtree push --prefix=ai ai master
+</code></pre></li>
+</ul></li>
+
+<li><p>通过 Commits 信息查找</p>
+
+<pre><code class="language-shell"># 所有分支
+git log --all --grep='search string'
+# 包含 reflog
+git log -g --grep='search string'
+</code></pre></li>
+
+<li><p>通过更改查找</p>
+
+<pre><code class="language-sh">git log -S 'search string'
+</code></pre></li>
+
+<li><p>通过日期范围查找</p>
+
+<pre><code class="language-sh">git log --after='DEC 15 2019' --until='Jan 10 2020'
+</code></pre></li>
+
+<li><p><a href="https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A0%91%E5%90%88%E5%B9%B6">Git 工具 - 子树合并</a></p></li>
 </ul>
-<ul>
-<li>
-<p><a href="http://aoxuis.me/post/2013-08-06-git-subtree">使用GIT SUBTREE集成项目到子目录</a></p>
-<ul>
-<li>第一次添加子目录，建立与git项目的关联</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git remote add -f ai https://github.com/aoxu/ai.git  
-git subtree add --prefix<span style="color:#f92672">=</span>ai ai master --squash
-</code></pre></div><ul>
-<li>从远程仓库更新子目录</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git fetch ai master  
-git subtree pull --prefix<span style="color:#f92672">=</span>ai ai --squash
-</code></pre></div><ul>
-<li>从子目录push到远程仓库</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git subtree push --prefix<span style="color:#f92672">=</span>ai ai master
-</code></pre></div></li>
-</ul>
-<ul>
-<li>通过 Commits 信息查找</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 所有分支</span>
-git log --all --grep<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;search string&#39;</span>
-<span style="color:#75715e"># 包含 reflog</span>
-git log -g --grep<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;search string&#39;</span>
-</code></pre></div><ul>
-<li>通过更改查找</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git log -S <span style="color:#e6db74">&#39;search string&#39;</span>
-</code></pre></div><ul>
-<li>通过日期范围查找</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git log --after<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;DEC 15 2019&#39;</span> --until<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Jan 10 2020&#39;</span>
-</code></pre></div><ul>
-<li><a href="https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A0%91%E5%90%88%E5%B9%B6">Git 工具 - 子树合并</a></li>
-</ul>
+
 <h2 id="常用的别名-2020年2月28日-添加">常用的别名 （2020年2月28日 添加）</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 撤销上次提交</span>
-git config --global alias.undo <span style="color:#e6db74">&#34;reset --soft HEAD^&#34;</span>
 
-<span style="color:#75715e"># 将暂存区更新修订到上次提交 (不改变提交信息)</span>
-git config --global alias.amend <span style="color:#e6db74">&#34;commit --amend --no-edit&#34;</span>
+<pre><code class="language-shell"># 撤销上次提交
+git config --global alias.undo &quot;reset --soft HEAD^&quot;
 
-<span style="color:#75715e"># 压缩的状态输出</span>
-git config --global alias.st <span style="color:#e6db74">&#34;status -sb&#34;</span>
+# 将暂存区更新修订到上次提交 (不改变提交信息)
+git config --global alias.amend &quot;commit --amend --no-edit&quot;
 
-<span style="color:#75715e"># 用 GRAPH 为日志着色</span>
-git config --global alias.lg <span style="color:#e6db74">&#34;log --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39;&#34;</span>
+# 压缩的状态输出
+git config --global alias.st &quot;status -sb&quot;
 
-<span style="color:#75715e"># 删除所有已合并的分支（测试有问题）</span>
-<span style="color:#75715e"># git config --global alias.rmb &#34;!git branch --merged | grep -v &#39;*&#39; | xargs -n 1 git branch -d&#34;</span>
+# 用 GRAPH 为日志着色
+git config --global alias.lg &quot;log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset'&quot;
 
-<span style="color:#75715e"># 贡献排行</span>
-git config --global alias.rank <span style="color:#e6db74">&#34;shortlog -n -s --no-merges&#34;</span>
-</code></pre></div>
+# 删除所有已合并的分支（测试有问题）
+# git config --global alias.rmb &quot;!git branch --merged | grep -v '*' | xargs -n 1 git branch -d&quot;
+
+# 贡献排行
+git config --global alias.rank &quot;shortlog -n -s --no-merges&quot;
+</code></pre>
+
         </div>
 
         
@@ -318,15 +368,15 @@ git config --global alias.rank <span style="color:#e6db74">&#34;shortlog -n -s -
     <h2>See Also</h2>
     <ul class="listing">
         
-        <li><a href="/post/2013/2013-12-13-cmdchinese/"></a></li>
+        <li><a href="/post/2013/2013-09-29-learnself/"></a></li>
         
-        <li><a href="/post/2013/2013-12-13-operationnotpermitted/"></a></li>
+        <li><a href="/post/2013/2013-12-13-deepqa/"></a></li>
         
-        <li><a href="/post/2013/2013-12-23-computerqa/"></a></li>
+        <li><a href="/post/2013/2013-12-13-hqlcount1/"></a></li>
         
-        <li><a href="/post/2013/2013-12-29-c461mubuntusteup/"></a></li>
+        <li><a href="/post/2013/2013-12-23-gitolitesetup/"></a></li>
         
-        <li><a href="/post/2013/2013-12-23-htmlunitdriverjavascript/"></a></li>
+        <li><a href="/post/2013/2013-12-28-playwebsites/"></a></li>
         
     </ul>
 </div>
@@ -376,6 +426,10 @@ git config --global alias.rank <span style="color:#e6db74">&#34;shortlog -n -s -
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -411,10 +465,6 @@ git config --global alias.rank <span style="color:#e6db74">&#34;shortlog -n -s -
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -428,13 +478,13 @@ git config --global alias.rank <span style="color:#e6db74">&#34;shortlog -n -s -
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -458,6 +508,10 @@ git config --global alias.rank <span style="color:#e6db74">&#34;shortlog -n -s -
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -488,6 +542,8 @@ git config --global alias.rank <span style="color:#e6db74">&#34;shortlog -n -s -
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -581,7 +637,7 @@ git config --global alias.rank <span style="color:#e6db74">&#34;shortlog -n -s -
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -697,7 +753,7 @@ git config --global alias.rank <span style="color:#e6db74">&#34;shortlog -n -s -
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -719,11 +775,15 @@ git config --global alias.rank <span style="color:#e6db74">&#34;shortlog -n -s -
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     

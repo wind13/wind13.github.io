@@ -103,25 +103,39 @@
         
         
         <div class="post-content">
-            <h2 id="power-apps-上的问题">Power Apps 上的问题</h2>
+            
+
+<h2 id="power-apps-上的问题">Power Apps 上的问题</h2>
+
 <p>在 Power Platform 中，微软官方的工具是使用 Canvas App 来构建前端界面， Model Driven App 可以实现固定模式的一些操作界面，类似我们常说的 CRUD 增删改查等操作，还有一些简单的流程操作界面，比如审批流程什么的，不过 Model Driven App 的界面模式单一，可定制化的能力不足，通常无法满足用户多样的需求，很多细节也不太容易灵活处理，因此很多需要自定义界面的应用在使用 Power Platform 生态时，会选择使用 Canvas App 来构造前端界面。</p>
+
 <p>然而， Canvas App 在我的使用体会中是有很多的劣势和问题的：</p>
+
 <ul>
 <li>开发体验虽然简单，但使用的是类似 VBScript 的语言，微软称其为 Power Fx，对于专业的前端开发人员来说，非常不习惯，很多功能也受限于这个语言，比较难应用好的编程实践，比如说写一个可以重用的方法都很困难。</li>
 <li>界面风格单一，虽然也有不同主题和自定义主题什么的说法，然而因为其组件的高度封装化，反而影响了它的灵活定制。</li>
 <li>性能越用越慢，随着 App 的界面增多，功能增多， App 的启动会越来越慢，跟传统的网页应用不能同日而语，传统网页秒级打开都嫌慢，而 Canvas App 走到复杂应用的后期，几乎是几分钟的量级，不知道用户如何能够忍受。</li>
 <li>同时因为开发过程也是在网页上操作，所以开发人员也要忍受打开时的龟速，这样在开发的过程中，就不能快速试错，快速反馈，可想而知开发效率会慢到什么程度，简直是一种痛苦和折磨。</li>
 </ul>
+
 <h2 id="新的-jamstack-思路">新的 JamStack 思路</h2>
+
 <p><a href="https://jamstack.org/">JamStack 官网</a> 的口号：</p>
+
 <blockquote>
 <p>The modern way to build Websites and Apps that delivers better performance</p>
 </blockquote>
+
 <p>构建网站或应用现代的方法，并且有着更好的性能。</p>
+
 <p>网站上有非常多的各种语言和框架的解决方案，每个都有各自的特色，共同点是前端是全静态文件，发布到普通网站服务上或者云服务上，同时可以借助 CDN 达到全球最佳的访问效果。后端则是 Headless 的 CMS 系统，多数内容都直接生成到前端静态网页上，也有比较多动态数据内容的使用各种 API 来实现。</p>
+
 <p>回到 PowerPlatform，它的后端是 Dataverse (CDS) 数据库，有着非常友好的使用界面，创建表和创建字段等都非常容易和方便，同时该数据库有一套非常成熟的 API 系统是遵守 OData 的 API 协议的，这样就等于说，当我们在 Dataverse 上把数据表创建完成时，就拥有了一套非常全面的 API 接口，不用开发一行代码，同时再结合上 Model Driven App 就可以很方便地管理后台数据了，一般的增删改查，简单的表单提交等都不在话下，那么对于用户个性化的界面需求如何处理呢？</p>
+
 <p>这就要说到 PowerPlatform 中的另一个技术模块： Web Resources 了， 这个模块可以理解为建构在 Power Platform 生态上的静态文件服务，可以上传 HTML, CSS, JavaScript 等文件，直接通过上传后系统提供的网址链接就可以访问相应的静态资源了， HTML 文件就会显示为网页，同时可以调用其他的 CSS 和 JavaScript 文件等，这样就能使用前端的技术来实现界面的定制化了。</p>
+
 <p>另外，这个 Web Resources 有个非常方便的特性，那就是可以直接调用 OData 的 API，这就打通了与后端数据交互的功能了，于是我们就可以使用如 Vue 或 React 这样的前端技术来开发网页应用界面，通过接口来调用后端的数据实现具体的业务交互了，完美地实现了 JamStack 构架的思路！</p>
+
 <p>此次分享只是一些 Power Platform 框架上的实践心得，希望对大家有启发，也欢迎大家与我交流…… :)</p>
 
         </div>
@@ -203,6 +217,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -238,10 +256,6 @@
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -255,13 +269,13 @@
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -285,6 +299,10 @@
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -315,6 +333,8 @@
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -408,7 +428,7 @@
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -524,7 +544,7 @@
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -546,11 +566,15 @@
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     

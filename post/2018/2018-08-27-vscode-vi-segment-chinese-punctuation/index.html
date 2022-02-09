@@ -94,15 +94,25 @@
         
         
         <div class="post-content">
-            <h2 id="问题描述">问题描述</h2>
+            
+
+<h2 id="问题描述">问题描述</h2>
+
 <p>首先，vscode 是目前最好的编程工具，未来前途也无可限量，其次 vi 的快捷键模式也是最高效的键盘输入模式，在 vscode 中可以添加 vi 快捷键的支持（在首选项-按键映射扩展中可以安装 Vim 即可，或在插件商店搜索：<code>@recommended:keymaps</code> 也能添加）。</p>
+
 <p>但是在编辑中文时会有一个问题：</p>
+
 <p>因为英文单词是由空格隔开的，所以在 vi 模式时按 w 键天然是能按单词移动的，而中文字句是连在一起的，所以会在移动光标时，整段中文字直接跳过，非常不符合使用的习惯。</p>
+
 <h2 id="解决方法">解决方法</h2>
+
 <p>在 vscode 的用户设置（在 macOS 中按 Cmd + , 编辑）中添加这两项即可：</p>
+
 <pre><code>  &quot;editor.wordSeparators&quot;: &quot;`~!@#$%^&amp;*()-=+[{]}\\|;:'\&quot;,.&lt;&gt;/?，。；、：“”！？《》【】……￥&quot;,
   &quot;vim.iskeyword&quot;: &quot;/\\()\&quot;':,.;&lt;&gt;~!@#$%^&amp;*|+=[]{}`?-，。；、：“”！？《》（）【】……￥&quot;,
-</code></pre><p>前面都是默认的，后面只是添加上了中文的标点符号，这样就不会整段移动，而是在中文标点处停止再继续，基本符合使用的习惯了。</p>
+</code></pre>
+
+<p>前面都是默认的，后面只是添加上了中文的标点符号，这样就不会整段移动，而是在中文标点处停止再继续，基本符合使用的习惯了。</p>
 
         </div>
 
@@ -169,6 +179,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -204,10 +218,6 @@
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -221,13 +231,13 @@
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -251,6 +261,10 @@
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -281,6 +295,8 @@
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -374,7 +390,7 @@
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -490,7 +506,7 @@
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -512,11 +528,15 @@
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     

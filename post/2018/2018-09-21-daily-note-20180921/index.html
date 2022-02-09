@@ -94,53 +94,47 @@
         
         
         <div class="post-content">
-            <h2 id="准备做的事">准备做的事</h2>
+            
+
+<h2 id="准备做的事">准备做的事</h2>
+
+<ul class="task-list">
+<li><p>[x]  尝试使用 Hugo；</p>
+
 <ul>
-<li>
-<p><input checked="" disabled="" type="checkbox"> 尝试使用 Hugo；</p>
-<ul>
-<li>目录结构：
-<ul>
+<li>目录结构：</li>
 <li>archetypes：包括内容类型，在创建新内容时自动生成内容的配置</li>
 <li>content：包括网站内容，全部使用markdown格式</li>
 <li>layouts：包括了网站的模版，决定内容如何呈现</li>
 <li>static：包括了css, js, fonts, media等，决定网站的外观</li>
-</ul>
-</li>
-<li>常用命令：
-<ul>
+<li>常用命令：</li>
 <li><code>hugo server -t hyde --buildDrafts</code> 其中 <code>-t</code> 指 theme 主题， <code>--buildDrafts</code> 指草稿也渲染。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><input checked="" disabled="" type="checkbox"> 尝试将 Blog 从 Hexo 转到 Hugo； &ndash;&gt; 2021-01-17 11:25 标记完成，已经使用 Hugo 很长一段时间了。</p>
-<ul>
+</ul></li>
+
+<li><p>[x]  尝试将 Blog 从 Hexo 转到 Hugo； &ndash;&gt; 2021-01-17 11:25 标记完成，已经使用 Hugo 很长一段时间了。</p>
+
+<ul class="task-list">
 <li>用 Hexo 生成目前的 Blog 需要 36 秒，够慢的，看换了 Hugo 后会是多快？</li>
-<li>找到 <a href="https://github.com/wd/hexo2hugo">hexo2hugo</a> 尝试一下。基本可用，但仅能将 _posts 目录下的 md 文件转换一下格式，所以仍存在的问题如下：
-<ul>
-<li><input checked="" disabled="" type="checkbox"> 并不能转换其他的配置功能，如搜索、回复、赞赏、分享等功能；</li>
-<li><input checked="" disabled="" type="checkbox"> 转换时未能处理命名为 <code>index.md</code> 的问题；</li>
-<li><input checked="" disabled="" type="checkbox"> 转换时未能处理无 <code>title</code> 的 meta data 问题，导致显示列表中没有标题链接；</li>
-<li><input checked="" disabled="" type="checkbox"> 转换时未处理摘要的问题，导致列表中显示大段文字的情况；</li>
-</ul>
-</li>
+<li>找到 <a href="https://github.com/wd/hexo2hugo">hexo2hugo</a> 尝试一下。基本可用，但仅能将 _posts 目录下的 md 文件转换一下格式，所以仍存在的问题如下：</li>
+<li><label><input type="checkbox" checked disabled class="task-list-item">  并不能转换其他的配置功能，如搜索、回复、赞赏、分享等功能；</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item">  转换时未能处理命名为 <code>index.md</code> 的问题；</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item">  转换时未能处理无 <code>title</code> 的 meta data 问题，导致显示列表中没有标题链接；</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item">  转换时未处理摘要的问题，导致列表中显示大段文字的情况；</label></li>
 <li>找到 <a href="https://danielfree.net/archives/migrate-from-hugo-to-hugo/">Migrate from Hexo to Hugo</a> 看一下。 还有 <a href="https://www.babaei.net/blog/migrating-from-hexo-to-hugo/">Migrating From Hexo To Hugo</a> 提到了 <a href="https://www.getgutenberg.io/">Gutenburg</a> (written in <a href="https://www.rust-lang.org/">Rust</a>)</li>
-</ul>
-</li>
-<li>
-<p><input checked="" disabled="" type="checkbox"> 尝试将转换过程写成自动化脚本，开放为开源项目； &ndash;&gt; 放弃了，应该有其他人做了吧。</p>
-</li>
-<li>
-<p><input checked="" disabled="" type="checkbox"> 想继续使用 Next 主题，找到了：</p>
+</ul></li>
+
+<li><p>[x]  尝试将转换过程写成自动化脚本，开放为开源项目； &ndash;&gt; 放弃了，应该有其他人做了吧。</p></li>
+
+<li><p>[x]  想继续使用 Next 主题，找到了：</p>
+
 <ul>
 <li><a href="https://github.com/leopku/hugo-theme-next">NeXT</a> is a fast and clean theme for <a href="http://gohugo.io/">Hugo</a>. which was inspired by a Hexo theme named <a href="https://github.com/iissnan/hexo-theme-next">NexT</a>.</li>
 <li>考虑有些需要的功能可以 fork 后提 pull request 支持项目。</li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <h2 id="遇到的问题">遇到的问题</h2>
+
 <ul>
 <li>Python2 和 Python3 共存，尝试运行 pip 安装 pytoml，结果用 python 运行时，仍然提示未安装，通过 <code>which python</code> 和 <code>which pip</code>  两个命令才发现，python 指向 python2 的版本，而 pip 指向 pip3 的版本，测试后发现当两个版本共存时，最好在使用具体命令时，要用 2 版本就用 <code>python2</code> 和 <code>pip2</code> ，要用 3 版本时，就用 <code>python3</code> 和 <code>pip3</code> ，这样就能明确区别开了。</li>
 <li>尝试 <a href="https://github.com/gucheen/HexoConvertToHugo">HexoConvertToHugo</a> 失败，不太好用，文档也不清楚，测试后报错，暂时放弃。</li>
@@ -148,14 +142,16 @@
 <li>使用 hexo2hugo，遇到第一行不是 <code>---</code> 的文档会报错，找不到 meta 信息，看了一眼程序逻辑比较固化，暂不修改了，直接修改文档匹配规则。</li>
 <li>添加 next 主题，全新的站点，只添加一个文章，但在首页上看不到，能看到 <code>next</code> 的主题起作用了。换用 <code>ananke</code> 主题就显示正常了。一批批转移文件倒是可以，怀疑可能是 <code>index.md</code> 文件命名的问题，至少会导致 <code>All Posts</code> 链接被覆盖。</li>
 </ul>
+
 <h2 id="灵感记录">灵感记录</h2>
+
 <ul>
 <li>互联网时代，每个人都可能成为扫地僧，整个互联网就象是少林寺的藏经阁，要学什么、怎么学，就要看你自己怎么把握了。
+
 <ul>
 <li>萧峰和慕荣的爹都练走火了，为什么扫地僧没练走火？因为扫地僧不急功近利，有雄厚的佛法心法。</li>
 <li>什么是互联网的修炼心法？终身学习！</li>
-</ul>
-</li>
+</ul></li>
 </ul>
 
         </div>
@@ -237,6 +233,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -272,10 +272,6 @@
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -289,13 +285,13 @@
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -319,6 +315,10 @@
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -349,6 +349,8 @@
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -442,7 +444,7 @@
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -558,7 +560,7 @@
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -580,11 +582,15 @@
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     

@@ -103,37 +103,55 @@
         
         
         <div class="post-content">
-            <ul>
+            
+
+<ul>
 <li><a href="https://shenxianpeng.github.io/2020/07/jenkins-best-practice-cn/">每个 Jenkins 用户都应该知道这三个最佳实践</a></li>
 <li><a href="https://cloud.tencent.com/developer/article/1035518">轻量化 Jenkins 最佳实践</a></li>
 <li><a href="http://dockone.io/article/1531">Jenkins管道最佳实践Top 10</a></li>
 </ul>
+
 <blockquote>
 <p>不仅一个代码库可以支持多个Multibranch Job，实际上多个Multibranch Job可以共用同一个代码库，这里面就用到marker的功能。所以作为一个Jenkins管理员，我最纠结的就是有一个任务很久没执行过了，到底要不要删除或归档。当我去问开发人员或者项目经理的时候，他们的回答的是可能用，说了跟没说一样。那么如果我们都用Multibranch Job的方式就不存在这种情况了。</p>
 </blockquote>
+
 <h2 id="单点登录">单点登录</h2>
+
 <ul>
-<li>Global Keycloak Settings</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-  <span style="color:#f92672">&#34;realm&#34;</span>: <span style="color:#e6db74">&#34;master&#34;</span>,
-  <span style="color:#f92672">&#34;auth-server-url&#34;</span>: <span style="color:#e6db74">&#34;http://47.105.174.14:8058/auth/&#34;</span>,
-  <span style="color:#f92672">&#34;ssl-required&#34;</span>: <span style="color:#e6db74">&#34;external&#34;</span>,
-  <span style="color:#f92672">&#34;resource&#34;</span>: <span style="color:#e6db74">&#34;jenkins&#34;</span>,
-  <span style="color:#f92672">&#34;public-client&#34;</span>: <span style="color:#66d9ef">true</span>
+<li><p>Global Keycloak Settings</p>
+
+<pre><code class="language-json">{
+&quot;realm&quot;: &quot;master&quot;,
+&quot;auth-server-url&quot;: &quot;http://47.105.174.14:8058/auth/&quot;,
+&quot;ssl-required&quot;: &quot;external&quot;,
+&quot;resource&quot;: &quot;jenkins&quot;,
+&quot;public-client&quot;: true
 }
-</code></pre></div><h2 id="设置系统时区">设置系统时区</h2>
+</code></pre></li>
+</ul>
+
+<h2 id="设置系统时区">设置系统时区</h2>
+
 <p>打开 【系统管理】-&gt;【Script Console 脚本命令行】运行下面的命令</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">System.setProperty<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;org.apache.commons.jelly.tags.fmt.timeZone&#39;</span>, <span style="color:#e6db74">&#39;Asia/Shanghai&#39;</span><span style="color:#f92672">)</span>
-</code></pre></div><h2 id="ssh-pipeline-plugin">SSH Pipeline Plugin</h2>
+
+<pre><code class="language-sh">System.setProperty('org.apache.commons.jelly.tags.fmt.timeZone', 'Asia/Shanghai')
+</code></pre>
+
+<h2 id="ssh-pipeline-plugin">SSH Pipeline Plugin</h2>
+
 <ul>
 <li><a href="https://blog.csdn.net/qq_31977125/article/details/83861714">Jenkins pipeline 避免使用明文密码的方法</a></li>
 </ul>
+
 <h2 id="docker-in-docker-思路">Docker in Docker 思路</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">docker run -v
+
+<pre><code class="language-sh">docker run -v
 docker socket
-docker run -d -u root --restart<span style="color:#f92672">=</span>always --name jenkins -p 8080:8080 -p 50000:50000 -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker  -v /home/ec2-user/jenkins_home:/var/jenkins_home jenkins/jenkins:latest
-</code></pre></div><h2 id="参考资料">参考资料</h2>
+docker run -d -u root --restart=always --name jenkins -p 8080:8080 -p 50000:50000 -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker  -v /home/ec2-user/jenkins_home:/var/jenkins_home jenkins/jenkins:latest
+</code></pre>
+
+<h2 id="参考资料">参考资料</h2>
+
 <ul>
 <li><a href="https://devopscube.com/jenkins-multibranch-pipeline-tutorial/">Jenkins Multibranch Pipeline Tutorial For Beginners</a></li>
 </ul>
@@ -217,6 +235,10 @@ docker run -d -u root --restart<span style="color:#f92672">=</span>always --name
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -252,10 +274,6 @@ docker run -d -u root --restart<span style="color:#f92672">=</span>always --name
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -269,13 +287,13 @@ docker run -d -u root --restart<span style="color:#f92672">=</span>always --name
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -299,6 +317,10 @@ docker run -d -u root --restart<span style="color:#f92672">=</span>always --name
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -329,6 +351,8 @@ docker run -d -u root --restart<span style="color:#f92672">=</span>always --name
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -422,7 +446,7 @@ docker run -d -u root --restart<span style="color:#f92672">=</span>always --name
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -538,7 +562,7 @@ docker run -d -u root --restart<span style="color:#f92672">=</span>always --name
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -560,11 +584,15 @@ docker run -d -u root --restart<span style="color:#f92672">=</span>always --name
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     

@@ -90,10 +90,15 @@
         
         
         <div class="post-content">
-            <h1 id="对像存储报错-validateandsave问题">对像存储报错 validateAndSave问题</h1>
+            
+
+<h1 id="对像存储报错-validateandsave问题">对像存储报错 validateAndSave问题</h1>
+
 <p>问题：在存储对像时，同时存储该对像的关联对像，则会报错。\</p>
+
 <p>例：
 room为hotel的关联对像。</p>
+
 <pre><code>:::java
 public class Room {
  @ManyToOne
@@ -105,8 +110,11 @@ Hotel hotel = new Hotel();
 Room room = new Room(hotel);
 room.validateAndSave();
 </code></pre>
+
 <p>会报错。这是因为在保存room对象的时候，hotel对象还没有持久化，所以room对象里面要保存一个hotelId就无法取得了，故必须要先保存父对象，再保存子对象。</p>
+
 <p><strong>必须先将对像hotel存储，再存储一遍room对像。</strong></p>
+
 <pre><code>:::java
 Hotel hotel = new Hotel();
 hotel.validateAndSave();
@@ -125,13 +133,13 @@ room.validateAndSave();
     <h2>See Also</h2>
     <ul class="listing">
         
-        <li><a href="/post/2014/2014-01-09-ubuntueclipse/"></a></li>
-        
-        <li><a href="/post/2013/2013-12-13-hqlcount1/"></a></li>
-        
-        <li><a href="/post/2013/2013-12-29-c461mubuntusteup/"></a></li>
+        <li><a href="/post/2013/2013-09-29-tocterm/"></a></li>
         
         <li><a href="/post/2014/2014-01-09-modulemissing/"></a></li>
+        
+        <li><a href="/post/2013/2013-12-23-coolguydontlookatexplosions/"></a></li>
+        
+        <li><a href="/post/2013/2013-12-23-tracinterfacecustomization/"></a></li>
         
         <li><a href="/post/2013/2013-10-26-betterplan/"></a></li>
         
@@ -183,6 +191,10 @@ room.validateAndSave();
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -218,10 +230,6 @@ room.validateAndSave();
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -235,13 +243,13 @@ room.validateAndSave();
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -265,6 +273,10 @@ room.validateAndSave();
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -295,6 +307,8 @@ room.validateAndSave();
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -388,7 +402,7 @@ room.validateAndSave();
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -504,7 +518,7 @@ room.validateAndSave();
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -526,11 +540,15 @@ room.validateAndSave();
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     

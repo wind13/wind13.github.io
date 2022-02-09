@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>play1 on 世风十三学堂</title>
@@ -25,7 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://wind13.github.io/post/2013/2013-09-29-stopsshgoplay/</guid>
-      <description>Created 星期六 25 二月 2012 先看一段Playframework热情交流群（QQG：168013302）里的聊天记录： 木马@学生 09:59:13 实现个功能..要调用service接口的方法, 方法又在他的impl里面实现, impl里面又是调用dao层接口, dao层接口又是在dao的impl里面实现, dao的i</description>
+      <description>Created 星期六 25 二月 2012 先看一段Playframework热情交流群（QQG：168013302）里的聊天记录： 木马@学生 09:59:13 &amp;gt; 实现个功能..要调用service接口的方法, 方法又在他的impl里面实现, impl里面又是调用dao层接口, &amp;gt; dao层接口又是在dao的impl里面实现, dao</description>
     </item>
     
   </channel>

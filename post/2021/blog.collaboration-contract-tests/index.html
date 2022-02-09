@@ -103,147 +103,202 @@
         
         
         <div class="post-content">
-            <h1 id="e2e-tests-integrated-tests-vs-collaboration-and-contract-tests">E2E tests, Integrated tests vs Collaboration and Contract tests</h1>
+            
+
+<h1 id="e2e-tests-integrated-tests-vs-collaboration-and-contract-tests">E2E tests, Integrated tests vs Collaboration and Contract tests</h1>
+
 <h2 id="测试金字塔">测试金字塔</h2>
+
 <p>参考以下文章，减少 E2E 测试的比例，Google 的建议：70% unit tests, 20% integration tests, and 10% end-to-end tests.</p>
+
 <ul>
 <li><a href="https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html">Just Say No to More End-to-End Tests</a></li>
 </ul>
+
 <p>这样看来， Pact.io 类似的功能相当于 Integration tests 层，可能是目前大多数团队所忽略的部分？ 然而看到下面这篇和系列文章，又说 Integrated Tests are a Scam(坑/骗局)</p>
+
 <ul>
 <li><a href="https://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam">Integrated Tests Are A Scam</a> <a href="https://blog.thecodewhisperer.com/series#integrated-tests-are-a-scam">Series</a></li>
 </ul>
+
 <p>下面这篇又说 Integration Test 不同于 Integrated Test，所以 20% integration tests 应该是合适的，那么区别在哪儿？</p>
+
 <ul>
 <li><a href="https://blog.thecodewhisperer.com/permalink/integration-tests-are-a-scam-is-a-scam">&ldquo;Integration Tests are a Scam&rdquo; is a Scam</a></li>
 </ul>
+
 <p>区别可能在评论区 Comments 中提到:</p>
+
 <ol>
 <li>Integration Tests would be a abstract idea. The tests that give you confidence that your systems will work together in production.</li>
 <li>Integrated Test is the current default implementation of Integration Test and a scam.</li>
-<li>Collaboration Test is an implementation of Integration Test and the approach you recommend.</li>
-</ol>
-<pre><code class="language-puml" data-lang="puml">Intergration &lt;|-- Intergrated       :scam
+
+<li><p>Collaboration Test is an implementation of Integration Test and the approach you recommend.</p>
+
+<pre><code class="language-puml">Intergration &lt;|-- Intergrated       :scam
 Intergration &lt;|-- Collaboration     :recommend
-</code></pre><p>这么说 Collaboration Test 是 Integration Tests 的一种实现，我猜 Contract Test 也是吧。</p>
+</code></pre></li>
+</ol>
+
+<p>这么说 Collaboration Test 是 Integration Tests 的一种实现，我猜 Contract Test 也是吧。</p>
+
 <ul>
 <li><a href="https://blog.thecodewhisperer.com/permalink/who-tests-the-contract-tests">Who Tests the Contract Tests?</a></li>
 </ul>
+
 <p>文中有个比喻，正常人刷墙，用滚子刷大块儿的面积，用小刷子处理墙角、窗户边、电源插座等细节部位，用贴纸保护不该刷到的部位，这就是正确的方法，大面积有大面积的处理方式，细节有细节的处理方式。然而错误的方式，就好比你有个朋友刷墙是站在三米开外，提着桶往上泼，无论他泼的技术有多好（世界冠军），也没办法把墙很均匀地刷好，同时还保证不该刷的地方不被泼到。</p>
+
 <blockquote>
 <p>By putting all the components together and running them in a single test, you’re throwing tests at the system, hoping to cover the whole thing.</p>
 </blockquote>
+
 <p>作者借这个比喻来说明，把所有组件放在一起的集成测试 Intergrated tests，就好像 就象往墙上泼一样，而使用 Collaboration + Contract tests 互相印证，可以达到用正确工具刷墙一样的效果，再加上充分的 Unit tests 可能才是正确的软件测试思路。</p>
+
 <blockquote>
 <p>I believe that this results from how utterly distracting integrated tests become over time: riddled with duplicated, mostly-irrelevant details.</p>
 </blockquote>
+
 <p>我相信，假以时日，那些令人彻底分心的集成测试的结果会变得满是重复和无关紧要的细节。</p>
+
 <blockquote>
 <p>These details assault our senses and beat our conscious minds into submission. Our eyes glaze over. Before long, we stop paying attention. Over time it becomes easier, not harder, to make a mistake.</p>
 </blockquote>
+
 <p>这些细节将袭击我们的感官，战胜我们清醒的思维。 我们双眼呆滞。 用不了多久，我们就无法专注了。 一段时间后，就变得更容易（而不是更难）犯错了。</p>
+
 <p>Contract = Semantics + Syntax(Compile check will do this)</p>
+
 <p>I, programmer, write contract tests in order to avoid end-to-end tests. It would satisfy me to replace my end-to-end tests with collaboration and contract tests over time.</p>
+
 <blockquote>
 <p>My System  作者的思路：</p>
-</blockquote>
-<blockquote>
+
 <p>Rather than throw paint at the wall, let me describe what I do, which corresponds to painting the corners of the wall with a brush.</p>
-</blockquote>
-<blockquote>
+
 <p>First, I describe the key properties of collaboration and contract tests:</p>
 </blockquote>
+
 <ul>
 <li>A stub in a collaboration test corresponds to the expected result of an assertion in a contract test.</li>
 <li>An expectation in a collaboration test corresponds to the action of a contract test.</li>
-<li>These correspondences apply equally well in both directions.</li>
+
+<li><p>These correspondences apply equally well in both directions.</p>
+
+<pre><code class="language-js">stub ~= assert equals expected result
+expectation ~= action
+</code></pre></li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">stub</span> <span style="color:#f92672">~=</span> <span style="color:#a6e22e">assert</span> <span style="color:#a6e22e">equals</span> <span style="color:#a6e22e">expected</span> <span style="color:#a6e22e">result</span>
-<span style="color:#a6e22e">expectation</span> <span style="color:#f92672">~=</span> <span style="color:#a6e22e">action</span>
-</code></pre></div><blockquote>
+
+<blockquote>
 <p>From this, we can extract some helpful rules:</p>
 </blockquote>
+
 <ul>
 <li>When I write a stub in a collaboration test, then I remind myself to also write a contract test where the stubbed return value becomes the expected result of the contract test.</li>
 <li>When I write a contract test with assert_equals() in it, then I can safely stub that method to return that value in a collaboration test. Moreover, I should probably try to imagine a collaboration test for the client that stubs that method to return that value so as to document what happens in that case. Maybe I need it; maybe I don’t.</li>
 <li>When a collaboration test expects a method (with certain parameters), then I remind myself to also write a contract test that describes what happens when we invoke that method with those parameters. Any module that implements that method must behave accordingly.</li>
 <li>When I write a contract test with the action foo(a, b, c) in it, then I can safely write a collaboration test that expects (“mocks”) foo(a, b, c).</li>
 </ul>
-<h2 id="simulating-failure-in-collaboration-testshttpsblogthecodewhisperercompermalinklimiting-beliefs-and-unstated-assumptions"><a href="https://blog.thecodewhisperer.com/permalink/limiting-beliefs-and-unstated-assumptions">Simulating Failure in Collaboration Tests</a></h2>
+
+<h2 id="simulating-failure-in-collaboration-tests-https-blog-thecodewhisperer-com-permalink-limiting-beliefs-and-unstated-assumptions"><a href="https://blog.thecodewhisperer.com/permalink/limiting-beliefs-and-unstated-assumptions">Simulating Failure in Collaboration Tests</a></h2>
+
 <blockquote>
 <p>Limiting beliefs and unstated assumptions interfere with our performance.</p>
 </blockquote>
+
 <p>有限的信念和未声明的假设会妨碍我们的表现。</p>
+
 <blockquote>
 <p>Crash Test Dummy pattern: implementing the interface with methods that intentionally raise errors. 崩溃测试模拟模式：实现那个故意产生错误的方法的接口</p>
-</blockquote>
-<blockquote>
+
 <p>Knowing where to find experienced people who can answer your questions doesn’t only help you get answers to your questions, but more importantly, it frees you to focus on the details and allow yourself to struggle, but of which are essential for effective learning.</p>
 </blockquote>
+
 <p>知道去哪儿找有经验的人回答你的问题，不光有助于你得到答案，而且更重要的，它解放了你，让你专注于细节，让你自己去奋斗，而这对于高效学习是必不可少的。</p>
+
 <blockquote>
 <p>You don’t have to worry both about how to do the thing and whether you’re doing “the right” thing. You can get something working, then take a breath, then ask for advice. We all need help like this from time to time, so it helps to have a safe place to ask these kinds of questions where someone with experience can answer them.</p>
 </blockquote>
+
 <p>你不必担心怎么做这件事或者你是不是做对了。 你可以先让某些东西工作起来，然后喘口气，问下一步的建议。 我们都时时刻刻需要类似这样的帮助，于是有个安全的地方去问这类（有经验的人能回答的）问题将会是非常有帮助的。</p>
+
 <blockquote>
 <p>Since integrated tests are still a scam, you might prefer to use Collaboration and Contract Tests to check the integration between the Controller and the Repository.</p>
 </blockquote>
+
 <p>因为集成测试始终是个陷阱，你可能想去使用 Collaboration 协同测试 和 Contract Tests 契约测试去检查 Controller 控制层和 Repository 仓库层的集成。</p>
+
 <p>由此可见， Collaboration tests + Contract tests =&gt; Integration tests 即是整合测试的具体实现。 暂且翻译 Integrated tests 为 集成测试，而 Integration tests 为 整合测试。</p>
+
 <p>文中提到 Test Doubles，这又是什么呢？</p>
+
 <h2 id="test-doubles-测试替身">Test Doubles 测试替身</h2>
+
 <p>闹了半天就是 Mock，不过可能专业名词就是： test doubles</p>
+
 <ul>
 <li><a href="https://blog.thecodewhisperer.com/permalink/choosing-test-for-test-doubles">Choosing Tools for Test Doubles</a></li>
 <li><a href="https://blog.thecodewhisperer.com/permalink/when-is-it-safe-to-introduce-test-doubles">When is it safe to introduce test doubles?</a></li>
 </ul>
+
 <blockquote>
 <p>Typically, when you think you want to mock an entity, first try mocking the repository from whence it came.</p>
-</blockquote>
-<blockquote>
+
 <p>Services, you can mock with impunity. In fact, the only time not to mock a service is when you’re testing the service.</p>
 </blockquote>
+
 <ul>
 <li><a href="https://thecodewhisperer-blog.tumblr.com/post/1121571119/when-to-fake-when-to-mock">When to fake; when to mock</a></li>
 </ul>
+
 <blockquote>
 <p>Put another way, I lean on interaction-based testing to verify how my object talks to its collaborators; but I lean on state-based testing to verify how well that object listens.</p>
-</blockquote>
-<blockquote>
+
 <p>Never mock values, sometimes mock entities, but mock services freely.</p>
 </blockquote>
+
 <p>如果是检查我的对象如何跟其他说话，我偏向基于交互的测试，即 mock； 如果是检查我的对象听得如何，我偏向于基于状态的测试，即 fake/stub。</p>
+
 <ul>
 <li><a href="https://blog.thecodewhisperer.com/permalink/jmock-v-mockito-but-not-to-the-death">JMock v. Mockito, but not to the death</a></li>
 </ul>
+
 <blockquote>
 <p>When I want to rescue legacy code, I reach for Mockito. When I want to design for new features, I reach for JMock.</p>
 </blockquote>
+
 <h2 id="verification-tests">Verification Tests</h2>
+
 <ul>
 <li><a href="https://github.com/robindanzinger/chadojs">chadojs</a> is a mocking library for nodejs which reduces the need for integration tests. Instead of integration tests it supports writing <strong>verification tests</strong>.</li>
 </ul>
+
 <blockquote>
 <p>The problem with mocks is, that the tests still pass, although the real objects might not work together any more.</p>
-</blockquote>
-<blockquote>
+
 <p>There are two ways how you can deal with that.</p>
 </blockquote>
+
 <ul>
 <li>Avoid mocks and use the real object instead.  ==&gt; not always possible or desired.</li>
 <li>Assure that mocks are in sync with the real object. ==&gt;  <strong>Whenever you mock a unit, you verify that the real object can behave like the mock.</strong></li>
 </ul>
+
 <blockquote>
 <p>chadojs uses an assume-verify-approach</p>
 </blockquote>
+
 <ul>
 <li><a href="https://github.com/robindanzinger/chadojs/blob/master/example/example.md">Example of Customer, Waiter, Chef, Pantry</a> 文档不太容易理解，看这个示例可以帮助理解。</li>
 <li><a href="https://github.com/wind13/integration-test-demo">my test demo code</a></li>
 </ul>
+
 <h2 id="microflow-in-tdd">Microflow in TDD</h2>
+
 <ul>
 <li><a href="https://blog.thecodewhisperer.com/permalink/a-natural-microflow-in-tdd">A Natural Microflow in TDD</a></li>
 </ul>
+
 <ol>
 <li>Write a new failing test.</li>
 <li>Notice a refactoring that would make the next step easier.</li>
@@ -328,6 +383,10 @@ Intergration &lt;|-- Collaboration     :recommend
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -363,10 +422,6 @@ Intergration &lt;|-- Collaboration     :recommend
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -380,13 +435,13 @@ Intergration &lt;|-- Collaboration     :recommend
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -410,6 +465,10 @@ Intergration &lt;|-- Collaboration     :recommend
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -440,6 +499,8 @@ Intergration &lt;|-- Collaboration     :recommend
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -533,7 +594,7 @@ Intergration &lt;|-- Collaboration     :recommend
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -649,7 +710,7 @@ Intergration &lt;|-- Collaboration     :recommend
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -671,11 +732,15 @@ Intergration &lt;|-- Collaboration     :recommend
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     

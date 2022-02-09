@@ -90,47 +90,79 @@
         
         
         <div class="post-content">
-            <h1 id="定制trac界面">定制Trac界面</h1>
+            
+
+<h1 id="定制trac界面">定制Trac界面</h1>
+
 <p><a href="http://trac-hacks.org/wiki/TracInterfaceCustomization">原文地址</a></p>
+
 <h5 id="介绍">介绍</h5>
+
 <p>该页面旨提供有关如何定制Trac界面的建议. 话题涵盖了编辑HTML模板和CSS文件, 但不包含程序代码本身. 这些话题想要向用户展示如何更改Trac的外观来满足他们特定的要求.</p>
+
 <h5 id="项目logo和图标">项目Logo和图标</h5>
+
 <p>定制Trac界面最简单的部分是logo和站点的图标. 他们都可以通过<a href="http://trac-hacks.org/wiki/TracIni">trac.ini</a>的设置进行配置.</p>
-<p>logo或者图标应放在项目环境目录中的一个'&lsquo;htdocs'&lsquo;目录中(注意: 用Trac0.9之前的版本创建的项目, 你需要创建该目录).</p>
-<p>&lsquo;&lsquo;注意: 实际上你可以把logo和图标放在服务器的任何地方(只要通过服务器能访问到就可以), 并且在配置中使用他们的绝对URL或服务器的相对URL.&rsquo;&rsquo;</p>
+
+<p>logo或者图标应放在项目环境目录中的一个&rdquo;htdocs&rdquo;目录中(注意: 用Trac0.9之前的版本创建的项目, 你需要创建该目录).</p>
+
+<p>&ldquo;注意: 实际上你可以把logo和图标放在服务器的任何地方(只要通过服务器能访问到就可以), 并且在配置中使用他们的绝对URL或服务器的相对URL.&rdquo;</p>
+
 <p>在你的<a href="http://trac-hacks.org/wiki/TracIni">trac.ini</a>中的配置相应的段:</p>
+
 <h4 id="logo">Logo</h4>
-<p>将<code>src</code>设置改为<code>site/</code>, 后面跟着你的图像文件的名字. 应修改'&lsquo;宽度'&lsquo;和'&lsquo;高度'&lsquo;设置来匹配你的图像的尺寸(Trac的chrome处理器用&quot;&ldquo;site/&ldquo;&ldquo;对应位于项目目录的&quot;&ldquo;htdocs&rdquo;&rdquo;, 用&quot;&ldquo;common/&ldquo;&ldquo;对应普通文件).</p>
+
+<p>将<code>src</code>设置改为<code>site/</code>, 后面跟着你的图像文件的名字. 应修改&rdquo;宽度&rdquo;和&rdquo;高度&rdquo;设置来匹配你的图像的尺寸(Trac的chrome处理器用&rdquo;&ldquo;site/&rdquo;&ldquo;对应位于项目目录的&rdquo;&ldquo;htdocs&rdquo;&ldquo;, 用&rdquo;&ldquo;common/&rdquo;&ldquo;对应普通文件).</p>
+
 <pre><code>[header_logo]
 src = site/my_logo.gif
 alt = My Project
 width = 300
 height = 100
 </code></pre>
+
 <h4 id="图标">图标</h4>
-<p>图标应该是<code>.gif</code>或<code>.ico</code>格式的大小16x16的图像. 将<code>icon</code>选项修改为<code>site/</code>, 后面跟着你的图标文件的名称. 在你的Web浏览器中, 图标一般会显示在站点的URL旁边或者在'&lsquo;书签'&lsquo;菜单中.</p>
+
+<p>图标应该是<code>.gif</code>或<code>.ico</code>格式的大小16x16的图像. 将<code>icon</code>选项修改为<code>site/</code>, 后面跟着你的图标文件的名称. 在你的Web浏览器中, 图标一般会显示在站点的URL旁边或者在&rdquo;书签&rdquo;菜单中.</p>
+
 <pre><code>[project]
 icon = site/my_icon.ico
 </code></pre>
-<p>&lsquo;&lsquo;&lsquo;注意&rsquo;'&rsquo;, 该图标会被 IE 忽略, 它只接受主机根路径下名为'&lsquo;favicon.ico'&lsquo;的文件. 要使项目图标在IE和其他浏览器中都起作用的话, 你可以将图标储存在主机的根路径中, 并按照下列方法在<code>trac.ini</code>中引用它:</p>
+
+<p>&rdquo;&lsquo;注意&rdquo;&rsquo;, 该图标会被 IE 忽略, 它只接受主机根路径下名为&rdquo;favicon.ico&rdquo;的文件. 要使项目图标在IE和其他浏览器中都起作用的话, 你可以将图标储存在主机的根路径中, 并按照下列方法在<code>trac.ini</code>中引用它:</p>
+
 <pre><code>[project]
 icon = /favicon.ico
 </code></pre>
+
 <h5 id="站点页眉和页脚">站点页眉和页脚</h5>
+
 <p>在每个Trac项目的环境目录中, 应该有个叫templates的目录. 该目录包含文件site_header.cs和site_footer.cs. 用户可以通过添加所需的HTML标记到这些文件中, 来定制他们的Trac站点. 这两个文件的内容分别放在网站中每页的开始的标签<code>&lt;body&gt;</code>和结尾的标签<code>&lt;/body&gt;</code>中.</p>
-<p>这些文件可以包含静态HTML, 当然, 如果用户想要有动态的内容, 他们可以使用页面内部的<a href="http://www.clearsilver.net/">ClearSilver</a>模板语言. 当你需要查看模板中有哪些可用变量, 将查询串&rsquo;'?hdfdump=1'&lsquo;添加到你的Trac站点的URL中. 这样将显示出模板数据的结构化视图.</p>
+
+<p>这些文件可以包含静态HTML, 当然, 如果用户想要有动态的内容, 他们可以使用页面内部的<a href="http://www.clearsilver.net/">ClearSilver</a>模板语言. 当你需要查看模板中有哪些可用变量, 将查询串&rdquo;?hdfdump=1&rdquo;添加到你的Trac站点的URL中. 这样将显示出模板数据的结构化视图.</p>
+
 <h5 id="站点样式表">站点样式表</h5>
-<p>调整一个Trac网站的布局的主要方法是添加<a href="http://www.w3.org/TR/REC-CSS2/">CSS</a>样式规则来覆盖默认的规则. 最好是通过编辑项目环境的<code>templates</code>目录下的<code>site_css.cs</code>文件来实现. 该模板中的内容会插入到Trac生成的每个HTML页面的<code>&lt;style type=&quot;text/css&quot;&gt;``&lt;/style&gt;</code>中.</p>
+
+<p>调整一个Trac网站的布局的主要方法是添加<a href="http://www.w3.org/TR/REC-CSS2/">CSS</a>样式规则来覆盖默认的规则. 最好是通过编辑项目环境的<code>templates</code>目录下的<code>site_css.cs</code>文件来实现. 该模板中的内容会插入到Trac生成的每个HTML页面的<code>&lt;style type=&quot;text/css&quot;&gt;</code><code>&lt;/style&gt;</code>中.</p>
+
 <p>虽然你可以将定制样式规则直接添加到<code>site_css.cs</code>文件中, 我们建议你只引用一个外部样式表, 以便使浏览器能缓存此CSS文件, 而不是每次都传输这些样式规则.</p>
+
 <p>下面的例子会导入一个位于根<code>style</code>目录下的样式表:</p>
+
 <pre><code>@import url(/style/mytrac.css);
 </code></pre>
+
 <p>你可以使用一个!ClearSilver变量来引用存储在项目环境的<code>htdocs</code>目录中的样式表:</p>
+
 <pre><code>@import url(`&lt;?cs var:chrome.href ?&gt;`/site/style.css);
 </code></pre>
+
 <h5 id="项目列表">项目列表</h5>
+
 <p>如果你在使用Trac执行多个项目时, 你可以用一个定制!ClearSilver模板来显示项目的列表.</p>
+
 <p>下面是Trac用来显示各项目链接的列表的基本模板. 对于不能加载的项目, 它会显示一个错误信息. 你可以将它作为你自己的索引模板的一个起点.</p>
+
 <pre><code>:::html
 #!text/html
 `&lt;html&gt;`
@@ -152,20 +184,30 @@ icon = /favicon.ico
 `&lt;/body&gt;`
 `&lt;/html&gt;`
 </code></pre>
+
 <p>一旦你创建了自己的定制模板, 你需要配置Web服务器, 来告诉Trac该模板的具体位置:</p>
+
 <p>对于 <a href="http://trac-hacks.org/wiki/TracFastCgi">FastCGI</a>:</p>
+
 <pre><code>FastCgiConfig -initial-env TRAC_ENV_PARENT_DIR=/parent/dir/of/projects \
               -initial-env TRAC_ENV_INDEX_TEMPLATE=/path/to/template
 </code></pre>
+
 <p>对于 <a href="http://trac-hacks.org/wiki/TracModPython">mod_python</a>:</p>
+
 <pre><code>PythonOption TracEnvIndexTemplate /path/to/template
 </code></pre>
+
 <p>对于 <a href="http://trac-hacks.org/wiki/TracCgi">CGI</a>:</p>
+
 <pre><code>SetEnv TRAC_ENV_INDEX_TEMPLATE /path/to/template
 </code></pre>
+
 <h5 id="主要模板">主要模板</h5>
+
 <p>!ClearSilver
 也可以使用自己修改的Trac !ClearSilver模板. 注意, 不推荐使用该技术, 因为它使得升级Trac有很多问题: 很不幸的是, 在模板和程序代码间存在几个依赖关系, 例如表单域的名称, 模板数据的结构等, 这些在不同版本的Trac中都可能有变化.</p>
+
 <p>如果你一定要使用修改的模板, 将默认模板目录(通常是在<code>$prefix/share/trac/templates</code>中)中的模板文件复制到项目环境中的<code>templates</code>目录中. 然后修改这些副本, 达到你想要的效果。</p>
 
         </div>
@@ -179,15 +221,15 @@ icon = /favicon.ico
     <h2>See Also</h2>
     <ul class="listing">
         
-        <li><a href="/post/2013/2013-12-13-cacheremovetime/"></a></li>
-        
-        <li><a href="/post/2013/2013-12-29-c461mubuntusteup/"></a></li>
-        
-        <li><a href="/post/2013/2013-12-13-hqlcount1/"></a></li>
-        
-        <li><a href="/post/2013/2013-12-13-operationnotpermitted/"></a></li>
+        <li><a href="/post/2013/2013-09-29-tocterm/"></a></li>
         
         <li><a href="/post/2013/2013-10-26-funnyclassic/"></a></li>
+        
+        <li><a href="/post/2013/2013-10-26-betterplan/"></a></li>
+        
+        <li><a href="/post/2014/2014-01-09-modulemissing/"></a></li>
+        
+        <li><a href="/post/2013/2013-12-13-deepqa/"></a></li>
         
     </ul>
 </div>
@@ -237,6 +279,10 @@ icon = /favicon.ico
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -272,10 +318,6 @@ icon = /favicon.ico
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -289,13 +331,13 @@ icon = /favicon.ico
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -319,6 +361,10 @@ icon = /favicon.ico
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -349,6 +395,8 @@ icon = /favicon.ico
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -442,7 +490,7 @@ icon = /favicon.ico
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -558,7 +606,7 @@ icon = /favicon.ico
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -580,11 +628,15 @@ icon = /favicon.ico
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     

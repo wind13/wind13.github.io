@@ -94,7 +94,10 @@
         
         
         <div class="post-content">
-            <h2 id="实践">实践</h2>
+            
+
+<h2 id="实践">实践</h2>
+
 <ul>
 <li><a href="https://www.compose.com/articles/using-graphql-with-mongodb/">Using GraphQL with MongoDB</a></li>
 <li><a href="https://medium.com/entria/testing-a-graphql-server-using-jest-4e00d0e4980e">Testing a GraphQL Server using Jest</a></li>
@@ -102,7 +105,9 @@
 <li><a href="https://hackernoon.com/how-graphql-replaces-redux-3fff8289221d">How GraphQL Replaces Redux</a></li>
 <li><a href="https://www.apollographql.com/client/">js Client</a> Bind GraphQL data to your UI with one function call.</li>
 </ul>
+
 <h2 id="相关网站">相关网站</h2>
+
 <ul>
 <li><a href="http://graphql.cn/">GraphQL CN</a> A query language for APIs. 一种用于 API 的查询语言。</li>
 <li><a href="http://graphql.cn/learn/best-practices/">GraphQL 最佳实践</a></li>
@@ -117,31 +122,43 @@
 <li><a href="https://facebook.github.io/relay/">Relay</a> A JavaScript framework for building data-driven React applications</li>
 <li><a href="https://github.com/swannodette/om-datascript">Om Next w/ DataScript</a></li>
 <li>Node.js 实现：
+
 <ul>
 <li><a href="https://www.apollographql.com/docs/apollo-server/">Apollo Server</a> is a flexible, community driven, production-ready HTTP GraphQL middleware for Express, Hapi, Koa, and more.</li>
 <li><a href="https://github.com/graphql/express-graphql">express-graphql</a></li>
-</ul>
-</li>
+</ul></li>
 <li>以下内容部分摘自微信文章：<a href="https://mp.weixin.qq.com/s/g5zHRLFSBvHWaKLLhedtvQ">微服务下使用GraphQL构建BFF的实践</a></li>
 </ul>
-<h2 id="微服务架构的优势virtue">微服务架构的优势(virtue)：</h2>
+
+<h2 id="微服务架构的优势-virtue">微服务架构的优势(virtue)：</h2>
+
 <p>简单说来，微服务是一种架构风格。通过对特定业务领域的分析与建模，将复杂的应用分解成小而专一、耦合度低并且高度自治的一组服务。微服务中的每个服务都是很小的应用，这些应用服务相互独立并且可部署。微服务通过对复杂应用的拆分，达到简化应用的目的，而这些耦合度较低的服务则通过 API 形式进行通信，所以服务之间对外暴露的都是 API，不管是对资源的获取还是修改。</p>
+
 <ul>
 <li>Isolation 隔离状态</li>
 <li>Autonomy 自治</li>
 </ul>
+
 <h2 id="bff-前端的中间层后端">BFF 前端的中间层后端</h2>
+
 <p>Backend for Frontends(以下简称 BFF) 顾名思义，是为前端而存在的后端 (服务) 中间层。引用了 BFF 之后，前端应用将直接和 BFF 通信，BFF 再和后端进行 API 通信，所以本质上来说，BFF 更像是一种“中间层”服务。</p>
+
 <h3 id="bff-其实是一种-api-gateway-实现模式">BFF 其实是一种 API Gateway 实现模式</h3>
+
 <h4 id="api-gateway-的三种实现">API Gateway 的三种实现：</h4>
+
 <ul>
 <li>一个 API Gateway 对所有客户端提供同一种 API，例：<code>/api/users</code></li>
 <li>一个 API Gateway 通过 Router 对每种客户端提供分别的 API，例：<code>/mobile/api/users</code> 和 <code>/web/api/users</code></li>
 <li>多个 API Gateway 分别对每种客户端提供分别的 API，例：如上，但两个 Gateway 分别为 Mobile Gateway 和 Web Gateway。</li>
 </ul>
+
 <p>BFF 其实是 API Gateway 的其中一种实现模式，即 BFF 更类似于第三种 API Gateway 实现，通常一个 BFF 对应一种客户端，再由 BFF 去调用后端的实际 API。</p>
+
 <h2 id="graphql-与-rest-对比">GraphQL 与 REST 对比</h2>
-<h3 id="相比于-rest-风格graphql-具有如下特性">相比于 REST 风格，GraphQL 具有如下特性：</h3>
+
+<h3 id="相比于-rest-风格-graphql-具有如下特性">相比于 REST 风格，GraphQL 具有如下特性：</h3>
+
 <ol>
 <li>定义数据模型：按需获取</li>
 <li>数据分层</li>
@@ -149,7 +166,9 @@
 <li>协议而非存储</li>
 <li>无须版本化</li>
 </ol>
-<h3 id="对于-graphql-和-rest-之间的对比主要有如下不同">对于 GraphQL 和 REST 之间的对比，主要有如下不同：</h3>
+
+<h3 id="对于-graphql-和-rest-之间的对比-主要有如下不同">对于 GraphQL 和 REST 之间的对比，主要有如下不同：</h3>
+
 <ul>
 <li>数据获取：REST 缺乏可扩展性， GraphQL 能够按需获取。GraphQL API 调用时，payload 是可以扩展的 ;</li>
 <li>API 调用：REST 针对每种资源的操作都是一个 endpoint, GraphQL 只需要一个 endpoint( /graphql), 只是 post body 不一样 ;</li>
@@ -157,24 +176,39 @@
 <li>错误码处理：REST 能够精确返回 HTTP 错误码，GraphQL 统一返回 200，对错误信息进行包装；</li>
 <li>版本号：REST 通过 v1/v2 实现，GraphQL 通过 Schema 扩展实现；</li>
 </ul>
-<h2 id="微服务--graphql--bff-实践">微服务 + GraphQL + BFF 实践</h2>
+
+<h2 id="微服务-graphql-bff-实践">微服务 + GraphQL + BFF 实践</h2>
+
 <p>在微服务下基于 GraphQL 构建 BFF，例如在项目对应的业务场景下，微服务后台有近 10 个微服务，客户端包括针对不同角色的 4 个 App 以及一个 Web 端。对于每种类型的 App，都有一个 BFF 与之对应。每种 BFF 只服务于这个 App。BFF 解析到客户端请求之后，会通过 BFF 端的服务发现，去对应的微服务后台通过 CQRS 的方式进行数据查询或修改。</p>
+
 <p>使用 GraphQL-express 框架构建项目的 BFF 端，然后通过 Docker 进行部署。BFF 和微服务后台之间，还是通过 registrator 和 Consul 进行服务注册和发现。</p>
-<p><img src="http://mmbiz.qpic.cn/mmbiz_png/aaVJqS7LaMLClPic6l1HLPZAEorehByj4Lg18e9bbBrEm61icnjq8xs5jz81PJLIuWVPo7ZdXW7iab9dicAIQdQzzw/640" alt="整体技术架构"></p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_png/aaVJqS7LaMLClPic6l1HLPZAEorehByj4Lg18e9bbBrEm61icnjq8xs5jz81PJLIuWVPo7ZdXW7iab9dicAIQdQzzw/640" alt="整体技术架构" /></p>
+
 <p>三个 App 客户端分别使用 GraphQL 的形式请求对应的 BFF。BFF 层再通过 Consul 服务发现和后端通信。</p>
+
 <h3 id="关于系统中的鉴权问题">关于系统中的鉴权问题</h3>
+
 <p>用户登录后，App 直接访问 KeyCloak 服务获取到 id_token，然后通过 id_token 透传访问 auth-api 服务获取到 access_token, access_token 以 JWT (Json Web Token) 的形式放置到后续 http 请求的头信息中。</p>
+
 <p>在我们这个系统中 BFF 层并不做鉴权服务，所有的鉴权过程全部由各自的微服务模块负责。BFF 只提供中转的功能。BFF 是否需要集成鉴权认证，主要看各系统自己的设计，并不是一个标准的实践。</p>
+
 <h3 id="bff-is-pary-of-application-bff-就是客户端的一部分">BFF is pary of Application, BFF 就是客户端的一部分</h3>
+
 <ul>
 <li>BFF 中定义的数据结构，就是客户端所真正关心的。</li>
 <li>BFF 就是为客户端而生，是客户端的一部分。</li>
 <li>需要说明的是，对于“业务的关注”并不是说，BFF 会处理所有的业务逻辑，业务逻辑还是应该由微服务关心，BFF 关注的是客户端需要什么。</li>
 </ul>
+
 <h3 id="graphql-mutation-与-cqrs">GraphQL Mutation 与 CQRS</h3>
+
 <p>不同于 query，所有 mutation 都会调用后端的 API，而后端的 API 对于资源的修改也是通过 SpringBoot EventListener 实现的 CQRS 模式。</p>
+
 <h3 id="新架构的测试">新架构的测试</h3>
+
 <p>在引入了 BFF 的项目，我们的测试仍然使用金字塔原理，只是在客户端和后台之间，需要添加对 BFF 的测试。</p>
+
 <ul>
 <li>Client 的 integration-test 关心的是 App 访问 BFF 的连通性，App 中所有访问 BFF 的请求都需要进行测试；</li>
 <li>BFF 的 integration-test 测试的是 BFF 到微服务 API 的连通性，BFF 中依赖的所有 API 都应该有集成测试的保障；</li>
@@ -254,6 +288,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="https://wind13.github.io/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
         <a href="https://wind13.github.io/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
     </li>
     
@@ -289,10 +327,6 @@
         <a href="https://wind13.github.io/post/2021/learn-front-end-engineer/" title="前端工程化学习笔记">前端工程化学习笔记</a>
     </li>
     
-    <li>
-        <a href="https://wind13.github.io/post/2021/learn.principles/" title="摘录《原则》动画重点">摘录《原则》动画重点</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -306,13 +340,13 @@
     
     <li><a href="https://wind13.github.io/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (23)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="https://wind13.github.io/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (40)</a></li>
+    <li><a href="https://wind13.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (41)</a></li>
     
 </ul>
     </section>
@@ -336,6 +370,10 @@
     <a href="https://wind13.github.io/tags/app/">App</a>
     
     <a href="https://wind13.github.io/tags/architect/">architect</a>
+    
+    <a href="https://wind13.github.io/tags/aws/">AWS</a>
+    
+    <a href="https://wind13.github.io/tags/azure/">Azure</a>
     
     <a href="https://wind13.github.io/tags/backbone/">backbone</a>
     
@@ -366,6 +404,8 @@
     <a href="https://wind13.github.io/tags/code-review/">code review</a>
     
     <a href="https://wind13.github.io/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="https://wind13.github.io/tags/config/">Config</a>
     
     <a href="https://wind13.github.io/tags/datavers/">Datavers</a>
     
@@ -459,7 +499,7 @@
     
     <a href="https://wind13.github.io/tags/json/">json</a>
     
-    <a href="https://wind13.github.io/tags/julia/">julia</a>
+    <a href="https://wind13.github.io/tags/julia/">Julia</a>
     
     <a href="https://wind13.github.io/tags/kafka/">Kafka</a>
     
@@ -575,7 +615,7 @@
     
     <a href="https://wind13.github.io/tags/re-natal/">re-natal</a>
     
-    <a href="https://wind13.github.io/tags/react/">React</a>
+    <a href="https://wind13.github.io/tags/react/">react</a>
     
     <a href="https://wind13.github.io/tags/react-native/">react native</a>
     
@@ -597,11 +637,15 @@
     
     <a href="https://wind13.github.io/tags/second-brain/">second-brain</a>
     
+    <a href="https://wind13.github.io/tags/secure/">Secure</a>
+    
     <a href="https://wind13.github.io/tags/session/">session</a>
     
     <a href="https://wind13.github.io/tags/silo/">Silo</a>
     
     <a href="https://wind13.github.io/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="https://wind13.github.io/tags/sops/">sops</a>
     
     <a href="https://wind13.github.io/tags/spacevim/">SpaceVim</a>
     
