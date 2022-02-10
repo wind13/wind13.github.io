@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>重构 on 世风十三学堂</title>
-    <link>https://wind13.github.io/tags/%E9%87%8D%E6%9E%84/</link>
+    <link>/tags/%E9%87%8D%E6%9E%84/</link>
     <description>Recent content in 重构 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 07 Feb 2021 09:48:33 +0800</lastBuildDate>
     
-	<atom:link href="https://wind13.github.io/tags/%E9%87%8D%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%E9%87%8D%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>参与 Element3 TDD 的感受</title>
-      <link>https://wind13.github.io/post/2021/element3-tdd-thinking/</link>
+      <link>/post/2021/element3-tdd-thinking/</link>
       <pubDate>Sun, 07 Feb 2021 09:48:33 +0800</pubDate>
       
-      <guid>https://wind13.github.io/post/2021/element3-tdd-thinking/</guid>
+      <guid>/post/2021/element3-tdd-thinking/</guid>
       <description>参与 Element3 开源项目，使用 TDD 的一些感受 本文已被掘金花果山技术团队转载 TDD的困惑 很多项目团队并没有使用 TDD （测试驱动开发）的开发方式，我想这在目前的开发团队中占比非常高，特别是中小型公司的前端开发团队，几乎可以说是“全军覆没”，为什么？原因可能是以下所列的一些： TDD 太麻烦，增加了工作量 TDD 太</description>
     </item>
     

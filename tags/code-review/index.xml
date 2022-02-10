@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>code review on 世风十三学堂</title>
-    <link>https://wind13.github.io/tags/code-review/</link>
+    <link>/tags/code-review/</link>
     <description>Recent content in code review on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     
-	<atom:link href="https://wind13.github.io/tags/code-review/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/code-review/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>关于 Code review 的思考</title>
-      <link>https://wind13.github.io/post/2016/2016-09-10-code-review-thinking/</link>
+      <link>/post/2016/2016-09-10-code-review-thinking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wind13.github.io/post/2016/2016-09-10-code-review-thinking/</guid>
+      <guid>/post/2016/2016-09-10-code-review-thinking/</guid>
       <description>今天看了陈皓的《从Code Review 谈如何做技术》一文，笔记一些有启发的重点如下： 首先要清晰思考 很多时候，人思考问题不清楚，很大一部分原因是因为把很多问题混为一谈。 Code Review 的好处： 主要是让代码可以更好地组织起来，更易读，有更高的维护性，同时可以达到知识共享，找到bug只是其中的副产品。 代码的</description>
     </item>
     

@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Julia on 世风十三学堂</title>
-    <link>https://wind13.github.io/tags/julia/</link>
+    <link>/tags/julia/</link>
     <description>Recent content in Julia on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 04 Oct 2019 01:32:49 +0000</lastBuildDate>
     
-	<atom:link href="https://wind13.github.io/tags/julia/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/julia/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Rust Learning</title>
-      <link>https://wind13.github.io/post/2019/2019-10-04-rust-learning/</link>
+      <link>/post/2019/2019-10-04-rust-learning/</link>
       <pubDate>Fri, 04 Oct 2019 01:32:49 +0000</pubDate>
       
-      <guid>https://wind13.github.io/post/2019/2019-10-04-rust-learning/</guid>
+      <guid>/post/2019/2019-10-04-rust-learning/</guid>
       <description>Rust Learning References Julia、Rust、F#、Go编程语言游览和感想 Rust, Julia, and Go_ Disruptive New Programming Languages Changing the Face of C 新兴的函数式编程语言（如 Elixir 或 Elm） 从实际应用角度来看，Rust更偏向于底层，旨在替换C语言与C++，Golang旨在替换Java与C#。 Rust语言本身不依赖于虚拟机与GC，没有运行时，跨平台，主</description>
     </item>
     
     <item>
       <title>Julia Learning</title>
-      <link>https://wind13.github.io/post/2019/julia-learning/</link>
+      <link>/post/2019/julia-learning/</link>
       <pubDate>Thu, 03 Oct 2019 10:09:37 +0800</pubDate>
       
-      <guid>https://wind13.github.io/post/2019/julia-learning/</guid>
+      <guid>/post/2019/julia-learning/</guid>
       <description>Julia Learning Julia Install Brew brew cask install julia Normal Download and install it as julia.app Add it into your profile, for me it is .zshrc file: # Julia # /Applications/Julia-1.2.app/Contents/Resources/julia/bin/ export PATH=&amp;quot;/Applications/Julia-1.2.app/Contents/Resources/julia/bin/:$PATH&amp;quot;</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>敏捷 on 世风十三学堂</title>
-    <link>https://wind13.github.io/tags/%E6%95%8F%E6%8D%B7/</link>
+    <link>/tags/%E6%95%8F%E6%8D%B7/</link>
     <description>Recent content in 敏捷 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 09 Aug 2020 18:30:17 +0800</lastBuildDate>
     
-	<atom:link href="https://wind13.github.io/tags/%E6%95%8F%E6%8D%B7/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%E6%95%8F%E6%8D%B7/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>软件开发团队如何高质量、高效率？</title>
-      <link>https://wind13.github.io/post/2020/software-develop-improve/</link>
+      <link>/post/2020/software-develop-improve/</link>
       <pubDate>Sun, 09 Aug 2020 18:30:17 +0800</pubDate>
       
-      <guid>https://wind13.github.io/post/2020/software-develop-improve/</guid>
+      <guid>/post/2020/software-develop-improve/</guid>
       <description>这个话题很大，也不简单，有很多本书都从不同的角度在讲这个事情，比如《人月神话》、《人件》、《项目管理修炼之道》、《硝烟中的scrum和XP》等。 不过，此文不想那么系统全面地讨论这个问题，而是希望以一个非常直白的方式来讨论一下，以便使完全没有接触过软件工程的人也能有个感性的认识，而</description>
     </item>
     

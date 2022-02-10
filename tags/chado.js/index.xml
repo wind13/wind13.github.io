@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chado.js on 世风十三学堂</title>
-    <link>https://wind13.github.io/tags/chado.js/</link>
+    <link>/tags/chado.js/</link>
     <description>Recent content in Chado.js on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 18 Mar 2021 17:34:44 +0800</lastBuildDate>
     
-	<atom:link href="https://wind13.github.io/tags/chado.js/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/chado.js/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>E2E tests, Integrated tests vs Collaboration and Contract Tests</title>
-      <link>https://wind13.github.io/post/2021/blog.collaboration-contract-tests/</link>
+      <link>/post/2021/blog.collaboration-contract-tests/</link>
       <pubDate>Thu, 18 Mar 2021 17:34:44 +0800</pubDate>
       
-      <guid>https://wind13.github.io/post/2021/blog.collaboration-contract-tests/</guid>
+      <guid>/post/2021/blog.collaboration-contract-tests/</guid>
       <description>E2E tests, Integrated tests vs Collaboration and Contract tests 测试金字塔 参考以下文章，减少 E2E 测试的比例，Google 的建议：70% unit tests, 20% integration tests, and 10% end-to-end tests. Just Say No to More End-to-End Tests 这样看来， Pact.io 类似的功能相当于 Integration tests 层，可能是目前大多数团队所忽略的部分？ 然而看到下面这篇和系列文章，又说 Integrated Tests are a Scam(坑/骗局) Integrated Tests Are A Scam Series 下面这篇又说 Integration Test 不同</description>
     </item>
     

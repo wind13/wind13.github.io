@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>解决方案 on 世风十三学堂</title>
-    <link>https://wind13.github.io/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+    <link>/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
     <description>Recent content in 解决方案 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 21 Aug 2021 12:29:07 +0800</lastBuildDate>
     
-	<atom:link href="https://wind13.github.io/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</title>
-      <link>https://wind13.github.io/post/2021/nodejs-fullstack-solution/</link>
+      <link>/post/2021/nodejs-fullstack-solution/</link>
       <pubDate>Sat, 21 Aug 2021 12:29:07 +0800</pubDate>
       
-      <guid>https://wind13.github.io/post/2021/nodejs-fullstack-solution/</guid>
+      <guid>/post/2021/nodejs-fullstack-solution/</guid>
       <description>JamStack WHAT IS JAMSTACK? A GUIDE FOR BUSINESS PEOPLE These decisions include the following: How you’ll manage the project/code Where you’ll store your content What software will build your site How your build process will be automated Where your site will be published What services and APIs your live site will use Best Practices Entire Project on a CDN Modern Build Tools Automated Builds Atomic Deploys: No changes go live until all changed files have been uploaded. Instant Cache Invalidation: Making sure your CDN can handle instant cache purges. Everything Lives in Git: Git clone, install any needed dependencies with a standard procedure (like npm install), and be ready to run the full project locally. No databases to clone, no complex installs. History LAMP(Linux, Apache, MySQL, PHP/Perl/Python) stack &amp;mdash;&amp;gt; MEAN(MongoDB,</description>
     </item>
     
     <item>
       <title>Airtest Learning</title>
-      <link>https://wind13.github.io/post/2021/blog.airtest-learning/</link>
+      <link>/post/2021/blog.airtest-learning/</link>
       <pubDate>Sun, 11 Oct 2020 13:48:22 +0800</pubDate>
       
-      <guid>https://wind13.github.io/post/2021/blog.airtest-learning/</guid>
+      <guid>/post/2021/blog.airtest-learning/</guid>
       <description>命令行运行 通过 Airtest IDE 打包后的 apk 安装到雷电模拟器后，不能双击直接启动，需要在外部命令行操作，如下： adb 方式 比如雷电模拟器，可找到安装目录， cd /d/leidian/LDPlayer4 然后执行如下命令： ./adb.exe shell am instrument -w com.netease.open.airbase/android.support.test.runner.AndroidJUnitRunner Airtest Project Airtest Project自定义启动器支持批量运行脚本，并兼容在AirtestIDE中使用 Python v3.7.0 / Airtest: 1.1.1 / PocoUI: 1.0.78 其他笔记: Airtest Project</description>
     </item>
     
     <item>
       <title>技术方案要从解决现实世界的问题开始</title>
-      <link>https://wind13.github.io/post/2020/business-optimize/</link>
+      <link>/post/2020/business-optimize/</link>
       <pubDate>Sun, 24 May 2020 11:25:06 +0800</pubDate>
       
-      <guid>https://wind13.github.io/post/2020/business-optimize/</guid>
+      <guid>/post/2020/business-optimize/</guid>
       <description>技术方案要从解决现实世界的问题开始 技术群里讨论一个技术方案的问题，大概描述如下： 一个单据处理系统，上游系统会不断产生新的单据，数量比较大，频率也比较高； 当前系统分为两个环节，一个接单环节，一个转单环节； 接单环节负责将单据入库；保存数据库目前速度跟得上，可以保证上游系统的单据全部入</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>一图 on 世风十三学堂</title>
-    <link>https://wind13.github.io/tags/%E4%B8%80%E5%9B%BE/</link>
+    <link>/tags/%E4%B8%80%E5%9B%BE/</link>
     <description>Recent content in 一图 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 29 Mar 2018 03:07:53 +0000</lastBuildDate>
     
-	<atom:link href="https://wind13.github.io/tags/%E4%B8%80%E5%9B%BE/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%E4%B8%80%E5%9B%BE/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>一图看懂 AntD 的结构</title>
-      <link>https://wind13.github.io/post/2018/2018-03-29-one-pic-know-antd/</link>
+      <link>/post/2018/2018-03-29-one-pic-know-antd/</link>
       <pubDate>Thu, 29 Mar 2018 03:07:53 +0000</pubDate>
       
-      <guid>https://wind13.github.io/post/2018/2018-03-29-one-pic-know-antd/</guid>
+      <guid>/post/2018/2018-03-29-one-pic-know-antd/</guid>
       <description>个人理解，仅供参考！ 在开发时，仅需关注图中的那些 *.js 文件即可。</description>
     </item>
     

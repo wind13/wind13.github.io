@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>angularjs on 世风十三学堂</title>
-    <link>https://wind13.github.io/tags/angularjs/</link>
+    <link>/tags/angularjs/</link>
     <description>Recent content in angularjs on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     
-	<atom:link href="https://wind13.github.io/tags/angularjs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/angularjs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Backbone 路向何方？</title>
-      <link>https://wind13.github.io/post/2014/2014-05-07-migrate-backbone-to/</link>
+      <link>/post/2014/2014-05-07-migrate-backbone-to/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wind13.github.io/post/2014/2014-05-07-migrate-backbone-to/</guid>
+      <guid>/post/2014/2014-05-07-migrate-backbone-to/</guid>
       <description>情况背景 使用 Backbone 开发 Web App 之后，特别是较大型的项目，会发现因为缺少一些关键的功能（如：双向绑定等）代码越来越多且复杂，从而导致后期扩展和更新越来越困难，因此从基本框架层面需要考虑改善，以便使整个框架更有条理，更易组织，更易扩展、复用、重构等…… 目前可以想到的有三个方向： 在 Backbone 基础上结合</description>
     </item>
     
     <item>
       <title>Javascript框架及相关知识</title>
-      <link>https://wind13.github.io/post/2013/2013-12-24-jsframework/</link>
+      <link>/post/2013/2013-12-24-jsframework/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wind13.github.io/post/2013/2013-12-24-jsframework/</guid>
+      <guid>/post/2013/2013-12-24-jsframework/</guid>
       <description>综合框架 arale.js{:target=&amp;rdquo;_blank&amp;rdquo;} 支付宝的前端基础类库 Arale 基于 SeaJS 和 jQuery 等，目前新构建 2.0 版本。 demo: 计算器{:target=&amp;rdquo;_blank&amp;rdquo;} KISSY{:target=&amp;rdquo;_blank&amp;rdquo;} 是由淘宝前端攻城师们发起创建的一个开源 JS 类库。 Ender.js{:target=&amp;rdquo;_blank&amp;rdquo;} - Ender is a full featured package manager for your browser. 作者 Dustin Diaz{:target=&amp;rdquo;_blank&amp;rdquo;} 模块加载框架 Javascript模块化{:target=&amp;rdquo</description>
     </item>
     

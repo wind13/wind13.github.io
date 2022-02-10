@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IOT on 世风十三学堂</title>
-    <link>https://wind13.github.io/tags/iot/</link>
+    <link>/tags/iot/</link>
     <description>Recent content in IOT on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 25 Jul 2020 22:09:48 +0800</lastBuildDate>
     
-	<atom:link href="https://wind13.github.io/tags/iot/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/iot/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Rust in IoT</title>
-      <link>https://wind13.github.io/post/2020/rust-in-iot/</link>
+      <link>/post/2020/rust-in-iot/</link>
       <pubDate>Sat, 25 Jul 2020 22:09:48 +0800</pubDate>
       
-      <guid>https://wind13.github.io/post/2020/rust-in-iot/</guid>
+      <guid>/post/2020/rust-in-iot/</guid>
       <description>引用一篇国外的网文： 主要内容是解释为什么重写了原来的 Python 的程序。 Architecturally, the existing architecture was incapable of scaling to other technologies or changing direction without massive amounts of effort. The business had just been forced to change to MQTT from another IaaS provider because of licensing cost concerns, and the cutover took nearly a year. With new devices released every year (e.g. BLE, Wifi, Z-Wave, Zigbee, arbitrary REST APIs) the business wants to be able to change IoT stacks quickly to adapt to new technology. There were technical debt items nobody understood or was prepared to resolve. (Did I mention that none of the original programmers were still around to fix bugs or answer questions?) Fixing obvious issues in</description>
     </item>
     
     <item>
       <title>Iot 物联网相关学习</title>
-      <link>https://wind13.github.io/post/2020/iot-learn/</link>
+      <link>/post/2020/iot-learn/</link>
       <pubDate>Fri, 05 Jun 2020 14:40:52 +0800</pubDate>
       
-      <guid>https://wind13.github.io/post/2020/iot-learn/</guid>
+      <guid>/post/2020/iot-learn/</guid>
       <description>主流框架 SiteWhere 是一个面向物联网（IoT）的工业级开源应用支持平台。它提供了基于多租户微服务的基础架构，其中包括构建和部署IoT应用程序所需的关键功能。 SiteWhere基础架构和微服务部署在Kubernetes上，允许部署内部部署或几乎任何云提供商。 Apache Kafka，Zookeeper和</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>learn on 世风十三学堂</title>
-    <link>https://wind13.github.io/tags/learn/</link>
+    <link>/tags/learn/</link>
     <description>Recent content in learn on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 02 Oct 2019 04:58:25 +0000</lastBuildDate>
     
-	<atom:link href="https://wind13.github.io/tags/learn/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/learn/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>编程自立之道</title>
-      <link>https://wind13.github.io/post/2019/2019-10-02-programming-dao/</link>
+      <link>/post/2019/2019-10-02-programming-dao/</link>
       <pubDate>Wed, 02 Oct 2019 04:58:25 +0000</pubDate>
       
-      <guid>https://wind13.github.io/post/2019/2019-10-02-programming-dao/</guid>
+      <guid>/post/2019/2019-10-02-programming-dao/</guid>
       <description>编程自立之道 在开始之前，有耐心的朋友可以先看一下这篇 InfoQ 翻译的文章从第1行代码到百万年薪 ，我是如何在8个月内做到的？，英文原文在此：How I Went from First Line of Code to $226K Job Offer in 8 Months，没耐心的我可以简要介绍内容如下： 作者 Jason Zedde 在 2018年6月24日写下了第一行 JavaScript 代码，当时他有一个经济学学位</description>
     </item>
     

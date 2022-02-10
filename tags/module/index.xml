@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>module on 世风十三学堂</title>
-    <link>https://wind13.github.io/tags/module/</link>
+    <link>/tags/module/</link>
     <description>Recent content in module on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     
-	<atom:link href="https://wind13.github.io/tags/module/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/module/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Play!中如何用module组织多个相关项目？</title>
-      <link>https://wind13.github.io/post/2013/2013-12-13-multiproject/</link>
+      <link>/post/2013/2013-12-13-multiproject/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wind13.github.io/post/2013/2013-12-13-multiproject/</guid>
+      <guid>/post/2013/2013-12-13-multiproject/</guid>
       <description>首先按业务需求划分为多个应用，应用就是用 play new xxx来创建的。 其次将公用部分划分为多个子项目或称子模块，就是用 play new-module创建的。 这些项目均并列导入eclipse中，应用引用相应需要的子项目，需要在application.conf中添加，有多个就添加多行： module.base=../base module.common=../common 在eclip</description>
     </item>
     

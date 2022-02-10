@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>grpc on 世风十三学堂</title>
-    <link>https://wind13.github.io/tags/grpc/</link>
+    <link>/tags/grpc/</link>
     <description>Recent content in grpc on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 02 Jun 2020 21:28:33 +0800</lastBuildDate>
     
-	<atom:link href="https://wind13.github.io/tags/grpc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/grpc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>RPC 相关学习</title>
-      <link>https://wind13.github.io/post/2020/learn-rpc/</link>
+      <link>/post/2020/learn-rpc/</link>
       <pubDate>Tue, 02 Jun 2020 21:28:33 +0800</pubDate>
       
-      <guid>https://wind13.github.io/post/2020/learn-rpc/</guid>
+      <guid>/post/2020/learn-rpc/</guid>
       <description>各家官网 gRPC Apache Dubbo™ 是一款高性能Java RPC框架。 SOFARPC 介绍 相关资料 重点资料 RPC 协议之争和选型要点 对于 RPC 框架，在架构上能够支持多语言非常重要。不同的业务场景，适合不同的语言，例如后端复杂业务逻辑使用 Java 开发效率更高，对于 API 网关或者边缘服务，适合 GO 语言。对于一些序列化框架，由于使用了</description>
     </item>
     

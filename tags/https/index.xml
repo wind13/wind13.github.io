@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>https on 世风十三学堂</title>
-    <link>https://wind13.github.io/tags/https/</link>
+    <link>/tags/https/</link>
     <description>Recent content in https on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     
-	<atom:link href="https://wind13.github.io/tags/https/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/https/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>如何同时使用http和https协议</title>
-      <link>https://wind13.github.io/post/2013/2013-12-13-userhttps/</link>
+      <link>/post/2013/2013-12-13-userhttps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wind13.github.io/post/2013/2013-12-13-userhttps/</guid>
+      <guid>/post/2013/2013-12-13-userhttps/</guid>
       <description>首先看官方文档 用openssl命令生成自己的签名文档 openssl genrsa 1024 &amp;gt; host.key openssl req -new -x509 -nodes -sha1 -days 365 -key host.key &amp;gt; host.cert 生成签名时需回答类似这样的问题： Country Name (2 letter code) [XX]: State or Province Name (full name) []: Locality Name (eg, city) [Default City]: Organization Name (eg, company) [Default Company Ltd]: Organizational Unit Name (eg, section) []: Common Name (eg, your name or your server&#39;s hostname) []: Email Address []: 最终会得到两个文件：host.key和host.cert 然后在appli</description>
     </item>
     
