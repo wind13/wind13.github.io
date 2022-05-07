@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>React on 世风十三学堂</title>
+    <title>react on 世风十三学堂</title>
     <link>/tags/react/</link>
-    <description>Recent content in React on 世风十三学堂</description>
+    <description>Recent content in react on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 28 Dec 2020 16:49:11 +0800</lastBuildDate>
