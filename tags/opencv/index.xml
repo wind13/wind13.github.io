@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OpenCV on 世风十三学堂</title>
-    <link>/tags/opencv/</link>
+    <link>https://wind13.github.io/tags/opencv/</link>
     <description>Recent content in OpenCV on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 02 Jun 2018 18:39:26 +0800</lastBuildDate>
     
-	<atom:link href="/tags/opencv/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wind13.github.io/tags/opencv/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>OCR 开发研究</title>
-      <link>/post/2018/ocr-develop-research/</link>
+      <link>https://wind13.github.io/post/2018/ocr-develop-research/</link>
       <pubDate>Sat, 02 Jun 2018 18:39:26 +0800</pubDate>
       
-      <guid>/post/2018/ocr-develop-research/</guid>
+      <guid>https://wind13.github.io/post/2018/ocr-develop-research/</guid>
       <description>遇到问题： 鉴权问题： 百度 API 需要首先创建应用，并且设置应用调用接口范围，如果不包含相应接口，后期在调用时会遇到 error_code = 6 (No permission to access data) 的错误提示。 创建应用后，每个应用会有相应的 AK(API Key) 和 SK (Secret Key)，可以用这两样来生成 token 用于接口调用验证。 另外百度个别接口会要求“真人认证”、“企业认证”等特殊要</description>
     </item>
     
     <item>
       <title>Computer Vision 学习</title>
-      <link>/post/2018/2018-02-07-computer-vision-%E5%AD%A6%E4%B9%A0/</link>
+      <link>https://wind13.github.io/post/2018/2018-02-07-computer-vision-%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Wed, 07 Feb 2018 16:17:34 +0000</pubDate>
       
-      <guid>/post/2018/2018-02-07-computer-vision-%E5%AD%A6%E4%B9%A0/</guid>
+      <guid>https://wind13.github.io/post/2018/2018-02-07-computer-vision-%E5%AD%A6%E4%B9%A0/</guid>
       <description>Computer Vision Library What are pros and cons of OpenCV and TensorFlow for computer vision? ccv A Modern Computer Vision Library SimpleCV Computer Vision platform using Python. Blepo Computer Vision Library Python教程 OpenCV vs VXL vs LTI: Performance Test I recently read this comparison of four vision libraries: OpenCV, VXL, LTI and OpenCV with IPP. It was in the book Learning Learning OpenCV: Computer Vision with the OpenCV Library, authored by the creators of OpenCV themselves. For those who aren&amp;rsquo;t familiar with these libraries, here&amp;rsquo;s a brief introduction. VXL VXL stands for Vision something Library. It is a C++ library that implements several common computer vision algorithms and related functionality. The idea is to replace the &amp;lsquo;X&amp;rsquo; with one of the several letters: VGL = Vision Geometry Library VIL = Vision Image processing</description>
     </item>
     
