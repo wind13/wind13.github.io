@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>QA on 世风十三学堂</title>
-    <link>https://wind13.github.io/tags/qa/</link>
+    <link>/tags/qa/</link>
     <description>Recent content in QA on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     
-	<atom:link href="https://wind13.github.io/tags/qa/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/qa/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Play!技巧问答</title>
-      <link>https://wind13.github.io/post/2014/2014-02-26-playqaindex/</link>
+      <link>/post/2014/2014-02-26-playqaindex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wind13.github.io/post/2014/2014-02-26-playqaindex/</guid>
+      <guid>/post/2014/2014-02-26-playqaindex/</guid>
       <description>Play!中如何用module组织多个相关项目 FunctionTest测试中如何取得Session值 Xml域名空间（WS.(url).get().getXml()无法取得带命名空间Document对象）识别问题 在Play!中如何实现类似过滤器的功能 如何同时使用http和https</description>
     </item>
     
