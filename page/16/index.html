@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
-	<meta name="generator" content="Hugo 0.58.3" />
+	<meta name="generator" content="Hugo 0.74.3" />
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -77,6 +77,38 @@
     <article class="post">
         <header>
             <h1 class="post-title">
+                <a href="/post/2013/2013-12-13-userhttps/" title="如何同时使用http和https协议">如何同时使用http和https协议</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            1年1月1日
+        </date>
+        
+        <div class="post-content">
+            首先看官方文档 用openssl命令生成自己的签名文档 openssl genrsa 1024 &gt; host.key openssl req -new -x509 -nodes -sha1 -days 365 -key host.key &gt; host.cert 生成签名时需回答类似这样的问题： Country Name (2 letter code) [XX]: State or Province Name (full name) []: Locality Name (eg, city) [Default City]: Organization Name (eg, company) [Default Company Ltd]: Organizational Unit Name (eg, section) []: Common Name (eg, your name or your server's hostname) []: Email Address []: 最终会得到两个文件：host.key和host.cert 然后在appli……
+        </div>
+        <p class="readmore"><a href="/post/2013/2013-12-13-userhttps/">阅读全文</a></p>
+    </article>
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="/post/2016/2016-09-24-weixin-xiao-cheng-xu/" title="微信小程序相关学习">微信小程序相关学习</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            1年1月1日
+        </date>
+        
+        <div class="post-content">
+            收集链接 微信小应用资源汇总整理 WePY 让小程序支持组件化开发的框架 Github 微信小程序wepy框架开发资源汇总 开发微信小程序入门前 微信小程序设计指南 CSS参考手册 首个微信小程序开发教程！ 微信小程序简易教程 微信web开发者工具 微信小程序分享1：开发环境的配置 wechat-weapp-gank 一个图片App示例 wxapp-cli: 一个简单的微信小……
+        </div>
+        <p class="readmore"><a href="/post/2016/2016-09-24-weixin-xiao-cheng-xu/">阅读全文</a></p>
+    </article>
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
                 <a href="/post/2016/2016-08-26-collection-box/" title="收集的盒子">收集的盒子</a>
             </h1>
         </header>
@@ -85,7 +117,7 @@
         </date>
         
         <div class="post-content">
-            链接收集 网页设计巅峰之作{:target=&rdquo;_blank&rdquo;} MDX Markdown for the component era, 在 markdown 文档中加入 JSX 组件，可用于 React 项目。 为 Web 开发者提供的 16 本优秀的 E-BOOK{:target=&rdquo;_blank&rdquo;} 语义化版本 2.0.0{:target=&rdquo;_blank&rdquo;} 软件的版本号不是随便乱起的，这里有相应的说明和规范。 Publish Websites Like a BOSS B]{:target=&rdquo;_blank&rdquo;} 发布静态网站、Blog 的系统，与 Jekyll-Bootstrap 类似吧~ Static……
+            链接收集 网页设计巅峰之作 MDX Markdown for the component era, 在 markdown 文档中加入 JSX 组件，可用于 React 项目。 为 Web 开发者提供的 16 本优秀的 E-BOOK 语义化版本 2.0.0 软件的版本号不是随便乱起的，这里有相应的说明和规范。 Publish Websites Like a BOSS B] 发布静态网站、Blog 的系统，与 Jekyll-Bootstrap 类似吧~ Static - Static Site Generator 用 Clojure 发布静态网站、Blog 的系统，有空可以试试。 StackEdit 浏……
         </div>
         <p class="readmore"><a href="/post/2016/2016-08-26-collection-box/">阅读全文</a></p>
     </article>
@@ -165,7 +197,7 @@
         </date>
         
         <div class="post-content">
-            Java 相关 String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型 java 类对象初始化顺序 JavaScript相关 JavaScript框架 easyui 相关 easyui中form表单的ajax实现 版本1.2.5改进说明 自动化测试（抓数据）相关 关于HtmlUnitDriver无法支持所有javascript效果的问题 G……
+            Java 相关 String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型 java 类对象初始化顺序 JavaScript相关 JavaScript框架 easyui 相关 easyui中form表单的ajax实现 [版本1.2.5改进说明]({% post_url 2013-12-23-version1.2.5 %}) 自动化测试（抓数据）相关 关于HtmlUnitDriver无法支持所有javascri……
         </div>
         <p class="readmore"><a href="/post/2014/2014-01-09-otherrelay/">阅读全文</a></p>
     </article>
@@ -267,6 +299,14 @@
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -298,14 +338,6 @@
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -315,9 +347,9 @@
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -325,7 +357,7 @@
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -344,7 +376,7 @@
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -376,7 +408,7 @@
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -482,7 +514,7 @@
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -493,6 +525,8 @@
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -598,7 +632,7 @@
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -627,6 +661,8 @@
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -675,6 +711,8 @@
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -765,6 +803,8 @@
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

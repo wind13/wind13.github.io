@@ -103,116 +103,80 @@
         
         
         <div class="post-content">
-            
-
-<h1 id="docker-学习">Docker 学习</h1>
-
+            <h1 id="docker-学习">Docker 学习</h1>
 <h2 id="快速入门心法">快速入门心法</h2>
-
 <p>官网文档也好，网上其他的教程也好，都非常有“耐心”，一点点地教你怎么理解和使用 docker，但我在看这些教程和文档的时候其实很着急，因为我只想快速入门并且用起来，而且最好是按最佳实践的路子用起来，而不是象个初学者那样慢慢摸索。但就是没人把这条捷径说清楚……</p>
-
 <p>下面我就我所知道和理解的内容，写一点快速入门的心法：</p>
-
 <ul>
 <li>首先知道 docker 大概是个什么？
-
 <ul>
 <li>就我的理解，直白地说：就是一个轻量的虚拟机，在一个基本的内核基础上，层层叠加出想要的虚拟机环境。</li>
 <li>同时要注意一个重要概念，类似于微服务概念，每一个 docker 虚拟机里面一般只做一件事，只支持一个服务，例如： web 服务、 hexo 博客服务等；</li>
-</ul></li>
+</ul>
+</li>
 <li>其次要知道拿 docker 来有什么用，最主要的用途在哪儿？
-
 <ul>
 <li>目前就我的使用情况来说，就是一些开发部署环境在本机搭建起来很麻烦，不同的操作系统还有所不同，还要在本机安装一堆的包，还要在本机进行很多配置，而使用 docker 之后，就可以不用在本机安装了，本机干净了，又能快捷享用 docker 虚拟机中提供的服务。</li>
 <li>保证应用项目在不同的主机上运行时一致，因为都是运行在 docker 中的，所以各种操作系统，各个电脑打开项目，只要正常安装了 docker 后，启动运行起来，都象是在 linux 中一样，因为 docker 虚拟机基本都是基于 linux 操作系统的。</li>
-</ul></li>
+</ul>
+</li>
 <li>如何快速入门使用？
-
 <ul>
 <li>首先要有一定的基础，否则会遇到太多阻碍，个人觉得是要对 linux 系统的基础操作和一些工作模式要有一定的熟悉和了解，特别是网络方面比较清楚会有比较大的帮助，另外了解 git 的使用流程和基本命令会比较有帮助，对于理解 docker 这种虚拟机的管理模式也会比较有帮助，当然有一定的编程基础，熟悉一些语言开发也是必须的，毕竟 docker 就是帮助开发部署环境用的。</li>
 <li>快捷路线就是 docker-compose 了，别在 docker 命令上花费太多时间，只要把 docker 和 docker-compose 安装好后，就直接找一两个 docker-compose 构建的开源项目来尝试，运行 <code>docker-compose up</code> 就可以了，这本来也就是使用 docker 后最大的好处之一，只需要一个命令，有 docker 镜像就启动服务，没有就相应地创建或下载，总之不用操心怎么安装环境什么的。</li>
 <li>另一个注意点是尽量选择那些以 alpine 为基础的镜像，文件占空间小。</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <p>以上只是心法，具体的知识和教程可参考下面的内容，网上也多得是：</p>
-
 <h2 id="参考链接">参考链接</h2>
-
 <ul>
 <li><a href="http://www.cnblogs.com/miaodx/p/6160863.html">使用 mongo docker 镜像</a></li>
 <li><a href="http://www.cnblogs.com/yjmyzz/p/docker-compose-sample.html">docker-compose使用示例</a></li>
 <li><a href="https://www.jianshu.com/p/2217cfed29d7">Docker Compose 配置文件详解</a> 其中第15项 links 启发了我写数据库连接的方式：<code>mongodb://admin:rootadmin@mgdb:27017/coral-reef</code></li>
 <li><a href="https://www.jianshu.com/p/f8bb86ff7650">当安装Docker时碰上伟大的墙……</a></li>
 </ul>
-
 <h2 id="windows-安装问题">Windows 安装问题</h2>
-
 <p>在 Windows 系统安装经常会遇到各种各样的问题，Win10 系统如果是 Home 版或者遇到问题，无法使用 Docker-Desktop，就要考虑使用 Docker-Toolbox 了。</p>
-
 <ul>
 <li>首先要关闭 Hyper-V 后重启电脑，如果关闭后安装还出错，提示跟 Hyper-V，说明没关闭干净，参考 <a href="https://www.jianshu.com/p/2e3429d45aea">Windows 10 RS4 无法完全关闭Hyper-V导致Virtual Box 虚拟机</a> 一文的方法，重点是<a href="https://www.microsoft.com/en-us/download/details.aspx?id=53337">下载工具</a>并运行<code>DG_Readiness_Tool_v3.4.ps1 -Disable</code>。</li>
 <li>其后安装 Docker-Toolbox 后，在命令行中运行 <code>docker-machine create default</code> 创建虚拟机。</li>
-
-<li><p>然后运行 <code>docker images</code> 看是否正常，如果出现类似这样的错误：</p>
-
-<pre><code class="language-sh">error during connect: Get http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.40/images/json: open //./pipe/docker_engine: The system cannot find the file specified. In the default daemon configuration on Windows, the docker client must be run elevated to connect. This error may also indicate that the docker daemon is not running.
-</code></pre></li>
-
-<li><p>则需要执行 <code>docker-machine env default</code> 后根据提示执行： <code>eval $(&quot;D:\docker\docker-machine.exe&quot; env default)</code> 即可。</p></li>
-
-<li><p>再次测试 <code>docker-machine env default</code> ，应该可以正常了。</p></li>
+<li>然后运行 <code>docker images</code> 看是否正常，如果出现类似这样的错误：
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">error during connect: Get http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.40/images/json: open //./pipe/docker_engine: The system cannot find the file specified. In the default daemon configuration on Windows, the docker client must be run elevated to connect. This error may also indicate that the docker daemon is not running.
+</code></pre></div></li>
+<li>则需要执行 <code>docker-machine env default</code> 后根据提示执行： <code>eval $(&quot;D:\docker\docker-machine.exe&quot; env default)</code> 即可。</li>
+<li>再次测试 <code>docker-machine env default</code> ，应该可以正常了。</li>
 </ul>
-
 <h3 id="配置本地库">配置本地库</h3>
-
 <ul>
 <li><a href="https://blog.csdn.net/u011204487/article/details/83105133">docker-toolbox配置&ndash;insecure-registry&ndash;</a></li>
 </ul>
-
 <h2 id="国内镜像">国内镜像</h2>
-
 <ul>
 <li><a href="https://www.cnblogs.com/wushuaishuai/p/9984228.html">Docker 国内仓库和镜像</a></li>
 </ul>
-
 <h2 id="基本概念">基本概念</h2>
-
 <p>传统虚拟机：虚拟硬件和完整的操作系统，再运行应用；
 容器：运行于宿主的内核，没有自己的内核，没有硬件虚拟。</p>
-
-<h3 id="docker-包括三个基本概念-涉及-docker-的整个生命周期">Docker 包括三个基本概念，涉及 Docker 的整个生命周期。</h3>
-
+<h3 id="docker-包括三个基本概念涉及-docker-的整个生命周期">Docker 包括三个基本概念，涉及 Docker 的整个生命周期。</h3>
 <ul>
 <li>镜像（Image）[类]：由多层文件系统联合组成，支持容器运行和配置参数，无动态数据。</li>
 <li>容器（Container）[实例]：运行于独立命名空间的进程，以镜像为基础层，之上是容器存储层（会随容器消亡）。数据卷不会消亡。容器是拥有不同 IP 地址从而使其成为网络上可识别的独立 Linux 进程。容器依赖于镜像，如果想删除某个镜像，必须先删除相应的容器。</li>
-<li>仓库（Repository）：Docker Registry =&gt; Repository =&gt; Tag == Image，&rdquo;repository:tag&rdquo;，一个镜像可以对应多个标签 tag。</li>
+<li>仓库（Repository）：Docker Registry =&gt; Repository =&gt; Tag == Image，&ldquo;repository:tag&rdquo;，一个镜像可以对应多个标签 tag。</li>
 <li>虚悬镜像（Dangling image）：<code>docker pull</code> 或 <code>docker build</code> 导致标签指向新镜像，旧的无标签镜像变成虚悬镜像。</li>
 <li>黑箱镜像：使用 docker commit 意味着所有对镜像的操作都是黑箱操作，生成的镜像也被称为黑箱镜像。</li>
 <li>数据卷：volume</li>
 </ul>
-
 <h3 id="docker-网络">Docker 网络</h3>
-
 <p>强烈建议大家将容器加入自定义的 Docker 网络来连接多个容器，而不是使用 &ndash;link 参数。</p>
-
 <h4 id="创建一个新的-docker-网络">创建一个新的 Docker 网络</h4>
-
-<pre><code class="language-shell">docker network create -d bridge my-net
-</code></pre>
-
-<h2 id="docker-命令">docker 命令</h2>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker network create -d bridge my-net
+</code></pre></div><h2 id="docker-命令">docker 命令</h2>
 <p>使用 COPY 指令，源文件的各种元数据都会保留。比如读、写、执行权限、文件变更时间等。这个特性对于镜像定制很有用。特别是构建相关文件都在使用 Git 进行管理的时候。</p>
-
 <p>docker主命令不要用后台运行，容器就是为了主进程而存在的，主进程退出，容器就失去了存在的意义，从而退出。正确的做法是直接执行 nginx 可执行文件，并且要求以前台形式运行。比如：</p>
-
 <p><code>CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;]</code></p>
-
 <h3 id="docker-run-详解">Docker run 详解</h3>
-
 <p>当利用 docker run 来创建容器时，Docker 在后台运行的标准操作包括：</p>
-
 <ul>
 <li>检查本地是否存在指定的镜像，不存在就从公有仓库下载</li>
 <li>利用镜像创建并启动一个容器</li>
@@ -222,273 +186,172 @@
 <li>执行用户指定的应用程序</li>
 <li>执行完毕后容器被终止</li>
 </ul>
-
 <h3 id="docker-registry-公开服务">Docker Registry 公开服务</h3>
-
 <p>镜像服务被称为<strong>加速器</strong>。常见的有 <a href="https://cr.console.aliyun.com/#/accelerator">阿里云加速器</a>、<a href="https://www.daocloud.io/mirror#accelerator-doc">DaoCloud 加速器</a> 等。</p>
-
 <p>国内也有一些云服务商提供类似于 Docker Hub 的公开服务。比如 <a href="https://hub.tenxcloud.com/">时速云镜像仓库</a>、<a href="https://c.163.com/hub#/m/library/">网易云镜像服务</a>、<a href="https://hub.daocloud.io/">DaoCloud 镜像市场</a>、<a href="https://cr.console.aliyun.com">阿里云镜像库</a> 等。</p>
-
 <h2 id="docker-编译一个-dockerfile">docker 编译一个 Dockerfile</h2>
-
-<pre><code class="language-shell">docker build -t friendlyhello .
-</code></pre>
-
-<h2 id="列出系统中的所有镜像">列出系统中的所有镜像：</h2>
-
-<pre><code class="language-shell">docker images
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker build -t friendlyhello .
+</code></pre></div><h2 id="列出系统中的所有镜像">列出系统中的所有镜像：</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker images
 
 REPOSITORY            TAG                 IMAGE ID
 friendlyhello         latest              326387cea398
-</code></pre>
+</code></pre></div><h2 id="删除所有虚悬镜像">删除所有虚悬镜像：</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker image prune
+</code></pre></div><h2 id="删除所有无主的数据卷">删除所有无主的数据卷：</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker volume prune
+</code></pre></div><h2 id="删除本地镜像">删除本地镜像：</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker image rm <span style="color:#f92672">[</span>选项<span style="color:#f92672">]</span> &lt;镜像1&gt; <span style="color:#f92672">[</span>&lt;镜像2&gt; ...<span style="color:#f92672">]</span>
 
-<h2 id="删除所有虚悬镜像">删除所有虚悬镜像：</h2>
+<span style="color:#75715e"># 删除所有仓库名为 redis 的镜像</span>
+docker image rm <span style="color:#66d9ef">$(</span>docker image ls -q redis<span style="color:#66d9ef">)</span>
 
-<pre><code class="language-shell">docker image prune
-</code></pre>
-
-<h2 id="删除所有无主的数据卷">删除所有无主的数据卷：</h2>
-
-<pre><code class="language-shell">docker volume prune
-</code></pre>
-
-<h2 id="删除本地镜像">删除本地镜像：</h2>
-
-<pre><code class="language-shell">docker image rm [选项] &lt;镜像1&gt; [&lt;镜像2&gt; ...]
-
-# 删除所有仓库名为 redis 的镜像
-docker image rm $(docker image ls -q redis)
-
-# 删除所有在 mongo:3.2 之前的镜像
-docker image rm $(docker image ls -q -f before=mongo:3.2)
-</code></pre>
-
-<h2 id="查看镜像的历史记录">查看镜像的历史记录</h2>
-
-<pre><code class="language-shell">docker history ubuntu:latest
-</code></pre>
-
-<h2 id="在某个端口映射下启动该镜像">在某个端口映射下启动该镜像：</h2>
-
-<pre><code class="language-shell">docker run -p 4000:80 friendlyhello
-</code></pre>
-
-<pre><code class="language-shell">docker run -it --rm ubuntu:16.04 bash
-</code></pre>
-
-<ul>
+<span style="color:#75715e"># 删除所有在 mongo:3.2 之前的镜像</span>
+docker image rm <span style="color:#66d9ef">$(</span>docker image ls -q -f before<span style="color:#f92672">=</span>mongo:3.2<span style="color:#66d9ef">)</span>
+</code></pre></div><h2 id="查看镜像的历史记录">查看镜像的历史记录</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker history ubuntu:latest
+</code></pre></div><h2 id="在某个端口映射下启动该镜像">在某个端口映射下启动该镜像：</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run -p 4000:80 friendlyhello
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run -it --rm ubuntu:16.04 bash
+</code></pre></div><ul>
 <li>-i：交互；</li>
 <li>-t：终端；</li>
-
-<li><p>&ndash;rm 容器退出后将其删除；</p>
-
-<pre><code class="language-shell"># 用 nginx 镜像启动一个容器，命名为 webserver，并且映射了 80 端口
-docker run --name webserver -d -p 80:80 nginx
-</code></pre></li>
+<li>&ndash;rm 容器退出后将其删除；</li>
 </ul>
-
-<h2 id="查看映射端口配置">查看映射端口配置</h2>
-
-<pre><code class="language-shell">docker port webserver
-</code></pre>
-
-<h2 id="进入某个运行中的容器-bash">进入某个运行中的容器 bash</h2>
-
-<pre><code class="language-shell">docker exec -it webserver bash
-</code></pre>
-
-<h2 id="查看镜像-容器-数据卷所占用的空间">查看镜像、容器、数据卷所占用的空间</h2>
-
-<pre><code class="language-shell">docker system df
-</code></pre>
-
-<h2 id="列出系统中启动的容器">列出系统中启动的容器：</h2>
-
-<pre><code class="language-shell">docker container ls
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 用 nginx 镜像启动一个容器，命名为 webserver，并且映射了 80 端口</span>
+docker run --name webserver -d -p 80:80 nginx
+</code></pre></div><h2 id="查看映射端口配置">查看映射端口配置</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker port webserver
+</code></pre></div><h2 id="进入某个运行中的容器-bash">进入某个运行中的容器 bash</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker exec -it webserver bash
+</code></pre></div><h2 id="查看镜像容器数据卷所占用的空间">查看镜像、容器、数据卷所占用的空间</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker system df
+</code></pre></div><h2 id="列出系统中启动的容器">列出系统中启动的容器：</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker container ls
 
 CONTAINER ID        IMAGE               COMMAND             CREATED
-1fa4ab2cf395        friendlyhello       &quot;python app.py&quot;     28 seconds ago
-</code></pre>
-
-<h2 id="关闭某个容器">关闭某个容器：</h2>
-
-<pre><code class="language-shell">docker container stop 1fa4ab2cf395
-</code></pre>
-
-<h2 id="services">Services</h2>
-
-<pre><code class="language-shell">docker stack ls                                            # List stacks or apps
-docker stack deploy -c &lt;composefile&gt; &lt;appname&gt;  # Run the specified Compose file
-docker service ls                 # List running services associated with an app
-docker service ps &lt;service&gt;                  # List tasks associated with an app
-docker inspect &lt;task or container&gt;                   # Inspect task or container
-docker container ls -q                                      # List container IDs
-docker stack rm &lt;appname&gt;                             # Tear down an application
-docker swarm leave --force      # Take down a single node swarm from the manager
-</code></pre>
-
-<h2 id="docker-命令帮助">docker 命令帮助</h2>
-
-<pre><code class="language-bash">Commands:
-    attach    Attach to a running container                 # 当前 shell 下 attach 连接指定运行镜像
-    build     Build an image from a Dockerfile              # 通过 Dockerfile 定制镜像
-    commit    Create a new image from a container's changes # 提交当前容器为新的镜像
-    cp        Copy files/folders from the containers filesystem to the host path
-              # 从容器中拷贝指定文件或者目录到宿主机中
-    create    Create a new container                        # 创建一个新的容器，同 run，但不启动容器
-    diff      Inspect changes on a container's filesystem   # 查看 docker 容器变化
-    events    Get real time events from the server          # 从 docker 服务获取容器实时事件
-    exec      Run a command in an existing container        # 在已存在的容器上运行命令
+1fa4ab2cf395        friendlyhello       <span style="color:#e6db74">&#34;python app.py&#34;</span>     <span style="color:#ae81ff">28</span> seconds ago
+</code></pre></div><h2 id="关闭某个容器">关闭某个容器：</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker container stop 1fa4ab2cf395
+</code></pre></div><h2 id="services">Services</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker stack ls                                            <span style="color:#75715e"># List stacks or apps</span>
+docker stack deploy -c &lt;composefile&gt; &lt;appname&gt;  <span style="color:#75715e"># Run the specified Compose file</span>
+docker service ls                 <span style="color:#75715e"># List running services associated with an app</span>
+docker service ps &lt;service&gt;                  <span style="color:#75715e"># List tasks associated with an app</span>
+docker inspect &lt;task or container&gt;                   <span style="color:#75715e"># Inspect task or container</span>
+docker container ls -q                                      <span style="color:#75715e"># List container IDs</span>
+docker stack rm &lt;appname&gt;                             <span style="color:#75715e"># Tear down an application</span>
+docker swarm leave --force      <span style="color:#75715e"># Take down a single node swarm from the manager</span>
+</code></pre></div><h2 id="docker-命令帮助">docker 命令帮助</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Commands:
+    attach    Attach to a running container                 <span style="color:#75715e"># 当前 shell 下 attach 连接指定运行镜像</span>
+    build     Build an image from a Dockerfile              <span style="color:#75715e"># 通过 Dockerfile 定制镜像</span>
+    commit    Create a new image from a container<span style="color:#e6db74">&#39;s changes # 提交当前容器为新的镜像
+</span><span style="color:#e6db74">    cp        Copy files/folders from the containers filesystem to the host path
+</span><span style="color:#e6db74">              # 从容器中拷贝指定文件或者目录到宿主机中
+</span><span style="color:#e6db74">    create    Create a new container                        # 创建一个新的容器，同 run，但不启动容器
+</span><span style="color:#e6db74">    diff      Inspect changes on a container&#39;</span>s filesystem   <span style="color:#75715e"># 查看 docker 容器变化</span>
+    events    Get real time events from the server          <span style="color:#75715e"># 从 docker 服务获取容器实时事件</span>
+    exec      Run a command in an existing container        <span style="color:#75715e"># 在已存在的容器上运行命令</span>
     export    Stream the contents of a container as a tar archive   
-              # 导出容器的内容流作为一个 tar 归档文件[对应 import ]
-    history   Show the history of an image                  # 展示一个镜像形成历史
-    images    List images                                   # 列出系统当前镜像
+              <span style="color:#75715e"># 导出容器的内容流作为一个 tar 归档文件[对应 import ]</span>
+    history   Show the history of an image                  <span style="color:#75715e"># 展示一个镜像形成历史</span>
+    images    List images                                   <span style="color:#75715e"># 列出系统当前镜像</span>
     import    Create a new filesystem image from the contents of a tarball  
-              # 从tar包中的内容创建一个新的文件系统映像[对应 export]
-    info      Display system-wide information               # 显示系统相关信息
-    inspect   Return low-level information on a container   # 查看容器详细信息
-    kill      Kill a running container                      # kill 指定 docker 容器
-    load      Load an image from a tar archive              # 从一个 tar 包中加载一个镜像[对应 save]
+              <span style="color:#75715e"># 从tar包中的内容创建一个新的文件系统映像[对应 export]</span>
+    info      Display system-wide information               <span style="color:#75715e"># 显示系统相关信息</span>
+    inspect   Return low-level information on a container   <span style="color:#75715e"># 查看容器详细信息</span>
+    kill      Kill a running container                      <span style="color:#75715e"># kill 指定 docker 容器</span>
+    load      Load an image from a tar archive              <span style="color:#75715e"># 从一个 tar 包中加载一个镜像[对应 save]</span>
     login     Register or Login to the docker registry server   
-              # 注册或者登陆一个 docker 源服务器
-    logout    Log out from a Docker registry server         # 从当前 Docker registry 退出
-    logs      Fetch the logs of a container                 # 输出当前容器日志信息
+              <span style="color:#75715e"># 注册或者登陆一个 docker 源服务器</span>
+    logout    Log out from a Docker registry server         <span style="color:#75715e"># 从当前 Docker registry 退出</span>
+    logs      Fetch the logs of a container                 <span style="color:#75715e"># 输出当前容器日志信息</span>
     port      Lookup the public-facing port which is NAT-ed to PRIVATE_PORT
-              # 查看映射端口对应的容器内部源端口
-    pause     Pause all processes within a container        # 暂停容器
-    ps        List containers                               # 列出容器列表
+              <span style="color:#75715e"># 查看映射端口对应的容器内部源端口</span>
+    pause     Pause all processes within a container        <span style="color:#75715e"># 暂停容器</span>
+    ps        List containers                               <span style="color:#75715e"># 列出容器列表</span>
     pull      Pull an image or a repository from the docker registry server
-              # 从docker镜像源服务器拉取指定镜像或者库镜像
+              <span style="color:#75715e"># 从docker镜像源服务器拉取指定镜像或者库镜像</span>
     push      Push an image or a repository to the docker registry server
-              # 推送指定镜像或者库镜像至docker源服务器
-    restart   Restart a running container                   # 重启运行的容器
-    rm        Remove one or more containers                 # 移除一个或者多个容器
+              <span style="color:#75715e"># 推送指定镜像或者库镜像至docker源服务器</span>
+    restart   Restart a running container                   <span style="color:#75715e"># 重启运行的容器</span>
+    rm        Remove one or more containers                 <span style="color:#75715e"># 移除一个或者多个容器</span>
     rmi       Remove one or more images
-              # 移除一个或多个镜像[无容器使用该镜像才可删除，否则需删除相关容器才可继续或 -f 强制删除]
+              <span style="color:#75715e"># 移除一个或多个镜像[无容器使用该镜像才可删除，否则需删除相关容器才可继续或 -f 强制删除]</span>
     run       Run a command in a new container
-              # 创建一个新的容器并运行一个命令
-    save      Save an image to a tar archive                # 保存一个镜像为一个 tar 包[对应 load]
-    search    Search for an image on the Docker Hub         # 在 docker hub 中搜索镜像
-    start     Start a stopped containers                    # 启动容器
-    stop      Stop a running containers                     # 停止容器
-    tag       Tag an image into a repository                # 给源中镜像打标签
-    top       Lookup the running processes of a container   # 查看容器中运行的进程信息
-    unpause   Unpause a paused container                    # 取消暂停容器
-    version   Show the docker version information           # 查看 docker 版本号
-    wait      Block until a container stops, then print its exit code   
-              # 截取容器停止时的退出状态值
-</code></pre>
-
-<h2 id="docker-高级网络工具和示例">Docker 高级网络工具和示例</h2>
-
+              <span style="color:#75715e"># 创建一个新的容器并运行一个命令</span>
+    save      Save an image to a tar archive                <span style="color:#75715e"># 保存一个镜像为一个 tar 包[对应 load]</span>
+    search    Search <span style="color:#66d9ef">for</span> an image on the Docker Hub         <span style="color:#75715e"># 在 docker hub 中搜索镜像</span>
+    start     Start a stopped containers                    <span style="color:#75715e"># 启动容器</span>
+    stop      Stop a running containers                     <span style="color:#75715e"># 停止容器</span>
+    tag       Tag an image into a repository                <span style="color:#75715e"># 给源中镜像打标签</span>
+    top       Lookup the running processes of a container   <span style="color:#75715e"># 查看容器中运行的进程信息</span>
+    unpause   Unpause a paused container                    <span style="color:#75715e"># 取消暂停容器</span>
+    version   Show the docker version information           <span style="color:#75715e"># 查看 docker 版本号</span>
+    wait      Block <span style="color:#66d9ef">until</span> a container stops, <span style="color:#66d9ef">then</span> print its exit code   
+              <span style="color:#75715e"># 截取容器停止时的退出状态值</span>
+</code></pre></div><h2 id="docker-高级网络工具和示例">Docker 高级网络工具和示例</h2>
 <p>在介绍自定义网络拓扑之前，你可能会对一些外部工具和例子感兴趣：</p>
-
 <h3 id="pipework">pipework</h3>
-
 <p>Jérôme Petazzoni 编写了一个叫 <a href="https://github.com/jpetazzo/pipework">pipework</a> 的 shell 脚本，可以帮助用户在比较复杂的场景中完成容器的连接。</p>
-
 <h3 id="playground">playground</h3>
-
 <p>Brandon Rhodes 创建了一个提供完整的 Docker 容器网络拓扑管理的 <a href="https://github.com/brandon-rhodes/fopnp/tree/m/playground">Python库</a>，包括路由、NAT 防火墙；以及一些提供 HTTP, SMTP, POP, IMAP, Telnet, SSH, FTP 的服务器。</p>
-
 <h2 id="docker-官方三剑客">Docker 官方三剑客</h2>
-
 <h3 id="docker-compose-项目">Docker Compose 项目</h3>
-
 <ul>
 <li>服务 (service)：一个应用容器，实际上可以运行多个相同镜像的实例。</li>
 <li>项目 (project)：由一组关联的应用容器组成的一个完整业务单元。</li>
 </ul>
-
 <h3 id="docker-machine-项目">Docker Machine 项目</h3>
-
 <p>在多种平台上快速安装 Docker 环境，在 macOS 上安装 xhyve 虚拟机支持：</p>
-
-<pre><code class="language-shell">brew install docker-machine-driver-xhyve
-</code></pre>
-
-<h3 id="docker-swarm-mode-项目">Docker Swarm mode 项目</h3>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">brew install docker-machine-driver-xhyve
+</code></pre></div><h3 id="docker-swarm-mode-项目">Docker Swarm mode 项目</h3>
 <p>提供 Docker 容器集群服务，具有容错能力的去中心化设计、内置服务发现、负载均衡、路由网格、动态伸缩、滚动更新、安全传输等。与 Kubernetes 是竞争关系。</p>
-
 <ul>
 <li><a href="http://dockone.io/article/1138">巅峰对决之Swarm、Kubernetes、Mesos</a></li>
 <li><a href="https://platform9.com/blog/kubernetes-docker-swarm-compared/">Kubernetes vs Docker Swarm</a></li>
 <li><a href="https://www.jianshu.com/p/07daa3a16878">选择焦虑症のKubernetes 与 Docker Swarm</a></li>
 </ul>
-
 <h4 id="使用方法">使用方法：</h4>
-
 <h5 id="初始化一个-swarm-集群">初始化一个 Swarm 集群：</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker swarm init --advertise-addr 192.168.99.100
 
-<pre><code class="language-shell">docker swarm init --advertise-addr 192.168.99.100
-
-Swarm initialized: current node (7t2kqs1cmbw3r54921y9ofdcu) is now a manager.
-</code></pre>
-
-<p>To add a worker to this swarm, run the following command:</p>
-
-<pre><code class="language-shell">docker swarm join --token SWMTKN-1-4l54p60fpaumw188uk5yea8l3z0sd80q6ydiav0e8r12w5cog1-8i70bpp0wtxggiemi2wx63f3g 192.168.99.100:2377
-</code></pre>
-
-<p>To add a manager to this swarm, run &lsquo;docker swarm join-token manager&rsquo; and follow the instructions.</p>
-
-<h6 id="添加一个虚拟机后-加入此-swarm-遇到如下报错">添加一个虚拟机后，加入此 swarm 遇到如下报错：</h6>
-
-<pre><code class="language-shell">Error response from daemon: rpc error: code = Unavailable desc = grpc: the connection is unavailable
-</code></pre>
-
-<h2 id="kubernetes">Kubernetes</h2>
-
+Swarm initialized: current node <span style="color:#f92672">(</span>7t2kqs1cmbw3r54921y9ofdcu<span style="color:#f92672">)</span> is now a manager.
+</code></pre></div><p>To add a worker to this swarm, run the following command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker swarm join --token SWMTKN-1-4l54p60fpaumw188uk5yea8l3z0sd80q6ydiav0e8r12w5cog1-8i70bpp0wtxggiemi2wx63f3g 192.168.99.100:2377
+</code></pre></div><p>To add a manager to this swarm, run &lsquo;docker swarm join-token manager&rsquo; and follow the instructions.</p>
+<h6 id="添加一个虚拟机后加入此-swarm-遇到如下报错">添加一个虚拟机后，加入此 swarm 遇到如下报错：</h6>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Error response from daemon: rpc error: code <span style="color:#f92672">=</span> Unavailable desc <span style="color:#f92672">=</span> grpc: the connection is unavailable
+</code></pre></div><h2 id="kubernetes">Kubernetes</h2>
 <p>Kubernetes 是 Google 团队发起的开源项目，它的目标是管理跨多个主机的容器，提供基本的部署，维护以及运用伸缩，主要实现语言为 Go 语言。</p>
-
 <p><code>Kubernetes</code> 实际上是一个希腊词κυβερνήτης，意思是”船的舵手”。 在这个意义上， Kubernetes 对于 Docker (集装箱船)倒是挺般配的。</p>
-
 <ul>
 <li><a href="https://blog.kelu.org/tech/2017/08/25/kubernetes-tutorial.html">kubernetes 架构简介</a></li>
 <li><a href="http://kubernetesbyexample.com/">Kubernetes By Example</a> 非常棒的 K8s 学习网站</li>
 </ul>
-
 <h2 id="osv">OSv</h2>
-
 <p><a href="http://osv.io/">OSv</a> is the open source operating system designed for the cloud.</p>
-
 <h2 id="moby">Moby</h2>
-
 <p><a href="http://mobyproject.org/">Moby</a> defines the future in specialized container systems building. An open framework to assemble specialized container systems without reinventing the wheel.</p>
-
 <p>似乎是更高、更深层定制化容器的工具，示例：<a href="https://github.com/linuxkit/linuxkit">LinuxKit</a></p>
-
 <h2 id="开源项目中几个文件各是什么意思">开源项目中几个文件各是什么意思？</h2>
-
 <ul>
 <li>Dockerfile 运行时的 docker 镜像生成文件，<code>docker build .</code> 并执行 <code>docker run the-id-build</code> 可尝试。</li>
 <li>Capstanfile 是 OSv 的镜像生成文件。</li>
 <li>Procfile 是 <a href="https://devcenter.heroku.com/articles/procfile">Heroku</a> 的运行时命令文件。</li>
 </ul>
-
 <h2 id="问题解决">问题解决</h2>
-
 <ul>
 <li><a href="https://blog.csdn.net/gezhonglei2007/article/details/51541580">Docker-Toolbox常见问题解决方案</a></li>
 </ul>
-
 <h3 id="重启docker主机">重启Docker主机</h3>
-
-<pre><code class="language-bash">docker-machine restart default
-</code></pre>
-
-<h3 id="docker-compose-up-遇到-windows-named-pipe-error-code-2-问题"><code>docker-compose up</code> 遇到 <code>Windows named pipe error:(code: 2)</code> 问题</h3>
-
-<pre><code class="language-bash">docker-machine env
-</code></pre>
-
-<p>然后依照提示执行类似：</p>
-
-<pre><code class="language-bash">eval $(&quot;C:\Program Files\Docker Toolbox\docker-machine.exe&quot; env)
-</code></pre>
-
-<p>再执行 <code>docker-compose up</code> 即可。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker-machine restart default
+</code></pre></div><h3 id="docker-compose-up-遇到-windows-named-pipe-errorcode-2-问题"><code>docker-compose up</code> 遇到 <code>Windows named pipe error:(code: 2)</code> 问题</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker-machine env
+</code></pre></div><p>然后依照提示执行类似：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">eval <span style="color:#66d9ef">$(</span><span style="color:#e6db74">&#34;C:\Program Files\Docker Toolbox\docker-machine.exe&#34;</span> env<span style="color:#66d9ef">)</span>
+</code></pre></div><p>再执行 <code>docker-compose up</code> 即可。</p>
 
         </div>
 
@@ -559,6 +422,14 @@ Swarm initialized: current node (7t2kqs1cmbw3r54921y9ofdcu) is now a manager.
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -590,14 +461,6 @@ Swarm initialized: current node (7t2kqs1cmbw3r54921y9ofdcu) is now a manager.
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -607,9 +470,9 @@ Swarm initialized: current node (7t2kqs1cmbw3r54921y9ofdcu) is now a manager.
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -617,7 +480,7 @@ Swarm initialized: current node (7t2kqs1cmbw3r54921y9ofdcu) is now a manager.
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -636,7 +499,7 @@ Swarm initialized: current node (7t2kqs1cmbw3r54921y9ofdcu) is now a manager.
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -668,7 +531,7 @@ Swarm initialized: current node (7t2kqs1cmbw3r54921y9ofdcu) is now a manager.
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -774,7 +637,7 @@ Swarm initialized: current node (7t2kqs1cmbw3r54921y9ofdcu) is now a manager.
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -785,6 +648,8 @@ Swarm initialized: current node (7t2kqs1cmbw3r54921y9ofdcu) is now a manager.
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -890,7 +755,7 @@ Swarm initialized: current node (7t2kqs1cmbw3r54921y9ofdcu) is now a manager.
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -919,6 +784,8 @@ Swarm initialized: current node (7t2kqs1cmbw3r54921y9ofdcu) is now a manager.
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -967,6 +834,8 @@ Swarm initialized: current node (7t2kqs1cmbw3r54921y9ofdcu) is now a manager.
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -1057,6 +926,8 @@ Swarm initialized: current node (7t2kqs1cmbw3r54921y9ofdcu) is now a manager.
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

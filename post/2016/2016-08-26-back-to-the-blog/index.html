@@ -90,36 +90,25 @@
         
         
         <div class="post-content">
-            
-
-<h1 id="回归-blog">回归 Blog</h1>
-
+            <h1 id="回归-blog">回归 Blog</h1>
 <p>有一段时间没有更新Blog了，有些时候用Lofter，因为方便而且容易分享，而技术、思路的收集则用Evernote，本来用得还挺好的，但Evernote加了限制，只能支持两个客户端什么的，于是转用有道云笔记，有道云笔记升级到2.x版，结果里面的查询太烂了，查到关键字在某些文章中，但不知道具体位置，反思了一下自己的选择，发现还是不科学，github的版本控制，markdown的纯文本，这不才应该是程序员最佳的选择吗？所以决定回归了，慢慢地搬运那些资料到这里吧，以后维护也方便，用vi编辑也快速，github保存也自由，搜索纯文本对于程序员来说也不是事儿~</p>
-
 <p>慢慢来，急也没有用……</p>
-
 <p>升级 jekyll 到 3.x，解决了几个问题：</p>
-
 <ul>
-<li><p>留言 duoshuo 报个 js 警告 warning，提示需要添加 data-thread-key，于是在 comments-providers/duoshuo 文件中添加了如下代码：</p>
-
-<pre><code class="language-html">&lt;div class=&quot;ds-thread&quot; data-thread-key=&quot;{{page.id}}&quot; data-title=&quot;{{page.title}}&quot;&gt;&lt;/div&gt;
-</code></pre></li>
-
-<li><p>另外，每次编译 jekyll 会报些 warning 警告：<code>A call to ‘\{\{ post_url /path/to/some/post }}</code> 之类的，一大堆，查看了这个<a href="https://talk.jekyllrb.com/t/jekyll-3-0-deprecation-a-call-to-post-url/1420">讨论</a>，想了一会才想到，是链接的问题，原来的链接要写 path，现在不需要了，直接就是 id 就可以了。</p>
-
-<pre><code class="language-javascript">\{\{ post_url /devtech/git/2013-12-23-oftenused }}
-// 修改为：
-\{\% post_url 2013-12-23-oftenused %}
-</code></pre></li>
-
-<li><p>再就是 atom.xml 和 rss.xml 在 jekyll 编译时报了两个 warning 警告如下，查了一下，把 nil 改为 null 就好了，详见 <a href="https://github.com/jekyll/jekyll/issues/2712">Issue #2712</a>。</p>
-
-<pre><code>Build Warning: Layout 'nil' requested in atom.xml does not exist.
-</code></pre></li>
+<li>留言 duoshuo 报个 js 警告 warning，提示需要添加 data-thread-key，于是在 comments-providers/duoshuo 文件中添加了如下代码：</li>
 </ul>
-
-<p>看来这回归也不容易啊~！</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ds-thread&#34;</span> <span style="color:#a6e22e">data-thread-key</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{page.id}}&#34;</span> <span style="color:#a6e22e">data-title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{page.title}}&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><ul>
+<li>另外，每次编译 jekyll 会报些 warning 警告：<code>A call to ‘\{\{ post_url /path/to/some/post }}</code> 之类的，一大堆，查看了这个<a href="https://talk.jekyllrb.com/t/jekyll-3-0-deprecation-a-call-to-post-url/1420">讨论</a>，想了一会才想到，是链接的问题，原来的链接要写 path，现在不需要了，直接就是 id 就可以了。</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#960050;background-color:#1e0010">\</span>{<span style="color:#960050;background-color:#1e0010">\</span>{ <span style="color:#a6e22e">post_url</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">devtech</span><span style="color:#f92672">/</span><span style="color:#a6e22e">git</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2013</span><span style="color:#f92672">-</span><span style="color:#ae81ff">12</span><span style="color:#f92672">-</span><span style="color:#ae81ff">23</span><span style="color:#f92672">-</span><span style="color:#a6e22e">oftenused</span> }}
+<span style="color:#75715e">// 修改为：
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">\</span>{<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">%</span> <span style="color:#a6e22e">post_url</span> <span style="color:#ae81ff">2013</span><span style="color:#f92672">-</span><span style="color:#ae81ff">12</span><span style="color:#f92672">-</span><span style="color:#ae81ff">23</span><span style="color:#f92672">-</span><span style="color:#a6e22e">oftenused</span> <span style="color:#f92672">%</span>}
+</code></pre></div><ul>
+<li>再就是 atom.xml 和 rss.xml 在 jekyll 编译时报了两个 warning 警告如下，查了一下，把 nil 改为 null 就好了，详见 <a href="https://github.com/jekyll/jekyll/issues/2712">Issue #2712</a>。</li>
+</ul>
+<pre><code>Build Warning: Layout 'nil' requested in atom.xml does not exist.
+</code></pre><p>看来这回归也不容易啊~！</p>
 
         </div>
 
@@ -132,15 +121,15 @@
     <h2>See Also</h2>
     <ul class="listing">
         
+        <li><a href="/post/2022/try-smartide/">Try SmartIDE</a></li>
+        
+        <li><a href="/post/2022/low-code-analogy/">低代码的类比 Low Code Analogy</a></li>
+        
         <li><a href="/post/2022/which-editor-you-are-using/">Which Editor You Are Using</a></li>
         
         <li><a href="/post/2022/nodejs-secure-config/">Nodejs Secure Config 配置加密方案</a></li>
         
         <li><a href="/post/2022/develop-team-problem/">关于KPI与开发团队效能问题的讨论</a></li>
-        
-        <li><a href="/post/2022/powerplatform-jamstack/">在 Power Platform 上实践 JamStack 架构思想</a></li>
-        
-        <li><a href="/post/2022/do-not-use-mounty-disk-data-recovery/">不要用 Mounty，一次惊险的数据恢复记录</a></li>
         
     </ul>
 </div>
@@ -190,6 +179,14 @@
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -221,14 +218,6 @@
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -238,9 +227,9 @@
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -248,7 +237,7 @@
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -267,7 +256,7 @@
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -299,7 +288,7 @@
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -405,7 +394,7 @@
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -416,6 +405,8 @@
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -521,7 +512,7 @@
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -550,6 +541,8 @@
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -598,6 +591,8 @@
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -688,6 +683,8 @@
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

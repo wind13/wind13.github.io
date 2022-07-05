@@ -94,88 +94,74 @@
         
         
         <div class="post-content">
-            
-
-<h2 id="小程序">小程序</h2>
-
+            <h2 id="小程序">小程序</h2>
 <ul>
 <li><a href="https://github.com/lcxfs1991/blog/issues/28">小程序的全栈开发新时代</a></li>
 </ul>
-
 <h2 id="数学">数学</h2>
-
 <ul>
 <li><a href="https://mp.weixin.qq.com/s/rlUUXVEinbeH4aQ0g2SGXA">读懂世纪难题“黎曼猜想”和其历史</a></li>
 <li><a href="https://mp.weixin.qq.com/s/LKu7wWcpwbzBTU5t72m9Dw">黎曼猜想仍旧，素数依然孤独</a></li>
 <li><a href="https://zhuanlan.zhihu.com/p/25055731">黎曼猜想，及其解释（上）</a></li>
 <li><a href="https://zhuanlan.zhihu.com/p/25222934">黎曼猜想，及其解释（下）</a></li>
 </ul>
-
 <h3 id="神奇而有趣的素数">神奇而有趣的素数</h3>
-
 <ul>
-<li>素数（质数）就是除了 1 和自身，不能再被其他整数整除的数字。</li>
-<li>第一个问题：下一个素数的规律是什么？</li>
-<li>2 的倍数即是所有偶数。</li>
-<li>3 的倍数，其数字相加能被 3 整除。</li>
-
-<li><p>5 的倍数，结尾不是 5 就是 0，即见到这两个数字结尾的整数就能被 5 整除。</p></li>
-
-<li><p>7 的倍数是第一个比较没规律的素数集合，而 7 = 2 * 3 + 1，即前两个素数相乘后再加 1 即可。</p></li>
-
-<li><p>11 = 2 * 5 + 1，13 = 2 * 2 * 3 + 1，欧几里得在公元前 300 年证明了素数有无限个。如果是有限个，那假设它们的乘积为 P ，而 Q = P + 1，那么 Q 应该是一个合数，即可被其中某个素数 p 整除，而 p 又可以整除 P，那么 Q - P 也应该能被 p 整除，但是 Q - P = 1，1 显然不能被 p 整除，只能被 1 整除，所以不存在这样有限个素数的情况。</p></li>
+<li>
+<p>素数（质数）就是除了 1 和自身，不能再被其他整数整除的数字。</p>
+</li>
+<li>
+<p>第一个问题：下一个素数的规律是什么？</p>
+</li>
+<li>
+<p>2 的倍数即是所有偶数。</p>
+</li>
+<li>
+<p>3 的倍数，其数字相加能被 3 整除。</p>
+</li>
+<li>
+<p>5 的倍数，结尾不是 5 就是 0，即见到这两个数字结尾的整数就能被 5 整除。</p>
+</li>
+<li>
+<p>7 的倍数是第一个比较没规律的素数集合，而 7 = 2 * 3 + 1，即前两个素数相乘后再加 1 即可。</p>
+</li>
+<li>
+<p>11 = 2 * 5 + 1，13 = 2 * 2 * 3 + 1，欧几里得在公元前 300 年证明了素数有无限个。如果是有限个，那假设它们的乘积为 P ，而 Q = P + 1，那么 Q 应该是一个合数，即可被其中某个素数 p 整除，而 p 又可以整除 P，那么 Q - P 也应该能被 p 整除，但是 Q - P = 1，1 显然不能被 p 整除，只能被 1 整除，所以不存在这样有限个素数的情况。</p>
+</li>
 </ul>
-
 <h3 id="调和级数">调和级数</h3>
-
-<p>$$H<em>r = \sum</em>{r=1}^\infin \frac{1}{r} = 1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + &hellip;$$</p>
-
+<p>$$H_r = \sum_{r=1}^\infin \frac{1}{r} = 1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + &hellip;$$</p>
 <ul>
 <li>谐波：高于基音基本频率的泛音，该和式被奥雷斯姆证明是不收敛的（即不存在极限，不接近/趋向于任何特定的数字，而是一直增长到无穷大）。</li>
 </ul>
-
 <h3 id="zeta-函数">Zeta 函数</h3>
-
 <p>$$\zeta(n)=\sum_{r=1}^\infin \frac{1}{r^n}=1 + \frac{1}{2^n} + \frac{1}{3^n} + \frac{1}{4^n} + &hellip;$$</p>
-
 <p>若将 n = 1 代入，就会得到调和级数，它是发散的。然而对于 n &gt; 1 的所有值, 该级数是收敛的，这意味着当 r 递增时，其和趋向于某些数，即它不会增长到无穷大。</p>
-
 <h3 id="欧拉乘积公式">欧拉乘积公式</h3>
-
 <p>zeta 函数和素数间的第一个联系是由欧拉发现的，当时他发现了 n 和 p 两个自然数（大于零的整数）之间的关系，其中 p 为素数：</p>
-
 <p>$$\zeta(n)=\sum_{r=1}^\infin\frac1{r^n}=\prod_p\frac1{1-p^{-s}}=(1-\frac1{1-\frac1{2^s}})\times(1-\frac1{1-\frac1{3^s}})\times(1-\frac1{1-\frac1{5^s}})\times(1-\frac1{1-\frac1{7^s}})\times(1-\frac1{1-\frac1{11^s}})\times&hellip;$$</p>
-
 <p>欧拉乘积公式，其中 n，p 均为大于零的数字且 p 为素数</p>
-
-<h2 id="简易思考-算法-tag-算法-题">简易思考，[[#算法|tag.算法]]题</h2>
-
+<h2 id="简易思考算法tag算法题">简易思考，[[#算法|tag.算法]]题</h2>
 <ul>
 <li>100 以内有多少个素数？
-
 <ul>
 <li><a href="https://plus.ooclab.com/note/article/1189">golang-daisy-chain</a> 利用信道菊花链筛法求某一个整数范围的素数</li>
-</ul></li>
+</ul>
+</li>
 <li>100 以后第一个素数是多少？</li>
 </ul>
-
 <h2 id="数学公式">数学公式</h2>
-
 <ul>
 <li><a href="https://www.mathjax.org/">MathJax</a> Beautiful math in all browsers</li>
 <li><a href="https://www.liuguogy.com/archives/markdown-mathjax-grammar.html">Markdown 中的 MathJax 数学公式语法整理</a></li>
 <li><a href="https://www.jianshu.com/p/a0aa94ef8ab2">在Markdown中输入数学公式(MathJax)</a></li>
 <li><a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">MathJax basic tutorial and quick reference</a></li>
 </ul>
-
 <h2 id="hugo-theme">Hugo theme</h2>
-
 <ul>
 <li><a href="https://www.zeolearn.com/magazine/develop-a-theme-for-hugo">Develop a Theme for Hugo</a></li>
 </ul>
-
 <h2 id="golang">Golang</h2>
-
 <ul>
 <li><a href="https://godoc.org/github.com/azbshiri/ramda?import-graph">ramda deps graph</a></li>
 <li><a href="https://go-search.org">Go Search</a></li>
@@ -183,10 +169,10 @@
 <li><a href="https://github.com/lennon-guan/pipe">lennon-guan/pipe</a> A golang library that makes operations on slice easilier 局限于 Slice 数据</li>
 <li><a href="https://godoc.org/github.com/choleraehyq/gofunctools/functools">gofunctools</a> <a href="https://github.com/choleraehyq/gofunctools">Github</a></li>
 <li><a href="https://github.com/Mparaiso/go-tiger">Go TIGER</a> Web 微框架，包含一些工具
-
 <ul>
 <li><a href="https://godoc.org/github.com/Mparaiso/tiger-go-framework/funcs">Make funcs</a> Package funcs provides utilities to enable functional programming with Go.</li>
-</ul></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -254,6 +240,14 @@
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -285,14 +279,6 @@
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -302,9 +288,9 @@
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -312,7 +298,7 @@
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -331,7 +317,7 @@
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -363,7 +349,7 @@
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -469,7 +455,7 @@
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -480,6 +466,8 @@
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -585,7 +573,7 @@
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -614,6 +602,8 @@
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -662,6 +652,8 @@
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -752,6 +744,8 @@
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

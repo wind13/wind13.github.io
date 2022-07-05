@@ -90,10 +90,7 @@
         
         
         <div class="post-content">
-            
-
-<h2 id="基础">基础</h2>
-
+            <h2 id="基础">基础</h2>
 <ul>
 <li><a href="http://rainey.space/2016/04/06/Ionic2_Chinese_Document/">ionic2文档整理</a></li>
 <li><a href="http://www.joshmorony.com/a-guide-to-styling-an-ionic-2-application/">A Guide to Styling an Ionic 2 Application</a></li>
@@ -106,9 +103,7 @@
 <li><a href="https://github.com/driftyco/ionic-conference-app">Ionic 2 Conference Application</a>{:target=&rdquo;_blank&rdquo;}</li>
 <li><a href="https://ionicallyspeaking.com/">Ionically Speaking</a>{:target=&rdquo;_blank&rdquo;}</li>
 </ul>
-
 <h2 id="问题">问题</h2>
-
 <ul>
 <li>I18n <a href="http://ionicframework.com/docs/v2/resources/ng2-translate/">官方文档如此</a>{:target=&rdquo;_blank&rdquo;}，
 使用<a href="https://github.com/ocombe/ng2-translate">ng2-translate</a>{:target=&rdquo;_blank&rdquo;}库实现。</li>
@@ -119,140 +114,98 @@
 <li><a href="http://stackoverflow.com/questions/37618000/ionic-2-getting-data-from-php-services-is-undefined/37650922">(Ionic 2) Getting data from php services is undefined</a></li>
 <li><a href="http://ionichina.com/topic/54f051698cbbaa7a56a49f98">解决 ionic 中的 CORS（跨域） 问题</a>{:target=&rdquo;_blank&rdquo;}</li>
 <li><a href="http://www.ruanyifeng.com/blog/2016/04/cors.html">跨域资源共享 CORS 详解</a></li>
-
-<li><p>报以下错误，是因为 providers 填错了，应该只填 Service：</p>
-
-<pre><code>metadata_resolver.js:499 Uncaught Error: Can't resolve all parameters for Project: (?, ?).
-at CompileMetadataResolver.getDependenciesMetadata (http://localhost:8100/build/main.js:23905:19)
-at CompileMetadataResolver.getTypeMetadata (http://localhost:8100/build/main.js:23806:26)
-at http://localhost:8100/build/main.js:23949:41
-at Array.forEach (native)
-at CompileMetadataResolver.getProvidersMetadata (http://localhost:8100/build/main.js:23929:19)
-at CompileMetadataResolver.getDirectiveMetadata (http://localhost:8100/build/main.js:23569:34)
-at http://localhost:8100/build/main.js:23674:49
-at Array.forEach (native)
-at CompileMetadataResolver.getNgModuleMetadata (http://localhost:8100/build/main.js:23668:49)
-at RuntimeCompiler._compileComponents (http://localhost:8100/build/main.js:39512:47)
-</code></pre></li>
+<li>报以下错误，是因为 providers 填错了，应该只填 Service：</li>
 </ul>
-
-<p>如，将：</p>
-
-<pre><code class="language-javascript">@Component({
-  selector: 'page-prj-detail',
-  templateUrl: 'prj-detail.html',
-  providers: [Project]
+<pre><code>metadata_resolver.js:499 Uncaught Error: Can't resolve all parameters for Project: (?, ?).
+    at CompileMetadataResolver.getDependenciesMetadata (http://localhost:8100/build/main.js:23905:19)
+    at CompileMetadataResolver.getTypeMetadata (http://localhost:8100/build/main.js:23806:26)
+    at http://localhost:8100/build/main.js:23949:41
+    at Array.forEach (native)
+    at CompileMetadataResolver.getProvidersMetadata (http://localhost:8100/build/main.js:23929:19)
+    at CompileMetadataResolver.getDirectiveMetadata (http://localhost:8100/build/main.js:23569:34)
+    at http://localhost:8100/build/main.js:23674:49
+    at Array.forEach (native)
+    at CompileMetadataResolver.getNgModuleMetadata (http://localhost:8100/build/main.js:23668:49)
+    at RuntimeCompiler._compileComponents (http://localhost:8100/build/main.js:39512:47)
+</code></pre><p>如，将：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">Component</span>({
+  <span style="color:#a6e22e">selector</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;page-prj-detail&#39;</span>,
+  <span style="color:#a6e22e">templateUrl</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;prj-detail.html&#39;</span>,
+  <span style="color:#a6e22e">providers</span><span style="color:#f92672">:</span> [<span style="color:#a6e22e">Project</span>]
 }
-</code></pre>
-
-<p>改为：</p>
-
-<pre><code class="language-javascript">@Component({
-  selector: 'page-prj-detail',
-  templateUrl: 'prj-detail.html',
-  providers: [ProjectService]
+</code></pre></div><p>改为：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">Component</span>({
+  <span style="color:#a6e22e">selector</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;page-prj-detail&#39;</span>,
+  <span style="color:#a6e22e">templateUrl</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;prj-detail.html&#39;</span>,
+  <span style="color:#a6e22e">providers</span><span style="color:#f92672">:</span> [<span style="color:#a6e22e">ProjectService</span>]
 }
-</code></pre>
-
-<ul>
-<li><p>遇到这个错误，可能是html界面的方法与ts中的方法对不上。</p>
-
+</code></pre></div><ul>
+<li>遇到这个错误，可能是html界面的方法与ts中的方法对不上。</li>
+</ul>
 <pre><code>polyfills.js:3 Uncaught TypeError: exceptionHandler.handleError is not a function
 at Object.next (http://localhost:8100/build/main.js:26130:82)
-at SafeSubscriber.schedulerFn [as _next] (http://localhost:8100/build/main.js:27643:52)
-at SafeSubscriber.__tryOrUnsub (http://localhost:8100/build/main.js:9761:16)
-at SafeSubscriber.next (http://localhost:8100/build/main.js:9710:22)
-at Subscriber._next (http://localhost:8100/build/main.js:9663:26)
-at Subscriber.next (http://localhost:8100/build/main.js:9627:18)
-at EventEmitter.Subject.next (http://localhost:8100/build/main.js:11949:25)
-at EventEmitter.emit (http://localhost:8100/build/main.js:27635:76)
-at NgZone.triggerError (http://localhost:8100/build/main.js:28451:76)
-at Object.onHandleError (http://localhost:8100/build/main.js:28430:23)
-</code></pre></li>
-
-<li><p>编译时遇到这个错误：</p>
-
+    at SafeSubscriber.schedulerFn [as _next] (http://localhost:8100/build/main.js:27643:52)
+    at SafeSubscriber.__tryOrUnsub (http://localhost:8100/build/main.js:9761:16)
+    at SafeSubscriber.next (http://localhost:8100/build/main.js:9710:22)
+    at Subscriber._next (http://localhost:8100/build/main.js:9663:26)
+    at Subscriber.next (http://localhost:8100/build/main.js:9627:18)
+    at EventEmitter.Subject.next (http://localhost:8100/build/main.js:11949:25)
+    at EventEmitter.emit (http://localhost:8100/build/main.js:27635:76)
+    at NgZone.triggerError (http://localhost:8100/build/main.js:28451:76)
+    at Object.onHandleError (http://localhost:8100/build/main.js:28430:23)
+</code></pre><ul>
+<li>编译时遇到这个错误：</li>
+</ul>
 <pre><code>[23:13:04]  Error: Error at [project path]/.tmp/pages/statis/projects.ngfactory.ts:351:29
 [23:13:04]  Supplied parameters do not match any signature of call target.
 [23:13:04]  ngc failed
 [23:13:04]  ionic-app-script task: &quot;build&quot;
 [23:13:04]  Error: Error
-</code></pre></li>
-</ul>
-
-<p>一般说明在程序的某处有个方法需求的参数与提供的参数对应不上，在build时无法通过，但在ionic serve时可正常运行，这个错误就比较难找了。这里注意看错误提示，说的是</p>
-
+</code></pre><p>一般说明在程序的某处有个方法需求的参数与提供的参数对应不上，在build时无法通过，但在ionic serve时可正常运行，这个错误就比较难找了。这里注意看错误提示，说的是</p>
 <pre><code>.tmp/pages/statis/projects.ngfactory.ts
-</code></pre>
-
-<p>那么就去检查 /pages/statis/projects.ts 文件中的相应方法的参数吧！</p>
-
+</code></pre><p>那么就去检查 /pages/statis/projects.ts 文件中的相应方法的参数吧！</p>
 <ul>
-<li><p>编译时遇到这个错误：</p>
-
+<li>编译时遇到这个错误：</li>
+</ul>
 <pre><code>FAILURE: Build failed with an exception.
 
 * What went wrong:
 Execution failed for task ':packageDebug'.
 &gt; java.io.FileNotFoundException: /Users/samliu/gits/jing-xi-h5/platforms/android/build/intermediates/assets/debug/www/assets/stub (Is a directory)
-</code></pre></li>
-</ul>
-
-<p>这个错误原因不明，但通常再次编译运行就好了。</p>
-
+</code></pre><p>这个错误原因不明，但通常再次编译运行就好了。</p>
 <ul>
-<li><p>调试时遇到这个错误：</p>
-
+<li>调试时遇到这个错误：</li>
+</ul>
 <pre><code>Application Error
 There was a network error (http://192.168.56.1)
-</code></pre></li>
-</ul>
-
-<p>网上查到答案是要添加<a href="https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist/">whitelist的插件</a>{:target=&rdquo;_blank&rdquo;}，然后添加相应的网址到config.xml中。</p>
-
+</code></pre><p>网上查到答案是要添加<a href="https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist/">whitelist的插件</a>{:target=&rdquo;_blank&rdquo;}，然后添加相应的网址到config.xml中。</p>
 <ul>
-<li><p>发现这个错误，一般是 queries.sql 里面的SQL写错了。</p>
-
+<li>发现这个错误，一般是 queries.sql 里面的SQL写错了。</li>
+</ul>
 <pre><code>ERROR Can not issue data manipulation statements with executeQuery()
-</code></pre></li>
-</ul>
-
-<p>原因是修改性的SQL语句，上面的声明要用“!”，而不能用“?”。</p>
-
+</code></pre><p>原因是修改性的SQL语句，上面的声明要用“!”，而不能用“?”。</p>
 <ul>
-<li><p>遇到这个错：</p>
-
+<li>遇到这个错：</li>
+</ul>
 <pre><code>Can't bind to 'ngShow' since it isn't a known property of 'ion-list'.
 1. If 'ion-list' is an Angular component and it has 'ngShow' input, then verify that it is part of this module.
 2. If 'ion-list' is a Web Component then add &quot;CUSTOM_ELEMENTS_SCHEMA&quot; to the '@NgModule.schemas' of this component to suppress this message.
-</code></pre></li>
-</ul>
-
-<p>应该是说 ngShow 并不支持这样的写法，后改为 <code>*ngIf</code>即可。</p>
-
+</code></pre><p>应该是说 ngShow 并不支持这样的写法，后改为 <code>*ngIf</code>即可。</p>
 <ul>
 <li>遇到这个错：Can&rsquo;t coerce body of type class java.lang.Integer</li>
 </ul>
-
 <p>是因为返回的数据不是json，比如直接将db操作的update结果1返回给客户端，这里(ok 1)就会报这个错，改为：(ok {:success 1}) 即可。</p>
-
 <ul>
 <li>遇到这个错：Unable to find localabstract name of cordova app</li>
 </ul>
-
 <p>参考<a href="https://github.com/Microsoft/vscode-cordova/issues/215#issuecomment-266093077">此回复</a></p>
-
 <pre><code>vim .vscode/extensions/vsmobile.cordova-tools-1.2.4/out/src/debugger/cordovaDebugAdapter.js
-</code></pre>
-
-<p>在 254 行，修改为</p>
-
+</code></pre><p>在 254 行，修改为</p>
 <pre><code>// if (socketsInodes.indexOf(parseInt(fields[6], 10)) === -1) {
 if (pathField.indexOf(pid) === -1) {
     continue;
 }
 </code></pre>
-
         </div>
 
         
@@ -266,13 +219,13 @@ if (pathField.indexOf(pid) === -1) {
         
         <li><a href="/post/2016/2016-11-08-learn-angular-v2/">Angular 2 相关学习</a></li>
         
+        <li><a href="/post/2022/try-smartide/">Try SmartIDE</a></li>
+        
+        <li><a href="/post/2022/low-code-analogy/">低代码的类比 Low Code Analogy</a></li>
+        
         <li><a href="/post/2022/which-editor-you-are-using/">Which Editor You Are Using</a></li>
         
         <li><a href="/post/2022/nodejs-secure-config/">Nodejs Secure Config 配置加密方案</a></li>
-        
-        <li><a href="/post/2022/develop-team-problem/">关于KPI与开发团队效能问题的讨论</a></li>
-        
-        <li><a href="/post/2022/powerplatform-jamstack/">在 Power Platform 上实践 JamStack 架构思想</a></li>
         
     </ul>
 </div>
@@ -322,6 +275,14 @@ if (pathField.indexOf(pid) === -1) {
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -353,14 +314,6 @@ if (pathField.indexOf(pid) === -1) {
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -370,9 +323,9 @@ if (pathField.indexOf(pid) === -1) {
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -380,7 +333,7 @@ if (pathField.indexOf(pid) === -1) {
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -399,7 +352,7 @@ if (pathField.indexOf(pid) === -1) {
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -431,7 +384,7 @@ if (pathField.indexOf(pid) === -1) {
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -537,7 +490,7 @@ if (pathField.indexOf(pid) === -1) {
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -548,6 +501,8 @@ if (pathField.indexOf(pid) === -1) {
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -653,7 +608,7 @@ if (pathField.indexOf(pid) === -1) {
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -682,6 +637,8 @@ if (pathField.indexOf(pid) === -1) {
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -730,6 +687,8 @@ if (pathField.indexOf(pid) === -1) {
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -820,6 +779,8 @@ if (pathField.indexOf(pid) === -1) {
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

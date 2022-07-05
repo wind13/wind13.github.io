@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PowerApps on 世风十三学堂</title>
@@ -6,10 +6,19 @@
     <description>Recent content in PowerApps on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 25 Nov 2020 09:57:44 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jun 2022 21:34:51 +0800</lastBuildDate>
     
 	<atom:link href="/tags/powerapps/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>低代码的类比 Low Code Analogy</title>
+      <link>/post/2022/low-code-analogy/</link>
+      <pubDate>Wed, 08 Jun 2022 21:34:51 +0800</pubDate>
+      
+      <guid>/post/2022/low-code-analogy/</guid>
+      <description>前些天同事在会上做了个类比，大意是这样：Low 低代码就好似街边的大排档，也就是路边滩，适合做初期商业业务的快速验证，而传统代码就好似星级饭店，是验证商业模式后用比较大的投入建成的较长期的商业项目。 我们这里所说的低代码平台，特指微软的 Power Platform 平台。 可以参见我另外一些博文： 低代码开发的问</description>
+    </item>
     
     <item>
       <title>对于微软 PowerApps 的使用感受</title>

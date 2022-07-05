@@ -90,10 +90,7 @@
         
         
         <div class="post-content">
-            
-
-<h2 id="收集链接">收集链接</h2>
-
+            <h2 id="收集链接">收集链接</h2>
 <ul>
 <li><a href="https://github.com/Aufree/awesome-wechat-weapp/blob/master/README.md">微信小应用资源汇总整理</a></li>
 <li><a href="https://tencent.github.io/wepy/">WePY</a> 让小程序支持组件化开发的框架 <a href="https://github.com/Tencent/wepy">Github</a></li>
@@ -112,48 +109,62 @@
 <li><a href="https://zhuanlan.zhihu.com/p/29794331">微信小程序 | 47，下载文件与保存文件</a></li>
 <li><a href="https://segmentfault.com/a/1190000011649217">小程序测试方案初探</a></li>
 </ul>
-
 <h2 id="重要知识点">重要知识点</h2>
-
 <ul>
-<li>rpx 是微信定义的像素单位，动态布局标量。</li>
-
-<li><p>执行顺序： App Launch&ndash;&gt;App Show&ndash;&gt;onLoad&ndash;&gt;onShow&ndash;&gt;onReady。</p>
-
+<li>
+<p>rpx 是微信定义的像素单位，动态布局标量。</p>
+</li>
+<li>
+<p>执行顺序： App Launch&ndash;&gt;App Show&ndash;&gt;onLoad&ndash;&gt;onShow&ndash;&gt;onReady。</p>
 <ul>
-<li>App.onLaunch</li>
-<li>App.onShow</li>
-<li>index.onLoad（首次）</li>
-<li>index.onShow（由App.onShow驱动）</li>
-
-<li><p>index.onReady（我准备好互动了，可以操作了）</p></li>
-
-<li><p>进入后台时：</p></li>
-
-<li><p>app.onHide</p></li>
-
-<li><p>index.onHide</p></li>
-
-<li><p>恢复前台显示时：</p></li>
-
-<li><p>app.onShow</p></li>
-
-<li><p>index.onShow</p></li>
-</ul></li>
-
-<li><p><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/event.html#%E4%BA%8B%E4%BB%B6%E8%AF%A6%E8%A7%A3">事件详解</a></p></li>
-
-<li><p>与 bind 不同， catch 会阻止事件向上冒泡。</p></li>
-
-<li><p>一个 mut-bind 触发后，如果事件冒泡到其他节点上，其他节点上的 mut-bind 绑定函数不会被触发，但 bind 绑定函数和 catch 绑定函数依旧会被触发。换而言之，所有 mut-bind 是“互斥”的，只会有其中一个绑定函数被触发。同时，它完全不影响 bind 和 catch 的绑定效果。</p></li>
-
-<li><p>mark 和 dataset 很相似，主要区别在于： mark 会包含从触发事件的节点到根节点上所有的 mark: 属性值；而 dataset 仅包含一个节点的 data- 属性值。</p></li>
-
-<li><p><a href="https://segmentfault.com/a/1190000006980941#articleHeader2">破解方法</a> （测试发现有问题，不能用。）</p></li>
+<li>
+<p>App.onLaunch</p>
+</li>
+<li>
+<p>App.onShow</p>
+</li>
+<li>
+<p>index.onLoad（首次）</p>
+</li>
+<li>
+<p>index.onShow（由App.onShow驱动）</p>
+</li>
+<li>
+<p>index.onReady（我准备好互动了，可以操作了）</p>
+</li>
+<li>
+<p>进入后台时：</p>
+<ul>
+<li>app.onHide</li>
+<li>index.onHide</li>
 </ul>
-
+</li>
+<li>
+<p>恢复前台显示时：</p>
+<ul>
+<li>app.onShow</li>
+<li>index.onShow</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/event.html#%E4%BA%8B%E4%BB%B6%E8%AF%A6%E8%A7%A3">事件详解</a></p>
+</li>
+<li>
+<p>与 bind 不同， catch 会阻止事件向上冒泡。</p>
+</li>
+<li>
+<p>一个 mut-bind 触发后，如果事件冒泡到其他节点上，其他节点上的 mut-bind 绑定函数不会被触发，但 bind 绑定函数和 catch 绑定函数依旧会被触发。换而言之，所有 mut-bind 是“互斥”的，只会有其中一个绑定函数被触发。同时，它完全不影响 bind 和 catch 的绑定效果。</p>
+</li>
+<li>
+<p>mark 和 dataset 很相似，主要区别在于： mark 会包含从触发事件的节点到根节点上所有的 mark: 属性值；而 dataset 仅包含一个节点的 data- 属性值。</p>
+</li>
+<li>
+<p><a href="https://segmentfault.com/a/1190000006980941#articleHeader2">破解方法</a> （测试发现有问题，不能用。）</p>
+</li>
+</ul>
 <h2 id="遇到的问题">遇到的问题</h2>
-
 <ul>
 <li>加载 util.js 在开发工具中可以正常执行，但在真机上会出现无数据白屏。</li>
 <li>怀疑问题是 exports 的方法不规范，参考：<a href="https://www.jianshu.com/p/2431adaa97bf">微信小程序中module.exports和exports的区别</a></li>
@@ -171,15 +182,15 @@
     <h2>See Also</h2>
     <ul class="listing">
         
+        <li><a href="/post/2022/try-smartide/">Try SmartIDE</a></li>
+        
+        <li><a href="/post/2022/low-code-analogy/">低代码的类比 Low Code Analogy</a></li>
+        
         <li><a href="/post/2022/which-editor-you-are-using/">Which Editor You Are Using</a></li>
         
         <li><a href="/post/2022/nodejs-secure-config/">Nodejs Secure Config 配置加密方案</a></li>
         
         <li><a href="/post/2022/develop-team-problem/">关于KPI与开发团队效能问题的讨论</a></li>
-        
-        <li><a href="/post/2022/powerplatform-jamstack/">在 Power Platform 上实践 JamStack 架构思想</a></li>
-        
-        <li><a href="/post/2022/do-not-use-mounty-disk-data-recovery/">不要用 Mounty，一次惊险的数据恢复记录</a></li>
         
     </ul>
 </div>
@@ -225,6 +236,14 @@
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -256,14 +275,6 @@
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -273,9 +284,9 @@
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -283,7 +294,7 @@
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -302,7 +313,7 @@
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -334,7 +345,7 @@
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -440,7 +451,7 @@
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -451,6 +462,8 @@
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -556,7 +569,7 @@
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -585,6 +598,8 @@
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -633,6 +648,8 @@
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -723,6 +740,8 @@
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

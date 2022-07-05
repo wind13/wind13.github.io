@@ -103,77 +103,54 @@
         
         
         <div class="post-content">
-            
-
-<h2 id="需安装的软件工具">需安装的软件工具</h2>
-
+            <h2 id="需安装的软件工具">需安装的软件工具</h2>
 <blockquote>
 <p>注：如果国外文件下载不了，可尝试<a href="https://d.serctl.com/">国内下载</a> <a href="https://google.ctl.app/">Google</a></p>
 </blockquote>
-
 <ul>
 <li><a href="https://scoop.sh/">scoop</a> 或 <a href="https://chocolatey.org/install#individual">Chocolatey</a> 安装好 choco 或 scoop 后，可以通过命令安装其他软件，个人可以维护一个常用的软件列表，写成一个脚本，这样每次一台新的 Windows 系统，就可以通过这个脚本完成80~90%的装机工作了。</li>
 <li><a href="http://www.wox.one/">Wox</a> <a href="https://github.com/Wox-launcher/Wox/releases">Github Download</a> 里面还会附带 Python 和 <a href="https://www.voidtools.com/zh-cn/">Everything</a> 的安装文件。</li>
 <li><a href="https://cmder.net/">cmder</a>，安装好之后，需设置默认启动的 shell 为 bash，以及设置为 <code>Quake style</code>，这样只要按 “Ctrl + `” 快捷键就可以随时调出 shell 了。</li>
 <li><del><a href="https://github.com/coreybutler/nvm-windows">nvm-windows</a> <a href="github-production-release-asset-2e65be.s3.amazonaws.com">download</a></del>
-
 <ul>
 <li><del>注意要下载 v1.1.7 版本，之前的版本存在 npm 安装不上的问题。</del></li>
 <li><del>官网下载不了的话，尝试使用<a href="https://d.serctl.com/?uuid=d1680600-3033-42cd-911d-e5daab3e5080">此链接下载</a>。</del></li>
 <li><del>安装 LTS 的 <code>node</code> 和 <code>npm</code> 在官网查看一下 LTS 最后版本号，后执行命令：<code>nvm install 12.18.0</code></del></li>
-</ul></li>
+</ul>
+</li>
 <li>直接安装 <a href="https://nodejs.org/zh-cn/">Node.js</a> LTS 长期支持版，会同时自动安装 Chocolatey，而且也不会出现 nvm-windows 的那么多问题，我用上面的安装出来后，在安装 Strapi 时总是提示 <code>create-strapi-app</code> 不是合法命令，感觉是路径问题， <code>yarn</code> 或 <code>npx</code> 等识别的路径中找不到 <code>node-modules</code> 目录吧，懒得找原因了，就直接下个 Node.js 安装了再试。
-
 <ul>
 <li>安装成功后，需要设置<a href="https://www.jianshu.com/p/1dae26594ce5">Yarn 和 NPM 国内快速镜像（淘宝镜像）</a></li>
-</ul></li>
+</ul>
+</li>
 <li>[vbox] 和 [vagrant]</li>
 <li><a href="https://blog.csdn.net/dafei1288/article/details/105828516">Vagrant使用国内镜像安装插件和box镜像</a></li>
 </ul>
-
 <p><code>vagrant init centos7 https://mirrors.ustc.edu.cn/centos-cloud/centos/7/vagrant/x86_64/images/CentOS-7.box</code></p>
-
 <h2 id="需进行的设置">需进行的设置</h2>
-
 <ul>
 <li>将 Capslock 键替换为 Esc 键，方便使用 vi 快捷键； 参考：<a href="https://blog.csdn.net/Ace_Shiyuan/article/details/81283065">windows中Esc与CapsLock、Alt与Ctrl调换位置</a></li>
 </ul>
-
 <p>原文中是这样：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-reg" data-lang="reg">Windows Registry Editor Version 5.00
 
-<pre><code class="language-reg">Windows Registry Editor Version 5.00
+<span style="color:#66d9ef">[</span>HKEY_LOCAL_MACHINE<span style="color:#66d9ef">\SYSTEM\CurrentControlSet\Control\Keyboard Layout]</span>
+<span style="color:#a6e22e">&#34;Scancode Map&#34;</span><span style="color:#f92672">=</span>hex:<span style="color:#ae81ff">00,00,00,00,00,00,00,00,05,00,00,00,3a,00,01,00,01,00,3a,00,38,00,1D,00,1D,00,38,00,00,00,00,00</span>
+</code></pre></div><p>我因为只想把 Capslock 键换成 Esc 的功能，所以改为：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-reg" data-lang="reg">Windows Registry Editor Version 5.00
 
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
-&quot;Scancode Map&quot;=hex:00,00,00,00,00,00,00,00,05,00,00,00,3a,00,01,00,01,00,3a,00,38,00,1D,00,1D,00,38,00,00,00,00,00
-</code></pre>
-
-<p>我因为只想把 Capslock 键换成 Esc 的功能，所以改为：</p>
-
-<pre><code class="language-reg">Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
-&quot;Scancode Map&quot;=hex:00,00,00,00,00,00,00,00,02,00,00,00,01,00,3a,00,00,00,00,00
-</code></pre>
-
-<p>很奇怪，文中的顺序好像是反的，我用上面这个执行反而可以正常达到效果，即 01,00 与 3a,00 的顺序，似乎是后面的是要改变的，前面的才是改变成什么按键的意思。</p>
-
+<span style="color:#66d9ef">[</span>HKEY_LOCAL_MACHINE<span style="color:#66d9ef">\SYSTEM\CurrentControlSet\Control\Keyboard Layout]</span>
+<span style="color:#a6e22e">&#34;Scancode Map&#34;</span><span style="color:#f92672">=</span>hex:<span style="color:#ae81ff">00,00,00,00,00,00,00,00,02,00,00,00,01,00,3a,00,00,00,00,00</span>
+</code></pre></div><p>很奇怪，文中的顺序好像是反的，我用上面这个执行反而可以正常达到效果，即 01,00 与 3a,00 的顺序，似乎是后面的是要改变的，前面的才是改变成什么按键的意思。</p>
 <p>保存为 <code>switch-capslock-esc.reg</code> 文件，运行后重启 Windows 就可以了。</p>
-
 <h2 id="win10-卸载-onenote">Win10 卸载 OneNote</h2>
-
 <p>输入</p>
-
-<pre><code class="language-powershell">Get-AppxPackage *OneNote* | Remove-AppxPackage
-</code></pre>
-
-<p>回车即可。</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">Get-AppxPackage *OneNote* | Remove-AppxPackage
+</code></pre></div><p>回车即可。</p>
 <h2 id="win10-的-python-开发环境">Win10 的 Python 开发环境</h2>
-
 <ul>
 <li><a href="https://www.jianshu.com/p/421d10505f63">win10环境下搭建virtualenvwrapper-win</a></li>
 </ul>
-
 <p>注意： 按照说明安装好后，在 cmder 的 bash 中运行 <code>mkvirtualenv</code> 是不识别的，只能通过 <code>mkvirtualenv.bat</code> 运行才可以，或者在 Win10 自带的 cmd 中运行 <code>mkvirtualenv</code> 才行。</p>
 
         </div>
@@ -251,6 +228,14 @@
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -282,14 +267,6 @@
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -299,9 +276,9 @@
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -309,7 +286,7 @@
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -328,7 +305,7 @@
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -360,7 +337,7 @@
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -466,7 +443,7 @@
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -477,6 +454,8 @@
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -582,7 +561,7 @@
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -611,6 +590,8 @@
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -659,6 +640,8 @@
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -749,6 +732,8 @@
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

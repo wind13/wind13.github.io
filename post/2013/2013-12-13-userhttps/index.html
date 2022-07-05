@@ -91,15 +91,11 @@
         
         <div class="post-content">
             <p>首先看<a href="http://www.playframework.org/documentation/1.2.3/production#https">官方文档</a></p>
-
 <p>用openssl命令生成自己的签名文档</p>
-
 <pre><code>openssl genrsa 1024 &gt; host.key
 openssl req -new -x509 -nodes -sha1 -days 365 -key host.key &gt; host.cert
 </code></pre>
-
 <p>生成签名时需回答类似这样的问题：</p>
-
 <pre><code>Country Name (2 letter code) [XX]:
 State or Province Name (full name) []:
 Locality Name (eg, city) [Default City]:
@@ -108,11 +104,8 @@ Organizational Unit Name (eg, section) []:
 Common Name (eg, your name or your server's hostname) []:
 Email Address []:
 </code></pre>
-
 <p>最终会得到两个文件：host.key和host.cert</p>
-
 <p>然后在application.conf文件中配置如下：</p>
-
 <pre><code>http.port=9000
 https.port=9443
 
@@ -123,13 +116,9 @@ certificate.file=conf/host.cert
 certificate.password=secret
 trustmanager.algorithm=JKS
 </code></pre>
-
 <p><a href="http://stackoverflow.com/questions/6114104/play-framework-https-and-http-at-the-same-time">原问题及回答</a></p>
-
 <p>You just need to have both http.port and https.port in the application.conf file. For the links you want to be different from the normal site, use the @@ notation:</p>
-
 <p>你只需要在application.conf文件中配置http.port和https.port，然后在页面上使用如下链接即可：</p>
-
 <pre><code>@@{Controller.action().secure()} =&gt;https://...
 
 
@@ -207,6 +196,14 @@ trustmanager.algorithm=JKS
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -238,14 +235,6 @@ trustmanager.algorithm=JKS
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -255,9 +244,9 @@ trustmanager.algorithm=JKS
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -265,7 +254,7 @@ trustmanager.algorithm=JKS
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -284,7 +273,7 @@ trustmanager.algorithm=JKS
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -316,7 +305,7 @@ trustmanager.algorithm=JKS
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -422,7 +411,7 @@ trustmanager.algorithm=JKS
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -433,6 +422,8 @@ trustmanager.algorithm=JKS
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -538,7 +529,7 @@ trustmanager.algorithm=JKS
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -567,6 +558,8 @@ trustmanager.algorithm=JKS
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -615,6 +608,8 @@ trustmanager.algorithm=JKS
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -705,6 +700,8 @@ trustmanager.algorithm=JKS
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

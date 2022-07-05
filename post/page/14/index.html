@@ -79,6 +79,42 @@
     <article class="post">
         <header>
             <h1 class="post-title">
+                <a href="/post/2016/2016-09-20-4clojure-problem-solving/" title="4clojure problem solving">4clojure problem solving</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            1年1月1日
+        </date>
+        
+        <div class="post-content">
+            14 题以前答案一般没啥区别，略过…… #15 #(* % 2) adereth&rsquo;s solution: * 2 #16 format &#34;Hello, %s!&#34; adereth&rsquo;s solution: #(str &#34;Hello, &#34; % &#34;!&#34;) #17 &#39;(6 7 8) adereth&rsquo;s solution: [6 7 8] #18 &#39;(6 7) adereth&rsquo;s solution: &#39;(6 7) #19 #(peek (vec %)) adereth&rsquo;s solution: (comp first reverse) #20 #(nth (reverse %) 1) adereth&rsquo;s solution: (comp second reverse) #21 (fn getn [ary n] (if (= n 0) (first ary) (getn (rest ary) (dec n)))) adereth&rsquo;s solution: #(first (drop %2 %1)) #22 #(reduce (fn [a b] (inc a)) 0 %) adereth&rsquo;s solution: (fn [sequence] (reduce (fn [acc v] (inc acc)) 0 sequence)) #23 #(reduce (fn [rs ls] (cons ls rs)) [] %) adereth&rsquo;s solution: (fn [s] (loop [result [] s s] (if (seq s) (recur (concat [(first s)]……
+        </div>
+        <p class="readmore"><a href="/post/2016/2016-09-20-4clojure-problem-solving/">阅读全文</a></p>
+    </article>
+    
+    
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="/post/2016/2016-08-28-react-native-learning/" title=""></a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            1年1月1日
+        </date>
+        
+        <div class="post-content">
+            React Native 相关学习 layout: post title: &ldquo;React Native Learning&rdquo; description: &quot;&rdquo; category: devtech/react tags: [react native] top: true React 相关 React 官网 Ant Design 蚂蚁金服ui库 Ant Design Pro 上手备忘录 Bi Sheng 转化 markdown 文档为静态单页面 React 应用 從零開始學 ReactJS React 中文文档 React 最佳实践——那些 React 没告诉你但很重要的事 基于 Jest + Enzyme 的 React 单元测试 How to debug Jest tests with VSCode react-motion React 动画效果库 redux-saga 实践总结 集成方案： React + Redux + RESTfulAPI React + Relay + GraphQL Rela……
+        </div>
+        <p class="readmore"><a href="/post/2016/2016-08-28-react-native-learning/">阅读全文</a></p>
+    </article>
+    
+    
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
                 <a href="/post/2016/2016-08-28-clojure-learning/" title=""></a>
             </h1>
         </header>
@@ -87,8 +123,7 @@
         </date>
         
         <div class="post-content">
-            Clojure/Script 学习 layout: post title: &ldquo;Clojure Learning&rdquo; description: &ldquo;&rdquo; category: devtech/clojure tags: [clojure, GraphQL]
-RESTful Service Framework  Luminus 综合 web 框架，其中（查看 Profiles 详细包含内容）包含 RESTful Services 的实现。  Immutant Web server Hiccup HTML Template Compojure API Sweet web apis with Compojure &amp; Swagger  Arachne is a full, highly modular web development framework for Clojure. It emphasizes ease, simplicity, and a solid, scalable design. Hoplon ClojureScript Web Framework，如果只做一些网页，不多的动态效果，特别是你的技术栈还没有加入 React，而是在用 jQuery，而此时想试用 clojure script，那就可以试试这个 Hoplon 框架。  What is Hoplon? 说明了 hoplon 不同于 react 这类的使用虚拟 Dom 的框架的区别之处。  Precept A declarative programming framework, Precept is a framework for creating reactive web applications using a rules engine, declarative logic, and relational data modeling. Pedestal is a sturdy(坚实的) and reliable(可靠的) base for services and APIs. Liberator (Github repo) is a Clojure library for building RESTful applications. Compojure is a small routing library for Ring that allows web applications to be composed of small, independent parts.……
+            Clojure/Script 学习 layout: post title: &ldquo;Clojure Learning&rdquo; description: &quot;&rdquo; category: devtech/clojure tags: [clojure, GraphQL] RESTful Service Framework Luminus 综合 web 框架，其中（查看 Profiles 详细包含内容）包含 RESTful Services 的实现。 Immutant Web server Hiccup HTML Template Compojure API Sweet web apis with Compojure &amp; Swagger Arachne is a full, highly modular web development framework for Clojure. It emphasizes ease, simplicity, and a solid, scalable design. Hoplon ClojureScript Web Framework，如果只做一些网页，不多的动态效果，特别是你的技术栈还没有加入 React，而是在用 jQuery……
         </div>
         <p class="readmore"><a href="/post/2016/2016-08-28-clojure-learning/">阅读全文</a></p>
     </article>
@@ -106,9 +141,7 @@ RESTful Service Framework  Luminus 综合 web 框架，其中（查看 Profiles 
         </date>
         
         <div class="post-content">
-             项目管理的网站服务 layout: post categories : manage agile title: 项目管理的网站服务 tagline: &ldquo;Git is Great!&rdquo; tags : [scurm, git, project, agile, free] lang: zh
-分享一些项目管理的网站：
-敏捷软件开发思想的项目管理网站服务：  teambition：可免费创建有限数量的项目，界面友好。 trello.com：永久免费，但空间有限（10MB），界面友好。  Git 托管的网站服务：  Github：程序界无人不知，无人不晓，免费创建公有库，私有库要收费。 Bitbucket： 免费创建公有库， 同时可免费创建有限的私有 Git 库。 Git.oschina：开源中国社区提供的 Git 库服务，可免费创建最多1000个公有或私有库。  ……
+            项目管理的网站服务 layout: post categories : manage agile title: 项目管理的网站服务 tagline: &ldquo;Git is Great!&rdquo; tags : [scurm, git, project, agile, free] lang: zh 分享一些项目管理的网站： 敏捷软件开发思想的项目管理网站服务： teambition：可免费创建有限数量的项目，界面友好。 trello.com：永久免费，但空间有限（10MB），界面友好。 Git 托管的网站服务： G……
         </div>
         <p class="readmore"><a href="/post/2014/2014-03-31-project-site/">阅读全文</a></p>
     </article>
@@ -223,42 +256,6 @@ RESTful Service Framework  Luminus 综合 web 框架，其中（查看 Profiles 
     
     
     
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="/post/2013/2013-12-23-htmlunitdriverjavascript/" title=""></a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            1年1月1日
-        </date>
-        
-        <div class="post-content">
-            HtmlUnitDriver中javascript的支持问题 参见：http://code.google.com/p/selenium/issues/detail?id=371#c4，看不到的元素或ajax异步更新的元素，都可能遇到无法取得或取得旧数据的问题。 和：http://co……
-        </div>
-        <p class="readmore"><a href="/post/2013/2013-12-23-htmlunitdriverjavascript/">阅读全文</a></p>
-    </article>
-    
-    
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="/post/2013/2013-12-23-gitolitesetup/" title=""></a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            1年1月1日
-        </date>
-        
-        <div class="post-content">
-            CentOS下使用Gitolite架构Git服务的步骤 在服务端创建专用用户，如：git，可考虑不设置密码，从而无法用密码登录服务器。 在管理员电脑上创建管理员密钥对，并（通过U盘或root账号）拷贝到服务器上，之后添加到git用户目录的.ssh/authorized_keys文件中……
-        </div>
-        <p class="readmore"><a href="/post/2013/2013-12-23-gitolitesetup/">阅读全文</a></p>
-    </article>
-    
-    
-    
 
 
 
@@ -358,6 +355,14 @@ RESTful Service Framework  Luminus 综合 web 框架，其中（查看 Profiles 
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -389,14 +394,6 @@ RESTful Service Framework  Luminus 综合 web 框架，其中（查看 Profiles 
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -406,9 +403,9 @@ RESTful Service Framework  Luminus 综合 web 框架，其中（查看 Profiles 
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -416,7 +413,7 @@ RESTful Service Framework  Luminus 综合 web 框架，其中（查看 Profiles 
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -435,7 +432,7 @@ RESTful Service Framework  Luminus 综合 web 框架，其中（查看 Profiles 
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -467,7 +464,7 @@ RESTful Service Framework  Luminus 综合 web 框架，其中（查看 Profiles 
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -573,7 +570,7 @@ RESTful Service Framework  Luminus 综合 web 框架，其中（查看 Profiles 
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -584,6 +581,8 @@ RESTful Service Framework  Luminus 综合 web 框架，其中（查看 Profiles 
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -689,7 +688,7 @@ RESTful Service Framework  Luminus 综合 web 框架，其中（查看 Profiles 
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -718,6 +717,8 @@ RESTful Service Framework  Luminus 综合 web 框架，其中（查看 Profiles 
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -766,6 +767,8 @@ RESTful Service Framework  Luminus 综合 web 框架，其中（查看 Profiles 
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -856,6 +859,8 @@ RESTful Service Framework  Luminus 综合 web 框架，其中（查看 Profiles 
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

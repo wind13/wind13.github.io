@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>低代码的类比 Low Code Analogy | 世风十三学堂</title>
+    <meta property="og:title" content="低代码的类比 Low Code Analogy - 世风十三学堂">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2022-06-08T21:34:51&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2022-06-08T21:34:51&#43;08:00'>
+        
+    <meta name="Keywords" content="Programing">
+    <meta name="description" content="低代码的类比 Low Code Analogy">
+        
+    <meta name="author" content="世风十三">
+    <meta property="og:url" content="/post/2022/low-code-analogy/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="/kityminder/mindmap.css?_=1416390706100" type="text/css" rel="stylesheet" />
+    <link href="/kityminder/kityminder.core.css?_=1416390706100" type="text/css" rel="stylesheet" />
+    <script src="/kityminder/kity.min.js?_=1416390706100" charset="utf-8"></script>
+    <script src="/kityminder/kityminder.core.min.js?_=1416390706100" charset="utf-8"></script>
+    <script src="/kityminder/mindmap.min.js?_=1416390706100" charset="utf-8"></script>
+
+    
+
+
+    
+    
+</head>
+
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="/">
+                        世风十三学堂
+                    </a>
+                
+                <p class="description">终身成长、正念编程的全栈架构师，TDD极限敏捷教练咨询师，企业长期增长咨询师</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="/">首页</a>
+                    
+                    <a  href="/page/recommend/" title="推荐">推荐</a>
+                    
+                    <a  href="/page/painting/" title="绘画">绘画</a>
+                    
+                    <a  href="/archives/" title="归档">归档</a>
+                    
+                    <a  href="/page/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">低代码的类比 Low Code Analogy</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2022年6月8日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83'>感受与思考</a></span>
+            
+            <span class="meta-category"><a href='/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF'>软件与技术</a></span>
+            
+        </div>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="post-content">
+            <p>前些天同事在会上做了个类比，大意是这样：Low 低代码就好似街边的大排档，也就是路边滩，适合做初期商业业务的快速验证，而传统代码就好似星级饭店，是验证商业模式后用比较大的投入建成的较长期的商业项目。 我们这里所说的低代码平台，特指微软的 Power Platform 平台。 可以参见我另外一些博文：</p>
+<ul>
+<li><a href="/post/2021/blog.low-code-problems/">低代码开发的问题</a></li>
+<li><a href="/post/2022/powerplatform-jamstack/">在 Power Platform 上实践 JamStack 架构思想</a></li>
+</ul>
+<p>这个类比非常形象生动，也非常易于理解，同时也给了我很大的启发，把我的一些想法和思考记录一下。</p>
+<p>TLDR; 个人有以下一些想法，摘要如下：</p>
+<ul>
+<li>可能代码编程更敏捷更象大排档</li>
+<li>低代码开发和代码开发耗费的人力可能差不多</li>
+<li>低代码开发投入的沉默成本可能并不会轻易舍弃</li>
+<li>软件不同于硬件投入，不能完全类比</li>
+<li>软件更应该比喻为一个生物体，是可以成长和更新的</li>
+<li>软件主要是个设计过程</li>
+<li>软件的生产过程，大概就是CI/CD的发布过程而已。</li>
+<li>软件成本和质量主要影响因素在设计过程，生产过程初期确定后成本就变得很小了，现代语言的编译和打包发布机制已经比较成熟了，生产质量也基本可以保持稳定一致。</li>
+<li>未来是全流程的服务，租用 iPhone 的思想，因此需要更好的模块化和组件化，更有利于回收和重用，这也是目前微服务 DDD 大行其道的原因之一吧！ 需求和技术无论怎么变化，总有些核心的领域建模和代码组件是不太会变化的，是可以随着需求和技术的变化而不断更新改进而重用的，而受低代码平台的限制和约束，可能就不具备这样的灵活性和优势了。</li>
+</ul>
+<p>作为专业的程序员，我们应该是比较了解软件开发的详细过程的，对于软件开发的很多细节也深有体会，软件开发项目的整个生命周期实际是什么样的？我们需要更深入地思考一下。</p>
+<p>有一个大家公认的事实是： <strong>软件与硬件不同</strong></p>
+<p>软件通常是指无形的，通过编程开发出来的产品或服务，而硬件则是那些实体存在的产品，通常硬件产品是由一系列生产环节制造出来的，有些产品内部会附带着软件，共同形成大家喜欢的各类电子智能产品。</p>
+<p>上面类比的大排档和星级饭店，也可以看成是某种意义上的硬件产品，不管是大排档还是星级饭店，都是需要实实在在的物质来组成，需要相应的成本资金来购买。</p>
+<p>那么我们常说的软件产品，或者公司提供的一些应用服务又是由什么来组成的呢？是如何生产出来的呢？</p>
+<p>这就要说到软件开发的全过程了，仔细思考这个过程，不管是硬件产品还是软件产品，它们的产生过程其实都可以分为两个部分： 设计和制造。 传统的硬件产品的设计和制造过程，相信大家都有一定的概念，设计过程是在图纸上或者电脑上的，而生产制造过程则是在工厂车间里。 那么软件产品的设计过程是哪些？ 制造过程又是哪些呢？</p>
+<p>项目立项，架构设计，技术选型，需求收集、分析、梳理落实到用户故事，再拆解为开发任务，画出界面，写出代码，编译打包，完成测试后发布上线，这中间哪个环节是设计和生产制造的分界线呢？</p>
+<p>仔细想想，应该是编译打包这一步吧，在此之前都是在设计，而这之后，就是软件的生产发布过程了，众所周知，软件是非常方便复制的，也就是说软件一旦生成了，它的复制成本非常低，不象硬件，每生产一个新的，都有相应的原材料消耗和较为繁杂的生产和装配过程。</p>
+<p>可能最常出现的一个误区就是把程序员编程写代码这个过程潜意识地理解为软件的生产过程，比如码农的称号，比如早期的美工，比如用 PS 画出界面还可以称之为设计，而把这设计转换为 HTML、CSS 代码则好像就是早期前端的生产过程似的，也许早期这个界线确实有点模糊，而现如今前端技术的发展，已经远不是简单机械的代码劳动了，整个流程都更加工程化，所以以代码的编译为设计的结束和生产的开始是比较合理的。</p>
+<p>由上所述，<strong>软件开发的过程实际上核心和主要部分其实是设计，而不是制造</strong>，那么软件行业曾经盛行的建筑工程的隐喻就是不准确的，早期软件开发项目的管理，有大量的实践是借鉴建筑或工业制造行业的管理实践的，由此而诞生的瀑布的软件开发模式，其根源误解就在于此，不能将软件开发的过程比拟为一个建筑的建造过程，甚至不能比拟为早期建筑图纸的绘制过程，毕竟图纸绘制也是画在实物的图纸上的，其修改成本也是相当高昂的，倒是可以等同于现今在电脑上设计图纸的过程，都是在虚拟的数字世界进行设计的活动。</p>
+<p>那么，回到我们开头的话题，再仔细分析一下，似乎大排档的比喻就不再那么适合低代码软件开发了。</p>
+<p>软件的价值，到底体现在哪里？个人认为有如下一些方面：</p>
+<ul>
+<li>易复用： 通过灵活的组合，可以一次编程设计，在多个应用场景发挥作用。这样投入的成本就可以产生多倍的价值。</li>
+<li>易修改： 可以根据不同的市场需要，做快速的修改和迭代，满足新的应用场景和市场需求，产生快速占领市场的价值。</li>
+<li>易复制： 这一点不用多说，如今的软件可被千千万万的人们下载使用，而并不需要更多的生产和制造，这是网络效应的价值。</li>
+<li>易配置： 通过方便的配置，可以灵活应对各种需求场景，从而产生灵活应变的价值。</li>
+<li>标准统一： 软件将传统行业的很多业务标准化，统一和简化了很多的业务规则等，从而产生了高效、统一的价值。</li>
+</ul>
+<p>那么低代码软件开发平台（特指 Power Platform）是否切实落实了这些价值呢？</p>
+<p>个人的使用体会是这样，Power Platform 本身的一些组件是符合上述这些价值的，也许因此微软有了不错的市场和销售，然而似乎用这个平台做出来的软件产品，就不再具备这些特质了。</p>
+<ul>
+<li>易复用： 较难自定义组件，自定义组件不能用在 Form 中， 不能灵活定义函数和方法， 大量重复冗余的代码。</li>
+<li>易修改： 由于重复和冗余的代码，较难维护和修改，再加上缺乏代码版本管理机制，多人协作也易出问题。</li>
+<li>易复制： 没问题。</li>
+<li>易配置： 微软提供了大量的权限角色、BU和平台配置选项，一方面有其方便的一面，但另一方面，又显得过于复杂，难以配置。</li>
+<li>标准统一： 业务和用户认证等方面可以标准统一，但整个平台是局限在微软的生态中的，很多方面并不是业界通用的标准。</li>
+</ul>
+<p>那么更恰当的比喻应该是什么呢？</p>
+<p>有时候我觉得象是玉雕艺术，我们都是玉雕的手艺人，玉雕的手艺有高低之分，虽然雕刻的内容都是蜻蜓，但创意、风格和最终效果可能有天壤之别，然而，玉雕毕竟是硬件，实实在在的艺术品，雕得不好就要报废，这跟设计软件还是有比较大的区别的。</p>
+<p>我还觉得应该象是在设计一台生产其他机器的机器，企业的大多数软件都是生产力或者信息处理工具，最终产生价值还需要在具体的业务场景中使用才行，就象一些加工机械，加工的仅仅是一些零件，最终要拼凑成一台产品才能够运行和生产。然而这些比喻似乎都不很恰当。 软件就是软件，很大程度是虚拟的，修改的成本应该很低，复制使用的边际成本又非常低甚至为零，可以说大部分的精力应该是在设计研发阶段，而它的生产阶段相对来说是比较低廉的。</p>
+<p>想来想去似乎开发软件很类似用 CAD 绘图，需要模块化，需要思考设计，很容易修改，可以模拟，可以通过另外一些模组或功能来测试和验证，可以不断地扩展自动化，可以不断地改善开发的工具等，然而，这已经变成很专业的领域，普通人就已经不太容易理解了，所以也不是一个好的比喻。</p>
+<p>未来的产品会更加偏向于服务，随着技术的发展和更新，很多实践会成为可能，人们不需要购买具体的产品，而只需要购买需要的服务，比如说现在我们还是在购买手机，未来可能只需要购买订阅手机即可，最新型号的手机出来以后，我们可以很轻松地更换最新版本的手机，而不需要花费更多的资金来购买，这样厂家会长期为我们提供相应的手机服务。于是我们有了租用 iPhone 的服务了，按年付费即可。</p>
+<p>低代码平台特别是 PowerApps 的特点就是快速搭建原型，方便做一些简单的 App 快速试验市场，如果要做成长线产品，那就还是传统编程实践比较合适，其实运用极限编程的敏捷实践进行的话，也不见得会慢多少，而且稳扎稳打，长期维护和扩展都可以保证。 同时也可以参考另一篇<a href="/post/2022/powerplatform-jamstack/">《在 Power Platform 上实践 JamStack 架构思想》</a>考虑一种结合 Power Platform 和 React 等前端技术的解决方案</p>
+<p>回到“大排档”的比喻，如果我们暂且就用这个比喻的话，也许使用高效的代码来进行软件开发，倒更象是一种可持续发展的大排档做法：</p>
+<p>首先，我们使用代码开发，通常要选择一个技术路线、一个生态甚至一个框架等，这一点很类似我们要开一个大排档的选址、水电及物业等基础设施和服务。 而选择低代码平台，如 Power Platform，基本就选择了固定的技术路线，相当于入驻了某个商场的餐饮片区，很多基础设施是现成的，但也就强依赖于这个商场的设施质量、服务水平和发展前景了。</p>
+<p>其次，我们使用代码开发，会尽量模块化和分层等，采用迭代演进的方式，一些核心模块会重点开发，考虑可读性、易维护性及扩展性等，从而达到比较长远地适应业务扩展和应变能力，这一点就类似我们开大排档的时候，会有一定的分工，一些核心的重点会相对重视，比如菜品原材料的采购、加工的卫生及菜品的口味等，可能会制定相应的标准和规范，选择一些易于清洗和维修的工具，选择一些可以长期使用，后期也可以适应变化和扩展的设施，随着大排档的发展和扩张，很多标准规范和工具设施是一直可以延用的。 而选择低代码平台，如 Power Platform， 很多模块和组件都只能使用商场提供的，标准和规范也必须遵循商场所规定的那些，随着自己业务的发展和变化，可能会越来越感觉到商场的限制所给予的阻碍，最终不得不做出需要搬离的决定，从成本角度、从业务发展角度、从客户角度都造成极大的损失。</p>
+<p>最后，使用代码开发更象是自己装修开一个大排档，会有更高的自主性、可控性、灵活性，长远看来，比起这些，低代码更象是入驻商场，它所带来的一点点便利性，可能就不那么重要了。代码开发丰简由我，可以很快速上线一个 MVP 版本，解决最核心的问题，不断地迭代发展，随着业务的变化而灵活变化，反而低代码平台就会有较多的限制和约束，长远发展地看，很可能最初的一些投资成本就无法重用了，一旦需要技术转型就会损失惨重了。</p>
+
+        </div>
+
+        
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/2021/blog.low-code-problems/">低代码开发的问题 Low Code Problems</a></li>
+        
+        <li><a href="/post/2022/powerplatform-jamstack/">在 Power Platform 上实践 JamStack 架构思想</a></li>
+        
+        <li><a href="/post/2020/feeling-powerapps/">对于微软 PowerApps 的使用感受</a></li>
+        
+        <li><a href="/post/2022/which-editor-you-are-using/">Which Editor You Are Using</a></li>
+        
+        <li><a href="/post/2022/nodejs-secure-config/">Nodejs Secure Config 配置加密方案</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='/tags/%E4%BD%8E%E4%BB%A3%E7%A0%81'>低代码</a></li>
+                
+                <li><a href='/tags/low-code'>low code</a></li>
+                
+                <li><a href='/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3'>大排档</a></li>
+                
+                <li><a href='/tags/power-platform'>Power Platform</a></li>
+                
+                <li><a href='/tags/powerapps'>PowerApps</a></li>
+                
+            </ul>
+            
+        </div>
+    </article>
+    
+    
+
+    
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "wind13/wind13.github.io"
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
+</div>
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="site" value="/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/powerplatform-jamstack/" title="在 Power Platform 上实践 JamStack 架构思想">在 Power Platform 上实践 JamStack 架构思想</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/do-not-use-mounty-disk-data-recovery/" title="不要用 Mounty，一次惊险的数据恢复记录">不要用 Mounty，一次惊险的数据恢复记录</a>
+    </li>
+    
+    <li>
+        <a href="/post/2021/note-of-right-measurement/" title="笔记——正确的度量指标">笔记——正确的度量指标</a>
+    </li>
+    
+    <li>
+        <a href="/post/2021/blog.low-code-problems/" title="低代码开发的问题 Low Code Problems">低代码开发的问题 Low Code Problems</a>
+    </li>
+    
+    <li>
+        <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
+    
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
+    
+    <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
+    
+    <li><a href="/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
+    
+    <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
+    
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="/tags/access/">Access</a>
+    
+    <a href="/tags/android/">Android</a>
+    
+    <a href="/tags/android-%E6%B5%8B%E8%AF%95/">Android 测试</a>
+    
+    <a href="/tags/angular/">angular</a>
+    
+    <a href="/tags/angularjs/">angularjs</a>
+    
+    <a href="/tags/antd/">AntD</a>
+    
+    <a href="/tags/app/">App</a>
+    
+    <a href="/tags/architect/">architect</a>
+    
+    <a href="/tags/aws/">AWS</a>
+    
+    <a href="/tags/azure/">Azure</a>
+    
+    <a href="/tags/backbone/">backbone</a>
+    
+    <a href="/tags/baidu/">baidu</a>
+    
+    <a href="/tags/beeui/">BeeUi</a>
+    
+    <a href="/tags/blitz/">Blitz</a>
+    
+    <a href="/tags/blog/">Blog</a>
+    
+    <a href="/tags/boook/">boook</a>
+    
+    <a href="/tags/canvas-app/">Canvas App</a>
+    
+    <a href="/tags/capslock/">Capslock</a>
+    
+    <a href="/tags/chado.js/">Chado.js</a>
+    
+    <a href="/tags/chkdsk/">chkdsk</a>
+    
+    <a href="/tags/ci/cd/">CI/CD</a>
+    
+    <a href="/tags/clojure/">Clojure</a>
+    
+    <a href="/tags/code/">code</a>
+    
+    <a href="/tags/code-review/">code review</a>
+    
+    <a href="/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="/tags/config/">Config</a>
+    
+    <a href="/tags/datavers/">Datavers</a>
+    
+    <a href="/tags/dataverse/">Dataverse</a>
+    
+    <a href="/tags/db/">DB</a>
+    
+    <a href="/tags/dendron/">Dendron</a>
+    
+    <a href="/tags/devops/">DevOps</a>
+    
+    <a href="/tags/devtech-java/">devtech java</a>
+    
+    <a href="/tags/digital-garden/">digital-garden</a>
+    
+    <a href="/tags/docker/">Docker</a>
+    
+    <a href="/tags/dubbo/">dubbo</a>
+    
+    <a href="/tags/easyui/">easyui</a>
+    
+    <a href="/tags/editor/">Editor</a>
+    
+    <a href="/tags/egghead/">egghead</a>
+    
+    <a href="/tags/element3/">Element3</a>
+    
+    <a href="/tags/elementui/">ElementUI</a>
+    
+    <a href="/tags/elixir/">Elixir</a>
+    
+    <a href="/tags/emacs/">Emacs</a>
+    
+    <a href="/tags/erlang/">Erlang</a>
+    
+    <a href="/tags/es6/">ES6</a>
+    
+    <a href="/tags/esc/">Esc</a>
+    
+    <a href="/tags/essay/">essay</a>
+    
+    <a href="/tags/evernote/">Evernote</a>
+    
+    <a href="/tags/filter/">filter</a>
+    
+    <a href="/tags/fizzbuzz/">fizzbuzz</a>
+    
+    <a href="/tags/framework/">framework</a>
+    
+    <a href="/tags/freebsd/">FreeBSD</a>
+    
+    <a href="/tags/game/">game</a>
+    
+    <a href="/tags/games/">games</a>
+    
+    <a href="/tags/getxml/">getXML</a>
+    
+    <a href="/tags/git/">git</a>
+    
+    <a href="/tags/gitlab/">Gitlab</a>
+    
+    <a href="/tags/golang/">golang</a>
+    
+    <a href="/tags/google/">Google</a>
+    
+    <a href="/tags/graphic/">Graphic</a>
+    
+    <a href="/tags/graphql/">GraphQL</a>
+    
+    <a href="/tags/grpc/">grpc</a>
+    
+    <a href="/tags/gtd/">GTD</a>
+    
+    <a href="/tags/hexo/">hexo</a>
+    
+    <a href="/tags/https/">https</a>
+    
+    <a href="/tags/hugo/">hugo</a>
+    
+    <a href="/tags/hypervisor/">Hypervisor</a>
+    
+    <a href="/tags/index/">index</a>
+    
+    <a href="/tags/iot/">IOT</a>
+    
+    <a href="/tags/iterm2/">iterm2</a>
+    
+    <a href="/tags/jamstack/">JamStack</a>
+    
+    <a href="/tags/java/">Java</a>
+    
+    <a href="/tags/javascript/">javascript</a>
+    
+    <a href="/tags/jenkins/">Jenkins</a>
+    
+    <a href="/tags/json/">json</a>
+    
+    <a href="/tags/julia/">julia</a>
+    
+    <a href="/tags/kafka/">Kafka</a>
+    
+    <a href="/tags/kpi/">KPI</a>
+    
+    <a href="/tags/learn/">learn</a>
+    
+    <a href="/tags/linux/">Linux</a>
+    
+    <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
+    
+    <a href="/tags/mac-osx/">Mac osx</a>
+    
+    <a href="/tags/macos/">macOS</a>
+    
+    <a href="/tags/macro/">macro</a>
+    
+    <a href="/tags/manjaro/">Manjaro</a>
+    
+    <a href="/tags/mapapi/">mapapi</a>
+    
+    <a href="/tags/markdown/">Markdown</a>
+    
+    <a href="/tags/midi/">midi</a>
+    
+    <a href="/tags/mido/">mido</a>
+    
+    <a href="/tags/mindmap/">mindmap</a>
+    
+    <a href="/tags/model-driven-app/">Model Driven App</a>
+    
+    <a href="/tags/module/">module</a>
+    
+    <a href="/tags/mounty/">Mounty</a>
+    
+    <a href="/tags/mqtt/">MQTT</a>
+    
+    <a href="/tags/multibranch/">Multibranch</a>
+    
+    <a href="/tags/music/">music</a>
+    
+    <a href="/tags/namespace/">namespace</a>
+    
+    <a href="/tags/neovim/">NeoVim</a>
+    
+    <a href="/tags/netlify/">netlify</a>
+    
+    <a href="/tags/next/">next</a>
+    
+    <a href="/tags/ng/">Ng</a>
+    
+    <a href="/tags/node.js/">Node.js</a>
+    
+    <a href="/tags/nodejs/">Nodejs</a>
+    
+    <a href="/tags/npm/">npm</a>
+    
+    <a href="/tags/ntfs/">NTFS</a>
+    
+    <a href="/tags/nuxt/">Nuxt</a>
+    
+    <a href="/tags/ocr/">OCR</a>
+    
+    <a href="/tags/okr/">OKR</a>
+    
+    <a href="/tags/opencv/">OpenCV</a>
+    
+    <a href="/tags/os/">OS</a>
+    
+    <a href="/tags/osv/">OSv</a>
+    
+    <a href="/tags/package-lock.json/">package-lock.json</a>
+    
+    <a href="/tags/pact.io/">Pact.io</a>
+    
+    <a href="/tags/pain-text/">pain text</a>
+    
+    <a href="/tags/para/">para</a>
+    
+    <a href="/tags/pc/">pc</a>
+    
+    <a href="/tags/piano/">piano</a>
+    
+    <a href="/tags/pipeline/">PipeLine</a>
+    
+    <a href="/tags/play1/">play1</a>
+    
+    <a href="/tags/play1x/">play1x</a>
+    
+    <a href="/tags/play2-scala/">play2 scala</a>
+    
+    <a href="/tags/playframework/">playframework</a>
+    
+    <a href="/tags/playscala/">playscala</a>
+    
+    <a href="/tags/power-apps/">Power Apps</a>
+    
+    <a href="/tags/power-platform/">Power Platform</a>
+    
+    <a href="/tags/powerapps/">PowerApps</a>
+    
+    <a href="/tags/powermill/">powermill</a>
+    
+    <a href="/tags/ppt/">PPT</a>
+    
+    <a href="/tags/promise/">Promise</a>
+    
+    <a href="/tags/python/">python</a>
+    
+    <a href="/tags/qa/">QA</a>
+    
+    <a href="/tags/ray-dalio/">Ray Dalio</a>
+    
+    <a href="/tags/re-natal/">re-natal</a>
+    
+    <a href="/tags/react/">React</a>
+    
+    <a href="/tags/react-native/">react native</a>
+    
+    <a href="/tags/react-route/">react-route</a>
+    
+    <a href="/tags/redux/">redux</a>
+    
+    <a href="/tags/redwood/">RedWood</a>
+    
+    <a href="/tags/regex/">Regex</a>
+    
+    <a href="/tags/rpc/">rpc</a>
+    
+    <a href="/tags/ruby/">Ruby</a>
+    
+    <a href="/tags/rust/">rust</a>
+    
+    <a href="/tags/seagate/">Seagate</a>
+    
+    <a href="/tags/second-brain/">second-brain</a>
+    
+    <a href="/tags/secure/">Secure</a>
+    
+    <a href="/tags/session/">session</a>
+    
+    <a href="/tags/silo/">Silo</a>
+    
+    <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
+    
+    <a href="/tags/sops/">sops</a>
+    
+    <a href="/tags/spacemacs/">Spacemacs</a>
+    
+    <a href="/tags/spacevim/">SpaceVim</a>
+    
+    <a href="/tags/sql/">SQL</a>
+    
+    <a href="/tags/ssh/">ssh</a>
+    
+    <a href="/tags/static-site/">Static Site</a>
+    
+    <a href="/tags/svg/">SVG</a>
+    
+    <a href="/tags/tdd/">TDD</a>
+    
+    <a href="/tags/text/">text</a>
+    
+    <a href="/tags/toc/">TOC</a>
+    
+    <a href="/tags/tomorrow-theme/">tomorrow-theme</a>
+    
+    <a href="/tags/tools/">tools</a>
+    
+    <a href="/tags/typescript/">TypeScript</a>
+    
+    <a href="/tags/umi/">Umi</a>
+    
+    <a href="/tags/uml/">uml</a>
+    
+    <a href="/tags/unit-test/">Unit Test</a>
+    
+    <a href="/tags/unix/">Unix</a>
+    
+    <a href="/tags/vant/">Vant</a>
+    
+    <a href="/tags/vi/">vi</a>
+    
+    <a href="/tags/vim/">vim</a>
+    
+    <a href="/tags/vimac/">Vimac</a>
+    
+    <a href="/tags/vimium/">Vimium</a>
+    
+    <a href="/tags/vimrc/">vimrc</a>
+    
+    <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
+    
+    <a href="/tags/vue/">Vue</a>
+    
+    <a href="/tags/vue3/">Vue3</a>
+    
+    <a href="/tags/weapp/">weapp</a>
+    
+    <a href="/tags/web-resources/">Web Resources</a>
+    
+    <a href="/tags/webpack/">Webpack</a>
+    
+    <a href="/tags/weui/">WeUI</a>
+    
+    <a href="/tags/wind13/">wind13</a>
+    
+    <a href="/tags/windows/">Windows</a>
+    
+    <a href="/tags/word%E6%96%87%E6%A1%A3/">Word文档</a>
+    
+    <a href="/tags/wux/">Wux</a>
+    
+    <a href="/tags/xml/">xml</a>
+    
+    <a href="/tags/yarn/">yarn</a>
+    
+    <a href="/tags/yarn.lock/">yarn.lock</a>
+    
+    <a href="/tags/%E4%B8%80%E5%9B%BE/">一图</a>
+    
+    <a href="/tags/%E4%B8%96%E9%A3%8E%E5%8D%81%E4%B8%89%E5%AD%A6%E5%A0%82/">世风十三学堂</a>
+    
+    <a href="/tags/%E4%B9%A0%E6%83%AF/">习惯</a>
+    
+    <a href="/tags/%E4%B9%A6%E7%B1%8D/">书籍</a>
+    
+    <a href="/tags/%E4%BA%92%E8%81%94%E7%BD%91%E6%97%B6%E4%BB%A3/">互联网时代</a>
+    
+    <a href="/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/">产品经理</a>
+    
+    <a href="/tags/%E4%BA%B2%E5%AD%90%E6%95%99%E8%82%B2/">亲子教育</a>
+    
+    <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a>
+    
+    <a href="/tags/%E4%BA%BA%E6%9C%88%E7%A5%9E%E8%AF%9D/">人月神话</a>
+    
+    <a href="/tags/%E4%BA%BA%E7%94%9F/">人生</a>
+    
+    <a href="/tags/%E4%BB%A5%E7%BB%88%E4%B8%BA%E5%A7%8B/">以终为始</a>
+    
+    <a href="/tags/%E4%BC%81%E4%B8%9A%E7%AE%A1%E7%90%86/">企业管理</a>
+    
+    <a href="/tags/%E4%BD%8E%E4%BB%A3%E7%A0%81/">低代码</a>
+    
+    <a href="/tags/%E5%85%AC%E5%8F%B8%E7%AE%A1%E7%90%86/">公司管理</a>
+    
+    <a href="/tags/%E5%87%8F%E8%82%A5/">减肥</a>
+    
+    <a href="/tags/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/">函数式编程</a>
+    
+    <a href="/tags/%E5%88%98%E9%82%A6/">刘邦</a>
+    
+    <a href="/tags/%E5%88%9B%E6%84%8F%E7%B2%BE%E8%8B%B1/">创意精英</a>
+    
+    <a href="/tags/%E5%88%9B%E6%96%B0/">创新</a>
+    
+    <a href="/tags/%E5%88%9D%E5%AD%A6%E8%80%85/">初学者</a>
+    
+    <a href="/tags/%E5%88%B6%E7%BA%A6%E7%90%86%E8%AE%BA/">制约理论</a>
+    
+    <a href="/tags/%E5%89%8D%E7%AB%AF/">前端</a>
+    
+    <a href="/tags/%E5%8C%A0%E5%BF%83/">匠心</a>
+    
+    <a href="/tags/%E5%8D%8E%E6%99%A8%E5%AE%87/">华晨宇</a>
+    
+    <a href="/tags/%E5%8E%9F%E5%88%99/">原则</a>
+    
+    <a href="/tags/%E5%90%B4%E5%86%9B/">吴军</a>
+    
+    <a href="/tags/%E5%9B%A2%E9%98%9F%E6%95%88%E7%8E%87/">团队效率</a>
+    
+    <a href="/tags/%E5%9B%A2%E9%98%9F%E6%95%88%E8%83%BD/">团队效能</a>
+    
+    <a href="/tags/%E5%9B%B4%E6%A3%8B/">围棋</a>
+    
+    <a href="/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/">图像处理</a>
+    
+    <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
+    
+    <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
+    
+    <a href="/tags/%E5%A4%A7%E8%87%AA%E7%84%B6/">大自然</a>
+    
+    <a href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+    
+    <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/">学习方法</a>
+    
+    <a href="/tags/%E5%AE%8F%E7%BC%96%E7%A8%8B/">宏编程</a>
+    
+    <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">小程序</a>
+    
+    <a href="/tags/%E5%B4%94%E5%81%A5/">崔健</a>
+    
+    <a href="/tags/%E5%B7%A5%E4%BD%9C%E5%AE%A4/">工作室</a>
+    
+    <a href="/tags/%E5%B7%A5%E7%A8%8B%E5%8C%96/">工程化</a>
+    
+    <a href="/tags/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/">工程实践</a>
+    
+    <a href="/tags/%E5%B7%A5%E7%A8%8B%E6%80%9D%E7%BB%B4/">工程思维</a>
+    
+    <a href="/tags/%E5%B7%B4%E8%8F%B2%E7%89%B9/">巴菲特</a>
+    
+    <a href="/tags/%E5%BA%A6%E9%87%8F%E6%8C%87%E6%A0%87/">度量指标</a>
+    
+    <a href="/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/">开发环境</a>
+    
+    <a href="/tags/%E5%BC%82%E6%AD%A5/">异步</a>
+    
+    <a href="/tags/%E5%BC%A0%E5%B0%8F%E9%BE%99/">张小龙</a>
+    
+    <a href="/tags/%E5%BE%97%E5%88%B0/">得到</a>
+    
+    <a href="/tags/%E5%BE%97%E5%88%B0-app/">得到 App</a>
+    
+    <a href="/tags/%E5%BE%97%E5%88%B0app/">得到App</a>
+    
+    <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</a>
+    
+    <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">微服务</a>
+    
+    <a href="/tags/%E5%BE%AE%E8%BD%AF/">微软</a>
+    
+    <a href="/tags/%E5%BF%83%E6%99%BA%E6%AE%8B%E7%96%BE/">心智残疾</a>
+    
+    <a href="/tags/%E5%BF%AB%E5%88%80%E9%9D%92%E8%A1%A3/">快刀青衣</a>
+    
+    <a href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">思维导图</a>
+    
+    <a href="/tags/%E6%80%9D%E7%BB%B4%E8%AE%B0%E5%BD%95/">思维记录</a>
+    
+    <a href="/tags/%E6%89%8B%E6%9C%BA/">手机</a>
+    
+    <a href="/tags/%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B/">技术选型</a>
+    
+    <a href="/tags/%E6%8A%95%E8%B5%84/">投资</a>
+    
+    <a href="/tags/%E6%8B%96%E5%BB%B6%E7%97%87/">拖延症</a>
+    
+    <a href="/tags/%E6%8E%98%E9%87%91/">掘金</a>
+    
+    <a href="/tags/%E6%95%8F%E6%8D%B7/">敏捷</a>
+    
+    <a href="/tags/%E6%95%99%E8%82%B2/">教育</a>
+    
+    <a href="/tags/%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D/">数据恢复</a>
+    
+    <a href="/tags/%E6%95%B0%E6%8E%A7%E5%8A%A0%E5%B7%A5/">数控加工</a>
+    
+    <a href="/tags/%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85/">新冠疫情</a>
+    
+    <a href="/tags/%E6%97%8B%E8%BD%AE%E7%BA%BF/">旋轮线</a>
+    
+    <a href="/tags/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/">时间管理</a>
+    
+    <a href="/tags/%E6%98%A5%E8%8A%82/">春节</a>
+    
+    <a href="/tags/%E6%99%BA%E6%85%A7/">智慧</a>
+    
+    <a href="/tags/%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/">最佳实践</a>
+    
+    <a href="/tags/%E6%9C%80%E9%80%9F%E9%99%8D%E7%BA%BF/">最速降线</a>
+    
+    <a href="/tags/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0/">有道云笔记</a>
+    
+    <a href="/tags/%E6%9D%8E%E7%AC%91%E6%9D%A5/">李笑来</a>
+    
+    <a href="/tags/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/">极限编程</a>
+    
+    <a href="/tags/%E6%A8%8A%E7%99%BB/">樊登</a>
+    
+    <a href="/tags/%E6%A8%8A%E7%99%BB%E8%AF%BB%E4%B9%A6/">樊登读书</a>
+    
+    <a href="/tags/%E6%AD%8C%E6%89%8B/">歌手</a>
+    
+    <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a>
+    
+    <a href="/tags/%E6%AD%A3%E5%BF%B5%E7%BC%96%E7%A8%8B/">正念编程</a>
+    
+    <a href="/tags/%E6%B1%A0%E5%BB%BA%E5%BC%BA/">池建强</a>
+    
+    <a href="/tags/%E6%B2%B3%E9%A9%AC/">河马</a>
+    
+    <a href="/tags/%E6%B3%A8%E6%84%8F%E5%8A%9B/">注意力</a>
+    
+    <a href="/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/">流程图</a>
+    
+    <a href="/tags/%E6%B5%8B%E8%AF%95%E9%87%91%E5%AD%97%E5%A1%94/">测试金字塔</a>
+    
+    <a href="/tags/%E6%B5%8B%E8%AF%95%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91/">测试驱动开发</a>
+    
+    <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%B7%A5%E4%BD%9C/">深度工作</a>
+    
+    <a href="/tags/%E6%B8%B8%E6%88%8F/">游戏</a>
+    
+    <a href="/tags/%E7%81%B5%E6%84%9F/">灵感</a>
+    
+    <a href="/tags/%E7%86%B5%E5%A2%9E/">熵增</a>
+    
+    <a href="/tags/%E7%89%A9%E8%81%94%E7%BD%91/">物联网</a>
+    
+    <a href="/tags/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/">王者荣耀</a>
+    
+    <a href="/tags/%E7%8E%8B%E9%98%B3%E6%98%8E/">王阳明</a>
+    
+    <a href="/tags/%E7%91%9E%E8%BE%BE%E5%88%A9%E6%AC%A7/">瑞·达利欧</a>
+    
+    <a href="/tags/%E7%93%B6%E9%A2%88/">瓶颈</a>
+    
+    <a href="/tags/%E7%94%98%E7%89%B9%E5%9B%BE/">甘特图</a>
+    
+    <a href="/tags/%E7%95%AA%E8%8C%84%E5%B7%A5%E4%BD%9C%E6%B3%95/">番茄工作法</a>
+    
+    <a href="/tags/%E7%96%AB%E6%83%85/">疫情</a>
+    
+    <a href="/tags/%E7%97%9B%E8%8B%A6/">痛苦</a>
+    
+    <a href="/tags/%E7%9F%A5%E8%AF%86%E6%98%9F%E7%90%83/">知识星球</a>
+    
+    <a href="/tags/%E7%9F%B3%E5%A2%A8/">石墨</a>
+    
+    <a href="/tags/%E7%A2%8E%E7%89%87/">碎片</a>
+    
+    <a href="/tags/%E7%A4%BA%E6%84%8F%E5%9B%BE/">示意图</a>
+    
+    <a href="/tags/%E7%A5%9D%E6%84%BF/">祝愿</a>
+    
+    <a href="/tags/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/">福格行为模型</a>
+    
+    <a href="/tags/%E7%AC%AC3%E9%80%89%E6%8B%A9/">第3选择</a>
+    
+    <a href="/tags/%E7%AE%97%E6%B3%95/">算法</a>
+    
+    <a href="/tags/%E7%AE%A1%E7%90%86%E6%80%9D%E6%83%B3/">管理思想</a>
+    
+    <a href="/tags/%E7%B3%96%E5%B0%BF%E7%97%85/">糖尿病</a>
+    
+    <a href="/tags/%E7%B3%BB%E7%BB%9F/">系统</a>
+    
+    <a href="/tags/%E7%B3%BB%E7%BB%9F%E6%97%B6%E5%8C%BA/">系统时区</a>
+    
+    <a href="/tags/%E7%BA%AF%E6%96%87%E6%9C%AC/">纯文本</a>
+    
+    <a href="/tags/%E7%BA%B3%E5%BE%B7%E6%8B%89/">纳德拉</a>
+    
+    <a href="/tags/%E7%BB%88%E8%BA%AB%E5%AD%A6%E4%B9%A0/">终身学习</a>
+    
+    <a href="/tags/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/">编程开发</a>
+    
+    <a href="/tags/%E7%BC%96%E8%BE%91%E5%99%A8/">编辑器</a>
+    
+    <a href="/tags/%E7%BD%97%E8%83%96/">罗胖</a>
+    
+    <a href="/tags/%E7%BD%97%E8%BE%91%E6%80%9D%E7%BB%B4/">罗辑思维</a>
+    
+    <a href="/tags/%E8%84%91%E5%9B%BE/">脑图</a>
+    
+    <a href="/tags/%E8%87%AA%E5%BE%8B/">自律</a>
+    
+    <a href="/tags/%E8%88%92%E9%80%82%E5%8C%BA/">舒适区</a>
+    
+    <a href="/tags/%E8%8A%B1%E6%9E%9C%E5%B1%B1%E6%8A%80%E6%9C%AF%E5%9B%A2%E9%98%9F/">花果山技术团队</a>
+    
+    <a href="/tags/%E8%A7%81%E8%AF%86/">见识</a>
+    
+    <a href="/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">解决方案</a>
+    
+    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a>
+    
+    <a href="/tags/%E8%B0%B7%E4%BB%93/">谷仓</a>
+    
+    <a href="/tags/%E8%B0%B7%E6%AD%8C/">谷歌</a>
+    
+    <a href="/tags/%E8%B4%A2%E5%AF%8C%E8%87%AA%E7%94%B1/">财富自由</a>
+    
+    <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">软件开发</a>
+    
+    <a href="/tags/%E8%BF%87%E6%BB%A4%E5%99%A8/">过滤器</a>
+    
+    <a href="/tags/%E8%BF%90%E6%B0%94/">运气</a>
+    
+    <a href="/tags/%E8%BF%BD%E6%B1%82/">追求</a>
+    
+    <a href="/tags/%E9%87%8D%E6%9E%84/">重构</a>
+    
+    <a href="/tags/%E9%98%BF%E5%B0%94%E8%8C%A8%E6%B5%B7%E9%BB%98%E7%97%87/">阿尔茨海默症</a>
+    
+    <a href="/tags/%E9%9B%B7%E7%94%B5%E6%A8%A1%E6%8B%9F%E5%99%A8/">雷电模拟器</a>
+    
+    <a href="/tags/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A/">非暴力沟通</a>
+    
+    <a href="/tags/%E9%A2%86%E5%AF%BC%E5%8A%9B/">领导力</a>
+    
+    <a href="/tags/%E9%AB%98%E8%B4%A8%E9%87%8F/">高质量</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="http://extremeprogramming.cn/" title="极限编程中国">极限编程中国</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://outmanzzq.github.io/" title="outmanzzq">运维朋友的博客</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+    <div class="container">
+        &copy; 2022 <a href="/">世风十三学堂 By 世风十三</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    
+    
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+
+</body>
+
+</html>

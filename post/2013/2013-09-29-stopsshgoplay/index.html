@@ -91,63 +91,59 @@
         
         <div class="post-content">
             <p>Created 星期六 25 二月 2012</p>
-
 <p>先看一段Playframework热情交流群（QQG：168013302）里的聊天记录：</p>
-
 <blockquote>
-<p>木马@学生 09:59:13
-&gt;   实现个功能..要调用service接口的方法, 方法又在他的impl里面实现, impl里面又是调用dao层接口,
-&gt;   dao层接口又是在dao的impl里面实现, dao的impl实现又是由hibernate访问的数据库,
+<p>木马@学生 09:59:13</p>
+<blockquote>
+<p>实现个功能..要调用service接口的方法, 方法又在他的impl里面实现, impl里面又是调用dao层接口,
+dao层接口又是在dao的impl里面实现, dao的impl实现又是由hibernate访问的数据库,
 木马@学生 09:59:28
-&gt;   真心蛋都碎了
+真心蛋都碎了
 Freewind@play2 10:00:29
-&gt;   为什么要这么多接口？
+为什么要这么多接口？
 木马@学生 10:00:41
-&gt;   学校的项目&hellip;SSH2
+学校的项目&hellip;SSH2
 Freewind@play2 10:01:04
-&gt;   话说我前公司也是这样的，看着都累
+话说我前公司也是这样的，看着都累
 木马@学生 10:01:25
-&gt;   对了, 还没说上层的 action,拦截分配 do了返回,
+对了, 还没说上层的 action,拦截分配 do了返回,
 木马@学生 10:01:31
-&gt;   头都大了
+头都大了
 木马@学生 10:01:57
-&gt;   还前端的 jquery, ajax访问数据库, 再经过这些框架的时候
+还前端的 jquery, ajax访问数据库, 再经过这些框架的时候
 Snake 10:01:59
-&gt;   ssh2是这样的
+ssh2是这样的
 Snake 10:02:13
-&gt;   冠名弱耦合
+冠名弱耦合
 木马@学生 10:02:14
-&gt;   那叫一个个都要问候到啊&hellip;
+那叫一个个都要问候到啊&hellip;
 Freewind@play2 10:03:01
-&gt;   你能不能改代码，能删的都删了
+你能不能改代码，能删的都删了
 木马@学生 10:03:25
-&gt;   我就写个登陆功能, 就要搞这么多
+我就写个登陆功能, 就要搞这么多
 世风十三@用中 10:06:12
-&gt;   我公司也是实现个简单的java app，用了无数接口，我重构时都删了。<br />
+我公司也是实现个简单的java app，用了无数接口，我重构时都删了。<br>
 Freewind@play2 10:07:18
-&gt;   都是当年spring惹的祸
+都是当年spring惹的祸
 Snake 10:09:00
-&gt;   大项目是有需要的
+大项目是有需要的
 Snake 10:09:29
-&gt;   小项目用ssh有点小题大作
+小项目用ssh有点小题大作
 木马@学生 10:10:09
-&gt;   学校总是搞最大的框架, 做最小的项目
+学校总是搞最大的框架, 做最小的项目
 世风十三@用中 10:10:22
-&gt;   算不算是接口滥用<br />
+算不算是接口滥用<br>
 木马@学生 10:10:34
-&gt;   说出来能唬人啊
+说出来能唬人啊
 木马@学生 10:10:41
-&gt;   写出来, 全是英文啊
+写出来, 全是英文啊
 Snake 10:11:11
-&gt;   ssh熟悉精通，所以学校也只能这样</p>
+ssh熟悉精通，所以学校也只能这样</p>
 </blockquote>
-
+</blockquote>
 <p>应该说使用接口主要是基于开放封闭原则，即对扩展开放，而对修改封闭。而实际项目中，通常的开发是不断地修改完善，最终达到理想效果。所以开放封闭原则应该说不适用于项目内部，而是针对于打包对外服务的情况，所谓“接口”也正是对外来说的，如果你的项目是对外提供公用类库或是框架包等的，那就要严格定义准确的接口规范，并且尽量保持对外接口的稳定，在做系统分析时就要深入调研，考虑周到，对未来的变化有充分的预估。而相反如果是整个项目仅用于对内的应用，而所有代码都是自己控制，未来也没有与其他组群的协同问题，那就没有必要做到层层都接口，直接实现也未尝不可。</p>
-
 <p>多数时候，初学者都是在对着SSH的框架照猫画虎，画的时候也不太深思为什么要这样做，只道是一种开发规范罢了，遵守便是，没什么好说，然而实际上SSH框架的创造者是思考了太多的可能性和各种问题后总结出的经验结晶，这其中考虑遇到最为复杂的情况类似大型企业复杂应用的开发等，而对于大多数中、小型项目而言，多少有点用牛刀杀鸡的感觉。</p>
-
 <p>相对的，Play framework 则是从一开始就是针对Web应用开发来设计的，借鉴了其他很多优秀框架（如ROR）的思想，直接解决了中小型项目快速开发的问题，同时也提供了Module的机制，给予了无限的扩展空间，当然也适用于大型的企业应用项目，只要架构师在具体应用上掌握了一定的技巧和经验，开发起来还是相当敏捷和舒爽的！:)</p>
-
 <p>所以，如果你们的团队是擅长Java这门语言的，你们的应用是基于Web的应用系统，你们有权决定使用什么样的技术路线和框架的话，那么强烈建议使用Playframework，放弃SSH的繁杂和冗余吧，在Playframework的世界里，你会接触到最新的技术思想，最敏捷的开发理念，最高效的代码实现！Welcome to Playframework world!</p>
 
         </div>
@@ -163,13 +159,13 @@ Snake 10:11:11
         
         <li><a href="/post/2013/2013-12-13-functiontestsession/">FunctionTest中如何取得session的值</a></li>
         
+        <li><a href="/post/2022/try-smartide/">Try SmartIDE</a></li>
+        
+        <li><a href="/post/2022/low-code-analogy/">低代码的类比 Low Code Analogy</a></li>
+        
         <li><a href="/post/2022/which-editor-you-are-using/">Which Editor You Are Using</a></li>
         
         <li><a href="/post/2022/nodejs-secure-config/">Nodejs Secure Config 配置加密方案</a></li>
-        
-        <li><a href="/post/2022/develop-team-problem/">关于KPI与开发团队效能问题的讨论</a></li>
-        
-        <li><a href="/post/2022/powerplatform-jamstack/">在 Power Platform 上实践 JamStack 架构思想</a></li>
         
     </ul>
 </div>
@@ -221,6 +217,14 @@ Snake 10:11:11
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -252,14 +256,6 @@ Snake 10:11:11
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -269,9 +265,9 @@ Snake 10:11:11
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -279,7 +275,7 @@ Snake 10:11:11
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -298,7 +294,7 @@ Snake 10:11:11
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -330,7 +326,7 @@ Snake 10:11:11
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -436,7 +432,7 @@ Snake 10:11:11
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -447,6 +443,8 @@ Snake 10:11:11
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -552,7 +550,7 @@ Snake 10:11:11
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -581,6 +579,8 @@ Snake 10:11:11
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -629,6 +629,8 @@ Snake 10:11:11
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -719,6 +721,8 @@ Snake 10:11:11
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

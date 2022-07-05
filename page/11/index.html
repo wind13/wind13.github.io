@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
-	<meta name="generator" content="Hugo 0.58.3" />
+	<meta name="generator" content="Hugo 0.74.3" />
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -73,6 +73,38 @@
                 <div class="col-8" id="main">
                     
 <div class="res-cons">
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="/post/2013/2013-12-13-cacheremovetime/" title=""></a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            1年1月1日
+        </date>
+        
+        <div class="post-content">
+            移除Cache可以有时间参数吗？ 是的，可以，使用下面这样的语句即可： :::java Cache.set(&quot;some&quot;, null, 0) 其中最后一个参数是时间，单位是秒。详见源代码。……
+        </div>
+        <p class="readmore"><a href="/post/2013/2013-12-13-cacheremovetime/">阅读全文</a></p>
+    </article>
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="/post/2013/2013-12-13-cmdchinese/" title=""></a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            1年1月1日
+        </date>
+        
+        <div class="post-content">
+            Play在Windows的cmd窗口中中文乱码的解决办法 play在cmd 下，system.out()输出的中文都是乱码 首先，可参考：cmd chcp命令切换字符格式 或参考：在Windows的CMD中如何设置支持UTF8编码? 如果 chcp 65001 / chcp 936 改变cmd字符集都不行 参考：http://w……
+        </div>
+        <p class="readmore"><a href="/post/2013/2013-12-13-cmdchinese/">阅读全文</a></p>
+    </article>
     
     <article class="post">
         <header>
@@ -202,38 +234,6 @@
         <p class="readmore"><a href="/post/2013/2013-12-23-confession214/">阅读全文</a></p>
     </article>
     
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="/post/2013/2013-12-23-coolguydontlookatexplosions/" title=""></a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            1年1月1日
-        </date>
-        
-        <div class="post-content">
-            Cool Guys Don&rsquo;t Look At Explosions 纯爷们儿从不围观爆炸！ Cool guys don't look at explosions They blow things up and then walk away Who's got time to watch an explosion? Because cool guys have errands that they have to walk to.. Keep walkin', keep shinin' Don't look back keep on walkin' Keep struttin' slow motion The more you ignore it, the cooler you look Samberg: Ladies &amp; gentlemen, please join me in welcoming.. Mr. Neil Diamond! Will Ferrell: ha ha ha....Where are we?! Cool guys don't look at explosions They stride for it in their diamond covered boots They wear jumpsuits with glitter and rhinestones And walk away in slow motion.. Keep walkin, you're cruisin.. Cherry Cherry...Sweet Caroline.. Denzel walks... Will Smith walks... Mark Wahlberg is wearin a hat! Samberg: Going solo....JJ……
-        </div>
-        <p class="readmore"><a href="/post/2013/2013-12-23-coolguydontlookatexplosions/">阅读全文</a></p>
-    </article>
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="/post/2013/2013-12-23-dateformat/" title=""></a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            1年1月1日
-        </date>
-        
-        <div class="post-content">
-            String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型 通常情况下可用Date.valueOf(String)直接转换; String类型格式：&rdquo;yyyy-MM-dd&rdquo; Date.valueOf(&ldquo;yyyy-MM-dd&rdquo;) 例： :::java String sd = &quot;2012-01-12&quot;; Date sdate = Date.valueOf(sd); 但当String类型格式为&rdquo;yyyy-MM-dd HH:mm:ss&rd……
-        </div>
-        <p class="readmore"><a href="/post/2013/2013-12-23-dateformat/">阅读全文</a></p>
-    </article>
-    
     
 
 
@@ -348,6 +348,14 @@
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -379,14 +387,6 @@
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -396,9 +396,9 @@
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -406,7 +406,7 @@
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -425,7 +425,7 @@
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -457,7 +457,7 @@
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -563,7 +563,7 @@
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -574,6 +574,8 @@
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -679,7 +681,7 @@
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -708,6 +710,8 @@
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -756,6 +760,8 @@
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -846,6 +852,8 @@
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

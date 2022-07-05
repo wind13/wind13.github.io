@@ -103,103 +103,70 @@
         
         
         <div class="post-content">
-            
-
-<h1 id="复习-fizzbuzz">复习 FizzBuzz</h1>
-
-<hr />
-
+            <h1 id="复习-fizzbuzz">复习 FizzBuzz</h1>
+<hr>
 <h2 id="题目">题目</h2>
-
 <p>游戏的规则是：</p>
-
 <blockquote>
 <p>让所有学生，假设为 100 人拍成一队，然后按顺序报数。</p>
-
+</blockquote>
+<blockquote>
 <p>学生报数时，如果所报数字是3的倍数，那么不能说该数字，而要说Fizz；如果所报数字是5的倍数，那么要说Buzz。</p>
 </blockquote>
-
-<hr />
-
+<hr>
 <h3 id="需求问题">需求问题：</h3>
-
 <ul>
 <li>被3和5整除返回什么？<!-- .element: class="fragment fade-up" --></li>
 <li>有的同学就直接脑补了：<!-- .element: class="fragment fade-up" -->
-
 <ul>
 <li>脑补一：能被3和5整除，那就是先被3整除呗，那就Fizz。<!-- .element: class="fragment fade-up" --></li>
 <li>脑补二：能被3和5整除，那就返回FizzBuzz呗。<!-- .element: class="fragment fade-up" --></li>
 <li>那么以上哪个脑补是对的呢？<!-- .element: class="fragment fade-up" --></li>
-</ul></li>
+</ul>
+</li>
 <li>……</li>
 </ul>
-
-<hr />
-
+<hr>
 <h3 id="进一步明确">进一步明确：</h3>
-
 <ul>
 <li>让所有学生拍成一队，然后按顺序报数。</li>
 <li>学生报数时，如果所报数字是3的倍数，那么不能说该数字，而要说Fizz；如果所报数字是5的倍数，那么要说Buzz。</li>
 <li>学生报数时，如果所报数字同时是两个特殊数的倍数，也要特殊处理，比如3和5的倍数，那么不能说该数字，而是要说FizzBuzz。</li>
 </ul>
-
-<hr />
-
+<hr>
 <h3 id="需求增加了">需求增加了！</h3>
-
 <p>你是一名体育老师，在某次距离下课还有五分钟时，你决定搞一个游戏。此时有200名学生在上课。游戏的规则是：</p>
-
 <p>3 Fizz；5 Buzz；7 Whizz。</p>
-
 <p>学生报数时，如果所报数字同时是两个特殊数的倍数情况下，也要特殊处理，比如3和5的倍数，那么不能说该数字，而是要说FizzBuzz, 以此类推。如果同时是三个特殊数的倍数，那么要说FizzBuzzWhizz。</p>
-
-<hr />
-
+<hr>
 <h3 id="需求又双叒增加了">需求又双叒增加了！</h3>
-
 <p>3 Fizz；5 Buzz；7 Whizz。</p>
-
 <p>3和5的倍数，那么不能说该数字，而是要说FizzBuzz, 以此类推。如果同时是三个特殊数的倍数，那么要说FizzBuzzWhizz。</p>
-
 <p>学生报数时，如果所报数字包含了3，那么也不能说该数字，而是要说相应的单词，比如要报13的同学应该说Fizz。
 如果数字中包含了3，那么忽略规则2和规则3，比如要报35的同学只报Fizz，不报BuzzWhizz。</p>
-
-<hr />
-
+<hr>
 <h3 id="你的代码什么样">你的代码什么样？</h3>
-
 <ul>
 <li>过程依赖</li>
 <li>数据依赖</li>
 <li>可测试性</li>
 </ul>
-
-<hr />
-
+<hr>
 <ul>
 <li><a href="https://cyber-dojo.org/creator/reenter?id=QKs4vX">小组的练习</a></li>
 <li><a href="https://cyber-dojo.org/kata/edit/4Llk48">我用 Python 的练习</a></li>
 </ul>
-
-<hr />
-
+<hr>
 <h3 id="用户故事和任务">用户故事和任务</h3>
-
 <p>任务就分为这几类：</p>
-
 <ul>
 <li>沟通协调（技术类的，非需求类的）</li>
 <li>技术调研</li>
 <li>原型测试</li>
 <li>编码实现</li>
 </ul>
-
-<hr />
-
+<hr>
 <h3 id="tdd-的思考">TDD 的思考</h3>
-
 <ul>
 <li>回归、人肉回归 vs 自动化测试</li>
 <li>核心原因：不会把程序从输入输出角度进行拆解</li>
@@ -208,33 +175,24 @@
 <li>不能从输入输出角度进行思考是人们没有办法写出高质量程序的一个原因。</li>
 <li>先确认需求，再实现，需求以测试的形式写出来，然后再去实现，这就是TDD了。</li>
 </ul>
-
 <p>TDD 需所见博，所临多，熟重构之体变，通红绿重构之迭代，尽得于目，盖存于心，尽应于手，如蜂采花，酝酿久之，变化纵横，自有成效。</p>
-
 <p>说人话：练习射球二万次。就吓跑了。[旺柴]</p>
-
 <ul>
 <li>个人尝试实现
-
 <ul>
 <li><a href="https://gitee.com/wind13/phx-demo/blob/master/test/fizz_buzz/fizz_buzz_test.exs">Elixir fizz buzz</a></li>
-</ul></li>
 </ul>
-
-<hr />
-
+</li>
+</ul>
+<hr>
 <h2 id="参考">参考</h2>
-
 <ul>
 <li><a href="https://mp.weixin.qq.com/s?__biz=MjM5MjY3OTgwMA==&amp;mid=2652469088&amp;idx=1&amp;sn=e19a8aea6a2b4e2cefece3574d2a0ec9&amp;chksm=bd4f45778a38cc61f6f54da12ea558d99f0f4e54d73e9b5f86542e90b420eac8959e3c0b25dd&amp;mpshare=1&amp;scene=1&amp;srcid=0702caB4PC6iD4oSDIVwgSMK&amp;sharer_sharetime=1593651767970&amp;sharer_shareid=a0a118e87cbe05876db389c2cbab9131&amp;key=18767767e2ac5656da4f335ea939a75a5693da670f3dff0947f803da889b237f4f82f5f71bda25b09c0f185725aa791571083fe99809664dae05cf92585a30b9223f33fa38fba0e9a087d5956add4373&amp;ascene=1&amp;uin=MjEzMjE4MzEyMQ%3D%3D&amp;devicetype=Windows+10+x64&amp;version=6209007b&amp;lang=zh_CN&amp;exportkey=A026hKxHLVXbS%2Bi56QXNueI%3D&amp;pass_ticket=U717kvVDUzi%2BLb4D3fEVxvtj9EivKWKeUJsiu4UAAVNOMoqVANCBleI896pljr4M">FizzBuzz与写代码的“一万”个细节</a></li>
 <li><a href="https://v.youku.com/v_show/id_XNDMwMjM4ODg4MA==.html">FizzBuzz 教学视频</a></li>
 <li><a href="https://www.bilibili.com/video/BV1eJ411c7vv">熊节老师的 Java 演示</a></li>
 </ul>
-
-<hr />
-
+<hr>
 <h2 id="还没完">还没完？</h2>
-
 <ul>
 <li>下一个数字是多少？ 11？</li>
 <li>再下一个数字是多少？ 19？</li>
@@ -314,6 +272,14 @@
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -345,14 +311,6 @@
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -362,9 +320,9 @@
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -372,7 +330,7 @@
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -391,7 +349,7 @@
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -423,7 +381,7 @@
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -529,7 +487,7 @@
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -540,6 +498,8 @@
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -645,7 +605,7 @@
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -674,6 +634,8 @@
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -722,6 +684,8 @@
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -812,6 +776,8 @@
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

@@ -79,6 +79,42 @@
     <article class="post">
         <header>
             <h1 class="post-title">
+                <a href="/post/2016/2016-11-08-learn-ionic-v2/" title="Ionic 2 相关学习">Ionic 2 相关学习</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            1年1月1日
+        </date>
+        
+        <div class="post-content">
+            基础 ionic2文档整理 A Guide to Styling an Ionic 2 Application Tips &amp; Tricks for Styling Ionic 2 Applications User-Selected Style Themes in an Ionic 2 Application Vonic简明教程（一）：起步{:target=&rdquo;_blank&rdquo;} SQLite plugin{:target=&rdquo;_blank&rdquo;} Cordova plugin NativeStorage{:target=&rdquo;_blank&rdquo;} Debugging Ionic 2 Apps in Chrome from Visual Studio Code{:target=&rdquo;_blank&rdquo;} Ionic 2 Conference Application{:target=&rdquo;_blank&rdquo;} Ionically Speaking{:target=&rdquo;_blank&rdquo;} 问题 I18n 官方文档如此{:target=&rdquo;_blank&rdquo;……
+        </div>
+        <p class="readmore"><a href="/post/2016/2016-11-08-learn-ionic-v2/">阅读全文</a></p>
+    </article>
+    
+    
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="/post/2013/2013-12-13-functiontestsession/" title="FunctionTest中如何取得session的值">FunctionTest中如何取得session的值</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            1年1月1日
+        </date>
+        
+        <div class="post-content">
+            原文摘抄自：https://groups.google.com/d/msg/play-framework/-/iQLX-uLwHWsJ （可能因墙访问不了……我是在邮件列表中收集的） 需求和问题 原问及简单翻译说明如下： Given a simple action:【简单给一个action如下：】 :::java public static void testAction() { session.put(&quot;worked&quot;,……
+        </div>
+        <p class="readmore"><a href="/post/2013/2013-12-13-functiontestsession/">阅读全文</a></p>
+    </article>
+    
+    
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
                 <a href="/post/2013/2013-12-23-easyuiform/" title="easyui中form表单的ajax实现">easyui中form表单的ajax实现</a>
             </h1>
         </header>
@@ -87,7 +123,7 @@
         </date>
         
         <div class="post-content">
-            示例代码如下： $('#ff').form({ url:$(this).attr(&quot;&quot;action&quot;&quot;), onSubmit:function(){ return $(this).form('validate'); }, success:function(data){ alert(data); } }); 其中url的值是取的form中的action属性，故需注意填写form的相应属性，当然也可以为&rsquo;/controller_name/action_name&rsquo;。……
+            示例代码如下： $(&#39;#ff&#39;).form({ url:$(this).attr(&#34;&#34;action&#34;&#34;), onSubmit:function(){ return $(this).form(&#39;validate&#39;); }, success:function(data){ alert(data); } }); 其中url的值是取的form中的action属性，故需注意填写form的相应属性，当然也可以为&rsquo;/controller_name/action_name&rsquo;。……
         </div>
         <p class="readmore"><a href="/post/2013/2013-12-23-easyuiform/">阅读全文</a></p>
     </article>
@@ -238,44 +274,6 @@
     
     
     
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="/post/2016/2016-09-20-4clojure-problem-solving/" title="4clojure problem solving">4clojure problem solving</a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            1年1月1日
-        </date>
-        
-        <div class="post-content">
-            14 题以前答案一般没啥区别，略过…… #15 #(* % 2) adereth&rsquo;s solution: * 2 #16 format &quot;Hello, %s!&quot; adereth&rsquo;s solution: #(str &quot;Hello, &quot; % &quot;!&quot;) #17 '(6 7 8) adereth&rsquo;s solution: [6 7 8] #18 '(6 7) adereth&rsquo;s solution: '(6 7) #19 #(peek (vec %)) adereth&rsquo;s solution: (comp first reverse) #20 #(nth (reverse %) 1) adereth&rsquo;s solution: (comp second reverse) #21 (fn getn [ary n] (if (= n 0) (first ary) (getn (rest ary) (dec n)))) adereth&rsquo;s solution: #(first (drop %2 %1)) #22 #(reduce (fn [a b] (inc a)) 0 %) adereth&rsquo;s solution: (fn [sequence] (reduce (fn [acc v] (inc acc)) 0 sequence)) #23 #(reduce (fn [rs ls] (cons ls rs)) [] %) adereth&rsquo;s solution: (fn [s] (loop [result [] s s] (if (seq s) (recur (concat [(first s)]……
-        </div>
-        <p class="readmore"><a href="/post/2016/2016-09-20-4clojure-problem-solving/">阅读全文</a></p>
-    </article>
-    
-    
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="/post/2016/2016-08-28-react-native-learning/" title=""></a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            1年1月1日
-        </date>
-        
-        <div class="post-content">
-            React Native 相关学习 layout: post title: &ldquo;React Native Learning&rdquo; description: &ldquo;&rdquo; category: devtech/react tags: [react native] top: true
-React 相关  React 官网 Ant Design 蚂蚁金服ui库 Ant Design Pro 上手备忘录 Bi Sheng 转化 markdown 文档为静态单页面 React 应用 從零開始學 ReactJS React 中文文档 React 最佳实践——那些 React 没告诉你但很重要的事 基于 Jest + Enzyme 的 React 单元测试 How to debug Jest tests with VSCode react-motion React 动画效果库 redux-saga 实践总结 集成方案：  React + Redux + RESTfulAPI React + Relay + GraphQL  Relay： 全新的React数据获取框架 antizer ClojureScript library for Ant Design React UI components React Loadable A higher order component for loading components with promises. 用 promise 加载组件的高阶组件，可用于 React 显示加载、代码分离、服务端渲染等。 roadhog Cli tool for creating react apps, configurable version of create-react-app. 创建可配置的 React 应用的命令行工具，集成了 Jest, Enzyme 等。  在组件间共享函数的方法： 参考此文：通过示例理解 React 的 render props 技巧
- render props, 更适合只读的函数，例如跟踪滚动条、鼠标动作等； HOC(High order component), 更适合较复杂的方法，如 local storage 等；  相关文档资料  react-devtools React Developer Tools 比 React Native 更好的选择：Flutter 使用 Dart 语言编写 App。 React Native是原生开发的末日吗？ React Native: Is it the end of native development?……
-        </div>
-        <p class="readmore"><a href="/post/2016/2016-08-28-react-native-learning/">阅读全文</a></p>
-    </article>
-    
-    
-    
 
 
 
@@ -388,6 +386,14 @@ React 相关  React 官网 Ant Design 蚂蚁金服ui库 Ant Design Pro 上手备
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -419,14 +425,6 @@ React 相关  React 官网 Ant Design 蚂蚁金服ui库 Ant Design Pro 上手备
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -436,9 +434,9 @@ React 相关  React 官网 Ant Design 蚂蚁金服ui库 Ant Design Pro 上手备
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -446,7 +444,7 @@ React 相关  React 官网 Ant Design 蚂蚁金服ui库 Ant Design Pro 上手备
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -465,7 +463,7 @@ React 相关  React 官网 Ant Design 蚂蚁金服ui库 Ant Design Pro 上手备
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -497,7 +495,7 @@ React 相关  React 官网 Ant Design 蚂蚁金服ui库 Ant Design Pro 上手备
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -603,7 +601,7 @@ React 相关  React 官网 Ant Design 蚂蚁金服ui库 Ant Design Pro 上手备
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -614,6 +612,8 @@ React 相关  React 官网 Ant Design 蚂蚁金服ui库 Ant Design Pro 上手备
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -719,7 +719,7 @@ React 相关  React 官网 Ant Design 蚂蚁金服ui库 Ant Design Pro 上手备
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -748,6 +748,8 @@ React 相关  React 官网 Ant Design 蚂蚁金服ui库 Ant Design Pro 上手备
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -796,6 +798,8 @@ React 相关  React 官网 Ant Design 蚂蚁金服ui库 Ant Design Pro 上手备
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -886,6 +890,8 @@ React 相关  React 官网 Ant Design 蚂蚁金服ui库 Ant Design Pro 上手备
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

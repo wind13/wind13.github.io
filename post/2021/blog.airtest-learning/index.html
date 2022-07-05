@@ -103,66 +103,49 @@
         
         
         <div class="post-content">
-            
-
-<h2 id="命令行运行">命令行运行</h2>
-
+            <h2 id="命令行运行">命令行运行</h2>
 <p>通过 Airtest IDE 打包后的 apk 安装到雷电模拟器后，不能双击直接启动，需要在外部命令行操作，如下：</p>
-
 <h3 id="adb-方式">adb 方式</h3>
-
 <p>比如雷电模拟器，可找到安装目录，</p>
-
-<pre><code class="language-sh">cd /d/leidian/LDPlayer4
-</code></pre>
-
-<p>然后执行如下命令：</p>
-
-<pre><code class="language-sh">./adb.exe shell am instrument -w com.netease.open.airbase/android.support.test.runner.AndroidJUnitRunner
-</code></pre>
-
-<h3 id="airtest-project">Airtest Project</h3>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cd /d/leidian/LDPlayer4
+</code></pre></div><p>然后执行如下命令：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">./adb.exe shell am instrument -w com.netease.open.airbase/android.support.test.runner.AndroidJUnitRunner
+</code></pre></div><h3 id="airtest-project">Airtest Project</h3>
 <p>Airtest Project自定义启动器支持批量运行脚本，并兼容在AirtestIDE中使用</p>
-
 <p>Python v3.7.0 / Airtest: 1.1.1 / PocoUI: 1.0.78</p>
-
 <p>其他笔记:</p>
-
 <ul>
 <li>Airtest Project 自定义启动器批量运行脚本</li>
 <li>解决运行Airtest脚本时opencv-contrib-python报错的问题</li>
 <li>Airtest Project + Jenkins 微信小程序UI自动化测试 持续集成实践</li>
 </ul>
-
 <p>自定义的启动器主要实现了以下功能:</p>
-
 <ul>
 <li>将一些公共参数和方法添加到全局变量中，在各业务脚本中无需声明，可直接使用，如语句超时时间 TIMEOUT，就在此进行统一设置;</li>
-
-<li><p>设置Airtest全局属性值，对所有脚本生效，如下所示:</p>
-
-<pre><code class="language-ini">ST.THRESHOLD = 0.80 # 图像识别精确度阈值 [0,1]
-ST.THRESHOLD_STRICT = 0.85 # assert语句里图像识别时使用的高要求阈值 [0,1]
-ST.OPDELAY = 1 # 每一步操作后等待多长时间再进行下一步操作
-ST.FIND_TIMEOUT = 10 # 图像查找超时时间，默认为20s
-ST.CVSTRATEGY = [&quot;tpl&quot;, &quot;sift&quot;, &quot;brisk&quot;] # 修改图像识别算法顺序，只要成功匹配任意一个符合设定阙值的结果，程序就会认为识别成功
-</code></pre></li>
-
-<li><p>在正式脚本运行前后，添加子脚本的运行，使得运行各个业务脚本时，初始页面都将为小程序首页，不需要再添加额外的环境判断代码;</p>
-
+<li>设置Airtest全局属性值，对所有脚本生效，如下所示:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#a6e22e">ST.THRESHOLD</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">0.80 # 图像识别精确度阈值 [0,1]</span>
+<span style="color:#a6e22e">ST.THRESHOLD_STRICT</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">0.85 # assert语句里图像识别时使用的高要求阈值 [0,1]</span>
+<span style="color:#a6e22e">ST.OPDELAY</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">1 # 每一步操作后等待多长时间再进行下一步操作</span>
+<span style="color:#a6e22e">ST.FIND_TIMEOUT</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">10 # 图像查找超时时间，默认为20s</span>
+<span style="color:#a6e22e">ST.CVSTRATEGY</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">[&#34;tpl&#34;, &#34;sift&#34;, &#34;brisk&#34;] # 修改图像识别算法顺序，只要成功匹配任意一个符合设定阙值的结果，程序就会认为识别成功</span>
+</code></pre></div><ul>
+<li>
+<p>在正式脚本运行前后，添加子脚本的运行，使得运行各个业务脚本时，初始页面都将为小程序首页，不需要再添加额外的环境判断代码;</p>
 <ul>
 <li>setup.air:在每个脚本运行前，都会首先运行此脚本。此脚本会判断当前页面是否位于小程序首页，若不是，则会重启微信，进入小程序首页;</li>
 <li>teardown.air:在每个脚本运行结束后，都会运行此脚本。此脚本会点击页面顶部的HOME图标，返回到小程序首页。若成功返回到小程序首页，则会尝试关闭首页遮罩广告(注意:遮罩广告样式不能改变)，若未能成功返回首页，则会重启微信，再进入小程序首页。</li>
-</ul></li>
-
-<li><p>通过配置config.csv中的内容，实现批量运行脚本;</p>
-
+</ul>
+</li>
+<li>
+<p>通过配置config.csv中的内容，实现批量运行脚本;</p>
 <ul>
-<li>在运行脚本时，会先迭代查找suite/目录下所有以.air结尾的目录，自动忽略setup.air和teardown.air，然后读取config.csv中所配置的 Label 为 &ldquo;Y&rdquo;的脚本名称，二者做交集运算，其结果作为本次实际要运行的脚本集合。</li>
-</ul></li>
-
-<li><p>批量运行脚本结束后，支持生成聚合报告，与Jenkins进行持续集成时，此报告会作为附件进行发送。点击聚合报告中模块名称，会跳转到Airtest Project自带的测试报告页面。</p></li>
+<li>在运行脚本时，会先迭代查找suite/目录下所有以.air结尾的目录，自动忽略setup.air和teardown.air，然后读取config.csv中所配置的 Label 为 &ldquo;Y&quot;的脚本名称，二者做交集运算，其结果作为本次实际要运行的脚本集合。</li>
+</ul>
+</li>
+<li>
+<p>批量运行脚本结束后，支持生成聚合报告，与Jenkins进行持续集成时，此报告会作为附件进行发送。点击聚合报告中模块名称，会跳转到Airtest Project自带的测试报告页面。</p>
+</li>
 </ul>
 
         </div>
@@ -238,6 +221,14 @@ ST.CVSTRATEGY = [&quot;tpl&quot;, &quot;sift&quot;, &quot;brisk&quot;] # 修改�
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -269,14 +260,6 @@ ST.CVSTRATEGY = [&quot;tpl&quot;, &quot;sift&quot;, &quot;brisk&quot;] # 修改�
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -286,9 +269,9 @@ ST.CVSTRATEGY = [&quot;tpl&quot;, &quot;sift&quot;, &quot;brisk&quot;] # 修改�
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -296,7 +279,7 @@ ST.CVSTRATEGY = [&quot;tpl&quot;, &quot;sift&quot;, &quot;brisk&quot;] # 修改�
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -315,7 +298,7 @@ ST.CVSTRATEGY = [&quot;tpl&quot;, &quot;sift&quot;, &quot;brisk&quot;] # 修改�
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -347,7 +330,7 @@ ST.CVSTRATEGY = [&quot;tpl&quot;, &quot;sift&quot;, &quot;brisk&quot;] # 修改�
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -453,7 +436,7 @@ ST.CVSTRATEGY = [&quot;tpl&quot;, &quot;sift&quot;, &quot;brisk&quot;] # 修改�
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -464,6 +447,8 @@ ST.CVSTRATEGY = [&quot;tpl&quot;, &quot;sift&quot;, &quot;brisk&quot;] # 修改�
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -569,7 +554,7 @@ ST.CVSTRATEGY = [&quot;tpl&quot;, &quot;sift&quot;, &quot;brisk&quot;] # 修改�
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -598,6 +583,8 @@ ST.CVSTRATEGY = [&quot;tpl&quot;, &quot;sift&quot;, &quot;brisk&quot;] # 修改�
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -646,6 +633,8 @@ ST.CVSTRATEGY = [&quot;tpl&quot;, &quot;sift&quot;, &quot;brisk&quot;] # 修改�
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -736,6 +725,8 @@ ST.CVSTRATEGY = [&quot;tpl&quot;, &quot;sift&quot;, &quot;brisk&quot;] # 修改�
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

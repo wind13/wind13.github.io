@@ -1,10 +1,90 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2022-05-07T16:39:30+08:00</lastmod>
+    <lastmod>2022-07-05T03:16:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2022-07-05T03:16:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/smartide/</loc>
+    <lastmod>2022-07-05T03:16:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2022-07-05T03:16:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2022/try-smartide/</loc>
+    <lastmod>2022-07-05T03:16:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/vscode/</loc>
+    <lastmod>2022-07-05T03:16:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2022-07-05T03:16:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/</loc>
+    <lastmod>2022-07-05T03:16:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</loc>
+    <lastmod>2022-07-05T03:16:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2022-07-05T03:16:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/low-code/</loc>
+    <lastmod>2022-06-08T21:34:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/power-platform/</loc>
+    <lastmod>2022-06-08T21:34:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/powerapps/</loc>
+    <lastmod>2022-06-08T21:34:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%E4%BD%8E%E4%BB%A3%E7%A0%81/</loc>
+    <lastmod>2022-06-08T21:34:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2022/low-code-analogy/</loc>
+    <lastmod>2022-06-08T21:34:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/</loc>
+    <lastmod>2022-06-08T21:34:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/</loc>
+    <lastmod>2022-06-08T21:34:51+08:00</lastmod>
   </url>
   
   <url>
@@ -18,17 +98,7 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2022-05-07T16:39:30+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/spacemacs/</loc>
-    <lastmod>2022-05-07T16:39:30+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2022-05-07T16:39:30+08:00</lastmod>
   </url>
   
@@ -53,22 +123,7 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2022-05-07T16:39:30+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/</loc>
-    <lastmod>2022-05-07T16:39:30+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/%E7%BC%96%E8%BE%91%E5%99%A8/</loc>
-    <lastmod>2022-05-07T16:39:30+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2022-05-07T16:39:30+08:00</lastmod>
   </url>
   
@@ -128,11 +183,6 @@
   </url>
   
   <url>
-    <loc>/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/</loc>
-    <lastmod>2022-02-06T04:47:11+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2022-02-06T04:47:11+00:00</lastmod>
   </url>
@@ -159,11 +209,6 @@
   
   <url>
     <loc>/tags/model-driven-app/</loc>
-    <lastmod>2022-01-15T19:51:10+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/power-platform/</loc>
     <lastmod>2022-01-15T19:51:10+08:00</lastmod>
   </url>
   
@@ -244,11 +289,6 @@
   
   <url>
     <loc>/tags/power-apps/</loc>
-    <lastmod>2021-09-13T22:18:22+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/%E4%BD%8E%E4%BB%A3%E7%A0%81/</loc>
     <lastmod>2021-09-13T22:18:22+08:00</lastmod>
   </url>
   
@@ -623,11 +663,6 @@
   </url>
   
   <url>
-    <loc>/tags/powerapps/</loc>
-    <lastmod>2020-11-25T09:57:44+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/2020/feeling-powerapps/</loc>
     <lastmod>2020-11-25T09:57:44+08:00</lastmod>
   </url>
@@ -845,11 +880,6 @@
   <url>
     <loc>/tags/%E9%AB%98%E8%B4%A8%E9%87%8F/</loc>
     <lastmod>2020-08-09T18:30:17+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/ci/cd/</loc>
-    <lastmod>2020-08-09T11:02:19+08:00</lastmod>
   </url>
   
   <url>
@@ -1089,11 +1119,6 @@
   
   <url>
     <loc>/tags/windows/</loc>
-    <lastmod>2020-06-03T13:28:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</loc>
     <lastmod>2020-06-03T13:28:34+08:00</lastmod>
   </url>
   
@@ -2054,17 +2079,14 @@
   
   <url>
     <loc>/post/2014/2014-03-31-project-site/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/2016/2016-08-28-clojure-learning/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/2016/2016-08-28-react-native-learning/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -2105,6 +2127,10 @@
   
   <url>
     <loc>/tags/baidu/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/ci/cd/</loc>
   </url>
   
   <url>

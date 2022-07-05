@@ -103,36 +103,37 @@
         
         
         <div class="post-content">
-            
-
-<h2 id="需求问题">需求问题</h2>
-
+            <h2 id="需求问题">需求问题</h2>
 <p>关于图像降噪处理：</p>
-
 <p>非局部均值滤波（non-local mean filter）基于块（block-wise）的算法怎么实现？编程语言类型为 python</p>
-
 <h2 id="解释">解释</h2>
-
 <p>对添加了噪声的图像做nlm滤波：对每一个像素点（记为当前点），设定一个以其为中心的大小为<code>p1*p2</code> 的当前块，然后再设定一个以其为中心的大小为 <code>s1*s2</code> 的搜索块（本身应该是全图，这也是“非局部”的意思，但为了计算效率一般选取一个合适大小的搜索块）。对于搜索块中的每一个像素点，都同样有一个和当前点一样的大小为 <code>p1*p2</code> 的小块，记做参考块。计算参考块与当前块的欧式距离，做一个变换即可得到一个权值，重复这一步就可以得到一个和搜索块一样大小的权值块，然后权值块与搜索块做卷积，得到的值就是当前点滤波后的值</p>
-
 <h2 id="尝试与实现">尝试与实现</h2>
-
 <p>主要测试文件：</p>
-
 <p><code>/Users/samliu/Documents/NLM_filter/hw5/simon.ipynb</code></p>
-
 <h2 id="参考资料">参考资料</h2>
-
 <ul>
-<li><a href="https://blog.csdn.net/frankgoogle/article/details/52209901">非局部均值滤波算法</a></li>
-<li><a href="https://blog.csdn.net/zlrai5895/article/details/78936223">Nonlocal-means(非局部均值去噪)</a></li>
-<li><a href="https://blog.csdn.net/m0_37554759/article/details/66536313">快速块匹配的非局部均值去噪算法_Fast Block Matching Non local means</a></li>
-<li><a href="https://blog.csdn.net/sac761/article/details/76544791">非局部均值滤波原理 Non-local means filter 【从零起步完全教程】</a></li>
-<li><a href="https://blog.csdn.net/qq_26460507/article/details/70327815">图像处理之Non-Local Means（NM） 非局部均值</a></li>
-
-<li><p><a href="https://blog.csdn.net/numit/article/details/46842589">空间域图像去噪算法</a></p></li>
-
-<li><p><a href="https://blog.csdn.net/mtc1256/article/details/61427769">MacOS 10.12 升级 Python 到3.6</a></p></li>
+<li>
+<p><a href="https://blog.csdn.net/frankgoogle/article/details/52209901">非局部均值滤波算法</a></p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/zlrai5895/article/details/78936223">Nonlocal-means(非局部均值去噪)</a></p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/m0_37554759/article/details/66536313">快速块匹配的非局部均值去噪算法_Fast Block Matching Non local means</a></p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/sac761/article/details/76544791">非局部均值滤波原理 Non-local means filter 【从零起步完全教程】</a></p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/qq_26460507/article/details/70327815">图像处理之Non-Local Means（NM） 非局部均值</a></p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/numit/article/details/46842589">空间域图像去噪算法</a></p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/mtc1256/article/details/61427769">MacOS 10.12 升级 Python 到3.6</a></p>
+</li>
 </ul>
 
         </div>
@@ -206,6 +207,14 @@
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -237,14 +246,6 @@
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -254,9 +255,9 @@
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -264,7 +265,7 @@
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -283,7 +284,7 @@
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -315,7 +316,7 @@
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -421,7 +422,7 @@
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -432,6 +433,8 @@
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -537,7 +540,7 @@
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -566,6 +569,8 @@
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -614,6 +619,8 @@
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -704,6 +711,8 @@
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

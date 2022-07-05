@@ -90,12 +90,8 @@
         
         
         <div class="post-content">
-            
-
-<h1 id="分离实体持久化出错-persistentobjectexception-detached-entity-passed-to-persist-问题">分离实体持久化出错（PersistentObjectException: detached entity passed to persist）问题</h1>
-
+            <h1 id="分离实体持久化出错persistentobjectexception-detached-entity-passed-to-persist问题">分离实体持久化出错（PersistentObjectException: detached entity passed to persist）问题</h1>
 <p>在Play!使用中，会用到Job来异步执行一些耗时的操作，此时很容易犯这样的错误：</p>
-
 <pre><code>:::java
 public class SomeLongJob extends Job`&lt;Void&gt;` {
    private SomeModel model;
@@ -110,13 +106,9 @@ public class SomeLongJob extends Job`&lt;Void&gt;` {
    }
 }
 </code></pre>
-
 <p>此时执行后，会在save()方法处抛出异常：<code>PersistentObjectException: detached entity passed to persist</code></p>
-
 <p>这是因为对象是从外面传进来的，而（我想）doJob是另外一个新启动的线程，所以这里可能只是一个引用，而真正的对象在原来那个主线程中，这边可能就只是个分离的拷贝或只是个引用，所以无权进行持久化操作。尝试过使用 model.merge()，好像不报错了，但又好像没有真正保存了值，猜想是因为没有在主线程中再次执行真正的save()去持久化。</p>
-
 <p>因此，为了彻底避免这样的复杂问题，还是采用比较简单的解决方案吧：</p>
-
 <pre><code>:::java
 SomeLongJob extends Job`&lt;Void&gt;` {
    private Long id;
@@ -132,7 +124,6 @@ SomeLongJob extends Job`&lt;Void&gt;` {
    }
 }
 </code></pre>
-
 <p>这样一来，只传入id即可，所有的操作都在doJob内部，应该说是统一的一个线程中，这样就没有问题了。</p>
 
         </div>
@@ -146,15 +137,15 @@ SomeLongJob extends Job`&lt;Void&gt;` {
     <h2>See Also</h2>
     <ul class="listing">
         
-        <li><a href="/post/2013/2013-12-23-htmlunitdriverjavascript/"></a></li>
-        
-        <li><a href="/post/2013/2013-12-13-cacheremovetime/"></a></li>
-        
-        <li><a href="/post/2013/2013-12-23-confession214/"></a></li>
-        
         <li><a href="/post/2014/2014-02-26-hqlleftjoin/"></a></li>
         
-        <li><a href="/post/2013/2013-12-13-longpolling/"></a></li>
+        <li><a href="/post/2013/2013-12-28-playwebsites/"></a></li>
+        
+        <li><a href="/post/2013/2013-10-26-betterplan/"></a></li>
+        
+        <li><a href="/post/2013/2013-09-29-learnself/"></a></li>
+        
+        <li><a href="/post/2013/2013-12-23-confession214/"></a></li>
         
     </ul>
 </div>
@@ -204,6 +195,14 @@ SomeLongJob extends Job`&lt;Void&gt;` {
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -235,14 +234,6 @@ SomeLongJob extends Job`&lt;Void&gt;` {
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -252,9 +243,9 @@ SomeLongJob extends Job`&lt;Void&gt;` {
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -262,7 +253,7 @@ SomeLongJob extends Job`&lt;Void&gt;` {
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -281,7 +272,7 @@ SomeLongJob extends Job`&lt;Void&gt;` {
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -313,7 +304,7 @@ SomeLongJob extends Job`&lt;Void&gt;` {
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -419,7 +410,7 @@ SomeLongJob extends Job`&lt;Void&gt;` {
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -430,6 +421,8 @@ SomeLongJob extends Job`&lt;Void&gt;` {
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -535,7 +528,7 @@ SomeLongJob extends Job`&lt;Void&gt;` {
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -564,6 +557,8 @@ SomeLongJob extends Job`&lt;Void&gt;` {
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -612,6 +607,8 @@ SomeLongJob extends Job`&lt;Void&gt;` {
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -702,6 +699,8 @@ SomeLongJob extends Job`&lt;Void&gt;` {
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

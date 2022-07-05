@@ -91,45 +91,49 @@
         
         <div class="post-content">
             <p>以下是初入门时的姿势，现在完全不用这么麻烦，直接用<a href="https://github.com/humiaozuzu/dot-vimrc">dot-vimrc</a>即可。</p>
-
-<hr />
-
+<hr>
 <p>在 Mac OS X 上使用 Vim 真的是很享受，所以决定要用好这个工具，以下记录下本人的最佳实践：</p>
-
 <ul>
 <li>首先面临一个选择，是用 MacVim 还是 终端（Terminate）？我的选择是终端，不过我进一步选择了 iTerm2，功能强大些，界面漂亮些，再加上 <a href="https://github.com/chriskempson/tomorrow-theme">Tomorrow</a> 的主题，就更爽了，呵呵……选择原因如下：
-
 <ul>
 <li>MacVim 下载安装后，没觉得有什么特别的功能，Vim 本身主要是在终端界面使用，所以菜单、工具等一切东西都会感觉多余，况且我打开 NERD_tree 时发现在 MacVim 中显示中文不正确，标识为一个框里面一个“字”的特殊字符，默认界面是白色的，找了半天不知道怎么换成暗色主题，于是放弃，想了一下多数情况还是习惯在终端直接 vim 使用，同时还会结合一些命令 shell 来使用，那么在终端中会更方便些。而 iTerm2 就成了很好的选择，替代了默认的终端，加强了各方面的功能，换上一个 Tomorrow Night Bright 的主题，便心旷神恰了:P。iTerm2 可以开多个标签，通过 Ctrl+左/右 或 Ctrl + {/}（即 Shift + [ 或 ]） 键来切换，这样一会儿运行 shell 命令，比如启动服务、监控日志什么的，一会再切换到 Vim 编程代码就很方便了。</li>
-</ul></li>
+</ul>
+</li>
 <li>其次是 Vim 的插件管理，这里个人觉得比较好的有两种：Vundle 和 <a href="https://github.com/tpope/vim-pathogen">Pathogen</a>，我选择了 Pathogen，因为熟悉 git ，所以没什么压力，很自然也很喜欢这种方式。</li>
 <li>主要插件，目前使用 NERD_Tree、Vim-markdown、Vim-Mou、Vim-airline 等，<a href="https://github.com/wincent/Command-T">Command-T</a> 安装的时候出错（make: Nothing to be done for &lsquo;all&rsquo;.），今天 google 了一通，大概知道原因是因为系统的 ruby 版本和 vim 里面的 ruby 版本不一致导致编译 Command-T 与 vim 不能兼容使用，中间尝试重装了一两次，还会报出<a href="http://fantaxy025025.iteye.com/blog/1552009">这个错误</a> 或<a href="https://github.com/carlhuda/janus/issues/109">这个</a>
-~~~~
-Vim: Caught deadly signal SEGV
+<pre><code>Vim: Caught deadly signal SEGV
 Vim: Finished.
 Segmentation fault
-~~~~~
-* 解决方法<a href="https://wincent.com/forums/command-t/topics/425">参考此文</a>：
-* 先将 Command-T 已经安装的删除掉。
-* 在 vim 中执行 :ruby p RUBY_VERSION 可以看到 vim 中的 ruby 编译版本为1.8.7，而系统 Mac OS X 10.9 中的 ruby 是2.0，可执行 ruby &ndash;version 看到，因此才会出现之前所述的编译错误。
-* 在 Mac OS X 系统中实际上是有 ruby1.8.7 的，因此做个软链接就方便使用了。
-* 执行sudo ln -s /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby /usr/bin/ruby1.8 建立 ruby1.8的软件链接。
-* 再重新 clone Command-T 到~/.vim/bundle/目录（因为我使用 Pathogen）下：git clone <a href="https://github.com/wincent/Command-T.git">https://github.com/wincent/Command-T.git</a> 。
-* 进入~/.vim/bundle/Command-T/ruby/command-t 目录，运行：ruby1.8 extconf.rb 会创建Makefile 。
-* 再运行 make 编译后就好了！
-* Vim-airline 的颜色需要在.vimrc中设置：set t_Co=256，theme的更换可设置：let g:airline_theme=&ldquo;molokai&rdquo;
-* 一篇 Vim diff 比较文档的用法，<a href="https://www.ibm.com/developerworks/cn/linux/l-vimdiff/">技巧：Vimdiff 使用</a>
-* 一些使用 Vim 进行 Scala 编程的参考文档：
-* <a href="http://bleibinha.us/blog/2013/08/my-vim-setup-for-scala">My Vim setup for Scala</a>
-* <a href="http://derekwyatt.org/2013/12/31/coding-scala-with-vim.html">Coding Scala with Vim</a>
-* <a href="http://leonard.io/blog/2013/04/editing-scala-with-vim/">Editing Scala with vim</a>
-* <a href="https://github.com/megaannum/vimside">Vim Scala IDE (VimSIde) built upon ENSIME</a>
-
-### 最新技能：
-
-- <a href="https://github.com/easymotion/vim-easymotion">Vim motion on speed!</a>
-- <a href="http://www.wklken.me/posts/2015/06/07/vim-plugin-easymotion.html">VIM插件: EASYMOTION[快速跳转]</a>
-- <a href="http://www.wklken.me/posts/2015/06/07/vim-plugin-signature.html">VIM插件: VIM-SIGNATURE[快速标记跳转]</a></li>
+</code></pre><ul>
+<li>解决方法<a href="https://wincent.com/forums/command-t/topics/425">参考此文</a>：
+<ul>
+<li>先将 Command-T 已经安装的删除掉。</li>
+<li>在 vim 中执行 :ruby p RUBY_VERSION 可以看到 vim 中的 ruby 编译版本为1.8.7，而系统 Mac OS X 10.9 中的 ruby 是2.0，可执行 ruby &ndash;version 看到，因此才会出现之前所述的编译错误。</li>
+<li>在 Mac OS X 系统中实际上是有 ruby1.8.7 的，因此做个软链接就方便使用了。</li>
+<li>执行sudo ln -s /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby /usr/bin/ruby1.8 建立 ruby1.8的软件链接。</li>
+<li>再重新 clone Command-T 到~/.vim/bundle/目录（因为我使用 Pathogen）下：git clone <a href="https://github.com/wincent/Command-T.git">https://github.com/wincent/Command-T.git</a> 。</li>
+<li>进入~/.vim/bundle/Command-T/ruby/command-t 目录，运行：ruby1.8 extconf.rb 会创建Makefile 。</li>
+<li>再运行 make 编译后就好了！</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Vim-airline 的颜色需要在.vimrc中设置：set t_Co=256，theme的更换可设置：let g:airline_theme=&quot;molokai&rdquo;</li>
+<li>一篇 Vim diff 比较文档的用法，<a href="https://www.ibm.com/developerworks/cn/linux/l-vimdiff/">技巧：Vimdiff 使用</a></li>
+<li>一些使用 Vim 进行 Scala 编程的参考文档：
+<ul>
+<li><a href="http://bleibinha.us/blog/2013/08/my-vim-setup-for-scala">My Vim setup for Scala</a></li>
+<li><a href="http://derekwyatt.org/2013/12/31/coding-scala-with-vim.html">Coding Scala with Vim</a></li>
+<li><a href="http://leonard.io/blog/2013/04/editing-scala-with-vim/">Editing Scala with vim</a></li>
+<li><a href="https://github.com/megaannum/vimside">Vim Scala IDE (VimSIde) built upon ENSIME</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="最新技能">最新技能：</h3>
+<ul>
+<li><a href="https://github.com/easymotion/vim-easymotion">Vim motion on speed!</a></li>
+<li><a href="http://www.wklken.me/posts/2015/06/07/vim-plugin-easymotion.html">VIM插件: EASYMOTION[快速跳转]</a></li>
+<li><a href="http://www.wklken.me/posts/2015/06/07/vim-plugin-signature.html">VIM插件: VIM-SIGNATURE[快速标记跳转]</a></li>
 </ul>
 
         </div>
@@ -145,13 +149,13 @@ Segmentation fault
         
         <li><a href="/post/2014/2014-05-13-my-macosx-vimrc/">我的Mac OS X 开发环境和 Vim 的设置</a></li>
         
+        <li><a href="/post/2022/try-smartide/">Try SmartIDE</a></li>
+        
+        <li><a href="/post/2022/low-code-analogy/">低代码的类比 Low Code Analogy</a></li>
+        
         <li><a href="/post/2022/which-editor-you-are-using/">Which Editor You Are Using</a></li>
         
         <li><a href="/post/2022/nodejs-secure-config/">Nodejs Secure Config 配置加密方案</a></li>
-        
-        <li><a href="/post/2022/develop-team-problem/">关于KPI与开发团队效能问题的讨论</a></li>
-        
-        <li><a href="/post/2022/powerplatform-jamstack/">在 Power Platform 上实践 JamStack 架构思想</a></li>
         
     </ul>
 </div>
@@ -205,6 +209,14 @@ Segmentation fault
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -236,14 +248,6 @@ Segmentation fault
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -253,9 +257,9 @@ Segmentation fault
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -263,7 +267,7 @@ Segmentation fault
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -282,7 +286,7 @@ Segmentation fault
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -314,7 +318,7 @@ Segmentation fault
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -420,7 +424,7 @@ Segmentation fault
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -431,6 +435,8 @@ Segmentation fault
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -536,7 +542,7 @@ Segmentation fault
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -565,6 +571,8 @@ Segmentation fault
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -613,6 +621,8 @@ Segmentation fault
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -703,6 +713,8 @@ Segmentation fault
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

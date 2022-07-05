@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hypervisor on 世风十三学堂</title>
+    <link>/tags/hypervisor/</link>
+    <description>Recent content in Hypervisor on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 05 Mar 2018 04:12:25 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/hypervisor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>为什么说一个全新的操作系统是必要的？</title>
+      <link>/post/2018/2018-03-05-why-new-os-zh/</link>
+      <pubDate>Mon, 05 Mar 2018 04:12:25 +0000</pubDate>
+      
+      <guid>/post/2018/2018-03-05-why-new-os-zh/</guid>
+      <description>注：此文是 OSv 官网介绍的文章，感觉对于理解 OSv 很有帮助，特翻译如下，原文地址 Today’s cloud-based applications run a heavyweight stack: the hypervisor, which divides the hardware resources among virtual machines; the operating system, which divides the virtual machine’s resources among applications; and the application server, which divides the application’s resources among the end users. 当今的云应用都运行在一个非常重的技术栈上： Hypervisor (虚拟机管理程序) ，要将硬件资</description>
+    </item>
+    
+  </channel>
+</rss>

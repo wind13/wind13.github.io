@@ -103,30 +103,20 @@
         
         
         <div class="post-content">
-            
-
-<h2 id="概述">概述</h2>
-
+            <h2 id="概述">概述</h2>
 <p>PowerMill 是一款大型数控加工软件，其中有二次开发和宏的功能，初步浏览了一下官方帮助文档，感觉总体来说是比较简单的，主要是用编程知识中的函数方法、循环和判断逻辑等基础知识，重点要结合业务需求来实际应用即可。</p>
-
 <!-- 软件下载：https://pan.baidu.com/s/1jnzZfToVzaclwTrXh2aeIQ 提取码：2770 大小：3.6G -->
-
 <h2 id="示例代码解读">示例代码解读</h2>
-
 <h3 id="简单的循环">简单的循环</h3>
-
-<pre><code class="language-mac">FOREACH Bottles IN {10,9,8,7,6,5,4,3,2,1}
-</code></pre>
-
-<blockquote>
+<pre><code class="language-mac" data-lang="mac">FOREACH Bottles IN {10,9,8,7,6,5,4,3,2,1}
+</code></pre><blockquote>
 <p>直译：每个 Bottles 在 10~1 这段数字中</p>
-
+</blockquote>
+<blockquote>
 <p>意译：把 10~1 这些数字循环，用 Bottles 这个变量代表每一项，执行如下操作：</p>
 </blockquote>
-
 <h3 id="简单的修改文件夹文件">简单的修改文件夹文件</h3>
-
-<pre><code class="language-mac">DIALOGS MESSAGE OFF
+<pre><code class="language-mac" data-lang="mac">DIALOGS MESSAGE OFF
 DIALOGS ERROR OFF
 STRING a= &quot;请输入主轴转速：&quot;
 int q= &quot;3000&quot;
@@ -136,34 +126,32 @@ FOREACH c IN folder('TOOLPATH') {
 }
 DIALOGS MESSAGE ON
 DIALOGS ERROR ON
-</code></pre>
-
-<pre><code class="language-mac">FOREACH c IN folder('TOOLPATH') {
+</code></pre><pre><code class="language-mac" data-lang="mac">FOREACH c IN folder('TOOLPATH') {
   EDIT PAR &quot;entity('toolpath',$c.name).SpindleSpeed.Value&quot; $q
 }
-</code></pre>
-
-<blockquote>
+</code></pre><blockquote>
 <p>直译： 每个 c 在 文件夹 &lsquo;TOOLPATH&rsquo; 中</p>
-
+</blockquote>
+<blockquote>
 <p>意译：</p>
 </blockquote>
-
-<pre><code class="language-mac">在文件夹 'TOOLPATH' 中循环，每一项用 c 这个变量代表， 执行如下操作 {
+<pre><code class="language-mac" data-lang="mac">在文件夹 'TOOLPATH' 中循环，每一项用 c 这个变量代表， 执行如下操作 {
    编辑 PAR &quot;entity('toolpath', $c.name) 的 SpindleSpeed 的 Value 值 变为 $q 
   // 这里 $c.name 就是目录中每一项，通常是文件，文件的名称 name
 }
-</code></pre>
-
+</code></pre><blockquote>
+<p>&ldquo;.&rdquo; 可以理解为 “的”</p>
+</blockquote>
 <blockquote>
-<p>&rdquo;.&rdquo; 可以理解为 “的”</p>
-
 <p>文件夹中的每一项，其实就是文件， c, $c 就是文件，定义时不用加 $，使用时要加 $</p>
-
+</blockquote>
+<blockquote>
 <p>entity 应该是个方法，转换某个文件中的 &lsquo;toolpath&rsquo; 节点为一个实例/实体 ，应该就是机器直接能运行的东西。</p>
-
+</blockquote>
+<blockquote>
 <p>EDIT 是编辑的意思 ， PAR 不太清楚，有点象“参数”的意思 。</p>
-
+</blockquote>
+<blockquote>
 <p>SpindleSpeed 应该就是刀头转速的具体节点位置。</p>
 </blockquote>
 
@@ -242,6 +230,14 @@ DIALOGS ERROR ON
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -273,14 +269,6 @@ DIALOGS ERROR ON
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -290,9 +278,9 @@ DIALOGS ERROR ON
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -300,7 +288,7 @@ DIALOGS ERROR ON
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -319,7 +307,7 @@ DIALOGS ERROR ON
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -351,7 +339,7 @@ DIALOGS ERROR ON
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -457,7 +445,7 @@ DIALOGS ERROR ON
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -468,6 +456,8 @@ DIALOGS ERROR ON
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -573,7 +563,7 @@ DIALOGS ERROR ON
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -602,6 +592,8 @@ DIALOGS ERROR ON
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -650,6 +642,8 @@ DIALOGS ERROR ON
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -740,6 +734,8 @@ DIALOGS ERROR ON
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

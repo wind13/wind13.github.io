@@ -94,108 +94,69 @@
         
         
         <div class="post-content">
-            
-
-<p>作者：<a href="https://medium.com/@jackrobertscott">Jack Scott</a></p>
-
+            <p>作者：<a href="https://medium.com/@jackrobertscott">Jack Scott</a></p>
 <p><a href="https://medium.com/@jackrobertscott/goodbye-redux-26e6a27b3a0b">原文（英语）</a>  国内网可能访问不到……大致翻译如下：</p>
-
 <p>本文主要分析了一下我们过去为什么需要 Redux，而为什么以后又不再需要了。</p>
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3664876-14f4fcccb131ca0a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Goodbye Redux" /></p>
-
+<p><img src="https://upload-images.jianshu.io/upload_images/3664876-14f4fcccb131ca0a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Goodbye Redux"></p>
 <p>在过去的几年里，互联网技术已经转向用前端 JavaScript 框架来实现网站和手机应用，以达到更好的用户体验。这非常棒 🔥 ，我个人很欣赏这些框架提供的灵活性。</p>
-
 <blockquote>
 <p>但是灵活得是否有些过头了……</p>
 </blockquote>
-
 <p>为了能更好地理解这个问题，让我们把时钟拨回到 JavaScript 框架出现以前，看看我们是怎么开发应用的。</p>
-
-<h2 id="javascript-以前的大陆-a-land-before-javascript">⏳ JavaScript 以前的大陆 A Land Before JavaScript…</h2>
-
+<h2 id="-javascript-以前的大陆-a-land-before-javascript">⏳ JavaScript 以前的大陆 A Land Before JavaScript…</h2>
 <p>在前几个前端框架（最值得注意的是AngularJS、Backbone和Ember）出现之前，我们只是在服务器上渲染模板，然后将完整的HTML页面发送到浏览器。当时流行的框架包括：</p>
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3664876-519ee7773ccf33c6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sf, django, rails" /></p>
-
+<p><img src="https://upload-images.jianshu.io/upload_images/3664876-519ee7773ccf33c6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sf, django, rails"></p>
 <ul>
 <li>Django (Python)——2005年7月21日发布 ~13 年前</li>
 <li>Ruby on Rails —— 2005年12月13日发布 ~13 年前</li>
 <li>Symphony (PHP) —— 2005年10月22日发布 ~13 年前</li>
 </ul>
-
 <p>这些框架主要是围绕了 MVC 概念也就是 Model-View-Controller 来开发的，Model 表示数据的模型，View 表示怎么显示这些数据，而 Controller 则连接这两部分。</p>
-
 <blockquote>
 <p>我的意思是说，这其中也有 JavaScript，但我们更多的时候是在说 jQuery 做的滑动条和一些完全没必要的动态网页效果</p>
 </blockquote>
-
 <p>在这些框架上编写的应用有一些问题，但总得来说还不错，直到有一天 Ryan Dahl 有了一个很棒的主意，他开发了第一版的 Node.js，可以让开发人员写服务端程序，而不止是用 JavaScript 做些愚蠢的动画。</p>
-
 <ul>
 <li>Node.js ——2009年5月27日发布 ~9 年前</li>
 </ul>
-
 <p>猛然间人们似乎看到了 JavaScript 的无限可能性，用一丁点儿的代码就能做很多事儿，这充分打开了其他开发人员的想象力，人们不仅创建更多强大的 Node.js 工具，还开始创建有趣的前端框架，在接下来的几年里，JavaScript 就象滚雪球一样高速发展起来：</p>
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3664876-f415e7981f12340a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="AngularJS, Backbone.js, Ember.js" /></p>
-
+<p><img src="https://upload-images.jianshu.io/upload_images/3664876-f415e7981f12340a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="AngularJS, Backbone.js, Ember.js"></p>
 <ul>
 <li>Express.js（后端）——2010年11月16日发布 ~8 年前</li>
 <li>Backbone.js（前端）——2010年10月12日发布 ~8 年前</li>
 <li>AngularJS（前端）——2010年10月20日发布 ~8 年前</li>
 <li>Ember.js（前端）——2011年12月8日发布 ~8 年前</li>
 </ul>
-
 <p>这就开始了应用开发模式的重大转变。之前由服务端直接处理的 MVC 模式被分拆为两部分：一个服务端的 MC 和一个客户端的 V(MC)，客户端使用的就是上述的前端框架。在早期的这些框架中，还包含 Model 和 Controller 层在 View 中。两份 Model 和 Controller，前端也有一份 MC，这样看来是要写更多的代码了。</p>
-
-<h2 id="脸书有个头疼的问题-facebook-had-a-problem">🤦‍ 脸书有个头疼的问题 Facebook Had A Problem</h2>
-
+<h2 id="-脸书有个头疼的问题-facebook-had-a-problem">🤦‍ 脸书有个头疼的问题 Facebook Had A Problem</h2>
 <p>正当所有人开心地使用上述方案的时候，Facebook 来了，随着它的迅速崛起，Facebook 变成了最大的网页应用，而为了解决页头上即时消息的数量显示问题（实际上这个小问题在海量用户使用的场景下是比较复杂的），旧的方案也并不能很好地应对……</p>
-
-<p><img src="https://upload-images.jianshu.io/upload_images/3664876-6275231c73de14d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Facebook head aches" /></p>
-
+<p><img src="https://upload-images.jianshu.io/upload_images/3664876-6275231c73de14d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Facebook head aches"></p>
 <p>于是他们推出了 React：</p>
-
 <ul>
 <li>React（前端） ——2013年 三月发布 ~5 年前</li>
 </ul>
-
 <p>而 React 只管 View 层，于是又有了 Flux，之后是 Redux（Redo Flux），有兴趣了解详情的可以看这个视频：</p>
-
 <p><a href="https://v.youku.com/v_show/id_XMTU1MDg5OTQ1Ng==.html">Youku视频</a>  <a href="https://v.qq.com/x/page/g0189w2yt1r.html">QQ视频</a></p>
-
-<h2 id="于是这东西变得象个鸭梨-then-things-started-to-go-pear-shaped">🍐 ……于是这东西变得象个鸭梨 …Then Things Started to Go Pear Shaped</h2>
-
+<h2 id="-于是这东西变得象个鸭梨-then-things-started-to-go-pear-shaped">🍐 ……于是这东西变得象个鸭梨 …Then Things Started to Go Pear Shaped</h2>
 <p>Redux 的工作方式是把一个应用中几乎所有的动态信息都保存在一个 JavaScript 对象中。这样不管你在应用的哪个地方看到的数据都来自同一个地方，也就能保持一致，这样也就解决了 Facebook 所头疼的问题。</p>
-
 <p>于是突然又来了一种新框架：React + Redux 解决方案，Facebook 用它来解决问题，而从此以后所有人都过上了幸福的生活……对吗？</p>
-
-<h2 id="不尽然-not-quite">✋ 不尽然 Not quite.</h2>
-
+<h2 id="-不尽然-not-quite">✋ 不尽然 Not quite.</h2>
 <p>问题在于人们（包括我）开始用一个对象保存所有信息，其中的每一部分都是由服务端获得，没错这可以保证数据的及时更新，但同时也存在 3 个缺点：</p>
-
 <ol>
 <li>这需要大量的多余的代码才能很好地运行，这很浪费时间。</li>
 <li>因为所有代码放在一处，这可能带来“旧数据”的问题，也就是说你可能在应用中见到一些来自之前状态的不想要的数据。</li>
 <li>对于新的开发人员学习曲线太高，继而使得前端Web开发很难被新的开发人员采用。</li>
 </ol>
-
 <p>我们有一个向用户显示数据的相对简单的老式 MVC 框架应用，其中也就是几个简单的模板，在2005年，我们成功地将它转换为一个单页面应用，它的前端代码通常是后端代码的 10 倍。例如：我最近开发了一个简单的应用，然后我用 <a href="https://wakatime.com/">WakaTime</a> 来衡量我在编码上的耗时情况，以下是测量结果：</p>
-
 <ul>
 <li>React Redux 前端代码库—— 32 小时.</li>
 <li>Express + Mongoose 后端代码库——4 小时.</li>
 </ul>
-
-<h2 id="你当真-are-you-serious">🤯 你当真？Are you serious??</h2>
-
+<h2 id="-你当真are-you-serious">🤯 你当真？Are you serious??</h2>
 <p>我花了 8 倍的时间在前端？让我们看看原因吧，下面是一个示例，一个很普通的取数据（例如取得所有用户）到前端的流程：</p>
-
 <blockquote>
 <p>🚧 警告：下面的步骤描述非常技术化，如果你看不太懂没关系。Warning: the following steps are super techy so don&rsquo;t worry if you get lost.</p>
 </blockquote>
-
 <ol>
 <li>创建一个组件来显示用户列表（这一步没啥问题）；</li>
 <li>创建一个 <code>fetch</code> 请求到后端接口；</li>
@@ -208,105 +169,64 @@
 <li>在 <code>componentDidMount()</code> 方法中调用 <code>thunk</code> 方法；</li>
 <li>最后，渲染数据到界面；</li>
 </ol>
-
 <p>我的天……10步，回到 Ruby on Rails 的时代，我只需要把数据放到 HTML 的模板中就完事儿了，达到的效果差不多，我想这中间肯定有什么问题吧？！</p>
-
-<h2 id="一条新的路径-a-new-approach">☝️ 一条新的路径 A New Approach</h2>
-
+<h2 id="-一条新的路径-a-new-approach">☝️ 一条新的路径 A New Approach</h2>
 <p>Redux 只是解决了前端数据的一致性，但它也带来了如前所述的问题，那么它的价值到底是什么？</p>
-
 <blockquote>
 <p>基本上我们重写了整个前端只是解决了屈指可数的几个小问题。</p>
 </blockquote>
-
 <p>Facebook 也意识到了这个问题，启动了一个新项目叫 GraphQL，GraphQL 目前还是个技术名词，我不确定大家是否知道它为什么酷？</p>
-
 <p>GraphQL 完全不同于 Redux，Facebook 又创造了一个大神级的产品，但却没指出这宝贝为什么这么重要，这也是为什么我花时间写此文的原因。</p>
-
 <blockquote>
 <p>简言之，如果说 Redux 是一匹马的话，GraphQL 就是一辆车。</p>
 </blockquote>
-
-<h3 id="什么-怎么-redux-成了一匹马">什么？怎么 Redux 成了一匹马？</h3>
-
+<h3 id="什么怎么-redux-成了一匹马">什么？怎么 Redux 成了一匹马？</h3>
 <p>我之所以把它们比做一匹马和一辆车，原因是这俩完全是两个物种，一个是有四条腿的马动物，一个是有四个轮子的机器。然而，它们的作用是一样的，都是把人运到想去的地方。虽然它们各自有不同的适合场景，但通常来说，汽车会更快些。</p>
-
-<h3 id="那么-graphql-到底是什么">那么，GraphQL 到底是什么？</h3>
-
+<h3 id="那么graphql-到底是什么">那么，GraphQL 到底是什么？</h3>
 <p>官方文档是这样说的：“GraphQL 是一种 APIs 接口的查询语言”，感觉不清不楚的，其实他们所谓的查询语言基本上一个就可以替代上百个 HTTP 接口，因为这个技术还很新，所以文档和支持的技术还有点难懂，有一定的学习曲线。这儿给你一个例子看是否有帮助：</p>
-
 <p>GraphQL 可以替代类似这样的接口：</p>
-
 <ul>
 <li>GET /users/1234567890</li>
 <li>POST /cars</li>
 <li>PUT /example/endpoints</li>
 </ul>
-
 <p>只查询你需要的字段，如下：</p>
-
-<pre><code class="language-js">{
-  user(id: &quot;1234567890&quot;) {
-    name,
-    email
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
+  <span style="color:#a6e22e">user</span>(<span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;1234567890&#34;</span>) {
+    <span style="color:#a6e22e">name</span>,
+    <span style="color:#a6e22e">email</span>
   }
 }
-</code></pre>
-
-<p>返回：</p>
-
+</code></pre></div><p>返回：</p>
 <pre><code>{
   &quot;user&quot;: {
     &quot;name&quot;: &quot;Luke Skywalker&quot;,
     &quot;email&quot;: &quot;luke@iamyourfather.com&quot;
   }
 }
-</code></pre>
-
-<p>等一下——<strong>自定义的查询</strong>……这可是需要点儿时间去实现的，也许你这么认为~</p>
-
+</code></pre><p>等一下——<strong>自定义的查询</strong>……这可是需要点儿时间去实现的，也许你这么认为~</p>
 <p>但实际上不用，原因在于：由于只请求需要的数据，突然你不需要那么多服务端请求了，也就是说你不需要写那么多代码去处理那么多服务端请求了，于是，你就节省了大量不需要实现的代码和时间。</p>
-
-<h2 id="但这就能替代-redux-了吗-but-how-does-this-replace-redux">🤷‍ 但这就能替代 Redux 了吗？But how does this replace Redux?</h2>
-
+<h2 id="-但这就能替代-redux-了吗but-how-does-this-replace-redux">🤷‍ 但这就能替代 Redux 了吗？But how does this replace Redux?</h2>
 <p>问得好！简单地说，<strong>不能</strong>。不过，它鼓励你不要象 Redux 那样把所有信息存在一个单独的对象中，因为每个查询只针对应用的一小部分，而不是整个应用。在一整个应用的数据源中只关注一小部分，这应该算是个 <code>anti-pattern</code> 反模式、反常识（甚至是有点不合逻辑）的。</p>
-
 <blockquote>
 <p>通过使用 GraphQL 你就可以摆脱对 Redux 的依赖从而省掉大量的代码。</p>
 </blockquote>
-
 <p>还有一点要注意：Redux 和 GraphQL 是可以共存的，这样你可以平滑地过渡，这儿有一些关于两者整合的文章：</p>
-
 <p><a href="https://s3.amazonaws.com/apollo-docs-1.x/redux.html">Integrating with Redux | Apollo React Docs</a></p>
-
 <p>用不用 Redux 变成一种选择。是用它解决一些小任务而面对头疼的问题，还是换一种方法完成那些任务？</p>
-
-<h3 id="那么-你会怎么选择">那么，你会怎么选择？</h3>
-
+<h3 id="那么你会怎么选择">那么，你会怎么选择？</h3>
 <p>Redux 在当时确实解决了问题，但就在同时，Web 开发行业又在 <code>Web sockets</code> 领域有了巨大的进步。</p>
-
 <p>Web sockets 是在服务端和客户端建立持续的连接，服务端就可以通知客户端何时更新。你猜怎么着？GraphQL 用一种叫 <code>subscriptions</code> 的订阅技术直接就能支持 web sockets，我们可以用这种 <code>subscriptions</code> 的订阅机制来更新应用中想保持同步的部分。</p>
-
 <p>核心的区别在于：与其让客户端（用 Redux）告诉我们哪里要更新，不如让服务端直接通知客户端更新。结果是一样的，这儿有一些例子是怎么用 MongoDB 或 Mongoose 实现 Web socket 和 <code>subscriptions</code> 的。</p>
-
 <p><a href="http://thecodebarbarian.com/a-nodejs-perspective-on-mongodb-36-change-streams.html">A Node.js Perspective on MongoDB 3.6: Change Streams</a></p>
-
 <p><a href="https://mongoosejs.com/docs/api.html#model_Model.watch">Mongoose v5.2.12: API — Model.watch()</a></p>
-
-<h2 id="未来很精彩-the-future-looks-awesome">🚀 未来很精彩！The Future Looks Awesome!</h2>
-
+<h2 id="-未来很精彩the-future-looks-awesome">🚀 未来很精彩！The Future Looks Awesome!</h2>
 <p>GraphQL 开发没多久，但眼下也可以用在产品上了。我不想撒谎，官方文档确实能把人搞晕，需要对 JavaScript 和 服务端运行机制有很强的理解才行。然而如果你还没那么强，但想了解更多，这有一个很流行的教程：</p>
-
 <p><a href="https://graphql.org/learn/">GraphQL: A query language for APIs.</a></p>
-
 <p>还有很多有用的库可以帮你逐步地整合 GraphQL 到已有产品中。不用担心，你不用一次弄完，这些库可以帮你轻松地、慢慢地改善你的应用。Apollo 就是一家做这事儿的公司。</p>
-
 <p><a href="https://www.apollographql.com/">Apollo GraphQL</a></p>
-
 <p>好了，我希望这篇文章可以对阐明一些复杂的概念有帮助。</p>
-
 <p>如果你喜欢这篇文章，请点赞——这对我来说是很大的鼓励——或者有问题请留言。</p>
-
 <p>谢谢！🙌</p>
 
         </div>
@@ -382,6 +302,14 @@
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -413,14 +341,6 @@
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -430,9 +350,9 @@
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -440,7 +360,7 @@
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -459,7 +379,7 @@
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -491,7 +411,7 @@
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -597,7 +517,7 @@
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -608,6 +528,8 @@
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -713,7 +635,7 @@
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -742,6 +664,8 @@
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -790,6 +714,8 @@
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -880,6 +806,8 @@
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

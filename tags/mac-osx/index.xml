@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac osx on 世风十三学堂</title>
+    <link>/tags/mac-osx/</link>
+    <description>Recent content in Mac osx on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    
+	<atom:link href="/tags/mac-osx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>UML tools of Mac OSX 苹果系统下的建模工具</title>
+      <link>/post/2014/2014-03-27-uml-tools-of-mac-osx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2014/2014-03-27-uml-tools-of-mac-osx/</guid>
+      <description>今天工作时需要设计一下程序的架构，即建模工作，这件事用纯文本似乎较难完成（本人是纯文本的 funs）。用手绘软件（Gimp, SketchBookExpress）也不太方便，失量图软件（Inkscape，LibreOfficeDraw）也要从画方框开始也不方便，毕竟是模块化的图形，还</description>
+    </item>
+    
+  </channel>
+</rss>

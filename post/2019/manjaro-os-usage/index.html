@@ -103,61 +103,40 @@
         
         
         <div class="post-content">
-            
-
-<p>前几天（今天是2019年12月20日）把 Deepin 系统从 D 盘（1T 硬盘）上删除了，在固态硬盘上开出了 80G 硬盘空间安装个 Manjaro KDE 玩儿一下，中间因为分区操作失误，差点把整个 D 盘给弄丢了，还好冷静地找办法解决，试了很多工具，其中 DiskGenius 是可以找回分区表的，但到最后一步居然提示要收费，好像还要两三百吧，不甘心，又去找免费工具，终于找到个 TextDisk 居然可以用，只是操作界面对国人不友好，还好认识英文，仔细看说明一步步完成了恢复分区的操作，有惊无险，救回了 D 盘。</p>
-
+            <p>前几天（今天是2019年12月20日）把 Deepin 系统从 D 盘（1T 硬盘）上删除了，在固态硬盘上开出了 80G 硬盘空间安装个 Manjaro KDE 玩儿一下，中间因为分区操作失误，差点把整个 D 盘给弄丢了，还好冷静地找办法解决，试了很多工具，其中 DiskGenius 是可以找回分区表的，但到最后一步居然提示要收费，好像还要两三百吧，不甘心，又去找免费工具，终于找到个 TextDisk 居然可以用，只是操作界面对国人不友好，还好认识英文，仔细看说明一步步完成了恢复分区的操作，有惊无险，救回了 D 盘。</p>
 <p>装好 Manjaro KDE 之后还是很开心的，因为同时顺便解决了原来 Deepin 安装在 D 盘时的一个启动问题， Windows 启动是在 UEFI 模式，而 Deepin 可能因为是在 D 盘启动模式偏不是 UEFI，而是 Legacy 模式，于是每次想切换系统时，还需要进一次 Bios 进行操作一下，好在小米的 Bios 界面还比较友好，感觉还算能接受吧。 而安装好 Manjaro 后，启动界面自然变成了 Manjaro 的暗绿色，上下键头就可以切换两个系统，心里着实暗爽！</p>
-
 <p>遇到几个问题：</p>
-
 <ul>
 <li>输入法的问题，安装了 fcitx 但是切换时无效，一直是英文输入，找到<a href="://www.cnblogs.com/kunx/p/9143959.html">网上说</a>还要配置 .xprofile 才行，感觉这系统确实不是纯白玩儿家玩儿的，对国人不太友好啊。</li>
 <li>再就是这个 vi 也有点不太习惯，看来还是得安装 vim 才舒服，默认都没装的。按 <code>Backspace</code> 键不是删除前一个字符，而是临时保留着前面的字符，以为是 <code>Insert</code> 键的开关问题，试着点过好像也不是，最终效果倒是一样，只是不太习惯。</li>
 <li>还有就是这个 vi 的上下左右键也是完全不能用了，只能使用 jklh 来移动了，这真的是强制使用 vi 的操作习惯啊！不熟悉 vi 的完全没法玩儿了。</li>
 <li>系统默认安装的是 Firefox ，我还正暗自窃喜，因为前段时间正好把习惯从谷歌浏览器转换到 Firefox 了，毕竟国内使用 Firefox 还是方便些，装插件同步什么的都方便，而且现在 Firefox 底层使用 Rust 重写了感觉上是不是也能更快些？人的喜好就是这样容易受心理作用的，不必深究，喜欢就好，可是没想到同步也用不了，分中国版和国际版，默认装的是国际版，再安装中国版感觉还挺麻烦的……主要是想完美切换中英图标什么的，参考这篇文章就可以找到办法了，需要去修改 <code>/usr/share/applications/firefox.desktop</code> 文件的内容。</li>
 </ul>
-
 <h2 id="备份系统">备份系统：</h2>
-
-<pre><code class="language-sh"># rsync -aAXv --exclude={&quot;/dev/*&quot;,&quot;/proc/*&quot;,&quot;/sys/*&quot;,&quot;/tmp/*&quot;,&quot;/run/*&quot;,&quot;/mnt/*&quot;,&quot;/media/*&quot;,&quot;/lost+found&quot;} / /path/to/backup/folder
-</code></pre>
-
-<h2 id="尝试-dwm-窗口管理">尝试 dwm 窗口管理：</h2>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># rsync -aAXv --exclude={&#34;/dev/*&#34;,&#34;/proc/*&#34;,&#34;/sys/*&#34;,&#34;/tmp/*&#34;,&#34;/run/*&#34;,&#34;/mnt/*&#34;,&#34;/media/*&#34;,&#34;/lost+found&#34;} / /path/to/backup/folder</span>
+</code></pre></div><h2 id="尝试-dwm-窗口管理">尝试 dwm 窗口管理：</h2>
 <ul>
 <li><a href="https://opensourceforu.com/2012/03/tiling-window-managers-getting-started-with-dwm/">Tiling Window Managers, and Getting Started with dwm</a></li>
 </ul>
-
 <p>体验了一下，感觉上手还是有些门槛的，很多基本的操作不熟悉，短时间还没法上手工作。</p>
-
 <h3 id="添加一个新桌面才能登录使用">添加一个新桌面才能登录使用</h3>
-
 <p>需要添加一个 dwm.desktop 的文件，具体可参考<a href="https://forum.manjaro.org/t/dwm-not-showing-in-lightdm-log-in-screen/98220">Dwm not showing in lightdm log in screen</a>，这样重启后，在登录系统的界面左下角会有下拉菜单选择，选择 dwm 即可进入了，不过基本上需要配置好才能使用，新手完全玩儿不起来，需要学会怎么用，再就是要一点点配置到自己舒服才能顺畅使用。</p>
-
-<pre><code class="language-sh">sudo vi /usr/share/xsessions/dwm.desktop
-</code></pre>
-
-<pre><code class="language-ini">[Desktop Entry]
-Encoding=UTF-8
-Name=dwm
-Comment=dwm window manager
-Exec=/usr/local/bin/dwm
-Type=Application
-</code></pre>
-
-<h2 id="尝试-ranger-功能">尝试 ranger 功能：</h2>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo vi /usr/share/xsessions/dwm.desktop
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Desktop Entry]</span>
+<span style="color:#a6e22e">Encoding</span><span style="color:#f92672">=</span><span style="color:#e6db74">UTF-8</span>
+<span style="color:#a6e22e">Name</span><span style="color:#f92672">=</span><span style="color:#e6db74">dwm</span>
+<span style="color:#a6e22e">Comment</span><span style="color:#f92672">=</span><span style="color:#e6db74">dwm window manager</span>
+<span style="color:#a6e22e">Exec</span><span style="color:#f92672">=</span><span style="color:#e6db74">/usr/local/bin/dwm</span>
+<span style="color:#a6e22e">Type</span><span style="color:#f92672">=</span><span style="color:#e6db74">Application</span>
+</code></pre></div><h2 id="尝试-ranger-功能">尝试 ranger 功能：</h2>
 <ul>
 <li>开始用时想编辑某个文件，按 <code>E</code> 结果没反应，退出后发现有报错提示“没找到 vim”，因为想用 <code>nvim</code> ，已经装好了，把 <code>vi</code> 和 <code>vim</code> 都链到 <code>nvim</code> 了，不想再装 <code>vim</code>，找了些资料，如下：
-
 <ul>
 <li><a href="https://ranger.github.io/ranger.1.html">Ranger Man</a> 中 <code>ENVIRONMENT</code> 里面提到的 <code>EDITOR</code> 是用来设置默认的编程器的，所以想到修改 <code>.xprofile</code> 应该可以，于是添加了一行 <code>export EDITOR=nvim</code>，重启电脑后果然可以了！</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h2 id="参考资料">参考资料：</h2>
-
 <ul>
 <li><a href="https://www.lulinux.com/archives/category/manjaro-linux">Manjaro - LuLinux</a></li>
 <li><a href="http://mirrors.ustc.edu.cn/help/manjaro.html">Manjaro Linux 源使用帮助</a></li>
@@ -243,6 +222,14 @@ Type=Application
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -274,14 +261,6 @@ Type=Application
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -291,9 +270,9 @@ Type=Application
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -301,7 +280,7 @@ Type=Application
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -320,7 +299,7 @@ Type=Application
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -352,7 +331,7 @@ Type=Application
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -458,7 +437,7 @@ Type=Application
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -469,6 +448,8 @@ Type=Application
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -574,7 +555,7 @@ Type=Application
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -603,6 +584,8 @@ Type=Application
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -651,6 +634,8 @@ Type=Application
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -741,6 +726,8 @@ Type=Application
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

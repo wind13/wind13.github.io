@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Vision on 世风十三学堂</title>
+    <link>/tags/computer-vision/</link>
+    <description>Recent content in Computer Vision on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 07 Feb 2018 16:17:34 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Computer Vision 学习</title>
+      <link>/post/2018/2018-02-07-computer-vision-%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Wed, 07 Feb 2018 16:17:34 +0000</pubDate>
+      
+      <guid>/post/2018/2018-02-07-computer-vision-%E5%AD%A6%E4%B9%A0/</guid>
+      <description>Computer Vision Library What are pros and cons of OpenCV and TensorFlow for computer vision? ccv A Modern Computer Vision Library SimpleCV Computer Vision platform using Python. Blepo Computer Vision Library Python教程 OpenCV vs VXL vs LTI: Performance Test I recently read this comparison of four vision libraries: OpenCV, VXL, LTI and OpenCV with IPP. It was in the book Learning Learning OpenCV: Computer Vision with the OpenCV Library, authored by the creators of OpenCV themselves. For those who aren&amp;rsquo;t familiar with these libraries, here&amp;rsquo;s a brief introduction. VXL VXL stands for Vision something Library. It is a C++ library that implements several common computer vision algorithms and related functionality. The idea is to replace the &amp;lsquo;X&amp;rsquo; with one of the several letters: VGL = Vision Geometry Library VIL = Vision Image processing</description>
+    </item>
+    
+  </channel>
+</rss>

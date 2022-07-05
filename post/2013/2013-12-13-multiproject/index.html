@@ -91,19 +91,27 @@
         
         <div class="post-content">
             <ul>
-<li><p>首先按业务需求划分为多个应用，应用就是用 play new xxx来创建的。</p></li>
-
-<li><p>其次将公用部分划分为多个子项目或称子模块，就是用 play new-module创建的。</p></li>
-
-<li><p>这些项目均并列导入eclipse中，应用引用相应需要的子项目，需要在application.conf中添加，有多个就添加多行：
+<li>
+<p>首先按业务需求划分为多个应用，应用就是用 play new xxx来创建的。</p>
+</li>
+<li>
+<p>其次将公用部分划分为多个子项目或称子模块，就是用 play new-module创建的。</p>
+</li>
+<li>
+<p>这些项目均并列导入eclipse中，应用引用相应需要的子项目，需要在application.conf中添加，有多个就添加多行：</p>
+</li>
+</ul>
 <pre><code>
-    module.base=../base
-    module.common=../common
-</code></pre></p></li>
-
-<li><p>在eclipse的项目属性中添加引用的子项目即可。</p></li>
-
-<li><p>注：关键在于项目规划合理，子项目或公用项目中model层可以分包，如：com.xxx.pack，而controllers和views也可以分包，但要慎重使用，在引用时也有一点小特殊写法。</p></li>
+    	module.base=../base
+    	module.common=../common
+</code></pre>
+<ul>
+<li>
+<p>在eclipse的项目属性中添加引用的子项目即可。</p>
+</li>
+<li>
+<p>注：关键在于项目规划合理，子项目或公用项目中model层可以分包，如：com.xxx.pack，而controllers和views也可以分包，但要慎重使用，在引用时也有一点小特殊写法。</p>
+</li>
 </ul>
 
         </div>
@@ -119,9 +127,9 @@
         
         <li><a href="/post/2014/2014-02-26-playqaindex/">Play!技巧问答</a></li>
         
-        <li><a href="/post/2013/2013-09-26-xmlawarenamespace/">Xml 域名空间识别问题</a></li>
-        
         <li><a href="/post/2013/2013-12-13-xmldomainbug/">Xml 域名空间识别问题</a></li>
+        
+        <li><a href="/post/2013/2013-09-26-xmlawarenamespace/">Xml 域名空间识别问题</a></li>
         
         <li><a href="/post/2013/2013-12-13-filterallcontroller/">在Play!中如何实现类似过滤器的功能？</a></li>
         
@@ -177,6 +185,14 @@
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -208,14 +224,6 @@
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -225,9 +233,9 @@
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -235,7 +243,7 @@
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -254,7 +262,7 @@
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -286,7 +294,7 @@
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -392,7 +400,7 @@
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -403,6 +411,8 @@
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -508,7 +518,7 @@
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -537,6 +547,8 @@
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -585,6 +597,8 @@
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -675,6 +689,8 @@
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

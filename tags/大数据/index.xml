@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>大数据 on 世风十三学堂</title>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/post/2016/2016-09-18-data-time/</guid>
-      <description>第一章 数据——人类建造文明的基石 使用数据的标准流程： 1. 获取数据 1. 分析数据 1. 建立模型 1. 预测未知 完美的镜头里面的透镜其实不应该是球面镜，而应该是某种复杂的曲面，这样才能使画面不变形，但这样的镜头在设计和制作上要求非常复杂而难以实现，相反如同日本的镜头生产一样，采用多个球面透镜来组合虽</description>
+      <description>第一章 数据——人类建造文明的基石 使用数据的标准流程： 获取数据 分析数据 建立模型 预测未知 完美的镜头里面的透镜其实不应该是球面镜，而应该是某种复杂的曲面，这样才能使画面不变形，但这样的镜头在设计和制作上要求非常复杂而难以实现，相反如同日本的镜头生产一样，采用多个球面透镜来组合虽然显得笨</description>
     </item>
     
   </channel>

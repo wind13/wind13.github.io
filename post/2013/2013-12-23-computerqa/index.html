@@ -90,66 +90,55 @@
         
         
         <div class="post-content">
-            
-
-<h1 id="电脑使用及编程知识问答">电脑使用及编程知识问答</h1>
-
-<h2 id="网易闪电邮和网易邮箱助手有什么区别-如何选择">网易闪电邮和网易邮箱助手有什么区别，如何选择？</h2>
-
+            <h1 id="电脑使用及编程知识问答">电脑使用及编程知识问答</h1>
+<h2 id="网易闪电邮和网易邮箱助手有什么区别如何选择">网易闪电邮和网易邮箱助手有什么区别，如何选择？</h2>
 <blockquote>
 <p>网易闪电邮是功能比较全面的邮箱客户端，可以同时支持其他邮箱的邮件收发，类似Foxmail和Outlook这样的邮箱软件。而网易邮箱助手则是个轻客户端，只能连接网易的邮箱，提供来信提醒和桌面预览等功能。如果你还想用客户端收发其它邮箱，那就只能选择网易闪电邮了，如果你只有网易的邮箱，又不想安装个太大的软件，只想要个轻巧的来信提醒小工具，那么网易邮箱助手是不错的选择。</p>
 </blockquote>
-
 <h2 id="比较好的邮件客户端软件是什么">比较好的邮件客户端软件是什么？</h2>
-
 <blockquote>
 <p>最常见的是Foxmail，其他还有很多，网易闪电邮也比较简洁好用。但个人最推荐的还是Thunderbird，跨平台Windows和Linux系统都通用，安装上Thunderbird Conversations插件，Lightning插件和Provider for Google Calendar插件，这个邮件客户端软件就变得非常实用，让人爱不释手了。有日历、任务功能，邮件组织象gmail一样舒服，同时日历还可以跟google日历同步，这样你的手机什么的终端只要连上google日历就是一套非常好的GTD工具了！</p>
-
+</blockquote>
 <h2 id="html5实现多文件上传的方法">Html5实现多文件上传的方法？</h2>
-
+<blockquote>
 <p><a href="http://www.zhangxinxu.com/wordpress/2011/09/%E5%9F%BA%E4%BA%8Ehtml5%E7%9A%84%E5%8F%AF%E9%A2%84%E8%A7%88%E5%A4%9A%E5%9B%BE%E7%89%87ajax%E4%B8%8A%E4%BC%A0/">基于html5的可预览多图片ajax上传</a>
 <a href="http://jinghuainfo.iteye.com/blog/1193280">使用HTML5实现多文件上传</a></p>
 </blockquote>
-
 <h2 id="升级fedora后启动不了报file-not-found错怎么办">升级Fedora后启动不了报File not found错怎么办？</h2>
-
 <blockquote>
 <p>一般情况是grub2未设置好，启动不了。
 可先用 Fedora16 LiveCD 或 Fedora16 DVD 启动进入shell，然后找到升级了的Fedora 16的挂载盘，如果是DVD修复的话，会挂在 /mnt/syslinux（记不清了）下，则执行：</p>
 </blockquote>
-
 <pre><code>chroot /mnt/syslinux
 </code></pre>
-
 <blockquote>
 <p>执行以下命令可修复grub2：</p>
 </blockquote>
-
 <pre><code>grub2-mkconfig -o /boot/grub2/gub.cfg
 grub2-install /dev/sda
 </code></pre>
-
 <blockquote>
 <p>如果执行第二句时报：Your embedding area is unusually small&hellip;，则一般是因为引导区被占用了，比如安装了Win7等，则可执行：</p>
 </blockquote>
-
 <pre><code>grub2-install --force /dev/sda
 </code></pre>
-
 <blockquote>
 <p>这样就强制写入grub2的引导信息了，一般情况重启就正常了！</p>
 </blockquote>
-
-<h2 id="主流代码仓库的选择-主要有哪些">主流代码仓库的选择，主要有哪些？</h2>
-
+<h2 id="主流代码仓库的选择主要有哪些">主流代码仓库的选择，主要有哪些？</h2>
 <ul>
-<li><p>Subversion 集中式（目前还在大量使用的，熟悉的人员较多）</p></li>
-
-<li><p>Git 分布式（更先进些，特别适用于开源项目，如 github 网站）</p></li>
-
-<li><p>从Subversion转到Git有相应的工具和方法，参考：<a href="http://leeiio.me/convert-subversion-to-git/">转换你的 Subversion 到 Git</a> 和 <a href="http://rongjih.blog.163.com/blog/static/3357446120107111449543/">如何将SVN仓库转换为Git仓库</a></p></li>
-
-<li><p><a href="GitoliteSetup">CentOS下使用Gitolite架构Git服务的步骤</a></p></li>
+<li>
+<p>Subversion 集中式（目前还在大量使用的，熟悉的人员较多）</p>
+</li>
+<li>
+<p>Git 分布式（更先进些，特别适用于开源项目，如 github 网站）</p>
+</li>
+<li>
+<p>从Subversion转到Git有相应的工具和方法，参考：<a href="http://leeiio.me/convert-subversion-to-git/">转换你的 Subversion 到 Git</a> 和 <a href="http://rongjih.blog.163.com/blog/static/3357446120107111449543/">如何将SVN仓库转换为Git仓库</a></p>
+</li>
+<li>
+<p><a href="GitoliteSetup">CentOS下使用Gitolite架构Git服务的步骤</a></p>
+</li>
 </ul>
 
         </div>
@@ -163,15 +152,15 @@ grub2-install /dev/sda
     <h2>See Also</h2>
     <ul class="listing">
         
+        <li><a href="/post/2022/try-smartide/">Try SmartIDE</a></li>
+        
+        <li><a href="/post/2022/low-code-analogy/">低代码的类比 Low Code Analogy</a></li>
+        
         <li><a href="/post/2022/which-editor-you-are-using/">Which Editor You Are Using</a></li>
         
         <li><a href="/post/2022/nodejs-secure-config/">Nodejs Secure Config 配置加密方案</a></li>
         
         <li><a href="/post/2022/develop-team-problem/">关于KPI与开发团队效能问题的讨论</a></li>
-        
-        <li><a href="/post/2022/powerplatform-jamstack/">在 Power Platform 上实践 JamStack 架构思想</a></li>
-        
-        <li><a href="/post/2022/do-not-use-mounty-disk-data-recovery/">不要用 Mounty，一次惊险的数据恢复记录</a></li>
         
     </ul>
 </div>
@@ -221,6 +210,14 @@ grub2-install /dev/sda
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
+    </li>
+    
+    <li>
+        <a href="/post/2022/low-code-analogy/" title="低代码的类比 Low Code Analogy">低代码的类比 Low Code Analogy</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/which-editor-you-are-using/" title="Which Editor You Are Using">Which Editor You Are Using</a>
     </li>
     
@@ -252,14 +249,6 @@ grub2-install /dev/sda
         <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.digital-garden/" title="Digital Garden">Digital Garden</a>
-    </li>
-    
-    <li>
-        <a href="/post/2021/blog.collaboration-contract-tests/" title="E2E tests, Integrated tests vs Collaboration and Contract Tests">E2E tests, Integrated tests vs Collaboration and Contract Tests</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -269,9 +258,9 @@ grub2-install /dev/sda
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (17)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
     
-    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (24)</a></li>
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
     <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (24)</a></li>
     
@@ -279,7 +268,7 @@ grub2-install /dev/sda
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (42)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
     
 </ul>
     </section>
@@ -298,7 +287,7 @@ grub2-install /dev/sda
     
     <a href="/tags/angularjs/">angularjs</a>
     
-    <a href="/tags/antd/">antd</a>
+    <a href="/tags/antd/">AntD</a>
     
     <a href="/tags/app/">App</a>
     
@@ -330,7 +319,7 @@ grub2-install /dev/sda
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
-    <a href="/tags/clojure/">clojure</a>
+    <a href="/tags/clojure/">Clojure</a>
     
     <a href="/tags/code/">code</a>
     
@@ -436,7 +425,7 @@ grub2-install /dev/sda
     
     <a href="/tags/json/">json</a>
     
-    <a href="/tags/julia/">Julia</a>
+    <a href="/tags/julia/">julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
@@ -447,6 +436,8 @@ grub2-install /dev/sda
     <a href="/tags/linux/">Linux</a>
     
     <a href="/tags/love/">love</a>
+    
+    <a href="/tags/low-code/">low code</a>
     
     <a href="/tags/mac-osx/">Mac osx</a>
     
@@ -552,7 +543,7 @@ grub2-install /dev/sda
     
     <a href="/tags/re-natal/">re-natal</a>
     
-    <a href="/tags/react/">react</a>
+    <a href="/tags/react/">React</a>
     
     <a href="/tags/react-native/">react native</a>
     
@@ -581,6 +572,8 @@ grub2-install /dev/sda
     <a href="/tags/silo/">Silo</a>
     
     <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
     
     <a href="/tags/sops/">sops</a>
     
@@ -629,6 +622,8 @@ grub2-install /dev/sda
     <a href="/tags/vimrc/">vimrc</a>
     
     <a href="/tags/vlang/">vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
     
     <a href="/tags/vue/">Vue</a>
     
@@ -719,6 +714,8 @@ grub2-install /dev/sda
     <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
     
     <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
     
     <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
     

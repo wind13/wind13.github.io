@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on 世风十三学堂</title>
+    <link>/tags/android/</link>
+    <description>Recent content in Android on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    
+	<atom:link href="/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Android Learing</title>
+      <link>/post/2016/2016-08-28-android-learing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2016/2016-08-28-android-learing/</guid>
+      <description>Android 开发学习 准备工作 安装 JDK，Gradle，Android SDK 等； 首先装 SDKMan，先别急去一个个下载，这里介绍就是安装其他开发工具的工具： 这是专为开发人员准备的安装工具！网速好的话，一句话搞定： curl -s &amp;quot;https://get.sdkman.io&amp;quot; | bash 安装 Gradle，点击看一下最新的命令，本文书写时还是 3.0 版本，如下: sdk install gradle</description>
+    </item>
+    
+  </channel>
+</rss>
