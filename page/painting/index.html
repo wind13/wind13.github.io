@@ -94,30 +94,76 @@
         
         
         <div class="post-content">
-            <h2 id="我家的福点">我家的福点</h2>
-<p><img src="/paintings/catfudian.jpg" alt="我家的福点"></p>
-<h2 id="男人的橙色思绪">男人的橙色思绪</h2>
-<p><img src="/paintings/orange-think.jpg" alt="男人的橙色思绪"></p>
-<h2 id="我家的雪儿">我家的雪儿</h2>
-<p><img src="/paintings/catxuer.jpg" alt="我家的雪儿"></p>
-<h2 id="春天的自拍">春天的自拍</h2>
-<p><img src="/paintings/chunzipai.jpg" alt="春天的自拍"></p>
-<h2 id="一盆多肉">一盆多肉</h2>
-<p><img src="/paintings/duorou-s.png" alt="一盆多肉的花"></p>
-<h2 id="混乱的大卫">混乱的大卫</h2>
-<p><img src="/paintings/luandawei.jpg" alt="混乱的大卫"></p>
-<h2 id="无名的焦虑">无名的焦虑</h2>
-<p><img src="/paintings/wumingjiaolv.jpg" alt="无名的焦虑"></p>
-<h2 id="庞德公学混子曰的画法">庞德公（学混子曰的画法）</h2>
-<p><img src="/paintings/pangdegong.jpg" alt="庞德公"></p>
-<h2 id="钢丝画乔布斯">钢丝画乔布斯</h2>
-<p><img src="/paintings/qiaobusi.jpg" alt="钢丝画乔布斯"></p>
-<h2 id="钢丝地面">钢丝地面</h2>
-<p><img src="/paintings/gangsidimian.jpg" alt="钢丝地面"></p>
-<h2 id="儿子画的自行车">儿子画的自行车</h2>
-<p><img src="/paintings/erzidanche-s.jpg" alt="儿子画的自行车"></p>
-<h2 id="儿子的涂鸦">儿子的涂鸦</h2>
-<p><img src="/paintings/erzituya.jpg" alt="儿子的涂鸦"></p>
+            <link href="https://cdn.bootcdn.net/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.min.css" rel="stylesheet">
+<link href="https://cdn.bootcdn.net/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.woff.min.css" rel="stylesheet">
+<!-- jQuery -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script> -->
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js"></script>
+<div id="nanogallery2" data-nanogallery2 = '{"thumbnailWidth": 200, "thumbnailHeight": "auto"}'>
+  <a href="/paintings/qingwa.jpg" data-ngThumb="/paintings/qingwa_thumbnail.jpg">闭嘴青蛙</a>
+  <a href="/paintings/bingdwundwun-s.png" data-ngThumb="/paintings/bingdwundwun-s_thumbnail.png">冰墩墩</a>
+  <a href="/paintings/catfudian.jpg" data-ngThumb="/paintings/catfudian_thumbnail.jpg">我家的福点</a>
+  <a href="/paintings/orange-think.jpg" data-ngThumb="/paintings/orange-think_thumbnail.jpg">男人的橙色思绪</a>
+  <a href="/paintings/catxuer.jpg" data-ngThumb="/paintings/catxuer_thumbnail.jpg">我家的雪儿</a>
+  <a href="/paintings/chunzipai.jpg" data-ngThumb="/paintings/chunzipai_thumbnail.jpg">春天的自拍</a>
+  <a href="/paintings/duorou-s.png" data-ngThumb="/paintings/duorou-s_thumbnail.png">一盆多肉的花</a>
+  <a href="/paintings/luandawei.jpg" data-ngThumb="/paintings/luandawei_thumbnail.jpg">混乱的大卫</a>
+  <a href="/paintings/wumingjiaolv.jpg" data-ngThumb="/paintings/wumingjiaolv_thumbnail.jpg">无名的焦虑</a>
+  <a href="/paintings/pangdegong.jpg" data-ngThumb="/paintings/pangdegong_thumbnail.jpg">临摹庞德公</a>
+  <a href="/paintings/qiaobusi.jpg" data-ngThumb="/paintings/qiaobusi_thumbnail.jpg">钢丝画乔布斯</a>
+  <a href="/paintings/gangsidimian.jpg" data-ngThumb="/paintings/gangsidimian_thumbnail.jpg">钢丝地面</a>
+  <a href="/paintings/erzidanche-s.jpg" data-ngThumb="/paintings/erzidanche-s_thumbnail.jpg">儿子画的自行车</a>
+  <a href="/paintings/erzituya.jpg" data-ngThumb="/paintings/erzituya_thumbnail.jpg">儿子的涂鸦</a>
+</div>
+<script>
+jQuery(document).ready(function () {
+  jQuery("#nanogallery2").nanogallery2({
+
+    // CONTENT SOURCE
+    // The optional add-on nanoPhotosProvider is used for this example - this is not mandatory and can easily be replaced by a list of medias
+    kind: 'nano_photos_provider2',
+    dataProvider: 'https://nano.gallery/ngy2/demo6/nano_photos_provider2/nano_photos_provider2.php',
+    album: 'nature',
+
+    // GALLERY AND THUMBNAIL LAYOUT
+    galleryDisplayMode: 'fullContent',
+    gallerySorting: 'random',
+    thumbnailHeight: 'auto', thumbnailWidth: '300',
+    thumbnailBaseGridHeight: 50,
+    thumbnailAlignment: 'fillWidth',
+    thumbnailL1GutterWidth: 4,
+    thumbnailL1GutterHeight: 4,
+    thumbnailBorderHorizontal: 5,
+    thumbnailBorderVertical: 5,
+
+    // THUMBNAIL TOOLS & LABEL
+    thumbnailLabel: { display: true, position: 'onBottom', hideIcons: true, titleFontSize: '1em', align: 'right', titleMultiLine: true, displayDescription: false },
+    thumbnailToolbarAlbum: null,
+    thumbnailToolbarImage: { bottomRight: 'display' },
+    // replace the default DISPLAY tool icon
+    icons: { thumbnailDisplay: '<i class="fa fa-long-arrow-right" aria-hidden="true"></i> display' },
+
+    // DISPLAY ANIMATION
+    thumbnailDisplayTransition: 'slideDown',
+    thumbnailDisplayTransitionDuration: 500,
+    thumbnailDisplayInterval: 30,
+
+    // THUMBNAIL'S HOVER ANIMATION
+    thumbnailHoverEffect2: 'label_translateY_0px_-20px|image_scale_1.00_1.10|image_rotateZ_0deg_3deg|image_translateY_0px_-20px|tools_opacity_0_1|tools_translateY_30px_0px',
+    touchAnimation: true,
+    touchAutoOpenDelay: 800,
+
+    // GALLERY THEME
+    galleryTheme: {
+      thumbnail: { background: '#444', backgroundImage: 'linear-gradient(315deg, #111 0%, #557 90%)', borderColor: '#000', labelOpacity: 1, labelBackground: '#444', titleColor: '#eee', titleBgColor: '#444', titleShadow: '' },
+    },
+
+    // DEEP LINKING
+    locationHash: false
+  });
+});
+</script>
 
         </div>
 

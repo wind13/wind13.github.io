@@ -26,7 +26,7 @@
       <pubDate>Tue, 03 Mar 2020 14:21:05 +0800</pubDate>
       
       <guid>/page/painting/</guid>
-      <description>我家的福点 男人的橙色思绪 我家的雪儿 春天的自拍 一盆多肉 混乱的大卫 无名的焦虑 庞德公（学混子曰的画法） 钢丝画乔布斯 钢丝地面 儿子画的自行车 儿子的涂鸦</description>
+      <description>-- 闭嘴青蛙 冰墩墩 我家的福点 男人的橙色思绪 我家的雪儿 春天的自拍 一盆多肉的花 混乱的大卫 无名的焦虑 临摹庞德公 钢丝画乔布斯 钢丝地面 儿子画的自行车 儿子的涂鸦 jQuery(document).ready(function () { jQuery(&#34;#nanogallery2&#34;).nanogallery2({ // CONTENT SOURCE // The optional add-on nanoPhotosProvider is used for this example - this is not mandatory and can easily be replaced by a list of medias kind: &#39;nano_photos_provider2&#39;, dataProvider: &#39;https://nano.gallery/ngy2/demo6/nano_photos_provider2/nano_photos_provider2.php&#39;, album: &#39;nature&#39;, // GALLERY AND THUMBNAIL LAYOUT galleryDisplayMode: &#39;fullContent&#39;, gallerySorting: &#39;random&#39;, thumbnailHeight: &#39;auto&#39;, thumbnailWidth: &#39;300&#39;, thumbnailBaseGridHeight: 50, thumbnailAlignment: &#39;fillWidth&#39;, thumbnailL1GutterWidth: 4, thumbnailL1GutterHeight: 4, thumbnailBorderHorizontal: 5, thumbnailBorderVertical: 5, // THUMBNAIL TOOLS &amp;</description>
     </item>
     
     <item>
