@@ -79,6 +79,24 @@
     <article class="post">
         <header>
             <h1 class="post-title">
+                <a href="/post/2013/2013-12-13-hqlcount1/" title=""></a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            1年1月1日
+        </date>
+        
+        <div class="post-content">
+            一个Hql中count判断的写法 :::java public static void test() { String hql = &quot;select o.teacher.id, o.teacher.goodStudentCount from Student o&quot; + &quot; group by teacher having count(*)&gt;o.teacher.goodStudentCount&quot;; List&lt;Long[]&gt; idCounts = Teacher.find(hql).fetch(); for (Long[] idCount:idCounts) { Logger.debug(&quot;id: %s, %s&quot;, idCount[0], idCount[1]); Long id = idCount[0]; } renderText(&quot;ok!&quot; + idCounts.size()); }……
+        </div>
+        <p class="readmore"><a href="/post/2013/2013-12-13-hqlcount1/">阅读全文</a></p>
+    </article>
+    
+    
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
                 <a href="/post/2013/2013-12-13-detachedpersist/" title=""></a>
             </h1>
         </header>
@@ -317,6 +335,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2022/legacy-system-renew/" title="遗留项目迁移的经验、策略和能力 Legacy System Renew">遗留项目迁移的经验、策略和能力 Legacy System Renew</a>
+    </li>
+    
+    <li>
         <a href="/post/2022/try-smartide/" title="Try SmartIDE">Try SmartIDE</a>
     </li>
     
@@ -352,10 +374,6 @@
         <a href="/post/2021/blog.low-code-problems/" title="低代码开发的问题 Low Code Problems">低代码开发的问题 Low Code Problems</a>
     </li>
     
-    <li>
-        <a href="/post/2021/nodejs-fullstack-solution/" title="Nodejs 最新全栈解决方案 Nodejs Fullstack Solution">Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -365,7 +383,7 @@
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (18)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (19)</a></li>
     
     <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
@@ -375,7 +393,7 @@
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (44)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (45)</a></li>
     
 </ul>
     </section>
@@ -888,6 +906,8 @@
     
     <a href="/tags/%E6%95%8F%E6%8D%B7/">敏捷</a>
     
+    <a href="/tags/%E6%95%8F%E6%8D%B7%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">敏捷软件开发</a>
+    
     <a href="/tags/%E6%95%99%E8%82%B2/">教育</a>
     
     <a href="/tags/%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D/">数据恢复</a>
@@ -1027,6 +1047,8 @@
     <a href="/tags/%E8%BF%90%E6%B0%94/">运气</a>
     
     <a href="/tags/%E8%BF%BD%E6%B1%82/">追求</a>
+    
+    <a href="/tags/%E9%81%97%E7%95%99%E7%B3%BB%E7%BB%9F/">遗留系统</a>
     
     <a href="/tags/%E9%87%8D%E6%9E%84/">重构</a>
     

@@ -6,10 +6,19 @@
     <description>Recent content in 实践与经验 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 05 Jul 2022 03:16:01 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Oct 2022 12:12:55 +0000</lastBuildDate>
     
 	<atom:link href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>遗留项目迁移的经验、策略和能力 Legacy System Renew</title>
+      <link>/post/2022/legacy-system-renew/</link>
+      <pubDate>Sun, 23 Oct 2022 12:12:55 +0000</pubDate>
+      
+      <guid>/post/2022/legacy-system-renew/</guid>
+      <description>企业遗留项目改造和迁移有用的经验都有哪些？ 之前做过几个遗留项目的迁移工作了， 每一个都有各自的特点， 然而有用的经验却有很多共同点。 归纳起来有以下几点： 首先要深入了解遗留项目的背景、现状和未来期望，包括业务场景、技术框架、历史演进过程等； 其次要有一个富有经验、技术扎实的团队来做支撑，</description>
+    </item>
     
     <item>
       <title>Try SmartIDE</title>

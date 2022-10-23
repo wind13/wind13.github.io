@@ -6,10 +6,19 @@
     <description>Recent content in 解决方案 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 21 Aug 2021 12:29:07 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Oct 2022 12:12:55 +0000</lastBuildDate>
     
 	<atom:link href="/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>遗留项目迁移的经验、策略和能力 Legacy System Renew</title>
+      <link>/post/2022/legacy-system-renew/</link>
+      <pubDate>Sun, 23 Oct 2022 12:12:55 +0000</pubDate>
+      
+      <guid>/post/2022/legacy-system-renew/</guid>
+      <description>企业遗留项目改造和迁移有用的经验都有哪些？ 之前做过几个遗留项目的迁移工作了， 每一个都有各自的特点， 然而有用的经验却有很多共同点。 归纳起来有以下几点： 首先要深入了解遗留项目的背景、现状和未来期望，包括业务场景、技术框架、历史演进过程等； 其次要有一个富有经验、技术扎实的团队来做支撑，</description>
+    </item>
     
     <item>
       <title>Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</title>
