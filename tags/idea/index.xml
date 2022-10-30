@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IDEA on 世风十三学堂</title>
+    <link>/tags/idea/</link>
+    <description>Recent content in IDEA on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 30 Oct 2022 13:22:47 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/idea/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Solve Feign Multipart Mixed Post Request 400 Error</title>
+      <link>/post/2022/solve-feign-multipart-mixed-post-request-400-error/</link>
+      <pubDate>Sun, 30 Oct 2022 13:22:47 +0000</pubDate>
+      
+      <guid>/post/2022/solve-feign-multipart-mixed-post-request-400-error/</guid>
+      <description>记一次解决 Feign 提交批量添加请求收到 400 报错的经历 上周在实现用 OpenFeign 提交批量添加请求时，遇到一个奇怪的问题，本来 Post 请求的 body 体，因为是批量请求，内容就比较多，准备起来就比较麻烦，仔细检查了很多次，提交时还是各种失败，最终终于按照官方文档在 Postman 中提交成功了，本以为万事大吉了，于是开始写 Java 代码， 没</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,73 @@
     <description>Recent content in Tags on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 23 Oct 2022 12:12:55 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Oct 2022 13:22:47 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>feign</title>
+      <link>/tags/feign/</link>
+      <pubDate>Sun, 30 Oct 2022 13:22:47 +0000</pubDate>
+      
+      <guid>/tags/feign/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IDEA</title>
+      <link>/tags/idea/</link>
+      <pubDate>Sun, 30 Oct 2022 13:22:47 +0000</pubDate>
+      
+      <guid>/tags/idea/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intellij</title>
+      <link>/tags/intellij/</link>
+      <pubDate>Sun, 30 Oct 2022 13:22:47 +0000</pubDate>
+      
+      <guid>/tags/intellij/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>/tags/java/</link>
+      <pubDate>Sun, 30 Oct 2022 13:22:47 +0000</pubDate>
+      
+      <guid>/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenFeign</title>
+      <link>/tags/openfeign/</link>
+      <pubDate>Sun, 30 Oct 2022 13:22:47 +0000</pubDate>
+      
+      <guid>/tags/openfeign/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>POST</title>
+      <link>/tags/post/</link>
+      <pubDate>Sun, 30 Oct 2022 13:22:47 +0000</pubDate>
+      
+      <guid>/tags/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TDD</title>
+      <link>/tags/tdd/</link>
+      <pubDate>Sun, 30 Oct 2022 13:22:47 +0000</pubDate>
+      
+      <guid>/tags/tdd/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>敏捷软件开发</title>
@@ -489,15 +552,6 @@
     </item>
     
     <item>
-      <title>TDD</title>
-      <link>/tags/tdd/</link>
-      <pubDate>Thu, 18 Mar 2021 17:34:44 +0800</pubDate>
-      
-      <guid>/tags/tdd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>测试金字塔</title>
       <link>/tags/%E6%B5%8B%E8%AF%95%E9%87%91%E5%AD%97%E5%A1%94/</link>
       <pubDate>Thu, 18 Mar 2021 17:34:44 +0800</pubDate>
@@ -890,15 +944,6 @@
       <pubDate>Mon, 28 Dec 2020 16:49:11 +0800</pubDate>
       
       <guid>/tags/unit-test/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Java</title>
-      <link>/tags/java/</link>
-      <pubDate>Sat, 05 Dec 2020 23:12:40 +0800</pubDate>
-      
-      <guid>/tags/java/</guid>
       <description></description>
     </item>
     

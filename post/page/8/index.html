@@ -79,6 +79,33 @@
     <article class="post">
         <header>
             <h1 class="post-title">
+                <a href="/post/2019/non-local-mean-filter/" title="非局部均值滤波算法">非局部均值滤波算法</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2019年6月22日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF'>软件与技术</a></span>
+            
+            <span class="meta-category"><a href='/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95'>收集与记录</a></span>
+            
+        </div>
+        
+        <div class="post-content">
+            需求问题 关于图像降噪处理： 非局部均值滤波（non-local mean filter）基于块（block-wise）的算法怎么实现？编程语言类型为 python 解释 对添加了噪声的图像做nlm滤波：对每一个像素点（记为当前点），设定一个以其为中心的大小为p1*p2 的当前块，然后再设定一个以其为中心的大小……
+        </div>
+        <p class="readmore"><a href="/post/2019/non-local-mean-filter/">阅读全文</a></p>
+    </article>
+    
+    
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
                 <a href="/post/2018/2018-09-25-daily-note-20180925/" title="当日笔记-20180925">当日笔记-20180925</a>
             </h1>
         </header>
@@ -247,33 +274,6 @@
     
     
     
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="/post/2018/ocr-develop-research/" title="OCR 开发研究">OCR 开发研究</a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            2018年6月2日
-        </date>
-        
-        <div class="post-meta">
-            <span>|</span>
-            
-            <span class="meta-category"><a href='/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF'>软件与技术</a></span>
-            
-            <span class="meta-category"><a href='/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95'>收集与记录</a></span>
-            
-        </div>
-        
-        <div class="post-content">
-            遇到问题： 鉴权问题： 百度 API 需要首先创建应用，并且设置应用调用接口范围，如果不包含相应接口，后期在调用时会遇到 error_code = 6 (No permission to access data) 的错误提示。 创建应用后，每个应用会有相应的 AK(API Key) 和 SK (Secret Key)，可以用这两样来生成 token 用于接口调用验证。 另外百度个别接口会要求“真人认证”、“企业认证”等特殊要……
-        </div>
-        <p class="readmore"><a href="/post/2018/ocr-develop-research/">阅读全文</a></p>
-    </article>
-    
-    
-    
 
 
 
@@ -350,7 +350,7 @@
         
         
         <li >
-            <a href="/post/page/16/">16</a>
+            <a href="/post/page/17/">17</a>
         </li>
         
     
@@ -384,6 +384,10 @@
     <section class="widget">
         <h3 class="widget-title">最近文章</h3>
 <ul class="widget-list">
+    
+    <li>
+        <a href="/post/2022/solve-feign-multipart-mixed-post-request-400-error/" title="Solve Feign Multipart Mixed Post Request 400 Error">Solve Feign Multipart Mixed Post Request 400 Error</a>
+    </li>
     
     <li>
         <a href="/post/2022/legacy-system-renew/" title="遗留项目迁移的经验、策略和能力 Legacy System Renew">遗留项目迁移的经验、策略和能力 Legacy System Renew</a>
@@ -421,10 +425,6 @@
         <a href="/post/2021/note-of-right-measurement/" title="笔记——正确的度量指标">笔记——正确的度量指标</a>
     </li>
     
-    <li>
-        <a href="/post/2021/blog.low-code-problems/" title="低代码开发的问题 Low Code Problems">低代码开发的问题 Low Code Problems</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -434,7 +434,7 @@
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (19)</a></li>
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (20)</a></li>
     
     <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (25)</a></li>
     
@@ -444,7 +444,7 @@
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (45)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (46)</a></li>
     
 </ul>
     </section>
@@ -547,6 +547,8 @@
     
     <a href="/tags/evernote/">Evernote</a>
     
+    <a href="/tags/feign/">feign</a>
+    
     <a href="/tags/filter/">filter</a>
     
     <a href="/tags/fizzbuzz/">fizzbuzz</a>
@@ -585,7 +587,11 @@
     
     <a href="/tags/hypervisor/">Hypervisor</a>
     
+    <a href="/tags/idea/">IDEA</a>
+    
     <a href="/tags/index/">index</a>
+    
+    <a href="/tags/intellij/">Intellij</a>
     
     <a href="/tags/iot/">IOT</a>
     
@@ -671,6 +677,8 @@
     
     <a href="/tags/opencv/">OpenCV</a>
     
+    <a href="/tags/openfeign/">OpenFeign</a>
+    
     <a href="/tags/os/">OS</a>
     
     <a href="/tags/osv/">OSv</a>
@@ -698,6 +706,8 @@
     <a href="/tags/playframework/">playframework</a>
     
     <a href="/tags/playscala/">playscala</a>
+    
+    <a href="/tags/post/">POST</a>
     
     <a href="/tags/power-apps/">Power Apps</a>
     
