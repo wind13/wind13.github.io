@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tailwind on 世风十三学堂</title>
+    <link>/tags/tailwind/</link>
+    <description>Recent content in Tailwind on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 01 Apr 2023 03:52:27 +0000</lastBuildDate><atom:link href="/tags/tailwind/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>前端UI的江湖风云</title>
+      <link>/post/2023/front-end-ui-hero-before-after/</link>
+      <pubDate>Sat, 01 Apr 2023 03:52:27 +0000</pubDate>
+      
+      <guid>/post/2023/front-end-ui-hero-before-after/</guid>
+      <description>前端技术已经发展到什么阶段了？百花齐放，同时也逐渐分出了高下吧，回看前端技术的演化，还真是春秋战国 + 三国群英啊！ 相关文章很多，就不多言了。 现如今连 React 都似乎成了垂垂老者，从性能和未来潜力来看，我会关注这两个： Solid.js Svelte.js 如果非要用 React 技术栈，我也会用 Preact.js 这个轻量级方案。 当然 Vue.js 也很优秀，与 React 不同</description>
+    </item>
+    
+  </channel>
+</rss>
