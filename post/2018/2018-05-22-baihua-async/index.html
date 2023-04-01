@@ -24,6 +24,7 @@
 
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
+    <meta name="MediaType" content="application/octet-stream">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="/kityminder/mindmap.css?_=1416390706100" type="text/css" rel="stylesheet" />
@@ -115,7 +116,7 @@
 <p>那么多线程的方式呢？可以想象就是一个摊儿或店，但雇佣了多个人，有人收钱，有人煮米线，但每个服务仍是同步单线程状态、即初级机器人水平，也就是说只专心做手头的事，做完一件事才做下一件事。</p>
 <p>单线程异步回调的方式呢？就好像来了一个灵活的（机器）人（主线程），他来操作其他机器人，他接受请求，再命令其他专业的机器人做，然后他就又接受下一个请求……</p>
 <p>这样就需要其他机器人是可以接受命令的，而煮米线机器人原来的方法是同步的，如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">/**
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">/**
 </span><span style="color:#75715e"> * 口味: 大/小份,
 </span><span style="color:#75715e"> * 份量: 麻辣/三鲜
 </span><span style="color:#75715e"> */</span>
@@ -124,7 +125,7 @@
   <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">米线</span><span style="color:#960050;background-color:#1e0010">；</span>
 }
 </code></pre></div><p>新的方法：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">/**
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">/**
 </span><span style="color:#75715e"> * 需求参数：
 </span><span style="color:#75715e"> *  口味: 大/小份,
 </span><span style="color:#75715e"> *  份量: 麻辣/三鲜
@@ -139,14 +140,14 @@
   <span style="color:#a6e22e">煮米线</span>({<span style="color:#a6e22e">口味</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">某口味</span>, <span style="color:#a6e22e">份量</span><span style="color:#f92672">:</span><span style="color:#a6e22e">某份量</span>}, <span style="color:#a6e22e">服务员</span>.<span style="color:#a6e22e">上菜</span>);
 }
 </code></pre></div><p>调用方法：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">下单米线</span>(<span style="color:#a6e22e">三鲜</span>, <span style="color:#a6e22e">小份</span>, <span style="color:#a6e22e">服务员A</span>);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">下单米线</span>(<span style="color:#a6e22e">三鲜</span>, <span style="color:#a6e22e">小份</span>, <span style="color:#a6e22e">服务员A</span>);
 <span style="color:#a6e22e">下单米线</span>(<span style="color:#a6e22e">麻辣</span>, <span style="color:#a6e22e">大份</span>, <span style="color:#a6e22e">服务员B</span>);
 </code></pre></div><p>运行结果：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">    <span style="color:#a6e22e">煮一碗</span> <span style="color:#a6e22e">小份</span> <span style="color:#a6e22e">三鲜</span> <span style="color:#a6e22e">米线</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">    <span style="color:#a6e22e">煮一碗</span> <span style="color:#a6e22e">小份</span> <span style="color:#a6e22e">三鲜</span> <span style="color:#a6e22e">米线</span>
     <span style="color:#a6e22e">服务员A</span> <span style="color:#a6e22e">端给客人</span>
 </code></pre></div><h2 id="for-循环也要注意阻塞问题">For 循环也要注意阻塞问题</h2>
 <h3 id="以下示例证明-for-循环较大时会是个阻塞操作同时证明-nodejs-是单线程的">以下示例证明 for 循环较大时会是个阻塞操作，同时证明 Node.js 是单线程的。</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">proveSingleBlock</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">proveSingleBlock</span>() {
   <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">start</span> <span style="color:#f92672">=</span> Date.<span style="color:#a6e22e">now</span>();<span style="color:#75715e">//获取当前时间戳
 </span><span style="color:#75715e"></span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">n</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
   <span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span> () {
@@ -161,7 +162,7 @@
   }, <span style="color:#ae81ff">2000</span>);
 }
 </code></pre></div><p>我们在 Node.js 中就需要将如下的耗时较长的 for 循环：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">block</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">block</span>() {
   <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">n</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
   <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> ; <span style="color:#a6e22e">x</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1000000000</span>; <span style="color:#a6e22e">x</span><span style="color:#f92672">++</span>){
     <span style="color:#75715e">//do something crazy.
@@ -170,7 +171,7 @@
   <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">n</span>;
 }
 </code></pre></div><p>改写为下面这样：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">noblock</span>(<span style="color:#a6e22e">callback</span>) {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">noblock</span>(<span style="color:#a6e22e">callback</span>) {
   <span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span> () {
     <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">r</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">block</span>();
     <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">callback</span>) { <span style="color:#a6e22e">callback</span>(<span style="color:#a6e22e">r</span>); }
@@ -178,7 +179,7 @@
   <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;async&#39;</span>;
 }
 </code></pre></div><p>测试代码如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">start</span> <span style="color:#f92672">=</span> Date.<span style="color:#a6e22e">now</span>();<span style="color:#75715e">//获取当前时间戳
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">start</span> <span style="color:#f92672">=</span> Date.<span style="color:#a6e22e">now</span>();<span style="color:#75715e">//获取当前时间戳
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e">// block version
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">block</span>());
@@ -196,7 +197,7 @@
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Main end:&#39;</span>);
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Date.<span style="color:#a6e22e">now</span>() <span style="color:#f92672">-</span> <span style="color:#a6e22e">start</span>);
 </code></pre></div><h2 id="使用-es6-的-promise-实现异步">使用 ES6 的 Promise 实现异步</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#link&#39;</span>).<span style="color:#a6e22e">click</span>(<span style="color:#66d9ef">function</span> () {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#link&#39;</span>).<span style="color:#a6e22e">click</span>(<span style="color:#66d9ef">function</span> () {
     <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Enter&#34;</span>);
     <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">asyncFunct</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Promise(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">resolve</span>, <span style="color:#a6e22e">reject</span>) {
         <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#link&#39;</span>).<span style="color:#a6e22e">animate</span>({ <span style="color:#a6e22e">width</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">200</span> }, <span style="color:#ae81ff">2000</span>, <span style="color:#66d9ef">function</span>() {
@@ -1100,7 +1101,7 @@
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2022 <a href="/">世风十三学堂 By 世风十三</a>.
+        &copy; 2023 <a href="/">世风十三学堂 By 世风十三</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

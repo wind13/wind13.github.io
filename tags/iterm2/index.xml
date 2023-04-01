@@ -5,11 +5,7 @@
     <link>/tags/iterm2/</link>
     <description>Recent content in iterm2 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    
-	<atom:link href="/tags/iterm2/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh-cn</language><atom:link href="/tags/iterm2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vim 使用思路、最佳实践再整理</title>
       <link>/post/2014/2014-04-30-vim-best-practices/</link>

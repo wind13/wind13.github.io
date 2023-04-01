@@ -5,11 +5,7 @@
     <link>/tags/play1/</link>
     <description>Recent content in play1 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    
-	<atom:link href="/tags/play1/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh-cn</language><atom:link href="/tags/play1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FunctionTest中如何取得session的值</title>
       <link>/post/2013/2013-12-13-functiontestsession/</link>

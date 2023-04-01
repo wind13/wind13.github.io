@@ -24,6 +24,7 @@
 
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
+    <meta name="MediaType" content="application/octet-stream">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="/kityminder/mindmap.css?_=1416390706100" type="text/css" rel="stylesheet" />
@@ -115,7 +116,7 @@
 <ul>
 <li>Global Keycloak Settings</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
   <span style="color:#f92672">&#34;realm&#34;</span>: <span style="color:#e6db74">&#34;master&#34;</span>,
   <span style="color:#f92672">&#34;auth-server-url&#34;</span>: <span style="color:#e6db74">&#34;http://47.105.174.14:8058/auth/&#34;</span>,
   <span style="color:#f92672">&#34;ssl-required&#34;</span>: <span style="color:#e6db74">&#34;external&#34;</span>,
@@ -124,13 +125,13 @@
 }
 </code></pre></div><h2 id="设置系统时区">设置系统时区</h2>
 <p>打开 【系统管理】-&gt;【Script Console 脚本命令行】运行下面的命令</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">System.setProperty<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;org.apache.commons.jelly.tags.fmt.timeZone&#39;</span>, <span style="color:#e6db74">&#39;Asia/Shanghai&#39;</span><span style="color:#f92672">)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">System.setProperty<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;org.apache.commons.jelly.tags.fmt.timeZone&#39;</span>, <span style="color:#e6db74">&#39;Asia/Shanghai&#39;</span><span style="color:#f92672">)</span>
 </code></pre></div><h2 id="ssh-pipeline-plugin">SSH Pipeline Plugin</h2>
 <ul>
 <li><a href="https://blog.csdn.net/qq_31977125/article/details/83861714">Jenkins pipeline 避免使用明文密码的方法</a></li>
 </ul>
 <h2 id="docker-in-docker-思路">Docker in Docker 思路</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">docker run -v
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">docker run -v
 docker socket
 docker run -d -u root --restart<span style="color:#f92672">=</span>always --name jenkins -p 8080:8080 -p 50000:50000 -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker  -v /home/ec2-user/jenkins_home:/var/jenkins_home jenkins/jenkins:latest
 </code></pre></div><h2 id="参考资料">参考资料</h2>
@@ -992,7 +993,7 @@ docker run -d -u root --restart<span style="color:#f92672">=</span>always --name
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2022 <a href="/">世风十三学堂 By 世风十三</a>.
+        &copy; 2023 <a href="/">世风十三学堂 By 世风十三</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

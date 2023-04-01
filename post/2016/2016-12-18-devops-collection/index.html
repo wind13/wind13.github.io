@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
+    <meta name="MediaType" content="application/octet-stream">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="/kityminder/mindmap.css?_=1416390706100" type="text/css" rel="stylesheet" />
@@ -125,14 +126,14 @@ docker-compose up -d</p>
 <p>当共享文件夹时，遇到报错：</p>
 </li>
 </ul>
-<pre><code>Vagrant was unable to mount VirtualBox shared folders. This is usually
+<pre tabindex="0"><code>Vagrant was unable to mount VirtualBox shared folders. This is usually
 because the filesystem &quot;vboxsf&quot; is not available.
 ...
 unknown filesystem type 'vboxsf'
 </code></pre><p>尝试运行此命令：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">vagrant plugin install vagrant-vbguest
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">vagrant plugin install vagrant-vbguest
 </code></pre></div><p>运行后解决了问题，下面是其他一些相关的命令，仅做备份：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">vagrant vbguest
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">vagrant vbguest
 vagrant plugin install vagrant-winnfsd
 </code></pre></div><ul>
 <li><a href="https://www.iamle.com/archives/2011.htmld">让Vagrant在Windwos下支持使用NFS/SMB共享文件夹从而解决目录共享IO缓慢的问题</a></li>
@@ -982,7 +983,7 @@ vagrant plugin install vagrant-winnfsd
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2022 <a href="/">世风十三学堂 By 世风十三</a>.
+        &copy; 2023 <a href="/">世风十三学堂 By 世风十三</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

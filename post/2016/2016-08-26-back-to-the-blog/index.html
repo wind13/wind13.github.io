@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
+    <meta name="MediaType" content="application/octet-stream">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="/kityminder/mindmap.css?_=1416390706100" type="text/css" rel="stylesheet" />
@@ -97,17 +98,17 @@
 <ul>
 <li>留言 duoshuo 报个 js 警告 warning，提示需要添加 data-thread-key，于是在 comments-providers/duoshuo 文件中添加了如下代码：</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ds-thread&#34;</span> <span style="color:#a6e22e">data-thread-key</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{page.id}}&#34;</span> <span style="color:#a6e22e">data-title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{page.title}}&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ds-thread&#34;</span> <span style="color:#a6e22e">data-thread-key</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{page.id}}&#34;</span> <span style="color:#a6e22e">data-title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{page.title}}&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
 </code></pre></div><ul>
 <li>另外，每次编译 jekyll 会报些 warning 警告：<code>A call to ‘\{\{ post_url /path/to/some/post }}</code> 之类的，一大堆，查看了这个<a href="https://talk.jekyllrb.com/t/jekyll-3-0-deprecation-a-call-to-post-url/1420">讨论</a>，想了一会才想到，是链接的问题，原来的链接要写 path，现在不需要了，直接就是 id 就可以了。</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#960050;background-color:#1e0010">\</span>{<span style="color:#960050;background-color:#1e0010">\</span>{ <span style="color:#a6e22e">post_url</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">devtech</span><span style="color:#f92672">/</span><span style="color:#a6e22e">git</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2013</span><span style="color:#f92672">-</span><span style="color:#ae81ff">12</span><span style="color:#f92672">-</span><span style="color:#ae81ff">23</span><span style="color:#f92672">-</span><span style="color:#a6e22e">oftenused</span> }}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#960050;background-color:#1e0010">\</span>{<span style="color:#960050;background-color:#1e0010">\</span>{ <span style="color:#a6e22e">post_url</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">devtech</span><span style="color:#f92672">/</span><span style="color:#a6e22e">git</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2013</span><span style="color:#f92672">-</span><span style="color:#ae81ff">12</span><span style="color:#f92672">-</span><span style="color:#ae81ff">23</span><span style="color:#f92672">-</span><span style="color:#a6e22e">oftenused</span> }}
 <span style="color:#75715e">// 修改为：
 </span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">\</span>{<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">%</span> <span style="color:#a6e22e">post_url</span> <span style="color:#ae81ff">2013</span><span style="color:#f92672">-</span><span style="color:#ae81ff">12</span><span style="color:#f92672">-</span><span style="color:#ae81ff">23</span><span style="color:#f92672">-</span><span style="color:#a6e22e">oftenused</span> <span style="color:#f92672">%</span>}
 </code></pre></div><ul>
 <li>再就是 atom.xml 和 rss.xml 在 jekyll 编译时报了两个 warning 警告如下，查了一下，把 nil 改为 null 就好了，详见 <a href="https://github.com/jekyll/jekyll/issues/2712">Issue #2712</a>。</li>
 </ul>
-<pre><code>Build Warning: Layout 'nil' requested in atom.xml does not exist.
+<pre tabindex="0"><code>Build Warning: Layout 'nil' requested in atom.xml does not exist.
 </code></pre><p>看来这回归也不容易啊~！</p>
 
         </div>
@@ -954,7 +955,7 @@
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2022 <a href="/">世风十三学堂 By 世风十三</a>.
+        &copy; 2023 <a href="/">世风十三学堂 By 世风十三</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

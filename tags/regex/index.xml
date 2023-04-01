@@ -5,11 +5,7 @@
     <link>/tags/regex/</link>
     <description>Recent content in Regex on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    
-	<atom:link href="/tags/regex/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh-cn</language><atom:link href="/tags/regex/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>/post/2013/2013-09-29-devlinks/</link>

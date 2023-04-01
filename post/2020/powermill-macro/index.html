@@ -24,6 +24,7 @@
 
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
+    <meta name="MediaType" content="application/octet-stream">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="/kityminder/mindmap.css?_=1416390706100" type="text/css" rel="stylesheet" />
@@ -108,7 +109,7 @@
 <!-- 软件下载：https://pan.baidu.com/s/1jnzZfToVzaclwTrXh2aeIQ 提取码：2770 大小：3.6G -->
 <h2 id="示例代码解读">示例代码解读</h2>
 <h3 id="简单的循环">简单的循环</h3>
-<pre><code class="language-mac" data-lang="mac">FOREACH Bottles IN {10,9,8,7,6,5,4,3,2,1}
+<pre tabindex="0"><code class="language-mac" data-lang="mac">FOREACH Bottles IN {10,9,8,7,6,5,4,3,2,1}
 </code></pre><blockquote>
 <p>直译：每个 Bottles 在 10~1 这段数字中</p>
 </blockquote>
@@ -116,7 +117,7 @@
 <p>意译：把 10~1 这些数字循环，用 Bottles 这个变量代表每一项，执行如下操作：</p>
 </blockquote>
 <h3 id="简单的修改文件夹文件">简单的修改文件夹文件</h3>
-<pre><code class="language-mac" data-lang="mac">DIALOGS MESSAGE OFF
+<pre tabindex="0"><code class="language-mac" data-lang="mac">DIALOGS MESSAGE OFF
 DIALOGS ERROR OFF
 STRING a= &quot;请输入主轴转速：&quot;
 int q= &quot;3000&quot;
@@ -126,7 +127,7 @@ FOREACH c IN folder('TOOLPATH') {
 }
 DIALOGS MESSAGE ON
 DIALOGS ERROR ON
-</code></pre><pre><code class="language-mac" data-lang="mac">FOREACH c IN folder('TOOLPATH') {
+</code></pre><pre tabindex="0"><code class="language-mac" data-lang="mac">FOREACH c IN folder('TOOLPATH') {
   EDIT PAR &quot;entity('toolpath',$c.name).SpindleSpeed.Value&quot; $q
 }
 </code></pre><blockquote>
@@ -135,7 +136,7 @@ DIALOGS ERROR ON
 <blockquote>
 <p>意译：</p>
 </blockquote>
-<pre><code class="language-mac" data-lang="mac">在文件夹 'TOOLPATH' 中循环，每一项用 c 这个变量代表， 执行如下操作 {
+<pre tabindex="0"><code class="language-mac" data-lang="mac">在文件夹 'TOOLPATH' 中循环，每一项用 c 这个变量代表， 执行如下操作 {
    编辑 PAR &quot;entity('toolpath', $c.name) 的 SpindleSpeed 的 Value 值 变为 $q 
   // 这里 $c.name 就是目录中每一项，通常是文件，文件的名称 name
 }
@@ -1005,7 +1006,7 @@ DIALOGS ERROR ON
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2022 <a href="/">世风十三学堂 By 世风十三</a>.
+        &copy; 2023 <a href="/">世风十三学堂 By 世风十三</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

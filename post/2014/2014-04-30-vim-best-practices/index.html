@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
+    <meta name="MediaType" content="application/octet-stream">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="/kityminder/mindmap.css?_=1416390706100" type="text/css" rel="stylesheet" />
@@ -101,7 +102,7 @@
 </li>
 <li>其次是 Vim 的插件管理，这里个人觉得比较好的有两种：Vundle 和 <a href="https://github.com/tpope/vim-pathogen">Pathogen</a>，我选择了 Pathogen，因为熟悉 git ，所以没什么压力，很自然也很喜欢这种方式。</li>
 <li>主要插件，目前使用 NERD_Tree、Vim-markdown、Vim-Mou、Vim-airline 等，<a href="https://github.com/wincent/Command-T">Command-T</a> 安装的时候出错（make: Nothing to be done for &lsquo;all&rsquo;.），今天 google 了一通，大概知道原因是因为系统的 ruby 版本和 vim 里面的 ruby 版本不一致导致编译 Command-T 与 vim 不能兼容使用，中间尝试重装了一两次，还会报出<a href="http://fantaxy025025.iteye.com/blog/1552009">这个错误</a> 或<a href="https://github.com/carlhuda/janus/issues/109">这个</a>
-<pre><code>Vim: Caught deadly signal SEGV
+<pre tabindex="0"><code>Vim: Caught deadly signal SEGV
 Vim: Finished.
 Segmentation fault
 </code></pre><ul>
@@ -118,7 +119,7 @@ Segmentation fault
 </li>
 </ul>
 </li>
-<li>Vim-airline 的颜色需要在.vimrc中设置：set t_Co=256，theme的更换可设置：let g:airline_theme=&quot;molokai&rdquo;</li>
+<li>Vim-airline 的颜色需要在.vimrc中设置：set t_Co=256，theme的更换可设置：let g:airline_theme=&ldquo;molokai&rdquo;</li>
 <li>一篇 Vim diff 比较文档的用法，<a href="https://www.ibm.com/developerworks/cn/linux/l-vimdiff/">技巧：Vimdiff 使用</a></li>
 <li>一些使用 Vim 进行 Scala 编程的参考文档：
 <ul>
@@ -984,7 +985,7 @@ Segmentation fault
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2022 <a href="/">世风十三学堂 By 世风十三</a>.
+        &copy; 2023 <a href="/">世风十三学堂 By 世风十三</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

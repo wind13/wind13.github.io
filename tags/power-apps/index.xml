@@ -6,11 +6,7 @@
     <description>Recent content in Power Apps on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 13 Sep 2021 22:18:22 +0800</lastBuildDate>
-    
-	<atom:link href="/tags/power-apps/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 13 Sep 2021 22:18:22 +0800</lastBuildDate><atom:link href="/tags/power-apps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>低代码开发的问题 Low Code Problems</title>
       <link>/post/2021/blog.low-code-problems/</link>

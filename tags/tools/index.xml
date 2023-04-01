@@ -5,11 +5,7 @@
     <link>/tags/tools/</link>
     <description>Recent content in tools on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    
-	<atom:link href="/tags/tools/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh-cn</language><atom:link href="/tags/tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UML tools of Mac OSX 苹果系统下的建模工具</title>
       <link>/post/2014/2014-03-27-uml-tools-of-mac-osx/</link>

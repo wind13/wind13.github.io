@@ -6,11 +6,7 @@
     <description>Recent content in Posts on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 15 Dec 2022 05:12:37 +0000</lastBuildDate>
-    
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 15 Dec 2022 05:12:37 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>大乔，王者荣耀真正的王者</title>
       <link>/post/2022/da-qiao-wang-zhe-rong-yao-de-wang-zhe/</link>
@@ -1133,7 +1129,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/post/2016/2016-08-28-clojure-learning/</guid>
-      <description>Clojure/Script 学习 layout: post title: &amp;ldquo;Clojure Learning&amp;rdquo; description: &amp;quot;&amp;rdquo; category: devtech/clojure tags: [clojure, GraphQL] RESTful Service Framework Luminus 综合 web 框架，其中（查看 Profiles 详细包含内容）包含 RESTful Services 的实现。 Immutant Web server Hiccup HTML Template Compojure API Sweet web apis with Compojure &amp;amp; Swagger Arachne is a full, highly modular web development framework for Clojure. It emphasizes ease, simplicity, and a solid, scalable design. Hoplon ClojureScript Web Framework，如果只做一些网页，不多的动态效果，特别是你的技术栈还没有加入 React，而是在用 jQuery</description>
+      <description>Clojure/Script 学习 layout: post title: &amp;ldquo;Clojure Learning&amp;rdquo; description: &amp;quot;&amp;quot; category: devtech/clojure tags: [clojure, GraphQL] RESTful Service Framework Luminus 综合 web 框架，其中（查看 Profiles 详细包含内容）包含 RESTful Services 的实现。 Immutant Web server Hiccup HTML Template Compojure API Sweet web apis with Compojure &amp;amp; Swagger Arachne is a full, highly modular web development framework for Clojure. It emphasizes ease, simplicity, and a solid, scalable design. Hoplon ClojureScript Web Framework，如果只做一些网页，不多的动态效果，特别是你的技术栈还没有加入 React，而是在用 jQuery</description>
     </item>
     
     <item>
@@ -1142,7 +1138,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/post/2016/2016-08-28-react-native-learning/</guid>
-      <description>React Native 相关学习 layout: post title: &amp;ldquo;React Native Learning&amp;rdquo; description: &amp;quot;&amp;rdquo; category: devtech/react tags: [react native] top: true React 相关 React 官网 Ant Design 蚂蚁金服ui库 Ant Design Pro 上手备忘录 Bi Sheng 转化 markdown 文档为静态单页面 React 应用 從零開始學 ReactJS React 中文文档 React 最佳实践——那些 React 没告诉你但很重要的事 基于 Jest + Enzyme 的 React 单元测试 How to debug Jest tests with VSCode react-motion React 动画效果库 redux-saga 实践总结 集成方案： React + Redux + RESTfulAPI React + Relay + GraphQL Rela</description>
+      <description>React Native 相关学习 layout: post title: &amp;ldquo;React Native Learning&amp;rdquo; description: &amp;quot;&amp;quot; category: devtech/react tags: [react native] top: true React 相关 React 官网 Ant Design 蚂蚁金服ui库 Ant Design Pro 上手备忘录 Bi Sheng 转化 markdown 文档为静态单页面 React 应用 從零開始學 ReactJS React 中文文档 React 最佳实践——那些 React 没告诉你但很重要的事 基于 Jest + Enzyme 的 React 单元测试 How to debug Jest tests with VSCode react-motion React 动画效果库 redux-saga 实践总结 集成方案： React + Redux + RESTfulAPI React + Relay + GraphQL Rela</description>
     </item>
     
     <item>
@@ -1169,7 +1165,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/post/2016/2016-11-08-learn-angular-v2/</guid>
-      <description>基础 I18n 官方文档如此{:target=&amp;rdquo;_blank&amp;rdquo;}，目前的解决方案似乎很麻烦。 Angular 2 Components: Inputs and Outputs{:target=&amp;rdquo;_blank&amp;rdquo;} The impure AsyncPipe{:target=&amp;rdquo;_blank&amp;rdquo;} Angular2 管道（pipes）{:target=&amp;rdquo;_blank&amp;rdquo;} [Angular 2] Build a select dropdown with *ngFor in Angular 2{:target=&amp;rdquo;_blank&amp;rdquo;} JavaScript Array Methods Reference{:target=&amp;rdquo;_blank&amp;rdquo;} JavaScript Modules: A Beginner’s Guide{:target=&amp;rdquo;_blank&amp;rdquo;} 问题</description>
+      <description>基础 I18n 官方文档如此{:target=&amp;quot;_blank&amp;quot;}，目前的解决方案似乎很麻烦。 Angular 2 Components: Inputs and Outputs{:target=&amp;quot;_blank&amp;quot;} The impure AsyncPipe{:target=&amp;quot;_blank&amp;quot;} Angular2 管道（pipes）{:target=&amp;quot;_blank&amp;quot;} [Angular 2] Build a select dropdown with *ngFor in Angular 2{:target=&amp;quot;_blank&amp;quot;} JavaScript Array Methods Reference{:target=&amp;quot;_blank&amp;quot;} JavaScript Modules: A Beginner’s Guide{:target=&amp;quot;_blank&amp;quot;} 问题</description>
     </item>
     
     <item>
@@ -1223,7 +1219,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/post/2013/2013-12-23-easyuiform/</guid>
-      <description>示例代码如下： $(&amp;#39;#ff&amp;#39;).form({ url:$(this).attr(&amp;#34;&amp;#34;action&amp;#34;&amp;#34;), onSubmit:function(){ return $(this).form(&amp;#39;validate&amp;#39;); }, success:function(data){ alert(data); } }); 其中url的值是取的form中的action属性，故需注意填写form的相应属性，当然也可以为&amp;rsquo;/controller_name/action_name&amp;rsquo;。</description>
+      <description>示例代码如下： $(&amp;#39;#ff&amp;#39;).form({ url:$(this).attr(&amp;#34;&amp;#34;action&amp;#34;&amp;#34;), onSubmit:function(){ return $(this).form(&amp;#39;validate&amp;#39;); }, success:function(data){ alert(data); } }); 其中url的值是取的form中的action属性，故需注意填写form的相应属性，当然也可以为&#39;/controller_name/action_name&#39;。</description>
     </item>
     
     <item>
@@ -1241,7 +1237,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/post/2016/2016-11-08-learn-ionic-v2/</guid>
-      <description>基础 ionic2文档整理 A Guide to Styling an Ionic 2 Application Tips &amp;amp; Tricks for Styling Ionic 2 Applications User-Selected Style Themes in an Ionic 2 Application Vonic简明教程（一）：起步{:target=&amp;rdquo;_blank&amp;rdquo;} SQLite plugin{:target=&amp;rdquo;_blank&amp;rdquo;} Cordova plugin NativeStorage{:target=&amp;rdquo;_blank&amp;rdquo;} Debugging Ionic 2 Apps in Chrome from Visual Studio Code{:target=&amp;rdquo;_blank&amp;rdquo;} Ionic 2 Conference Application{:target=&amp;rdquo;_blank&amp;rdquo;} Ionically Speaking{:target=&amp;rdquo;_blank&amp;rdquo;} 问题 I18n 官方文档如此{:target=&amp;rdquo;_blank&amp;rdquo;</description>
+      <description>基础 ionic2文档整理 A Guide to Styling an Ionic 2 Application Tips &amp;amp; Tricks for Styling Ionic 2 Applications User-Selected Style Themes in an Ionic 2 Application Vonic简明教程（一）：起步{:target=&amp;quot;_blank&amp;quot;} SQLite plugin{:target=&amp;quot;_blank&amp;quot;} Cordova plugin NativeStorage{:target=&amp;quot;_blank&amp;quot;} Debugging Ionic 2 Apps in Chrome from Visual Studio Code{:target=&amp;quot;_blank&amp;quot;} Ionic 2 Conference Application{:target=&amp;quot;_blank&amp;quot;} Ionically Speaking{:target=&amp;quot;_blank&amp;quot;} 问题 I18n 官方文档如此{:target=&amp;quot;_blank&amp;quot;}， 使用</description>
     </item>
     
     <item>
@@ -1250,7 +1246,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/post/2013/2013-12-24-jsframework/</guid>
-      <description>综合框架 arale.js{:target=&amp;rdquo;_blank&amp;rdquo;} 支付宝的前端基础类库 Arale 基于 SeaJS 和 jQuery 等，目前新构建 2.0 版本。 demo: 计算器{:target=&amp;rdquo;_blank&amp;rdquo;} KISSY{:target=&amp;rdquo;_blank&amp;rdquo;} 是由淘宝前端攻城师们发起创建的一个开源 JS 类库。 Ender.js{:target=&amp;rdquo;_blank&amp;rdquo;} - Ender is a full featured package manager for your browser. 作者 Dustin Diaz{:target=&amp;rdquo;_blank&amp;rdquo;} 模块加载框架 Javascript模块化 Seajs{:target=&amp;rdquo;_blank&amp;rdquo;} 由支付宝团队开源，基于（Co</description>
+      <description>综合框架 arale.js{:target=&amp;quot;_blank&amp;quot;} 支付宝的前端基础类库 Arale 基于 SeaJS 和 jQuery 等，目前新构建 2.0 版本。 demo: 计算器{:target=&amp;quot;_blank&amp;quot;} KISSY{:target=&amp;quot;_blank&amp;quot;} 是由淘宝前端攻城师们发起创建的一个开源 JS 类库。 Ender.js{:target=&amp;quot;_blank&amp;quot;} - Ender is a full featured package manager for your browser. 作者 Dustin Diaz{:target=&amp;quot;_blank&amp;quot;} 模块加载框架 Javascript模块化 Seajs{:target=&amp;quot;_blank&amp;quot;} 由支付宝团队开源，基于（Comm</description>
     </item>
     
     <item>

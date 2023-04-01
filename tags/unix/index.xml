@@ -6,11 +6,7 @@
     <description>Recent content in Unix on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 22 Feb 2020 04:19:46 +0800</lastBuildDate>
-    
-	<atom:link href="/tags/unix/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 22 Feb 2020 04:19:46 +0800</lastBuildDate><atom:link href="/tags/unix/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>操作系统全图谱树</title>
       <link>/post/2020/os-tree-map/</link>

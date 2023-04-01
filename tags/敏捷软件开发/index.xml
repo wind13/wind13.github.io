@@ -6,11 +6,7 @@
     <description>Recent content in 敏捷软件开发 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 23 Oct 2022 12:12:55 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/%E6%95%8F%E6%8D%B7%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 23 Oct 2022 12:12:55 +0000</lastBuildDate><atom:link href="/tags/%E6%95%8F%E6%8D%B7%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>遗留项目迁移的经验、策略和能力 Legacy System Renew</title>
       <link>/post/2022/legacy-system-renew/</link>

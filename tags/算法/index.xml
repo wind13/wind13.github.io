@@ -6,11 +6,7 @@
     <description>Recent content in 算法 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 22 Jun 2019 19:59:26 +0800</lastBuildDate>
-    
-	<atom:link href="/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 22 Jun 2019 19:59:26 +0800</lastBuildDate><atom:link href="/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>非局部均值滤波算法</title>
       <link>/post/2019/non-local-mean-filter/</link>

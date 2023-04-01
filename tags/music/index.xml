@@ -6,11 +6,7 @@
     <description>Recent content in music on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 25 Jan 2020 16:00:11 +0800</lastBuildDate>
-    
-	<atom:link href="/tags/music/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 25 Jan 2020 16:00:11 +0800</lastBuildDate><atom:link href="/tags/music/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Music Programming</title>
       <link>/post/2020/music-programming/</link>

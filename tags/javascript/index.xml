@@ -6,11 +6,7 @@
     <description>Recent content in javascript on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 10 Feb 2018 11:32:40 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 10 Feb 2018 11:32:40 +0000</lastBuildDate><atom:link href="/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SVG 相关学习</title>
       <link>/post/2018/2018-02-10-svg-%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0/</link>
@@ -35,7 +31,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/post/2013/2013-12-24-jsframework/</guid>
-      <description>综合框架 arale.js{:target=&amp;rdquo;_blank&amp;rdquo;} 支付宝的前端基础类库 Arale 基于 SeaJS 和 jQuery 等，目前新构建 2.0 版本。 demo: 计算器{:target=&amp;rdquo;_blank&amp;rdquo;} KISSY{:target=&amp;rdquo;_blank&amp;rdquo;} 是由淘宝前端攻城师们发起创建的一个开源 JS 类库。 Ender.js{:target=&amp;rdquo;_blank&amp;rdquo;} - Ender is a full featured package manager for your browser. 作者 Dustin Diaz{:target=&amp;rdquo;_blank&amp;rdquo;} 模块加载框架 Javascript模块化 Seajs{:target=&amp;rdquo;_blank&amp;rdquo;} 由支付宝团队开源，基于（Co</description>
+      <description>综合框架 arale.js{:target=&amp;quot;_blank&amp;quot;} 支付宝的前端基础类库 Arale 基于 SeaJS 和 jQuery 等，目前新构建 2.0 版本。 demo: 计算器{:target=&amp;quot;_blank&amp;quot;} KISSY{:target=&amp;quot;_blank&amp;quot;} 是由淘宝前端攻城师们发起创建的一个开源 JS 类库。 Ender.js{:target=&amp;quot;_blank&amp;quot;} - Ender is a full featured package manager for your browser. 作者 Dustin Diaz{:target=&amp;quot;_blank&amp;quot;} 模块加载框架 Javascript模块化 Seajs{:target=&amp;quot;_blank&amp;quot;} 由支付宝团队开源，基于（Comm</description>
     </item>
     
   </channel>

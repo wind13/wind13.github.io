@@ -24,6 +24,7 @@
 
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
+    <meta name="MediaType" content="application/octet-stream">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="/kityminder/mindmap.css?_=1416390706100" type="text/css" rel="stylesheet" />
@@ -142,7 +143,7 @@
 <li>首先要关闭 Hyper-V 后重启电脑，如果关闭后安装还出错，提示跟 Hyper-V，说明没关闭干净，参考 <a href="https://www.jianshu.com/p/2e3429d45aea">Windows 10 RS4 无法完全关闭Hyper-V导致Virtual Box 虚拟机</a> 一文的方法，重点是<a href="https://www.microsoft.com/en-us/download/details.aspx?id=53337">下载工具</a>并运行<code>DG_Readiness_Tool_v3.4.ps1 -Disable</code>。</li>
 <li>其后安装 Docker-Toolbox 后，在命令行中运行 <code>docker-machine create default</code> 创建虚拟机。</li>
 <li>然后运行 <code>docker images</code> 看是否正常，如果出现类似这样的错误：
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">error during connect: Get http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.40/images/json: open //./pipe/docker_engine: The system cannot find the file specified. In the default daemon configuration on Windows, the docker client must be run elevated to connect. This error may also indicate that the docker daemon is not running.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">error during connect: Get http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.40/images/json: open //./pipe/docker_engine: The system cannot find the file specified. In the default daemon configuration on Windows, the docker client must be run elevated to connect. This error may also indicate that the docker daemon is not running.
 </code></pre></div></li>
 <li>则需要执行 <code>docker-machine env default</code> 后根据提示执行： <code>eval $(&quot;D:\docker\docker-machine.exe&quot; env default)</code> 即可。</li>
 <li>再次测试 <code>docker-machine env default</code> ，应该可以正常了。</li>
@@ -170,7 +171,7 @@
 <h3 id="docker-网络">Docker 网络</h3>
 <p>强烈建议大家将容器加入自定义的 Docker 网络来连接多个容器，而不是使用 &ndash;link 参数。</p>
 <h4 id="创建一个新的-docker-网络">创建一个新的 Docker 网络</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker network create -d bridge my-net
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker network create -d bridge my-net
 </code></pre></div><h2 id="docker-命令">docker 命令</h2>
 <p>使用 COPY 指令，源文件的各种元数据都会保留。比如读、写、执行权限、文件变更时间等。这个特性对于镜像定制很有用。特别是构建相关文件都在使用 Git 进行管理的时候。</p>
 <p>docker主命令不要用后台运行，容器就是为了主进程而存在的，主进程退出，容器就失去了存在的意义，从而退出。正确的做法是直接执行 nginx 可执行文件，并且要求以前台形式运行。比如：</p>
@@ -190,18 +191,18 @@
 <p>镜像服务被称为<strong>加速器</strong>。常见的有 <a href="https://cr.console.aliyun.com/#/accelerator">阿里云加速器</a>、<a href="https://www.daocloud.io/mirror#accelerator-doc">DaoCloud 加速器</a> 等。</p>
 <p>国内也有一些云服务商提供类似于 Docker Hub 的公开服务。比如 <a href="https://hub.tenxcloud.com/">时速云镜像仓库</a>、<a href="https://c.163.com/hub#/m/library/">网易云镜像服务</a>、<a href="https://hub.daocloud.io/">DaoCloud 镜像市场</a>、<a href="https://cr.console.aliyun.com">阿里云镜像库</a> 等。</p>
 <h2 id="docker-编译一个-dockerfile">docker 编译一个 Dockerfile</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker build -t friendlyhello .
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker build -t friendlyhello .
 </code></pre></div><h2 id="列出系统中的所有镜像">列出系统中的所有镜像：</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker images
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker images
 
 REPOSITORY            TAG                 IMAGE ID
 friendlyhello         latest              326387cea398
 </code></pre></div><h2 id="删除所有虚悬镜像">删除所有虚悬镜像：</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker image prune
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker image prune
 </code></pre></div><h2 id="删除所有无主的数据卷">删除所有无主的数据卷：</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker volume prune
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker volume prune
 </code></pre></div><h2 id="删除本地镜像">删除本地镜像：</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker image rm <span style="color:#f92672">[</span>选项<span style="color:#f92672">]</span> &lt;镜像1&gt; <span style="color:#f92672">[</span>&lt;镜像2&gt; ...<span style="color:#f92672">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker image rm <span style="color:#f92672">[</span>选项<span style="color:#f92672">]</span> &lt;镜像1&gt; <span style="color:#f92672">[</span>&lt;镜像2&gt; ...<span style="color:#f92672">]</span>
 
 <span style="color:#75715e"># 删除所有仓库名为 redis 的镜像</span>
 docker image rm <span style="color:#66d9ef">$(</span>docker image ls -q redis<span style="color:#66d9ef">)</span>
@@ -209,32 +210,32 @@ docker image rm <span style="color:#66d9ef">$(</span>docker image ls -q redis<sp
 <span style="color:#75715e"># 删除所有在 mongo:3.2 之前的镜像</span>
 docker image rm <span style="color:#66d9ef">$(</span>docker image ls -q -f before<span style="color:#f92672">=</span>mongo:3.2<span style="color:#66d9ef">)</span>
 </code></pre></div><h2 id="查看镜像的历史记录">查看镜像的历史记录</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker history ubuntu:latest
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker history ubuntu:latest
 </code></pre></div><h2 id="在某个端口映射下启动该镜像">在某个端口映射下启动该镜像：</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run -p 4000:80 friendlyhello
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run -it --rm ubuntu:16.04 bash
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run -p 4000:80 friendlyhello
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run -it --rm ubuntu:16.04 bash
 </code></pre></div><ul>
 <li>-i：交互；</li>
 <li>-t：终端；</li>
 <li>&ndash;rm 容器退出后将其删除；</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 用 nginx 镜像启动一个容器，命名为 webserver，并且映射了 80 端口</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># 用 nginx 镜像启动一个容器，命名为 webserver，并且映射了 80 端口</span>
 docker run --name webserver -d -p 80:80 nginx
 </code></pre></div><h2 id="查看映射端口配置">查看映射端口配置</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker port webserver
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker port webserver
 </code></pre></div><h2 id="进入某个运行中的容器-bash">进入某个运行中的容器 bash</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker exec -it webserver bash
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker exec -it webserver bash
 </code></pre></div><h2 id="查看镜像容器数据卷所占用的空间">查看镜像、容器、数据卷所占用的空间</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker system df
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker system df
 </code></pre></div><h2 id="列出系统中启动的容器">列出系统中启动的容器：</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker container ls
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker container ls
 
 CONTAINER ID        IMAGE               COMMAND             CREATED
 1fa4ab2cf395        friendlyhello       <span style="color:#e6db74">&#34;python app.py&#34;</span>     <span style="color:#ae81ff">28</span> seconds ago
 </code></pre></div><h2 id="关闭某个容器">关闭某个容器：</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker container stop 1fa4ab2cf395
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker container stop 1fa4ab2cf395
 </code></pre></div><h2 id="services">Services</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker stack ls                                            <span style="color:#75715e"># List stacks or apps</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker stack ls                                            <span style="color:#75715e"># List stacks or apps</span>
 docker stack deploy -c &lt;composefile&gt; &lt;appname&gt;  <span style="color:#75715e"># Run the specified Compose file</span>
 docker service ls                 <span style="color:#75715e"># List running services associated with an app</span>
 docker service ps &lt;service&gt;                  <span style="color:#75715e"># List tasks associated with an app</span>
@@ -243,7 +244,7 @@ docker container ls -q                                      <span style="color:#
 docker stack rm &lt;appname&gt;                             <span style="color:#75715e"># Tear down an application</span>
 docker swarm leave --force      <span style="color:#75715e"># Take down a single node swarm from the manager</span>
 </code></pre></div><h2 id="docker-命令帮助">docker 命令帮助</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Commands:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Commands:
     attach    Attach to a running container                 <span style="color:#75715e"># 当前 shell 下 attach 连接指定运行镜像</span>
     build     Build an image from a Dockerfile              <span style="color:#75715e"># 通过 Dockerfile 定制镜像</span>
     commit    Create a new image from a container<span style="color:#e6db74">&#39;s changes # 提交当前容器为新的镜像
@@ -305,7 +306,7 @@ docker swarm leave --force      <span style="color:#75715e"># Take down a single
 </ul>
 <h3 id="docker-machine-项目">Docker Machine 项目</h3>
 <p>在多种平台上快速安装 Docker 环境，在 macOS 上安装 xhyve 虚拟机支持：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">brew install docker-machine-driver-xhyve
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">brew install docker-machine-driver-xhyve
 </code></pre></div><h3 id="docker-swarm-mode-项目">Docker Swarm mode 项目</h3>
 <p>提供 Docker 容器集群服务，具有容错能力的去中心化设计、内置服务发现、负载均衡、路由网格、动态伸缩、滚动更新、安全传输等。与 Kubernetes 是竞争关系。</p>
 <ul>
@@ -315,14 +316,14 @@ docker swarm leave --force      <span style="color:#75715e"># Take down a single
 </ul>
 <h4 id="使用方法">使用方法：</h4>
 <h5 id="初始化一个-swarm-集群">初始化一个 Swarm 集群：</h5>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker swarm init --advertise-addr 192.168.99.100
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker swarm init --advertise-addr 192.168.99.100
 
 Swarm initialized: current node <span style="color:#f92672">(</span>7t2kqs1cmbw3r54921y9ofdcu<span style="color:#f92672">)</span> is now a manager.
 </code></pre></div><p>To add a worker to this swarm, run the following command:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker swarm join --token SWMTKN-1-4l54p60fpaumw188uk5yea8l3z0sd80q6ydiav0e8r12w5cog1-8i70bpp0wtxggiemi2wx63f3g 192.168.99.100:2377
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker swarm join --token SWMTKN-1-4l54p60fpaumw188uk5yea8l3z0sd80q6ydiav0e8r12w5cog1-8i70bpp0wtxggiemi2wx63f3g 192.168.99.100:2377
 </code></pre></div><p>To add a manager to this swarm, run &lsquo;docker swarm join-token manager&rsquo; and follow the instructions.</p>
 <h6 id="添加一个虚拟机后加入此-swarm-遇到如下报错">添加一个虚拟机后，加入此 swarm 遇到如下报错：</h6>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Error response from daemon: rpc error: code <span style="color:#f92672">=</span> Unavailable desc <span style="color:#f92672">=</span> grpc: the connection is unavailable
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Error response from daemon: rpc error: code <span style="color:#f92672">=</span> Unavailable desc <span style="color:#f92672">=</span> grpc: the connection is unavailable
 </code></pre></div><h2 id="kubernetes">Kubernetes</h2>
 <p>Kubernetes 是 Google 团队发起的开源项目，它的目标是管理跨多个主机的容器，提供基本的部署，维护以及运用伸缩，主要实现语言为 Go 语言。</p>
 <p><code>Kubernetes</code> 实际上是一个希腊词κυβερνήτης，意思是”船的舵手”。 在这个意义上， Kubernetes 对于 Docker (集装箱船)倒是挺般配的。</p>
@@ -346,11 +347,11 @@ Swarm initialized: current node <span style="color:#f92672">(</span>7t2kqs1cmbw3
 <li><a href="https://blog.csdn.net/gezhonglei2007/article/details/51541580">Docker-Toolbox常见问题解决方案</a></li>
 </ul>
 <h3 id="重启docker主机">重启Docker主机</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker-machine restart default
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker-machine restart default
 </code></pre></div><h3 id="docker-compose-up-遇到-windows-named-pipe-errorcode-2-问题"><code>docker-compose up</code> 遇到 <code>Windows named pipe error:(code: 2)</code> 问题</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker-machine env
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker-machine env
 </code></pre></div><p>然后依照提示执行类似：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">eval <span style="color:#66d9ef">$(</span><span style="color:#e6db74">&#34;C:\Program Files\Docker Toolbox\docker-machine.exe&#34;</span> env<span style="color:#66d9ef">)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">eval <span style="color:#66d9ef">$(</span><span style="color:#e6db74">&#34;C:\Program Files\Docker Toolbox\docker-machine.exe&#34;</span> env<span style="color:#66d9ef">)</span>
 </code></pre></div><p>再执行 <code>docker-compose up</code> 即可。</p>
 
         </div>
@@ -1197,7 +1198,7 @@ Swarm initialized: current node <span style="color:#f92672">(</span>7t2kqs1cmbw3
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2022 <a href="/">世风十三学堂 By 世风十三</a>.
+        &copy; 2023 <a href="/">世风十三学堂 By 世风十三</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

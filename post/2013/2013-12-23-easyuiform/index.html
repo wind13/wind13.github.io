@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
+    <meta name="MediaType" content="application/octet-stream">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="/kityminder/mindmap.css?_=1416390706100" type="text/css" rel="stylesheet" />
@@ -91,7 +92,7 @@
         
         <div class="post-content">
             <p>示例代码如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">	$<span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">&#39;#</span>ff<span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">form</span><span style="color:#f92672">({</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">	$<span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">&#39;#</span>ff<span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">form</span><span style="color:#f92672">({</span>
 	    url<span style="color:#f92672">:</span>$<span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">).</span><span style="color:#a6e22e">attr</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;&#34;</span>action<span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">),</span>
 	    onSubmit<span style="color:#f92672">:</span>function<span style="color:#f92672">(){</span>
 	        <span style="color:#66d9ef">return</span> $<span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">).</span><span style="color:#a6e22e">form</span><span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">&#39;</span>validate<span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">);</span>
@@ -100,7 +101,7 @@
 	        alert<span style="color:#f92672">(</span>data<span style="color:#f92672">);</span>
 	    <span style="color:#f92672">}</span>
 	<span style="color:#f92672">});</span>
-</code></pre></div><p>其中url的值是取的form中的action属性，故需注意填写form的相应属性，当然也可以为&rsquo;/controller_name/action_name&rsquo;。</p>
+</code></pre></div><p>其中url的值是取的form中的action属性，故需注意填写form的相应属性，当然也可以为'/controller_name/action_name'。</p>
 
         </div>
 
@@ -946,7 +947,7 @@
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2022 <a href="/">世风十三学堂 By 世风十三</a>.
+        &copy; 2023 <a href="/">世风十三学堂 By 世风十三</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

@@ -1,2477 +1,1445 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/categories/</loc>
     <lastmod>2022-12-15T05:12:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/</loc>
     <lastmod>2022-12-15T05:12:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/</loc>
     <lastmod>2022-12-15T05:12:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/</loc>
     <lastmod>2022-12-15T05:12:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%A4%A7%E4%B9%94/</loc>
     <lastmod>2022-12-15T05:12:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2022/da-qiao-wang-zhe-rong-yao-de-wang-zhe/</loc>
     <lastmod>2022-12-15T05:12:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/</loc>
     <lastmod>2022-12-15T05:12:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%89%8B%E6%B8%B8/</loc>
     <lastmod>2022-12-15T05:12:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2022-12-15T05:12:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2022-12-15T05:12:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/</loc>
     <lastmod>2022-12-15T05:12:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E8%85%BE%E8%AE%AF/</loc>
     <lastmod>2022-12-15T05:12:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/feign/</loc>
     <lastmod>2022-10-30T13:22:47+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/idea/</loc>
     <lastmod>2022-10-30T13:22:47+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/intellij/</loc>
     <lastmod>2022-10-30T13:22:47+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/java/</loc>
     <lastmod>2022-10-30T13:22:47+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/openfeign/</loc>
     <lastmod>2022-10-30T13:22:47+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/post/</loc>
     <lastmod>2022-10-30T13:22:47+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2022/solve-feign-multipart-mixed-post-request-400-error/</loc>
     <lastmod>2022-10-30T13:22:47+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/tdd/</loc>
     <lastmod>2022-10-30T13:22:47+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/</loc>
     <lastmod>2022-10-30T13:22:47+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2022-10-30T13:22:47+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%95%8F%E6%8D%B7%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2022-10-23T12:12:55+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
     <lastmod>2022-10-23T12:12:55+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E9%81%97%E7%95%99%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2022-10-23T12:12:55+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2022/legacy-system-renew/</loc>
     <lastmod>2022-10-23T12:12:55+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/smartide/</loc>
     <lastmod>2022-07-05T03:16:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2022/try-smartide/</loc>
     <lastmod>2022-07-05T03:16:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/vscode/</loc>
     <lastmod>2022-07-05T03:16:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</loc>
     <lastmod>2022-07-05T03:16:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/low-code/</loc>
     <lastmod>2022-06-08T21:34:51+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/power-platform/</loc>
     <lastmod>2022-06-08T21:34:51+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/powerapps/</loc>
     <lastmod>2022-06-08T21:34:51+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E4%BD%8E%E4%BB%A3%E7%A0%81/</loc>
     <lastmod>2022-06-08T21:34:51+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2022/low-code-analogy/</loc>
     <lastmod>2022-06-08T21:34:51+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/</loc>
     <lastmod>2022-06-08T21:34:51+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/editor/</loc>
     <lastmod>2022-05-07T16:39:30+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/emacs/</loc>
     <lastmod>2022-05-07T16:39:30+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/spacemacs/</loc>
     <lastmod>2022-05-07T16:39:30+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/vim/</loc>
     <lastmod>2022-05-07T16:39:30+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/vimac/</loc>
     <lastmod>2022-05-07T16:39:30+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/vimium/</loc>
     <lastmod>2022-05-07T16:39:30+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2022/which-editor-you-are-using/</loc>
     <lastmod>2022-05-07T16:39:30+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%BC%96%E8%BE%91%E5%99%A8/</loc>
     <lastmod>2022-05-07T16:39:30+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/aws/</loc>
     <lastmod>2022-02-09T21:30:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/azure/</loc>
     <lastmod>2022-02-09T21:30:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/config/</loc>
     <lastmod>2022-02-09T21:30:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/nodejs/</loc>
     <lastmod>2022-02-09T21:30:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2022/nodejs-secure-config/</loc>
     <lastmod>2022-02-09T21:30:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/secure/</loc>
     <lastmod>2022-02-09T21:30:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/sops/</loc>
     <lastmod>2022-02-09T21:30:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/kpi/</loc>
     <lastmod>2022-02-06T04:47:11+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/toc/</loc>
     <lastmod>2022-02-06T04:47:11+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2022/develop-team-problem/</loc>
     <lastmod>2022-02-06T04:47:11+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2022-02-06T04:47:11+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/</loc>
     <lastmod>2022-02-06T04:47:11+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/canvas-app/</loc>
     <lastmod>2022-01-15T19:51:10+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/dataverse/</loc>
     <lastmod>2022-01-15T19:51:10+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/jamstack/</loc>
     <lastmod>2022-01-15T19:51:10+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/model-driven-app/</loc>
     <lastmod>2022-01-15T19:51:10+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/web-resources/</loc>
     <lastmod>2022-01-15T19:51:10+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2022/powerplatform-jamstack/</loc>
     <lastmod>2022-01-15T19:51:10+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/chkdsk/</loc>
     <lastmod>2022-01-09T12:23:45+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/macos/</loc>
     <lastmod>2022-01-09T12:23:45+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/mounty/</loc>
     <lastmod>2022-01-09T12:23:45+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/ntfs/</loc>
     <lastmod>2022-01-09T12:23:45+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/seagate/</loc>
     <lastmod>2022-01-09T12:23:45+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2022/do-not-use-mounty-disk-data-recovery/</loc>
     <lastmod>2022-01-09T12:23:45+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D/</loc>
     <lastmod>2022-01-09T12:23:45+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/silo/</loc>
     <lastmod>2021-11-20T17:02:32+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%9B%A2%E9%98%9F%E6%95%88%E8%83%BD/</loc>
     <lastmod>2021-11-20T17:02:32+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</loc>
     <lastmod>2021-11-20T17:02:32+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%BA%A6%E9%87%8F%E6%8C%87%E6%A0%87/</loc>
     <lastmod>2021-11-20T17:02:32+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2021/note-of-right-measurement/</loc>
     <lastmod>2021-11-20T17:02:32+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E8%B0%B7%E4%BB%93/</loc>
     <lastmod>2021-11-20T17:02:32+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/power-apps/</loc>
     <lastmod>2021-09-13T22:18:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2021/blog.low-code-problems/</loc>
     <lastmod>2021-09-13T22:18:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/blitz/</loc>
     <lastmod>2021-08-21T12:29:07+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2021/nodejs-fullstack-solution/</loc>
     <lastmod>2021-08-21T12:29:07+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/redwood/</loc>
     <lastmod>2021-08-21T12:29:07+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/page/</loc>
     <lastmod>2021-04-24T09:05:05+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/page/recommend/</loc>
     <lastmod>2021-04-24T09:05:05+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/code/</loc>
     <lastmod>2021-03-24T11:37:15+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2021/blog.digital-garden/</loc>
     <lastmod>2021-03-24T11:37:15+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/digital-garden/</loc>
     <lastmod>2021-03-24T11:37:15+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/egghead/</loc>
     <lastmod>2021-03-24T11:37:15+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/para/</loc>
     <lastmod>2021-03-24T11:37:15+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/second-brain/</loc>
     <lastmod>2021-03-24T11:37:15+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/chado.js/</loc>
     <lastmod>2021-03-18T17:34:44+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2021/blog.collaboration-contract-tests/</loc>
     <lastmod>2021-03-18T17:34:44+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/pact.io/</loc>
     <lastmod>2021-03-18T17:34:44+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%B5%8B%E8%AF%95%E9%87%91%E5%AD%97%E5%A1%94/</loc>
     <lastmod>2021-03-18T17:34:44+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2021-03-18T17:34:44+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/docker/</loc>
     <lastmod>2021-02-19T16:51:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/gitlab/</loc>
     <lastmod>2021-02-19T16:51:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/webpack/</loc>
     <lastmod>2021-02-19T16:51:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2021-02-19T16:51:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2021/learn-front-end-engineer/</loc>
     <lastmod>2021-02-19T16:51:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%B7%A5%E7%A8%8B%E5%8C%96/</loc>
     <lastmod>2021-02-19T16:51:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/ray-dalio/</loc>
     <lastmod>2021-02-16T11:08:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E4%BA%BA%E7%94%9F/</loc>
     <lastmod>2021-02-16T11:08:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%8E%9F%E5%88%99/</loc>
     <lastmod>2021-02-16T11:08:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%A4%A7%E8%87%AA%E7%84%B6/</loc>
     <lastmod>2021-02-16T11:08:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2021-02-16T11:08:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2021/learn.principles/</loc>
     <lastmod>2021-02-16T11:08:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%91%9E%E8%BE%BE%E5%88%A9%E6%AC%A7/</loc>
     <lastmod>2021-02-16T11:08:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%97%9B%E8%8B%A6/</loc>
     <lastmod>2021-02-16T11:08:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/element3/</loc>
     <lastmod>2021-02-07T09:48:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/elementui/</loc>
     <lastmod>2021-02-07T09:48:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/vue3/</loc>
     <lastmod>2021-02-07T09:48:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2021/element3-tdd-thinking/</loc>
     <lastmod>2021-02-07T09:48:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%8E%98%E9%87%91/</loc>
     <lastmod>2021-02-07T09:48:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%B5%8B%E8%AF%95%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2021-02-07T09:48:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E8%8A%B1%E6%9E%9C%E5%B1%B1%E6%8A%80%E6%9C%AF%E5%9B%A2%E9%98%9F/</loc>
     <lastmod>2021-02-07T09:48:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E9%87%8D%E6%9E%84/</loc>
     <lastmod>2021-02-07T09:48:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%90%B4%E5%86%9B/</loc>
     <lastmod>2021-01-17T09:00:12+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2021/wujun-horizons/</loc>
     <lastmod>2021-01-17T09:00:12+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%B7%B4%E8%8F%B2%E7%89%B9/</loc>
     <lastmod>2021-01-17T09:00:12+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%BE%97%E5%88%B0app/</loc>
     <lastmod>2021-01-17T09:00:12+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%8A%95%E8%B5%84/</loc>
     <lastmod>2021-01-17T09:00:12+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%99%BA%E6%85%A7/</loc>
     <lastmod>2021-01-17T09:00:12+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E8%A7%81%E8%AF%86/</loc>
     <lastmod>2021-01-17T09:00:12+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E8%BF%90%E6%B0%94/</loc>
     <lastmod>2021-01-17T09:00:12+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2021/fogg-behavior-model-stop-procratinating/</loc>
     <lastmod>2021-01-16T14:05:52+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%8B%96%E5%BB%B6%E7%97%87/</loc>
     <lastmod>2021-01-16T14:05:52+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/</loc>
     <lastmod>2021-01-16T14:05:52+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E8%87%AA%E5%BE%8B/</loc>
     <lastmod>2021-01-16T14:05:52+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/dendron/</loc>
     <lastmod>2021-01-03T11:24:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/evernote/</loc>
     <lastmod>2021-01-03T11:24:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/hexo/</loc>
     <lastmod>2021-01-03T11:24:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/hugo/</loc>
     <lastmod>2021-01-03T11:24:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/pain-text/</loc>
     <lastmod>2021-01-03T11:24:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/word%E6%96%87%E6%A1%A3/</loc>
     <lastmod>2021-01-03T11:24:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2021-01-03T11:24:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%9F%B3%E5%A2%A8/</loc>
     <lastmod>2021-01-03T11:24:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%BA%AF%E6%96%87%E6%9C%AC/</loc>
     <lastmod>2021-01-03T11:24:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2021/ultimate-pkm-solution-dendron/</loc>
     <lastmod>2021-01-03T11:24:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/angular/</loc>
     <lastmod>2020-12-28T16:49:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/react/</loc>
     <lastmod>2020-12-28T16:49:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/react-native/</loc>
     <lastmod>2020-12-28T16:49:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/typescript/</loc>
     <lastmod>2020-12-28T16:49:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/unit-test/</loc>
     <lastmod>2020-12-28T16:49:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/new-solutions/</loc>
     <lastmod>2020-12-28T16:49:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/implementation-patterns-learn/</loc>
     <lastmod>2020-12-05T23:12:40+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2020-12-05T23:12:40+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/access/</loc>
     <lastmod>2020-11-25T09:57:44+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/datavers/</loc>
     <lastmod>2020-11-25T09:57:44+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/feeling-powerapps/</loc>
     <lastmod>2020-11-25T09:57:44+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%BE%AE%E8%BD%AF/</loc>
     <lastmod>2020-11-25T09:57:44+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E4%BA%B2%E5%AD%90%E6%95%99%E8%82%B2/</loc>
     <lastmod>2020-10-13T09:23:23+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/education-leadership/</loc>
     <lastmod>2020-10-13T09:23:23+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%85%AC%E5%8F%B8%E7%AE%A1%E7%90%86/</loc>
     <lastmod>2020-10-13T09:23:23+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E9%A2%86%E5%AF%BC%E5%8A%9B/</loc>
     <lastmod>2020-10-13T09:23:23+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2021/blog.airtest-learning/</loc>
     <lastmod>2020-10-11T13:48:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/android-%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2020-10-11T13:48:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E9%9B%B7%E7%94%B5%E6%A8%A1%E6%8B%9F%E5%99%A8/</loc>
     <lastmod>2020-10-11T13:48:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/devops/</loc>
     <lastmod>2020-10-10T09:31:01+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/jenkins/</loc>
     <lastmod>2020-10-10T09:31:01+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/jenkins-learning/</loc>
     <lastmod>2020-10-10T09:31:01+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/multibranch/</loc>
     <lastmod>2020-10-10T09:31:01+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/pipeline/</loc>
     <lastmod>2020-10-10T09:31:01+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%B3%BB%E7%BB%9F%E6%97%B6%E5%8C%BA/</loc>
     <lastmod>2020-10-10T09:31:01+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/app/</loc>
     <lastmod>2020-09-11T12:26:55+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2021/blog.product-owner-important/</loc>
     <lastmod>2020-09-11T12:26:55+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/</loc>
     <lastmod>2020-09-11T12:26:55+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%BC%A0%E5%B0%8F%E9%BE%99/</loc>
     <lastmod>2020-09-11T12:26:55+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%BF%AB%E5%88%80%E9%9D%92%E8%A1%A3/</loc>
     <lastmod>2020-09-11T12:26:55+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%B1%A0%E5%BB%BA%E5%BC%BA/</loc>
     <lastmod>2020-09-11T12:26:55+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/clojure/</loc>
     <lastmod>2020-09-08T22:50:16+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/elixir/</loc>
     <lastmod>2020-09-08T22:50:16+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/erlang/</loc>
     <lastmod>2020-09-08T22:50:16+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/learn-elixir/</loc>
     <lastmod>2020-09-08T22:50:16+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/ruby/</loc>
     <lastmod>2020-09-08T22:50:16+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%AD%A3%E5%BF%B5%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2020-08-30T17:43:29+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/mindfulness-programming/</loc>
     <lastmod>2020-08-30T17:43:29+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%9F%A5%E8%AF%86%E6%98%9F%E7%90%83/</loc>
     <lastmod>2020-08-30T17:43:29+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/mind-wish-woo/</loc>
     <lastmod>2020-08-30T17:21:32+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E8%BF%BD%E6%B1%82/</loc>
     <lastmod>2020-08-30T17:21:32+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%A8%8A%E7%99%BB/</loc>
     <lastmod>2020-08-15T11:23:47+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%AC%AC3%E9%80%89%E6%8B%A9/</loc>
     <lastmod>2020-08-15T11:23:47+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A/</loc>
     <lastmod>2020-08-15T11:23:47+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/nonviolent-communication-thinking/</loc>
     <lastmod>2020-08-15T11:23:47+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/okr/</loc>
     <lastmod>2020-08-12T17:00:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/manage-system/</loc>
     <lastmod>2020-08-12T17:00:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%88%B6%E7%BA%A6%E7%90%86%E8%AE%BA/</loc>
     <lastmod>2020-08-12T17:00:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%93%B6%E9%A2%88/</loc>
     <lastmod>2020-08-12T17:00:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E4%BA%BA%E6%9C%88%E7%A5%9E%E8%AF%9D/</loc>
     <lastmod>2020-08-09T18:30:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%95%8F%E6%8D%B7/</loc>
     <lastmod>2020-08-09T18:30:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2020-08-09T18:30:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/software-develop-improve/</loc>
     <lastmod>2020-08-09T18:30:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E9%AB%98%E8%B4%A8%E9%87%8F/</loc>
     <lastmod>2020-08-09T18:30:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E4%B8%96%E9%A3%8E%E5%8D%81%E4%B8%89%E5%AD%A6%E5%A0%82/</loc>
     <lastmod>2020-08-09T11:02:19+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E4%BB%A5%E7%BB%88%E4%B8%BA%E5%A7%8B/</loc>
     <lastmod>2020-08-09T11:02:19+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%B7%A5%E7%A8%8B%E6%80%9D%E7%BB%B4/</loc>
     <lastmod>2020-08-09T11:02:19+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/team-ability.md/</loc>
     <lastmod>2020-08-09T11:02:19+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/ng/</loc>
     <lastmod>2020-07-28T11:17:13+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/nuxt/</loc>
     <lastmod>2020-07-28T11:17:13+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/umi/</loc>
     <lastmod>2020-07-28T11:17:13+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/umi-vs-nuxt-vs-ngalain/</loc>
     <lastmod>2020-07-28T11:17:13+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B/</loc>
     <lastmod>2020-07-28T11:17:13+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/iot/</loc>
     <lastmod>2020-07-25T22:09:48+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/mqtt/</loc>
     <lastmod>2020-07-25T22:09:48+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/python/</loc>
     <lastmod>2020-07-25T22:09:48+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/rust/</loc>
     <lastmod>2020-07-25T22:09:48+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/rust-in-iot/</loc>
     <lastmod>2020-07-25T22:09:48+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/neovim/</loc>
     <lastmod>2020-07-24T22:51:39+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/spacevim/</loc>
     <lastmod>2020-07-24T22:51:39+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/vi/</loc>
     <lastmod>2020-07-24T22:51:39+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/neovim-spacevim/</loc>
     <lastmod>2020-07-24T22:51:39+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/fizzbuzz/</loc>
     <lastmod>2020-07-16T12:26:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/fizz-buzz-revise/</loc>
     <lastmod>2020-07-16T12:26:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/git/</loc>
     <lastmod>2020-07-12T22:01:41+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/git-work/</loc>
     <lastmod>2020-07-12T22:01:41+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/</loc>
     <lastmod>2020-07-12T22:01:41+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%A4%BA%E6%84%8F%E5%9B%BE/</loc>
     <lastmod>2020-07-12T22:01:41+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2020-07-05T11:01:47+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%8E%8B%E9%98%B3%E6%98%8E/</loc>
     <lastmod>2020-07-05T11:01:47+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%BB%88%E8%BA%AB%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2020-07-05T11:01:47+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%BD%97%E8%83%96/</loc>
     <lastmod>2020-07-05T11:01:47+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/luojishiwei-2015-last/</loc>
     <lastmod>2020-07-05T11:01:47+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%BD%97%E8%BE%91%E6%80%9D%E7%BB%B4/</loc>
     <lastmod>2020-07-05T11:01:47+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/turn-the-ship-around/</loc>
     <lastmod>2020-07-04T13:26:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%AE%A1%E7%90%86%E6%80%9D%E6%83%B3/</loc>
     <lastmod>2020-07-04T13:26:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/beeui/</loc>
     <lastmod>2020-06-29T15:18:18+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/vant/</loc>
     <lastmod>2020-06-29T15:18:18+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/vue/</loc>
     <lastmod>2020-06-29T15:18:18+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/weapp/</loc>
     <lastmod>2020-06-29T15:18:18+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/weui/</loc>
     <lastmod>2020-06-29T15:18:18+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/wux/</loc>
     <lastmod>2020-06-29T15:18:18+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
     <lastmod>2020-06-29T15:18:18+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/weapp-framework/</loc>
     <lastmod>2020-06-29T15:18:18+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
     <lastmod>2020-06-29T15:18:18+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/iot-learn/</loc>
     <lastmod>2020-06-05T14:40:52+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/kafka/</loc>
     <lastmod>2020-06-05T14:40:52+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/sitewhere/</loc>
     <lastmod>2020-06-05T14:40:52+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%89%A9%E8%81%94%E7%BD%91/</loc>
     <lastmod>2020-06-05T14:40:52+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/capslock/</loc>
     <lastmod>2020-06-03T13:28:34+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/esc/</loc>
     <lastmod>2020-06-03T13:28:34+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/windows/</loc>
     <lastmod>2020-06-03T13:28:34+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/my-windows-dev-env/</loc>
     <lastmod>2020-06-03T13:28:34+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/dubbo/</loc>
     <lastmod>2020-06-02T21:28:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/grpc/</loc>
     <lastmod>2020-06-02T21:28:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/json/</loc>
     <lastmod>2020-06-02T21:28:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/rpc/</loc>
     <lastmod>2020-06-02T21:28:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/learn-rpc/</loc>
     <lastmod>2020-06-02T21:28:33+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/google/</loc>
     <lastmod>2020-05-30T11:56:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/redefine-company-summary/</loc>
     <lastmod>2020-05-30T11:56:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%88%9B%E6%84%8F%E7%B2%BE%E8%8B%B1/</loc>
     <lastmod>2020-05-30T11:56:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%88%9B%E6%96%B0/</loc>
     <lastmod>2020-05-30T11:56:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%B2%B3%E9%A9%AC/</loc>
     <lastmod>2020-05-30T11:56:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E8%B0%B7%E6%AD%8C/</loc>
     <lastmod>2020-05-30T11:56:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/</loc>
     <lastmod>2020-05-24T11:25:06+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</loc>
     <lastmod>2020-05-24T11:25:06+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/business-optimize/</loc>
     <lastmod>2020-05-24T11:25:06+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%80%9D%E7%BB%B4%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2020-05-19T10:11:29+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/thinking-to-text/</loc>
     <lastmod>2020-05-19T10:11:29+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/okr-thinking/</loc>
     <lastmod>2020-03-26T10:08:34+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%8C%A0%E5%BF%83/</loc>
     <lastmod>2020-03-05T08:32:16+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%B7%A5%E4%BD%9C%E5%AE%A4/</loc>
     <lastmod>2020-03-05T08:32:16+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%BF%83%E6%99%BA%E6%AE%8B%E7%96%BE/</loc>
     <lastmod>2020-03-05T08:32:16+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%89%8B%E6%9C%BA/</loc>
     <lastmod>2020-03-05T08:32:16+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%A8%8A%E7%99%BB%E8%AF%BB%E4%B9%A6/</loc>
     <lastmod>2020-03-05T08:32:16+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/fdds-deep-work-rules/</loc>
     <lastmod>2020-03-05T08:32:16+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%B7%B1%E5%BA%A6%E5%B7%A5%E4%BD%9C/</loc>
     <lastmod>2020-03-05T08:32:16+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%86%B5%E5%A2%9E/</loc>
     <lastmod>2020-03-05T08:32:16+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%A2%8E%E7%89%87/</loc>
     <lastmod>2020-03-05T08:32:16+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/macro/</loc>
     <lastmod>2020-03-04T12:04:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/powermill/</loc>
     <lastmod>2020-03-04T12:04:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/powermill-macro/</loc>
     <lastmod>2020-03-04T12:04:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%AE%8F%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2020-03-04T12:04:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%95%B0%E6%8E%A7%E5%8A%A0%E5%B7%A5/</loc>
     <lastmod>2020-03-04T12:04:22+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/page/painting/</loc>
     <lastmod>2020-03-03T14:21:05+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%9B%A2%E9%98%9F%E6%95%88%E7%8E%87/</loc>
     <lastmod>2020-02-23T16:58:46+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%97%8B%E8%BD%AE%E7%BA%BF/</loc>
     <lastmod>2020-02-23T16:58:46+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%9C%80%E9%80%9F%E9%99%8D%E7%BA%BF/</loc>
     <lastmod>2020-02-23T16:58:46+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/speed-most/</loc>
     <lastmod>2020-02-23T16:58:46+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E4%BC%81%E4%B8%9A%E7%AE%A1%E7%90%86/</loc>
     <lastmod>2020-02-23T14:41:45+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/what-we-can-do-in-crisis/</loc>
     <lastmod>2020-02-23T14:41:45+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85/</loc>
     <lastmod>2020-02-23T14:41:45+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/freebsd/</loc>
     <lastmod>2020-02-22T04:19:46+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/linux/</loc>
     <lastmod>2020-02-22T04:19:46+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/os/</loc>
     <lastmod>2020-02-22T04:19:46+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/unix/</loc>
     <lastmod>2020-02-22T04:19:46+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/os-tree-map/</loc>
     <lastmod>2020-02-22T04:19:46+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E4%B9%A0%E6%83%AF/</loc>
     <lastmod>2019-09-29T09:23:43+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%87%8F%E8%82%A5/</loc>
     <lastmod>2019-09-29T09:23:43+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%9D%9A%E6%8C%81/</loc>
     <lastmod>2019-09-29T09:23:43+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%BE%97%E5%88%B0/</loc>
     <lastmod>2019-09-29T09:23:43+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/dedao-keep-habit/</loc>
     <lastmod>2019-09-29T09:23:43+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E8%88%92%E9%80%82%E5%8C%BA/</loc>
     <lastmod>2019-09-29T09:23:43+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/boook/</loc>
     <lastmod>2019-11-03T02:06:45+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E4%B9%A6%E7%B1%8D/</loc>
     <lastmod>2019-11-03T02:06:45+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/books-for-com/</loc>
     <lastmod>2019-11-03T02:06:45+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%96%AB%E6%83%85/</loc>
     <lastmod>2019-11-03T02:06:45+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
     <lastmod>2020-02-02T16:33:26+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%88%98%E9%82%A6/</loc>
     <lastmod>2020-02-02T16:33:26+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%9B%B4%E6%A3%8B/</loc>
     <lastmod>2020-02-02T16:33:26+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/weiqi-game-computer/</loc>
     <lastmod>2020-02-02T16:33:26+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
     <lastmod>2020-02-02T16:33:26+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/hugo-mind-map/</loc>
     <lastmod>2020-01-31T13:40:37+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/mindmap/</loc>
     <lastmod>2020-01-31T13:40:37+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/</loc>
     <lastmod>2020-01-31T13:40:37+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E8%84%91%E5%9B%BE/</loc>
     <lastmod>2020-01-31T13:40:37+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/gtd/</loc>
     <lastmod>2020-01-29T11:32:02+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/wunder-list-to-do-thinking/</loc>
     <lastmod>2020-01-29T11:32:02+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%95%AA%E8%8C%84%E5%B7%A5%E4%BD%9C%E6%B3%95/</loc>
     <lastmod>2020-01-29T11:32:02+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%BA%B3%E5%BE%B7%E6%8B%89/</loc>
     <lastmod>2020-01-29T11:32:02+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/midi/</loc>
     <lastmod>2020-01-25T16:00:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/mido/</loc>
     <lastmod>2020-01-25T16:00:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/music/</loc>
     <lastmod>2020-01-25T16:00:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/music-programming/</loc>
     <lastmod>2020-01-25T16:00:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/piano/</loc>
     <lastmod>2020-01-25T16:00:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/chinese-new-year-wish/</loc>
     <lastmod>2020-01-23T17:18:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%98%A5%E8%8A%82/</loc>
     <lastmod>2020-01-23T17:18:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%A5%9D%E6%84%BF/</loc>
     <lastmod>2020-01-23T17:18:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%B3%96%E5%B0%BF%E7%97%85/</loc>
     <lastmod>2020-01-23T17:18:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E9%98%BF%E5%B0%94%E8%8C%A8%E6%B5%B7%E9%BB%98%E7%97%87/</loc>
     <lastmod>2020-01-23T17:18:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/manjaro/</loc>
     <lastmod>2019-12-20T19:39:26+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2019/manjaro-os-usage/</loc>
     <lastmod>2019-12-20T19:39:26+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2019/move-blog-from-github-to-gitee/</loc>
     <lastmod>2019-12-14T17:00:57+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/page/about/</loc>
     <lastmod>2019-12-12T19:40:05+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/markdown/</loc>
     <lastmod>2019-10-15T06:28:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/ppt/</loc>
     <lastmod>2019-10-15T06:28:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/text/</loc>
     <lastmod>2019-10-15T06:28:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/</loc>
     <lastmod>2019-10-15T06:28:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%94%98%E7%89%B9%E5%9B%BE/</loc>
     <lastmod>2019-10-15T06:28:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2019/power-of-plain-text/</loc>
     <lastmod>2019-10-15T06:28:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/love/</loc>
     <lastmod>2019-10-07T03:27:59+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2019/2019-10-07-how-to-love-like-code/</loc>
     <lastmod>2019-10-07T03:27:59+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/golang/</loc>
     <lastmod>2019-10-03T11:11:58+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/julia/</loc>
     <lastmod>2019-10-03T11:11:58+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2019/2019-10-04-rust-learning/</loc>
     <lastmod>2019-10-03T11:11:58+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/vlang/</loc>
     <lastmod>2019-10-03T11:11:58+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2019/julia-learning/</loc>
     <lastmod>2019-10-03T10:09:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/learn/</loc>
     <lastmod>2019-10-02T04:44:22+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2019/2019-10-02-programming-dao/</loc>
     <lastmod>2019-10-02T04:44:22+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/game/</loc>
     <lastmod>2019-10-30T02:11:51+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2020/good-bye-wang-zhe-rong-yao/</loc>
     <lastmod>2019-10-30T02:11:51+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/</loc>
     <lastmod>2019-10-30T02:11:51+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2019-09-18T03:27:21+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2019/2019-09-18-functional-programming-ref/</loc>
     <lastmod>2019-09-18T03:27:21+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/</loc>
     <lastmod>2019-06-22T19:59:26+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2019-06-22T19:59:26+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2019/non-local-mean-filter/</loc>
     <lastmod>2019-06-22T19:59:26+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-09-25-daily-note-20180925/</loc>
     <lastmod>2018-09-25T08:25:28+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/netlify/</loc>
     <lastmod>2018-09-22T01:53:04+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-09-22-daily-note-20180922/</loc>
     <lastmod>2018-09-22T01:53:04+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/blog/</loc>
     <lastmod>2018-09-21T10:25:07+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/next/</loc>
     <lastmod>2018-09-21T10:25:07+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-09-21-daily-note-20180921/</loc>
     <lastmod>2018-09-21T10:25:07+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%81%B5%E6%84%9F/</loc>
     <lastmod>2018-09-21T10:25:07+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E4%BA%92%E8%81%94%E7%BD%91%E6%97%B6%E4%BB%A3/</loc>
     <lastmod>2018-09-21T05:58:46+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-09-21-book-comprehend/</loc>
     <lastmod>2018-09-21T05:58:46+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%BE%97%E5%88%B0-app/</loc>
     <lastmod>2018-09-21T05:58:46+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%95%99%E8%82%B2/</loc>
     <lastmod>2018-09-21T05:58:46+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-09-19-go-learn/</loc>
     <lastmod>2018-09-19T09:56:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/graphql/</loc>
     <lastmod>2018-09-05T09:35:11+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/redux/</loc>
     <lastmod>2018-09-05T09:35:11+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-09-05-goodbye-redux-cn/</loc>
     <lastmod>2018-09-05T09:35:11+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-08-27-vscode-vi-segment-chinese-punctuation/</loc>
     <lastmod>2018-08-27T10:03:51+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-07-31-how-to-focus-work/</loc>
     <lastmod>2018-07-31T10:19:58+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-07-26-ant-design-react-note/</loc>
     <lastmod>2018-07-26T09:22:11+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/antd/</loc>
     <lastmod>2018-07-26T09:22:11+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/react-route/</loc>
     <lastmod>2018-07-26T09:22:11+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/ocr/</loc>
     <lastmod>2018-06-02T18:39:26+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/ocr-develop-research/</loc>
     <lastmod>2018-06-02T18:39:26+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/opencv/</loc>
     <lastmod>2018-06-02T18:39:26+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/es6/</loc>
     <lastmod>2018-05-22T10:37:39+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/node.js/</loc>
     <lastmod>2018-05-22T10:37:39+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/promise/</loc>
     <lastmod>2018-05-22T10:37:39+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
     <lastmod>2018-05-22T10:37:39+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%BC%82%E6%AD%A5/</loc>
     <lastmod>2018-05-22T10:37:39+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-05-22-baihua-async/</loc>
     <lastmod>2018-05-22T10:37:39+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-05-03-graphql-learning/</loc>
     <lastmod>2018-05-03T08:55:25+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E4%B8%80%E5%9B%BE/</loc>
     <lastmod>2018-03-29T03:07:53+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-03-29-one-pic-know-antd/</loc>
     <lastmod>2018-03-29T03:07:53+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-03-24-2018-3-23-singer-feeling/</loc>
     <lastmod>2018-03-24T07:49:23+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%8D%8E%E6%99%A8%E5%AE%87/</loc>
     <lastmod>2018-03-24T07:49:23+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%B4%94%E5%81%A5/</loc>
     <lastmod>2018-03-24T07:49:23+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%AD%8C%E6%89%8B/</loc>
     <lastmod>2018-03-24T07:49:23+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/hypervisor/</loc>
     <lastmod>2018-03-05T04:12:25+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/osv/</loc>
     <lastmod>2018-03-05T04:12:25+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-03-05-why-new-os-zh/</loc>
     <lastmod>2018-03-05T04:12:25+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/graphic/</loc>
     <lastmod>2018-02-10T11:32:40+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/javascript/</loc>
     <lastmod>2018-02-10T11:32:40+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/svg/</loc>
     <lastmod>2018-02-10T11:32:40+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-02-10-svg-%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2018-02-10T11:32:40+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-02-07-docker-%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2018-02-07T16:18:26+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/computer-vision/</loc>
     <lastmod>2018-02-07T16:17:34+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-02-07-computer-vision-%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2018-02-07T16:17:34+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/npm/</loc>
     <lastmod>2018-01-24T16:54:08+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/package-lock.json/</loc>
     <lastmod>2018-01-24T16:54:08+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/yarn/</loc>
     <lastmod>2018-01-24T16:54:08+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/yarn.lock/</loc>
     <lastmod>2018-01-24T16:54:08+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-01-24-two-lock-file-confuse/</loc>
     <lastmod>2018-01-24T16:54:08+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/games/</loc>
     <lastmod>2018-01-23T16:46:21+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-01-23-fight-with-digital-games/</loc>
     <lastmod>2018-01-23T16:46:21+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%B3%A8%E6%84%8F%E5%8A%9B/</loc>
     <lastmod>2018-01-23T16:46:21+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2018/2018-01-23-2018-first-shot/</loc>
     <lastmod>2018-01-23T16:19:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/wind13/</loc>
     <lastmod>2017-12-31T16:19:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2017/2017-12-31-index/</loc>
     <lastmod>2017-12-31T16:19:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/playframework/</loc>
     <lastmod>2017-02-23T16:19:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2017/2017-02-23-play2x-compare-play1x/</loc>
     <lastmod>2017-02-23T16:19:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/architect/</loc>
     <lastmod>2017-02-05T16:19:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2017/2017-02-05-tech-select/</loc>
     <lastmod>2017-02-05T16:19:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/vimrc/</loc>
     <lastmod>2014-05-13T19:34:21+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2014/2014-05-13-my-macosx-vimrc/</loc>
     <lastmod>2014-05-13T19:34:21+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-23-gitoftenused/</loc>
     <lastmod>2013-12-23T16:00:11+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-09-29-devlinks/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-09-29-learnself/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-09-29-tocterm/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-10-26-betterplan/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-10-26-funnyclassic/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-13-cacheremovetime/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-13-cmdchinese/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-13-deepqa/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-13-detachedpersist/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-13-hqlcount1/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-13-longpolling/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-13-operationnotpermitted/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-13-validateandsave/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-23-computerqa/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-23-confession214/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-23-coolguydontlookatexplosions/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-23-dateformat/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-23-gitolitesetup/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-23-htmlunitdriverjavascript/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-23-tracinterfacecustomization/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-28-playwebsites/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-29-c461mubuntusteup/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2014/2014-01-09-modulemissing/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2014/2014-01-09-ubuntueclipse/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2014/2014-02-26-hqlleftjoin/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2014/2014-03-31-project-site/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-08-28-clojure-learning/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-08-28-react-native-learning/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-09-20-4clojure-problem-solving/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/android/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-08-28-android-learing/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-11-08-learn-angular-v2/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2019/angular-learning/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/angularjs/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-08-26-back-to-the-blog/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/backbone/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2014/2014-05-07-migrate-backbone-to/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/baidu/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/ci/cd/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/code-review/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/db/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-12-18-db-collection/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-12-18-devops-collection/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/devtech-java/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/easyui/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-23-easyuiform/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/essay/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/filter/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/framework/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-13-functiontestsession/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/getxml/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/https/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/index/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-11-08-learn-ionic-v2/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/iterm2/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-24-jsframework/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-23-version1.2.5/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/mac-osx/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/mapapi/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/module/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/namespace/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/pc/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-13-multiproject/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2014/2014-02-26-playqaindex/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/play1/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/play1x/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/play2-scala/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2014/2014-04-25-play2x-links/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/playscala/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/qa/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/re-natal/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-09-03-re-natal-error-list/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/regex/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/session/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/sql/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/ssh/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/static-site/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/tomorrow-theme/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/tools/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/uml/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2014/2014-03-27-uml-tools-of-mac-osx/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2014/2014-04-30-vim-best-practices/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/xml/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-09-26-xmlawarenamespace/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-13-xmldomainbug/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-09-18-data-time/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-09-20-the-art-of-clear-thinking-note/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-09-18-system-working/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-09-29-stopsshgoplay/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-09-10-code-review-thinking/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E5%88%9D%E5%AD%A6%E8%80%85/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-13-filterallcontroller/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2013/2013-12-13-userhttps/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/archives/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-09-24-weixin-xiao-cheng-xu/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/search/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-08-26-collection-box/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%9D%8E%E7%AC%91%E6%9D%A5/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-10-08-time-friend-lixiaolai/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-09-06-note-lixiaolai/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-08-28-baidu-map-usage/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E7%B3%BB%E7%BB%9F/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2016/2016-09-16-shortcut-for-programming-beginners/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2014/2014-01-09-otherrelay/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/post/2014/2014-01-10-luojisiwei/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E8%B4%A2%E5%AF%8C%E8%87%AA%E7%94%B1/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/%E8%BF%87%E6%BB%A4%E5%99%A8/</loc>
   </url>
-  
 </urlset>

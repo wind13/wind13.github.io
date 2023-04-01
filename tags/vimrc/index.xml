@@ -6,11 +6,7 @@
     <description>Recent content in vimrc on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 13 May 2014 19:34:21 +0800</lastBuildDate>
-    
-	<atom:link href="/tags/vimrc/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 13 May 2014 19:34:21 +0800</lastBuildDate><atom:link href="/tags/vimrc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我的Mac OS X 开发环境和 Vim 的设置</title>
       <link>/post/2014/2014-05-13-my-macosx-vimrc/</link>

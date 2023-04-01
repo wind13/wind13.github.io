@@ -5,11 +5,7 @@
     <link>/tags/baidu/</link>
     <description>Recent content in baidu on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    
-	<atom:link href="/tags/baidu/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh-cn</language><atom:link href="/tags/baidu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>百度地图使用相关资料</title>
       <link>/post/2016/2016-08-28-baidu-map-usage/</link>

@@ -6,11 +6,7 @@
     <description>Recent content in Manjaro on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 20 Dec 2019 19:39:26 +0800</lastBuildDate>
-    
-	<atom:link href="/tags/manjaro/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 20 Dec 2019 19:39:26 +0800</lastBuildDate><atom:link href="/tags/manjaro/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Manjaro 系统使用记录</title>
       <link>/post/2019/manjaro-os-usage/</link>

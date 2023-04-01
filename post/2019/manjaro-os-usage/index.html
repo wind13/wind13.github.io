@@ -24,6 +24,7 @@
 
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
+    <meta name="MediaType" content="application/octet-stream">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="/kityminder/mindmap.css?_=1416390706100" type="text/css" rel="stylesheet" />
@@ -113,7 +114,7 @@
 <li>系统默认安装的是 Firefox ，我还正暗自窃喜，因为前段时间正好把习惯从谷歌浏览器转换到 Firefox 了，毕竟国内使用 Firefox 还是方便些，装插件同步什么的都方便，而且现在 Firefox 底层使用 Rust 重写了感觉上是不是也能更快些？人的喜好就是这样容易受心理作用的，不必深究，喜欢就好，可是没想到同步也用不了，分中国版和国际版，默认装的是国际版，再安装中国版感觉还挺麻烦的……主要是想完美切换中英图标什么的，参考这篇文章就可以找到办法了，需要去修改 <code>/usr/share/applications/firefox.desktop</code> 文件的内容。</li>
 </ul>
 <h2 id="备份系统">备份系统：</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># rsync -aAXv --exclude={&#34;/dev/*&#34;,&#34;/proc/*&#34;,&#34;/sys/*&#34;,&#34;/tmp/*&#34;,&#34;/run/*&#34;,&#34;/mnt/*&#34;,&#34;/media/*&#34;,&#34;/lost+found&#34;} / /path/to/backup/folder</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># rsync -aAXv --exclude={&#34;/dev/*&#34;,&#34;/proc/*&#34;,&#34;/sys/*&#34;,&#34;/tmp/*&#34;,&#34;/run/*&#34;,&#34;/mnt/*&#34;,&#34;/media/*&#34;,&#34;/lost+found&#34;} / /path/to/backup/folder</span>
 </code></pre></div><h2 id="尝试-dwm-窗口管理">尝试 dwm 窗口管理：</h2>
 <ul>
 <li><a href="https://opensourceforu.com/2012/03/tiling-window-managers-getting-started-with-dwm/">Tiling Window Managers, and Getting Started with dwm</a></li>
@@ -121,8 +122,8 @@
 <p>体验了一下，感觉上手还是有些门槛的，很多基本的操作不熟悉，短时间还没法上手工作。</p>
 <h3 id="添加一个新桌面才能登录使用">添加一个新桌面才能登录使用</h3>
 <p>需要添加一个 dwm.desktop 的文件，具体可参考<a href="https://forum.manjaro.org/t/dwm-not-showing-in-lightdm-log-in-screen/98220">Dwm not showing in lightdm log in screen</a>，这样重启后，在登录系统的界面左下角会有下拉菜单选择，选择 dwm 即可进入了，不过基本上需要配置好才能使用，新手完全玩儿不起来，需要学会怎么用，再就是要一点点配置到自己舒服才能顺畅使用。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo vi /usr/share/xsessions/dwm.desktop
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Desktop Entry]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo vi /usr/share/xsessions/dwm.desktop
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Desktop Entry]</span>
 <span style="color:#a6e22e">Encoding</span><span style="color:#f92672">=</span><span style="color:#e6db74">UTF-8</span>
 <span style="color:#a6e22e">Name</span><span style="color:#f92672">=</span><span style="color:#e6db74">dwm</span>
 <span style="color:#a6e22e">Comment</span><span style="color:#f92672">=</span><span style="color:#e6db74">dwm window manager</span>
@@ -997,7 +998,7 @@
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2022 <a href="/">世风十三学堂 By 世风十三</a>.
+        &copy; 2023 <a href="/">世风十三学堂 By 世风十三</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

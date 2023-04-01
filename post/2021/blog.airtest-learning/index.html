@@ -24,6 +24,7 @@
 
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
+    <meta name="MediaType" content="application/octet-stream">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="/kityminder/mindmap.css?_=1416390706100" type="text/css" rel="stylesheet" />
@@ -107,9 +108,9 @@
 <p>通过 Airtest IDE 打包后的 apk 安装到雷电模拟器后，不能双击直接启动，需要在外部命令行操作，如下：</p>
 <h3 id="adb-方式">adb 方式</h3>
 <p>比如雷电模拟器，可找到安装目录，</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cd /d/leidian/LDPlayer4
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cd /d/leidian/LDPlayer4
 </code></pre></div><p>然后执行如下命令：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">./adb.exe shell am instrument -w com.netease.open.airbase/android.support.test.runner.AndroidJUnitRunner
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">./adb.exe shell am instrument -w com.netease.open.airbase/android.support.test.runner.AndroidJUnitRunner
 </code></pre></div><h3 id="airtest-project">Airtest Project</h3>
 <p>Airtest Project自定义启动器支持批量运行脚本，并兼容在AirtestIDE中使用</p>
 <p>Python v3.7.0 / Airtest: 1.1.1 / PocoUI: 1.0.78</p>
@@ -124,7 +125,7 @@
 <li>将一些公共参数和方法添加到全局变量中，在各业务脚本中无需声明，可直接使用，如语句超时时间 TIMEOUT，就在此进行统一设置;</li>
 <li>设置Airtest全局属性值，对所有脚本生效，如下所示:</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#a6e22e">ST.THRESHOLD</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">0.80 # 图像识别精确度阈值 [0,1]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#a6e22e">ST.THRESHOLD</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">0.80 # 图像识别精确度阈值 [0,1]</span>
 <span style="color:#a6e22e">ST.THRESHOLD_STRICT</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">0.85 # assert语句里图像识别时使用的高要求阈值 [0,1]</span>
 <span style="color:#a6e22e">ST.OPDELAY</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">1 # 每一步操作后等待多长时间再进行下一步操作</span>
 <span style="color:#a6e22e">ST.FIND_TIMEOUT</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">10 # 图像查找超时时间，默认为20s</span>
@@ -996,7 +997,7 @@
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2022 <a href="/">世风十三学堂 By 世风十三</a>.
+        &copy; 2023 <a href="/">世风十三学堂 By 世风十三</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

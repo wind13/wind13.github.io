@@ -5,11 +5,7 @@
     <link>/tags/android/</link>
     <description>Recent content in Android on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    
-	<atom:link href="/tags/android/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh-cn</language><atom:link href="/tags/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Android Learing</title>
       <link>/post/2016/2016-08-28-android-learing/</link>

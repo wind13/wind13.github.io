@@ -24,6 +24,7 @@
 
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
+    <meta name="MediaType" content="application/octet-stream">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="/kityminder/mindmap.css?_=1416390706100" type="text/css" rel="stylesheet" />
@@ -303,19 +304,19 @@
 <blockquote>
 <p>识别出对称性，把它清晰地表述出来，代码将更容易阅读。一旦阅读者理解了对称性所涵盖的某一半，他们就会很快地理解另外一半。</p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">process</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">process</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
   input<span style="color:#f92672">();</span>
   count<span style="color:#f92672">++;</span>
   output<span style="color:#f92672">();</span>
 <span style="color:#f92672">}</span>
 </code></pre></div><p>第二句跟前后两句不同，更加具体，不能和前后两句形成对称。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">process</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">process</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
   input<span style="color:#f92672">();</span>
   incrementCount<span style="color:#f92672">();</span>
   output<span style="color:#f92672">();</span>
 <span style="color:#f92672">}</span>
 </code></pre></div><p>还是不太好，input()和output()都是方法意图命名，而incrementCount()是实现方式命名，那么为什么要增加这个数值？</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">process</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">process</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
   input<span style="color:#f92672">();</span>
   tally<span style="color:#f92672">();</span> <span style="color:#75715e">// 计算、记录、记账
 </span><span style="color:#75715e"></span>  output<span style="color:#f92672">();</span>
@@ -338,14 +339,14 @@
 <blockquote>
 <p>变化率具有时间上的对称性。</p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">setAmount<span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> value<span style="color:#f92672">,</span> String currency<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">setAmount<span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> value<span style="color:#f92672">,</span> String currency<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
   <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> value<span style="color:#f92672">;</span>
   <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">currency</span> <span style="color:#f92672">=</span> currency<span style="color:#f92672">;</span>
 <span style="color:#f92672">}</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">setAmount<span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> value<span style="color:#f92672">,</span> String currency<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">setAmount<span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> value<span style="color:#f92672">,</span> String currency<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
   <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Money<span style="color:#f92672">(</span>value<span style="color:#f92672">,</span> currency<span style="color:#f92672">);</span>
 <span style="color:#f92672">}</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">setAmount<span style="color:#f92672">(</span>Money value<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">setAmount<span style="color:#f92672">(</span>Money value<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
   <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> value<span style="color:#f92672">;</span>
 <span style="color:#f92672">}</span>
 </code></pre></div><blockquote>
@@ -355,14 +356,14 @@
 <blockquote>
 <p>30年前，Yourdon 和 Constantine 在 Structured Design 一书中将经济学作为了软件设计的底层驱动力。软件设计应该致力于减少整体成本。</p>
 </blockquote>
-<pre><code>cost_total = cost_develop + cost_maintain
+<pre tabindex="0"><code>cost_total = cost_develop + cost_maintain
 </code></pre><blockquote>
 <p>维护的代价很大，这是因为理解现有代码需要花费时间，而且容易出错。知道了需要修改什么以后，做出改动就变得轻而易举了。</p>
 </blockquote>
 <blockquote>
 <p>掌握现在的代码做了哪些事情是最需要花费人力物力的部分。改动之后，还要进行测试和部署。</p>
 </blockquote>
-<pre><code>cost_maintain = cost_understand + cost_change + cost_test + cost_deploy
+<pre tabindex="0"><code>cost_maintain = cost_understand + cost_change + cost_test + cost_deploy
 </code></pre><blockquote>
 <p>重要的经济学原则：金钱的时间价值和未来的不确定性。</p>
 </blockquote>
@@ -1256,7 +1257,7 @@
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2022 <a href="/">世风十三学堂 By 世风十三</a>.
+        &copy; 2023 <a href="/">世风十三学堂 By 世风十三</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

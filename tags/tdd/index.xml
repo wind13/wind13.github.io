@@ -6,11 +6,7 @@
     <description>Recent content in TDD on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 30 Oct 2022 13:22:47 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/tdd/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 30 Oct 2022 13:22:47 +0000</lastBuildDate><atom:link href="/tags/tdd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Solve Feign Multipart Mixed Post Request 400 Error</title>
       <link>/post/2022/solve-feign-multipart-mixed-post-request-400-error/</link>

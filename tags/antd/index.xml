@@ -6,11 +6,7 @@
     <description>Recent content in AntD on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Jul 2018 09:22:11 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/antd/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 26 Jul 2018 09:22:11 +0000</lastBuildDate><atom:link href="/tags/antd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ant Design React 使用记录</title>
       <link>/post/2018/2018-07-26-ant-design-react-note/</link>

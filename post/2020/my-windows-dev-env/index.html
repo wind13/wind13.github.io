@@ -24,6 +24,7 @@
 
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
+    <meta name="MediaType" content="application/octet-stream">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="/kityminder/mindmap.css?_=1416390706100" type="text/css" rel="stylesheet" />
@@ -132,12 +133,12 @@
 <li>将 Capslock 键替换为 Esc 键，方便使用 vi 快捷键； 参考：<a href="https://blog.csdn.net/Ace_Shiyuan/article/details/81283065">windows中Esc与CapsLock、Alt与Ctrl调换位置</a></li>
 </ul>
 <p>原文中是这样：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-reg" data-lang="reg">Windows Registry Editor Version 5.00
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-reg" data-lang="reg">Windows Registry Editor Version 5.00
 
 <span style="color:#66d9ef">[</span>HKEY_LOCAL_MACHINE<span style="color:#66d9ef">\SYSTEM\CurrentControlSet\Control\Keyboard Layout]</span>
 <span style="color:#a6e22e">&#34;Scancode Map&#34;</span><span style="color:#f92672">=</span>hex:<span style="color:#ae81ff">00,00,00,00,00,00,00,00,05,00,00,00,3a,00,01,00,01,00,3a,00,38,00,1D,00,1D,00,38,00,00,00,00,00</span>
 </code></pre></div><p>我因为只想把 Capslock 键换成 Esc 的功能，所以改为：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-reg" data-lang="reg">Windows Registry Editor Version 5.00
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-reg" data-lang="reg">Windows Registry Editor Version 5.00
 
 <span style="color:#66d9ef">[</span>HKEY_LOCAL_MACHINE<span style="color:#66d9ef">\SYSTEM\CurrentControlSet\Control\Keyboard Layout]</span>
 <span style="color:#a6e22e">&#34;Scancode Map&#34;</span><span style="color:#f92672">=</span>hex:<span style="color:#ae81ff">00,00,00,00,00,00,00,00,02,00,00,00,01,00,3a,00,00,00,00,00</span>
@@ -145,7 +146,7 @@
 <p>保存为 <code>switch-capslock-esc.reg</code> 文件，运行后重启 Windows 就可以了。</p>
 <h2 id="win10-卸载-onenote">Win10 卸载 OneNote</h2>
 <p>输入</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">Get-AppxPackage *OneNote* | Remove-AppxPackage
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">Get-AppxPackage *OneNote* | Remove-AppxPackage
 </code></pre></div><p>回车即可。</p>
 <h2 id="win10-的-python-开发环境">Win10 的 Python 开发环境</h2>
 <ul>
@@ -1003,7 +1004,7 @@
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2022 <a href="/">世风十三学堂 By 世风十三</a>.
+        &copy; 2023 <a href="/">世风十三学堂 By 世风十三</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

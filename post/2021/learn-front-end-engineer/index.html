@@ -24,6 +24,7 @@
 
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
+    <meta name="MediaType" content="application/octet-stream">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="/kityminder/mindmap.css?_=1416390706100" type="text/css" rel="stylesheet" />
@@ -277,7 +278,7 @@
 <ul>
 <li>Persistent Caching 持久化缓存</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">cache</span><span style="color:#f92672">:</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">cache</span><span style="color:#f92672">:</span> {
   <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;filesystem&#39;</span>,
   <span style="color:#a6e22e">cacheDirectory</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;...&#39;</span>,
   <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;...&#39;</span>, <span style="color:#75715e">// name 可以保留之前的多套缓存，切换时缓存失效，恢复时则再次使用之前的缓存。
@@ -307,7 +308,7 @@
 <ul>
 <li>在构建时只需处理模块的编译而无须打包，把模块间的依赖关系完全交给浏览器来处理。</li>
 <li>这种通过浏览器原生的模块进行解析的方式称： Native-ESM (Native ES Module)</li>
-<li>支持 ES Module 的现代浏览器，会忽略 type=&quot;nomodule&rdquo; 属性的 script，这通常用于旧浏览器的降级方案。</li>
+<li>支持 ES Module 的现代浏览器，会忽略 type=&ldquo;nomodule&rdquo; 属性的 script，这通常用于旧浏览器的降级方案。</li>
 <li>带有 <code>type=&quot;module&quot;</code>属性的 script 在浏览器中通过 defer 的方式异步执行（异步下载，不阻塞 HTML，顺次执行）</li>
 <li>带有 <code>type=&quot;module&quot;</code>属性且带有 <code>async</code> 属性的 script，在浏览器中通过 async 的方式异步执行，按下载完成顺序执行。</li>
 <li>即使多次加载相同模块，也只会执行一次。</li>
@@ -395,7 +396,7 @@
 <li>pnpm</li>
 </ul>
 <p>获取执行时间：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">time npm i
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">time npm i
 time yarn
 time pnpm i
 </code></pre></div><p>总体执行时间： <code>npm &lt; pnpm &lt; Yarn v1 PnP &lt; Yarn v1 &lt; Yarn v2</code></p>
@@ -409,7 +410,7 @@ time pnpm i
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">npm config set sass-binary-site https://npm.taobao.org/mirrors/node-sass
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">npm config set sass-binary-site https://npm.taobao.org/mirrors/node-sass
 npm config set puppeteer_download_host https://npm.taobao.org/mirrors
 </code></pre></div><ul>
 <li>多项目共用信赖缓存
@@ -435,7 +436,7 @@ npm config set puppeteer_download_host https://npm.taobao.org/mirrors
 <ul>
 <li>构建镜像的具体内容写在 Dockerfile 文件中</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> node:12-slim</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> node:12-slim</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> apt-get update<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> apt-get install -y git<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> apt-get install -y build-essential<span style="color:#960050;background-color:#1e0010">
@@ -443,13 +444,13 @@ npm config set puppeteer_download_host https://npm.taobao.org/mirrors
 </span></code></pre></div><ul>
 <li>在 Dockerfile 所在目录执行构建命令：</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">docker build --network host --tag foo:bar .
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">docker build --network host --tag foo:bar .
 </code></pre></div><h4 id="容器阶段">容器阶段</h4>
 <ul>
 <li>基于项目的工作镜像创建执行部署过程的容器</li>
 <li>操作容器执行相应的各部署环节：获取代码、安装信赖、执行构建、产物打包、推送产物等。</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># 创建容器</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># 创建容器</span>
 docker run -dit --name container_1 foo:bar bash
 
 <span style="color:#75715e"># 容器内执行命令</span>
@@ -1347,7 +1348,7 @@ docker exec -it container_1 xxxx
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2022 <a href="/">世风十三学堂 By 世风十三</a>.
+        &copy; 2023 <a href="/">世风十三学堂 By 世风十三</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

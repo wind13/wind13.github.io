@@ -6,11 +6,7 @@
     <description>Recent content in SiteWhere on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 05 Jun 2020 14:40:52 +0800</lastBuildDate>
-    
-	<atom:link href="/tags/sitewhere/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 05 Jun 2020 14:40:52 +0800</lastBuildDate><atom:link href="/tags/sitewhere/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Iot 物联网相关学习</title>
       <link>/post/2020/iot-learn/</link>

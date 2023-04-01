@@ -6,11 +6,7 @@
     <description>Recent content in 实践与经验 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 30 Oct 2022 13:22:47 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 30 Oct 2022 13:22:47 +0000</lastBuildDate><atom:link href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Solve Feign Multipart Mixed Post Request 400 Error</title>
       <link>/post/2022/solve-feign-multipart-mixed-post-request-400-error/</link>
