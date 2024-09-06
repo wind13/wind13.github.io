@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mac osx on 世风十三学堂</title>
     <link>/tags/mac-osx/</link>
     <description>Recent content in Mac osx on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    
-	<atom:link href="/tags/mac-osx/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh-cn</language><atom:link href="/tags/mac-osx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UML tools of Mac OSX 苹果系统下的建模工具</title>
       <link>/post/2014/2014-03-27-uml-tools-of-mac-osx/</link>
