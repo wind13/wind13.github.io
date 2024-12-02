@@ -9,8 +9,8 @@
     <title>4clojure problem solving | 世风十三学堂</title>
     <meta property="og:title" content="4clojure problem solving - 世风十三学堂">
     <meta property="og:type" content="article">
-        
-        
+
+
     <meta name="Keywords" content="Programing">
     <meta name="description" content="4clojure problem solving">
         
@@ -93,247 +93,247 @@
         <div class="post-content">
             <p>14 题以前答案一般没啥区别，略过……</p>
 <h3 id="15httpwww4clojurecomproblem15"><a href="http://www.4clojure.com/problem/15">#15</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(* % <span style="color:#ae81ff">2</span>)
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">* <span style="color:#ae81ff">2</span>
-</code></pre></div><h3 id="16httpwww4clojurecomproblem16"><a href="http://www.4clojure.com/problem/16">#16</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">format <span style="color:#e6db74">&#34;Hello, %s!&#34;</span>
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(str <span style="color:#e6db74">&#34;Hello, &#34;</span> % <span style="color:#e6db74">&#34;!&#34;</span>)
-</code></pre></div><h3 id="17httpwww4clojurecomproblem17"><a href="http://www.4clojure.com/problem/17">#17</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">6</span> <span style="color:#ae81ff">7</span> <span style="color:#ae81ff">8</span>)
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">[<span style="color:#ae81ff">6</span> <span style="color:#ae81ff">7</span> <span style="color:#ae81ff">8</span>]
-</code></pre></div><h3 id="18httpwww4clojurecomproblem18"><a href="http://www.4clojure.com/problem/18">#18</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">6</span> <span style="color:#ae81ff">7</span>)
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">6</span> <span style="color:#ae81ff">7</span>)
-</code></pre></div><h3 id="19httpwww4clojurecomproblem19"><a href="http://www.4clojure.com/problem/19">#19</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(peek (<span style="color:#a6e22e">vec</span> %))
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(comp first reverse)
-</code></pre></div><h3 id="20httpwww4clojurecomproblem20"><a href="http://www.4clojure.com/problem/20">#20</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(nth (reverse %) <span style="color:#ae81ff">1</span>)
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(comp second reverse)
-</code></pre></div><h3 id="21httpwww4clojurecomproblem21"><a href="http://www.4clojure.com/problem/21">#21</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>getn [ary n]
-  (<span style="color:#66d9ef">if </span>(= n <span style="color:#ae81ff">0</span>)
-    (first ary)
-    (<span style="color:#a6e22e">getn</span> (rest ary) (dec n))))
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(first (drop %2 %1))
-</code></pre></div><h3 id="22httpwww4clojurecomproblem22"><a href="http://www.4clojure.com/problem/22">#22</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(reduce (<span style="color:#66d9ef">fn </span>[a b] (inc a)) <span style="color:#ae81ff">0</span> %)
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>[sequence] (reduce (<span style="color:#66d9ef">fn </span>[acc v] (inc acc)) <span style="color:#ae81ff">0</span> sequence))
-</code></pre></div><h3 id="23httpwww4clojurecomproblem23"><a href="http://www.4clojure.com/problem/23">#23</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(reduce (<span style="color:#66d9ef">fn </span>[rs ls] (cons ls rs)) [] %)
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>[s]
-  (<span style="color:#66d9ef">loop </span>[result []
-         s s]
-    (<span style="color:#66d9ef">if </span>(seq s)
-      (<span style="color:#a6e22e">recur</span> (concat [(first s)] result) (rest s))
-      result)))
-</code></pre></div><h3 id="24httpwww4clojurecomproblem24"><a href="http://www.4clojure.com/problem/24">#24</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(reduce + %)
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">apply +
-</code></pre></div><h3 id="25httpwww4clojurecomproblem25"><a href="http://www.4clojure.com/problem/25">#25</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(filter odd? %)
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">filter odd?
-</code></pre></div><h3 id="26httpwww4clojurecomproblem26"><a href="http://www.4clojure.com/problem/26">#26</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(take % ((<span style="color:#66d9ef">fn </span>fib [a b]
-            (<span style="color:#a6e22e">lazy-seq</span> (cons a (<span style="color:#a6e22e">fib</span> b (+ b a))))) <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">1</span>))
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(take %
-  (map first
-    (iterate (<span style="color:#66d9ef">fn </span>[[i1 i2]]
-      [i2 (+ i1 i2)])
-      [<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">1</span>])))
-</code></pre></div><h3 id="29httpwww4clojurecomproblem29"><a href="http://www.4clojure.com/problem/29">#29</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(<span style="color:#a6e22e">clojure.string/replace</span> % <span style="color:#f92672">#</span><span style="color:#e6db74">&#34;[^A-Z]&#34;</span> <span style="color:#e6db74">&#34;&#34;</span>)
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>[s] (reduce str (filter <span style="color:#f92672">#</span>(<span style="color:#a6e22e">Character/isUpperCase</span> %) s)))
-</code></pre></div><h3 id="27httpwww4clojurecomproblem27"><a href="http://www.4clojure.com/problem/27">#27</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(= (reverse %) (seq %))
-</code></pre></div><h3 id="28httpwww4clojurecomproblem28"><a href="http://www.4clojure.com/problem/28">#28</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">defn </span>cci [ls r]
-  (<span style="color:#66d9ef">if </span>(every? sequential? ls)
-    (concat r ls)
-    (apply cci r (<span style="color:#a6e22e">partition-by</span> sequential? ls))))
-
-<span style="color:#f92672">#</span>(<span style="color:#66d9ef">let </span>[f (first %)]
-  (<span style="color:#66d9ef">if </span>(<span style="color:#a6e22e">sequential?</span> f)
-    )
-  conj [] (first %))
-</code></pre></div><h3 id="30httpwww4clojurecomproblem30"><a href="http://www.4clojure.com/problem/30">#30</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>((<span style="color:#66d9ef">fn </span>dis [ss l r]
-    (if-let [f (first ss)]
-      (<span style="color:#66d9ef">let </span>[rss (rest ss)]
-      	(<span style="color:#66d9ef">if </span>(= l f)
-        	(<span style="color:#a6e22e">dis</span> rss f r)
-        	(<span style="color:#a6e22e">dis</span> rss f (conj r f))))
-      r)) % nil [])
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>((<span style="color:#66d9ef">fn </span>dis [ss l r]
-    (<span style="color:#66d9ef">let </span>[[f <span style="color:#f92672">&amp;</span> s] ss]
-      (<span style="color:#a6e22e">cond</span>
-        (nil? f) r
-        (= l f) (<span style="color:#a6e22e">dis</span> s f r)
-        <span style="color:#e6db74">:else</span> (<span style="color:#a6e22e">dis</span> s f (conj r f))))) % nil [])
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(map first (<span style="color:#a6e22e">partition-by</span> identity %))
-</code></pre></div><h3 id="32httpwww4clojurecomproblem32"><a href="http://www.4clojure.com/problem/32">#32</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(mapcat (<span style="color:#66d9ef">fn </span>[s] [s s]) %)
-</code></pre></div><h3 id="34httpwww4clojurecomproblem34"><a href="http://www.4clojure.com/problem/34">#34</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>((<span style="color:#66d9ef">fn </span>rng [s n r]
-    (<span style="color:#66d9ef">if </span>(&lt; s n)
-      (<span style="color:#a6e22e">rng</span> (inc s) n (conj r s))
-      r)) %1 %2 [])
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>[start end] (take-while <span style="color:#f92672">#</span>(&lt; % end)
-                            (iterate inc start)
-                            )
-  )
-</code></pre></div><h3 id="35httpwww4clojurecomproblem35"><a href="http://www.4clojure.com/problem/35">#35</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#ae81ff">7</span>
-</code></pre></div><h3 id="37httpwww4clojurecomproblem37"><a href="http://www.4clojure.com/problem/37">#37</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#e6db74">&#34;ABC&#34;</span>
-</code></pre></div><h3 id="38httpwww4clojurecomproblem38"><a href="http://www.4clojure.com/problem/38">#38</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>[<span style="color:#f92672">&amp;</span> s] (reduce (<span style="color:#66d9ef">fn </span>mx [a b] (<span style="color:#66d9ef">if </span>(&gt; a b) a b)) s))
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>[ <span style="color:#f92672">&amp;</span> xs ]
-  (reduce <span style="color:#f92672">#</span>(<span style="color:#66d9ef">if </span>(&gt; %1 %2) %1 %2) xs))
-</code></pre></div><h3 id="39httpwww4clojurecomproblem39"><a href="http://www.4clojure.com/problem/39">#39</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>l [a b <span style="color:#f92672">&amp;</span> r]
-  (<span style="color:#66d9ef">if </span>(or (nil? (first a)) (nil? (first b)))
-    (<span style="color:#a6e22e">flatten</span> r)
-    (<span style="color:#a6e22e">l</span> (rest a) (rest b) (conj (<span style="color:#a6e22e">vec</span> r) (first a) (first b)))))
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>[s1 s2]
-  (<span style="color:#a6e22e">flatten</span> (map list s1 s2)))
-</code></pre></div><h3 id="40httpwww4clojurecomproblem40"><a href="http://www.4clojure.com/problem/40">#40</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>[x ys] (butlast (<span style="color:#a6e22e">flatten</span> (map <span style="color:#f92672">#</span>(list % x) ys))))
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(butlast (interleave %2 (repeat %1)))
-</code></pre></div><h3 id="41httpwww4clojurecomproblem41"><a href="http://www.4clojure.com/problem/41">#41</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>[ls n]
-  (<span style="color:#a6e22e">keep-indexed</span> <span style="color:#f92672">#</span>(<span style="color:#66d9ef">if </span>(&gt; (<span style="color:#a6e22e">mod</span> (inc %1) n) <span style="color:#ae81ff">0</span>) %2) ls))
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>[coll n]
-  (<span style="color:#a6e22e">-&gt;&gt;</span> (<span style="color:#a6e22e">partition-all</span> n coll)
-       (map (partial take (dec n)))
-       (<span style="color:#a6e22e">flatten</span>)))
-</code></pre></div><h3 id="42httpwww4clojurecomproblem42"><a href="http://www.4clojure.com/problem/42">#42</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>((<span style="color:#66d9ef">fn </span>factorial [n r]
-  (<span style="color:#66d9ef">if </span>(= n <span style="color:#ae81ff">1</span>) r (<span style="color:#a6e22e">factorial</span> (dec n) (* n r)))) % <span style="color:#ae81ff">1</span>)
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(reduce * (range <span style="color:#ae81ff">1</span> (inc %)))
-</code></pre></div><h3 id="48httpwww4clojurecomproblem48"><a href="http://www.4clojure.com/problem/48">#48</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#ae81ff">6</span>
-</code></pre></div><h3 id="52httpwww4clojurecomproblem52"><a href="http://www.4clojure.com/problem/52">#52</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">[c e]
-</code></pre></div><h3 id="57httpwww4clojurecomproblem57"><a href="http://www.4clojure.com/problem/57">#57</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">5</span> <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">1</span>)
-</code></pre></div><h3 id="62httpwww4clojurecomproblem62"><a href="http://www.4clojure.com/problem/62">#62</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>fb ([f b] (<span style="color:#a6e22e">lazy-seq</span> (cons b (<span style="color:#a6e22e">fb</span> f (<span style="color:#a6e22e">f</span> b))))))
-</code></pre></div><p>aceeca1&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>[f x] (<span style="color:#a6e22e">reductions</span> <span style="color:#f92672">#</span>(<span style="color:#a6e22e">%2</span> %1) x (repeat f)))
-</code></pre></div><p>注：从中学习和理解到：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(* % <span style="color:#ae81ff">2</span>)
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>* <span style="color:#ae81ff">2</span>
+</span></span></code></pre></div><h3 id="16httpwww4clojurecomproblem16"><a href="http://www.4clojure.com/problem/16">#16</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>format <span style="color:#e6db74">&#34;Hello, %s!&#34;</span>
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(str <span style="color:#e6db74">&#34;Hello, &#34;</span> % <span style="color:#e6db74">&#34;!&#34;</span>)
+</span></span></code></pre></div><h3 id="17httpwww4clojurecomproblem17"><a href="http://www.4clojure.com/problem/17">#17</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">6</span> <span style="color:#ae81ff">7</span> <span style="color:#ae81ff">8</span>)
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>[<span style="color:#ae81ff">6</span> <span style="color:#ae81ff">7</span> <span style="color:#ae81ff">8</span>]
+</span></span></code></pre></div><h3 id="18httpwww4clojurecomproblem18"><a href="http://www.4clojure.com/problem/18">#18</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">6</span> <span style="color:#ae81ff">7</span>)
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">6</span> <span style="color:#ae81ff">7</span>)
+</span></span></code></pre></div><h3 id="19httpwww4clojurecomproblem19"><a href="http://www.4clojure.com/problem/19">#19</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(peek (<span style="color:#a6e22e">vec</span> %))
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(comp first reverse)
+</span></span></code></pre></div><h3 id="20httpwww4clojurecomproblem20"><a href="http://www.4clojure.com/problem/20">#20</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(nth (reverse %) <span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(comp second reverse)
+</span></span></code></pre></div><h3 id="21httpwww4clojurecomproblem21"><a href="http://www.4clojure.com/problem/21">#21</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>getn [ary n]
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">if </span>(= n <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>    (first ary)
+</span></span><span style="display:flex;"><span>    (<span style="color:#a6e22e">getn</span> (rest ary) (dec n))))
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(first (drop %2 %1))
+</span></span></code></pre></div><h3 id="22httpwww4clojurecomproblem22"><a href="http://www.4clojure.com/problem/22">#22</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(reduce (<span style="color:#66d9ef">fn </span>[a b] (inc a)) <span style="color:#ae81ff">0</span> %)
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>[sequence] (reduce (<span style="color:#66d9ef">fn </span>[acc v] (inc acc)) <span style="color:#ae81ff">0</span> sequence))
+</span></span></code></pre></div><h3 id="23httpwww4clojurecomproblem23"><a href="http://www.4clojure.com/problem/23">#23</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(reduce (<span style="color:#66d9ef">fn </span>[rs ls] (cons ls rs)) [] %)
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>[s]
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">loop </span>[result []
+</span></span><span style="display:flex;"><span>         s s]
+</span></span><span style="display:flex;"><span>    (<span style="color:#66d9ef">if </span>(seq s)
+</span></span><span style="display:flex;"><span>      (<span style="color:#a6e22e">recur</span> (concat [(first s)] result) (rest s))
+</span></span><span style="display:flex;"><span>      result)))
+</span></span></code></pre></div><h3 id="24httpwww4clojurecomproblem24"><a href="http://www.4clojure.com/problem/24">#24</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(reduce + %)
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>apply +
+</span></span></code></pre></div><h3 id="25httpwww4clojurecomproblem25"><a href="http://www.4clojure.com/problem/25">#25</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(filter odd? %)
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>filter odd?
+</span></span></code></pre></div><h3 id="26httpwww4clojurecomproblem26"><a href="http://www.4clojure.com/problem/26">#26</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(take % ((<span style="color:#66d9ef">fn </span>fib [a b]
+</span></span><span style="display:flex;"><span>            (<span style="color:#a6e22e">lazy-seq</span> (cons a (<span style="color:#a6e22e">fib</span> b (+ b a))))) <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">1</span>))
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(take %
+</span></span><span style="display:flex;"><span>  (map first
+</span></span><span style="display:flex;"><span>    (iterate (<span style="color:#66d9ef">fn </span>[[i1 i2]]
+</span></span><span style="display:flex;"><span>      [i2 (+ i1 i2)])
+</span></span><span style="display:flex;"><span>      [<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">1</span>])))
+</span></span></code></pre></div><h3 id="29httpwww4clojurecomproblem29"><a href="http://www.4clojure.com/problem/29">#29</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(<span style="color:#a6e22e">clojure.string/replace</span> % <span style="color:#f92672">#</span><span style="color:#e6db74">&#34;[^A-Z]&#34;</span> <span style="color:#e6db74">&#34;&#34;</span>)
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>[s] (reduce str (filter <span style="color:#f92672">#</span>(<span style="color:#a6e22e">Character/isUpperCase</span> %) s)))
+</span></span></code></pre></div><h3 id="27httpwww4clojurecomproblem27"><a href="http://www.4clojure.com/problem/27">#27</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(= (reverse %) (seq %))
+</span></span></code></pre></div><h3 id="28httpwww4clojurecomproblem28"><a href="http://www.4clojure.com/problem/28">#28</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">defn </span>cci [ls r]
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">if </span>(every? sequential? ls)
+</span></span><span style="display:flex;"><span>    (concat r ls)
+</span></span><span style="display:flex;"><span>    (apply cci r (<span style="color:#a6e22e">partition-by</span> sequential? ls))))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">#</span>(<span style="color:#66d9ef">let </span>[f (first %)]
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">if </span>(<span style="color:#a6e22e">sequential?</span> f)
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>  conj [] (first %))
+</span></span></code></pre></div><h3 id="30httpwww4clojurecomproblem30"><a href="http://www.4clojure.com/problem/30">#30</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>((<span style="color:#66d9ef">fn </span>dis [ss l r]
+</span></span><span style="display:flex;"><span>    (if-let [f (first ss)]
+</span></span><span style="display:flex;"><span>      (<span style="color:#66d9ef">let </span>[rss (rest ss)]
+</span></span><span style="display:flex;"><span>      	(<span style="color:#66d9ef">if </span>(= l f)
+</span></span><span style="display:flex;"><span>        	(<span style="color:#a6e22e">dis</span> rss f r)
+</span></span><span style="display:flex;"><span>        	(<span style="color:#a6e22e">dis</span> rss f (conj r f))))
+</span></span><span style="display:flex;"><span>      r)) % nil [])
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>((<span style="color:#66d9ef">fn </span>dis [ss l r]
+</span></span><span style="display:flex;"><span>    (<span style="color:#66d9ef">let </span>[[f <span style="color:#f92672">&amp;</span> s] ss]
+</span></span><span style="display:flex;"><span>      (<span style="color:#a6e22e">cond</span>
+</span></span><span style="display:flex;"><span>        (nil? f) r
+</span></span><span style="display:flex;"><span>        (= l f) (<span style="color:#a6e22e">dis</span> s f r)
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">:else</span> (<span style="color:#a6e22e">dis</span> s f (conj r f))))) % nil [])
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(map first (<span style="color:#a6e22e">partition-by</span> identity %))
+</span></span></code></pre></div><h3 id="32httpwww4clojurecomproblem32"><a href="http://www.4clojure.com/problem/32">#32</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(mapcat (<span style="color:#66d9ef">fn </span>[s] [s s]) %)
+</span></span></code></pre></div><h3 id="34httpwww4clojurecomproblem34"><a href="http://www.4clojure.com/problem/34">#34</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>((<span style="color:#66d9ef">fn </span>rng [s n r]
+</span></span><span style="display:flex;"><span>    (<span style="color:#66d9ef">if </span>(&lt; s n)
+</span></span><span style="display:flex;"><span>      (<span style="color:#a6e22e">rng</span> (inc s) n (conj r s))
+</span></span><span style="display:flex;"><span>      r)) %1 %2 [])
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>[start end] (take-while <span style="color:#f92672">#</span>(&lt; % end)
+</span></span><span style="display:flex;"><span>                            (iterate inc start)
+</span></span><span style="display:flex;"><span>                            )
+</span></span><span style="display:flex;"><span>  )
+</span></span></code></pre></div><h3 id="35httpwww4clojurecomproblem35"><a href="http://www.4clojure.com/problem/35">#35</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#ae81ff">7</span>
+</span></span></code></pre></div><h3 id="37httpwww4clojurecomproblem37"><a href="http://www.4clojure.com/problem/37">#37</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#e6db74">&#34;ABC&#34;</span>
+</span></span></code></pre></div><h3 id="38httpwww4clojurecomproblem38"><a href="http://www.4clojure.com/problem/38">#38</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>[<span style="color:#f92672">&amp;</span> s] (reduce (<span style="color:#66d9ef">fn </span>mx [a b] (<span style="color:#66d9ef">if </span>(&gt; a b) a b)) s))
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>[ <span style="color:#f92672">&amp;</span> xs ]
+</span></span><span style="display:flex;"><span>  (reduce <span style="color:#f92672">#</span>(<span style="color:#66d9ef">if </span>(&gt; %1 %2) %1 %2) xs))
+</span></span></code></pre></div><h3 id="39httpwww4clojurecomproblem39"><a href="http://www.4clojure.com/problem/39">#39</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>l [a b <span style="color:#f92672">&amp;</span> r]
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">if </span>(or (nil? (first a)) (nil? (first b)))
+</span></span><span style="display:flex;"><span>    (<span style="color:#a6e22e">flatten</span> r)
+</span></span><span style="display:flex;"><span>    (<span style="color:#a6e22e">l</span> (rest a) (rest b) (conj (<span style="color:#a6e22e">vec</span> r) (first a) (first b)))))
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>[s1 s2]
+</span></span><span style="display:flex;"><span>  (<span style="color:#a6e22e">flatten</span> (map list s1 s2)))
+</span></span></code></pre></div><h3 id="40httpwww4clojurecomproblem40"><a href="http://www.4clojure.com/problem/40">#40</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>[x ys] (butlast (<span style="color:#a6e22e">flatten</span> (map <span style="color:#f92672">#</span>(list % x) ys))))
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(butlast (interleave %2 (repeat %1)))
+</span></span></code></pre></div><h3 id="41httpwww4clojurecomproblem41"><a href="http://www.4clojure.com/problem/41">#41</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>[ls n]
+</span></span><span style="display:flex;"><span>  (<span style="color:#a6e22e">keep-indexed</span> <span style="color:#f92672">#</span>(<span style="color:#66d9ef">if </span>(&gt; (<span style="color:#a6e22e">mod</span> (inc %1) n) <span style="color:#ae81ff">0</span>) %2) ls))
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>[coll n]
+</span></span><span style="display:flex;"><span>  (<span style="color:#a6e22e">-&gt;&gt;</span> (<span style="color:#a6e22e">partition-all</span> n coll)
+</span></span><span style="display:flex;"><span>       (map (partial take (dec n)))
+</span></span><span style="display:flex;"><span>       (<span style="color:#a6e22e">flatten</span>)))
+</span></span></code></pre></div><h3 id="42httpwww4clojurecomproblem42"><a href="http://www.4clojure.com/problem/42">#42</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>((<span style="color:#66d9ef">fn </span>factorial [n r]
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">if </span>(= n <span style="color:#ae81ff">1</span>) r (<span style="color:#a6e22e">factorial</span> (dec n) (* n r)))) % <span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(reduce * (range <span style="color:#ae81ff">1</span> (inc %)))
+</span></span></code></pre></div><h3 id="48httpwww4clojurecomproblem48"><a href="http://www.4clojure.com/problem/48">#48</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#ae81ff">6</span>
+</span></span></code></pre></div><h3 id="52httpwww4clojurecomproblem52"><a href="http://www.4clojure.com/problem/52">#52</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>[c e]
+</span></span></code></pre></div><h3 id="57httpwww4clojurecomproblem57"><a href="http://www.4clojure.com/problem/57">#57</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">5</span> <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><h3 id="62httpwww4clojurecomproblem62"><a href="http://www.4clojure.com/problem/62">#62</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>fb ([f b] (<span style="color:#a6e22e">lazy-seq</span> (cons b (<span style="color:#a6e22e">fb</span> f (<span style="color:#a6e22e">f</span> b))))))
+</span></span></code></pre></div><p>aceeca1&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>[f x] (<span style="color:#a6e22e">reductions</span> <span style="color:#f92672">#</span>(<span style="color:#a6e22e">%2</span> %1) x (repeat f)))
+</span></span></code></pre></div><p>注：从中学习和理解到：</p>
 <ol>
 <li>fn 给命名 <code>name?</code> 后也可以递归；</li>
 <li>lazy-seq 适合做无限循环递归的懒序列；</li>
 <li>reductions 可以将一个数组通过某个方法做 reduce 结果为一个懒序列；</li>
 </ol>
 <h3 id="64httpwww4clojurecomproblem64"><a href="http://www.4clojure.com/problem/64">#64</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">+
-</code></pre></div><h3 id="66httpwww4clojurecomproblem66"><a href="http://www.4clojure.com/problem/66">#66</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>[a b]
-  (<span style="color:#66d9ef">let </span>[m (min a b)
-        d (<span style="color:#66d9ef">fn </span>[a b m]
-              (and (= <span style="color:#ae81ff">0</span> (<span style="color:#a6e22e">mod</span> a m))
-                   (= <span style="color:#ae81ff">0</span> (<span style="color:#a6e22e">mod</span> b m))))
-        r (<span style="color:#66d9ef">fn </span>o [a b m] 
-               (<span style="color:#66d9ef">if </span>(<span style="color:#a6e22e">d</span> a b m)
-                 m
-                 (<span style="color:#a6e22e">o</span> a b (dec m))))]
-    (<span style="color:#a6e22e">r</span> a b m)))
-</code></pre></div><p>astangl&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#a6e22e">fn</span>
-  [x y]
-  (<span style="color:#66d9ef">if </span>(= <span style="color:#ae81ff">0</span> y)
-      x
-      (<span style="color:#a6e22e">recur</span> y (<span style="color:#a6e22e">mod</span> x y))))
-</code></pre></div><p>注：从中学习和理解到：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>+
+</span></span></code></pre></div><h3 id="66httpwww4clojurecomproblem66"><a href="http://www.4clojure.com/problem/66">#66</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>[a b]
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">let </span>[m (min a b)
+</span></span><span style="display:flex;"><span>        d (<span style="color:#66d9ef">fn </span>[a b m]
+</span></span><span style="display:flex;"><span>              (and (= <span style="color:#ae81ff">0</span> (<span style="color:#a6e22e">mod</span> a m))
+</span></span><span style="display:flex;"><span>                   (= <span style="color:#ae81ff">0</span> (<span style="color:#a6e22e">mod</span> b m))))
+</span></span><span style="display:flex;"><span>        r (<span style="color:#66d9ef">fn </span>o [a b m] 
+</span></span><span style="display:flex;"><span>               (<span style="color:#66d9ef">if </span>(<span style="color:#a6e22e">d</span> a b m)
+</span></span><span style="display:flex;"><span>                 m
+</span></span><span style="display:flex;"><span>                 (<span style="color:#a6e22e">o</span> a b (dec m))))]
+</span></span><span style="display:flex;"><span>    (<span style="color:#a6e22e">r</span> a b m)))
+</span></span></code></pre></div><p>astangl&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#a6e22e">fn</span>
+</span></span><span style="display:flex;"><span>  [x y]
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">if </span>(= <span style="color:#ae81ff">0</span> y)
+</span></span><span style="display:flex;"><span>      x
+</span></span><span style="display:flex;"><span>      (<span style="color:#a6e22e">recur</span> y (<span style="color:#a6e22e">mod</span> x y))))
+</span></span></code></pre></div><p>注：从中学习和理解到：</p>
 <ol>
 <li>recur 可以递归 fn 这样的匿名函数；</li>
 <li>(mod x y) 当 <code>x &lt; y</code> 时，返回 x ，也就是说 x/y 得 0 余 x；</li>
 <li>最大公约数 w 一定也可以除尽 (mod x y) 的余数；</li>
 </ol>
 <h3 id="68httpwww4clojurecomproblem68"><a href="http://www.4clojure.com/problem/68">#68</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">7</span> <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">3</span>)
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">[<span style="color:#ae81ff">7</span> <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">3</span>]
-</code></pre></div><h3 id="71httpwww4clojurecomproblem71"><a href="http://www.4clojure.com/problem/71">#71</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">last
-</code></pre></div><h3 id="72httpwww4clojurecomproblem72"><a href="http://www.4clojure.com/problem/72">#72</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">apply +
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(reduce + %)
-</code></pre></div><h3 id="81httpwww4clojurecomproblem81"><a href="http://www.4clojure.com/problem/81">#81</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>[a b] (reduce <span style="color:#f92672">#</span>(<span style="color:#66d9ef">if </span>(contains? a %2) (conj %1 %2) %1) <span style="color:#f92672">#</span>{} b))
-</code></pre></div><p>aceeca1&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(comp set filter)
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">&#39;</span>(<span style="color:#ae81ff">7</span> <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">3</span>)
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>[<span style="color:#ae81ff">7</span> <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">3</span>]
+</span></span></code></pre></div><h3 id="71httpwww4clojurecomproblem71"><a href="http://www.4clojure.com/problem/71">#71</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>last
+</span></span></code></pre></div><h3 id="72httpwww4clojurecomproblem72"><a href="http://www.4clojure.com/problem/72">#72</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>apply +
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(reduce + %)
+</span></span></code></pre></div><h3 id="81httpwww4clojurecomproblem81"><a href="http://www.4clojure.com/problem/81">#81</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>[a b] (reduce <span style="color:#f92672">#</span>(<span style="color:#66d9ef">if </span>(contains? a %2) (conj %1 %2) %1) <span style="color:#f92672">#</span>{} b))
+</span></span></code></pre></div><p>aceeca1&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(comp set filter)
+</span></span></code></pre></div><ul>
 <li>学到的经验：#{} set 是可以当做 contains 方法来 filter 的。</li>
 </ul>
 <h3 id="99httpwww4clojurecomproblem99"><a href="http://www.4clojure.com/problem/99">#99</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>[a b] (map <span style="color:#f92672">#</span>(<span style="color:#a6e22e">Integer/parseInt</span>(str %)) (str (* a b))))
-</code></pre></div><p>aceeca1&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(comp (partial map <span style="color:#f92672">#</span>(- (int %) <span style="color:#ae81ff">48</span>)) str *)
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>[a b] (map <span style="color:#f92672">#</span>(<span style="color:#a6e22e">Integer/parseInt</span>(str %)) (str (* a b))))
+</span></span></code></pre></div><p>aceeca1&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(comp (partial map <span style="color:#f92672">#</span>(- (int %) <span style="color:#ae81ff">48</span>)) str *)
+</span></span></code></pre></div><ul>
 <li>学到的经验：可以组合几个方法，或者用 -&raquo; 语法串联方法</li>
 </ul>
 <h3 id="99httpwww4clojurecomproblem99-1"><a href="http://www.4clojure.com/problem/99">#99</a></h3>
 <h3 id="107httpwww4clojurecomproblem107"><a href="http://www.4clojure.com/problem/107">#107</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>[n] <span style="color:#f92672">#</span>(reduce * (repeat n %)))
-</code></pre></div><h3 id="134httpwww4clojurecomproblem134"><a href="http://www.4clojure.com/problem/134">#134</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(= nil (get %2 %1 <span style="color:#ae81ff">0</span>))
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(nil? (get %2 % true))
-</code></pre></div><h3 id="145httpwww4clojurecomproblem145"><a href="http://www.4clojure.com/problem/145">#145</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">[<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">9</span> <span style="color:#ae81ff">13</span> <span style="color:#ae81ff">17</span> <span style="color:#ae81ff">21</span> <span style="color:#ae81ff">25</span> <span style="color:#ae81ff">29</span> <span style="color:#ae81ff">33</span> <span style="color:#ae81ff">37</span>]
-</code></pre></div><h3 id="156httpwww4clojurecomproblem156"><a href="http://www.4clojure.com/problem/156">#156</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(apply merge (map (<span style="color:#66d9ef">fn </span>[k] {k %1}) %2))
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(apply array-map (mapcat (<span style="color:#66d9ef">fn </span>[k] [k %1]) %2))
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>[default values] (reduce <span style="color:#f92672">#</span>(assoc %1 %2 default) {} values))
-</code></pre></div><h3 id="161httpwww4clojurecomproblem161"><a href="http://www.4clojure.com/problem/161">#161</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>{<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span>}
-</code></pre></div><h3 id="162httpwww4clojurecomproblem162"><a href="http://www.4clojure.com/problem/162">#162</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#ae81ff">1</span>
-</code></pre></div><h2 id="another-solution">Another solution</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>[n] <span style="color:#f92672">#</span>(reduce * (repeat n %)))
+</span></span></code></pre></div><h3 id="134httpwww4clojurecomproblem134"><a href="http://www.4clojure.com/problem/134">#134</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(= nil (get %2 %1 <span style="color:#ae81ff">0</span>))
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(nil? (get %2 % true))
+</span></span></code></pre></div><h3 id="145httpwww4clojurecomproblem145"><a href="http://www.4clojure.com/problem/145">#145</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>[<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">9</span> <span style="color:#ae81ff">13</span> <span style="color:#ae81ff">17</span> <span style="color:#ae81ff">21</span> <span style="color:#ae81ff">25</span> <span style="color:#ae81ff">29</span> <span style="color:#ae81ff">33</span> <span style="color:#ae81ff">37</span>]
+</span></span></code></pre></div><h3 id="156httpwww4clojurecomproblem156"><a href="http://www.4clojure.com/problem/156">#156</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(apply merge (map (<span style="color:#66d9ef">fn </span>[k] {k %1}) %2))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(apply array-map (mapcat (<span style="color:#66d9ef">fn </span>[k] [k %1]) %2))
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>[default values] (reduce <span style="color:#f92672">#</span>(assoc %1 %2 default) {} values))
+</span></span></code></pre></div><h3 id="161httpwww4clojurecomproblem161"><a href="http://www.4clojure.com/problem/161">#161</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>{<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span>}
+</span></span></code></pre></div><h3 id="162httpwww4clojurecomproblem162"><a href="http://www.4clojure.com/problem/162">#162</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><h2 id="another-solution">Another solution</h2>
 <p><a href="http://www.anthony-galea.com/blog/post/solutions-to-4clojure-easy-problems/">Solutions to 4Clojure Easy Problems</a></p>
 <h3 id="107httpwww4clojurecomproblem107-1"><a href="http://www.4clojure.com/problem/107">#107</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>[n] <span style="color:#f92672">#</span>(reduce * (repeat n %)))
-</code></pre></div><h3 id="134httpwww4clojurecomproblem134-1"><a href="http://www.4clojure.com/problem/134">#134</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(= nil (get %2 %1 <span style="color:#ae81ff">0</span>))
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(nil? (get %2 % true))
-</code></pre></div><h3 id="145httpwww4clojurecomproblem145-1"><a href="http://www.4clojure.com/problem/145">#145</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">[<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">9</span> <span style="color:#ae81ff">13</span> <span style="color:#ae81ff">17</span> <span style="color:#ae81ff">21</span> <span style="color:#ae81ff">25</span> <span style="color:#ae81ff">29</span> <span style="color:#ae81ff">33</span> <span style="color:#ae81ff">37</span>]
-</code></pre></div><h3 id="156httpwww4clojurecomproblem156-1"><a href="http://www.4clojure.com/problem/156">#156</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(apply merge (map (<span style="color:#66d9ef">fn </span>[k] {k %1}) %2))
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>(apply array-map (mapcat (<span style="color:#66d9ef">fn </span>[k] [k %1]) %2))
-</code></pre></div><p>adereth&rsquo;s solution:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#66d9ef">fn </span>[default values] (reduce <span style="color:#f92672">#</span>(assoc %1 %2 default) {} values))
-</code></pre></div><h3 id="161httpwww4clojurecomproblem161-1"><a href="http://www.4clojure.com/problem/161">#161</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#f92672">#</span>{<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span>}
-</code></pre></div><h3 id="162httpwww4clojurecomproblem162-1"><a href="http://www.4clojure.com/problem/162">#162</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure"><span style="color:#ae81ff">1</span>
-</code></pre></div><h2 id="another-solution-1">Another solution</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>[n] <span style="color:#f92672">#</span>(reduce * (repeat n %)))
+</span></span></code></pre></div><h3 id="134httpwww4clojurecomproblem134-1"><a href="http://www.4clojure.com/problem/134">#134</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(= nil (get %2 %1 <span style="color:#ae81ff">0</span>))
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(nil? (get %2 % true))
+</span></span></code></pre></div><h3 id="145httpwww4clojurecomproblem145-1"><a href="http://www.4clojure.com/problem/145">#145</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>[<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">9</span> <span style="color:#ae81ff">13</span> <span style="color:#ae81ff">17</span> <span style="color:#ae81ff">21</span> <span style="color:#ae81ff">25</span> <span style="color:#ae81ff">29</span> <span style="color:#ae81ff">33</span> <span style="color:#ae81ff">37</span>]
+</span></span></code></pre></div><h3 id="156httpwww4clojurecomproblem156-1"><a href="http://www.4clojure.com/problem/156">#156</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(apply merge (map (<span style="color:#66d9ef">fn </span>[k] {k %1}) %2))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>(apply array-map (mapcat (<span style="color:#66d9ef">fn </span>[k] [k %1]) %2))
+</span></span></code></pre></div><p>adereth&rsquo;s solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">fn </span>[default values] (reduce <span style="color:#f92672">#</span>(assoc %1 %2 default) {} values))
+</span></span></code></pre></div><h3 id="161httpwww4clojurecomproblem161-1"><a href="http://www.4clojure.com/problem/161">#161</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#f92672">#</span>{<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span>}
+</span></span></code></pre></div><h3 id="162httpwww4clojurecomproblem162-1"><a href="http://www.4clojure.com/problem/162">#162</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><h2 id="another-solution-1">Another solution</h2>
 <p><a href="http://www.anthony-galea.com/blog/post/solutions-to-4clojure-easy-problems/">Solutions to 4Clojure Easy Problems</a></p>
 
         </div>
@@ -347,15 +347,15 @@
     <h2>See Also</h2>
     <ul class="listing">
         
+        <li><a href="/post/2024/wsl-hugo-blog/">使用 WSL 启动 Hugo 搭建博客</a></li>
+        
+        <li><a href="/post/2024/agile-project-tools/">敏捷项目管理工具比较 Agile Project Tools Compare</a></li>
+        
         <li><a href="/post/2023/front-end-ui-hero-before-after/">前端UI的江湖风云</a></li>
         
         <li><a href="/post/2022/da-qiao-wang-zhe-rong-yao-de-wang-zhe/">大乔，王者荣耀真正的王者</a></li>
         
         <li><a href="/post/2022/solve-feign-multipart-mixed-post-request-400-error/">Solve Feign Multipart Mixed Post Request 400 Error</a></li>
-        
-        <li><a href="/post/2022/legacy-system-renew/">遗留项目迁移的经验、策略和能力 Legacy System Renew</a></li>
-        
-        <li><a href="/post/2022/try-smartide/">Try SmartIDE</a></li>
         
     </ul>
 </div>
@@ -401,6 +401,14 @@
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2024/wsl-hugo-blog/" title="使用 WSL 启动 Hugo 搭建博客">使用 WSL 启动 Hugo 搭建博客</a>
+    </li>
+    
+    <li>
+        <a href="/post/2024/agile-project-tools/" title="敏捷项目管理工具比较 Agile Project Tools Compare">敏捷项目管理工具比较 Agile Project Tools Compare</a>
+    </li>
+    
+    <li>
         <a href="/post/2023/front-end-ui-hero-before-after/" title="前端UI的江湖风云">前端UI的江湖风云</a>
     </li>
     
@@ -432,14 +440,6 @@
         <a href="/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
     </li>
     
-    <li>
-        <a href="/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
-    </li>
-    
-    <li>
-        <a href="/post/2022/powerplatform-jamstack/" title="在 Power Platform 上实践 JamStack 架构思想">在 Power Platform 上实践 JamStack 架构思想</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -453,13 +453,13 @@
     
     <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (27)</a></li>
     
-    <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (27)</a></li>
+    <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (29)</a></li>
     
     <li><a href="/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (47)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (49)</a></li>
     
 </ul>
     </section>
@@ -470,27 +470,29 @@
     
     <a href="/tags/access/">Access</a>
     
+    <a href="/tags/agile/">Agile</a>
+    
     <a href="/tags/android/">Android</a>
     
     <a href="/tags/android-%E6%B5%8B%E8%AF%95/">Android 测试</a>
     
-    <a href="/tags/angular/">angular</a>
+    <a href="/tags/angular/">Angular</a>
     
-    <a href="/tags/angularjs/">angularjs</a>
+    <a href="/tags/angularjs/">Angularjs</a>
     
-    <a href="/tags/antd/">AntD</a>
+    <a href="/tags/antd/">Antd</a>
     
     <a href="/tags/app/">App</a>
     
-    <a href="/tags/architect/">architect</a>
+    <a href="/tags/architect/">Architect</a>
     
     <a href="/tags/aws/">AWS</a>
     
     <a href="/tags/azure/">Azure</a>
     
-    <a href="/tags/backbone/">backbone</a>
+    <a href="/tags/backbone/">Backbone</a>
     
-    <a href="/tags/baidu/">baidu</a>
+    <a href="/tags/baidu/">Baidu</a>
     
     <a href="/tags/beeui/">BeeUi</a>
     
@@ -498,7 +500,7 @@
     
     <a href="/tags/blog/">Blog</a>
     
-    <a href="/tags/boook/">boook</a>
+    <a href="/tags/boook/">Boook</a>
     
     <a href="/tags/canvas-app/">Canvas App</a>
     
@@ -506,21 +508,21 @@
     
     <a href="/tags/chado.js/">Chado.js</a>
     
-    <a href="/tags/chkdsk/">chkdsk</a>
+    <a href="/tags/chkdsk/">Chkdsk</a>
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
     <a href="/tags/clojure/">Clojure</a>
     
-    <a href="/tags/code/">code</a>
+    <a href="/tags/code/">Code</a>
     
-    <a href="/tags/code-review/">code review</a>
+    <a href="/tags/code-review/">Code Review</a>
     
     <a href="/tags/computer-vision/">Computer Vision</a>
     
     <a href="/tags/config/">Config</a>
     
-    <a href="/tags/daisyui/">daisyUI</a>
+    <a href="/tags/daisyui/">DaisyUI</a>
     
     <a href="/tags/datavers/">Datavers</a>
     
@@ -532,19 +534,19 @@
     
     <a href="/tags/devops/">DevOps</a>
     
-    <a href="/tags/devtech-java/">devtech java</a>
+    <a href="/tags/devtech-java/">Devtech Java</a>
     
-    <a href="/tags/digital-garden/">digital-garden</a>
+    <a href="/tags/digital-garden/">Digital-Garden</a>
     
     <a href="/tags/docker/">Docker</a>
     
-    <a href="/tags/dubbo/">dubbo</a>
+    <a href="/tags/dubbo/">Dubbo</a>
     
-    <a href="/tags/easyui/">easyui</a>
+    <a href="/tags/easyui/">Easyui</a>
     
     <a href="/tags/editor/">Editor</a>
     
-    <a href="/tags/egghead/">egghead</a>
+    <a href="/tags/egghead/">Egghead</a>
     
     <a href="/tags/element3/">Element3</a>
     
@@ -560,105 +562,105 @@
     
     <a href="/tags/esc/">Esc</a>
     
-    <a href="/tags/essay/">essay</a>
+    <a href="/tags/essay/">Essay</a>
     
     <a href="/tags/evernote/">Evernote</a>
     
-    <a href="/tags/feign/">feign</a>
+    <a href="/tags/feign/">Feign</a>
     
-    <a href="/tags/filter/">filter</a>
+    <a href="/tags/filter/">Filter</a>
     
-    <a href="/tags/fizzbuzz/">fizzbuzz</a>
+    <a href="/tags/fizzbuzz/">Fizzbuzz</a>
     
-    <a href="/tags/framework/">framework</a>
+    <a href="/tags/framework/">Framework</a>
     
     <a href="/tags/freebsd/">FreeBSD</a>
     
-    <a href="/tags/game/">game</a>
+    <a href="/tags/game/">Game</a>
     
-    <a href="/tags/games/">games</a>
+    <a href="/tags/games/">Games</a>
     
-    <a href="/tags/getxml/">getXML</a>
+    <a href="/tags/getxml/">GetXML</a>
     
-    <a href="/tags/git/">git</a>
+    <a href="/tags/git/">Git</a>
     
     <a href="/tags/gitlab/">Gitlab</a>
     
-    <a href="/tags/golang/">golang</a>
+    <a href="/tags/golang/">Golang</a>
     
     <a href="/tags/google/">Google</a>
     
     <a href="/tags/graphic/">Graphic</a>
     
-    <a href="/tags/graphql/">GraphQL</a>
+    <a href="/tags/graphql/">Graphql</a>
     
-    <a href="/tags/grpc/">grpc</a>
+    <a href="/tags/grpc/">Grpc</a>
     
     <a href="/tags/gtd/">GTD</a>
     
-    <a href="/tags/hexo/">hexo</a>
+    <a href="/tags/hexo/">Hexo</a>
     
-    <a href="/tags/https/">https</a>
+    <a href="/tags/https/">Https</a>
     
-    <a href="/tags/hugo/">hugo</a>
+    <a href="/tags/hugo/">Hugo</a>
     
     <a href="/tags/hypervisor/">Hypervisor</a>
     
     <a href="/tags/idea/">IDEA</a>
     
-    <a href="/tags/index/">index</a>
+    <a href="/tags/index/">Index</a>
     
     <a href="/tags/intellij/">Intellij</a>
     
-    <a href="/tags/iot/">IOT</a>
+    <a href="/tags/iot/">IoT</a>
     
-    <a href="/tags/iterm2/">iterm2</a>
+    <a href="/tags/iterm2/">Iterm2</a>
     
     <a href="/tags/jamstack/">JamStack</a>
     
     <a href="/tags/java/">Java</a>
     
-    <a href="/tags/javascript/">javascript</a>
+    <a href="/tags/javascript/">JavaScript</a>
     
     <a href="/tags/jenkins/">Jenkins</a>
     
-    <a href="/tags/json/">json</a>
+    <a href="/tags/json/">Json</a>
     
-    <a href="/tags/julia/">julia</a>
+    <a href="/tags/julia/">Julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
     <a href="/tags/kpi/">KPI</a>
     
-    <a href="/tags/learn/">learn</a>
+    <a href="/tags/learn/">Learn</a>
     
     <a href="/tags/linux/">Linux</a>
     
-    <a href="/tags/love/">love</a>
+    <a href="/tags/love/">Love</a>
     
-    <a href="/tags/low-code/">low code</a>
+    <a href="/tags/low-code/">Low Code</a>
     
-    <a href="/tags/mac-osx/">Mac osx</a>
+    <a href="/tags/mac-osx/">Mac Osx</a>
     
-    <a href="/tags/macos/">macOS</a>
+    <a href="/tags/macos/">MacOS</a>
     
-    <a href="/tags/macro/">macro</a>
+    <a href="/tags/macro/">Macro</a>
     
     <a href="/tags/manjaro/">Manjaro</a>
     
-    <a href="/tags/mapapi/">mapapi</a>
+    <a href="/tags/mapapi/">Mapapi</a>
     
     <a href="/tags/markdown/">Markdown</a>
     
-    <a href="/tags/midi/">midi</a>
+    <a href="/tags/midi/">Midi</a>
     
-    <a href="/tags/mido/">mido</a>
+    <a href="/tags/mido/">Mido</a>
     
-    <a href="/tags/mindmap/">mindmap</a>
+    <a href="/tags/mindmap/">Mindmap</a>
     
     <a href="/tags/model-driven-app/">Model Driven App</a>
     
-    <a href="/tags/module/">module</a>
+    <a href="/tags/module/">Module</a>
     
     <a href="/tags/mounty/">Mounty</a>
     
@@ -666,15 +668,15 @@
     
     <a href="/tags/multibranch/">Multibranch</a>
     
-    <a href="/tags/music/">music</a>
+    <a href="/tags/music/">Music</a>
     
-    <a href="/tags/namespace/">namespace</a>
+    <a href="/tags/namespace/">Namespace</a>
     
     <a href="/tags/neovim/">NeoVim</a>
     
-    <a href="/tags/netlify/">netlify</a>
+    <a href="/tags/netlify/">Netlify</a>
     
-    <a href="/tags/next/">next</a>
+    <a href="/tags/next/">Next</a>
     
     <a href="/tags/ng/">Ng</a>
     
@@ -682,7 +684,7 @@
     
     <a href="/tags/nodejs/">Nodejs</a>
     
-    <a href="/tags/npm/">npm</a>
+    <a href="/tags/npm/">Npm</a>
     
     <a href="/tags/ntfs/">NTFS</a>
     
@@ -696,33 +698,37 @@
     
     <a href="/tags/openfeign/">OpenFeign</a>
     
+    <a href="/tags/openproject/">OpenProject</a>
+    
     <a href="/tags/os/">OS</a>
     
     <a href="/tags/osv/">OSv</a>
     
-    <a href="/tags/package-lock.json/">package-lock.json</a>
+    <a href="/tags/package-lock.json/">Package-Lock.json</a>
     
     <a href="/tags/pact.io/">Pact.io</a>
     
-    <a href="/tags/pain-text/">pain text</a>
+    <a href="/tags/pain-text/">Pain Text</a>
     
-    <a href="/tags/para/">para</a>
+    <a href="/tags/para/">Para</a>
     
-    <a href="/tags/pc/">pc</a>
+    <a href="/tags/pc/">Pc</a>
     
-    <a href="/tags/piano/">piano</a>
+    <a href="/tags/piano/">Piano</a>
+    
+    <a href="/tags/pingcode/">PingCode</a>
     
     <a href="/tags/pipeline/">PipeLine</a>
     
-    <a href="/tags/play1/">play1</a>
+    <a href="/tags/play1/">Play1</a>
     
-    <a href="/tags/play1x/">play1x</a>
+    <a href="/tags/play1x/">Play1x</a>
     
-    <a href="/tags/play2-scala/">play2 scala</a>
+    <a href="/tags/play2-scala/">Play2 Scala</a>
     
-    <a href="/tags/playframework/">playframework</a>
+    <a href="/tags/playframework/">Playframework</a>
     
-    <a href="/tags/playscala/">playscala</a>
+    <a href="/tags/playscala/">Playscala</a>
     
     <a href="/tags/post/">POST</a>
     
@@ -732,45 +738,45 @@
     
     <a href="/tags/powerapps/">PowerApps</a>
     
-    <a href="/tags/powermill/">powermill</a>
+    <a href="/tags/powermill/">Powermill</a>
     
     <a href="/tags/ppt/">PPT</a>
     
     <a href="/tags/promise/">Promise</a>
     
-    <a href="/tags/python/">python</a>
+    <a href="/tags/python/">Python</a>
     
     <a href="/tags/qa/">QA</a>
     
     <a href="/tags/ray-dalio/">Ray Dalio</a>
     
-    <a href="/tags/re-natal/">re-natal</a>
+    <a href="/tags/re-natal/">Re-Natal</a>
     
     <a href="/tags/react/">React</a>
     
-    <a href="/tags/react-native/">react native</a>
+    <a href="/tags/react-native/">React Native</a>
     
-    <a href="/tags/react-route/">react-route</a>
+    <a href="/tags/react-route/">React-Route</a>
     
-    <a href="/tags/redux/">redux</a>
+    <a href="/tags/redux/">Redux</a>
     
     <a href="/tags/redwood/">RedWood</a>
     
     <a href="/tags/regex/">Regex</a>
     
-    <a href="/tags/rpc/">rpc</a>
+    <a href="/tags/rpc/">Rpc</a>
     
     <a href="/tags/ruby/">Ruby</a>
     
-    <a href="/tags/rust/">rust</a>
+    <a href="/tags/rust/">Rust</a>
     
     <a href="/tags/seagate/">Seagate</a>
     
-    <a href="/tags/second-brain/">second-brain</a>
+    <a href="/tags/second-brain/">Second-Brain</a>
     
     <a href="/tags/secure/">Secure</a>
     
-    <a href="/tags/session/">session</a>
+    <a href="/tags/session/">Session</a>
     
     <a href="/tags/silo/">Silo</a>
     
@@ -778,7 +784,7 @@
     
     <a href="/tags/smartide/">SmartIDE</a>
     
-    <a href="/tags/sops/">sops</a>
+    <a href="/tags/sops/">Sops</a>
     
     <a href="/tags/spacemacs/">Spacemacs</a>
     
@@ -786,7 +792,7 @@
     
     <a href="/tags/sql/">SQL</a>
     
-    <a href="/tags/ssh/">ssh</a>
+    <a href="/tags/ssh/">Ssh</a>
     
     <a href="/tags/static-site/">Static Site</a>
     
@@ -794,17 +800,23 @@
     
     <a href="/tags/svg/">SVG</a>
     
+    <a href="/tags/taigo/">Taigo</a>
+    
     <a href="/tags/tailwind/">Tailwind</a>
     
     <a href="/tags/tdd/">TDD</a>
     
-    <a href="/tags/text/">text</a>
+    <a href="/tags/text/">Text</a>
     
     <a href="/tags/toc/">TOC</a>
     
-    <a href="/tags/tomorrow-theme/">tomorrow-theme</a>
+    <a href="/tags/tomorrow-theme/">Tomorrow-Theme</a>
     
-    <a href="/tags/tools/">tools</a>
+    <a href="/tags/tool/">Tool</a>
+    
+    <a href="/tags/tools/">Tools</a>
+    
+    <a href="/tags/trello/">Trello</a>
     
     <a href="/tags/typescript/">TypeScript</a>
     
@@ -812,7 +824,7 @@
     
     <a href="/tags/umi/">Umi</a>
     
-    <a href="/tags/uml/">uml</a>
+    <a href="/tags/uml/">Uml</a>
     
     <a href="/tags/unit-test/">Unit Test</a>
     
@@ -820,17 +832,17 @@
     
     <a href="/tags/vant/">Vant</a>
     
-    <a href="/tags/vi/">vi</a>
+    <a href="/tags/vi/">Vi</a>
     
-    <a href="/tags/vim/">vim</a>
+    <a href="/tags/vim/">Vim</a>
     
     <a href="/tags/vimac/">Vimac</a>
     
     <a href="/tags/vimium/">Vimium</a>
     
-    <a href="/tags/vimrc/">vimrc</a>
+    <a href="/tags/vimrc/">Vimrc</a>
     
-    <a href="/tags/vlang/">vlang</a>
+    <a href="/tags/vlang/">Vlang</a>
     
     <a href="/tags/vscode/">VSCode</a>
     
@@ -838,7 +850,7 @@
     
     <a href="/tags/vue3/">Vue3</a>
     
-    <a href="/tags/weapp/">weapp</a>
+    <a href="/tags/weapp/">Weapp</a>
     
     <a href="/tags/web-resources/">Web Resources</a>
     
@@ -846,7 +858,7 @@
     
     <a href="/tags/weui/">WeUI</a>
     
-    <a href="/tags/wind13/">wind13</a>
+    <a href="/tags/wind13/">Wind13</a>
     
     <a href="/tags/windows/">Windows</a>
     
@@ -854,11 +866,11 @@
     
     <a href="/tags/wux/">Wux</a>
     
-    <a href="/tags/xml/">xml</a>
+    <a href="/tags/xml/">Xml</a>
     
-    <a href="/tags/yarn/">yarn</a>
+    <a href="/tags/yarn/">Yarn</a>
     
-    <a href="/tags/yarn.lock/">yarn.lock</a>
+    <a href="/tags/yarn.lock/">Yarn.lock</a>
     
     <a href="/tags/%E4%B8%80%E5%9B%BE/">一图</a>
     
@@ -1184,7 +1196,7 @@
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2023 <a href="/">世风十三学堂 By 世风十三</a>.
+        &copy; 2024 <a href="/">世风十三学堂 By 世风十三</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

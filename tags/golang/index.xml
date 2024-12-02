@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>golang on 世风十三学堂</title>
+    <title>Golang on 世风十三学堂</title>
     <link>/tags/golang/</link>
-    <description>Recent content in golang on 世风十三学堂</description>
+    <description>Recent content in Golang on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 04 Oct 2019 01:32:49 +0000</lastBuildDate><atom:link href="/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Oct 2019 11:11:58 +0000</lastBuildDate>
+    <atom:link href="/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rust Learning</title>
       <link>/post/2019/2019-10-04-rust-learning/</link>
       <pubDate>Fri, 04 Oct 2019 01:32:49 +0000</pubDate>
-      
       <guid>/post/2019/2019-10-04-rust-learning/</guid>
       <description>Rust Learning References Julia、Rust、F#、Go编程语言游览和感想 Rust, Julia, and Go_ Disruptive New Programming Languages Changing the Face of C 新兴的函数式编程语言（如 Elixir 或 Elm） 从实际应用角度来看，Rust更偏向于底层，旨在替换C语言与C++，Golang旨在替换Java与C#。 Rust语言本身不依赖于虚拟机与GC，没有运行时，跨平台，主</description>
     </item>
-    
     <item>
       <title>当日笔记-20180922</title>
       <link>/post/2018/2018-09-22-daily-note-20180922/</link>
       <pubDate>Sat, 22 Sep 2018 01:53:04 +0000</pubDate>
-      
       <guid>/post/2018/2018-09-22-daily-note-20180922/</guid>
       <description>Hugo 研究 对 Hugo 有点着迷了，看到了 Youtube 上面的教程，非常详细而直观，同时还可以练习英语听力，看自己感兴趣的英语视频内容应该是学英语最佳的途径之一了。 然后发现了这个 netlify 网站 ，号称：Everything you need to deploy your project. 在静态网站的基础上，扩展很多功能 Auth/Form/Lamda 等，包括部署 CI/CD 等，单人免费，多人收费。考虑到结合</description>
     </item>
-    
   </channel>
 </rss>

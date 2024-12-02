@@ -6,33 +6,28 @@
     <description>Recent content in Docker on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 19 Feb 2021 16:51:17 +0800</lastBuildDate><atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Feb 2021 16:51:17 +0800</lastBuildDate>
+    <atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>前端工程化学习笔记</title>
       <link>/post/2021/learn-front-end-engineer/</link>
       <pubDate>Fri, 19 Feb 2021 16:51:17 +0800</pubDate>
-      
       <guid>/post/2021/learn-front-end-engineer/</guid>
       <description>前端工程化学习笔记 拉勾教育《前端工程化精讲》课程 开发效率 脚手架（Scaffold）工具 快速生成 基础代码和目录 package.json, *.lock 文件 项目技术栈 webpack 配置文件 检查工具、单元测试工具 最佳实践 自定义模板 云开发 无代码工具 脚手架工具 Yeoman 通用的，用于一些开发流程里特定片段代码的生成 Create-React-App(CRA) react-rewired customize-cra react-scripts 开发流程集成工具 Vue CLI 有交</description>
     </item>
-    
     <item>
       <title>Jenkins 学习笔记</title>
       <link>/post/2020/jenkins-learning/</link>
       <pubDate>Sat, 10 Oct 2020 09:31:01 +0800</pubDate>
-      
       <guid>/post/2020/jenkins-learning/</guid>
       <description>每个 Jenkins 用户都应该知道这三个最佳实践 轻量化 Jenkins 最佳实践 Jenkins管道最佳实践Top 10 不仅一个代码库可以支持多个Multibranch Job，实际上多个Multibranch Job可以共用同一个代码库，这里面就用到marker的功能。所以作为一个Jenkins管理员，我最纠结的就是</description>
     </item>
-    
     <item>
       <title>Docker 学习</title>
       <link>/post/2018/2018-02-07-docker-%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Wed, 07 Feb 2018 16:18:26 +0000</pubDate>
-      
       <guid>/post/2018/2018-02-07-docker-%E5%AD%A6%E4%B9%A0/</guid>
       <description>Docker 学习 快速入门心法 官网文档也好，网上其他的教程也好，都非常有“耐心”，一点点地教你怎么理解和使用 docker，但我在看这些教程和文档的时候其实很着急，因为我只想快速入门并且用起来，而且最好是按最佳实践的路子用起来，而不是象个初学者那样慢慢摸索。但就是没人把这条捷径说清楚…… 下面我</description>
     </item>
-    
   </channel>
 </rss>

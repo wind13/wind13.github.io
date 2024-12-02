@@ -6,186 +6,147 @@
     <description>Recent content in 实践与经验 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 30 Oct 2022 13:22:47 +0000</lastBuildDate><atom:link href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Oct 2022 13:22:47 +0000</lastBuildDate>
+    <atom:link href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Solve Feign Multipart Mixed Post Request 400 Error</title>
       <link>/post/2022/solve-feign-multipart-mixed-post-request-400-error/</link>
       <pubDate>Sun, 30 Oct 2022 13:22:47 +0000</pubDate>
-      
       <guid>/post/2022/solve-feign-multipart-mixed-post-request-400-error/</guid>
       <description>记一次解决 Feign 提交批量添加请求收到 400 报错的经历 上周在实现用 OpenFeign 提交批量添加请求时，遇到一个奇怪的问题，本来 Post 请求的 body 体，因为是批量请求，内容就比较多，准备起来就比较麻烦，仔细检查了很多次，提交时还是各种失败，最终终于按照官方文档在 Postman 中提交成功了，本以为万事大吉了，于是开始写 Java 代码， 没</description>
     </item>
-    
     <item>
       <title>遗留项目迁移的经验、策略和能力 Legacy System Renew</title>
       <link>/post/2022/legacy-system-renew/</link>
       <pubDate>Sun, 23 Oct 2022 12:12:55 +0000</pubDate>
-      
       <guid>/post/2022/legacy-system-renew/</guid>
       <description>企业遗留项目改造和迁移有用的经验都有哪些？ 之前做过几个遗留项目的迁移工作了， 每一个都有各自的特点， 然而有用的经验却有很多共同点。 归纳起来有以下几点： 首先要深入了解遗留项目的背景、现状和未来期望，包括业务场景、技术框架、历史演进过程等； 其次要有一个富有经验、技术扎实的团队来做支撑，</description>
     </item>
-    
     <item>
       <title>Try SmartIDE</title>
       <link>/post/2022/try-smartide/</link>
       <pubDate>Tue, 05 Jul 2022 03:16:01 +0000</pubDate>
-      
       <guid>/post/2022/try-smartide/</guid>
       <description>尝试在 Deepin 安装成功，但感觉很多个性化配置需要同步才好。 使用了 Docker 的技术，思路是很不错的。 测试了一下，感觉插件同步机制还有点麻烦，考虑到主要的需求可能是在不方便用自己的电脑时才会使用 SmartIDE，这类场景还是不太多，例如使用 iPad 来实现编程，等以后需要了再说吧，可能到时候就有更好、更方</description>
     </item>
-    
     <item>
       <title>Which Editor You Are Using</title>
       <link>/post/2022/which-editor-you-are-using/</link>
       <pubDate>Sat, 07 May 2022 16:39:30 +0800</pubDate>
-      
       <guid>/post/2022/which-editor-you-are-using/</guid>
       <description>你用哪款编辑器？ Which Editor Are You Using? 程序员们都是使用工具的高手，每个人都会有一段时间沉迷于编辑器的选择和配置，就象武者精心挑选自己趁手的兵器一样，你如果是一个程序员，你喜欢哪款编辑器呢？ 江湖上流传着十八般兵器和七种武器的传说，编程界也一样有类似的故事，最有名的莫过于“编辑器之神”和“神的编</description>
     </item>
-    
     <item>
       <title>在 Power Platform 上实践 JamStack 架构思想</title>
       <link>/post/2022/powerplatform-jamstack/</link>
       <pubDate>Sat, 15 Jan 2022 19:51:10 +0800</pubDate>
-      
       <guid>/post/2022/powerplatform-jamstack/</guid>
       <description>Power Apps 上的问题 在 Power Platform 中，微软官方的工具是使用 Canvas App 来构建前端界面， Model Driven App 可以实现固定模式的一些操作界面，类似我们常说的 CRUD 增删改查等操作，还有一些简单的流程操作界面，比如审批流程什么的，不过 Model Driven App 的界面模式单一，可定制化的能力不足，通常无法满足用户多样的需求，很多细节也不太容易灵活处理</description>
     </item>
-    
     <item>
       <title>不要用 Mounty，一次惊险的数据恢复记录</title>
       <link>/post/2022/do-not-use-mounty-disk-data-recovery/</link>
       <pubDate>Sun, 09 Jan 2022 12:23:45 +0800</pubDate>
-      
       <guid>/post/2022/do-not-use-mounty-disk-data-recovery/</guid>
       <description>不要用 Mounty，一次惊险的数据恢复记录 不愿看前情啰嗦的，可以直接看最后的总结…… macOS 无法读写 NTFS 格式的硬盘 Mounty for NTFS A tiny tool to re-mount write-protected NTFS volumes under macOS in read-write mode. 尝试使用这个工具，可以拷贝写入 NTFS 的硬盘，但不稳定，在拷贝一大堆资料时，突然资料盘的这个原目录里的资料看不见了，转到 Win10 系统提示无法打开。 因为资料</description>
     </item>
-    
     <item>
       <title>低代码开发的问题 Low Code Problems</title>
       <link>/post/2021/blog.low-code-problems/</link>
       <pubDate>Mon, 13 Sep 2021 22:18:22 +0800</pubDate>
-      
       <guid>/post/2021/blog.low-code-problems/</guid>
       <description>低代码开发的问题 低代码/无代码开发如今也成为了一个热门话题，而我自己也深入到一个 Power Platform 的项目实践中，有了一些体会了，也分享一些自己的想法，供大家参考。 低代码开发会很快吗？ 第一印象确实如此，我使用的是微软的 Power Platform，整个过程就象是早些年使用 Access 数据库一样（我认为 Power Apps 就是基于当</description>
     </item>
-    
     <item>
       <title>对于微软 PowerApps 的使用感受</title>
       <link>/post/2020/feeling-powerapps/</link>
       <pubDate>Wed, 25 Nov 2020 09:57:44 +0800</pubDate>
-      
       <guid>/post/2020/feeling-powerapps/</guid>
       <description>感受 非常依赖微软的生态系统，基本上就是原来单机版的 Office 搬上了云端，再加上一些快捷功能生成手机/平板 App 和网站等。 生成的 App 实际上是运行在 PowerApps 这个超级 App 基础上，相当于小程序之于微信，不同的是，小程序支持代码开发（支持 JavaScript 等语言，有更高的可控性和灵活性），而微软的 PowerApps 不太支持代码开发，主张的是通</description>
     </item>
-    
     <item>
       <title>正念编程——知识星球：世风十三学堂</title>
       <link>/post/2020/mindfulness-programming/</link>
       <pubDate>Sun, 30 Aug 2020 17:43:29 +0800</pubDate>
-      
       <guid>/post/2020/mindfulness-programming/</guid>
       <description>发心与起源 受到樊登读书会的很多影响，抽出了这个词：正念，有几个方面的考虑： 走正道，做正确的事 使用正确的方法 学习道层面的心法 长期主义，慢慢进步 传统的师徒教授方式很有效果 多年的经验，帮你少走弯路 追求思维方式的改变和升级 不同于传统的培训、技术教程之类 为什么说报培训班不好？ 看技术教程、看</description>
     </item>
-    
     <item>
       <title>心学技艺——人生终极追求</title>
       <link>/post/2020/mind-wish-woo/</link>
       <pubDate>Sun, 30 Aug 2020 17:21:32 +0800</pubDate>
-      
       <guid>/post/2020/mind-wish-woo/</guid>
       <description>心学技艺——人生终极追求 心：各种心态性情，修心养性，如恒心、耐心、良心、细心、同理心、平常心、佛心、道心、仁心…… 学：各种学科、科学，如数学、物理学、化学、生物学、心理学、经济学、哲学、医学、工程学、机械学、电子学、金融学、文学、天文学…… 技：各种技术，如编程、修摩托、造汽车、造</description>
     </item>
-    
     <item>
       <title>开发团队能力</title>
       <link>/post/2020/team-ability.md/</link>
       <pubDate>Sun, 09 Aug 2020 11:02:19 +0800</pubDate>
-      
       <guid>/post/2020/team-ability.md/</guid>
       <description>结论 以终为始（TDD）+ 工程思维（CI/CD）， 团队能做好这两方面，就可以达到 80分了。 以终为始 这个词来自《高效能人士的7个习惯》，是指做事情要先明确目标，以目标为出发点来思考做法，这恰好和极限编程中的 TDD 一样，团队需要将需求拆解为较小的可实现的目标，再由此目标写出相应的单元测试或</description>
     </item>
-    
     <item>
       <title>Umi vs Nuxt vs Ng-alain</title>
       <link>/post/2020/umi-vs-nuxt-vs-ngalain/</link>
       <pubDate>Tue, 28 Jul 2020 11:17:13 +0800</pubDate>
-      
       <guid>/post/2020/umi-vs-nuxt-vs-ngalain/</guid>
       <description>概述和思考 很多时候前端开发人员会面对眼花缭乱的框架很难选择。 标题所说的选择实质是三大阵营（React, Vue 和 Angular）的选择。 三个底层框架各有所长，亮点在于： React：更接近函数式编程思想，单向数据流比较清晰，jsx 是不错的创新，熟悉后可结合函数式编程写出比较优雅的组件代码</description>
     </item>
-    
     <item>
       <title>折腾 NeoVim 和 SpaceVim</title>
       <link>/post/2020/neovim-spacevim/</link>
       <pubDate>Fri, 24 Jul 2020 22:51:39 +0800</pubDate>
-      
       <guid>/post/2020/neovim-spacevim/</guid>
       <description>网上乱逛，听说 NeoVim 比 Vim 先进还快，虽然也有说不值得换的，不管，折腾，然后还发现了 SpaceVim，听说适合初级水平的 vimer，没问题，折腾，全换，从 Vim 换到 NeoVim，再从 oh-my-vim 换到 SpaceVim，这编程器就是有无限的魅力让人想不断地折腾尝鲜。 安装完 SpaceVim 后，常会遇到一个报错提示： :help vimproc m</description>
     </item>
-    
     <item>
       <title>《授权——如何激发全员领导力》樊登读书视频记录</title>
       <link>/post/2020/turn-the-ship-around/</link>
       <pubDate>Sat, 04 Jul 2020 13:26:17 +0800</pubDate>
-      
       <guid>/post/2020/turn-the-ship-around/</guid>
       <description>英文书名：《Turn the Ship Around》 通往“领导者——领导者”模式 桥梁：掌控 实现“掌控”的方法： 寻找“掌控”的“遗传基因”，并改写它。 用新的行为举止开启新的思维方式。 用简短的早期谈话提高工作效率。 使用“我计划”……“因为……”流程。 克制提供解决方案的冲动。 消除“自上而下”的监管体</description>
     </item>
-    
     <item>
       <title>我的 Windows 开发环境</title>
       <link>/post/2020/my-windows-dev-env/</link>
       <pubDate>Wed, 03 Jun 2020 13:28:34 +0800</pubDate>
-      
       <guid>/post/2020/my-windows-dev-env/</guid>
       <description>需安装的软件工具 注：如果国外文件下载不了，可尝试国内下载 Google scoop 或 Chocolatey 安装好 choco 或 scoop 后，可以通过命令安装其他软件，个人可以维护一个常用的软件列表，写成一个脚本，这样每次一台新的 Windows 系统，就可以通过这个脚本完成80~90%的装机工作了。 Wox Github Download 里面还会附带 Python 和 Everything 的安装文件。 cmder，安装好之</description>
     </item>
-    
     <item>
       <title>思考落实到文字</title>
       <link>/post/2020/thinking-to-text/</link>
       <pubDate>Tue, 19 May 2020 10:11:29 +0800</pubDate>
-      
       <guid>/post/2020/thinking-to-text/</guid>
       <description>倡议大家把自己的思考都记录到自己的博客或者公众号上，把思维落实到 markdown 这样的纯文本中，其自带的优势可参看此文：《纯文本的威力》 我们将思考仔细地整理成文字，虽然相对直接说会更耗时间，但看的人却可以很快地了解整个思路，而且有以下一些好处： 中途不会被打断，一些论点可能刚一说出来，就会面临争</description>
     </item>
-    
     <item>
       <title>Manjaro 系统使用记录</title>
       <link>/post/2019/manjaro-os-usage/</link>
       <pubDate>Fri, 20 Dec 2019 19:39:26 +0800</pubDate>
-      
       <guid>/post/2019/manjaro-os-usage/</guid>
       <description>前几天（今天是2019年12月20日）把 Deepin 系统从 D 盘（1T 硬盘）上删除了，在固态硬盘上开出了 80G 硬盘空间安装个 Manjaro KDE 玩儿一下，中间因为分区操作失误，差点把整个 D 盘给弄丢了，还好冷静地找办法解决，试了很多工具，其中 DiskGenius 是可以找回分区表的，但到最后一步居然提示要收费，好像还要两三百吧，不甘</description>
     </item>
-    
     <item>
       <title>我的Mac OS X 开发环境和 Vim 的设置</title>
       <link>/post/2014/2014-05-13-my-macosx-vimrc/</link>
       <pubDate>Tue, 13 May 2014 19:34:21 +0800</pubDate>
-      
       <guid>/post/2014/2014-05-13-my-macosx-vimrc/</guid>
       <description>系统设置 需要将CapsLock键改为Esc键，以方便Vi习惯。方法：安装 PCKeyboardHack，将CapsLock键的值从51改为53即可。 Deepin 系统的更换方法：修改键盘映射，但对于 vscode 好像不行。 Eclipse 设置 添加Vrapper插件，以便使用Vi习惯。update url: http://vrapper.sourceforge.net/update-site/stable 添加Js的编辑环境，</description>
     </item>
-    
     <item>
       <title>Backbone 路向何方？</title>
       <link>/post/2014/2014-05-07-migrate-backbone-to/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/post/2014/2014-05-07-migrate-backbone-to/</guid>
       <description>情况背景 使用 Backbone 开发 Web App 之后，特别是较大型的项目，会发现因为缺少一些关键的功能（如：双向绑定等）代码越来越多且复杂，从而导致后期扩展和更新越来越困难，因此从基本框架层面需要考虑改善，以便使整个框架更有条理，更易组织，更易扩展、复用、重构等…… 目前可以想到的有三个方向： 在 Backbone 基础上结合</description>
     </item>
-    
     <item>
       <title>UML tools of Mac OSX 苹果系统下的建模工具</title>
       <link>/post/2014/2014-03-27-uml-tools-of-mac-osx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/post/2014/2014-03-27-uml-tools-of-mac-osx/</guid>
       <description>今天工作时需要设计一下程序的架构，即建模工作，这件事用纯文本似乎较难完成（本人是纯文本的 funs）。用手绘软件（Gimp, SketchBookExpress）也不太方便，失量图软件（Inkscape，LibreOfficeDraw）也要从画方框开始也不方便，毕竟是模块化的图形，还</description>
     </item>
-    
   </channel>
 </rss>

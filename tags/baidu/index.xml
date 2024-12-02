@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>baidu on 世风十三学堂</title>
+    <title>Baidu on 世风十三学堂</title>
     <link>/tags/baidu/</link>
-    <description>Recent content in baidu on 世风十三学堂</description>
+    <description>Recent content in Baidu on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="/tags/baidu/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language>
+    <atom:link href="/tags/baidu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>百度地图使用相关资料</title>
       <link>/post/2016/2016-08-28-baidu-map-usage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/post/2016/2016-08-28-baidu-map-usage/</guid>
       <description>百度地图接口 MKMapViewListener 地图显示事件监听器。 该接口监听地图显示事件，用户需要实现该接口以处理相应事件。 百度地图程序包 com.baidu.mapapi.map 地图展示与操作相关方法，覆盖物相关方法</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,47 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hugo on 世风十三学堂</title>
+    <title>Hugo on 世风十三学堂</title>
     <link>/tags/hugo/</link>
-    <description>Recent content in hugo on 世风十三学堂</description>
+    <description>Recent content in Hugo on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 03 Jan 2021 11:24:11 +0800</lastBuildDate><atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Jan 2021 11:24:11 +0800</lastBuildDate>
+    <atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>终极笔记 Dendron</title>
       <link>/post/2021/ultimate-pkm-solution-dendron/</link>
       <pubDate>Sun, 03 Jan 2021 11:24:11 +0800</pubDate>
-      
       <guid>/post/2021/ultimate-pkm-solution-dendron/</guid>
       <description>我想每个知识工作者都会有自己的个人知识管理解决方案，而且也都在不断地进化和改善中，还记得最早的时候，我们是没有这些概念的，那时候，不管把信息记在哪儿，随手记下来就算了，用过之后也就忘了或者删掉了。慢慢地我们意识到一些信息可能是有用的，需要保留下来的，于是我们用各种方式进行保存，建</description>
     </item>
-    
     <item>
       <title>Hugo 中 显示 MindMap 思维导图</title>
       <link>/post/2020/hugo-mind-map/</link>
       <pubDate>Fri, 31 Jan 2020 13:40:37 +0800</pubDate>
-      
       <guid>/post/2020/hugo-mind-map/</guid>
       <description>目前比较好的脑图方案 一个是在 Hugo 里用 Markdown 写，在浏览器中预览。 另一个是用 Markdown 写后，通过 Typora 导出 opml 格式，再导入幕布后即可查看。 还有就是使用 PlantUML 插件 在 VSCode 中写 markdown 画脑图。 还有一个就是用 vscode-mindmap 插件，编辑 kityminder *.km 文件即可，这个功能与百度脑图用的是同一个技术，只是还没找到导入导出的功能。 效果如下： 根目录 一级目录1</description>
     </item>
-    
     <item>
       <title>当日笔记-20180922</title>
       <link>/post/2018/2018-09-22-daily-note-20180922/</link>
       <pubDate>Sat, 22 Sep 2018 01:53:04 +0000</pubDate>
-      
       <guid>/post/2018/2018-09-22-daily-note-20180922/</guid>
       <description>Hugo 研究 对 Hugo 有点着迷了，看到了 Youtube 上面的教程，非常详细而直观，同时还可以练习英语听力，看自己感兴趣的英语视频内容应该是学英语最佳的途径之一了。 然后发现了这个 netlify 网站 ，号称：Everything you need to deploy your project. 在静态网站的基础上，扩展很多功能 Auth/Form/Lamda 等，包括部署 CI/CD 等，单人免费，多人收费。考虑到结合</description>
     </item>
-    
     <item>
       <title>当日笔记-20180921</title>
       <link>/post/2018/2018-09-21-daily-note-20180921/</link>
       <pubDate>Fri, 21 Sep 2018 10:25:07 +0000</pubDate>
-      
       <guid>/post/2018/2018-09-21-daily-note-20180921/</guid>
       <description>准备做的事 尝试使用 Hugo； 目录结构： archetypes：包括内容类型，在创建新内容时自动生成内容的配置 content：包括网站内容，全部使用markdown格式 layouts：包括了网站的模版，决定内容如何呈现 static：包括了css, js, fonts, media等，决定网站的外观 常用命</description>
     </item>
-    
   </channel>
 </rss>

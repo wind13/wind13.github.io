@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>redux on 世风十三学堂</title>
+    <title>Redux on 世风十三学堂</title>
     <link>/tags/redux/</link>
-    <description>Recent content in redux on 世风十三学堂</description>
+    <description>Recent content in Redux on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 05 Sep 2018 09:35:11 +0000</lastBuildDate><atom:link href="/tags/redux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Sep 2018 09:35:11 +0000</lastBuildDate>
+    <atom:link href="/tags/redux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>再见了 Redux （翻译）</title>
       <link>/post/2018/2018-09-05-goodbye-redux-cn/</link>
       <pubDate>Wed, 05 Sep 2018 09:35:11 +0000</pubDate>
-      
       <guid>/post/2018/2018-09-05-goodbye-redux-cn/</guid>
       <description>作者：Jack Scott 原文（英语） 国内网可能访问不到……大致翻译如下： 本文主要分析了一下我们过去为什么需要 Redux，而为什么以后又不再需要了。 在过去的几年里，互联网技术已经转向用前端 JavaScript 框架来实现网站和手机应用，以达到更好的用户体验。这非常棒 🔥 ，我个人很欣赏这些框架提供的灵活性。 但是灵</description>
     </item>
-    
     <item>
       <title>Ant Design React 使用记录</title>
       <link>/post/2018/2018-07-26-ant-design-react-note/</link>
       <pubDate>Thu, 26 Jul 2018 09:22:11 +0000</pubDate>
-      
       <guid>/post/2018/2018-07-26-ant-design-react-note/</guid>
       <description>遇到的问题 Table 组件的服务端分页问题 Table 表格 仔细看了一下，虽然 mock 中的数据是全部数据集，但是是模拟远程数据库的概念的，每次返回到客户端的数据还是单个页面的数据，所以这里可以理解为本身的设计就是支持服务端分页的。 路由带参数问题 Route props - match 下载 Excel 模板的问题 Using Node.js to download files 后端文档路径： http://jp-open-service.thinkmacro.cn/swagger-ui.html Form 相关参考： http://react-component.github.io/form/</description>
     </item>
-    
   </channel>
 </rss>

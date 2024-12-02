@@ -6,15 +6,14 @@
     <description>Recent content on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 09 Aug 2020 11:02:19 +0800</lastBuildDate><atom:link href="/tags/%E4%B8%96%E9%A3%8E%E5%8D%81%E4%B8%89%E5%AD%A6%E5%A0%82/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Aug 2020 11:02:19 +0800</lastBuildDate>
+    <atom:link href="/tags/%E4%B8%96%E9%A3%8E%E5%8D%81%E4%B8%89%E5%AD%A6%E5%A0%82/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>开发团队能力</title>
       <link>/post/2020/team-ability.md/</link>
       <pubDate>Sun, 09 Aug 2020 11:02:19 +0800</pubDate>
-      
       <guid>/post/2020/team-ability.md/</guid>
       <description>结论 以终为始（TDD）+ 工程思维（CI/CD）， 团队能做好这两方面，就可以达到 80分了。 以终为始 这个词来自《高效能人士的7个习惯》，是指做事情要先明确目标，以目标为出发点来思考做法，这恰好和极限编程中的 TDD 一样，团队需要将需求拆解为较小的可实现的目标，再由此目标写出相应的单元测试或</description>
     </item>
-    
   </channel>
 </rss>

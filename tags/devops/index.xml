@@ -6,33 +6,28 @@
     <description>Recent content in DevOps on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 10 Oct 2020 09:31:01 +0800</lastBuildDate><atom:link href="/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Oct 2020 09:31:01 +0800</lastBuildDate>
+    <atom:link href="/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jenkins 学习笔记</title>
       <link>/post/2020/jenkins-learning/</link>
       <pubDate>Sat, 10 Oct 2020 09:31:01 +0800</pubDate>
-      
       <guid>/post/2020/jenkins-learning/</guid>
       <description>每个 Jenkins 用户都应该知道这三个最佳实践 轻量化 Jenkins 最佳实践 Jenkins管道最佳实践Top 10 不仅一个代码库可以支持多个Multibranch Job，实际上多个Multibranch Job可以共用同一个代码库，这里面就用到marker的功能。所以作为一个Jenkins管理员，我最纠结的就是</description>
     </item>
-    
     <item>
       <title>开发团队能力</title>
       <link>/post/2020/team-ability.md/</link>
       <pubDate>Sun, 09 Aug 2020 11:02:19 +0800</pubDate>
-      
       <guid>/post/2020/team-ability.md/</guid>
       <description>结论 以终为始（TDD）+ 工程思维（CI/CD）， 团队能做好这两方面，就可以达到 80分了。 以终为始 这个词来自《高效能人士的7个习惯》，是指做事情要先明确目标，以目标为出发点来思考做法，这恰好和极限编程中的 TDD 一样，团队需要将需求拆解为较小的可实现的目标，再由此目标写出相应的单元测试或</description>
     </item>
-    
     <item>
       <title>DevOps技术相关</title>
       <link>/post/2016/2016-12-18-devops-collection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/post/2016/2016-12-18-devops-collection/</guid>
       <description>DevOps技术相关 相关链接 Ansible中文权威指南 所有重复的IT工作可以被自动化并分享给其他组员。 Choosing a deployment tool - ansible vs puppet vs chef vs salt 相关观点 Puppet is a similar tool to Chef Vagrant is a tool for developers and a toy for admins, you can quickly stand up a development environment with vagrant, e.g. I want to develop an android app, grab an IDE from vagrant, I think it will be overtaken by Docker soon. 我现在使用的是阿里容器服务: https://cs.console.aliyun.com ，配合阿里的虚拟</description>
     </item>
-    
   </channel>
 </rss>

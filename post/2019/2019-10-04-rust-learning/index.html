@@ -9,12 +9,12 @@
     <title>Rust Learning | 世风十三学堂</title>
     <meta property="og:title" content="Rust Learning - 世风十三学堂">
     <meta property="og:type" content="article">
-        
-    <meta property="article:published_time" content='2019-10-04T01:32:49&#43;08:00'>
-        
-        
-    <meta property="article:modified_time" content='2019-10-03T11:11:58&#43;08:00'>
-        
+
+<meta property="article:published_time" content='2019-10-04T01:32:49&#43;08:00'>
+
+
+<meta property="article:modified_time" content='2019-10-03T11:11:58&#43;08:00'>
+
     <meta name="Keywords" content="Programing">
     <meta name="description" content="Rust Learning">
         
@@ -202,26 +202,26 @@
 <h2 id="国内镜像源">国内镜像源</h2>
 <pre tabindex="0"><code class="language-conf" data-lang="conf"># 放到 `$HOME/.cargo/config` 文件中
 [source.crates-io]
-registry = &quot;https://github.com/rust-lang/crates.io-index&quot;
+registry = &#34;https://github.com/rust-lang/crates.io-index&#34;
 
 # 替换成你偏好的镜像源
-replace-with = 'sjtu'
+replace-with = &#39;sjtu&#39;
 
 # 清华大学
 [source.tuna]
-registry = &quot;https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git&quot;
+registry = &#34;https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git&#34;
 
 # 中国科学技术大学
 [source.ustc]
-registry = &quot;git://mirrors.ustc.edu.cn/crates.io-index&quot;
+registry = &#34;git://mirrors.ustc.edu.cn/crates.io-index&#34;
 
 # 上海交通大学
 [source.sjtu]
-registry = &quot;https://mirrors.sjtug.sjtu.edu.cn/git/crates.io-index&quot;
+registry = &#34;https://mirrors.sjtug.sjtu.edu.cn/git/crates.io-index&#34;
 
 # rustcc社区
 [source.rustcc]
-registry = &quot;git://crates.rustcc.cn/crates.io-index&quot;
+registry = &#34;git://crates.rustcc.cn/crates.io-index&#34;
 </code></pre><h2 id="key-points">Key points</h2>
 <ul>
 <li>理解所有权：<a href="https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html">What is Ownership</a>
@@ -245,61 +245,61 @@ registry = &quot;git://crates.rustcc.cn/crates.io-index&quot;
 </li>
 </ul>
 <p>这里遇到一个实例：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> std::fs;
-
-<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
-    println!(<span style="color:#e6db74">&#34;Start modifies&#34;</span>);
-    <span style="color:#66d9ef">let</span> paths <span style="color:#f92672">=</span> fs::read_dir(<span style="color:#e6db74">&#34;./&#34;</span>).unwrap();
-
-    <span style="color:#66d9ef">let</span> c <span style="color:#f92672">=</span> paths.count();
-    println!(<span style="color:#e6db74">&#34;Count: {}&#34;</span>, c);
-}
-<span style="color:#75715e">// 这样就是 work 的
-</span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> std::fs;
-
-<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
-    println!(<span style="color:#e6db74">&#34;Start modifies&#34;</span>);
-    <span style="color:#66d9ef">let</span> paths <span style="color:#f92672">=</span> fs::read_dir(<span style="color:#e6db74">&#34;./&#34;</span>).unwrap();
-
-    <span style="color:#66d9ef">for</span> path <span style="color:#66d9ef">in</span> paths {
-        println!(<span style="color:#e6db74">&#34;Name: {}&#34;</span>, path.unwrap().path().display())
-    }
-}
-<span style="color:#75715e">// 这样也是 work 的
-</span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> std::fs;
-
-<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
-    println!(<span style="color:#e6db74">&#34;Start modifies&#34;</span>);
-    <span style="color:#66d9ef">let</span> paths <span style="color:#f92672">=</span> fs::read_dir(<span style="color:#e6db74">&#34;./&#34;</span>).unwrap();
-
-    <span style="color:#66d9ef">for</span> path <span style="color:#66d9ef">in</span> paths {
-        println!(<span style="color:#e6db74">&#34;Name: {}&#34;</span>, path.unwrap().path().display())
-    }
-
-    <span style="color:#66d9ef">let</span> c <span style="color:#f92672">=</span> paths.count();
-    println!(<span style="color:#e6db74">&#34;Count: {}&#34;</span>, c);
-}
-<span style="color:#75715e">// 但是两个放一起就不 work 了，但我也不想再弄一个变量，于是就报错了。
-</span></code></pre></div><blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">use</span> std::fs;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    println!(<span style="color:#e6db74">&#34;Start modifies&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> paths <span style="color:#f92672">=</span> fs::read_dir(<span style="color:#e6db74">&#34;./&#34;</span>).unwrap();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> c <span style="color:#f92672">=</span> paths.count();
+</span></span><span style="display:flex;"><span>    println!(<span style="color:#e6db74">&#34;Count: </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, c);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 这样就是 work 的
+</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">use</span> std::fs;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    println!(<span style="color:#e6db74">&#34;Start modifies&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> paths <span style="color:#f92672">=</span> fs::read_dir(<span style="color:#e6db74">&#34;./&#34;</span>).unwrap();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> path <span style="color:#66d9ef">in</span> paths {
+</span></span><span style="display:flex;"><span>        println!(<span style="color:#e6db74">&#34;Name: </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, path.unwrap().path().display())
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 这样也是 work 的
+</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">use</span> std::fs;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    println!(<span style="color:#e6db74">&#34;Start modifies&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> paths <span style="color:#f92672">=</span> fs::read_dir(<span style="color:#e6db74">&#34;./&#34;</span>).unwrap();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> path <span style="color:#66d9ef">in</span> paths {
+</span></span><span style="display:flex;"><span>        println!(<span style="color:#e6db74">&#34;Name: </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, path.unwrap().path().display())
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> c <span style="color:#f92672">=</span> paths.count();
+</span></span><span style="display:flex;"><span>    println!(<span style="color:#e6db74">&#34;Count: </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, c);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 但是两个放一起就不 work 了，但我也不想再弄一个变量，于是就报错了。
+</span></span></span></code></pre></div><blockquote>
 <p>结果找到原因是 Iterate 不同于数组容器只能使用一次，所以改为如下即可：</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">list_of_path</span>(path: <span style="color:#66d9ef">&amp;</span><span style="color:#66d9ef">str</span>) -&gt; <span style="color:#a6e22e">vec</span>::Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> {
-    <span style="color:#66d9ef">let</span> paths <span style="color:#f92672">=</span> fs::read_dir(path).unwrap();
-    <span style="color:#66d9ef">return</span> paths.map(<span style="color:#f92672">|</span>path<span style="color:#f92672">|</span>{
-        <span style="color:#66d9ef">let</span> name <span style="color:#f92672">=</span> path.unwrap().path().display().to_string();
-        println!(<span style="color:#e6db74">&#34;Name: {}&#34;</span>, name);
-        <span style="color:#66d9ef">return</span> name;
-    }).collect::<span style="color:#f92672">&lt;</span>Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;&gt;</span>();
-}
-
-<span style="color:#66d9ef">let</span> paths <span style="color:#f92672">=</span> list_of_path(S);
-<span style="color:#66d9ef">let</span> c <span style="color:#f92672">=</span> paths.len();
-assert_eq!(c, <span style="color:#ae81ff">7</span>);
-<span style="color:#66d9ef">for</span> p <span style="color:#66d9ef">in</span> paths {
-    assert!(p.len() <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>);
-    println!(<span style="color:#e6db74">&#34;Name: {}&#34;</span>, p);
-}
-</code></pre></div><h3 id="数据竞争">数据竞争</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">list_of_path</span>(path: <span style="color:#66d9ef">&amp;</span><span style="color:#66d9ef">str</span>) -&gt; <span style="color:#a6e22e">vec</span>::Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> paths <span style="color:#f92672">=</span> fs::read_dir(path).unwrap();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> paths.map(<span style="color:#f92672">|</span>path<span style="color:#f92672">|</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> name <span style="color:#f92672">=</span> path.unwrap().path().display().to_string();
+</span></span><span style="display:flex;"><span>        println!(<span style="color:#e6db74">&#34;Name: </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, name);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> name;
+</span></span><span style="display:flex;"><span>    }).collect::<span style="color:#f92672">&lt;</span>Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;&gt;</span>();
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> paths <span style="color:#f92672">=</span> list_of_path(S);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> c <span style="color:#f92672">=</span> paths.len();
+</span></span><span style="display:flex;"><span>assert_eq!(c, <span style="color:#ae81ff">7</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> p <span style="color:#66d9ef">in</span> paths {
+</span></span><span style="display:flex;"><span>    assert!(p.len() <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>    println!(<span style="color:#e6db74">&#34;Name: </span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, p);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="数据竞争">数据竞争</h3>
 <blockquote>
 <p>对于所有的类型T和任意的生命周期参数‘a，都能衍生出两种类型：&amp;&lsquo;a T 和 &amp;mut &lsquo;a T。</p>
 </blockquote>
@@ -309,9 +309,9 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
 <blockquote>
 <p>编译器里有一个工具borrowck，在编译时会自动检查这两种类型的使用情况，如果有非法的使用，就报错，不让你编译通过。同样地，当你手中还持有着对一个值的引用时，编译器不允许将其移动或者销毁。这样，就杜绝了野指针现象和数据竞争问题。</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">let</span> rb0 <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>b;
-<span style="color:#66d9ef">let</span> rb1 <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> b;
-</code></pre></div><h3 id="值传递">值传递</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> rb0 <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>b;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> rb1 <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> b;
+</span></span></code></pre></div><h3 id="值传递">值传递</h3>
 <blockquote>
 <p>Rust 的默认的值的传递是：转移。不管是赋值还是函数调用时的参数和返回值，都是这样。</p>
 </blockquote>
@@ -396,6 +396,14 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2024/wsl-hugo-blog/" title="使用 WSL 启动 Hugo 搭建博客">使用 WSL 启动 Hugo 搭建博客</a>
+    </li>
+    
+    <li>
+        <a href="/post/2024/agile-project-tools/" title="敏捷项目管理工具比较 Agile Project Tools Compare">敏捷项目管理工具比较 Agile Project Tools Compare</a>
+    </li>
+    
+    <li>
         <a href="/post/2023/front-end-ui-hero-before-after/" title="前端UI的江湖风云">前端UI的江湖风云</a>
     </li>
     
@@ -427,14 +435,6 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
         <a href="/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
     </li>
     
-    <li>
-        <a href="/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
-    </li>
-    
-    <li>
-        <a href="/post/2022/powerplatform-jamstack/" title="在 Power Platform 上实践 JamStack 架构思想">在 Power Platform 上实践 JamStack 架构思想</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -448,13 +448,13 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
     
     <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (27)</a></li>
     
-    <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (27)</a></li>
+    <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (29)</a></li>
     
     <li><a href="/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (47)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (49)</a></li>
     
 </ul>
     </section>
@@ -465,27 +465,29 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
     
     <a href="/tags/access/">Access</a>
     
+    <a href="/tags/agile/">Agile</a>
+    
     <a href="/tags/android/">Android</a>
     
     <a href="/tags/android-%E6%B5%8B%E8%AF%95/">Android 测试</a>
     
-    <a href="/tags/angular/">angular</a>
+    <a href="/tags/angular/">Angular</a>
     
-    <a href="/tags/angularjs/">angularjs</a>
+    <a href="/tags/angularjs/">Angularjs</a>
     
-    <a href="/tags/antd/">AntD</a>
+    <a href="/tags/antd/">Antd</a>
     
     <a href="/tags/app/">App</a>
     
-    <a href="/tags/architect/">architect</a>
+    <a href="/tags/architect/">Architect</a>
     
     <a href="/tags/aws/">AWS</a>
     
     <a href="/tags/azure/">Azure</a>
     
-    <a href="/tags/backbone/">backbone</a>
+    <a href="/tags/backbone/">Backbone</a>
     
-    <a href="/tags/baidu/">baidu</a>
+    <a href="/tags/baidu/">Baidu</a>
     
     <a href="/tags/beeui/">BeeUi</a>
     
@@ -493,7 +495,7 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
     
     <a href="/tags/blog/">Blog</a>
     
-    <a href="/tags/boook/">boook</a>
+    <a href="/tags/boook/">Boook</a>
     
     <a href="/tags/canvas-app/">Canvas App</a>
     
@@ -501,21 +503,21 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
     
     <a href="/tags/chado.js/">Chado.js</a>
     
-    <a href="/tags/chkdsk/">chkdsk</a>
+    <a href="/tags/chkdsk/">Chkdsk</a>
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
     <a href="/tags/clojure/">Clojure</a>
     
-    <a href="/tags/code/">code</a>
+    <a href="/tags/code/">Code</a>
     
-    <a href="/tags/code-review/">code review</a>
+    <a href="/tags/code-review/">Code Review</a>
     
     <a href="/tags/computer-vision/">Computer Vision</a>
     
     <a href="/tags/config/">Config</a>
     
-    <a href="/tags/daisyui/">daisyUI</a>
+    <a href="/tags/daisyui/">DaisyUI</a>
     
     <a href="/tags/datavers/">Datavers</a>
     
@@ -527,19 +529,19 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
     
     <a href="/tags/devops/">DevOps</a>
     
-    <a href="/tags/devtech-java/">devtech java</a>
+    <a href="/tags/devtech-java/">Devtech Java</a>
     
-    <a href="/tags/digital-garden/">digital-garden</a>
+    <a href="/tags/digital-garden/">Digital-Garden</a>
     
     <a href="/tags/docker/">Docker</a>
     
-    <a href="/tags/dubbo/">dubbo</a>
+    <a href="/tags/dubbo/">Dubbo</a>
     
-    <a href="/tags/easyui/">easyui</a>
+    <a href="/tags/easyui/">Easyui</a>
     
     <a href="/tags/editor/">Editor</a>
     
-    <a href="/tags/egghead/">egghead</a>
+    <a href="/tags/egghead/">Egghead</a>
     
     <a href="/tags/element3/">Element3</a>
     
@@ -555,105 +557,105 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
     
     <a href="/tags/esc/">Esc</a>
     
-    <a href="/tags/essay/">essay</a>
+    <a href="/tags/essay/">Essay</a>
     
     <a href="/tags/evernote/">Evernote</a>
     
-    <a href="/tags/feign/">feign</a>
+    <a href="/tags/feign/">Feign</a>
     
-    <a href="/tags/filter/">filter</a>
+    <a href="/tags/filter/">Filter</a>
     
-    <a href="/tags/fizzbuzz/">fizzbuzz</a>
+    <a href="/tags/fizzbuzz/">Fizzbuzz</a>
     
-    <a href="/tags/framework/">framework</a>
+    <a href="/tags/framework/">Framework</a>
     
     <a href="/tags/freebsd/">FreeBSD</a>
     
-    <a href="/tags/game/">game</a>
+    <a href="/tags/game/">Game</a>
     
-    <a href="/tags/games/">games</a>
+    <a href="/tags/games/">Games</a>
     
-    <a href="/tags/getxml/">getXML</a>
+    <a href="/tags/getxml/">GetXML</a>
     
-    <a href="/tags/git/">git</a>
+    <a href="/tags/git/">Git</a>
     
     <a href="/tags/gitlab/">Gitlab</a>
     
-    <a href="/tags/golang/">golang</a>
+    <a href="/tags/golang/">Golang</a>
     
     <a href="/tags/google/">Google</a>
     
     <a href="/tags/graphic/">Graphic</a>
     
-    <a href="/tags/graphql/">GraphQL</a>
+    <a href="/tags/graphql/">Graphql</a>
     
-    <a href="/tags/grpc/">grpc</a>
+    <a href="/tags/grpc/">Grpc</a>
     
     <a href="/tags/gtd/">GTD</a>
     
-    <a href="/tags/hexo/">hexo</a>
+    <a href="/tags/hexo/">Hexo</a>
     
-    <a href="/tags/https/">https</a>
+    <a href="/tags/https/">Https</a>
     
-    <a href="/tags/hugo/">hugo</a>
+    <a href="/tags/hugo/">Hugo</a>
     
     <a href="/tags/hypervisor/">Hypervisor</a>
     
     <a href="/tags/idea/">IDEA</a>
     
-    <a href="/tags/index/">index</a>
+    <a href="/tags/index/">Index</a>
     
     <a href="/tags/intellij/">Intellij</a>
     
-    <a href="/tags/iot/">IOT</a>
+    <a href="/tags/iot/">IoT</a>
     
-    <a href="/tags/iterm2/">iterm2</a>
+    <a href="/tags/iterm2/">Iterm2</a>
     
     <a href="/tags/jamstack/">JamStack</a>
     
     <a href="/tags/java/">Java</a>
     
-    <a href="/tags/javascript/">javascript</a>
+    <a href="/tags/javascript/">JavaScript</a>
     
     <a href="/tags/jenkins/">Jenkins</a>
     
-    <a href="/tags/json/">json</a>
+    <a href="/tags/json/">Json</a>
     
-    <a href="/tags/julia/">julia</a>
+    <a href="/tags/julia/">Julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
     <a href="/tags/kpi/">KPI</a>
     
-    <a href="/tags/learn/">learn</a>
+    <a href="/tags/learn/">Learn</a>
     
     <a href="/tags/linux/">Linux</a>
     
-    <a href="/tags/love/">love</a>
+    <a href="/tags/love/">Love</a>
     
-    <a href="/tags/low-code/">low code</a>
+    <a href="/tags/low-code/">Low Code</a>
     
-    <a href="/tags/mac-osx/">Mac osx</a>
+    <a href="/tags/mac-osx/">Mac Osx</a>
     
-    <a href="/tags/macos/">macOS</a>
+    <a href="/tags/macos/">MacOS</a>
     
-    <a href="/tags/macro/">macro</a>
+    <a href="/tags/macro/">Macro</a>
     
     <a href="/tags/manjaro/">Manjaro</a>
     
-    <a href="/tags/mapapi/">mapapi</a>
+    <a href="/tags/mapapi/">Mapapi</a>
     
     <a href="/tags/markdown/">Markdown</a>
     
-    <a href="/tags/midi/">midi</a>
+    <a href="/tags/midi/">Midi</a>
     
-    <a href="/tags/mido/">mido</a>
+    <a href="/tags/mido/">Mido</a>
     
-    <a href="/tags/mindmap/">mindmap</a>
+    <a href="/tags/mindmap/">Mindmap</a>
     
     <a href="/tags/model-driven-app/">Model Driven App</a>
     
-    <a href="/tags/module/">module</a>
+    <a href="/tags/module/">Module</a>
     
     <a href="/tags/mounty/">Mounty</a>
     
@@ -661,15 +663,15 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
     
     <a href="/tags/multibranch/">Multibranch</a>
     
-    <a href="/tags/music/">music</a>
+    <a href="/tags/music/">Music</a>
     
-    <a href="/tags/namespace/">namespace</a>
+    <a href="/tags/namespace/">Namespace</a>
     
     <a href="/tags/neovim/">NeoVim</a>
     
-    <a href="/tags/netlify/">netlify</a>
+    <a href="/tags/netlify/">Netlify</a>
     
-    <a href="/tags/next/">next</a>
+    <a href="/tags/next/">Next</a>
     
     <a href="/tags/ng/">Ng</a>
     
@@ -677,7 +679,7 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
     
     <a href="/tags/nodejs/">Nodejs</a>
     
-    <a href="/tags/npm/">npm</a>
+    <a href="/tags/npm/">Npm</a>
     
     <a href="/tags/ntfs/">NTFS</a>
     
@@ -691,33 +693,37 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
     
     <a href="/tags/openfeign/">OpenFeign</a>
     
+    <a href="/tags/openproject/">OpenProject</a>
+    
     <a href="/tags/os/">OS</a>
     
     <a href="/tags/osv/">OSv</a>
     
-    <a href="/tags/package-lock.json/">package-lock.json</a>
+    <a href="/tags/package-lock.json/">Package-Lock.json</a>
     
     <a href="/tags/pact.io/">Pact.io</a>
     
-    <a href="/tags/pain-text/">pain text</a>
+    <a href="/tags/pain-text/">Pain Text</a>
     
-    <a href="/tags/para/">para</a>
+    <a href="/tags/para/">Para</a>
     
-    <a href="/tags/pc/">pc</a>
+    <a href="/tags/pc/">Pc</a>
     
-    <a href="/tags/piano/">piano</a>
+    <a href="/tags/piano/">Piano</a>
+    
+    <a href="/tags/pingcode/">PingCode</a>
     
     <a href="/tags/pipeline/">PipeLine</a>
     
-    <a href="/tags/play1/">play1</a>
+    <a href="/tags/play1/">Play1</a>
     
-    <a href="/tags/play1x/">play1x</a>
+    <a href="/tags/play1x/">Play1x</a>
     
-    <a href="/tags/play2-scala/">play2 scala</a>
+    <a href="/tags/play2-scala/">Play2 Scala</a>
     
-    <a href="/tags/playframework/">playframework</a>
+    <a href="/tags/playframework/">Playframework</a>
     
-    <a href="/tags/playscala/">playscala</a>
+    <a href="/tags/playscala/">Playscala</a>
     
     <a href="/tags/post/">POST</a>
     
@@ -727,45 +733,45 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
     
     <a href="/tags/powerapps/">PowerApps</a>
     
-    <a href="/tags/powermill/">powermill</a>
+    <a href="/tags/powermill/">Powermill</a>
     
     <a href="/tags/ppt/">PPT</a>
     
     <a href="/tags/promise/">Promise</a>
     
-    <a href="/tags/python/">python</a>
+    <a href="/tags/python/">Python</a>
     
     <a href="/tags/qa/">QA</a>
     
     <a href="/tags/ray-dalio/">Ray Dalio</a>
     
-    <a href="/tags/re-natal/">re-natal</a>
+    <a href="/tags/re-natal/">Re-Natal</a>
     
     <a href="/tags/react/">React</a>
     
-    <a href="/tags/react-native/">react native</a>
+    <a href="/tags/react-native/">React Native</a>
     
-    <a href="/tags/react-route/">react-route</a>
+    <a href="/tags/react-route/">React-Route</a>
     
-    <a href="/tags/redux/">redux</a>
+    <a href="/tags/redux/">Redux</a>
     
     <a href="/tags/redwood/">RedWood</a>
     
     <a href="/tags/regex/">Regex</a>
     
-    <a href="/tags/rpc/">rpc</a>
+    <a href="/tags/rpc/">Rpc</a>
     
     <a href="/tags/ruby/">Ruby</a>
     
-    <a href="/tags/rust/">rust</a>
+    <a href="/tags/rust/">Rust</a>
     
     <a href="/tags/seagate/">Seagate</a>
     
-    <a href="/tags/second-brain/">second-brain</a>
+    <a href="/tags/second-brain/">Second-Brain</a>
     
     <a href="/tags/secure/">Secure</a>
     
-    <a href="/tags/session/">session</a>
+    <a href="/tags/session/">Session</a>
     
     <a href="/tags/silo/">Silo</a>
     
@@ -773,7 +779,7 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
     
     <a href="/tags/smartide/">SmartIDE</a>
     
-    <a href="/tags/sops/">sops</a>
+    <a href="/tags/sops/">Sops</a>
     
     <a href="/tags/spacemacs/">Spacemacs</a>
     
@@ -781,7 +787,7 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
     
     <a href="/tags/sql/">SQL</a>
     
-    <a href="/tags/ssh/">ssh</a>
+    <a href="/tags/ssh/">Ssh</a>
     
     <a href="/tags/static-site/">Static Site</a>
     
@@ -789,17 +795,23 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
     
     <a href="/tags/svg/">SVG</a>
     
+    <a href="/tags/taigo/">Taigo</a>
+    
     <a href="/tags/tailwind/">Tailwind</a>
     
     <a href="/tags/tdd/">TDD</a>
     
-    <a href="/tags/text/">text</a>
+    <a href="/tags/text/">Text</a>
     
     <a href="/tags/toc/">TOC</a>
     
-    <a href="/tags/tomorrow-theme/">tomorrow-theme</a>
+    <a href="/tags/tomorrow-theme/">Tomorrow-Theme</a>
     
-    <a href="/tags/tools/">tools</a>
+    <a href="/tags/tool/">Tool</a>
+    
+    <a href="/tags/tools/">Tools</a>
+    
+    <a href="/tags/trello/">Trello</a>
     
     <a href="/tags/typescript/">TypeScript</a>
     
@@ -807,7 +819,7 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
     
     <a href="/tags/umi/">Umi</a>
     
-    <a href="/tags/uml/">uml</a>
+    <a href="/tags/uml/">Uml</a>
     
     <a href="/tags/unit-test/">Unit Test</a>
     
@@ -815,17 +827,17 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
     
     <a href="/tags/vant/">Vant</a>
     
-    <a href="/tags/vi/">vi</a>
+    <a href="/tags/vi/">Vi</a>
     
-    <a href="/tags/vim/">vim</a>
+    <a href="/tags/vim/">Vim</a>
     
     <a href="/tags/vimac/">Vimac</a>
     
     <a href="/tags/vimium/">Vimium</a>
     
-    <a href="/tags/vimrc/">vimrc</a>
+    <a href="/tags/vimrc/">Vimrc</a>
     
-    <a href="/tags/vlang/">vlang</a>
+    <a href="/tags/vlang/">Vlang</a>
     
     <a href="/tags/vscode/">VSCode</a>
     
@@ -833,7 +845,7 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
     
     <a href="/tags/vue3/">Vue3</a>
     
-    <a href="/tags/weapp/">weapp</a>
+    <a href="/tags/weapp/">Weapp</a>
     
     <a href="/tags/web-resources/">Web Resources</a>
     
@@ -841,7 +853,7 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
     
     <a href="/tags/weui/">WeUI</a>
     
-    <a href="/tags/wind13/">wind13</a>
+    <a href="/tags/wind13/">Wind13</a>
     
     <a href="/tags/windows/">Windows</a>
     
@@ -849,11 +861,11 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
     
     <a href="/tags/wux/">Wux</a>
     
-    <a href="/tags/xml/">xml</a>
+    <a href="/tags/xml/">Xml</a>
     
-    <a href="/tags/yarn/">yarn</a>
+    <a href="/tags/yarn/">Yarn</a>
     
-    <a href="/tags/yarn.lock/">yarn.lock</a>
+    <a href="/tags/yarn.lock/">Yarn.lock</a>
     
     <a href="/tags/%E4%B8%80%E5%9B%BE/">一图</a>
     
@@ -1179,7 +1191,7 @@ assert_eq!(c, <span style="color:#ae81ff">7</span>);
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2023 <a href="/">世风十三学堂 By 世风十三</a>.
+        &copy; 2024 <a href="/">世风十三学堂 By 世风十三</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

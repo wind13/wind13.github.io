@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>playframework on 世风十三学堂</title>
+    <title>Playframework on 世风十三学堂</title>
     <link>/tags/playframework/</link>
-    <description>Recent content in playframework on 世风十三学堂</description>
+    <description>Recent content in Playframework on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 23 Feb 2017 16:19:50 +0000</lastBuildDate><atom:link href="/tags/playframework/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Feb 2017 16:19:50 +0000</lastBuildDate>
+    <atom:link href="/tags/playframework/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Playframework 1.4.x 与Playframework 2.5.x 选型比较</title>
       <link>/post/2017/2017-02-23-play2x-compare-play1x/</link>
       <pubDate>Thu, 23 Feb 2017 16:19:50 +0000</pubDate>
-      
       <guid>/post/2017/2017-02-23-play2x-compare-play1x/</guid>
       <description>Playframework 1.4.x 与Playframework 2.5.x 选型比较 Playframework 2.5.x 优势： 文档齐全，持续更新； 支持更多最新的技术，更清晰的底层技术； 完全异步的HTTP编程模型； 通过 Comet, long-polling and WebSockets 给客户端提供持续的连接； 通过 Akka 的 Actor 模型提供响应高并发的系统； 使用 Akka Streams Filters Streaming response bodies Request body parsers WebSockets Streaming WS client responses 使用 Websocket 使用 Ebean 或 JPA 和 Anorm（用于Sc</description>
     </item>
-    
   </channel>
 </rss>

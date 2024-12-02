@@ -6,42 +6,35 @@
     <description>Recent content in Nodejs on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 09 Feb 2022 21:30:33 +0800</lastBuildDate><atom:link href="/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Feb 2022 21:30:33 +0800</lastBuildDate>
+    <atom:link href="/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nodejs Secure Config 配置加密方案</title>
       <link>/post/2022/nodejs-secure-config/</link>
       <pubDate>Wed, 09 Feb 2022 21:30:33 +0800</pubDate>
-      
       <guid>/post/2022/nodejs-secure-config/</guid>
       <description>Node.js 启动后台服务，通常都要连接数据库，或者连接第三方接口等，这里就会有一些账号密码之类的需要提供，我们当然不能把这些私密的内容保存在代码库中，这样是非常不安全的。 比较简单的方式是保存在 .env.production 这样的文件中，而这文件不会提交到代码库，而是在部署时再放到相应的运行环境中。 即使是这样，也比较麻</description>
     </item>
-    
     <item>
       <title>Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</title>
       <link>/post/2021/nodejs-fullstack-solution/</link>
       <pubDate>Sat, 21 Aug 2021 12:29:07 +0800</pubDate>
-      
       <guid>/post/2021/nodejs-fullstack-solution/</guid>
       <description>JamStack WHAT IS JAMSTACK? A GUIDE FOR BUSINESS PEOPLE These decisions include the following: How you’ll manage the project/code Where you’ll store your content What software will build your site How your build process will be automated Where your site will be published What services and APIs your live site will use Best Practices Entire Project on a CDN Modern Build Tools Automated Builds Atomic Deploys: No changes go live until all changed files have been uploaded. Instant Cache Invalidation: Making sure your CDN can handle instant cache purges. Everything Lives in Git: Git clone, install any needed dependencies with a standard procedure (like npm install), and be ready to run the full project locally. No databases to clone, no complex installs. History LAMP(Linux, Apache, MySQL, PHP/Perl/Python) stack &amp;mdash;&amp;gt; MEAN(MongoDB,</description>
     </item>
-    
     <item>
       <title>Iot 物联网相关学习</title>
       <link>/post/2020/iot-learn/</link>
       <pubDate>Fri, 05 Jun 2020 14:40:52 +0800</pubDate>
-      
       <guid>/post/2020/iot-learn/</guid>
       <description>主流框架 SiteWhere 是一个面向物联网（IoT）的工业级开源应用支持平台。它提供了基于多租户微服务的基础架构，其中包括构建和部署IoT应用程序所需的关键功能。 SiteWhere基础架构和微服务部署在Kubernetes上，允许部署内部部署或几乎任何云提供商。 Apache Kafka，Zookeeper和</description>
     </item>
-    
     <item>
       <title>RPC 相关学习</title>
       <link>/post/2020/learn-rpc/</link>
       <pubDate>Tue, 02 Jun 2020 21:28:33 +0800</pubDate>
-      
       <guid>/post/2020/learn-rpc/</guid>
       <description>各家官网 gRPC Apache Dubbo™ 是一款高性能Java RPC框架。 SOFARPC 介绍 相关资料 重点资料 RPC 协议之争和选型要点 对于 RPC 框架，在架构上能够支持多语言非常重要。不同的业务场景，适合不同的语言，例如后端复杂业务逻辑使用 Java 开发效率更高，对于 API 网关或者边缘服务，适合 GO 语言。对于一些序列化框架，由于使用了</description>
     </item>
-    
   </channel>
 </rss>

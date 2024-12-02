@@ -6,15 +6,14 @@
     <description>Recent content in 函数式编程 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 18 Sep 2019 03:27:21 +0000</lastBuildDate><atom:link href="/tags/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Sep 2019 03:27:21 +0000</lastBuildDate>
+    <atom:link href="/tags/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>函数式编程资料收集</title>
       <link>/post/2019/2019-09-18-functional-programming-ref/</link>
       <pubDate>Wed, 18 Sep 2019 03:27:21 +0000</pubDate>
-      
       <guid>/post/2019/2019-09-18-functional-programming-ref/</guid>
       <description>概念 函数式编程入门教程（阮一峰） 回答了为什么要用函数式编程思维？ 面向函数范式编程(Functional programming) 说明了对面向对象编程的区别的关系，是可以互补共用的。 Kotlin极简教程：第8章 函数式编程 其中 Y组合子(Y - Combinator) ——匿名递归函数，解决匿名函数如何递归的问题。以及很多 Kotlin 的函数式编</description>
     </item>
-    
   </channel>
 </rss>

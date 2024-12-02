@@ -6,15 +6,21 @@
     <description>Recent content in 敏捷 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 09 Aug 2020 18:30:17 +0800</lastBuildDate><atom:link href="/tags/%E6%95%8F%E6%8D%B7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Nov 2024 15:52:27 +0000</lastBuildDate>
+    <atom:link href="/tags/%E6%95%8F%E6%8D%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>敏捷项目管理工具比较 Agile Project Tools Compare</title>
+      <link>/post/2024/agile-project-tools/</link>
+      <pubDate>Sat, 30 Nov 2024 15:52:27 +0000</pubDate>
+      <guid>/post/2024/agile-project-tools/</guid>
+      <description>Agile Project Tools Compare 以下是几个目前网上比较敏捷、先进的项目管理工具的比较分析： 1. Taiga.io 敏捷支持：Taiga.io 是一个开源项目管理工具，专为敏捷开发团队设计。它支持Scrum和Kanban框架，帮助团队高效管理项目和任务。 用户界面：Taiga.io 提供简洁直观的用户界面，易于上手，减少学习成本。</description>
+    </item>
     <item>
       <title>软件开发团队如何高质量、高效率？</title>
       <link>/post/2020/software-develop-improve/</link>
       <pubDate>Sun, 09 Aug 2020 18:30:17 +0800</pubDate>
-      
       <guid>/post/2020/software-develop-improve/</guid>
       <description>这个话题很大，也不简单，有很多本书都从不同的角度在讲这个事情，比如《人月神话》、《人件》、《项目管理修炼之道》、《硝烟中的scrum和XP》等。 不过，此文不想那么系统全面地讨论这个问题，而是希望以一个非常直白的方式来讨论一下，以便使完全没有接触过软件工程的人也能有个感性的认识，而</description>
     </item>
-    
   </channel>
 </rss>

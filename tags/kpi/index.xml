@@ -6,33 +6,28 @@
     <description>Recent content in KPI on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 06 Feb 2022 04:47:11 +0000</lastBuildDate><atom:link href="/tags/kpi/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Feb 2022 04:47:11 +0000</lastBuildDate>
+    <atom:link href="/tags/kpi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于KPI与开发团队效能问题的讨论</title>
       <link>/post/2022/develop-team-problem/</link>
       <pubDate>Sun, 06 Feb 2022 04:47:11 +0000</pubDate>
-      
       <guid>/post/2022/develop-team-problem/</guid>
       <description>今天在微信群里讨论开发团队效能的问题，话题是由 小L 提问 “KPI设定的指标有啥啊，评分时候是用数据还是靠主观？有罚么？”开始…… 有群友 小F 建议： 靠事实，不建议有罚…… 数据和主观都有不靠谱的地方，多维度评估。 接着 小L 问道: 那指标一般定哪些？我们现在用：bug解决用时、线上问题解决率…</description>
     </item>
-    
     <item>
       <title>笔记——正确的度量指标</title>
       <link>/post/2021/note-of-right-measurement/</link>
       <pubDate>Sat, 20 Nov 2021 17:02:32 +0800</pubDate>
-      
       <guid>/post/2021/note-of-right-measurement/</guid>
       <description>最近阅读了公众号 Thoughtworks 洞见的系列文章《寻找合适的研发效能度量指标》，记录一下要点： 《寻找合适的研发效能度量指标（上）》 有哪些合适的软件研发效能度量指标呢？从以下几个方面列出了一些指标： 规划进度 快速反馈 团队转型 辅助决策 工程能力 当您在为团队寻找研发效能指标时，其实并没有一个恒定不变的模板</description>
     </item>
-    
     <item>
       <title>OKR 思考</title>
       <link>/post/2020/okr-thinking/</link>
       <pubDate>Thu, 26 Mar 2020 10:08:34 +0800</pubDate>
-      
       <guid>/post/2020/okr-thinking/</guid>
       <description>讨论 OKR 的对话片段 说：OKR 总结就几个字：定目标，追进展，拿结果 问：更关键的是说，什么样的目标？怎么观察进展？获得怎样的结果？ 答：这就牵扯到工作细节了。先明确目标，然后一定要将目标写下来。查看进展可以利用工作清单，最好就是任务管理工具。结果就是相应的反馈。当然也要科学合理的制定目标</description>
     </item>
-    
   </channel>
 </rss>

@@ -6,15 +6,14 @@
     <description>Recent content in Umi on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 28 Jul 2020 11:17:13 +0800</lastBuildDate><atom:link href="/tags/umi/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Jul 2020 11:17:13 +0800</lastBuildDate>
+    <atom:link href="/tags/umi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Umi vs Nuxt vs Ng-alain</title>
       <link>/post/2020/umi-vs-nuxt-vs-ngalain/</link>
       <pubDate>Tue, 28 Jul 2020 11:17:13 +0800</pubDate>
-      
       <guid>/post/2020/umi-vs-nuxt-vs-ngalain/</guid>
       <description>概述和思考 很多时候前端开发人员会面对眼花缭乱的框架很难选择。 标题所说的选择实质是三大阵营（React, Vue 和 Angular）的选择。 三个底层框架各有所长，亮点在于： React：更接近函数式编程思想，单向数据流比较清晰，jsx 是不错的创新，熟悉后可结合函数式编程写出比较优雅的组件代码</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>play2 scala on 世风十三学堂</title>
+    <title>Play2 Scala on 世风十三学堂</title>
     <link>/tags/play2-scala/</link>
-    <description>Recent content in play2 scala on 世风十三学堂</description>
+    <description>Recent content in Play2 Scala on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="/tags/play2-scala/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language>
+    <atom:link href="/tags/play2-scala/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Play2/Scala 相关</title>
       <link>/post/2014/2014-04-25-play2x-links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/post/2014/2014-04-25-play2x-links/</guid>
       <description>Scala 课堂 Scala Tutorial: Getting Started with Scala Play2开发的CMS系统</description>
     </item>
-    
   </channel>
 </rss>

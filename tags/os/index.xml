@@ -6,24 +6,21 @@
     <description>Recent content in OS on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 22 Feb 2020 04:19:46 +0800</lastBuildDate><atom:link href="/tags/os/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Feb 2020 04:19:46 +0800</lastBuildDate>
+    <atom:link href="/tags/os/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>操作系统全图谱树</title>
       <link>/post/2020/os-tree-map/</link>
       <pubDate>Sat, 22 Feb 2020 04:19:46 +0800</pubDate>
-      
       <guid>/post/2020/os-tree-map/</guid>
       <description>目前操作系统都有哪些？它们之间都是什么关系？有哪些渊源？ 操作系统 Unix System V Solaris Aix IRIX（Silicon GraphicsInc.，一般用简称：SGI）IRIX可以在SGI公司的RISC型电脑上运行，即是采行32位、64位MIPS架构的SGI工作站、服务器。 BSD Unix BSD(Berkeley Software Distribution)(BSD License) 需要定制操作系统的</description>
     </item>
-    
     <item>
       <title>Manjaro 系统使用记录</title>
       <link>/post/2019/manjaro-os-usage/</link>
       <pubDate>Fri, 20 Dec 2019 19:39:26 +0800</pubDate>
-      
       <guid>/post/2019/manjaro-os-usage/</guid>
       <description>前几天（今天是2019年12月20日）把 Deepin 系统从 D 盘（1T 硬盘）上删除了，在固态硬盘上开出了 80G 硬盘空间安装个 Manjaro KDE 玩儿一下，中间因为分区操作失误，差点把整个 D 盘给弄丢了，还好冷静地找办法解决，试了很多工具，其中 DiskGenius 是可以找回分区表的，但到最后一步居然提示要收费，好像还要两三百吧，不甘</description>
     </item>
-    
   </channel>
 </rss>

@@ -6,15 +6,14 @@
     <description>Recent content in 多线程 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 22 May 2018 10:37:39 +0000</lastBuildDate><atom:link href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 May 2018 10:37:39 +0000</lastBuildDate>
+    <atom:link href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>白话理解 Node.js 异步单线程</title>
       <link>/post/2018/2018-05-22-baihua-async/</link>
       <pubDate>Tue, 22 May 2018 10:37:39 +0000</pubDate>
-      
       <guid>/post/2018/2018-05-22-baihua-async/</guid>
       <description>Nginx 和 Node.js 都是多进程单线程的。它通过事件轮询（event loop Node.js 事件循环）来实现并行操作，因此，我们要尽可能的避免阻塞操作，取而代之，多使用非阻塞操作。参考 Understanding the node.js event loop 主线程和子线程，这里说的单线程，是说主线程只有一个，所以要把阻塞的运算处理分拆到子线程中去运行。 使用回调函数 以非阻塞操作进</description>
     </item>
-    
   </channel>
 </rss>

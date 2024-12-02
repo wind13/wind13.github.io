@@ -9,8 +9,8 @@
     <title> | 世风十三学堂</title>
     <meta property="og:title" content=" - 世风十三学堂">
     <meta property="og:type" content="article">
-        
-        
+
+
     <meta name="Keywords" content="Programing">
     <meta name="description" content="">
         
@@ -97,11 +97,11 @@
 <p>该页面旨提供有关如何定制Trac界面的建议. 话题涵盖了编辑HTML模板和CSS文件, 但不包含程序代码本身. 这些话题想要向用户展示如何更改Trac的外观来满足他们特定的要求.</p>
 <h5 id="项目logo和图标">项目Logo和图标</h5>
 <p>定制Trac界面最简单的部分是logo和站点的图标. 他们都可以通过<a href="http://trac-hacks.org/wiki/TracIni">trac.ini</a>的设置进行配置.</p>
-<p>logo或者图标应放在项目环境目录中的一个'&lsquo;htdocs'&lsquo;目录中(注意: 用Trac0.9之前的版本创建的项目, 你需要创建该目录).</p>
+<p>logo或者图标应放在项目环境目录中的一个&rsquo;&lsquo;htdocs&rsquo;&lsquo;目录中(注意: 用Trac0.9之前的版本创建的项目, 你需要创建该目录).</p>
 <p>&lsquo;&lsquo;注意: 实际上你可以把logo和图标放在服务器的任何地方(只要通过服务器能访问到就可以), 并且在配置中使用他们的绝对URL或服务器的相对URL.&rsquo;&rsquo;</p>
 <p>在你的<a href="http://trac-hacks.org/wiki/TracIni">trac.ini</a>中的配置相应的段:</p>
 <h4 id="logo">Logo</h4>
-<p>将<code>src</code>设置改为<code>site/</code>, 后面跟着你的图像文件的名字. 应修改'&lsquo;宽度'&lsquo;和'&lsquo;高度'&lsquo;设置来匹配你的图像的尺寸(Trac的chrome处理器用&quot;&ldquo;site/&ldquo;&ldquo;对应位于项目目录的&quot;&ldquo;htdocs&rdquo;&rdquo;, 用&quot;&ldquo;common/&ldquo;&ldquo;对应普通文件).</p>
+<p>将<code>src</code>设置改为<code>site/</code>, 后面跟着你的图像文件的名字. 应修改&rsquo;&lsquo;宽度&rsquo;&lsquo;和&rsquo;&lsquo;高度&rsquo;&lsquo;设置来匹配你的图像的尺寸(Trac的chrome处理器用&quot;&ldquo;site/&ldquo;&ldquo;对应位于项目目录的&quot;&ldquo;htdocs&rdquo;&rdquo;, 用&quot;&ldquo;common/&ldquo;&ldquo;对应普通文件).</p>
 <pre><code>[header_logo]
 src = site/my_logo.gif
 alt = My Project
@@ -109,17 +109,17 @@ width = 300
 height = 100
 </code></pre>
 <h4 id="图标">图标</h4>
-<p>图标应该是<code>.gif</code>或<code>.ico</code>格式的大小16x16的图像. 将<code>icon</code>选项修改为<code>site/</code>, 后面跟着你的图标文件的名称. 在你的Web浏览器中, 图标一般会显示在站点的URL旁边或者在'&lsquo;书签'&lsquo;菜单中.</p>
+<p>图标应该是<code>.gif</code>或<code>.ico</code>格式的大小16x16的图像. 将<code>icon</code>选项修改为<code>site/</code>, 后面跟着你的图标文件的名称. 在你的Web浏览器中, 图标一般会显示在站点的URL旁边或者在&rsquo;&lsquo;书签&rsquo;&lsquo;菜单中.</p>
 <pre><code>[project]
 icon = site/my_icon.ico
 </code></pre>
-<p>&lsquo;&lsquo;&lsquo;注意&rsquo;'&rsquo;, 该图标会被 IE 忽略, 它只接受主机根路径下名为'&lsquo;favicon.ico'&lsquo;的文件. 要使项目图标在IE和其他浏览器中都起作用的话, 你可以将图标储存在主机的根路径中, 并按照下列方法在<code>trac.ini</code>中引用它:</p>
+<p>&lsquo;&lsquo;&lsquo;注意&rsquo;&rsquo;&rsquo;, 该图标会被 IE 忽略, 它只接受主机根路径下名为&rsquo;&lsquo;favicon.ico&rsquo;&lsquo;的文件. 要使项目图标在IE和其他浏览器中都起作用的话, 你可以将图标储存在主机的根路径中, 并按照下列方法在<code>trac.ini</code>中引用它:</p>
 <pre><code>[project]
 icon = /favicon.ico
 </code></pre>
 <h5 id="站点页眉和页脚">站点页眉和页脚</h5>
 <p>在每个Trac项目的环境目录中, 应该有个叫templates的目录. 该目录包含文件site_header.cs和site_footer.cs. 用户可以通过添加所需的HTML标记到这些文件中, 来定制他们的Trac站点. 这两个文件的内容分别放在网站中每页的开始的标签<code>&lt;body&gt;</code>和结尾的标签<code>&lt;/body&gt;</code>中.</p>
-<p>这些文件可以包含静态HTML, 当然, 如果用户想要有动态的内容, 他们可以使用页面内部的<a href="http://www.clearsilver.net/">ClearSilver</a>模板语言. 当你需要查看模板中有哪些可用变量, 将查询串&rsquo;'?hdfdump=1'&lsquo;添加到你的Trac站点的URL中. 这样将显示出模板数据的结构化视图.</p>
+<p>这些文件可以包含静态HTML, 当然, 如果用户想要有动态的内容, 他们可以使用页面内部的<a href="http://www.clearsilver.net/">ClearSilver</a>模板语言. 当你需要查看模板中有哪些可用变量, 将查询串&rsquo;&rsquo;?hdfdump=1&rsquo;&lsquo;添加到你的Trac站点的URL中. 这样将显示出模板数据的结构化视图.</p>
 <h5 id="站点样式表">站点样式表</h5>
 <p>调整一个Trac网站的布局的主要方法是添加<a href="http://www.w3.org/TR/REC-CSS2/">CSS</a>样式规则来覆盖默认的规则. 最好是通过编辑项目环境的<code>templates</code>目录下的<code>site_css.cs</code>文件来实现. 该模板中的内容会插入到Trac生成的每个HTML页面的<code>&lt;style type=&quot;text/css&quot;&gt;``&lt;/style&gt;</code>中.</p>
 <p>虽然你可以将定制样式规则直接添加到<code>site_css.cs</code>文件中, 我们建议你只引用一个外部样式表, 以便使浏览器能缓存此CSS文件, 而不是每次都传输这些样式规则.</p>
@@ -180,15 +180,15 @@ icon = /favicon.ico
     <h2>See Also</h2>
     <ul class="listing">
         
-        <li><a href="/post/2013/2013-12-29-c461mubuntusteup/"></a></li>
+        <li><a href="/post/2013/2013-10-26-funnyclassic/"></a></li>
         
-        <li><a href="/post/2014/2014-02-26-hqlleftjoin/"></a></li>
+        <li><a href="/post/2013/2013-12-28-playwebsites/"></a></li>
         
-        <li><a href="/post/2013/2013-09-29-tocterm/"></a></li>
-        
-        <li><a href="/post/2013/2013-12-23-htmlunitdriverjavascript/"></a></li>
+        <li><a href="/post/2013/2013-12-23-confession214/"></a></li>
         
         <li><a href="/post/2013/2013-12-13-cmdchinese/"></a></li>
+        
+        <li><a href="/post/2013/2013-09-29-learnself/"></a></li>
         
     </ul>
 </div>
@@ -238,6 +238,14 @@ icon = /favicon.ico
 <ul class="widget-list">
     
     <li>
+        <a href="/post/2024/wsl-hugo-blog/" title="使用 WSL 启动 Hugo 搭建博客">使用 WSL 启动 Hugo 搭建博客</a>
+    </li>
+    
+    <li>
+        <a href="/post/2024/agile-project-tools/" title="敏捷项目管理工具比较 Agile Project Tools Compare">敏捷项目管理工具比较 Agile Project Tools Compare</a>
+    </li>
+    
+    <li>
         <a href="/post/2023/front-end-ui-hero-before-after/" title="前端UI的江湖风云">前端UI的江湖风云</a>
     </li>
     
@@ -269,14 +277,6 @@ icon = /favicon.ico
         <a href="/post/2022/nodejs-secure-config/" title="Nodejs Secure Config 配置加密方案">Nodejs Secure Config 配置加密方案</a>
     </li>
     
-    <li>
-        <a href="/post/2022/develop-team-problem/" title="关于KPI与开发团队效能问题的讨论">关于KPI与开发团队效能问题的讨论</a>
-    </li>
-    
-    <li>
-        <a href="/post/2022/powerplatform-jamstack/" title="在 Power Platform 上实践 JamStack 架构思想">在 Power Platform 上实践 JamStack 架构思想</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -290,13 +290,13 @@ icon = /favicon.ico
     
     <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (27)</a></li>
     
-    <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (27)</a></li>
+    <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (29)</a></li>
     
     <li><a href="/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
     
     <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (14)</a></li>
     
-    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (47)</a></li>
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (49)</a></li>
     
 </ul>
     </section>
@@ -307,27 +307,29 @@ icon = /favicon.ico
     
     <a href="/tags/access/">Access</a>
     
+    <a href="/tags/agile/">Agile</a>
+    
     <a href="/tags/android/">Android</a>
     
     <a href="/tags/android-%E6%B5%8B%E8%AF%95/">Android 测试</a>
     
-    <a href="/tags/angular/">angular</a>
+    <a href="/tags/angular/">Angular</a>
     
-    <a href="/tags/angularjs/">angularjs</a>
+    <a href="/tags/angularjs/">Angularjs</a>
     
-    <a href="/tags/antd/">AntD</a>
+    <a href="/tags/antd/">Antd</a>
     
     <a href="/tags/app/">App</a>
     
-    <a href="/tags/architect/">architect</a>
+    <a href="/tags/architect/">Architect</a>
     
     <a href="/tags/aws/">AWS</a>
     
     <a href="/tags/azure/">Azure</a>
     
-    <a href="/tags/backbone/">backbone</a>
+    <a href="/tags/backbone/">Backbone</a>
     
-    <a href="/tags/baidu/">baidu</a>
+    <a href="/tags/baidu/">Baidu</a>
     
     <a href="/tags/beeui/">BeeUi</a>
     
@@ -335,7 +337,7 @@ icon = /favicon.ico
     
     <a href="/tags/blog/">Blog</a>
     
-    <a href="/tags/boook/">boook</a>
+    <a href="/tags/boook/">Boook</a>
     
     <a href="/tags/canvas-app/">Canvas App</a>
     
@@ -343,21 +345,21 @@ icon = /favicon.ico
     
     <a href="/tags/chado.js/">Chado.js</a>
     
-    <a href="/tags/chkdsk/">chkdsk</a>
+    <a href="/tags/chkdsk/">Chkdsk</a>
     
     <a href="/tags/ci/cd/">CI/CD</a>
     
     <a href="/tags/clojure/">Clojure</a>
     
-    <a href="/tags/code/">code</a>
+    <a href="/tags/code/">Code</a>
     
-    <a href="/tags/code-review/">code review</a>
+    <a href="/tags/code-review/">Code Review</a>
     
     <a href="/tags/computer-vision/">Computer Vision</a>
     
     <a href="/tags/config/">Config</a>
     
-    <a href="/tags/daisyui/">daisyUI</a>
+    <a href="/tags/daisyui/">DaisyUI</a>
     
     <a href="/tags/datavers/">Datavers</a>
     
@@ -369,19 +371,19 @@ icon = /favicon.ico
     
     <a href="/tags/devops/">DevOps</a>
     
-    <a href="/tags/devtech-java/">devtech java</a>
+    <a href="/tags/devtech-java/">Devtech Java</a>
     
-    <a href="/tags/digital-garden/">digital-garden</a>
+    <a href="/tags/digital-garden/">Digital-Garden</a>
     
     <a href="/tags/docker/">Docker</a>
     
-    <a href="/tags/dubbo/">dubbo</a>
+    <a href="/tags/dubbo/">Dubbo</a>
     
-    <a href="/tags/easyui/">easyui</a>
+    <a href="/tags/easyui/">Easyui</a>
     
     <a href="/tags/editor/">Editor</a>
     
-    <a href="/tags/egghead/">egghead</a>
+    <a href="/tags/egghead/">Egghead</a>
     
     <a href="/tags/element3/">Element3</a>
     
@@ -397,105 +399,105 @@ icon = /favicon.ico
     
     <a href="/tags/esc/">Esc</a>
     
-    <a href="/tags/essay/">essay</a>
+    <a href="/tags/essay/">Essay</a>
     
     <a href="/tags/evernote/">Evernote</a>
     
-    <a href="/tags/feign/">feign</a>
+    <a href="/tags/feign/">Feign</a>
     
-    <a href="/tags/filter/">filter</a>
+    <a href="/tags/filter/">Filter</a>
     
-    <a href="/tags/fizzbuzz/">fizzbuzz</a>
+    <a href="/tags/fizzbuzz/">Fizzbuzz</a>
     
-    <a href="/tags/framework/">framework</a>
+    <a href="/tags/framework/">Framework</a>
     
     <a href="/tags/freebsd/">FreeBSD</a>
     
-    <a href="/tags/game/">game</a>
+    <a href="/tags/game/">Game</a>
     
-    <a href="/tags/games/">games</a>
+    <a href="/tags/games/">Games</a>
     
-    <a href="/tags/getxml/">getXML</a>
+    <a href="/tags/getxml/">GetXML</a>
     
-    <a href="/tags/git/">git</a>
+    <a href="/tags/git/">Git</a>
     
     <a href="/tags/gitlab/">Gitlab</a>
     
-    <a href="/tags/golang/">golang</a>
+    <a href="/tags/golang/">Golang</a>
     
     <a href="/tags/google/">Google</a>
     
     <a href="/tags/graphic/">Graphic</a>
     
-    <a href="/tags/graphql/">GraphQL</a>
+    <a href="/tags/graphql/">Graphql</a>
     
-    <a href="/tags/grpc/">grpc</a>
+    <a href="/tags/grpc/">Grpc</a>
     
     <a href="/tags/gtd/">GTD</a>
     
-    <a href="/tags/hexo/">hexo</a>
+    <a href="/tags/hexo/">Hexo</a>
     
-    <a href="/tags/https/">https</a>
+    <a href="/tags/https/">Https</a>
     
-    <a href="/tags/hugo/">hugo</a>
+    <a href="/tags/hugo/">Hugo</a>
     
     <a href="/tags/hypervisor/">Hypervisor</a>
     
     <a href="/tags/idea/">IDEA</a>
     
-    <a href="/tags/index/">index</a>
+    <a href="/tags/index/">Index</a>
     
     <a href="/tags/intellij/">Intellij</a>
     
-    <a href="/tags/iot/">IOT</a>
+    <a href="/tags/iot/">IoT</a>
     
-    <a href="/tags/iterm2/">iterm2</a>
+    <a href="/tags/iterm2/">Iterm2</a>
     
     <a href="/tags/jamstack/">JamStack</a>
     
     <a href="/tags/java/">Java</a>
     
-    <a href="/tags/javascript/">javascript</a>
+    <a href="/tags/javascript/">JavaScript</a>
     
     <a href="/tags/jenkins/">Jenkins</a>
     
-    <a href="/tags/json/">json</a>
+    <a href="/tags/json/">Json</a>
     
-    <a href="/tags/julia/">julia</a>
+    <a href="/tags/julia/">Julia</a>
     
     <a href="/tags/kafka/">Kafka</a>
     
     <a href="/tags/kpi/">KPI</a>
     
-    <a href="/tags/learn/">learn</a>
+    <a href="/tags/learn/">Learn</a>
     
     <a href="/tags/linux/">Linux</a>
     
-    <a href="/tags/love/">love</a>
+    <a href="/tags/love/">Love</a>
     
-    <a href="/tags/low-code/">low code</a>
+    <a href="/tags/low-code/">Low Code</a>
     
-    <a href="/tags/mac-osx/">Mac osx</a>
+    <a href="/tags/mac-osx/">Mac Osx</a>
     
-    <a href="/tags/macos/">macOS</a>
+    <a href="/tags/macos/">MacOS</a>
     
-    <a href="/tags/macro/">macro</a>
+    <a href="/tags/macro/">Macro</a>
     
     <a href="/tags/manjaro/">Manjaro</a>
     
-    <a href="/tags/mapapi/">mapapi</a>
+    <a href="/tags/mapapi/">Mapapi</a>
     
     <a href="/tags/markdown/">Markdown</a>
     
-    <a href="/tags/midi/">midi</a>
+    <a href="/tags/midi/">Midi</a>
     
-    <a href="/tags/mido/">mido</a>
+    <a href="/tags/mido/">Mido</a>
     
-    <a href="/tags/mindmap/">mindmap</a>
+    <a href="/tags/mindmap/">Mindmap</a>
     
     <a href="/tags/model-driven-app/">Model Driven App</a>
     
-    <a href="/tags/module/">module</a>
+    <a href="/tags/module/">Module</a>
     
     <a href="/tags/mounty/">Mounty</a>
     
@@ -503,15 +505,15 @@ icon = /favicon.ico
     
     <a href="/tags/multibranch/">Multibranch</a>
     
-    <a href="/tags/music/">music</a>
+    <a href="/tags/music/">Music</a>
     
-    <a href="/tags/namespace/">namespace</a>
+    <a href="/tags/namespace/">Namespace</a>
     
     <a href="/tags/neovim/">NeoVim</a>
     
-    <a href="/tags/netlify/">netlify</a>
+    <a href="/tags/netlify/">Netlify</a>
     
-    <a href="/tags/next/">next</a>
+    <a href="/tags/next/">Next</a>
     
     <a href="/tags/ng/">Ng</a>
     
@@ -519,7 +521,7 @@ icon = /favicon.ico
     
     <a href="/tags/nodejs/">Nodejs</a>
     
-    <a href="/tags/npm/">npm</a>
+    <a href="/tags/npm/">Npm</a>
     
     <a href="/tags/ntfs/">NTFS</a>
     
@@ -533,33 +535,37 @@ icon = /favicon.ico
     
     <a href="/tags/openfeign/">OpenFeign</a>
     
+    <a href="/tags/openproject/">OpenProject</a>
+    
     <a href="/tags/os/">OS</a>
     
     <a href="/tags/osv/">OSv</a>
     
-    <a href="/tags/package-lock.json/">package-lock.json</a>
+    <a href="/tags/package-lock.json/">Package-Lock.json</a>
     
     <a href="/tags/pact.io/">Pact.io</a>
     
-    <a href="/tags/pain-text/">pain text</a>
+    <a href="/tags/pain-text/">Pain Text</a>
     
-    <a href="/tags/para/">para</a>
+    <a href="/tags/para/">Para</a>
     
-    <a href="/tags/pc/">pc</a>
+    <a href="/tags/pc/">Pc</a>
     
-    <a href="/tags/piano/">piano</a>
+    <a href="/tags/piano/">Piano</a>
+    
+    <a href="/tags/pingcode/">PingCode</a>
     
     <a href="/tags/pipeline/">PipeLine</a>
     
-    <a href="/tags/play1/">play1</a>
+    <a href="/tags/play1/">Play1</a>
     
-    <a href="/tags/play1x/">play1x</a>
+    <a href="/tags/play1x/">Play1x</a>
     
-    <a href="/tags/play2-scala/">play2 scala</a>
+    <a href="/tags/play2-scala/">Play2 Scala</a>
     
-    <a href="/tags/playframework/">playframework</a>
+    <a href="/tags/playframework/">Playframework</a>
     
-    <a href="/tags/playscala/">playscala</a>
+    <a href="/tags/playscala/">Playscala</a>
     
     <a href="/tags/post/">POST</a>
     
@@ -569,45 +575,45 @@ icon = /favicon.ico
     
     <a href="/tags/powerapps/">PowerApps</a>
     
-    <a href="/tags/powermill/">powermill</a>
+    <a href="/tags/powermill/">Powermill</a>
     
     <a href="/tags/ppt/">PPT</a>
     
     <a href="/tags/promise/">Promise</a>
     
-    <a href="/tags/python/">python</a>
+    <a href="/tags/python/">Python</a>
     
     <a href="/tags/qa/">QA</a>
     
     <a href="/tags/ray-dalio/">Ray Dalio</a>
     
-    <a href="/tags/re-natal/">re-natal</a>
+    <a href="/tags/re-natal/">Re-Natal</a>
     
     <a href="/tags/react/">React</a>
     
-    <a href="/tags/react-native/">react native</a>
+    <a href="/tags/react-native/">React Native</a>
     
-    <a href="/tags/react-route/">react-route</a>
+    <a href="/tags/react-route/">React-Route</a>
     
-    <a href="/tags/redux/">redux</a>
+    <a href="/tags/redux/">Redux</a>
     
     <a href="/tags/redwood/">RedWood</a>
     
     <a href="/tags/regex/">Regex</a>
     
-    <a href="/tags/rpc/">rpc</a>
+    <a href="/tags/rpc/">Rpc</a>
     
     <a href="/tags/ruby/">Ruby</a>
     
-    <a href="/tags/rust/">rust</a>
+    <a href="/tags/rust/">Rust</a>
     
     <a href="/tags/seagate/">Seagate</a>
     
-    <a href="/tags/second-brain/">second-brain</a>
+    <a href="/tags/second-brain/">Second-Brain</a>
     
     <a href="/tags/secure/">Secure</a>
     
-    <a href="/tags/session/">session</a>
+    <a href="/tags/session/">Session</a>
     
     <a href="/tags/silo/">Silo</a>
     
@@ -615,7 +621,7 @@ icon = /favicon.ico
     
     <a href="/tags/smartide/">SmartIDE</a>
     
-    <a href="/tags/sops/">sops</a>
+    <a href="/tags/sops/">Sops</a>
     
     <a href="/tags/spacemacs/">Spacemacs</a>
     
@@ -623,7 +629,7 @@ icon = /favicon.ico
     
     <a href="/tags/sql/">SQL</a>
     
-    <a href="/tags/ssh/">ssh</a>
+    <a href="/tags/ssh/">Ssh</a>
     
     <a href="/tags/static-site/">Static Site</a>
     
@@ -631,17 +637,23 @@ icon = /favicon.ico
     
     <a href="/tags/svg/">SVG</a>
     
+    <a href="/tags/taigo/">Taigo</a>
+    
     <a href="/tags/tailwind/">Tailwind</a>
     
     <a href="/tags/tdd/">TDD</a>
     
-    <a href="/tags/text/">text</a>
+    <a href="/tags/text/">Text</a>
     
     <a href="/tags/toc/">TOC</a>
     
-    <a href="/tags/tomorrow-theme/">tomorrow-theme</a>
+    <a href="/tags/tomorrow-theme/">Tomorrow-Theme</a>
     
-    <a href="/tags/tools/">tools</a>
+    <a href="/tags/tool/">Tool</a>
+    
+    <a href="/tags/tools/">Tools</a>
+    
+    <a href="/tags/trello/">Trello</a>
     
     <a href="/tags/typescript/">TypeScript</a>
     
@@ -649,7 +661,7 @@ icon = /favicon.ico
     
     <a href="/tags/umi/">Umi</a>
     
-    <a href="/tags/uml/">uml</a>
+    <a href="/tags/uml/">Uml</a>
     
     <a href="/tags/unit-test/">Unit Test</a>
     
@@ -657,17 +669,17 @@ icon = /favicon.ico
     
     <a href="/tags/vant/">Vant</a>
     
-    <a href="/tags/vi/">vi</a>
+    <a href="/tags/vi/">Vi</a>
     
-    <a href="/tags/vim/">vim</a>
+    <a href="/tags/vim/">Vim</a>
     
     <a href="/tags/vimac/">Vimac</a>
     
     <a href="/tags/vimium/">Vimium</a>
     
-    <a href="/tags/vimrc/">vimrc</a>
+    <a href="/tags/vimrc/">Vimrc</a>
     
-    <a href="/tags/vlang/">vlang</a>
+    <a href="/tags/vlang/">Vlang</a>
     
     <a href="/tags/vscode/">VSCode</a>
     
@@ -675,7 +687,7 @@ icon = /favicon.ico
     
     <a href="/tags/vue3/">Vue3</a>
     
-    <a href="/tags/weapp/">weapp</a>
+    <a href="/tags/weapp/">Weapp</a>
     
     <a href="/tags/web-resources/">Web Resources</a>
     
@@ -683,7 +695,7 @@ icon = /favicon.ico
     
     <a href="/tags/weui/">WeUI</a>
     
-    <a href="/tags/wind13/">wind13</a>
+    <a href="/tags/wind13/">Wind13</a>
     
     <a href="/tags/windows/">Windows</a>
     
@@ -691,11 +703,11 @@ icon = /favicon.ico
     
     <a href="/tags/wux/">Wux</a>
     
-    <a href="/tags/xml/">xml</a>
+    <a href="/tags/xml/">Xml</a>
     
-    <a href="/tags/yarn/">yarn</a>
+    <a href="/tags/yarn/">Yarn</a>
     
-    <a href="/tags/yarn.lock/">yarn.lock</a>
+    <a href="/tags/yarn.lock/">Yarn.lock</a>
     
     <a href="/tags/%E4%B8%80%E5%9B%BE/">一图</a>
     
@@ -1021,7 +1033,7 @@ icon = /favicon.ico
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2023 <a href="/">世风十三学堂 By 世风十三</a>.
+        &copy; 2024 <a href="/">世风十三学堂 By 世风十三</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         
