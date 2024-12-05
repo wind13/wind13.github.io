@@ -2,38 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TOC on 世风十三学堂</title>
-    <link>//localhost:1313/tags/toc/</link>
+    <link>/tags/toc/</link>
     <description>Recent content in TOC on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 05 Dec 2024 22:25:25 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/toc/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>如何使用微信公众号API发布文章 How to Publish Doc by Wx Api</title>
-      <link>//localhost:1313/post/2024/how-to-publish-doc-by-wx-api/</link>
-      <pubDate>Thu, 05 Dec 2024 22:25:25 +0800</pubDate>
-      <guid>//localhost:1313/post/2024/how-to-publish-doc-by-wx-api/</guid>
-      <description>使用微信公众号API发布文章需要遵循微信公众平台的开发规范和接口要求。 以下是使用微信公众号API发布文章的基本步骤： 步骤 1：注册微信公众号 前往微信公众平台官网（mp.weixin.qq.com）注册一个公众号。根据指引完成注册流程，获取公众号的AppID和AppSecret。 步骤</description>
-    </item>
+    <lastBuildDate>Sun, 06 Feb 2022 04:47:11 +0000</lastBuildDate>
+    <atom:link href="/tags/toc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于KPI与开发团队效能问题的讨论</title>
-      <link>//localhost:1313/post/2022/develop-team-problem/</link>
+      <link>/post/2022/develop-team-problem/</link>
       <pubDate>Sun, 06 Feb 2022 04:47:11 +0000</pubDate>
-      <guid>//localhost:1313/post/2022/develop-team-problem/</guid>
+      <guid>/post/2022/develop-team-problem/</guid>
       <description>今天在微信群里讨论开发团队效能的问题，话题是由 小L 提问 “KPI设定的指标有啥啊，评分时候是用数据还是靠主观？有罚么？”开始…… 有群友 小F 建议： 靠事实，不建议有罚…… 数据和主观都有不靠谱的地方，多维度评估。 接着 小L 问道: 那指标一般定哪些？我们现在用：bug解决用时、线上问题解决率…</description>
     </item>
     <item>
       <title>先进管理思想建议方案</title>
-      <link>//localhost:1313/post/2020/manage-system/</link>
+      <link>/post/2020/manage-system/</link>
       <pubDate>Wed, 12 Aug 2020 17:00:17 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/manage-system/</guid>
+      <guid>/post/2020/manage-system/</guid>
       <description>公司层面：OKR 管理思想 概述：OKR（Objectives and Key Results）即目标与关键成果法，是一套明确和跟踪目标及其完成情况的管理工具和方法。 OKR的主要目标是明确公司和团队的“目标”以及明确每个目标达成的可衡量的“关键结果”。OKR被定义为“一个重要的思考框架与不断发展的</description>
     </item>
     <item>
       <title>技术方案要从解决现实世界的问题开始</title>
-      <link>//localhost:1313/post/2020/business-optimize/</link>
+      <link>/post/2020/business-optimize/</link>
       <pubDate>Sun, 24 May 2020 11:25:06 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/business-optimize/</guid>
+      <guid>/post/2020/business-optimize/</guid>
       <description>技术方案要从解决现实世界的问题开始 技术群里讨论一个技术方案的问题，大概描述如下： 一个单据处理系统，上游系统会不断产生新的单据，数量比较大，频率也比较高； 当前系统分为两个环节，一个接单环节，一个转单环节； 接单环节负责将单据入库；保存数据库目前速度跟得上，可以保证上游系统的单据全部入</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ruby on 世风十三学堂</title>
-    <link>//localhost:1313/tags/ruby/</link>
+    <link>/tags/ruby/</link>
     <description>Recent content in Ruby on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 08 Sep 2020 22:50:16 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learn Elixir</title>
-      <link>//localhost:1313/post/2020/learn-elixir/</link>
+      <link>/post/2020/learn-elixir/</link>
       <pubDate>Tue, 08 Sep 2020 22:50:16 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/learn-elixir/</guid>
+      <guid>/post/2020/learn-elixir/</guid>
       <description>参考资料 GOTO 2019 • The Soul of Erlang and Elixir • Saša Jurić http://elixir-lang.com/ https://elixirschool.com/zh-hans/ macOS 上的安装 brew install elixir Edward 的课程~ Captcha TDD in Elixir 01 - 练习的第一小步 - 实现最基本的验证码比对 Captcha TDD in Elixir 02 - 练习的第二小步 - 实现带次数的验证码比对 Captcha TDD in Elixir 03 - 练习的第三小步 - 验证码服务化(进程化) Captcha TDD in Elixir 03_2 - 第三小步成果的命令行方式使用示例 Captcha TDD in Elixir 04</description>
     </item>
   </channel>

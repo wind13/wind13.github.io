@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PingCode on 世风十三学堂</title>
-    <link>//localhost:1313/tags/pingcode/</link>
+    <link>/tags/pingcode/</link>
     <description>Recent content in PingCode on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 30 Nov 2024 15:52:27 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/pingcode/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/pingcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>敏捷项目管理工具比较 Agile Project Tools Compare</title>
-      <link>//localhost:1313/post/2024/agile-project-tools/</link>
+      <link>/post/2024/agile-project-tools/</link>
       <pubDate>Sat, 30 Nov 2024 15:52:27 +0000</pubDate>
-      <guid>//localhost:1313/post/2024/agile-project-tools/</guid>
+      <guid>/post/2024/agile-project-tools/</guid>
       <description>Agile Project Tools Compare 以下是几个目前网上比较敏捷、先进的项目管理工具的比较分析： 1. Taiga.io 敏捷支持：Taiga.io 是一个开源项目管理工具，专为敏捷开发团队设计。它支持Scrum和Kanban框架，帮助团队高效管理项目和任务。 用户界面：Taiga.io 提供简洁直观的用户界面，易于上手，减少学习成本。</description>
     </item>
   </channel>

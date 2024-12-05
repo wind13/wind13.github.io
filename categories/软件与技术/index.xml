@@ -2,360 +2,353 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>软件与技术 on 世风十三学堂</title>
-    <link>//localhost:1313/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/</link>
+    <link>/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/</link>
     <description>Recent content in 软件与技术 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 05 Dec 2024 22:25:25 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>如何使用微信公众号API发布文章 How to Publish Doc by Wx Api</title>
-      <link>//localhost:1313/post/2024/how-to-publish-doc-by-wx-api/</link>
-      <pubDate>Thu, 05 Dec 2024 22:25:25 +0800</pubDate>
-      <guid>//localhost:1313/post/2024/how-to-publish-doc-by-wx-api/</guid>
-      <description>使用微信公众号API发布文章需要遵循微信公众平台的开发规范和接口要求。 以下是使用微信公众号API发布文章的基本步骤： 步骤 1：注册微信公众号 前往微信公众平台官网（mp.weixin.qq.com）注册一个公众号。根据指引完成注册流程，获取公众号的AppID和AppSecret。 步骤</description>
-    </item>
+    <lastBuildDate>Sun, 01 Dec 2024 22:55:27 +0000</lastBuildDate>
+    <atom:link href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 WSL 启动 Hugo 搭建博客</title>
-      <link>//localhost:1313/post/2024/wsl-hugo-blog/</link>
+      <link>/post/2024/wsl-hugo-blog/</link>
       <pubDate>Sun, 01 Dec 2024 22:55:27 +0000</pubDate>
-      <guid>//localhost:1313/post/2024/wsl-hugo-blog/</guid>
+      <guid>/post/2024/wsl-hugo-blog/</guid>
       <description>使用 Windows Subsystem for Linux (WSL) 来启动 Hugo 并建立自己的博客是一个不错的选择，因为 Hugo 是一个强大的静态网站生成器，非常适合快速搭建个人博客。以下是使用 WSL 启动 Hugo 建立博客的步骤： 步骤 1: 安装 WSL 打开 Windows 功能开关： 打开“控制面板” &amp;gt; “程序” &amp;gt; “程序和功能” &amp;gt; “启用或关闭Windows功能”。 找到“适用于Linux的</description>
     </item>
     <item>
       <title>敏捷项目管理工具比较 Agile Project Tools Compare</title>
-      <link>//localhost:1313/post/2024/agile-project-tools/</link>
+      <link>/post/2024/agile-project-tools/</link>
       <pubDate>Sat, 30 Nov 2024 15:52:27 +0000</pubDate>
-      <guid>//localhost:1313/post/2024/agile-project-tools/</guid>
+      <guid>/post/2024/agile-project-tools/</guid>
       <description>Agile Project Tools Compare 以下是几个目前网上比较敏捷、先进的项目管理工具的比较分析： 1. Taiga.io 敏捷支持：Taiga.io 是一个开源项目管理工具，专为敏捷开发团队设计。它支持Scrum和Kanban框架，帮助团队高效管理项目和任务。 用户界面：Taiga.io 提供简洁直观的用户界面，易于上手，减少学习成本。</description>
     </item>
     <item>
       <title>前端UI的江湖风云</title>
-      <link>//localhost:1313/post/2023/front-end-ui-hero-before-after/</link>
+      <link>/post/2023/front-end-ui-hero-before-after/</link>
       <pubDate>Sat, 01 Apr 2023 03:52:27 +0000</pubDate>
-      <guid>//localhost:1313/post/2023/front-end-ui-hero-before-after/</guid>
+      <guid>/post/2023/front-end-ui-hero-before-after/</guid>
       <description>前端技术已经发展到什么阶段了？百花齐放，同时也逐渐分出了高下吧，回看前端技术的演化，还真是春秋战国 + 三国群英啊！ 相关文章很多，就不多言了。 现如今连 React 都似乎成了垂垂老者，从性能和未来潜力来看，我会关注这两个： Solid.js Svelte.js 如果非要用 React 技术栈，我也会用 Preact.js 这个轻量级方案。 当然 Vue.js 也很优秀，与 React 不同</description>
     </item>
     <item>
       <title>Solve Feign Multipart Mixed Post Request 400 Error</title>
-      <link>//localhost:1313/post/2022/solve-feign-multipart-mixed-post-request-400-error/</link>
+      <link>/post/2022/solve-feign-multipart-mixed-post-request-400-error/</link>
       <pubDate>Sun, 30 Oct 2022 13:22:47 +0000</pubDate>
-      <guid>//localhost:1313/post/2022/solve-feign-multipart-mixed-post-request-400-error/</guid>
+      <guid>/post/2022/solve-feign-multipart-mixed-post-request-400-error/</guid>
       <description>记一次解决 Feign 提交批量添加请求收到 400 报错的经历 上周在实现用 OpenFeign 提交批量添加请求时，遇到一个奇怪的问题，本来 Post 请求的 body 体，因为是批量请求，内容就比较多，准备起来就比较麻烦，仔细检查了很多次，提交时还是各种失败，最终终于按照官方文档在 Postman 中提交成功了，本以为万事大吉了，于是开始写 Java 代码， 没</description>
     </item>
     <item>
       <title>遗留项目迁移的经验、策略和能力 Legacy System Renew</title>
-      <link>//localhost:1313/post/2022/legacy-system-renew/</link>
+      <link>/post/2022/legacy-system-renew/</link>
       <pubDate>Sun, 23 Oct 2022 12:12:55 +0000</pubDate>
-      <guid>//localhost:1313/post/2022/legacy-system-renew/</guid>
+      <guid>/post/2022/legacy-system-renew/</guid>
       <description>企业遗留项目改造和迁移有用的经验都有哪些？ 之前做过几个遗留项目的迁移工作了， 每一个都有各自的特点， 然而有用的经验却有很多共同点。 归纳起来有以下几点： 首先要深入了解遗留项目的背景、现状和未来期望，包括业务场景、技术框架、历史演进过程等； 其次要有一个富有经验、技术扎实的团队来做支撑，</description>
     </item>
     <item>
       <title>Try SmartIDE</title>
-      <link>//localhost:1313/post/2022/try-smartide/</link>
+      <link>/post/2022/try-smartide/</link>
       <pubDate>Tue, 05 Jul 2022 03:16:01 +0000</pubDate>
-      <guid>//localhost:1313/post/2022/try-smartide/</guid>
+      <guid>/post/2022/try-smartide/</guid>
       <description>尝试在 Deepin 安装成功，但感觉很多个性化配置需要同步才好。 使用了 Docker 的技术，思路是很不错的。 测试了一下，感觉插件同步机制还有点麻烦，考虑到主要的需求可能是在不方便用自己的电脑时才会使用 SmartIDE，这类场景还是不太多，例如使用 iPad 来实现编程，等以后需要了再说吧，可能到时候就有更好、更方</description>
     </item>
     <item>
       <title>低代码的类比 Low Code Analogy</title>
-      <link>//localhost:1313/post/2022/low-code-analogy/</link>
+      <link>/post/2022/low-code-analogy/</link>
       <pubDate>Wed, 08 Jun 2022 21:34:51 +0800</pubDate>
-      <guid>//localhost:1313/post/2022/low-code-analogy/</guid>
+      <guid>/post/2022/low-code-analogy/</guid>
       <description>前些天同事在会上做了个类比，大意是这样：Low 低代码就好似街边的大排档，也就是路边滩，适合做初期商业业务的快速验证，而传统代码就好似星级饭店，是验证商业模式后用比较大的投入建成的较长期的商业项目。 我们这里所说的低代码平台，特指微软的 Power Platform 平台。 可以参见我另外一些博文： 低代码开发的问</description>
     </item>
     <item>
       <title>Which Editor You Are Using</title>
-      <link>//localhost:1313/post/2022/which-editor-you-are-using/</link>
+      <link>/post/2022/which-editor-you-are-using/</link>
       <pubDate>Sat, 07 May 2022 16:39:30 +0800</pubDate>
-      <guid>//localhost:1313/post/2022/which-editor-you-are-using/</guid>
+      <guid>/post/2022/which-editor-you-are-using/</guid>
       <description>你用哪款编辑器？ Which Editor Are You Using? 程序员们都是使用工具的高手，每个人都会有一段时间沉迷于编辑器的选择和配置，就象武者精心挑选自己趁手的兵器一样，你如果是一个程序员，你喜欢哪款编辑器呢？ 江湖上流传着十八般兵器和七种武器的传说，编程界也一样有类似的故事，最有名的莫过于“编辑器之神”和“神的编</description>
     </item>
     <item>
       <title>Nodejs Secure Config 配置加密方案</title>
-      <link>//localhost:1313/post/2022/nodejs-secure-config/</link>
+      <link>/post/2022/nodejs-secure-config/</link>
       <pubDate>Wed, 09 Feb 2022 21:30:33 +0800</pubDate>
-      <guid>//localhost:1313/post/2022/nodejs-secure-config/</guid>
+      <guid>/post/2022/nodejs-secure-config/</guid>
       <description>Node.js 启动后台服务，通常都要连接数据库，或者连接第三方接口等，这里就会有一些账号密码之类的需要提供，我们当然不能把这些私密的内容保存在代码库中，这样是非常不安全的。 比较简单的方式是保存在 .env.production 这样的文件中，而这文件不会提交到代码库，而是在部署时再放到相应的运行环境中。 即使是这样，也比较麻</description>
     </item>
     <item>
       <title>在 Power Platform 上实践 JamStack 架构思想</title>
-      <link>//localhost:1313/post/2022/powerplatform-jamstack/</link>
+      <link>/post/2022/powerplatform-jamstack/</link>
       <pubDate>Sat, 15 Jan 2022 19:51:10 +0800</pubDate>
-      <guid>//localhost:1313/post/2022/powerplatform-jamstack/</guid>
+      <guid>/post/2022/powerplatform-jamstack/</guid>
       <description>Power Apps 上的问题 在 Power Platform 中，微软官方的工具是使用 Canvas App 来构建前端界面， Model Driven App 可以实现固定模式的一些操作界面，类似我们常说的 CRUD 增删改查等操作，还有一些简单的流程操作界面，比如审批流程什么的，不过 Model Driven App 的界面模式单一，可定制化的能力不足，通常无法满足用户多样的需求，很多细节也不太容易灵活处理</description>
     </item>
     <item>
       <title>不要用 Mounty，一次惊险的数据恢复记录</title>
-      <link>//localhost:1313/post/2022/do-not-use-mounty-disk-data-recovery/</link>
+      <link>/post/2022/do-not-use-mounty-disk-data-recovery/</link>
       <pubDate>Sun, 09 Jan 2022 12:23:45 +0800</pubDate>
-      <guid>//localhost:1313/post/2022/do-not-use-mounty-disk-data-recovery/</guid>
+      <guid>/post/2022/do-not-use-mounty-disk-data-recovery/</guid>
       <description>不要用 Mounty，一次惊险的数据恢复记录 不愿看前情啰嗦的，可以直接看最后的总结…… macOS 无法读写 NTFS 格式的硬盘 Mounty for NTFS A tiny tool to re-mount write-protected NTFS volumes under macOS in read-write mode. 尝试使用这个工具，可以拷贝写入 NTFS 的硬盘，但不稳定，在拷贝一大堆资料时，突然资料盘的这个原目录里的资料看不见了，转到 Win10 系统提示无法打开。 因为资料</description>
     </item>
     <item>
       <title>低代码开发的问题 Low Code Problems</title>
-      <link>//localhost:1313/post/2021/blog.low-code-problems/</link>
+      <link>/post/2021/blog.low-code-problems/</link>
       <pubDate>Mon, 13 Sep 2021 22:18:22 +0800</pubDate>
-      <guid>//localhost:1313/post/2021/blog.low-code-problems/</guid>
+      <guid>/post/2021/blog.low-code-problems/</guid>
       <description>低代码开发的问题 低代码/无代码开发如今也成为了一个热门话题，而我自己也深入到一个 Power Platform 的项目实践中，有了一些体会了，也分享一些自己的想法，供大家参考。 低代码开发会很快吗？ 第一印象确实如此，我使用的是微软的 Power Platform，整个过程就象是早些年使用 Access 数据库一样（我认为 Power Apps 就是基于当</description>
     </item>
     <item>
       <title>Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</title>
-      <link>//localhost:1313/post/2021/nodejs-fullstack-solution/</link>
+      <link>/post/2021/nodejs-fullstack-solution/</link>
       <pubDate>Sat, 21 Aug 2021 12:29:07 +0800</pubDate>
-      <guid>//localhost:1313/post/2021/nodejs-fullstack-solution/</guid>
+      <guid>/post/2021/nodejs-fullstack-solution/</guid>
       <description>JamStack WHAT IS JAMSTACK? A GUIDE FOR BUSINESS PEOPLE These decisions include the following: How you’ll manage the project/code Where you’ll store your content What software will build your site How your build process will be automated Where your site will be published What services and APIs your live site will use Best Practices Entire Project on a CDN Modern Build Tools Automated Builds Atomic Deploys: No changes go live until all changed files have been uploaded. Instant Cache Invalidation: Making sure your CDN can handle instant cache purges. Everything Lives in Git: Git clone, install any needed dependencies with a standard procedure (like npm install), and be ready to run the full project locally. No databases to clone, no complex installs. History LAMP(Linux, Apache, MySQL, PHP/Perl/Python) stack &amp;mdash;&amp;gt; MEAN(MongoDB,</description>
     </item>
     <item>
       <title>E2E tests, Integrated tests vs Collaboration and Contract Tests</title>
-      <link>//localhost:1313/post/2021/blog.collaboration-contract-tests/</link>
+      <link>/post/2021/blog.collaboration-contract-tests/</link>
       <pubDate>Thu, 18 Mar 2021 17:34:44 +0800</pubDate>
-      <guid>//localhost:1313/post/2021/blog.collaboration-contract-tests/</guid>
+      <guid>/post/2021/blog.collaboration-contract-tests/</guid>
       <description>E2E tests, Integrated tests vs Collaboration and Contract tests 测试金字塔 参考以下文章，减少 E2E 测试的比例，Google 的建议：70% unit tests, 20% integration tests, and 10% end-to-end tests. Just Say No to More End-to-End Tests 这样看来， Pact.io 类似的功能相当于 Integration tests 层，可能是目前大多数团队所忽略的部分？ 然而看到下面这篇和系列文章，又说 Integrated Tests are a Scam(坑/骗局) Integrated Tests Are A Scam Series 下面这篇又说 Integration Test 不同</description>
     </item>
     <item>
       <title>前端工程化学习笔记</title>
-      <link>//localhost:1313/post/2021/learn-front-end-engineer/</link>
+      <link>/post/2021/learn-front-end-engineer/</link>
       <pubDate>Fri, 19 Feb 2021 16:51:17 +0800</pubDate>
-      <guid>//localhost:1313/post/2021/learn-front-end-engineer/</guid>
+      <guid>/post/2021/learn-front-end-engineer/</guid>
       <description>前端工程化学习笔记 拉勾教育《前端工程化精讲》课程 开发效率 脚手架（Scaffold）工具 快速生成 基础代码和目录 package.json, *.lock 文件 项目技术栈 webpack 配置文件 检查工具、单元测试工具 最佳实践 自定义模板 云开发 无代码工具 脚手架工具 Yeoman 通用的，用于一些开发流程里特定片段代码的生成 Create-React-App(CRA) react-rewired customize-cra react-scripts 开发流程集成工具 Vue CLI 有交</description>
     </item>
     <item>
       <title>参与 Element3 TDD 的感受</title>
-      <link>//localhost:1313/post/2021/element3-tdd-thinking/</link>
+      <link>/post/2021/element3-tdd-thinking/</link>
       <pubDate>Sun, 07 Feb 2021 09:48:33 +0800</pubDate>
-      <guid>//localhost:1313/post/2021/element3-tdd-thinking/</guid>
+      <guid>/post/2021/element3-tdd-thinking/</guid>
       <description>参与 Element3 开源项目，使用 TDD 的一些感受 本文已被掘金花果山技术团队转载 TDD的困惑 很多项目团队并没有使用 TDD （测试驱动开发）的开发方式，我想这在目前的开发团队中占比非常高，特别是中小型公司的前端开发团队，几乎可以说是“全军覆没”，为什么？原因可能是以下所列的一些： TDD 太麻烦，增加了工作量 TDD 太</description>
     </item>
     <item>
       <title>终极笔记 Dendron</title>
-      <link>//localhost:1313/post/2021/ultimate-pkm-solution-dendron/</link>
+      <link>/post/2021/ultimate-pkm-solution-dendron/</link>
       <pubDate>Sun, 03 Jan 2021 11:24:11 +0800</pubDate>
-      <guid>//localhost:1313/post/2021/ultimate-pkm-solution-dendron/</guid>
+      <guid>/post/2021/ultimate-pkm-solution-dendron/</guid>
       <description>我想每个知识工作者都会有自己的个人知识管理解决方案，而且也都在不断地进化和改善中，还记得最早的时候，我们是没有这些概念的，那时候，不管把信息记在哪儿，随手记下来就算了，用过之后也就忘了或者删掉了。慢慢地我们意识到一些信息可能是有用的，需要保留下来的，于是我们用各种方式进行保存，建</description>
     </item>
     <item>
       <title>《实现模式》学习笔记</title>
-      <link>//localhost:1313/post/2020/implementation-patterns-learn/</link>
+      <link>/post/2020/implementation-patterns-learn/</link>
       <pubDate>Sat, 05 Dec 2020 23:12:40 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/implementation-patterns-learn/</guid>
+      <guid>/post/2020/implementation-patterns-learn/</guid>
       <description>Learning 《Implementation Patterns》 —— 编写可读的代码 在软件开发中有大量的开销都被用在理解现有代码上了。 范围的管理对于软件开发和写书都一样重要。 好的代码是有意义的。 软件要取得商业成功或者被广泛使用，“好的代码质量”即不必要也不充分。 尽管代码质量不能保证美好的未来，但</description>
     </item>
     <item>
       <title>对于微软 PowerApps 的使用感受</title>
-      <link>//localhost:1313/post/2020/feeling-powerapps/</link>
+      <link>/post/2020/feeling-powerapps/</link>
       <pubDate>Wed, 25 Nov 2020 09:57:44 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/feeling-powerapps/</guid>
+      <guid>/post/2020/feeling-powerapps/</guid>
       <description>感受 非常依赖微软的生态系统，基本上就是原来单机版的 Office 搬上了云端，再加上一些快捷功能生成手机/平板 App 和网站等。 生成的 App 实际上是运行在 PowerApps 这个超级 App 基础上，相当于小程序之于微信，不同的是，小程序支持代码开发（支持 JavaScript 等语言，有更高的可控性和灵活性），而微软的 PowerApps 不太支持代码开发，主张的是通</description>
     </item>
     <item>
       <title>Airtest Learning</title>
-      <link>//localhost:1313/post/2021/blog.airtest-learning/</link>
+      <link>/post/2021/blog.airtest-learning/</link>
       <pubDate>Sun, 11 Oct 2020 13:48:22 +0800</pubDate>
-      <guid>//localhost:1313/post/2021/blog.airtest-learning/</guid>
+      <guid>/post/2021/blog.airtest-learning/</guid>
       <description>命令行运行 通过 Airtest IDE 打包后的 apk 安装到雷电模拟器后，不能双击直接启动，需要在外部命令行操作，如下： adb 方式 比如雷电模拟器，可找到安装目录， cd /d/leidian/LDPlayer4 然后执行如下命令： ./adb.exe shell am instrument -w com.netease.open.airbase/android.support.test.runner.AndroidJUnitRunner Airtest Project Airtest Project自定义启动器支持批量运行脚本，并兼容在AirtestIDE中使用 Python v3.7.0 / Airtest: 1.1.1 / PocoUI: 1.0.78 其他笔记: Airtest Project</description>
     </item>
     <item>
       <title>Jenkins 学习笔记</title>
-      <link>//localhost:1313/post/2020/jenkins-learning/</link>
+      <link>/post/2020/jenkins-learning/</link>
       <pubDate>Sat, 10 Oct 2020 09:31:01 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/jenkins-learning/</guid>
+      <guid>/post/2020/jenkins-learning/</guid>
       <description>每个 Jenkins 用户都应该知道这三个最佳实践 轻量化 Jenkins 最佳实践 Jenkins管道最佳实践Top 10 不仅一个代码库可以支持多个Multibranch Job，实际上多个Multibranch Job可以共用同一个代码库，这里面就用到marker的功能。所以作为一个Jenkins管理员，我最纠结的就是</description>
     </item>
     <item>
       <title>Learn Elixir</title>
-      <link>//localhost:1313/post/2020/learn-elixir/</link>
+      <link>/post/2020/learn-elixir/</link>
       <pubDate>Tue, 08 Sep 2020 22:50:16 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/learn-elixir/</guid>
+      <guid>/post/2020/learn-elixir/</guid>
       <description>参考资料 GOTO 2019 • The Soul of Erlang and Elixir • Saša Jurić http://elixir-lang.com/ https://elixirschool.com/zh-hans/ macOS 上的安装 brew install elixir Edward 的课程~ Captcha TDD in Elixir 01 - 练习的第一小步 - 实现最基本的验证码比对 Captcha TDD in Elixir 02 - 练习的第二小步 - 实现带次数的验证码比对 Captcha TDD in Elixir 03 - 练习的第三小步 - 验证码服务化(进程化) Captcha TDD in Elixir 03_2 - 第三小步成果的命令行方式使用示例 Captcha TDD in Elixir 04</description>
     </item>
     <item>
       <title>软件开发团队如何高质量、高效率？</title>
-      <link>//localhost:1313/post/2020/software-develop-improve/</link>
+      <link>/post/2020/software-develop-improve/</link>
       <pubDate>Sun, 09 Aug 2020 18:30:17 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/software-develop-improve/</guid>
+      <guid>/post/2020/software-develop-improve/</guid>
       <description>这个话题很大，也不简单，有很多本书都从不同的角度在讲这个事情，比如《人月神话》、《人件》、《项目管理修炼之道》、《硝烟中的scrum和XP》等。 不过，此文不想那么系统全面地讨论这个问题，而是希望以一个非常直白的方式来讨论一下，以便使完全没有接触过软件工程的人也能有个感性的认识，而</description>
     </item>
     <item>
       <title>Umi vs Nuxt vs Ng-alain</title>
-      <link>//localhost:1313/post/2020/umi-vs-nuxt-vs-ngalain/</link>
+      <link>/post/2020/umi-vs-nuxt-vs-ngalain/</link>
       <pubDate>Tue, 28 Jul 2020 11:17:13 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/umi-vs-nuxt-vs-ngalain/</guid>
+      <guid>/post/2020/umi-vs-nuxt-vs-ngalain/</guid>
       <description>概述和思考 很多时候前端开发人员会面对眼花缭乱的框架很难选择。 标题所说的选择实质是三大阵营（React, Vue 和 Angular）的选择。 三个底层框架各有所长，亮点在于： React：更接近函数式编程思想，单向数据流比较清晰，jsx 是不错的创新，熟悉后可结合函数式编程写出比较优雅的组件代码</description>
     </item>
     <item>
       <title>Rust in IoT</title>
-      <link>//localhost:1313/post/2020/rust-in-iot/</link>
+      <link>/post/2020/rust-in-iot/</link>
       <pubDate>Sat, 25 Jul 2020 22:09:48 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/rust-in-iot/</guid>
+      <guid>/post/2020/rust-in-iot/</guid>
       <description>引用一篇国外的网文： 主要内容是解释为什么重写了原来的 Python 的程序。 Architecturally, the existing architecture was incapable of scaling to other technologies or changing direction without massive amounts of effort. The business had just been forced to change to MQTT from another IaaS provider because of licensing cost concerns, and the cutover took nearly a year. With new devices released every year (e.g. BLE, Wifi, Z-Wave, Zigbee, arbitrary REST APIs) the business wants to be able to change IoT stacks quickly to adapt to new technology. There were technical debt items nobody understood or was prepared to resolve. (Did I mention that none of the original programmers were still around to fix bugs or answer questions?) Fixing obvious issues in</description>
     </item>
     <item>
       <title>折腾 NeoVim 和 SpaceVim</title>
-      <link>//localhost:1313/post/2020/neovim-spacevim/</link>
+      <link>/post/2020/neovim-spacevim/</link>
       <pubDate>Fri, 24 Jul 2020 22:51:39 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/neovim-spacevim/</guid>
+      <guid>/post/2020/neovim-spacevim/</guid>
       <description>网上乱逛，听说 NeoVim 比 Vim 先进还快，虽然也有说不值得换的，不管，折腾，然后还发现了 SpaceVim，听说适合初级水平的 vimer，没问题，折腾，全换，从 Vim 换到 NeoVim，再从 oh-my-vim 换到 SpaceVim，这编程器就是有无限的魅力让人想不断地折腾尝鲜。 安装完 SpaceVim 后，常会遇到一个报错提示： :help vimproc m</description>
     </item>
     <item>
       <title>复习 FizzBuzz</title>
-      <link>//localhost:1313/post/2020/fizz-buzz-revise/</link>
+      <link>/post/2020/fizz-buzz-revise/</link>
       <pubDate>Thu, 16 Jul 2020 12:26:22 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/fizz-buzz-revise/</guid>
+      <guid>/post/2020/fizz-buzz-revise/</guid>
       <description>复习 FizzBuzz 题目 游戏的规则是： 让所有学生，假设为 100 人拍成一队，然后按顺序报数。 学生报数时，如果所报数字是3的倍数，那么不能说该数字，而要说Fizz；如果所报数字是5的倍数，那么要说Buzz。 需求问题： 被3和5整除返回什么？ 有的同学就直接脑补了： 脑补一：能被3和5整除，那就是先被3整除呗</description>
     </item>
     <item>
       <title>Git 的实际应用</title>
-      <link>//localhost:1313/post/2020/git-work/</link>
+      <link>/post/2020/git-work/</link>
       <pubDate>Sun, 12 Jul 2020 22:01:41 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/git-work/</guid>
+      <guid>/post/2020/git-work/</guid>
       <description>Git 的实际应用 软件版本的重要性 总得有个版本是可用的 总能回到思路清晰的时候 要能追溯到变更的过程 多人协作避免冲突 可以检查合并的代码 Git 的基本概念和功能 本地和远端 初始化 init 提交 commit 拉取 pull 推送 push 分支 branch，如同泳道 标签 tag 发布 release 暂存 stash 变基 rebase 合并 merge 关键的区别： merge vs rebase FF or conflict 详细见网文： Git：合</description>
     </item>
     <item>
       <title>Iot 物联网相关学习</title>
-      <link>//localhost:1313/post/2020/iot-learn/</link>
+      <link>/post/2020/iot-learn/</link>
       <pubDate>Fri, 05 Jun 2020 14:40:52 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/iot-learn/</guid>
+      <guid>/post/2020/iot-learn/</guid>
       <description>主流框架 SiteWhere 是一个面向物联网（IoT）的工业级开源应用支持平台。它提供了基于多租户微服务的基础架构，其中包括构建和部署IoT应用程序所需的关键功能。 SiteWhere基础架构和微服务部署在Kubernetes上，允许部署内部部署或几乎任何云提供商。 Apache Kafka，Zookeeper和</description>
     </item>
     <item>
       <title>我的 Windows 开发环境</title>
-      <link>//localhost:1313/post/2020/my-windows-dev-env/</link>
+      <link>/post/2020/my-windows-dev-env/</link>
       <pubDate>Wed, 03 Jun 2020 13:28:34 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/my-windows-dev-env/</guid>
+      <guid>/post/2020/my-windows-dev-env/</guid>
       <description>需安装的软件工具 注：如果国外文件下载不了，可尝试国内下载 Google scoop 或 Chocolatey 安装好 choco 或 scoop 后，可以通过命令安装其他软件，个人可以维护一个常用的软件列表，写成一个脚本，这样每次一台新的 Windows 系统，就可以通过这个脚本完成80~90%的装机工作了。 Wox Github Download 里面还会附带 Python 和 Everything 的安装文件。 cmder，安装好之</description>
     </item>
     <item>
       <title>RPC 相关学习</title>
-      <link>//localhost:1313/post/2020/learn-rpc/</link>
+      <link>/post/2020/learn-rpc/</link>
       <pubDate>Tue, 02 Jun 2020 21:28:33 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/learn-rpc/</guid>
+      <guid>/post/2020/learn-rpc/</guid>
       <description>各家官网 gRPC Apache Dubbo™ 是一款高性能Java RPC框架。 SOFARPC 介绍 相关资料 重点资料 RPC 协议之争和选型要点 对于 RPC 框架，在架构上能够支持多语言非常重要。不同的业务场景，适合不同的语言，例如后端复杂业务逻辑使用 Java 开发效率更高，对于 API 网关或者边缘服务，适合 GO 语言。对于一些序列化框架，由于使用了</description>
     </item>
     <item>
       <title>技术方案要从解决现实世界的问题开始</title>
-      <link>//localhost:1313/post/2020/business-optimize/</link>
+      <link>/post/2020/business-optimize/</link>
       <pubDate>Sun, 24 May 2020 11:25:06 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/business-optimize/</guid>
+      <guid>/post/2020/business-optimize/</guid>
       <description>技术方案要从解决现实世界的问题开始 技术群里讨论一个技术方案的问题，大概描述如下： 一个单据处理系统，上游系统会不断产生新的单据，数量比较大，频率也比较高； 当前系统分为两个环节，一个接单环节，一个转单环节； 接单环节负责将单据入库；保存数据库目前速度跟得上，可以保证上游系统的单据全部入</description>
     </item>
     <item>
       <title>PowerMill 宏编程研究</title>
-      <link>//localhost:1313/post/2020/powermill-macro/</link>
+      <link>/post/2020/powermill-macro/</link>
       <pubDate>Wed, 04 Mar 2020 12:04:22 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/powermill-macro/</guid>
+      <guid>/post/2020/powermill-macro/</guid>
       <description>概述 PowerMill 是一款大型数控加工软件，其中有二次开发和宏的功能，初步浏览了一下官方帮助文档，感觉总体来说是比较简单的，主要是用编程知识中的函数方法、循环和判断逻辑等基础知识，重点要结合业务需求来实际应用即可。 示例代码解读 简单的循环 FOREACH Bottles IN {10,9,8,7,6,5,4,3,2,1} 直译：每个 Bottles 在 10~1 这段数字中 意译：把 10~1 这些数字循环，</description>
     </item>
     <item>
       <title>Hugo 中 显示 MindMap 思维导图</title>
-      <link>//localhost:1313/post/2020/hugo-mind-map/</link>
+      <link>/post/2020/hugo-mind-map/</link>
       <pubDate>Fri, 31 Jan 2020 13:40:37 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/hugo-mind-map/</guid>
+      <guid>/post/2020/hugo-mind-map/</guid>
       <description>目前比较好的脑图方案 一个是在 Hugo 里用 Markdown 写，在浏览器中预览。 另一个是用 Markdown 写后，通过 Typora 导出 opml 格式，再导入幕布后即可查看。 还有就是使用 PlantUML 插件 在 VSCode 中写 markdown 画脑图。 还有一个就是用 vscode-mindmap 插件，编辑 kityminder *.km 文件即可，这个功能与百度脑图用的是同一个技术，只是还没找到导入导出的功能。 效果如下： 根目录 一级目录1</description>
     </item>
     <item>
       <title>Music Programming</title>
-      <link>//localhost:1313/post/2020/music-programming/</link>
+      <link>/post/2020/music-programming/</link>
       <pubDate>Sat, 25 Jan 2020 16:00:11 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/music-programming/</guid>
+      <guid>/post/2020/music-programming/</guid>
       <description>前阵子有一天，脑子里突然有个很有趣的想法，能不能用编程来写音乐？主要是基于几个思路，一是说纯文本可以编程可以做很多事，能画图什么的，能不能做音乐呢？另一个就是自己一直对音乐有很大的兴趣，但是自己又没有深入学习和研究，年轻时弹了一阵子吉他，后来也因为手指和手部肌肉疼放弃了，可能是没</description>
     </item>
     <item>
       <title>Manjaro 系统使用记录</title>
-      <link>//localhost:1313/post/2019/manjaro-os-usage/</link>
+      <link>/post/2019/manjaro-os-usage/</link>
       <pubDate>Fri, 20 Dec 2019 19:39:26 +0800</pubDate>
-      <guid>//localhost:1313/post/2019/manjaro-os-usage/</guid>
+      <guid>/post/2019/manjaro-os-usage/</guid>
       <description>前几天（今天是2019年12月20日）把 Deepin 系统从 D 盘（1T 硬盘）上删除了，在固态硬盘上开出了 80G 硬盘空间安装个 Manjaro KDE 玩儿一下，中间因为分区操作失误，差点把整个 D 盘给弄丢了，还好冷静地找办法解决，试了很多工具，其中 DiskGenius 是可以找回分区表的，但到最后一步居然提示要收费，好像还要两三百吧，不甘</description>
     </item>
     <item>
       <title>纯文本的威力</title>
-      <link>//localhost:1313/post/2019/power-of-plain-text/</link>
+      <link>/post/2019/power-of-plain-text/</link>
       <pubDate>Tue, 15 Oct 2019 06:28:01 +0000</pubDate>
-      <guid>//localhost:1313/post/2019/power-of-plain-text/</guid>
+      <guid>/post/2019/power-of-plain-text/</guid>
       <description>“Keep Knowledge in Pain Text（用纯文本保存知识）” 纯文本能做的事 所有的软件源代码都是纯文本！ 纯文本是即可以让机器运行，又可以让人类阅读的内容形式。 Unix 系统的底层设计充分利用了纯文本的独特性。 做 PPT 演示 国产框架工具，建议用 revealjs 功能更强些，更国际化、标准化些。 用 revealjs 转 Asciidoctor 文档为 PPT Asciidoctor 用 Ruby 写的将 AsciiDoc 文本</description>
     </item>
     <item>
       <title>Julia Learning</title>
-      <link>//localhost:1313/post/2019/julia-learning/</link>
+      <link>/post/2019/julia-learning/</link>
       <pubDate>Thu, 03 Oct 2019 10:09:37 +0800</pubDate>
-      <guid>//localhost:1313/post/2019/julia-learning/</guid>
+      <guid>/post/2019/julia-learning/</guid>
       <description>Julia Learning Julia Install Brew brew cask install julia Normal Download and install it as julia.app Add it into your profile, for me it is .zshrc file: # Julia # /Applications/Julia-1.2.app/Contents/Resources/julia/bin/ export PATH=&amp;#34;/Applications/Julia-1.2.app/Contents/Resources/julia/bin/:$PATH&amp;#34;</description>
     </item>
     <item>
       <title>非局部均值滤波算法</title>
-      <link>//localhost:1313/post/2019/non-local-mean-filter/</link>
+      <link>/post/2019/non-local-mean-filter/</link>
       <pubDate>Sat, 22 Jun 2019 19:59:26 +0800</pubDate>
-      <guid>//localhost:1313/post/2019/non-local-mean-filter/</guid>
+      <guid>/post/2019/non-local-mean-filter/</guid>
       <description>需求问题 关于图像降噪处理： 非局部均值滤波（non-local mean filter）基于块（block-wise）的算法怎么实现？编程语言类型为 python 解释 对添加了噪声的图像做nlm滤波：对每一个像素点（记为当前点），设定一个以其为中心的大小为p1*p2 的当前块，然后再设定一个以其为中心的大小</description>
     </item>
     <item>
       <title>当日笔记-20180922</title>
-      <link>//localhost:1313/post/2018/2018-09-22-daily-note-20180922/</link>
+      <link>/post/2018/2018-09-22-daily-note-20180922/</link>
       <pubDate>Sat, 22 Sep 2018 01:53:04 +0000</pubDate>
-      <guid>//localhost:1313/post/2018/2018-09-22-daily-note-20180922/</guid>
+      <guid>/post/2018/2018-09-22-daily-note-20180922/</guid>
       <description>Hugo 研究 对 Hugo 有点着迷了，看到了 Youtube 上面的教程，非常详细而直观，同时还可以练习英语听力，看自己感兴趣的英语视频内容应该是学英语最佳的途径之一了。 然后发现了这个 netlify 网站 ，号称：Everything you need to deploy your project. 在静态网站的基础上，扩展很多功能 Auth/Form/Lamda 等，包括部署 CI/CD 等，单人免费，多人收费。考虑到结合</description>
     </item>
     <item>
       <title>OCR 开发研究</title>
-      <link>//localhost:1313/post/2018/ocr-develop-research/</link>
+      <link>/post/2018/ocr-develop-research/</link>
       <pubDate>Sat, 02 Jun 2018 18:39:26 +0800</pubDate>
-      <guid>//localhost:1313/post/2018/ocr-develop-research/</guid>
+      <guid>/post/2018/ocr-develop-research/</guid>
       <description>遇到问题： 鉴权问题： 百度 API 需要首先创建应用，并且设置应用调用接口范围，如果不包含相应接口，后期在调用时会遇到 error_code = 6 (No permission to access data) 的错误提示。 创建应用后，每个应用会有相应的 AK(API Key) 和 SK (Secret Key)，可以用这两样来生成 token 用于接口调用验证。 另外百度个别接口会要求“真人认证”、“企业认证”等特殊要</description>
     </item>
     <item>
       <title>Docker 学习</title>
-      <link>//localhost:1313/post/2018/2018-02-07-docker-%E5%AD%A6%E4%B9%A0/</link>
+      <link>/post/2018/2018-02-07-docker-%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Wed, 07 Feb 2018 16:18:26 +0000</pubDate>
-      <guid>//localhost:1313/post/2018/2018-02-07-docker-%E5%AD%A6%E4%B9%A0/</guid>
+      <guid>/post/2018/2018-02-07-docker-%E5%AD%A6%E4%B9%A0/</guid>
       <description>Docker 学习 快速入门心法 官网文档也好，网上其他的教程也好，都非常有“耐心”，一点点地教你怎么理解和使用 docker，但我在看这些教程和文档的时候其实很着急，因为我只想快速入门并且用起来，而且最好是按最佳实践的路子用起来，而不是象个初学者那样慢慢摸索。但就是没人把这条捷径说清楚…… 下面我</description>
     </item>
     <item>
       <title>技术选型之我见</title>
-      <link>//localhost:1313/post/2017/2017-02-05-tech-select/</link>
+      <link>/post/2017/2017-02-05-tech-select/</link>
       <pubDate>Sun, 05 Feb 2017 16:19:50 +0000</pubDate>
-      <guid>//localhost:1313/post/2017/2017-02-05-tech-select/</guid>
+      <guid>/post/2017/2017-02-05-tech-select/</guid>
       <description>技术选型之我见 技术选型是各个技术团队架构师所面临的挑战之一，也是重要的决策之一，关系到团队技术发展的大方向，甚至决定着项目未来生存的生命力和寿命长短。 然而要做好这件选型的决策却是不那么简单，同时也没有什么特定的标准。 个人所见： 首先，要见多识广； 既然是说选型，那就要有所选择，也就是</description>
     </item>
     <item>
       <title>我的Mac OS X 开发环境和 Vim 的设置</title>
-      <link>//localhost:1313/post/2014/2014-05-13-my-macosx-vimrc/</link>
+      <link>/post/2014/2014-05-13-my-macosx-vimrc/</link>
       <pubDate>Tue, 13 May 2014 19:34:21 +0800</pubDate>
-      <guid>//localhost:1313/post/2014/2014-05-13-my-macosx-vimrc/</guid>
+      <guid>/post/2014/2014-05-13-my-macosx-vimrc/</guid>
       <description>系统设置 需要将CapsLock键改为Esc键，以方便Vi习惯。方法：安装 PCKeyboardHack，将CapsLock键的值从51改为53即可。 Deepin 系统的更换方法：修改键盘映射，但对于 vscode 好像不行。 Eclipse 设置 添加Vrapper插件，以便使用Vi习惯。update url: http://vrapper.sourceforge.net/update-site/stable 添加Js的编辑环境，</description>
     </item>
     <item>
       <title>Angular 学习</title>
-      <link>//localhost:1313/post/2019/angular-learning/</link>
+      <link>/post/2019/angular-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/2019/angular-learning/</guid>
+      <guid>/post/2019/angular-learning/</guid>
       <description>相关框架 JHipster JHipster is a development platform to generate, develop and deploy Spring Boot + Angular Web applications and Spring microservices. 问题 在 AngularJS 的 controller 中： $scope.pageTitle = dbData.getTitle();，已知该标题从数据库中取出后不会被修改和变化，如下在模板中的写法最好的方式是：【A】 A. &amp;lt;h1 ng-bind=&amp;quot;::pageTitle&amp;quot;&amp;gt;&amp;lt;/h1&amp;gt; B. &amp;lt;h1&amp;gt;&amp;lt;%=pageTitle%&amp;gt;&amp;lt;/h1&amp;gt; C. &amp;lt;h1&amp;gt;\{\{::pageTitle\}\}&amp;lt;/h1&amp;gt; D. &amp;lt;h1&amp;gt;\{\{pageTitle\}\}&amp;lt;/h1&amp;gt; E. &amp;lt;h1 ng-bind=&amp;quot;pageTitle&amp;quot;&amp;gt;&amp;lt;/h1&amp;gt; 修改 model 数据后，自动更新界面上的显示内容，或者在界面上修改内容，更新 model</description>
     </item>
     <item>
       <title>Backbone 路向何方？</title>
-      <link>//localhost:1313/post/2014/2014-05-07-migrate-backbone-to/</link>
+      <link>/post/2014/2014-05-07-migrate-backbone-to/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/2014/2014-05-07-migrate-backbone-to/</guid>
+      <guid>/post/2014/2014-05-07-migrate-backbone-to/</guid>
       <description>情况背景 使用 Backbone 开发 Web App 之后，特别是较大型的项目，会发现因为缺少一些关键的功能（如：双向绑定等）代码越来越多且复杂，从而导致后期扩展和更新越来越困难，因此从基本框架层面需要考虑改善，以便使整个框架更有条理，更易组织，更易扩展、复用、重构等…… 目前可以想到的有三个方向： 在 Backbone 基础上结合</description>
     </item>
     <item>
       <title>Javascript框架及相关知识</title>
-      <link>//localhost:1313/post/2013/2013-12-24-jsframework/</link>
+      <link>/post/2013/2013-12-24-jsframework/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/2013/2013-12-24-jsframework/</guid>
+      <guid>/post/2013/2013-12-24-jsframework/</guid>
       <description>综合框架 arale.js{:target=&amp;quot;_blank&amp;quot;} 支付宝的前端基础类库 Arale 基于 SeaJS 和 jQuery 等，目前新构建 2.0 版本。 demo: 计算器{:target=&amp;quot;_blank&amp;quot;} KISSY{:target=&amp;quot;_blank&amp;quot;} 是由淘宝前端攻城师们发起创建的一个开源 JS 类库。 Ender.js{:target=&amp;quot;_blank&amp;quot;} - Ender is a full featured package manager for your browser. 作者 Dustin Diaz{:target=&amp;quot;_blank&amp;quot;} 模块加载框架 Javascript模块化 Seajs{:target=&amp;quot;_blank&amp;quot;} 由支付宝团队开源，基于（Comm</description>
     </item>
     <item>
       <title>jQuery EasyUI 1.2.5 ChangeLog</title>
-      <link>//localhost:1313/post/2013/2013-12-23-version1.2.5/</link>
+      <link>/post/2013/2013-12-23-version1.2.5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/2013/2013-12-23-version1.2.5/</guid>
+      <guid>/post/2013/2013-12-23-version1.2.5/</guid>
       <description>Bug tabs: When add a new tab panel with href property, the content page is loaded twice. fixed. form: Failed to call &amp;rsquo;load&amp;rsquo; method to load form input with complex name. fixed. draggable: End drag in ie9, the cursor cannot be restored. fixed. Improvement panel: The tools can be defined via html markup. tabs: Call &amp;lsquo;close&amp;rsquo; method to close specified tab panel, users can pass tab title or index of tab panel. Other methods such &amp;lsquo;select&amp;rsquo;,&amp;lsquo;getTab&amp;rsquo; and &amp;rsquo;exists&amp;rsquo; are similar to &amp;lsquo;close&amp;rsquo; method. tabs: Add &amp;lsquo;getTabIndex&amp;rsquo; method. tabs: Users can define mini tools on tabs. tree: The mouse must move a specified distance to begin drag and drop operation. resizable: Add &amp;lsquo;options&amp;rsquo;,&amp;rsquo;enable&amp;rsquo; and &amp;lsquo;disable&amp;rsquo; methods. numberbox: Allow users to change number format. datagrid: The subgrid is supported now. searchbox: Add &amp;lsquo;selectName&amp;rsquo; method to select searching type name.</description>
     </item>
     <item>
       <title>UML tools of Mac OSX 苹果系统下的建模工具</title>
-      <link>//localhost:1313/post/2014/2014-03-27-uml-tools-of-mac-osx/</link>
+      <link>/post/2014/2014-03-27-uml-tools-of-mac-osx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/2014/2014-03-27-uml-tools-of-mac-osx/</guid>
+      <guid>/post/2014/2014-03-27-uml-tools-of-mac-osx/</guid>
       <description>今天工作时需要设计一下程序的架构，即建模工作，这件事用纯文本似乎较难完成（本人是纯文本的 funs）。用手绘软件（Gimp, SketchBookExpress）也不太方便，失量图软件（Inkscape，LibreOfficeDraw）也要从画方框开始也不方便，毕竟是模块化的图形，还</description>
     </item>
   </channel>

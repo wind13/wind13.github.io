@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Android 测试 on 世风十三学堂</title>
-    <link>//localhost:1313/tags/android-%E6%B5%8B%E8%AF%95/</link>
+    <link>/tags/android-%E6%B5%8B%E8%AF%95/</link>
     <description>Recent content in Android 测试 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 11 Oct 2020 13:48:22 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/android-%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/android-%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Airtest Learning</title>
-      <link>//localhost:1313/post/2021/blog.airtest-learning/</link>
+      <link>/post/2021/blog.airtest-learning/</link>
       <pubDate>Sun, 11 Oct 2020 13:48:22 +0800</pubDate>
-      <guid>//localhost:1313/post/2021/blog.airtest-learning/</guid>
+      <guid>/post/2021/blog.airtest-learning/</guid>
       <description>命令行运行 通过 Airtest IDE 打包后的 apk 安装到雷电模拟器后，不能双击直接启动，需要在外部命令行操作，如下： adb 方式 比如雷电模拟器，可找到安装目录， cd /d/leidian/LDPlayer4 然后执行如下命令： ./adb.exe shell am instrument -w com.netease.open.airbase/android.support.test.runner.AndroidJUnitRunner Airtest Project Airtest Project自定义启动器支持批量运行脚本，并兼容在AirtestIDE中使用 Python v3.7.0 / Airtest: 1.1.1 / PocoUI: 1.0.78 其他笔记: Airtest Project</description>
     </item>
   </channel>

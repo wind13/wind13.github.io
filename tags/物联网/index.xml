@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>物联网 on 世风十三学堂</title>
-    <link>//localhost:1313/tags/%E7%89%A9%E8%81%94%E7%BD%91/</link>
+    <link>/tags/%E7%89%A9%E8%81%94%E7%BD%91/</link>
     <description>Recent content in 物联网 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 05 Jun 2020 14:40:52 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/%E7%89%A9%E8%81%94%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/%E7%89%A9%E8%81%94%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Iot 物联网相关学习</title>
-      <link>//localhost:1313/post/2020/iot-learn/</link>
+      <link>/post/2020/iot-learn/</link>
       <pubDate>Fri, 05 Jun 2020 14:40:52 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/iot-learn/</guid>
+      <guid>/post/2020/iot-learn/</guid>
       <description>主流框架 SiteWhere 是一个面向物联网（IoT）的工业级开源应用支持平台。它提供了基于多租户微服务的基础架构，其中包括构建和部署IoT应用程序所需的关键功能。 SiteWhere基础架构和微服务部署在Kubernetes上，允许部署内部部署或几乎任何云提供商。 Apache Kafka，Zookeeper和</description>
     </item>
     <item>
       <title>操作系统全图谱树</title>
-      <link>//localhost:1313/post/2020/os-tree-map/</link>
+      <link>/post/2020/os-tree-map/</link>
       <pubDate>Sat, 22 Feb 2020 04:19:46 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/os-tree-map/</guid>
+      <guid>/post/2020/os-tree-map/</guid>
       <description>目前操作系统都有哪些？它们之间都是什么关系？有哪些渊源？ 操作系统 Unix System V Solaris Aix IRIX（Silicon GraphicsInc.，一般用简称：SGI）IRIX可以在SGI公司的RISC型电脑上运行，即是采行32位、64位MIPS架构的SGI工作站、服务器。 BSD Unix BSD(Berkeley Software Distribution)(BSD License) 需要定制操作系统的</description>
     </item>
   </channel>

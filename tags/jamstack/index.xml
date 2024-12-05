@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JamStack on 世风十三学堂</title>
-    <link>//localhost:1313/tags/jamstack/</link>
+    <link>/tags/jamstack/</link>
     <description>Recent content in JamStack on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 15 Jan 2022 19:51:10 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/jamstack/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/jamstack/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在 Power Platform 上实践 JamStack 架构思想</title>
-      <link>//localhost:1313/post/2022/powerplatform-jamstack/</link>
+      <link>/post/2022/powerplatform-jamstack/</link>
       <pubDate>Sat, 15 Jan 2022 19:51:10 +0800</pubDate>
-      <guid>//localhost:1313/post/2022/powerplatform-jamstack/</guid>
+      <guid>/post/2022/powerplatform-jamstack/</guid>
       <description>Power Apps 上的问题 在 Power Platform 中，微软官方的工具是使用 Canvas App 来构建前端界面， Model Driven App 可以实现固定模式的一些操作界面，类似我们常说的 CRUD 增删改查等操作，还有一些简单的流程操作界面，比如审批流程什么的，不过 Model Driven App 的界面模式单一，可定制化的能力不足，通常无法满足用户多样的需求，很多细节也不太容易灵活处理</description>
     </item>
     <item>
       <title>Nodejs 最新全栈解决方案 Nodejs Fullstack Solution</title>
-      <link>//localhost:1313/post/2021/nodejs-fullstack-solution/</link>
+      <link>/post/2021/nodejs-fullstack-solution/</link>
       <pubDate>Sat, 21 Aug 2021 12:29:07 +0800</pubDate>
-      <guid>//localhost:1313/post/2021/nodejs-fullstack-solution/</guid>
+      <guid>/post/2021/nodejs-fullstack-solution/</guid>
       <description>JamStack WHAT IS JAMSTACK? A GUIDE FOR BUSINESS PEOPLE These decisions include the following: How you’ll manage the project/code Where you’ll store your content What software will build your site How your build process will be automated Where your site will be published What services and APIs your live site will use Best Practices Entire Project on a CDN Modern Build Tools Automated Builds Atomic Deploys: No changes go live until all changed files have been uploaded. Instant Cache Invalidation: Making sure your CDN can handle instant cache purges. Everything Lives in Git: Git clone, install any needed dependencies with a standard procedure (like npm install), and be ready to run the full project locally. No databases to clone, no complex installs. History LAMP(Linux, Apache, MySQL, PHP/Perl/Python) stack &amp;mdash;&amp;gt; MEAN(MongoDB,</description>
     </item>
   </channel>

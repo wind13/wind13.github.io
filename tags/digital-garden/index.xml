@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Digital-Garden on 世风十三学堂</title>
-    <link>//localhost:1313/tags/digital-garden/</link>
+    <link>/tags/digital-garden/</link>
     <description>Recent content in Digital-Garden on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 24 Mar 2021 11:37:15 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/digital-garden/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/digital-garden/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Digital Garden</title>
-      <link>//localhost:1313/post/2021/blog.digital-garden/</link>
+      <link>/post/2021/blog.digital-garden/</link>
       <pubDate>Wed, 24 Mar 2021 11:37:15 +0800</pubDate>
-      <guid>//localhost:1313/post/2021/blog.digital-garden/</guid>
+      <guid>/post/2021/blog.digital-garden/</guid>
       <description>Digital Garden 源自以下文章的启发： [[#idea|tag.idea]] My blog is a digital garden, not a blog Joel Hooks at egghead.io Stop Giving af and Start Writing More 重新思考“博客”的概念和定位，确实不应该把个人网站当作博客来看，每篇文章都要精心打磨，有些麻烦，作者的思考是把它当作“数字花园”，我也有同感的，就象我在 Dendron 里记录了很多东西，但在博客上并没有发布多少。 看作博客，随着时</description>
     </item>
   </channel>

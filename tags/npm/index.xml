@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Npm on 世风十三学堂</title>
-    <link>//localhost:1313/tags/npm/</link>
+    <link>/tags/npm/</link>
     <description>Recent content in Npm on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 24 Jan 2018 16:54:08 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/npm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/npm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>两个 Lock 文件的迷惑</title>
-      <link>//localhost:1313/post/2018/2018-01-24-two-lock-file-confuse/</link>
+      <link>/post/2018/2018-01-24-two-lock-file-confuse/</link>
       <pubDate>Wed, 24 Jan 2018 16:54:08 +0000</pubDate>
-      <guid>//localhost:1313/post/2018/2018-01-24-two-lock-file-confuse/</guid>
+      <guid>/post/2018/2018-01-24-two-lock-file-confuse/</guid>
       <description>从 npm 5 开始，执行后就多出了一个 package-lock.json 的文件，如果在用 yarn 的话，就会有个疑惑，yarn.lock 和这个 package-lock.json 到底用哪个呢？要不要保存入 git 库呢？ 通过参考这两个链接： Should I commit yarn.lock and package-lock.json files? Idea: support package-lock.json from npm 5 得到信息如下： 都是为了记录准确的版本，使用时最好二选一，开发团队内部协商一致后，把另一种舍弃，即尽量不要</description>
     </item>
   </channel>

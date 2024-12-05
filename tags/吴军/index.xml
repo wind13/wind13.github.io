@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>吴军 on 世风十三学堂</title>
-    <link>//localhost:1313/tags/%E5%90%B4%E5%86%9B/</link>
+    <link>/tags/%E5%90%B4%E5%86%9B/</link>
     <description>Recent content in 吴军 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 17 Jan 2021 09:00:12 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/%E5%90%B4%E5%86%9B/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/%E5%90%B4%E5%86%9B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>吴军《见识》读书笔记</title>
-      <link>//localhost:1313/post/2021/wujun-horizons/</link>
+      <link>/post/2021/wujun-horizons/</link>
       <pubDate>Sun, 17 Jan 2021 09:00:12 +0800</pubDate>
-      <guid>//localhost:1313/post/2021/wujun-horizons/</guid>
+      <guid>/post/2021/wujun-horizons/</guid>
       <description>吴军《见识》读书笔记 前面几章一直在看，没想着记录，只摘个目录吧，以后重看时再补一下…… 上篇 商业的本质 第一章 商业的本质 第二章 创业不等于从0到1 第三章 以小博大的颠覆式创新 第四章 拒绝伪工作者 第五章 职场的误区与破解方法 第六章 理性的投资观 第六章 理性的投资观 下篇 人生的智慧 第七章 幸福是目的，成</description>
     </item>
     <item>
       <title>听邵恒头条《怎么用“福格行为模型”战胜拖延症？》记录</title>
-      <link>//localhost:1313/post/2021/fogg-behavior-model-stop-procratinating/</link>
+      <link>/post/2021/fogg-behavior-model-stop-procratinating/</link>
       <pubDate>Sat, 16 Jan 2021 14:05:52 +0800</pubDate>
-      <guid>//localhost:1313/post/2021/fogg-behavior-model-stop-procratinating/</guid>
+      <guid>/post/2021/fogg-behavior-model-stop-procratinating/</guid>
       <description>听邵恒头条《怎么用“福格行为模型”战胜拖延症？》记录 概念介绍 国外专门研究拖延症的网站：Deprocrastination How to stop procrastinating by using the Fogg Behavior Model 美国斯坦福大学教授：布莱恩·福格（Brian Fogg） 尼尔·埃亚尔《上瘾：让用户养成使用习惯的四大产品逻辑》的理论基础也是 Fogg Model Fogg Model: Behavior = Motivation + Ability</description>
     </item>
   </channel>

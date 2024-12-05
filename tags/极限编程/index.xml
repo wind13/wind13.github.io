@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>极限编程 on 世风十三学堂</title>
-    <link>//localhost:1313/tags/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/</link>
+    <link>/tags/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/</link>
     <description>Recent content in 极限编程 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 06 Feb 2022 04:47:11 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于KPI与开发团队效能问题的讨论</title>
-      <link>//localhost:1313/post/2022/develop-team-problem/</link>
+      <link>/post/2022/develop-team-problem/</link>
       <pubDate>Sun, 06 Feb 2022 04:47:11 +0000</pubDate>
-      <guid>//localhost:1313/post/2022/develop-team-problem/</guid>
+      <guid>/post/2022/develop-team-problem/</guid>
       <description>今天在微信群里讨论开发团队效能的问题，话题是由 小L 提问 “KPI设定的指标有啥啊，评分时候是用数据还是靠主观？有罚么？”开始…… 有群友 小F 建议： 靠事实，不建议有罚…… 数据和主观都有不靠谱的地方，多维度评估。 接着 小L 问道: 那指标一般定哪些？我们现在用：bug解决用时、线上问题解决率…</description>
     </item>
     <item>
       <title>参与 Element3 TDD 的感受</title>
-      <link>//localhost:1313/post/2021/element3-tdd-thinking/</link>
+      <link>/post/2021/element3-tdd-thinking/</link>
       <pubDate>Sun, 07 Feb 2021 09:48:33 +0800</pubDate>
-      <guid>//localhost:1313/post/2021/element3-tdd-thinking/</guid>
+      <guid>/post/2021/element3-tdd-thinking/</guid>
       <description>参与 Element3 开源项目，使用 TDD 的一些感受 本文已被掘金花果山技术团队转载 TDD的困惑 很多项目团队并没有使用 TDD （测试驱动开发）的开发方式，我想这在目前的开发团队中占比非常高，特别是中小型公司的前端开发团队，几乎可以说是“全军覆没”，为什么？原因可能是以下所列的一些： TDD 太麻烦，增加了工作量 TDD 太</description>
     </item>
     <item>
       <title>先进管理思想建议方案</title>
-      <link>//localhost:1313/post/2020/manage-system/</link>
+      <link>/post/2020/manage-system/</link>
       <pubDate>Wed, 12 Aug 2020 17:00:17 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/manage-system/</guid>
+      <guid>/post/2020/manage-system/</guid>
       <description>公司层面：OKR 管理思想 概述：OKR（Objectives and Key Results）即目标与关键成果法，是一套明确和跟踪目标及其完成情况的管理工具和方法。 OKR的主要目标是明确公司和团队的“目标”以及明确每个目标达成的可衡量的“关键结果”。OKR被定义为“一个重要的思考框架与不断发展的</description>
     </item>
     <item>
       <title>软件开发团队如何高质量、高效率？</title>
-      <link>//localhost:1313/post/2020/software-develop-improve/</link>
+      <link>/post/2020/software-develop-improve/</link>
       <pubDate>Sun, 09 Aug 2020 18:30:17 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/software-develop-improve/</guid>
+      <guid>/post/2020/software-develop-improve/</guid>
       <description>这个话题很大，也不简单，有很多本书都从不同的角度在讲这个事情，比如《人月神话》、《人件》、《项目管理修炼之道》、《硝烟中的scrum和XP》等。 不过，此文不想那么系统全面地讨论这个问题，而是希望以一个非常直白的方式来讨论一下，以便使完全没有接触过软件工程的人也能有个感性的认识，而</description>
     </item>
   </channel>

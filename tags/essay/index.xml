@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Essay on 世风十三学堂</title>
-    <link>//localhost:1313/tags/essay/</link>
+    <link>/tags/essay/</link>
     <description>Recent content in Essay on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <atom:link href="//localhost:1313/tags/essay/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/essay/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Back to the blog</title>
-      <link>//localhost:1313/post/2016/2016-08-26-back-to-the-blog/</link>
+      <link>/post/2016/2016-08-26-back-to-the-blog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/2016/2016-08-26-back-to-the-blog/</guid>
+      <guid>/post/2016/2016-08-26-back-to-the-blog/</guid>
       <description>回归 Blog 有一段时间没有更新Blog了，有些时候用Lofter，因为方便而且容易分享，而技术、思路的收集则用Evernote，本来用得还挺好的，但Evernote加了限制，只能支持两个客户端什么的，于是转用有道云笔记，有道云笔记升级到2.x版，结果里面的查询太烂了，查到关键字在某些文</description>
     </item>
   </channel>

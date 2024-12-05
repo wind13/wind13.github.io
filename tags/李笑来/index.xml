@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>李笑来 on 世风十三学堂</title>
-    <link>//localhost:1313/tags/%E6%9D%8E%E7%AC%91%E6%9D%A5/</link>
+    <link>/tags/%E6%9D%8E%E7%AC%91%E6%9D%A5/</link>
     <description>Recent content in 李笑来 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <atom:link href="//localhost:1313/tags/%E6%9D%8E%E7%AC%91%E6%9D%A5/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/%E6%9D%8E%E7%AC%91%E6%9D%A5/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>李笑来《把时间当朋友》笔记</title>
-      <link>//localhost:1313/post/2016/2016-10-08-time-friend-lixiaolai/</link>
+      <link>/post/2016/2016-10-08-time-friend-lixiaolai/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/2016/2016-10-08-time-friend-lixiaolai/</guid>
+      <guid>/post/2016/2016-10-08-time-friend-lixiaolai/</guid>
       <description>什么是心智 一个人的心智，就是其过往获得的一切知识及经验的总和，包括基于这些知识和经验造就的思考方法、思考模式。</description>
     </item>
     <item>
       <title>李笑来《通往财富自由之路》笔记</title>
-      <link>//localhost:1313/post/2016/2016-09-06-note-lixiaolai/</link>
+      <link>/post/2016/2016-09-06-note-lixiaolai/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/2016/2016-09-06-note-lixiaolai/</guid>
+      <guid>/post/2016/2016-09-06-note-lixiaolai/</guid>
       <description>财富自由的定义 首先要在语言上有准确的概念，才能思考清晰，并且要能在行动上指导自己。 分享的概念：好东西必须先是自己的，再拿出来跟人分享。 个人财富自由：某个人再也不用为了满足生活必须而出售自己的时间了。 把原来一份的时间卖出更多份，或是不需要出售自己的时间，在自己创造的平台上获取财富。</description>
     </item>
   </channel>

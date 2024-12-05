@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>王者荣耀 on 世风十三学堂</title>
-    <link>//localhost:1313/tags/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/</link>
+    <link>/tags/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/</link>
     <description>Recent content in 王者荣耀 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 15 Dec 2022 05:12:37 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>大乔，王者荣耀真正的王者</title>
-      <link>//localhost:1313/post/2022/da-qiao-wang-zhe-rong-yao-de-wang-zhe/</link>
+      <link>/post/2022/da-qiao-wang-zhe-rong-yao-de-wang-zhe/</link>
       <pubDate>Thu, 15 Dec 2022 05:12:37 +0000</pubDate>
-      <guid>//localhost:1313/post/2022/da-qiao-wang-zhe-rong-yao-de-wang-zhe/</guid>
+      <guid>/post/2022/da-qiao-wang-zhe-rong-yao-de-wang-zhe/</guid>
       <description>今天 2022年12月15日，我请假在家，最近全国人民都在阳和阳的路上，我也不敢出去瞎逛，就呆在家里玩玩游戏…… 是的，我又双叒叕安装了王者荣耀！ 可以回看那篇《别了，王者荣耀》 还有另一篇《不沉迷电子游戏的心法》， 哈哈……这就是人生，相信我这一代是第一代老年人退休打电子游戏的一代吧～ 缘</description>
     </item>
     <item>
       <title>别了，王者荣耀</title>
-      <link>//localhost:1313/post/2020/good-bye-wang-zhe-rong-yao/</link>
+      <link>/post/2020/good-bye-wang-zhe-rong-yao/</link>
       <pubDate>Sun, 29 Sep 2019 09:28:05 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/good-bye-wang-zhe-rong-yao/</guid>
+      <guid>/post/2020/good-bye-wang-zhe-rong-yao/</guid>
       <description>别了，王者荣耀 2019年9月30日 我又双叒叕卸载了王者荣耀！ 到今天 2020年2月6日 我已经四个月没有再安装和玩儿它了，以后应该也很少玩儿了，除非…… 嘿嘿…… 你猜？ 这段时间刻意让自己思考生命更有意义的事情，逐渐也有了更多的时间做更多其他的事情。 生活（与家人相处）、工作（编程、记录等</description>
     </item>
   </channel>

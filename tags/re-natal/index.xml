@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Re-Natal on 世风十三学堂</title>
-    <link>//localhost:1313/tags/re-natal/</link>
+    <link>/tags/re-natal/</link>
     <description>Recent content in Re-Natal on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <atom:link href="//localhost:1313/tags/re-natal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/re-natal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Re-natal 报错分析列表</title>
-      <link>//localhost:1313/post/2016/2016-09-03-re-natal-error-list/</link>
+      <link>/post/2016/2016-09-03-re-natal-error-list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/2016/2016-09-03-re-natal-error-list/</guid>
+      <guid>/post/2016/2016-09-03-re-natal-error-list/</guid>
       <description>Assert failed: c customEval figwheel-bridge.js:75 &amp;lt;unknown&amp;gt; figwheel-bridge.js:88 &amp;lt;unknown&amp;gt; JSTimers.js:47 引入的控件不可用？ Uncaugh [object object] 可能是db.cljs里的检查项不合格。 Spec check failed: {:cljs.spec/problems {[] {:pred map?, :val nil, :via [:xumu-app.db/app-db], :in []}}} 传入参数为nil，不符合db.cljs中spec的检查项。 undefined is not an object (evaluating &amp;#39;nextState.routes.forEach&amp;#39;) NavigationScenesReducer NavigationScenesReducer.js:116 NavigationTransitioner NavigationTransitioner.js:92 可能是sub.cljs加载错误，修改reg-sub为reg-sub-raw即可。 console.error: &amp;#34;Error rendering component (in env.android.main.reloader &amp;gt;</description>
     </item>
   </channel>

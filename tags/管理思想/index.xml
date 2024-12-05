@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>管理思想 on 世风十三学堂</title>
-    <link>//localhost:1313/tags/%E7%AE%A1%E7%90%86%E6%80%9D%E6%83%B3/</link>
+    <link>/tags/%E7%AE%A1%E7%90%86%E6%80%9D%E6%83%B3/</link>
     <description>Recent content in 管理思想 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 04 Jul 2020 13:26:17 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/%E7%AE%A1%E7%90%86%E6%80%9D%E6%83%B3/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/%E7%AE%A1%E7%90%86%E6%80%9D%E6%83%B3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《授权——如何激发全员领导力》樊登读书视频记录</title>
-      <link>//localhost:1313/post/2020/turn-the-ship-around/</link>
+      <link>/post/2020/turn-the-ship-around/</link>
       <pubDate>Sat, 04 Jul 2020 13:26:17 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/turn-the-ship-around/</guid>
+      <guid>/post/2020/turn-the-ship-around/</guid>
       <description>英文书名：《Turn the Ship Around》 通往“领导者——领导者”模式 桥梁：掌控 实现“掌控”的方法： 寻找“掌控”的“遗传基因”，并改写它。 用新的行为举止开启新的思维方式。 用简短的早期谈话提高工作效率。 使用“我计划”……“因为……”流程。 克制提供解决方案的冲动。 消除“自上而下”的监管体</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>工程思维 on 世风十三学堂</title>
-    <link>//localhost:1313/tags/%E5%B7%A5%E7%A8%8B%E6%80%9D%E7%BB%B4/</link>
+    <link>/tags/%E5%B7%A5%E7%A8%8B%E6%80%9D%E7%BB%B4/</link>
     <description>Recent content in 工程思维 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 09 Aug 2020 11:02:19 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/%E5%B7%A5%E7%A8%8B%E6%80%9D%E7%BB%B4/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/%E5%B7%A5%E7%A8%8B%E6%80%9D%E7%BB%B4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>开发团队能力</title>
-      <link>//localhost:1313/post/2020/team-ability.md/</link>
+      <link>/post/2020/team-ability.md/</link>
       <pubDate>Sun, 09 Aug 2020 11:02:19 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/team-ability.md/</guid>
+      <guid>/post/2020/team-ability.md/</guid>
       <description>结论 以终为始（TDD）+ 工程思维（CI/CD）， 团队能做好这两方面，就可以达到 80分了。 以终为始 这个词来自《高效能人士的7个习惯》，是指做事情要先明确目标，以目标为出发点来思考做法，这恰好和极限编程中的 TDD 一样，团队需要将需求拆解为较小的可实现的目标，再由此目标写出相应的单元测试或</description>
     </item>
   </channel>

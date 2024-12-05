@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>华晨宇 on 世风十三学堂</title>
-    <link>//localhost:1313/tags/%E5%8D%8E%E6%99%A8%E5%AE%87/</link>
+    <link>/tags/%E5%8D%8E%E6%99%A8%E5%AE%87/</link>
     <description>Recent content in 华晨宇 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 24 Mar 2018 07:49:23 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/%E5%8D%8E%E6%99%A8%E5%AE%87/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/%E5%8D%8E%E6%99%A8%E5%AE%87/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2018年3月23日这期“歌手”听后感</title>
-      <link>//localhost:1313/post/2018/2018-03-24-2018-3-23-singer-feeling/</link>
+      <link>/post/2018/2018-03-24-2018-3-23-singer-feeling/</link>
       <pubDate>Sat, 24 Mar 2018 07:49:23 +0000</pubDate>
-      <guid>//localhost:1313/post/2018/2018-03-24-2018-3-23-singer-feeling/</guid>
+      <guid>/post/2018/2018-03-24-2018-3-23-singer-feeling/</guid>
       <description>2018年3月23日这期“歌手”听后感 这一期两位歌手都唱了崔健的歌，腾格尔唱《从头再来》，华晨宇唱《假行僧》，可见崔健中国摇滚之父的称号不是虚的。 从1993年大学时听过崔健的歌后，就将他奉为中国甚至世界摇滚中最为独特另类的一个，后来在几十年中，偶尔再听还是那么独特，不管时代如何变</description>
     </item>
   </channel>

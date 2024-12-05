@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SpaceVim on 世风十三学堂</title>
-    <link>//localhost:1313/tags/spacevim/</link>
+    <link>/tags/spacevim/</link>
     <description>Recent content in SpaceVim on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 24 Jul 2020 22:51:39 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/spacevim/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/spacevim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>折腾 NeoVim 和 SpaceVim</title>
-      <link>//localhost:1313/post/2020/neovim-spacevim/</link>
+      <link>/post/2020/neovim-spacevim/</link>
       <pubDate>Fri, 24 Jul 2020 22:51:39 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/neovim-spacevim/</guid>
+      <guid>/post/2020/neovim-spacevim/</guid>
       <description>网上乱逛，听说 NeoVim 比 Vim 先进还快，虽然也有说不值得换的，不管，折腾，然后还发现了 SpaceVim，听说适合初级水平的 vimer，没问题，折腾，全换，从 Vim 换到 NeoVim，再从 oh-my-vim 换到 SpaceVim，这编程器就是有无限的魅力让人想不断地折腾尝鲜。 安装完 SpaceVim 后，常会遇到一个报错提示： :help vimproc m</description>
     </item>
   </channel>

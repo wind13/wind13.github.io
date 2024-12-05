@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>春节 on 世风十三学堂</title>
-    <link>//localhost:1313/tags/%E6%98%A5%E8%8A%82/</link>
+    <link>/tags/%E6%98%A5%E8%8A%82/</link>
     <description>Recent content in 春节 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 23 Jan 2020 17:18:01 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/%E6%98%A5%E8%8A%82/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/%E6%98%A5%E8%8A%82/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2020年庚子春节祝愿</title>
-      <link>//localhost:1313/post/2020/chinese-new-year-wish/</link>
+      <link>/post/2020/chinese-new-year-wish/</link>
       <pubDate>Thu, 23 Jan 2020 17:18:01 +0000</pubDate>
-      <guid>//localhost:1313/post/2020/chinese-new-year-wish/</guid>
+      <guid>/post/2020/chinese-new-year-wish/</guid>
       <description>今天是己亥猪年除夕，明天就是庚子鼠年。 老家这边还是传统的过年气象，家家贴春联，时不时有些远处的鞭炮声，路过小巷子有时还会闻到猪肉白菜粉条大烩菜的味道。 不过今年春节人们最关注的新闻却是武汉的疫情，如同2003年的 SARS 一样，也是一场呼吸道传染的疾病。不知道这次要持续多久，估计两三个月是</description>
     </item>
   </channel>

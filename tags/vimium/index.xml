@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vimium on 世风十三学堂</title>
-    <link>//localhost:1313/tags/vimium/</link>
+    <link>/tags/vimium/</link>
     <description>Recent content in Vimium on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 07 May 2022 16:39:30 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/vimium/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/vimium/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Which Editor You Are Using</title>
-      <link>//localhost:1313/post/2022/which-editor-you-are-using/</link>
+      <link>/post/2022/which-editor-you-are-using/</link>
       <pubDate>Sat, 07 May 2022 16:39:30 +0800</pubDate>
-      <guid>//localhost:1313/post/2022/which-editor-you-are-using/</guid>
+      <guid>/post/2022/which-editor-you-are-using/</guid>
       <description>你用哪款编辑器？ Which Editor Are You Using? 程序员们都是使用工具的高手，每个人都会有一段时间沉迷于编辑器的选择和配置，就象武者精心挑选自己趁手的兵器一样，你如果是一个程序员，你喜欢哪款编辑器呢？ 江湖上流传着十八般兵器和七种武器的传说，编程界也一样有类似的故事，最有名的莫过于“编辑器之神”和“神的编</description>
     </item>
   </channel>

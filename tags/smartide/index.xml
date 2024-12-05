@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SmartIDE on 世风十三学堂</title>
-    <link>//localhost:1313/tags/smartide/</link>
+    <link>/tags/smartide/</link>
     <description>Recent content in SmartIDE on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 05 Jul 2022 03:16:01 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/smartide/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/smartide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Try SmartIDE</title>
-      <link>//localhost:1313/post/2022/try-smartide/</link>
+      <link>/post/2022/try-smartide/</link>
       <pubDate>Tue, 05 Jul 2022 03:16:01 +0000</pubDate>
-      <guid>//localhost:1313/post/2022/try-smartide/</guid>
+      <guid>/post/2022/try-smartide/</guid>
       <description>尝试在 Deepin 安装成功，但感觉很多个性化配置需要同步才好。 使用了 Docker 的技术，思路是很不错的。 测试了一下，感觉插件同步机制还有点麻烦，考虑到主要的需求可能是在不方便用自己的电脑时才会使用 SmartIDE，这类场景还是不太多，例如使用 iPad 来实现编程，等以后需要了再说吧，可能到时候就有更好、更方</description>
     </item>
   </channel>

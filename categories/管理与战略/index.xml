@@ -2,122 +2,108 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>管理与战略 on 世风十三学堂</title>
-    <link>//localhost:1313/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/</link>
+    <link>/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/</link>
     <description>Recent content in 管理与战略 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 05 Dec 2024 22:25:25 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>如何使用微信公众号API发布文章 How to Publish Doc by Wx Api</title>
-      <link>//localhost:1313/post/2024/how-to-publish-doc-by-wx-api/</link>
-      <pubDate>Thu, 05 Dec 2024 22:25:25 +0800</pubDate>
-      <guid>//localhost:1313/post/2024/how-to-publish-doc-by-wx-api/</guid>
-      <description>使用微信公众号API发布文章需要遵循微信公众平台的开发规范和接口要求。 以下是使用微信公众号API发布文章的基本步骤： 步骤 1：注册微信公众号 前往微信公众平台官网（mp.weixin.qq.com）注册一个公众号。根据指引完成注册流程，获取公众号的AppID和AppSecret。 步骤</description>
-    </item>
+    <lastBuildDate>Sun, 06 Feb 2022 04:47:11 +0000</lastBuildDate>
+    <atom:link href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于KPI与开发团队效能问题的讨论</title>
-      <link>//localhost:1313/post/2022/develop-team-problem/</link>
+      <link>/post/2022/develop-team-problem/</link>
       <pubDate>Sun, 06 Feb 2022 04:47:11 +0000</pubDate>
-      <guid>//localhost:1313/post/2022/develop-team-problem/</guid>
+      <guid>/post/2022/develop-team-problem/</guid>
       <description>今天在微信群里讨论开发团队效能的问题，话题是由 小L 提问 “KPI设定的指标有啥啊，评分时候是用数据还是靠主观？有罚么？”开始…… 有群友 小F 建议： 靠事实，不建议有罚…… 数据和主观都有不靠谱的地方，多维度评估。 接着 小L 问道: 那指标一般定哪些？我们现在用：bug解决用时、线上问题解决率…</description>
     </item>
     <item>
       <title>笔记——正确的度量指标</title>
-      <link>//localhost:1313/post/2021/note-of-right-measurement/</link>
+      <link>/post/2021/note-of-right-measurement/</link>
       <pubDate>Sat, 20 Nov 2021 17:02:32 +0800</pubDate>
-      <guid>//localhost:1313/post/2021/note-of-right-measurement/</guid>
+      <guid>/post/2021/note-of-right-measurement/</guid>
       <description>最近阅读了公众号 Thoughtworks 洞见的系列文章《寻找合适的研发效能度量指标》，记录一下要点： 《寻找合适的研发效能度量指标（上）》 有哪些合适的软件研发效能度量指标呢？从以下几个方面列出了一些指标： 规划进度 快速反馈 团队转型 辅助决策 工程能力 当您在为团队寻找研发效能指标时，其实并没有一个恒定不变的模板</description>
     </item>
     <item>
       <title>亲子教育和领导力</title>
-      <link>//localhost:1313/post/2020/education-leadership/</link>
+      <link>/post/2020/education-leadership/</link>
       <pubDate>Tue, 13 Oct 2020 09:23:23 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/education-leadership/</guid>
+      <guid>/post/2020/education-leadership/</guid>
       <description>很多次听樊登讲书里亲子教育相关的内容时，都会勾起我自己的一些反思和回忆，也同时会想到公司的日常管理和沟通问题。 樊登老师也明显是意识到这两者之间的很多相似、相通之处的，在他讲领导力、沟通的课程上多次提到亲子教育中的一些案例。 今天看《在远远的背后带领》这期樊登讲书视频时，又再次联想到</description>
     </item>
     <item>
       <title>Product Owner Important</title>
-      <link>//localhost:1313/post/2021/blog.product-owner-important/</link>
+      <link>/post/2021/blog.product-owner-important/</link>
       <pubDate>Fri, 11 Sep 2020 12:26:55 +0800</pubDate>
-      <guid>//localhost:1313/post/2021/blog.product-owner-important/</guid>
+      <guid>/post/2021/blog.product-owner-important/</guid>
       <description>产品经理 Product Owner 很重要 很多创业公司都缺少专业的产品经理。 这是一个需要每天投入时间的工作，靠公司管理层天天开会，那效率太低了。 专业的产品经理，会单独与各方沟通，不断整理需求文档，不断了解项目进度，召开计划会议……非常多的日常工作。 微信的张小龙、得到 App 的快刀青衣（并不懂程序）、InfoQ</description>
     </item>
     <item>
-      <title>樊登《可复制的沟通力》笔记 Copiable Communicate Ability</title>
-      <link>//localhost:1313/post/2021/blog.copiable-communicate-ability/</link>
-      <pubDate>Sat, 29 Aug 2020 12:26:10 +0800</pubDate>
-      <guid>//localhost:1313/post/2021/blog.copiable-communicate-ability/</guid>
-      <description>《可复制的沟通力》 也是《可复制的领导力》作者：樊登 一、所有沟通的共性 所有的沟通找到共性的问题来解决才是最有效的。 所有沟通问题的核心、最一致的东西是什么呢？ 尊重与合作 为什么合作这么难？ 合作是我们一起做，而不是你按照我说的做。 为什么对方不合作，我们就生气？ 真正深处的东西是恐惧。 对于不</description>
-    </item>
-    <item>
       <title>非暴力沟通在公司管理中的思考</title>
-      <link>//localhost:1313/post/2020/nonviolent-communication-thinking/</link>
+      <link>/post/2020/nonviolent-communication-thinking/</link>
       <pubDate>Sat, 15 Aug 2020 11:23:47 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/nonviolent-communication-thinking/</guid>
+      <guid>/post/2020/nonviolent-communication-thinking/</guid>
       <description>今天再看了樊登讲书的视频：《非暴力沟通》（Nonviolent Communication: A Language of Life），查阅相关资料时注意到这个英文名，直译过来就是《非暴力沟通：一种生活的语言》，作为一个从事编程开发工作的人来说，对“语言”是有一种特殊的情节的，既然是一种生活的语言，为什么不认真学习和了解一下呢？ 书中</description>
     </item>
     <item>
       <title>先进管理思想建议方案</title>
-      <link>//localhost:1313/post/2020/manage-system/</link>
+      <link>/post/2020/manage-system/</link>
       <pubDate>Wed, 12 Aug 2020 17:00:17 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/manage-system/</guid>
+      <guid>/post/2020/manage-system/</guid>
       <description>公司层面：OKR 管理思想 概述：OKR（Objectives and Key Results）即目标与关键成果法，是一套明确和跟踪目标及其完成情况的管理工具和方法。 OKR的主要目标是明确公司和团队的“目标”以及明确每个目标达成的可衡量的“关键结果”。OKR被定义为“一个重要的思考框架与不断发展的</description>
     </item>
     <item>
       <title>软件开发团队如何高质量、高效率？</title>
-      <link>//localhost:1313/post/2020/software-develop-improve/</link>
+      <link>/post/2020/software-develop-improve/</link>
       <pubDate>Sun, 09 Aug 2020 18:30:17 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/software-develop-improve/</guid>
+      <guid>/post/2020/software-develop-improve/</guid>
       <description>这个话题很大，也不简单，有很多本书都从不同的角度在讲这个事情，比如《人月神话》、《人件》、《项目管理修炼之道》、《硝烟中的scrum和XP》等。 不过，此文不想那么系统全面地讨论这个问题，而是希望以一个非常直白的方式来讨论一下，以便使完全没有接触过软件工程的人也能有个感性的认识，而</description>
     </item>
     <item>
       <title>Umi vs Nuxt vs Ng-alain</title>
-      <link>//localhost:1313/post/2020/umi-vs-nuxt-vs-ngalain/</link>
+      <link>/post/2020/umi-vs-nuxt-vs-ngalain/</link>
       <pubDate>Tue, 28 Jul 2020 11:17:13 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/umi-vs-nuxt-vs-ngalain/</guid>
+      <guid>/post/2020/umi-vs-nuxt-vs-ngalain/</guid>
       <description>概述和思考 很多时候前端开发人员会面对眼花缭乱的框架很难选择。 标题所说的选择实质是三大阵营（React, Vue 和 Angular）的选择。 三个底层框架各有所长，亮点在于： React：更接近函数式编程思想，单向数据流比较清晰，jsx 是不错的创新，熟悉后可结合函数式编程写出比较优雅的组件代码</description>
     </item>
     <item>
       <title>罗胖谈新时代的学习方法</title>
-      <link>//localhost:1313/post/2020/luojishiwei-2015-last/</link>
+      <link>/post/2020/luojishiwei-2015-last/</link>
       <pubDate>Sun, 05 Jul 2020 11:01:47 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/luojishiwei-2015-last/</guid>
+      <guid>/post/2020/luojishiwei-2015-last/</guid>
       <description>重温《罗辑思维》2015年最后一期 跟着人学 而不是跟着书本学，先降低我们的知识负担，它帮助我们筛选和归纳。 概念 通过掌握一个一个的新概念，搭建起我们的知识框架，再进来新的信息，我们知道把它放在哪儿？ 脏东西就是放错了地方的东西。 缝合 只有通过自己表达一次，才能知道去哪儿找。 教育就是那些我</description>
     </item>
     <item>
       <title>《重新定义公司》摘录</title>
-      <link>//localhost:1313/post/2020/redefine-company-summary/</link>
+      <link>/post/2020/redefine-company-summary/</link>
       <pubDate>Sat, 30 May 2020 11:56:22 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/redefine-company-summary/</guid>
+      <guid>/post/2020/redefine-company-summary/</guid>
       <description>极度重视招聘 Thank god it is Friday. 周五吐槽大会。 祷文不会因为重复而失色。 Keep learning 每年50本书 领导者多做自我反省 Think big 往大了想，1、此创新是否影响数十亿人；2、是否与现有方法截然不同；3、是否有一定的可行性； 最糟糕的发明是遥控器，静音键特别小，确认键特别大。因为设计人考虑能否收到钱。 首席创新官？管理</description>
     </item>
     <item>
       <title>OKR 思考</title>
-      <link>//localhost:1313/post/2020/okr-thinking/</link>
+      <link>/post/2020/okr-thinking/</link>
       <pubDate>Thu, 26 Mar 2020 10:08:34 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/okr-thinking/</guid>
+      <guid>/post/2020/okr-thinking/</guid>
       <description>讨论 OKR 的对话片段 说：OKR 总结就几个字：定目标，追进展，拿结果 问：更关键的是说，什么样的目标？怎么观察进展？获得怎样的结果？ 答：这就牵扯到工作细节了。先明确目标，然后一定要将目标写下来。查看进展可以利用工作清单，最好就是任务管理工具。结果就是相应的反馈。当然也要科学合理的制定目标</description>
     </item>
     <item>
       <title>危机时期可做的六件事</title>
-      <link>//localhost:1313/post/2020/what-we-can-do-in-crisis/</link>
+      <link>/post/2020/what-we-can-do-in-crisis/</link>
       <pubDate>Sun, 23 Feb 2020 14:41:45 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/what-we-can-do-in-crisis/</guid>
+      <guid>/post/2020/what-we-can-do-in-crisis/</guid>
       <description>今天看了樊登2月16日的直播录像，应该说对中小企业及创业者会有很大的启发和帮助，记录重点思路如下： 危机中可做的六件事 战略方面：转变为重信息、线上、分散（分布式）、反脆弱的模式； 内部培训：统一理念，增进感情，增进交流，提高领导力； 营销研发：打通销售通路，尝试更有效的营销方法； 公关合</description>
     </item>
     <item>
       <title>从 《WunderList 奇妙清单》到 《To do 微软待办》的思考</title>
-      <link>//localhost:1313/post/2020/wunder-list-to-do-thinking/</link>
+      <link>/post/2020/wunder-list-to-do-thinking/</link>
       <pubDate>Wed, 29 Jan 2020 11:32:02 +0800</pubDate>
-      <guid>//localhost:1313/post/2020/wunder-list-to-do-thinking/</guid>
+      <guid>/post/2020/wunder-list-to-do-thinking/</guid>
       <description>整件事的大概背景： 微软于 2015 年收购《奇妙清单》，收购价格据悉在 1 亿到 2 亿美元之间，创始人 Reber 雷伯 也加入微软并继续带领应用团队。两年后，原《奇妙清单》团队为微软开发的《To-Do》问世，这款应用将逐步取代《奇妙清单》，微软也为老用户提供了迁移通道。2019年12月10日 微软宣布将于20</description>
     </item>
     <item>
       <title>技术选型之我见</title>
-      <link>//localhost:1313/post/2017/2017-02-05-tech-select/</link>
+      <link>/post/2017/2017-02-05-tech-select/</link>
       <pubDate>Sun, 05 Feb 2017 16:19:50 +0000</pubDate>
-      <guid>//localhost:1313/post/2017/2017-02-05-tech-select/</guid>
+      <guid>/post/2017/2017-02-05-tech-select/</guid>
       <description>技术选型之我见 技术选型是各个技术团队架构师所面临的挑战之一，也是重要的决策之一，关系到团队技术发展的大方向，甚至决定着项目未来生存的生命力和寿命长短。 然而要做好这件选型的决策却是不那么简单，同时也没有什么特定的标准。 个人所见： 首先，要见多识广； 既然是说选型，那就要有所选择，也就是</description>
     </item>
   </channel>

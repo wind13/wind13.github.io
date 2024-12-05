@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>React-Route on 世风十三学堂</title>
-    <link>//localhost:1313/tags/react-route/</link>
+    <link>/tags/react-route/</link>
     <description>Recent content in React-Route on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 26 Jul 2018 09:22:11 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/react-route/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/react-route/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ant Design React 使用记录</title>
-      <link>//localhost:1313/post/2018/2018-07-26-ant-design-react-note/</link>
+      <link>/post/2018/2018-07-26-ant-design-react-note/</link>
       <pubDate>Thu, 26 Jul 2018 09:22:11 +0000</pubDate>
-      <guid>//localhost:1313/post/2018/2018-07-26-ant-design-react-note/</guid>
+      <guid>/post/2018/2018-07-26-ant-design-react-note/</guid>
       <description>遇到的问题 Table 组件的服务端分页问题 Table 表格 仔细看了一下，虽然 mock 中的数据是全部数据集，但是是模拟远程数据库的概念的，每次返回到客户端的数据还是单个页面的数据，所以这里可以理解为本身的设计就是支持服务端分页的。 路由带参数问题 Route props - match 下载 Excel 模板的问题 Using Node.js to download files 后端文档路径： http://jp-open-service.thinkmacro.cn/swagger-ui.html Form 相关参考： http://react-component.github.io/form/</description>
     </item>
   </channel>
