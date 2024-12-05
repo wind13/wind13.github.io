@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>微服务 on 世风十三学堂</title>
-    <link>/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</link>
+    <link>//localhost:1313/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</link>
     <description>Recent content in 微服务 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 24 May 2020 11:25:06 +0800</lastBuildDate>
-    <atom:link href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Dec 2024 22:25:25 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何使用微信公众号API发布文章 How to Publish Doc by Wx Api</title>
+      <link>//localhost:1313/post/2024/how-to-publish-doc-by-wx-api/</link>
+      <pubDate>Thu, 05 Dec 2024 22:25:25 +0800</pubDate>
+      <guid>//localhost:1313/post/2024/how-to-publish-doc-by-wx-api/</guid>
+      <description>使用微信公众号API发布文章需要遵循微信公众平台的开发规范和接口要求。 以下是使用微信公众号API发布文章的基本步骤： 步骤 1：注册微信公众号 前往微信公众平台官网（mp.weixin.qq.com）注册一个公众号。根据指引完成注册流程，获取公众号的AppID和AppSecret。 步骤</description>
+    </item>
     <item>
       <title>技术方案要从解决现实世界的问题开始</title>
-      <link>/post/2020/business-optimize/</link>
+      <link>//localhost:1313/post/2020/business-optimize/</link>
       <pubDate>Sun, 24 May 2020 11:25:06 +0800</pubDate>
-      <guid>/post/2020/business-optimize/</guid>
+      <guid>//localhost:1313/post/2020/business-optimize/</guid>
       <description>技术方案要从解决现实世界的问题开始 技术群里讨论一个技术方案的问题，大概描述如下： 一个单据处理系统，上游系统会不断产生新的单据，数量比较大，频率也比较高； 当前系统分为两个环节，一个接单环节，一个转单环节； 接单环节负责将单据入库；保存数据库目前速度跟得上，可以保证上游系统的单据全部入</description>
     </item>
   </channel>

@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Namespace on 世风十三学堂</title>
-    <link>/tags/namespace/</link>
+    <link>//localhost:1313/tags/namespace/</link>
     <description>Recent content in Namespace on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <atom:link href="/tags/namespace/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/namespace/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Xml 域名空间识别问题</title>
-      <link>/post/2013/2013-09-26-xmlawarenamespace/</link>
+      <link>//localhost:1313/post/2013/2013-09-26-xmlawarenamespace/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-09-26-xmlawarenamespace/</guid>
+      <guid>//localhost:1313/post/2013/2013-09-26-xmlawarenamespace/</guid>
       <description>相关文档见：官方ticket任务#823 Yes, this is correct. In the .getXML function the namespace ness is not set. 是的，有这个问题。在.getXML方法中允许命名空间（namespace）没有设置。 This line should be changed from: 这一行应该从这样： :::java DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder(); to: 变成： :::java DocumentBuilderFactory xmlFact = DocumentBuilderFactory.newInstance(); xmlFact.setNamespace(true); DocumentBuilder builder = xmlFact.newDocumentBuilder(); The same problem exists in the XML lib in the getDocument function: 同样的问题在XML的包里的getDo</description>
     </item>
     <item>
       <title>Xml 域名空间识别问题</title>
-      <link>/post/2013/2013-12-13-xmldomainbug/</link>
+      <link>//localhost:1313/post/2013/2013-12-13-xmldomainbug/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-12-13-xmldomainbug/</guid>
+      <guid>//localhost:1313/post/2013/2013-12-13-xmldomainbug/</guid>
       <description>相关文档见：官方ticket任务#823 Yes, this is correct. In the .getXML function the namespace ness is not set. 是的，有这个问题。在.getXML方法中允许命名空间（namespace）没有设置。 This line should be changed from: 这一行应该从这样： :::java DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder(); to: 变成： :::java DocumentBuilderFactory xmlFact = DocumentBuilderFactory.newInstance(); xmlFact.setNamespace(true); DocumentBuilder builder = xmlFact.newDocumentBuilder(); The same problem exists in the XML lib in the getDocument function: 同样的问题在XML的包里的getDo</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>甘特图 on 世风十三学堂</title>
-    <link>/tags/%E7%94%98%E7%89%B9%E5%9B%BE/</link>
+    <link>//localhost:1313/tags/%E7%94%98%E7%89%B9%E5%9B%BE/</link>
     <description>Recent content in 甘特图 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 15 Oct 2019 06:28:01 +0000</lastBuildDate>
-    <atom:link href="/tags/%E7%94%98%E7%89%B9%E5%9B%BE/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/%E7%94%98%E7%89%B9%E5%9B%BE/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>纯文本的威力</title>
-      <link>/post/2019/power-of-plain-text/</link>
+      <link>//localhost:1313/post/2019/power-of-plain-text/</link>
       <pubDate>Tue, 15 Oct 2019 06:28:01 +0000</pubDate>
-      <guid>/post/2019/power-of-plain-text/</guid>
+      <guid>//localhost:1313/post/2019/power-of-plain-text/</guid>
       <description>“Keep Knowledge in Pain Text（用纯文本保存知识）” 纯文本能做的事 所有的软件源代码都是纯文本！ 纯文本是即可以让机器运行，又可以让人类阅读的内容形式。 Unix 系统的底层设计充分利用了纯文本的独特性。 做 PPT 演示 国产框架工具，建议用 revealjs 功能更强些，更国际化、标准化些。 用 revealjs 转 Asciidoctor 文档为 PPT Asciidoctor 用 Ruby 写的将 AsciiDoc 文本</description>
     </item>
   </channel>

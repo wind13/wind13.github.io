@@ -2,163 +2,163 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Playscala on 世风十三学堂</title>
-    <link>/tags/playscala/</link>
+    <link>//localhost:1313/tags/playscala/</link>
     <description>Recent content in Playscala on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <atom:link href="/tags/playscala/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/playscala/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>/post/2013/2013-09-29-learnself/</link>
+      <link>//localhost:1313/post/2013/2013-09-29-learnself/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-09-29-learnself/</guid>
+      <guid>//localhost:1313/post/2013/2013-09-29-learnself/</guid>
       <description>编程自学之路 很多爱好编程，喜欢Play框架的朋友，开始的时候找不到门道，这里抛砖引玉，给大家分享一些经验…… 首先，心要正。 没错，如同武侠小说中的上乘武功一样，必须讲究心法，心术不正者必定会走火入魔。 其次，道要高。 所谓魔高一尺，道高一丈，老子的道家思想的智慧，时至今日，如果每个人都</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2013/2013-09-29-tocterm/</link>
+      <link>//localhost:1313/post/2013/2013-09-29-tocterm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-09-29-tocterm/</guid>
+      <guid>//localhost:1313/post/2013/2013-09-29-tocterm/</guid>
       <description>TOC 术语 TOC：Theory Of Constraints 约束理论（限制理论）瓶颈理论 F5：Focus Five Step 聚焦五步骤 I-E-S-E-GB识别Identify，挖尽Exploit， 迁就Subordinate，松绑Etevate，重返Go Back TA：Throughput Account 有效产出会计 T: Throughput 生产量，有效产出 I（1）：I</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2013/2013-10-26-betterplan/</link>
+      <link>//localhost:1313/post/2013/2013-10-26-betterplan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-10-26-betterplan/</guid>
+      <guid>//localhost:1313/post/2013/2013-10-26-betterplan/</guid>
       <description>如何制定和落实一项有效的改善方案？ 一、问题和参考答案 1、是否感觉公司在推行一个变革甚至一个简单的任务时，都会遇到员工的阻力或是简单应付？ 参考答案： 是的，存在而且很多时候会是这样。 2、他们为什么会阻止或仅仅是应付公司的改善方案呢？ 参考答案： 人不抗拒改变，只是他没有看到改变后的好处。</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2013/2013-10-26-funnyclassic/</link>
+      <link>//localhost:1313/post/2013/2013-10-26-funnyclassic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-10-26-funnyclassic/</guid>
+      <guid>//localhost:1313/post/2013/2013-10-26-funnyclassic/</guid>
       <description>有趣经典收集 纯爷们从不围观爆炸（英文歌词） 情人节程序员经典表白 一个不错的塔防Flash游戏</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2013/2013-12-13-cacheremovetime/</link>
+      <link>//localhost:1313/post/2013/2013-12-13-cacheremovetime/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-12-13-cacheremovetime/</guid>
+      <guid>//localhost:1313/post/2013/2013-12-13-cacheremovetime/</guid>
       <description>移除Cache可以有时间参数吗？ 是的，可以，使用下面这样的语句即可： :::java Cache.set(&amp;quot;some&amp;quot;, null, 0) 其中最后一个参数是时间，单位是秒。详见源代码。</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2013/2013-12-13-cmdchinese/</link>
+      <link>//localhost:1313/post/2013/2013-12-13-cmdchinese/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-12-13-cmdchinese/</guid>
+      <guid>//localhost:1313/post/2013/2013-12-13-cmdchinese/</guid>
       <description>Play在Windows的cmd窗口中中文乱码的解决办法 play在cmd 下，system.out()输出的中文都是乱码 首先，可参考：cmd chcp命令切换字符格式 或参考：在Windows的CMD中如何设置支持UTF8编码? 如果 chcp 65001 / chcp 936 改变cmd字符集都不行 参考：http://w</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2013/2013-12-13-deepqa/</link>
+      <link>//localhost:1313/post/2013/2013-12-13-deepqa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-12-13-deepqa/</guid>
+      <guid>//localhost:1313/post/2013/2013-12-13-deepqa/</guid>
       <description>Playframework热情交流群里的邮件讨论 Freewind@play23月17日 10:21 昨天有感于play源代码里的一些强大功能和精巧实现，提出了以下问题，这些问题在群里和几位朋友简单讨论过，但我觉得整理一下会有用。 play的一些打破常规的做法，让我非常欣赏和赞叹。希望大家不要仅</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2013/2013-12-13-detachedpersist/</link>
+      <link>//localhost:1313/post/2013/2013-12-13-detachedpersist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-12-13-detachedpersist/</guid>
+      <guid>//localhost:1313/post/2013/2013-12-13-detachedpersist/</guid>
       <description>分离实体持久化出错（PersistentObjectException: detached entity passed to persist）问题 在Play!使用中，会用到Job来异步执行一些耗时的操作，此时很容易犯这样的错误： :::java public class SomeLongJob extends Job`&amp;lt;Void&amp;gt;` { private SomeModel model; public SomeLongJob(SomeModel model) { this.model = model; } @Override public void doJob() { model.someprop = &amp;quot;new value&amp;quot;; model.save(); } } 此时执行后，会在save()方法处抛出</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2013/2013-12-13-hqlcount1/</link>
+      <link>//localhost:1313/post/2013/2013-12-13-hqlcount1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-12-13-hqlcount1/</guid>
+      <guid>//localhost:1313/post/2013/2013-12-13-hqlcount1/</guid>
       <description>一个Hql中count判断的写法 :::java public static void test() { String hql = &amp;quot;select o.teacher.id, o.teacher.goodStudentCount from Student o&amp;quot; + &amp;quot; group by teacher having count(*)&amp;gt;o.teacher.goodStudentCount&amp;quot;; List&amp;lt;Long[]&amp;gt; idCounts = Teacher.find(hql).fetch(); for (Long[] idCount:idCounts) { Logger.debug(&amp;quot;id: %s, %s&amp;quot;, idCount[0], idCount[1]); Long id = idCount[0]; } renderText(&amp;quot;ok!&amp;quot; + idCounts.size()); }</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2013/2013-12-13-longpolling/</link>
+      <link>//localhost:1313/post/2013/2013-12-13-longpolling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-12-13-longpolling/</guid>
+      <guid>//localhost:1313/post/2013/2013-12-13-longpolling/</guid>
       <description>Play!支持Comet-style或Long-polling这样的请求 参考官方文档 核心实现思想：通过在action中使用await(&amp;hellip;);可以使http请求暂停在服务端，直到有符合的结果才返回。</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2013/2013-12-13-operationnotpermitted/</link>
+      <link>//localhost:1313/post/2013/2013-12-13-operationnotpermitted/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-12-13-operationnotpermitted/</guid>
+      <guid>//localhost:1313/post/2013/2013-12-13-operationnotpermitted/</guid>
       <description>Operation not permitted 执行权限的问题 在Linux系统中，正好项目放在原Windows的Fat32盘上，于是在执行play eclipsify的时候会报 Operation not permitted的错。 临时使用的话，只要使用root权限就可以正常执行。而Fat32的盘在Linux下是无法进行权限设置的，好像设置后还是无法</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2013/2013-12-13-validateandsave/</link>
+      <link>//localhost:1313/post/2013/2013-12-13-validateandsave/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-12-13-validateandsave/</guid>
+      <guid>//localhost:1313/post/2013/2013-12-13-validateandsave/</guid>
       <description>对像存储报错 validateAndSave问题 问题：在存储对像时，同时存储该对像的关联对像，则会报错。\ 例： room为hotel的关联对像。 :::java public class Room { @ManyToOne public Hotel hotel; } :::java Hotel hotel = new Hotel(); Room room = new Room(hotel); room.validateAndSave(); 会报错。这是因为在保存room对象的时候，hotel对象还没有持久化，所以room对象里面要保存</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2013/2013-12-23-confession214/</link>
+      <link>//localhost:1313/post/2013/2013-12-23-confession214/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-12-23-confession214/</guid>
+      <guid>//localhost:1313/post/2013/2013-12-23-confession214/</guid>
       <description>情人节程序员经典表白 我能把整个世界都抽象成一个类…… 但是没办法把你变成我的对象…… 想让你成为私有常量，外部函数无法访问你…… 又想让你变成全局常量，在整个生命周期随时随地都可以调用你…… 因为世界上没有这样的常量…… 所以我无法定义你…… 我可以重载甚至覆盖任何一种方法…… 但是我却不能重</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2013/2013-12-23-coolguydontlookatexplosions/</link>
+      <link>//localhost:1313/post/2013/2013-12-23-coolguydontlookatexplosions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-12-23-coolguydontlookatexplosions/</guid>
+      <guid>//localhost:1313/post/2013/2013-12-23-coolguydontlookatexplosions/</guid>
       <description>Cool Guys Don&amp;rsquo;t Look At Explosions 纯爷们儿从不围观爆炸！ Cool guys don&#39;t look at explosions They blow things up and then walk away Who&#39;s got time to watch an explosion? Because cool guys have errands that they have to walk to.. Keep walkin&#39;, keep shinin&#39; Don&#39;t look back keep on walkin&#39; Keep struttin&#39; slow motion The more you ignore it, the cooler you look Samberg: Ladies &amp;amp; gentlemen, please join me in welcoming.. Mr. Neil Diamond! Will Ferrell: ha ha ha....Where are we?! Cool guys don&#39;t look at explosions They stride for it in their diamond covered boots They wear jumpsuits with glitter and rhinestones And walk away in slow motion.. Keep walkin, you&#39;re cruisin.. Cherry Cherry...Sweet Caroline.. Denzel walks... Will Smith walks... Mark Wahlberg is wearin a hat! Samberg: Going solo....JJ</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2013/2013-12-23-gitolitesetup/</link>
+      <link>//localhost:1313/post/2013/2013-12-23-gitolitesetup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-12-23-gitolitesetup/</guid>
+      <guid>//localhost:1313/post/2013/2013-12-23-gitolitesetup/</guid>
       <description>CentOS下使用Gitolite架构Git服务的步骤 在服务端创建专用用户，如：git，可考虑不设置密码，从而无法用密码登录服务器。 在管理员电脑上创建管理员密钥对，并（通过U盘或root账号）拷贝到服务器上，之后添加到git用户目录的.ssh/authorized_keys文件中</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2013/2013-12-23-htmlunitdriverjavascript/</link>
+      <link>//localhost:1313/post/2013/2013-12-23-htmlunitdriverjavascript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-12-23-htmlunitdriverjavascript/</guid>
+      <guid>//localhost:1313/post/2013/2013-12-23-htmlunitdriverjavascript/</guid>
       <description>HtmlUnitDriver中javascript的支持问题 参见：http://code.google.com/p/selenium/issues/detail?id=371#c4，看不到的元素或ajax异步更新的元素，都可能遇到无法取得或取得旧数据的问题。 和：http://co</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2013/2013-12-23-tracinterfacecustomization/</link>
+      <link>//localhost:1313/post/2013/2013-12-23-tracinterfacecustomization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-12-23-tracinterfacecustomization/</guid>
+      <guid>//localhost:1313/post/2013/2013-12-23-tracinterfacecustomization/</guid>
       <description>定制Trac界面 原文地址 介绍 该页面旨提供有关如何定制Trac界面的建议. 话题涵盖了编辑HTML模板和CSS文件, 但不包含程序代码本身. 这些话题想要向用户展示如何更改Trac的外观来满足他们特定的要求. 项目Logo和图标 定制Trac界面最简单的部分是logo和站点的图标. 他们都可以</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2013/2013-12-28-playwebsites/</link>
+      <link>//localhost:1313/post/2013/2013-12-28-playwebsites/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-12-28-playwebsites/</guid>
+      <guid>//localhost:1313/post/2013/2013-12-28-playwebsites/</guid>
       <description>国内使用Play!框架的网站 拼车群 土椒网 泡椒网 中国地质大学 美之家家居网 雷猴（据说是） 吃得易 CNSPOC云课程平台 取号啦</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2013/2013-12-29-c461mubuntusteup/</link>
+      <link>//localhost:1313/post/2013/2013-12-29-c461mubuntusteup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-12-29-c461mubuntusteup/</guid>
+      <guid>//localhost:1313/post/2013/2013-12-29-c461mubuntusteup/</guid>
       <description>联想C461M安装Ubuntu13.10问题 本人的笔记本：联想旭日C461M，买来后安装的是Vista系统，用起来很不习惯，速度也慢，现在喜欢上了Linux的系统， 不喜欢Windows系统，WinXP微软也放弃维护了，于是前一年安装Fedora系统，使用还算正常，但是发现软件升级</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2014/2014-01-09-modulemissing/</link>
+      <link>//localhost:1313/post/2014/2014-01-09-modulemissing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2014/2014-01-09-modulemissing/</guid>
+      <guid>//localhost:1313/post/2014/2014-01-09-modulemissing/</guid>
       <description>无法加载pdf等module的问题 简单地加载pdf的Module，如官网所述： play -&amp;gt; pdf 1.0 然而却提示无法加载。 尝试运行： play install pdf-1.0 提示：Cannot fetch the modules list from %%http://www.playframework.org/modules%% 后在playframework群中找到答案，是因为要用.com域名才能获取。 需要修改此文件：{PLAY_HOME}/framew</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2014/2014-01-09-ubuntueclipse/</link>
+      <link>//localhost:1313/post/2014/2014-01-09-ubuntueclipse/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2014/2014-01-09-ubuntueclipse/</guid>
+      <guid>//localhost:1313/post/2014/2014-01-09-ubuntueclipse/</guid>
       <description>Ubuntu下Eclipse完美安装方案 Ubuntu下直接apt-get安装Eclipse的问题 直接安装的版本较低，我用Ubuntu13.10安装的是Eclipse3.8，而要用ScalaIDE，最好是4.x以上版本。 其次是Eclipse的菜单显示问题，点击后看不到下拉菜单。 完美</description>
     </item>
     <item>
       <title></title>
-      <link>/post/2014/2014-02-26-hqlleftjoin/</link>
+      <link>//localhost:1313/post/2014/2014-02-26-hqlleftjoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2014/2014-02-26-hqlleftjoin/</guid>
+      <guid>//localhost:1313/post/2014/2014-02-26-hqlleftjoin/</guid>
       <description>数据库相关 HQL 中 left join 的写法 用 Play 查询数据时，遇到关联对象的查询时，需要使用 left join 的语句，但与我们习惯的 SQL 语句不同，HQL 的写法和思路是面向对象的，所以下面就记录一些可用的例句供实际使用时参考： 查询教的学生中有年龄大于30的老师 hql = &amp;quot;select distinct o from Teacher o, Student r left join r.teacher h where r.age&amp;gt;=?&amp;quot;; Datomic 信息模型</description>
     </item>
   </channel>

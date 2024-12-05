@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>知识星球 on 世风十三学堂</title>
-    <link>/tags/%E7%9F%A5%E8%AF%86%E6%98%9F%E7%90%83/</link>
+    <link>//localhost:1313/tags/%E7%9F%A5%E8%AF%86%E6%98%9F%E7%90%83/</link>
     <description>Recent content in 知识星球 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 30 Aug 2020 17:43:29 +0800</lastBuildDate>
-    <atom:link href="/tags/%E7%9F%A5%E8%AF%86%E6%98%9F%E7%90%83/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/%E7%9F%A5%E8%AF%86%E6%98%9F%E7%90%83/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>正念编程——知识星球：世风十三学堂</title>
-      <link>/post/2020/mindfulness-programming/</link>
+      <link>//localhost:1313/post/2020/mindfulness-programming/</link>
       <pubDate>Sun, 30 Aug 2020 17:43:29 +0800</pubDate>
-      <guid>/post/2020/mindfulness-programming/</guid>
+      <guid>//localhost:1313/post/2020/mindfulness-programming/</guid>
       <description>发心与起源 受到樊登读书会的很多影响，抽出了这个词：正念，有几个方面的考虑： 走正道，做正确的事 使用正确的方法 学习道层面的心法 长期主义，慢慢进步 传统的师徒教授方式很有效果 多年的经验，帮你少走弯路 追求思维方式的改变和升级 不同于传统的培训、技术教程之类 为什么说报培训班不好？ 看技术教程、看</description>
     </item>
   </channel>

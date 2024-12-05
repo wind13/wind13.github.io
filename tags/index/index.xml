@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Index on 世风十三学堂</title>
-    <link>/tags/index/</link>
+    <link>//localhost:1313/tags/index/</link>
     <description>Recent content in Index on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <atom:link href="/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/index/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>编程技术相关</title>
-      <link>/post/2014/2014-01-09-otherrelay/</link>
+      <link>//localhost:1313/post/2014/2014-01-09-otherrelay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2014/2014-01-09-otherrelay/</guid>
+      <guid>//localhost:1313/post/2014/2014-01-09-otherrelay/</guid>
       <description>Java 相关 String类型 格式 yyyy-MM-dd HH:mm:ss 转为 Date类型 java 类对象初始化顺序 JavaScript相关 JavaScript框架 easyui 相关 easyui中form表单的ajax实现 [版本1.2.5改进说明]({% post_url 2013-12-23-version1.2.5 %}) 自动化测试（抓数据）相关 关于HtmlUnitDriver无法支持所有javascri</description>
     </item>
   </channel>

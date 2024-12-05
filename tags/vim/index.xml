@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vim on 世风十三学堂</title>
-    <link>/tags/vim/</link>
+    <link>//localhost:1313/tags/vim/</link>
     <description>Recent content in Vim on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 07 May 2022 16:39:30 +0800</lastBuildDate>
-    <atom:link href="/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Which Editor You Are Using</title>
-      <link>/post/2022/which-editor-you-are-using/</link>
+      <link>//localhost:1313/post/2022/which-editor-you-are-using/</link>
       <pubDate>Sat, 07 May 2022 16:39:30 +0800</pubDate>
-      <guid>/post/2022/which-editor-you-are-using/</guid>
+      <guid>//localhost:1313/post/2022/which-editor-you-are-using/</guid>
       <description>你用哪款编辑器？ Which Editor Are You Using? 程序员们都是使用工具的高手，每个人都会有一段时间沉迷于编辑器的选择和配置，就象武者精心挑选自己趁手的兵器一样，你如果是一个程序员，你喜欢哪款编辑器呢？ 江湖上流传着十八般兵器和七种武器的传说，编程界也一样有类似的故事，最有名的莫过于“编辑器之神”和“神的编</description>
     </item>
     <item>
       <title>我的Mac OS X 开发环境和 Vim 的设置</title>
-      <link>/post/2014/2014-05-13-my-macosx-vimrc/</link>
+      <link>//localhost:1313/post/2014/2014-05-13-my-macosx-vimrc/</link>
       <pubDate>Tue, 13 May 2014 19:34:21 +0800</pubDate>
-      <guid>/post/2014/2014-05-13-my-macosx-vimrc/</guid>
+      <guid>//localhost:1313/post/2014/2014-05-13-my-macosx-vimrc/</guid>
       <description>系统设置 需要将CapsLock键改为Esc键，以方便Vi习惯。方法：安装 PCKeyboardHack，将CapsLock键的值从51改为53即可。 Deepin 系统的更换方法：修改键盘映射，但对于 vscode 好像不行。 Eclipse 设置 添加Vrapper插件，以便使用Vi习惯。update url: http://vrapper.sourceforge.net/update-site/stable 添加Js的编辑环境，</description>
     </item>
     <item>
       <title>Vim 使用思路、最佳实践再整理</title>
-      <link>/post/2014/2014-04-30-vim-best-practices/</link>
+      <link>//localhost:1313/post/2014/2014-04-30-vim-best-practices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2014/2014-04-30-vim-best-practices/</guid>
+      <guid>//localhost:1313/post/2014/2014-04-30-vim-best-practices/</guid>
       <description>以下是初入门时的姿势，现在完全不用这么麻烦，直接用dot-vimrc即可。 在 Mac OS X 上使用 Vim 真的是很享受，所以决定要用好这个工具，以下记录下本人的最佳实践： 首先面临一个选择，是用 MacVim 还是 终端（Terminate）？我的选择是终端，不过我进一步选择了 iTerm2，功能强大些，界面漂亮些</description>
     </item>
   </channel>

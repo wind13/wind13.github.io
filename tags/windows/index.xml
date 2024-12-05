@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows on 世风十三学堂</title>
-    <link>/tags/windows/</link>
+    <link>//localhost:1313/tags/windows/</link>
     <description>Recent content in Windows on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 03 Jun 2020 13:28:34 +0800</lastBuildDate>
-    <atom:link href="/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我的 Windows 开发环境</title>
-      <link>/post/2020/my-windows-dev-env/</link>
+      <link>//localhost:1313/post/2020/my-windows-dev-env/</link>
       <pubDate>Wed, 03 Jun 2020 13:28:34 +0800</pubDate>
-      <guid>/post/2020/my-windows-dev-env/</guid>
+      <guid>//localhost:1313/post/2020/my-windows-dev-env/</guid>
       <description>需安装的软件工具 注：如果国外文件下载不了，可尝试国内下载 Google scoop 或 Chocolatey 安装好 choco 或 scoop 后，可以通过命令安装其他软件，个人可以维护一个常用的软件列表，写成一个脚本，这样每次一台新的 Windows 系统，就可以通过这个脚本完成80~90%的装机工作了。 Wox Github Download 里面还会附带 Python 和 Everything 的安装文件。 cmder，安装好之</description>
     </item>
     <item>
       <title>操作系统全图谱树</title>
-      <link>/post/2020/os-tree-map/</link>
+      <link>//localhost:1313/post/2020/os-tree-map/</link>
       <pubDate>Sat, 22 Feb 2020 04:19:46 +0800</pubDate>
-      <guid>/post/2020/os-tree-map/</guid>
+      <guid>//localhost:1313/post/2020/os-tree-map/</guid>
       <description>目前操作系统都有哪些？它们之间都是什么关系？有哪些渊源？ 操作系统 Unix System V Solaris Aix IRIX（Silicon GraphicsInc.，一般用简称：SGI）IRIX可以在SGI公司的RISC型电脑上运行，即是采行32位、64位MIPS架构的SGI工作站、服务器。 BSD Unix BSD(Berkeley Software Distribution)(BSD License) 需要定制操作系统的</description>
     </item>
   </channel>

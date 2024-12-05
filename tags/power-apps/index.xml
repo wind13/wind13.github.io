@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Power Apps on 世风十三学堂</title>
-    <link>/tags/power-apps/</link>
+    <link>//localhost:1313/tags/power-apps/</link>
     <description>Recent content in Power Apps on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 13 Sep 2021 22:18:22 +0800</lastBuildDate>
-    <atom:link href="/tags/power-apps/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/power-apps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>低代码开发的问题 Low Code Problems</title>
-      <link>/post/2021/blog.low-code-problems/</link>
+      <link>//localhost:1313/post/2021/blog.low-code-problems/</link>
       <pubDate>Mon, 13 Sep 2021 22:18:22 +0800</pubDate>
-      <guid>/post/2021/blog.low-code-problems/</guid>
+      <guid>//localhost:1313/post/2021/blog.low-code-problems/</guid>
       <description>低代码开发的问题 低代码/无代码开发如今也成为了一个热门话题，而我自己也深入到一个 Power Platform 的项目实践中，有了一些体会了，也分享一些自己的想法，供大家参考。 低代码开发会很快吗？ 第一印象确实如此，我使用的是微软的 Power Platform，整个过程就象是早些年使用 Access 数据库一样（我认为 Power Apps 就是基于当</description>
     </item>
   </channel>

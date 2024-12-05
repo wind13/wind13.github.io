@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>追求 on 世风十三学堂</title>
-    <link>/tags/%E8%BF%BD%E6%B1%82/</link>
+    <link>//localhost:1313/tags/%E8%BF%BD%E6%B1%82/</link>
     <description>Recent content in 追求 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 30 Aug 2020 17:21:32 +0800</lastBuildDate>
-    <atom:link href="/tags/%E8%BF%BD%E6%B1%82/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/%E8%BF%BD%E6%B1%82/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>心学技艺——人生终极追求</title>
-      <link>/post/2020/mind-wish-woo/</link>
+      <link>//localhost:1313/post/2020/mind-wish-woo/</link>
       <pubDate>Sun, 30 Aug 2020 17:21:32 +0800</pubDate>
-      <guid>/post/2020/mind-wish-woo/</guid>
+      <guid>//localhost:1313/post/2020/mind-wish-woo/</guid>
       <description>心学技艺——人生终极追求 心：各种心态性情，修心养性，如恒心、耐心、良心、细心、同理心、平常心、佛心、道心、仁心…… 学：各种学科、科学，如数学、物理学、化学、生物学、心理学、经济学、哲学、医学、工程学、机械学、电子学、金融学、文学、天文学…… 技：各种技术，如编程、修摩托、造汽车、造</description>
     </item>
   </channel>

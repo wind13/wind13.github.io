@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Backbone on 世风十三学堂</title>
-    <link>/tags/backbone/</link>
+    <link>//localhost:1313/tags/backbone/</link>
     <description>Recent content in Backbone on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <atom:link href="/tags/backbone/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/backbone/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Backbone 路向何方？</title>
-      <link>/post/2014/2014-05-07-migrate-backbone-to/</link>
+      <link>//localhost:1313/post/2014/2014-05-07-migrate-backbone-to/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2014/2014-05-07-migrate-backbone-to/</guid>
+      <guid>//localhost:1313/post/2014/2014-05-07-migrate-backbone-to/</guid>
       <description>情况背景 使用 Backbone 开发 Web App 之后，特别是较大型的项目，会发现因为缺少一些关键的功能（如：双向绑定等）代码越来越多且复杂，从而导致后期扩展和更新越来越困难，因此从基本框架层面需要考虑改善，以便使整个框架更有条理，更易组织，更易扩展、复用、重构等…… 目前可以想到的有三个方向： 在 Backbone 基础上结合</description>
     </item>
   </channel>

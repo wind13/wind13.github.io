@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>福格行为模型 on 世风十三学堂</title>
-    <link>/tags/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/</link>
+    <link>//localhost:1313/tags/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/</link>
     <description>Recent content in 福格行为模型 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 16 Jan 2021 14:05:52 +0800</lastBuildDate>
-    <atom:link href="/tags/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>听邵恒头条《怎么用“福格行为模型”战胜拖延症？》记录</title>
-      <link>/post/2021/fogg-behavior-model-stop-procratinating/</link>
+      <link>//localhost:1313/post/2021/fogg-behavior-model-stop-procratinating/</link>
       <pubDate>Sat, 16 Jan 2021 14:05:52 +0800</pubDate>
-      <guid>/post/2021/fogg-behavior-model-stop-procratinating/</guid>
+      <guid>//localhost:1313/post/2021/fogg-behavior-model-stop-procratinating/</guid>
       <description>听邵恒头条《怎么用“福格行为模型”战胜拖延症？》记录 概念介绍 国外专门研究拖延症的网站：Deprocrastination How to stop procrastinating by using the Fogg Behavior Model 美国斯坦福大学教授：布莱恩·福格（Brian Fogg） 尼尔·埃亚尔《上瘾：让用户养成使用习惯的四大产品逻辑》的理论基础也是 Fogg Model Fogg Model: Behavior = Motivation + Ability</description>
     </item>
   </channel>

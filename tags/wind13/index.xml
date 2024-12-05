@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wind13 on 世风十三学堂</title>
-    <link>/tags/wind13/</link>
+    <link>//localhost:1313/tags/wind13/</link>
     <description>Recent content in Wind13 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 31 Dec 2017 16:19:50 +0000</lastBuildDate>
-    <atom:link href="/tags/wind13/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/wind13/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wind13 的 Blog 之 原来的首页</title>
-      <link>/post/2017/2017-12-31-index/</link>
+      <link>//localhost:1313/post/2017/2017-12-31-index/</link>
       <pubDate>Sun, 31 Dec 2017 16:19:50 +0000</pubDate>
-      <guid>/post/2017/2017-12-31-index/</guid>
+      <guid>//localhost:1313/post/2017/2017-12-31-index/</guid>
       <description>学用Play!和Scala做软件 本站收集Play1.x相关 停止SSH，用Play!吧 Play!技巧问答 国内一些使用Play!框架的网站 Xml 域名空间识别问题 Playing Play!系列之一：Play框架的暴力美学 Playing Play!系列之二：再见Servlet，Play框架的启动 Playing Play!系列之三：不</description>
     </item>
   </channel>

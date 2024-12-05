@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pc on 世风十三学堂</title>
-    <link>/tags/pc/</link>
+    <link>//localhost:1313/tags/pc/</link>
     <description>Recent content in Pc on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <atom:link href="/tags/pc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/pc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>/post/2013/2013-12-23-computerqa/</link>
+      <link>//localhost:1313/post/2013/2013-12-23-computerqa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-12-23-computerqa/</guid>
+      <guid>//localhost:1313/post/2013/2013-12-23-computerqa/</guid>
       <description>电脑使用及编程知识问答 网易闪电邮和网易邮箱助手有什么区别，如何选择？ 网易闪电邮是功能比较全面的邮箱客户端，可以同时支持其他邮箱的邮件收发，类似Foxmail和Outlook这样的邮箱软件。而网易邮箱助手则是个轻客户端，只能连接网易的邮箱，提供来信提醒和桌面预览等功能。如果你还想用</description>
     </item>
   </channel>

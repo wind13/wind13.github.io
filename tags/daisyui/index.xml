@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DaisyUI on 世风十三学堂</title>
-    <link>/tags/daisyui/</link>
+    <link>//localhost:1313/tags/daisyui/</link>
     <description>Recent content in DaisyUI on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 01 Dec 2024 22:55:27 +0000</lastBuildDate>
-    <atom:link href="/tags/daisyui/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/daisyui/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 WSL 启动 Hugo 搭建博客</title>
-      <link>/post/2024/wsl-hugo-blog/</link>
+      <link>//localhost:1313/post/2024/wsl-hugo-blog/</link>
       <pubDate>Sun, 01 Dec 2024 22:55:27 +0000</pubDate>
-      <guid>/post/2024/wsl-hugo-blog/</guid>
+      <guid>//localhost:1313/post/2024/wsl-hugo-blog/</guid>
       <description>使用 Windows Subsystem for Linux (WSL) 来启动 Hugo 并建立自己的博客是一个不错的选择，因为 Hugo 是一个强大的静态网站生成器，非常适合快速搭建个人博客。以下是使用 WSL 启动 Hugo 建立博客的步骤： 步骤 1: 安装 WSL 打开 Windows 功能开关： 打开“控制面板” &amp;gt; “程序” &amp;gt; “程序和功能” &amp;gt; “启用或关闭Windows功能”。 找到“适用于Linux的</description>
     </item>
     <item>
       <title>前端UI的江湖风云</title>
-      <link>/post/2023/front-end-ui-hero-before-after/</link>
+      <link>//localhost:1313/post/2023/front-end-ui-hero-before-after/</link>
       <pubDate>Sat, 01 Apr 2023 03:52:27 +0000</pubDate>
-      <guid>/post/2023/front-end-ui-hero-before-after/</guid>
+      <guid>//localhost:1313/post/2023/front-end-ui-hero-before-after/</guid>
       <description>前端技术已经发展到什么阶段了？百花齐放，同时也逐渐分出了高下吧，回看前端技术的演化，还真是春秋战国 + 三国群英啊！ 相关文章很多，就不多言了。 现如今连 React 都似乎成了垂垂老者，从性能和未来潜力来看，我会关注这两个： Solid.js Svelte.js 如果非要用 React 技术栈，我也会用 Preact.js 这个轻量级方案。 当然 Vue.js 也很优秀，与 React 不同</description>
     </item>
   </channel>

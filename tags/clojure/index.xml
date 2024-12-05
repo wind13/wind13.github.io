@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clojure on 世风十三学堂</title>
-    <link>/tags/clojure/</link>
+    <link>//localhost:1313/tags/clojure/</link>
     <description>Recent content in Clojure on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 08 Sep 2020 22:50:16 +0800</lastBuildDate>
-    <atom:link href="/tags/clojure/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/clojure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learn Elixir</title>
-      <link>/post/2020/learn-elixir/</link>
+      <link>//localhost:1313/post/2020/learn-elixir/</link>
       <pubDate>Tue, 08 Sep 2020 22:50:16 +0800</pubDate>
-      <guid>/post/2020/learn-elixir/</guid>
+      <guid>//localhost:1313/post/2020/learn-elixir/</guid>
       <description>参考资料 GOTO 2019 • The Soul of Erlang and Elixir • Saša Jurić http://elixir-lang.com/ https://elixirschool.com/zh-hans/ macOS 上的安装 brew install elixir Edward 的课程~ Captcha TDD in Elixir 01 - 练习的第一小步 - 实现最基本的验证码比对 Captcha TDD in Elixir 02 - 练习的第二小步 - 实现带次数的验证码比对 Captcha TDD in Elixir 03 - 练习的第三小步 - 验证码服务化(进程化) Captcha TDD in Elixir 03_2 - 第三小步成果的命令行方式使用示例 Captcha TDD in Elixir 04</description>
     </item>
     <item>
       <title>Re-natal 报错分析列表</title>
-      <link>/post/2016/2016-09-03-re-natal-error-list/</link>
+      <link>//localhost:1313/post/2016/2016-09-03-re-natal-error-list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2016/2016-09-03-re-natal-error-list/</guid>
+      <guid>//localhost:1313/post/2016/2016-09-03-re-natal-error-list/</guid>
       <description>Assert failed: c customEval figwheel-bridge.js:75 &amp;lt;unknown&amp;gt; figwheel-bridge.js:88 &amp;lt;unknown&amp;gt; JSTimers.js:47 引入的控件不可用？ Uncaugh [object object] 可能是db.cljs里的检查项不合格。 Spec check failed: {:cljs.spec/problems {[] {:pred map?, :val nil, :via [:xumu-app.db/app-db], :in []}}} 传入参数为nil，不符合db.cljs中spec的检查项。 undefined is not an object (evaluating &amp;#39;nextState.routes.forEach&amp;#39;) NavigationScenesReducer NavigationScenesReducer.js:116 NavigationTransitioner NavigationTransitioner.js:92 可能是sub.cljs加载错误，修改reg-sub为reg-sub-raw即可。 console.error: &amp;#34;Error rendering component (in env.android.main.reloader &amp;gt;</description>
     </item>
     <item>
       <title>收集的盒子</title>
-      <link>/post/2016/2016-08-26-collection-box/</link>
+      <link>//localhost:1313/post/2016/2016-08-26-collection-box/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2016/2016-08-26-collection-box/</guid>
+      <guid>//localhost:1313/post/2016/2016-08-26-collection-box/</guid>
       <description>链接收集 网页设计巅峰之作 MDX Markdown for the component era, 在 markdown 文档中加入 JSX 组件，可用于 React 项目。 为 Web 开发者提供的 16 本优秀的 E-BOOK 语义化版本 2.0.0 软件的版本号不是随便乱起的，这里有相应的说明和规范。 Publish Websites Like a BOSS B] 发布静态网站、Blog 的系统，与 Jekyll-Bootstrap 类似吧~ Static - Static Site Generator 用 Clojure 发布静态网站、Blog 的系统，有空可以试试。 StackEdit 浏</description>
     </item>
   </channel>

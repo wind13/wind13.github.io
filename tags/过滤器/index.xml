@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>过滤器 on 世风十三学堂</title>
-    <link>/tags/%E8%BF%87%E6%BB%A4%E5%99%A8/</link>
+    <link>//localhost:1313/tags/%E8%BF%87%E6%BB%A4%E5%99%A8/</link>
     <description>Recent content in 过滤器 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <atom:link href="/tags/%E8%BF%87%E6%BB%A4%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/%E8%BF%87%E6%BB%A4%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在Play!中如何实现类似过滤器的功能？</title>
-      <link>/post/2013/2013-12-13-filterallcontroller/</link>
+      <link>//localhost:1313/post/2013/2013-12-13-filterallcontroller/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2013/2013-12-13-filterallcontroller/</guid>
+      <guid>//localhost:1313/post/2013/2013-12-13-filterallcontroller/</guid>
       <description>如果是单个Controller要实现过滤，只需写一个public static 的方法，加上@Before注解即可达到执行所有action前先执行这个方法的目的。 如果想实现全局即整个站点的action都被过滤，就需要写个BaseController（名字随便起，如SuperController</description>
     </item>
   </channel>

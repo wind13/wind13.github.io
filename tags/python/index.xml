@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on 世风十三学堂</title>
-    <link>/tags/python/</link>
+    <link>//localhost:1313/tags/python/</link>
     <description>Recent content in Python on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 25 Jul 2020 22:09:48 +0800</lastBuildDate>
-    <atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rust in IoT</title>
-      <link>/post/2020/rust-in-iot/</link>
+      <link>//localhost:1313/post/2020/rust-in-iot/</link>
       <pubDate>Sat, 25 Jul 2020 22:09:48 +0800</pubDate>
-      <guid>/post/2020/rust-in-iot/</guid>
+      <guid>//localhost:1313/post/2020/rust-in-iot/</guid>
       <description>引用一篇国外的网文： 主要内容是解释为什么重写了原来的 Python 的程序。 Architecturally, the existing architecture was incapable of scaling to other technologies or changing direction without massive amounts of effort. The business had just been forced to change to MQTT from another IaaS provider because of licensing cost concerns, and the cutover took nearly a year. With new devices released every year (e.g. BLE, Wifi, Z-Wave, Zigbee, arbitrary REST APIs) the business wants to be able to change IoT stacks quickly to adapt to new technology. There were technical debt items nobody understood or was prepared to resolve. (Did I mention that none of the original programmers were still around to fix bugs or answer questions?) Fixing obvious issues in</description>
     </item>
     <item>
       <title>Music Programming</title>
-      <link>/post/2020/music-programming/</link>
+      <link>//localhost:1313/post/2020/music-programming/</link>
       <pubDate>Sat, 25 Jan 2020 16:00:11 +0800</pubDate>
-      <guid>/post/2020/music-programming/</guid>
+      <guid>//localhost:1313/post/2020/music-programming/</guid>
       <description>前阵子有一天，脑子里突然有个很有趣的想法，能不能用编程来写音乐？主要是基于几个思路，一是说纯文本可以编程可以做很多事，能画图什么的，能不能做音乐呢？另一个就是自己一直对音乐有很大的兴趣，但是自己又没有深入学习和研究，年轻时弹了一阵子吉他，后来也因为手指和手部肌肉疼放弃了，可能是没</description>
     </item>
     <item>
       <title>当日笔记-20180921</title>
-      <link>/post/2018/2018-09-21-daily-note-20180921/</link>
+      <link>//localhost:1313/post/2018/2018-09-21-daily-note-20180921/</link>
       <pubDate>Fri, 21 Sep 2018 10:25:07 +0000</pubDate>
-      <guid>/post/2018/2018-09-21-daily-note-20180921/</guid>
+      <guid>//localhost:1313/post/2018/2018-09-21-daily-note-20180921/</guid>
       <description>准备做的事 尝试使用 Hugo； 目录结构： archetypes：包括内容类型，在创建新内容时自动生成内容的配置 content：包括网站内容，全部使用markdown格式 layouts：包括了网站的模版，决定内容如何呈现 static：包括了css, js, fonts, media等，决定网站的外观 常用命</description>
     </item>
   </channel>

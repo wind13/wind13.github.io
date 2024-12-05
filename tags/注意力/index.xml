@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>注意力 on 世风十三学堂</title>
-    <link>/tags/%E6%B3%A8%E6%84%8F%E5%8A%9B/</link>
+    <link>//localhost:1313/tags/%E6%B3%A8%E6%84%8F%E5%8A%9B/</link>
     <description>Recent content in 注意力 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 23 Jan 2018 16:46:21 +0000</lastBuildDate>
-    <atom:link href="/tags/%E6%B3%A8%E6%84%8F%E5%8A%9B/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/%E6%B3%A8%E6%84%8F%E5%8A%9B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>不沉迷电子游戏的心法</title>
-      <link>/post/2018/2018-01-23-fight-with-digital-games/</link>
+      <link>//localhost:1313/post/2018/2018-01-23-fight-with-digital-games/</link>
       <pubDate>Tue, 23 Jan 2018 16:46:21 +0000</pubDate>
-      <guid>/post/2018/2018-01-23-fight-with-digital-games/</guid>
+      <guid>//localhost:1313/post/2018/2018-01-23-fight-with-digital-games/</guid>
       <description>前言 游戏估计是所有动物的本能吧，至少看上去是人类的本能了，从两三岁的小孩开始，就已经每天都在游戏了，而自从有了电子游戏之后，就出现了一种新的问题：沉迷电子游戏的问题。 个人也是沉迷“患者”，甚至目前也还是，一天的游戏时间加一起估计有5个小时左右，如果是周末不上班，则可能到10多个小</description>
     </item>
   </channel>

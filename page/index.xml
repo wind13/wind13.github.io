@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on 世风十三学堂</title>
-    <link>/page/</link>
+    <link>//localhost:1313/page/</link>
     <description>Recent content in Pages on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 24 Apr 2021 09:05:05 +0800</lastBuildDate>
-    <atom:link href="/page/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>推荐阅读</title>
-      <link>/page/recommend/</link>
+      <link>//localhost:1313/page/recommend/</link>
       <pubDate>Sat, 24 Apr 2021 09:05:05 +0800</pubDate>
-      <guid>/page/recommend/</guid>
+      <guid>//localhost:1313/page/recommend/</guid>
       <description>教育方向 正念编程——知识星球：世风十三学堂 好书推荐——个人觉得应该读的书 技术方向 纯文本的威力 终极笔记 Dendron 参与 Element3 TDD 的感受 微软 PowerApps 的使用感受 复习 FizzBuzz 管理方向 摘录《原则》动画重点 非暴力沟通在公司管理中的思考 先进管理思想建议方案 亲子教育和领导力 软件工程 软件开发团队如何高质量、高效率？ 开发团队能</description>
     </item>
     <item>
       <title>绘画作品集</title>
-      <link>/page/painting/</link>
+      <link>//localhost:1313/page/painting/</link>
       <pubDate>Tue, 03 Mar 2020 14:21:05 +0800</pubDate>
-      <guid>/page/painting/</guid>
+      <guid>//localhost:1313/page/painting/</guid>
       <description>闭嘴青蛙 冰墩墩 我家的福点 男人的橙色思绪 我家的雪儿 春天的自拍 一盆多肉的花 混乱的大卫 无名的焦虑 临摹庞德公 钢丝画乔布斯 钢丝地面 儿子画的自行车 儿子的涂鸦</description>
     </item>
     <item>
       <title>关于我</title>
-      <link>/page/about/</link>
+      <link>//localhost:1313/page/about/</link>
       <pubDate>Thu, 12 Dec 2019 19:40:05 +0800</pubDate>
-      <guid>/page/about/</guid>
+      <guid>//localhost:1313/page/about/</guid>
       <description>微信公众号：世风十三学堂 wind13class 微博：世风十三学堂 终身成长、正念编程的全栈架构师 多年软件公司全栈工程师、架构师从业经历； 业余时间希望帮助更多的年轻人提高； 带新人学徒正念编程 世风十三-B站 有合作可联系邮箱：wind13AT163DOTcom TDD极限敏捷教练咨询师 极限编程合作社 支持者 有软</description>
     </item>
   </channel>

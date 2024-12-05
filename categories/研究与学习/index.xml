@@ -2,150 +2,150 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>研究与学习 on 世风十三学堂</title>
-    <link>/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/</link>
+    <link>//localhost:1313/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/</link>
     <description>Recent content in 研究与学习 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 18 Mar 2021 17:34:44 +0800</lastBuildDate>
-    <atom:link href="/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>E2E tests, Integrated tests vs Collaboration and Contract Tests</title>
-      <link>/post/2021/blog.collaboration-contract-tests/</link>
+      <link>//localhost:1313/post/2021/blog.collaboration-contract-tests/</link>
       <pubDate>Thu, 18 Mar 2021 17:34:44 +0800</pubDate>
-      <guid>/post/2021/blog.collaboration-contract-tests/</guid>
+      <guid>//localhost:1313/post/2021/blog.collaboration-contract-tests/</guid>
       <description>E2E tests, Integrated tests vs Collaboration and Contract tests 测试金字塔 参考以下文章，减少 E2E 测试的比例，Google 的建议：70% unit tests, 20% integration tests, and 10% end-to-end tests. Just Say No to More End-to-End Tests 这样看来， Pact.io 类似的功能相当于 Integration tests 层，可能是目前大多数团队所忽略的部分？ 然而看到下面这篇和系列文章，又说 Integrated Tests are a Scam(坑/骗局) Integrated Tests Are A Scam Series 下面这篇又说 Integration Test 不同</description>
     </item>
     <item>
       <title>前端工程化学习笔记</title>
-      <link>/post/2021/learn-front-end-engineer/</link>
+      <link>//localhost:1313/post/2021/learn-front-end-engineer/</link>
       <pubDate>Fri, 19 Feb 2021 16:51:17 +0800</pubDate>
-      <guid>/post/2021/learn-front-end-engineer/</guid>
+      <guid>//localhost:1313/post/2021/learn-front-end-engineer/</guid>
       <description>前端工程化学习笔记 拉勾教育《前端工程化精讲》课程 开发效率 脚手架（Scaffold）工具 快速生成 基础代码和目录 package.json, *.lock 文件 项目技术栈 webpack 配置文件 检查工具、单元测试工具 最佳实践 自定义模板 云开发 无代码工具 脚手架工具 Yeoman 通用的，用于一些开发流程里特定片段代码的生成 Create-React-App(CRA) react-rewired customize-cra react-scripts 开发流程集成工具 Vue CLI 有交</description>
     </item>
     <item>
       <title>摘录《原则》动画重点</title>
-      <link>/post/2021/learn.principles/</link>
+      <link>//localhost:1313/post/2021/learn.principles/</link>
       <pubDate>Tue, 16 Feb 2021 11:08:11 +0800</pubDate>
-      <guid>/post/2021/learn.principles/</guid>
+      <guid>//localhost:1313/post/2021/learn.principles/</guid>
       <description>摘录《原则》动画重点 Ray Dalio 瑞·达利欧 微博全球视频精选Premium Podcast: 文森说书 Instagram: vincent_reading 为什么需要建立原则 每次遇到问题都要思考一次，很容易纠结，可以矛盾的两边都照顾不好。 为生活中不同类别的问题，整理出应该遵循的原则。每次使用原则所带来的结果，都可能微调原则的内容，最后的原则就越来越符合自己</description>
     </item>
     <item>
       <title>终极笔记 Dendron</title>
-      <link>/post/2021/ultimate-pkm-solution-dendron/</link>
+      <link>//localhost:1313/post/2021/ultimate-pkm-solution-dendron/</link>
       <pubDate>Sun, 03 Jan 2021 11:24:11 +0800</pubDate>
-      <guid>/post/2021/ultimate-pkm-solution-dendron/</guid>
+      <guid>//localhost:1313/post/2021/ultimate-pkm-solution-dendron/</guid>
       <description>我想每个知识工作者都会有自己的个人知识管理解决方案，而且也都在不断地进化和改善中，还记得最早的时候，我们是没有这些概念的，那时候，不管把信息记在哪儿，随手记下来就算了，用过之后也就忘了或者删掉了。慢慢地我们意识到一些信息可能是有用的，需要保留下来的，于是我们用各种方式进行保存，建</description>
     </item>
     <item>
       <title>Rust in IoT</title>
-      <link>/post/2020/rust-in-iot/</link>
+      <link>//localhost:1313/post/2020/rust-in-iot/</link>
       <pubDate>Sat, 25 Jul 2020 22:09:48 +0800</pubDate>
-      <guid>/post/2020/rust-in-iot/</guid>
+      <guid>//localhost:1313/post/2020/rust-in-iot/</guid>
       <description>引用一篇国外的网文： 主要内容是解释为什么重写了原来的 Python 的程序。 Architecturally, the existing architecture was incapable of scaling to other technologies or changing direction without massive amounts of effort. The business had just been forced to change to MQTT from another IaaS provider because of licensing cost concerns, and the cutover took nearly a year. With new devices released every year (e.g. BLE, Wifi, Z-Wave, Zigbee, arbitrary REST APIs) the business wants to be able to change IoT stacks quickly to adapt to new technology. There were technical debt items nobody understood or was prepared to resolve. (Did I mention that none of the original programmers were still around to fix bugs or answer questions?) Fixing obvious issues in</description>
     </item>
     <item>
       <title>复习 FizzBuzz</title>
-      <link>/post/2020/fizz-buzz-revise/</link>
+      <link>//localhost:1313/post/2020/fizz-buzz-revise/</link>
       <pubDate>Thu, 16 Jul 2020 12:26:22 +0800</pubDate>
-      <guid>/post/2020/fizz-buzz-revise/</guid>
+      <guid>//localhost:1313/post/2020/fizz-buzz-revise/</guid>
       <description>复习 FizzBuzz 题目 游戏的规则是： 让所有学生，假设为 100 人拍成一队，然后按顺序报数。 学生报数时，如果所报数字是3的倍数，那么不能说该数字，而要说Fizz；如果所报数字是5的倍数，那么要说Buzz。 需求问题： 被3和5整除返回什么？ 有的同学就直接脑补了： 脑补一：能被3和5整除，那就是先被3整除呗</description>
     </item>
     <item>
       <title>Git 的实际应用</title>
-      <link>/post/2020/git-work/</link>
+      <link>//localhost:1313/post/2020/git-work/</link>
       <pubDate>Sun, 12 Jul 2020 22:01:41 +0800</pubDate>
-      <guid>/post/2020/git-work/</guid>
+      <guid>//localhost:1313/post/2020/git-work/</guid>
       <description>Git 的实际应用 软件版本的重要性 总得有个版本是可用的 总能回到思路清晰的时候 要能追溯到变更的过程 多人协作避免冲突 可以检查合并的代码 Git 的基本概念和功能 本地和远端 初始化 init 提交 commit 拉取 pull 推送 push 分支 branch，如同泳道 标签 tag 发布 release 暂存 stash 变基 rebase 合并 merge 关键的区别： merge vs rebase FF or conflict 详细见网文： Git：合</description>
     </item>
     <item>
       <title>Iot 物联网相关学习</title>
-      <link>/post/2020/iot-learn/</link>
+      <link>//localhost:1313/post/2020/iot-learn/</link>
       <pubDate>Fri, 05 Jun 2020 14:40:52 +0800</pubDate>
-      <guid>/post/2020/iot-learn/</guid>
+      <guid>//localhost:1313/post/2020/iot-learn/</guid>
       <description>主流框架 SiteWhere 是一个面向物联网（IoT）的工业级开源应用支持平台。它提供了基于多租户微服务的基础架构，其中包括构建和部署IoT应用程序所需的关键功能。 SiteWhere基础架构和微服务部署在Kubernetes上，允许部署内部部署或几乎任何云提供商。 Apache Kafka，Zookeeper和</description>
     </item>
     <item>
       <title>RPC 相关学习</title>
-      <link>/post/2020/learn-rpc/</link>
+      <link>//localhost:1313/post/2020/learn-rpc/</link>
       <pubDate>Tue, 02 Jun 2020 21:28:33 +0800</pubDate>
-      <guid>/post/2020/learn-rpc/</guid>
+      <guid>//localhost:1313/post/2020/learn-rpc/</guid>
       <description>各家官网 gRPC Apache Dubbo™ 是一款高性能Java RPC框架。 SOFARPC 介绍 相关资料 重点资料 RPC 协议之争和选型要点 对于 RPC 框架，在架构上能够支持多语言非常重要。不同的业务场景，适合不同的语言，例如后端复杂业务逻辑使用 Java 开发效率更高，对于 API 网关或者边缘服务，适合 GO 语言。对于一些序列化框架，由于使用了</description>
     </item>
     <item>
       <title>《重新定义公司》摘录</title>
-      <link>/post/2020/redefine-company-summary/</link>
+      <link>//localhost:1313/post/2020/redefine-company-summary/</link>
       <pubDate>Sat, 30 May 2020 11:56:22 +0800</pubDate>
-      <guid>/post/2020/redefine-company-summary/</guid>
+      <guid>//localhost:1313/post/2020/redefine-company-summary/</guid>
       <description>极度重视招聘 Thank god it is Friday. 周五吐槽大会。 祷文不会因为重复而失色。 Keep learning 每年50本书 领导者多做自我反省 Think big 往大了想，1、此创新是否影响数十亿人；2、是否与现有方法截然不同；3、是否有一定的可行性； 最糟糕的发明是遥控器，静音键特别小，确认键特别大。因为设计人考虑能否收到钱。 首席创新官？管理</description>
     </item>
     <item>
       <title>樊登读书 《深度工作》 Deep Work Rules 听书记录</title>
-      <link>/post/2020/fdds-deep-work-rules/</link>
+      <link>//localhost:1313/post/2020/fdds-deep-work-rules/</link>
       <pubDate>Thu, 05 Mar 2020 08:32:16 +0800</pubDate>
-      <guid>/post/2020/fdds-deep-work-rules/</guid>
+      <guid>//localhost:1313/post/2020/fdds-deep-work-rules/</guid>
       <description>概述 手机等现代工具，控制、瓜分我们的精力和时间，长此以往，大脑会形成一种生理上的疾病——心智残疾。 深度工作：无干扰、专注、职业活动，使认知能力达到极限。能够创造新价值、提升技能，且难以复制。 浮浅工作：干扰、事务性任务。不创造新价值，容易复制。 未来三种人会越来越贵： 能与机器对话的人</description>
     </item>
     <item>
       <title>PowerMill 宏编程研究</title>
-      <link>/post/2020/powermill-macro/</link>
+      <link>//localhost:1313/post/2020/powermill-macro/</link>
       <pubDate>Wed, 04 Mar 2020 12:04:22 +0800</pubDate>
-      <guid>/post/2020/powermill-macro/</guid>
+      <guid>//localhost:1313/post/2020/powermill-macro/</guid>
       <description>概述 PowerMill 是一款大型数控加工软件，其中有二次开发和宏的功能，初步浏览了一下官方帮助文档，感觉总体来说是比较简单的，主要是用编程知识中的函数方法、循环和判断逻辑等基础知识，重点要结合业务需求来实际应用即可。 示例代码解读 简单的循环 FOREACH Bottles IN {10,9,8,7,6,5,4,3,2,1} 直译：每个 Bottles 在 10~1 这段数字中 意译：把 10~1 这些数字循环，</description>
     </item>
     <item>
       <title>Hugo 中 显示 MindMap 思维导图</title>
-      <link>/post/2020/hugo-mind-map/</link>
+      <link>//localhost:1313/post/2020/hugo-mind-map/</link>
       <pubDate>Fri, 31 Jan 2020 13:40:37 +0800</pubDate>
-      <guid>/post/2020/hugo-mind-map/</guid>
+      <guid>//localhost:1313/post/2020/hugo-mind-map/</guid>
       <description>目前比较好的脑图方案 一个是在 Hugo 里用 Markdown 写，在浏览器中预览。 另一个是用 Markdown 写后，通过 Typora 导出 opml 格式，再导入幕布后即可查看。 还有就是使用 PlantUML 插件 在 VSCode 中写 markdown 画脑图。 还有一个就是用 vscode-mindmap 插件，编辑 kityminder *.km 文件即可，这个功能与百度脑图用的是同一个技术，只是还没找到导入导出的功能。 效果如下： 根目录 一级目录1</description>
     </item>
     <item>
       <title>Music Programming</title>
-      <link>/post/2020/music-programming/</link>
+      <link>//localhost:1313/post/2020/music-programming/</link>
       <pubDate>Sat, 25 Jan 2020 16:00:11 +0800</pubDate>
-      <guid>/post/2020/music-programming/</guid>
+      <guid>//localhost:1313/post/2020/music-programming/</guid>
       <description>前阵子有一天，脑子里突然有个很有趣的想法，能不能用编程来写音乐？主要是基于几个思路，一是说纯文本可以编程可以做很多事，能画图什么的，能不能做音乐呢？另一个就是自己一直对音乐有很大的兴趣，但是自己又没有深入学习和研究，年轻时弹了一阵子吉他，后来也因为手指和手部肌肉疼放弃了，可能是没</description>
     </item>
     <item>
       <title>纯文本的威力</title>
-      <link>/post/2019/power-of-plain-text/</link>
+      <link>//localhost:1313/post/2019/power-of-plain-text/</link>
       <pubDate>Tue, 15 Oct 2019 06:28:01 +0000</pubDate>
-      <guid>/post/2019/power-of-plain-text/</guid>
+      <guid>//localhost:1313/post/2019/power-of-plain-text/</guid>
       <description>“Keep Knowledge in Pain Text（用纯文本保存知识）” 纯文本能做的事 所有的软件源代码都是纯文本！ 纯文本是即可以让机器运行，又可以让人类阅读的内容形式。 Unix 系统的底层设计充分利用了纯文本的独特性。 做 PPT 演示 国产框架工具，建议用 revealjs 功能更强些，更国际化、标准化些。 用 revealjs 转 Asciidoctor 文档为 PPT Asciidoctor 用 Ruby 写的将 AsciiDoc 文本</description>
     </item>
     <item>
       <title>Julia Learning</title>
-      <link>/post/2019/julia-learning/</link>
+      <link>//localhost:1313/post/2019/julia-learning/</link>
       <pubDate>Thu, 03 Oct 2019 10:09:37 +0800</pubDate>
-      <guid>/post/2019/julia-learning/</guid>
+      <guid>//localhost:1313/post/2019/julia-learning/</guid>
       <description>Julia Learning Julia Install Brew brew cask install julia Normal Download and install it as julia.app Add it into your profile, for me it is .zshrc file: # Julia # /Applications/Julia-1.2.app/Contents/Resources/julia/bin/ export PATH=&amp;#34;/Applications/Julia-1.2.app/Contents/Resources/julia/bin/:$PATH&amp;#34;</description>
     </item>
     <item>
       <title>当日笔记-20180922</title>
-      <link>/post/2018/2018-09-22-daily-note-20180922/</link>
+      <link>//localhost:1313/post/2018/2018-09-22-daily-note-20180922/</link>
       <pubDate>Sat, 22 Sep 2018 01:53:04 +0000</pubDate>
-      <guid>/post/2018/2018-09-22-daily-note-20180922/</guid>
+      <guid>//localhost:1313/post/2018/2018-09-22-daily-note-20180922/</guid>
       <description>Hugo 研究 对 Hugo 有点着迷了，看到了 Youtube 上面的教程，非常详细而直观，同时还可以练习英语听力，看自己感兴趣的英语视频内容应该是学英语最佳的途径之一了。 然后发现了这个 netlify 网站 ，号称：Everything you need to deploy your project. 在静态网站的基础上，扩展很多功能 Auth/Form/Lamda 等，包括部署 CI/CD 等，单人免费，多人收费。考虑到结合</description>
     </item>
     <item>
       <title>Docker 学习</title>
-      <link>/post/2018/2018-02-07-docker-%E5%AD%A6%E4%B9%A0/</link>
+      <link>//localhost:1313/post/2018/2018-02-07-docker-%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Wed, 07 Feb 2018 16:18:26 +0000</pubDate>
-      <guid>/post/2018/2018-02-07-docker-%E5%AD%A6%E4%B9%A0/</guid>
+      <guid>//localhost:1313/post/2018/2018-02-07-docker-%E5%AD%A6%E4%B9%A0/</guid>
       <description>Docker 学习 快速入门心法 官网文档也好，网上其他的教程也好，都非常有“耐心”，一点点地教你怎么理解和使用 docker，但我在看这些教程和文档的时候其实很着急，因为我只想快速入门并且用起来，而且最好是按最佳实践的路子用起来，而不是象个初学者那样慢慢摸索。但就是没人把这条捷径说清楚…… 下面我</description>
     </item>
     <item>
       <title>常用Git命令说明</title>
-      <link>/post/2013/2013-12-23-gitoftenused/</link>
+      <link>//localhost:1313/post/2013/2013-12-23-gitoftenused/</link>
       <pubDate>Mon, 23 Dec 2013 16:00:11 +0800</pubDate>
-      <guid>/post/2013/2013-12-23-gitoftenused/</guid>
+      <guid>//localhost:1313/post/2013/2013-12-23-gitoftenused/</guid>
       <description>参考：史上最浅显易懂的Git教程！ 进入你的工作目录 cd yourworkpath 列出所有branch，当前所在branch前面有“*”号。 git branch -a 切换工作库 git checkout v1.5.1 合并另一个branch，通常是master git merge master 再切换回来 git checkout master 查看当前目录情况 git status 将当前目录中的修改提交到相应的库（branch）中 git commit -m &amp;ld</description>
     </item>
     <item>
       <title>Angular 学习</title>
-      <link>/post/2019/angular-learning/</link>
+      <link>//localhost:1313/post/2019/angular-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2019/angular-learning/</guid>
+      <guid>//localhost:1313/post/2019/angular-learning/</guid>
       <description>相关框架 JHipster JHipster is a development platform to generate, develop and deploy Spring Boot + Angular Web applications and Spring microservices. 问题 在 AngularJS 的 controller 中： $scope.pageTitle = dbData.getTitle();，已知该标题从数据库中取出后不会被修改和变化，如下在模板中的写法最好的方式是：【A】 A. &amp;lt;h1 ng-bind=&amp;quot;::pageTitle&amp;quot;&amp;gt;&amp;lt;/h1&amp;gt; B. &amp;lt;h1&amp;gt;&amp;lt;%=pageTitle%&amp;gt;&amp;lt;/h1&amp;gt; C. &amp;lt;h1&amp;gt;\{\{::pageTitle\}\}&amp;lt;/h1&amp;gt; D. &amp;lt;h1&amp;gt;\{\{pageTitle\}\}&amp;lt;/h1&amp;gt; E. &amp;lt;h1 ng-bind=&amp;quot;pageTitle&amp;quot;&amp;gt;&amp;lt;/h1&amp;gt; 修改 model 数据后，自动更新界面上的显示内容，或者在界面上修改内容，更新 model</description>
     </item>
   </channel>

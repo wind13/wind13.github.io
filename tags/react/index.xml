@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>React on 世风十三学堂</title>
-    <link>/tags/react/</link>
+    <link>//localhost:1313/tags/react/</link>
     <description>Recent content in React on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 28 Dec 2020 16:49:11 +0800</lastBuildDate>
-    <atom:link href="/tags/react/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/react/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>最新技术选型</title>
-      <link>/post/2020/new-solutions/</link>
+      <link>//localhost:1313/post/2020/new-solutions/</link>
       <pubDate>Mon, 28 Dec 2020 16:49:11 +0800</pubDate>
-      <guid>/post/2020/new-solutions/</guid>
+      <guid>//localhost:1313/post/2020/new-solutions/</guid>
       <description>最新技术选型 语言 Reason 可以让您编写简单，快速和优质的类型安全代码，同时利用 JavaScript 和 OCaml 的生态。 OCaml is an industrial strength programming language supporting functional, imperative and object-oriented styles. 一种支持功能、命令和面向对象的工业强度编程语言，一种快速、实用且强类型的编程语言 BuckleScript 不是一个新的编程语言。 它只是将输入的 OCaml，通过一些调整，使其编译为干净、可读的 JavaScript 代</description>
     </item>
     <item>
       <title>Umi vs Nuxt vs Ng-alain</title>
-      <link>/post/2020/umi-vs-nuxt-vs-ngalain/</link>
+      <link>//localhost:1313/post/2020/umi-vs-nuxt-vs-ngalain/</link>
       <pubDate>Tue, 28 Jul 2020 11:17:13 +0800</pubDate>
-      <guid>/post/2020/umi-vs-nuxt-vs-ngalain/</guid>
+      <guid>//localhost:1313/post/2020/umi-vs-nuxt-vs-ngalain/</guid>
       <description>概述和思考 很多时候前端开发人员会面对眼花缭乱的框架很难选择。 标题所说的选择实质是三大阵营（React, Vue 和 Angular）的选择。 三个底层框架各有所长，亮点在于： React：更接近函数式编程思想，单向数据流比较清晰，jsx 是不错的创新，熟悉后可结合函数式编程写出比较优雅的组件代码</description>
     </item>
     <item>
       <title>再见了 Redux （翻译）</title>
-      <link>/post/2018/2018-09-05-goodbye-redux-cn/</link>
+      <link>//localhost:1313/post/2018/2018-09-05-goodbye-redux-cn/</link>
       <pubDate>Wed, 05 Sep 2018 09:35:11 +0000</pubDate>
-      <guid>/post/2018/2018-09-05-goodbye-redux-cn/</guid>
+      <guid>//localhost:1313/post/2018/2018-09-05-goodbye-redux-cn/</guid>
       <description>作者：Jack Scott 原文（英语） 国内网可能访问不到……大致翻译如下： 本文主要分析了一下我们过去为什么需要 Redux，而为什么以后又不再需要了。 在过去的几年里，互联网技术已经转向用前端 JavaScript 框架来实现网站和手机应用，以达到更好的用户体验。这非常棒 🔥 ，我个人很欣赏这些框架提供的灵活性。 但是灵</description>
     </item>
     <item>
       <title>Ant Design React 使用记录</title>
-      <link>/post/2018/2018-07-26-ant-design-react-note/</link>
+      <link>//localhost:1313/post/2018/2018-07-26-ant-design-react-note/</link>
       <pubDate>Thu, 26 Jul 2018 09:22:11 +0000</pubDate>
-      <guid>/post/2018/2018-07-26-ant-design-react-note/</guid>
+      <guid>//localhost:1313/post/2018/2018-07-26-ant-design-react-note/</guid>
       <description>遇到的问题 Table 组件的服务端分页问题 Table 表格 仔细看了一下，虽然 mock 中的数据是全部数据集，但是是模拟远程数据库的概念的，每次返回到客户端的数据还是单个页面的数据，所以这里可以理解为本身的设计就是支持服务端分页的。 路由带参数问题 Route props - match 下载 Excel 模板的问题 Using Node.js to download files 后端文档路径： http://jp-open-service.thinkmacro.cn/swagger-ui.html Form 相关参考： http://react-component.github.io/form/</description>
     </item>
     <item>
       <title>GraphQL 学习</title>
-      <link>/post/2018/2018-05-03-graphql-learning/</link>
+      <link>//localhost:1313/post/2018/2018-05-03-graphql-learning/</link>
       <pubDate>Thu, 03 May 2018 08:55:25 +0000</pubDate>
-      <guid>/post/2018/2018-05-03-graphql-learning/</guid>
+      <guid>//localhost:1313/post/2018/2018-05-03-graphql-learning/</guid>
       <description>实践 Using GraphQL with MongoDB Testing a GraphQL Server using Jest using-dataloader-to-batch-requests How GraphQL Replaces Redux js Client Bind GraphQL data to your UI with one function call. 相关网站 GraphQL CN A query language for APIs. 一种用于 API 的查询语言。 GraphQL 最佳实践 awesome-graphql The Fullstack Tutorial for GraphQL Youtube 视频教程 GraphiQL A graphical interactive in-browser GraphQL IDE. Live demo Lacinia - GraphQL for Clojure，Github Repo 一套 GraphQL 规范的完整实现，致力于维护对规范的外部兼容。 alumbra Simple &amp;amp; Elegant GraphQL for Clojure! graphql-clj A Clojure library designed to provide GraphQL implementation. 流行的服</description>
     </item>
     <item>
       <title>Angular 学习</title>
-      <link>/post/2019/angular-learning/</link>
+      <link>//localhost:1313/post/2019/angular-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/post/2019/angular-learning/</guid>
+      <guid>//localhost:1313/post/2019/angular-learning/</guid>
       <description>相关框架 JHipster JHipster is a development platform to generate, develop and deploy Spring Boot + Angular Web applications and Spring microservices. 问题 在 AngularJS 的 controller 中： $scope.pageTitle = dbData.getTitle();，已知该标题从数据库中取出后不会被修改和变化，如下在模板中的写法最好的方式是：【A】 A. &amp;lt;h1 ng-bind=&amp;quot;::pageTitle&amp;quot;&amp;gt;&amp;lt;/h1&amp;gt; B. &amp;lt;h1&amp;gt;&amp;lt;%=pageTitle%&amp;gt;&amp;lt;/h1&amp;gt; C. &amp;lt;h1&amp;gt;\{\{::pageTitle\}\}&amp;lt;/h1&amp;gt; D. &amp;lt;h1&amp;gt;\{\{pageTitle\}\}&amp;lt;/h1&amp;gt; E. &amp;lt;h1 ng-bind=&amp;quot;pageTitle&amp;quot;&amp;gt;&amp;lt;/h1&amp;gt; 修改 model 数据后，自动更新界面上的显示内容，或者在界面上修改内容，更新 model</description>
     </item>
   </channel>

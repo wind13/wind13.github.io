@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>工程实践 on 世风十三学堂</title>
-    <link>/tags/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</link>
+    <link>//localhost:1313/tags/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</link>
     <description>Recent content in 工程实践 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 20 Nov 2021 17:02:32 +0800</lastBuildDate>
-    <atom:link href="/tags/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>笔记——正确的度量指标</title>
-      <link>/post/2021/note-of-right-measurement/</link>
+      <link>//localhost:1313/post/2021/note-of-right-measurement/</link>
       <pubDate>Sat, 20 Nov 2021 17:02:32 +0800</pubDate>
-      <guid>/post/2021/note-of-right-measurement/</guid>
+      <guid>//localhost:1313/post/2021/note-of-right-measurement/</guid>
       <description>最近阅读了公众号 Thoughtworks 洞见的系列文章《寻找合适的研发效能度量指标》，记录一下要点： 《寻找合适的研发效能度量指标（上）》 有哪些合适的软件研发效能度量指标呢？从以下几个方面列出了一些指标： 规划进度 快速反馈 团队转型 辅助决策 工程能力 当您在为团队寻找研发效能指标时，其实并没有一个恒定不变的模板</description>
     </item>
   </channel>
