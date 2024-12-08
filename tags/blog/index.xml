@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on 世风十三学堂</title>
+    <title>BLog on 世风十三学堂</title>
     <link>/tags/blog/</link>
-    <description>Recent content in Blog on 世风十三学堂</description>
+    <description>Recent content in BLog on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 21 Sep 2018 10:25:07 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Dec 2024 18:07:54 +0800</lastBuildDate>
     <atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flatnotes 自托管无库笔记应用</title>
+      <link>/post/2024/flatnotes-self-note-server/</link>
+      <pubDate>Sat, 07 Dec 2024 18:07:54 +0800</pubDate>
+      <guid>/post/2024/flatnotes-self-note-server/</guid>
+      <description>Flatnotes 是一个自托管的、不需要数据库的笔记应用，它使用一个纯平的文件夹来存储Markdown文件。 以下是它的一些主要功能和特点： 无干扰的笔记体验：设计简洁，专注于笔记内容，无文件夹、笔记本等复杂结构，依赖强大的搜索和标签功能。 全文搜索：从应用的任何位置都能快速访问全文搜索功能（快捷键“</description>
+    </item>
     <item>
       <title>当日笔记-20180921</title>
       <link>/post/2018/2018-09-21-daily-note-20180921/</link>

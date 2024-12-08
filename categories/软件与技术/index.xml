@@ -6,8 +6,22 @@
     <description>Recent content in 软件与技术 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Dec 2024 22:55:27 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Dec 2024 15:33:54 +0800</lastBuildDate>
     <atom:link href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Acreom 开发者的知识库和任务工具</title>
+      <link>/post/2024/acreom-developer-pkm-task-tool/</link>
+      <pubDate>Sun, 08 Dec 2024 15:33:54 +0800</pubDate>
+      <guid>/post/2024/acreom-developer-pkm-task-tool/</guid>
+      <description>Acreom是一个专为开发者设计的知识库和任务管理工具，它的核心特点包括： 本地Markdown知识库：Acreom允许用户通过本地Markdown文件来管理和存储知识，确保数据的安全性和隐私性。 无需安装：Acreom不需要复杂的安装过程，可以轻松集成到现有的项目结构中，实现即插即</description>
+    </item>
+    <item>
+      <title>Flatnotes 自托管无库笔记应用</title>
+      <link>/post/2024/flatnotes-self-note-server/</link>
+      <pubDate>Sat, 07 Dec 2024 18:07:54 +0800</pubDate>
+      <guid>/post/2024/flatnotes-self-note-server/</guid>
+      <description>Flatnotes 是一个自托管的、不需要数据库的笔记应用，它使用一个纯平的文件夹来存储Markdown文件。 以下是它的一些主要功能和特点： 无干扰的笔记体验：设计简洁，专注于笔记内容，无文件夹、笔记本等复杂结构，依赖强大的搜索和标签功能。 全文搜索：从应用的任何位置都能快速访问全文搜索功能（快捷键“</description>
+    </item>
     <item>
       <title>使用 WSL 启动 Hugo 搭建博客</title>
       <link>/post/2024/wsl-hugo-blog/</link>
