@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Acreom on 世风十三学堂</title>
+    <link>/tags/acreom/</link>
+    <description>Recent content in Acreom on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 08 Dec 2024 15:33:54 +0800</lastBuildDate>
+    <atom:link href="/tags/acreom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Acreom 开发者的知识库和任务工具</title>
+      <link>/post/2024/acreom-developer-pkm-task-tool/</link>
+      <pubDate>Sun, 08 Dec 2024 15:33:54 +0800</pubDate>
+      <guid>/post/2024/acreom-developer-pkm-task-tool/</guid>
+      <description>Acreom是一个专为开发者设计的知识库和任务管理工具，它的核心特点包括： 本地Markdown知识库：Acreom允许用户通过本地Markdown文件来管理和存储知识，确保数据的安全性和隐私性。 无需安装：Acreom不需要复杂的安装过程，可以轻松集成到现有的项目结构中，实现即插即</description>
+    </item>
+  </channel>
+</rss>
