@@ -6,8 +6,15 @@
     <description>Recent content in Posts on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 14 Dec 2024 10:40:33 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 02 Aug 2025 09:47:17 +0800</lastBuildDate>
     <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 时代的匠人精神</title>
+      <link>/post/2025/craftsmanship-in-the-ai-era/</link>
+      <pubDate>Sat, 02 Aug 2025 09:47:17 +0800</pubDate>
+      <guid>/post/2025/craftsmanship-in-the-ai-era/</guid>
+      <description>每个人心中住着一个木匠 木匠的本事在哪里？ 从古到今， 木工的工具在不断演进， 面对不同的工具， 哪些木匠的本事是没有变的？ 从最普通的木工工具， 到现代的电器化工具， 效率更高了， 速度更快了， 精度更高了， 但哪些本事是没有变的？ 主动性： 工具并不会自主做任何东西 创造力： 工具只能程序化地做某个已经定</description>
+    </item>
     <item>
       <title>跨平台开发技术选型：Flutter、Tauri和Dioxus比较与未来展望</title>
       <link>/post/2024/cross-platform-client-develop-choise/</link>

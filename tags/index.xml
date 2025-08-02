@@ -6,8 +6,22 @@
     <description>Recent content in Tags on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 14 Dec 2024 10:40:33 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 02 Aug 2025 09:47:17 +0800</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>/tags/ai/</link>
+      <pubDate>Sat, 02 Aug 2025 09:47:17 +0800</pubDate>
+      <guid>/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>匠人精神</title>
+      <link>/tags/%E5%8C%A0%E4%BA%BA%E7%B2%BE%E7%A5%9E/</link>
+      <pubDate>Sat, 02 Aug 2025 09:47:17 +0800</pubDate>
+      <guid>/tags/%E5%8C%A0%E4%BA%BA%E7%B2%BE%E7%A5%9E/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Dioxus</title>
       <link>/tags/dioxus/</link>

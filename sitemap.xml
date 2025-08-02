@@ -2,8 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/tags/ai/</loc>
+    <lastmod>2025-08-02T09:47:17+08:00</lastmod>
+  </url><url>
+    <loc>/post/2025/craftsmanship-in-the-ai-era/</loc>
+    <lastmod>2025-08-02T09:47:17+08:00</lastmod>
+  </url><url>
     <loc>/categories/</loc>
-    <lastmod>2024-12-14T10:40:33+08:00</lastmod>
+    <lastmod>2025-08-02T09:47:17+08:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2025-08-02T09:47:17+08:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2025-08-02T09:47:17+08:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2025-08-02T09:47:17+08:00</lastmod>
+  </url><url>
+    <loc>/tags/%E5%8C%A0%E4%BA%BA%E7%B2%BE%E7%A5%9E/</loc>
+    <lastmod>2025-08-02T09:47:17+08:00</lastmod>
+  </url><url>
+    <loc>/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/</loc>
+    <lastmod>2025-08-02T09:47:17+08:00</lastmod>
   </url><url>
     <loc>/tags/dioxus/</loc>
     <lastmod>2024-12-14T10:40:33+08:00</lastmod>
@@ -11,16 +32,7 @@
     <loc>/tags/flutter/</loc>
     <lastmod>2024-12-14T10:40:33+08:00</lastmod>
   </url><url>
-    <loc>/post/</loc>
-    <lastmod>2024-12-14T10:40:33+08:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2024-12-14T10:40:33+08:00</lastmod>
-  </url><url>
     <loc>/tags/tauri/</loc>
-    <lastmod>2024-12-14T10:40:33+08:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2024-12-14T10:40:33+08:00</lastmod>
   </url><url>
     <loc>/tags/%E5%AE%A2%E6%88%B7%E7%AB%AF/</loc>
@@ -129,9 +141,6 @@
     <lastmod>2022-12-15T05:12:37+00:00</lastmod>
   </url><url>
     <loc>/post/2022/da-qiao-wang-zhe-rong-yao-de-wang-zhe/</loc>
-    <lastmod>2022-12-15T05:12:37+00:00</lastmod>
-  </url><url>
-    <loc>/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/</loc>
     <lastmod>2022-12-15T05:12:37+00:00</lastmod>
   </url><url>
     <loc>/tags/%E6%89%8B%E6%B8%B8/</loc>
