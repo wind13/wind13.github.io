@@ -6,8 +6,15 @@
     <description>Recent content in 制约理论 on 世风十三学堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 12 Aug 2020 17:00:17 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 25 Aug 2025 22:57:23 +0800</lastBuildDate>
     <atom:link href="/tags/%E5%88%B6%E7%BA%A6%E7%90%86%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PC Win11 WSL Tips</title>
+      <link>/post/2025/pc-win11-wsl-tips/</link>
+      <pubDate>Mon, 25 Aug 2025 22:57:23 +0800</pubDate>
+      <guid>/post/2025/pc-win11-wsl-tips/</guid>
+      <description>关闭呼吸灯 Win11 睡眠功能挺方便的， 再次打开还可以保持在原来的电脑状态， 但是晚上关机到睡眠状态后， 总有个呼吸灯在一闪一闪， 当关了灯睡觉时， 就会觉得挺烦人， 网上有人回复各种各样， 有些挺搞笑的， 就是贴个胶布或者挡个东西什么的， 当然也可以， 但还是有点烦的， 心里也不舒服，毕竟好像要闪一天一夜什</description>
+    </item>
     <item>
       <title>先进管理思想建议方案</title>
       <link>/post/2020/manage-system/</link>

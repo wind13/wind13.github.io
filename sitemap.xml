@@ -2,28 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2025-08-25T22:57:23+08:00</lastmod>
+  </url><url>
+    <loc>/post/2025/pc-win11-wsl-tips/</loc>
+    <lastmod>2025-08-25T22:57:23+08:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2025-08-25T22:57:23+08:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2025-08-25T22:57:23+08:00</lastmod>
+  </url><url>
+    <loc>/tags/toc/</loc>
+    <lastmod>2025-08-25T22:57:23+08:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2025-08-25T22:57:23+08:00</lastmod>
+  </url><url>
+    <loc>/tags/%E5%88%B6%E7%BA%A6%E7%90%86%E8%AE%BA/</loc>
+    <lastmod>2025-08-25T22:57:23+08:00</lastmod>
+  </url><url>
+    <loc>/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/</loc>
+    <lastmod>2025-08-25T22:57:23+08:00</lastmod>
+  </url><url>
+    <loc>/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/</loc>
+    <lastmod>2025-08-25T22:57:23+08:00</lastmod>
+  </url><url>
+    <loc>/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</loc>
+    <lastmod>2025-08-25T22:57:23+08:00</lastmod>
+  </url><url>
+    <loc>/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/</loc>
+    <lastmod>2025-08-25T22:57:23+08:00</lastmod>
+  </url><url>
+    <loc>/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2025-08-25T22:57:23+08:00</lastmod>
+  </url><url>
+    <loc>/tags/%E7%93%B6%E9%A2%88/</loc>
+    <lastmod>2025-08-25T22:57:23+08:00</lastmod>
+  </url><url>
+    <loc>/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/</loc>
+    <lastmod>2025-08-25T22:57:23+08:00</lastmod>
+  </url><url>
+    <loc>/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
+    <lastmod>2025-08-25T22:57:23+08:00</lastmod>
+  </url><url>
+    <loc>/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2025-08-25T22:57:23+08:00</lastmod>
+  </url><url>
     <loc>/tags/ai/</loc>
     <lastmod>2025-08-02T09:47:17+08:00</lastmod>
   </url><url>
     <loc>/post/2025/craftsmanship-in-the-ai-era/</loc>
     <lastmod>2025-08-02T09:47:17+08:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2025-08-02T09:47:17+08:00</lastmod>
-  </url><url>
-    <loc>/post/</loc>
-    <lastmod>2025-08-02T09:47:17+08:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2025-08-02T09:47:17+08:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2025-08-02T09:47:17+08:00</lastmod>
-  </url><url>
     <loc>/tags/%E5%8C%A0%E4%BA%BA%E7%B2%BE%E7%A5%9E/</loc>
-    <lastmod>2025-08-02T09:47:17+08:00</lastmod>
-  </url><url>
-    <loc>/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/</loc>
     <lastmod>2025-08-02T09:47:17+08:00</lastmod>
   </url><url>
     <loc>/tags/dioxus/</loc>
@@ -41,19 +74,10 @@
     <loc>/tags/%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B/</loc>
     <lastmod>2024-12-14T10:40:33+08:00</lastmod>
   </url><url>
-    <loc>/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2024-12-14T10:40:33+08:00</lastmod>
-  </url><url>
-    <loc>/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
-    <lastmod>2024-12-14T10:40:33+08:00</lastmod>
-  </url><url>
     <loc>/tags/%E8%B7%A8%E5%B9%B3%E5%8F%B0/</loc>
     <lastmod>2024-12-14T10:40:33+08:00</lastmod>
   </url><url>
     <loc>/post/2024/cross-platform-client-develop-choise/</loc>
-    <lastmod>2024-12-14T10:40:33+08:00</lastmod>
-  </url><url>
-    <loc>/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2024-12-14T10:40:33+08:00</lastmod>
   </url><url>
     <loc>/tags/acreom/</loc>
@@ -84,9 +108,6 @@
     <lastmod>2024-12-05T22:25:25+08:00</lastmod>
   </url><url>
     <loc>/post/2024/how-to-publish-doc-by-wx-api/</loc>
-    <lastmod>2024-12-05T22:25:25+08:00</lastmod>
-  </url><url>
-    <loc>/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/</loc>
     <lastmod>2024-12-05T22:25:25+08:00</lastmod>
   </url><url>
     <loc>/tags/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/</loc>
@@ -266,16 +287,10 @@
     <loc>/tags/kpi/</loc>
     <lastmod>2022-02-06T04:47:11+00:00</lastmod>
   </url><url>
-    <loc>/tags/toc/</loc>
-    <lastmod>2022-02-06T04:47:11+00:00</lastmod>
-  </url><url>
     <loc>/post/2022/develop-team-problem/</loc>
     <lastmod>2022-02-06T04:47:11+00:00</lastmod>
   </url><url>
     <loc>/tags/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2022-02-06T04:47:11+00:00</lastmod>
-  </url><url>
-    <loc>/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/</loc>
     <lastmod>2022-02-06T04:47:11+00:00</lastmod>
   </url><url>
     <loc>/tags/canvas-app/</loc>
@@ -659,12 +674,6 @@
     <loc>/post/2020/manage-system/</loc>
     <lastmod>2020-08-12T17:00:17+08:00</lastmod>
   </url><url>
-    <loc>/tags/%E5%88%B6%E7%BA%A6%E7%90%86%E8%AE%BA/</loc>
-    <lastmod>2020-08-12T17:00:17+08:00</lastmod>
-  </url><url>
-    <loc>/tags/%E7%93%B6%E9%A2%88/</loc>
-    <lastmod>2020-08-12T17:00:17+08:00</lastmod>
-  </url><url>
     <loc>/tags/%E4%BA%BA%E6%9C%88%E7%A5%9E%E8%AF%9D/</loc>
     <lastmod>2020-08-09T18:30:17+08:00</lastmod>
   </url><url>
@@ -856,12 +865,6 @@
   </url><url>
     <loc>/tags/%E8%B0%B7%E6%AD%8C/</loc>
     <lastmod>2020-05-30T11:56:22+08:00</lastmod>
-  </url><url>
-    <loc>/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/</loc>
-    <lastmod>2020-05-24T11:25:06+08:00</lastmod>
-  </url><url>
-    <loc>/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</loc>
-    <lastmod>2020-05-24T11:25:06+08:00</lastmod>
   </url><url>
     <loc>/post/2020/business-optimize/</loc>
     <lastmod>2020-05-24T11:25:06+08:00</lastmod>
