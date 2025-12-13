@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>修心 on 世风十三学堂</title>
+    <link>//localhost:1313/tags/%E4%BF%AE%E5%BF%83/</link>
+    <description>Recent content in 修心 on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 31 Jul 2025 20:57:32 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/%E4%BF%AE%E5%BF%83/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>正念修心，极限编程，随笔 01 Cultivate Mindfulness Extreme Programming Essay 01</title>
+      <link>//localhost:1313/post/2025/cultivate-mindfulness-extreme-programming-essay-01/</link>
+      <pubDate>Thu, 31 Jul 2025 20:57:32 +0800</pubDate>
+      <guid>//localhost:1313/post/2025/cultivate-mindfulness-extreme-programming-essay-01/</guid>
+      <description>随笔前言 想到哪儿，记到哪儿，讲到哪儿 纯个人分享，仅供参考，有不同见解可以保留，呵呵…… 从程序员角度看软件项目管理 What is the problems? 问题是什么？ 团队成员感觉工作多，压力大 开发和测试协作不好 开发和需求协作不好 进度不能保证 有很多 bug 和问题 越开发越难继续 越到后期效率越低 领导层不懂技术， 不理解开发团队</description>
+    </item>
+  </channel>
+</rss>
