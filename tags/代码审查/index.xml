@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>代码审查 on 世风十三学堂</title>
+    <link>/tags/%E4%BB%A3%E7%A0%81%E5%AE%A1%E6%9F%A5/</link>
+    <description>Recent content in 代码审查 on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 13 Dec 2025 10:20:12 +0800</lastBuildDate>
+    <atom:link href="/tags/%E4%BB%A3%E7%A0%81%E5%AE%A1%E6%9F%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code Review Game Rule 代码审查游戏规则</title>
+      <link>/post/2025/code-review-game-rule/</link>
+      <pubDate>Sat, 13 Dec 2025 10:20:12 +0800</pubDate>
+      <guid>/post/2025/code-review-game-rule/</guid>
+      <description>10 前言 代码审查目前可谓是开发流程中唯一的一个人工检查环节（XP 中的结对编程是另一个），对代码质量的保证非常重要，然而现实是很多开发团队的代码审查实际上只是扫一眼（几秒钟），就会点 Approve 合并代码了，完全没有达到代码审查的重要目的。 主要存在的心态如下： 提 PR 的开发人员急于通过审查， 这样可以</description>
+    </item>
+  </channel>
+</rss>
