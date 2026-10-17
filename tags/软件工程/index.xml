@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>软件工程 on 世风十三学堂</title>
+    <link>/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</link>
+    <description>Recent content in 软件工程 on 世风十三学堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 17 Oct 2026 14:21:46 +0800</lastBuildDate>
+    <atom:link href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Human Measure</title>
+      <link>/post/2026/the-human-measure/</link>
+      <pubDate>Sat, 17 Oct 2026 14:21:46 +0800</pubDate>
+      <guid>/post/2026/the-human-measure/</guid>
+      <description>人是尺度：AI 时代软件工程中不可让渡之物 摘要：AI 编程正以令人眩晕的速度普及，但来自 METR、DORA、GitClear、斯坦福大学和多家大型企业的实证数据，呈现出一个与营销叙事不同的模式：AI 显著降低了&amp;quot;写出代码&amp;quot;的成本，却没有、也不可能降低&amp;quot;对系</description>
+    </item>
+  </channel>
+</rss>

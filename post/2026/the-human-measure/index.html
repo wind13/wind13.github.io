@@ -1,0 +1,1356 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Human Measure | 世风十三学堂</title>
+    <meta property="og:title" content="The Human Measure - 世风十三学堂">
+    <meta property="og:type" content="article">
+
+<meta property="article:published_time" content='2026-10-17T14:21:46&#43;08:00'>
+
+
+<meta property="article:modified_time" content='2026-10-17T14:21:46&#43;08:00'>
+
+    <meta name="Keywords" content="Programing">
+    <meta name="description" content="The Human Measure">
+        
+    <meta name="author" content="世风十三">
+    <meta property="og:url" content="/post/2026/the-human-measure/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <meta name="MediaType" content="application/octet-stream">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="/kityminder/mindmap.css?_=1416390706100" type="text/css" rel="stylesheet" />
+    <link href="/kityminder/kityminder.core.css?_=1416390706100" type="text/css" rel="stylesheet" />
+    <script src="/kityminder/kity.min.js?_=1416390706100" charset="utf-8"></script>
+    <script src="/kityminder/kityminder.core.min.js?_=1416390706100" charset="utf-8"></script>
+    <script src="/kityminder/mindmap.min.js?_=1416390706100" charset="utf-8"></script>
+
+    
+
+
+    
+    
+</head>
+
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="/">
+                        世风十三学堂
+                    </a>
+                
+                <p class="description">终身成长、正念编程的全栈架构师，TDD极限敏捷教练咨询师，企业长期增长咨询师</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="/">首页</a>
+                    
+                    <a  href="/page/recommend/" title="推荐">推荐</a>
+                    
+                    <a  href="/page/painting/" title="绘画">绘画</a>
+                    
+                    <a  href="/archives/" title="归档">归档</a>
+                    
+                    <a  href="/page/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">The Human Measure</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2026年10月17日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83'>感受与思考</a></span>
+            
+            <span class="meta-category"><a href='/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5'>管理与战略</a></span>
+            
+        </div>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="post-content">
+            <h1 id="人是尺度ai-时代软件工程中不可让渡之物">人是尺度：AI 时代软件工程中不可让渡之物</h1>
+<blockquote>
+<p><strong>摘要</strong>：AI 编程正以令人眩晕的速度普及，但来自 METR、DORA、GitClear、斯坦福大学和多家大型企业的实证数据，呈现出一个与营销叙事不同的模式：AI 显著降低了&quot;写出代码&quot;的成本，却没有、也不可能降低&quot;对系统负责&quot;的成本。本文从 1969 年阿波罗 11 号的一次警报讲起，用软件工程史上的经典事故与抽象跃迁说明：<strong>品味、抽象、责任与灵感</strong>这四样东西，在结构上无法外包给概率模型；并逐一回应&quot;只留高级工程师 + AI&quot;&ldquo;代码以后不用人读&quot;等流行说法，最后给出一条在成熟工程实践之上稳健演进的路线。本文不是反 AI 的宣言，而是一份清醒使用 AI 的建议书。</p>
+</blockquote>
+<h2 id="一引子月亮上方的-1202-警报">一、引子：月亮上方的 1202 警报</h2>
+<p>1969 年 7 月 20 日，登月舱&quot;鹰&quot;号正在向月面下降。距离月面只剩几千英尺时，制导计算机突然连续报警：1202、1201——执行区溢出，计算机算不过来了。休斯敦任务控制中心一片寂静。26 岁的制导员 Steve Bales 盯着数据，几秒后回答：&ldquo;继续。&rdquo;</p>
+<p>计算机没有死机。它自动丢弃低优先级任务，把资源集中到制导、导航和姿态控制上，然后重启自己。这套容错机制，是 <a href="https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)">Margaret Hamilton</a> 带领的软件团队在事故发生前好几年，就一行一行设计进系统里的——他们想象过一个当时没有人见过的故障场景，并提前写好了对策。</p>
+<p>那是人类第一次让飞船在另一个天体上着陆。救场的不是机器的临场发挥，而是人在多年前的一次判断：<strong>当资源耗尽时，什么最重要。</strong></p>
+<p>半个多世纪后，当我们争论 AI 能替程序员写多少代码时，这个故事仍然是最好的坐标系：决定软件系统命运的，从来不是写字的速度，而是判断、品味和责任。</p>
+<h2 id="二一场猝不及防的狂热">二、一场猝不及防的狂热</h2>
+<p>先承认事实：这一轮变化是真实的。</p>
+<ul>
+<li>Google 2025 年 DORA 报告显示，约 <strong>90% 的开发者已在工作中使用 AI</strong>，每天使用时长的中位数达到 2 小时，约占工作日的四分之一；</li>
+<li>&ldquo;氛围编程&rdquo;（vibe coding）成了柯林斯词典 2025 年度词汇；</li>
+<li>科技公司高管们公开讨论&quot;初级工程师岗位是否还会存在&rdquo;，一些团队把&quot;AI 转型&quot;直接变成了裁员的同义词。</li>
+</ul>
+<p>这种速度让大量团队猝不及防。领导层急于跟上，于是跳过了软件工程最古老的纪律：先理解问题，再改变方法。很多团队不是&quot;采用了一个新工具&quot;，而是在没有任何防护的情况下，改变了代码的生产方式。</p>
+<h2 id="三数据泼下来的几盆冷水">三、数据泼下来的几盆冷水</h2>
+<p>狂热需要对照数据。以下几项研究，方法和立场各不相同，拼在一起却出现了同一个形状。</p>
+<p><strong>1. METR：资深开发者用 AI 反而慢了 19%，却以为自己快了 20%。</strong>
+2025 年，研究机构 METR 做了一项随机对照试验：16 名资深开源开发者，在自己平均深耕了 5 年的成熟项目上完成 246 个真实任务，每个任务随机决定是否允许使用 AI。结果出人意料：<a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/">允许用 AI 的任务多花了 19% 的时间</a>。更值得玩味的是认知偏差——他们事前预期能快 24%，事后仍坚信自己快了约 20%。人在&quot;速度感&quot;上骗自己，比想象中容易。</p>
+<p><strong>2. 三家大公司 4,867 人的试验：收益几乎全在新人一边。</strong>
+MIT 与微软、埃森哲等合作的 RCT（2025 年 2 月工作论文）覆盖近 5,000 名开发者：使用 Copilot 使完成任务数平均提升约 26%，但<a href="https://economics.mit.edu/sites/default/files/inline-files/draft_copilot_experiments.pdf">增益主要来自新入职者和初级岗位，资深开发者没有显著变化</a>。这个结论和客服领域的著名研究一致：AI 是新手的脚手架，不是老手的替身。它拉平了下限，没有抬高上限。</p>
+<p><strong>3. DORA：吞吐在涨，不稳定也在涨。</strong>
+2024 年 DORA 报告曾发现 AI 采用率提高 25%，伴随着交付吞吐下降 1.5%、稳定性下降 7.2%；<a href="https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report">2025 年报告</a>显示吞吐指标翻正了，但<strong>交付不稳定性仍在同步上升</strong>——约 30% 的开发者明确表示不信任 AI 生成的代码。原因并不神秘：生成太快，批量变大，评审和系统消化跟不上。详见 DORA 的专题分析 <a href="https://dora.dev/insights/balancing-ai-tensions/">Balancing AI tensions</a>。</p>
+<p><strong>4. GitClear：代码库正在进入&quot;只写模式&quot;。</strong>
+GitClear 分析了 2023–2026 年间 6.23 亿次代码变更，发现维护性指标全线恶化（<a href="https://www.gitclear.com/write_only_mode_ai_research">Write-Only Mode, 2026</a>）：</p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>重构（代码移动）占比</td>
+<td>21%（2022）→ 3.8%（2026），崩塌约 70%</td>
+</tr>
+<tr>
+<td>复制粘贴占比</td>
+<td>9.4%（2022）→ 15.7%（2026 上半年）</td>
+</tr>
+<tr>
+<td>重复代码块密度</td>
+<td>较 2023 年 <strong>+81%</strong>，创历史新高</td>
+</tr>
+<tr>
+<td>一年以上旧代码的更新占比</td>
+<td><strong>下降 74%</strong>（1.7% → 0.46%）</td>
+</tr>
+<tr>
+<td>新代码与既有函数的连接度</td>
+<td>下降 35%</td>
+</tr>
+</tbody>
+</table>
+<p>换句话说：加代码变成了一次击键，而理解、合并、整理旧系统的工作正在消失。代码库不断向外长出&quot;全新的 v1 功能&quot;，老地层却在钙化。</p>
+<p><strong>5. 安全：更不安全的代码，配上更强的安全感。</strong>
+2021 年的研究 <a href="https://safeguard.sh/resources/blog/how-copilot-amplifies-insecure-codebases">Asleep at the Keyboard?</a> 发现 Copilot 在 89 个安全相关场景中生成的程序约 40% 含可利用漏洞；2023 年斯坦福 CCS 论文进一步发现，使用 AI 助手的开发者在 5 个任务里有 4 个写出了<strong>更不安全</strong>的代码，却更加相信自己的代码是安全的。错误不会单独出现，它总是和自信一起来。</p>
+<p><strong>6. 市场自己的回调：Klarna。</strong>
+2024 年，瑞典金融科技公司 Klarna 高调宣布其 AI 客服抵得上 700 名员工。2025 年 5 月 8 日，CEO Sebastian Siemiatkowski 对彭博社承认&quot;走得太远了&quot;：<a href="https://geekycodes.in/blog/klarna-said-its-ai-did-the-work-of-700-people-then-it-started-hiring-humans-again/">质量下降、复杂问题处理不了，公司重新招聘人工客服</a>。他说，过度把成本当成唯一标尺，会损伤品牌与信任。</p>
+<p><strong>7. 连&quot;氛围编程&quot;的发明者本人都留了注脚。</strong>
+Andrej Karpathy 2025 年 2 月创造 vibe coding 一词时，明确说它适用于&quot;一次性的周末项目&quot;，并自嘲&quot;有时 LLM 修不好一个 bug，我就绕过去，或者随机要求改动直到它消失&quot;。<a href="https://devpages.io/blog/vibe-coding-ai-development-explained">这个限定条件在传播中被普遍忽略了</a>。</p>
+<p>把这些证据放在一起，模式非常清楚：<strong>在上下文小、边界清晰、可丢弃的任务上，AI 收益巨大；在需要全局理解、长期维护、权衡取舍的真实系统上，净收益迅速递减，而风险以复利累积。</strong> 感觉自己变快，和系统真的变好，是两件事。</p>
+<h2 id="四为什么银弹永远不存在">四、为什么银弹永远不存在</h2>
+<p>1986 年，Fred Brooks 在 <a href="https://en.wikipedia.org/wiki/No_Silver_Bullet">No Silver Bullet</a> 中把软件的复杂度分成两种：</p>
+<ul>
+<li><strong>偶然复杂度</strong>（accidental complexity）：表达方式带来的麻烦——样板、语法、胶水代码；</li>
+<li><strong>本质复杂度</strong>（essential complexity）：问题本身的复杂——业务规则、用户心智、并发、失败模式、利益权衡。</li>
+</ul>
+<p>AI 空前擅长消除偶然复杂度，但它对本质复杂度无能为力，因为本质复杂度来自现实世界，不来自代码。更微妙的是：AI 生成的海量新代码，本身又在<strong>制造新的偶然复杂度</strong>——更多体积、更多重复、更多无人理解的分支。</p>
+<p>Brooks 在《人月神话》里还讲过另一条定律：向延期项目加人只会让它更晚。今天这句话的新版本是：<strong>向项目里灌入 AI 生成的代码，并不能增加理解，只会增加需要被评审、集成和维护的表面积。</strong> 软件工程追求的概念完整性（conceptual integrity）——让一个系统看起来像由一个头脑设计——在更多产出面前反而更难维护。</p>
+<p>还有一个常被遗忘的常识：<strong>代码是负债，不是资产。</strong> 它在运行时提供价值，在其余所有时间里制造成本。优秀工程师的很多功夫花在删除代码、让特例消失上。AI 被优化的目标是&quot;生产代码的成本&quot;，而工程师要优化的是&quot;拥有代码的成本&quot;。这两个目标，方向并不总是相同。</p>
+<h2 id="五人不可让渡的四样东西">五、人不可让渡的四样东西</h2>
+<h3 id="51-品味taste让特例消失的能力">5.1 品味（Taste）：让特例消失的能力</h3>
+<p>2016 年，Linus Torvalds 在 <a href="https://www.ted.com/talks/linus_torvalds_the_mind_behind_linux">TED 访谈</a>中用一段链表删除代码讲什么叫&quot;好品味&quot;。</p>
+<p>平庸的版本会把&quot;删除头节点&quot;当成特殊情况：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (entry <span style="color:#f92672">==</span> list<span style="color:#f92672">-&gt;</span>head) {
+</span></span><span style="display:flex;"><span>    list<span style="color:#f92672">-&gt;</span>head <span style="color:#f92672">=</span> entry<span style="color:#f92672">-&gt;</span>next;      <span style="color:#75715e">// 特殊情况
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    prev<span style="color:#f92672">-&gt;</span>next <span style="color:#f92672">=</span> entry<span style="color:#f92672">-&gt;</span>next;      <span style="color:#75715e">// 普通情况
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>有品味的版本用一个&quot;指向指针的指针&quot;遍历，于是头节点不再特殊：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">remove_entry</span>(Node <span style="color:#f92672">**</span>indirect, Node <span style="color:#f92672">*</span>entry) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> (<span style="color:#f92672">*</span>indirect <span style="color:#f92672">!=</span> entry) indirect <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>(<span style="color:#f92672">*</span>indirect)<span style="color:#f92672">-&gt;</span>next;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">*</span>indirect <span style="color:#f92672">=</span> entry<span style="color:#f92672">-&gt;</span>next;       <span style="color:#75715e">// 没有任何特殊情况
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>行数的差异不是重点。重点是：边界情况从来不内生于问题，它只是<strong>对问题的表示方式</strong>的产物。换一种数据结构，整类特例就蒸发了。Linus 说，好品味就是&quot;换个角度重写问题，让特殊情况变回普通情况&quot;。</p>
+<p>这种&quot;让特例消失&quot;的判断，不只出现在内核代码里。下面三个日常例子，几乎每个团队的评审中都能遇到。</p>
+<p><strong>例 1：箭头型嵌套 vs 卫语句。</strong> 左边是 AI 补全最爱产出的形状——它&quot;正确&quot;，但读者的视线要一路向右缩进，每个返回值都要和嵌套层级绑定：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 平庸：正常路径被层层包裹，&#34;未知&#34;这个答案散落三处</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_city</span>(user):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> user <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> user<span style="color:#f92672">.</span>address <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> user<span style="color:#f92672">.</span>address<span style="color:#f92672">.</span>city <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> user<span style="color:#f92672">.</span>address<span style="color:#f92672">.</span>city
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;未知&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;未知&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;未知&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 有品味：先排除异常，正常路径只剩一条直线，且只有一个出口返回真实值</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_city</span>(user):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> user <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">or</span> user<span style="color:#f92672">.</span>address <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;未知&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> user<span style="color:#f92672">.</span>address<span style="color:#f92672">.</span>city <span style="color:#f92672">or</span> <span style="color:#e6db74">&#34;未知&#34;</span>
+</span></span></code></pre></div><p><strong>例 2：去重——又是&quot;换表示&quot;。</strong> 先用列表 membership 写一版 O(n²) 的，看起来天经地义；换一个数据结构，查找从线性扫描变成常数时间，循环本身也整个消失了：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 平庸：用错了容器，于是不得不用循环补偿</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">distinct</span>(items):
+</span></span><span style="display:flex;"><span>    out <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> items:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> x <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> out:      <span style="color:#75715e"># 每一次 in 都是一次线性扫描</span>
+</span></span><span style="display:flex;"><span>            out<span style="color:#f92672">.</span>append(x)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> out
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 有品味：去重是集合的定义，直接说出意图</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">distinct</span>(items):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> list(set(items))  <span style="color:#75715e"># 无需保序时；需保序可用 dict.fromkeys</span>
+</span></span></code></pre></div><p><strong>例 3：类型码 + if 链 vs 多态。</strong> 区别不在行数，而在&quot;将来新增一种图形时，要改几个地方、可能漏改几处&quot;：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 平庸：每加一种图形，都要回来修改 area()——以及所有其他按 type 分支的函数</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">area</span>(shape):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> shape[<span style="color:#e6db74">&#34;type&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;circle&#34;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> pi <span style="color:#f92672">*</span> shape[<span style="color:#e6db74">&#34;r&#34;</span>] <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> shape[<span style="color:#e6db74">&#34;type&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;rect&#34;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> shape[<span style="color:#e6db74">&#34;w&#34;</span>] <span style="color:#f92672">*</span> shape[<span style="color:#e6db74">&#34;h&#34;</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(shape[<span style="color:#e6db74">&#34;type&#34;</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 有品味：把行为放回数据自身，area() 对未来的新图形保持封闭</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Circle</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">area</span>(self): <span style="color:#66d9ef">return</span> pi <span style="color:#f92672">*</span> self<span style="color:#f92672">.</span>r <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Rect</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">area</span>(self): <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>w <span style="color:#f92672">*</span> self<span style="color:#f92672">.</span>h
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">area</span>(shape):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> shape<span style="color:#f92672">.</span>area()
+</span></span></code></pre></div><p>这里要补一句体现品味之&quot;难&quot;的注脚：多态不是永远正确的答案。如果图形种类稳定、而变化的方向是&quot;不断增加新操作&quot;（周长、序列化、碰撞检测……），那么 Rust 式的枚举加 <code>match</code> 反而是更优的表示——编译器还会在你漏处理一个分支时直接报错。<strong>品味不是背诵某条设计模式，而是判断&quot;变化将沿哪个方向发生&quot;，让数据结构与变化方向对齐。</strong> 这个判断需要理解业务的演化趋势，训练语料里没有答案。</p>
+<p>这种能力的背后是审美。Donald Knuth 在 1974 年图灵奖演讲《计算机程序设计作为艺术》中说：编程是一门艺术，因为它需要技巧与独创，尤其因为<strong>它产生美的对象</strong>。圣埃克苏佩里也有一句被工程师反复引用的话：&ldquo;完美，不是在没有什么可以增加时达到的，而是在没有什么可以删减时达到的。&rdquo;</p>
+<p>为什么这恰恰是 AI 的结构性短板？因为大语言模型的工作机制，是在训练分布上采样&quot;最可能出现的下一段文本&quot;——它被设计成写出<strong>平均水平的、看起来像那么回事的</strong>代码。而品味的本质，是对平均数的偏离：大多数人会写 <code>if</code>，少数人会回去换数据结构。模型可以模仿风格的统计特征，但它没有立场、没有不适感，不会在丑陋面前坐立不安，不会在洗澡时突然想去重构。</p>
+<p>值得深思的是：<strong>幻觉和平庸代码是同一个机制的两个出口。</strong> &ldquo;流畅&quot;既不等于&quot;正确&rdquo;，也不等于&quot;美&quot;。AI 从不为丑陋付出代价，所以它不学会厌恶丑陋。</p>
+<h3 id="52-抽象的跃升让一整类问题消失">5.2 抽象的跃升：让一整类问题消失</h3>
+<p>比写好代码更稀缺的能力，是抬高整个系统的抽象层次。回看软件工程史，每一次真正的跃迁，都是某个人（通常是一小群人）在看清反复出现的痛点后，提出了一个让整类问题不再存在的模型：</p>
+<ul>
+<li>1958 年，John McCarthy 设计 Lisp：代码即数据、垃圾回收、用一个 <code>eval</code> 统一起一切——60 多年后仍在滋养着语言设计；</li>
+<li>Dahl 与 Nygaard 的 Simula 引入对象；Alan Kay 在 Smalltalk 中把它推进为面向对象与个人计算的愿景；</li>
+<li>Ken Thompson、Dennis Ritchie 与 Doug McIlroy 的 Unix 管道哲学：&ldquo;写只做一件事、并把它做好的程序&rdquo;；</li>
+<li>1970 年，Edgar Codd 用关系代数重新定义数据，让程序员不必再手工导航存储结构；</li>
+<li>Tim Berners-Lee 用 URL + HTTP + HTML 统一了文档的互联；</li>
+<li>2005 年，Linus Torvalds 大约十天写出 Git，用内容寻址的对象模型让分布式版本控制里的一整类冲突消失；</li>
+<li>MapReduce、Rails 的&quot;约定优于配置&quot;、React 的&quot;界面是状态的函数&quot;、Docker 的集装箱式隔离……</li>
+</ul>
+<p>这些跃迁有一个共同结构：它们不是在现有代码上&quot;再生成一段&quot;，而是退后一步说，<strong>&ldquo;这一整类问题根本不应该存在。&rdquo;</strong></p>
+<p>同样的结构缩小到日常代码里也成立。先看小处：&ldquo;计算所有偶数的平方和&rdquo;——</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 在低层抽象里手写循环：读者要在脑中模拟累加器的状态变化</span>
+</span></span><span style="display:flex;"><span>total <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> n <span style="color:#f92672">in</span> numbers:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> n <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>        total <span style="color:#f92672">+=</span> n <span style="color:#f92672">*</span> n
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 抬高一层：过滤、变换、归并各归其位，代码读起来就是需求本身</span>
+</span></span><span style="display:flex;"><span>total <span style="color:#f92672">=</span> sum(n <span style="color:#f92672">*</span> n <span style="color:#66d9ef">for</span> n <span style="color:#f92672">in</span> numbers <span style="color:#66d9ef">if</span> n <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>)
+</span></span></code></pre></div><p>再看一个真实评审场景。给 AI 三个需求——&ldquo;把订单、发票、客户全部翻页拉下来&rdquo;，它往往会忠实地生成三个函数，happy path 全部能跑：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># AI 的典型产出：每个资源一份，结构几乎相同——它在响应三次请求，而不是在看一个系统</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fetch_orders</span>(client):
+</span></span><span style="display:flex;"><span>    results, page <span style="color:#f92672">=</span> [], <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>        batch <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;/orders&#34;</span>, params<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;page&#34;</span>: page})<span style="color:#f92672">.</span>json()
+</span></span><span style="display:flex;"><span>        results<span style="color:#f92672">.</span>extend(batch[<span style="color:#e6db74">&#34;items&#34;</span>])
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> page <span style="color:#f92672">&gt;=</span> batch[<span style="color:#e6db74">&#34;total_pages&#34;</span>]:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>        page <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> results
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fetch_invoices</span>(client):
+</span></span><span style="display:flex;"><span>    results, page <span style="color:#f92672">=</span> [], <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>        batch <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;/invoices&#34;</span>, params<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;page&#34;</span>: page})<span style="color:#f92672">.</span>json()
+</span></span><span style="display:flex;"><span>        results<span style="color:#f92672">.</span>extend(batch[<span style="color:#e6db74">&#34;items&#34;</span>])
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> page <span style="color:#f92672">&gt;=</span> batch[<span style="color:#e6db74">&#34;total_pages&#34;</span>]:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>        page <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> results
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># fetch_customers(client) ——第三个一模一样的副本，通常出现在另一个文件里</span>
+</span></span></code></pre></div><p>有经验的工程师读到第二个函数就会坐直：<strong>这里存在两个东西，而不是三个——&ldquo;分页遍历协议&quot;和&quot;一个路径参数&rdquo;。</strong> 于是抽象一层：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 人看见的东西：一个生成器把翻页协议封装一次，之后新增资源只是一行声明</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">iter_pages</span>(client, path):
+</span></span><span style="display:flex;"><span>    page <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>        batch <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>get(path, params<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;page&#34;</span>: page})<span style="color:#f92672">.</span>json()
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">yield from</span> batch[<span style="color:#e6db74">&#34;items&#34;</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> page <span style="color:#f92672">&gt;=</span> batch[<span style="color:#e6db74">&#34;total_pages&#34;</span>]:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>        page <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fetch_orders</span>(client):   <span style="color:#66d9ef">return</span> list(iter_pages(client, <span style="color:#e6db74">&#34;/orders&#34;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fetch_invoices</span>(client): <span style="color:#66d9ef">return</span> list(iter_pages(client, <span style="color:#e6db74">&#34;/invoices&#34;</span>))
+</span></span></code></pre></div><p>差别要到第三年才显现：当 API 改成游标分页、要加限流重试、或者某一页返回 500 时，右边改一处，左边要在三个（实际项目里可能是三十个）副本里逐一打捞——而且总有副本藏在没人读的目录中。这正是 GitClear 数据里的世界：复制粘贴 +41%、重复代码块 +81%、重构 -70%。</p>
+<p>需要说句公道话：<strong>AI 不是写不出第二个版本——如果你明确要求&quot;抽象成一个分页迭代器&quot;，它写得很好。它缺的是在无人提示时&quot;看见第二个和第一个是同一件事&quot;的那一下皱眉。</strong> 识别重复、给重复命名、决定值不值得抽象，这组动作依赖对整个代码库演化方向的感觉，而这恰恰是站在范式之外的人才站得住的位置。</p>
+<p>AI 始终站在当前抽象层的内部工作——它在给定范式内插值。而抬高范式本身，需要一个既持有全局上下文、又被痛点持续折磨、还愿意为简洁放弃便利的人。Rich Hickey 在经典演讲 <a href="https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/SimpleMadeEasy.md">Simple Made Easy</a> 中区分过：&ldquo;easy&quot;是手边顺手，&ldquo;simple&quot;是不纠缠（uncomplected）；AI 极其擅长让事情变得 easy，但选择 simple 需要人的判断力。</p>
+<p>这也解释了那些传奇的杠杆：WhatsApp 被收购时约 55 名员工服务着 4.5 亿用户；Instagram 被收购时只有十几名员工、数千万用户。他们的杠杆不是代码产量，而是<strong>抽象、克制和品味</strong>——用更少、更好的结构承担更大的世界。</p>
+<h3 id="53-责任凌晨三点谁接电话">5.3 责任：凌晨三点谁接电话</h3>
+<p>品味可以讨论，责任无法分摊。软件工程史用最惨痛的事故反复教这一课：</p>
+<ul>
+<li><strong>Therac-25 辐射治疗仪（1985–1987）</strong>：一个竞态条件导致至少 3 名患者死亡、多人重伤。机器移除了硬件联锁，盲目相信软件，而相关代码没有经过独立评审。</li>
+<li><strong>阿丽亚娜 5 型火箭 501 次飞行（1996）</strong>：起飞 37 秒后自毁，约 3.7 亿美元化为火球。根因是一段从阿丽亚娜 4 型复用的代码把 64 位浮点速度值塞进 16 位整数，溢出后异常处理同时关闭了两套惯导系统。代码在旧环境里是对的，但它携带的假设没有人重新追问。</li>
+<li><strong>Knight Capital（2012）</strong>：一次部署失误激活了废弃代码，45 分钟亏损约 4.4 亿美元。</li>
+</ul>
+<p>这些事故的共同点不是&quot;没人写代码&rdquo;，而是<strong>没有人对&quot;代码在真实世界意味着什么&quot;负全责</strong>。</p>
+<p>这种疏忽在日常代码里有一个微型标本——缓存的&quot;先检查再操作&rdquo;：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// 单看每一行都&#34;合理&#34;，测试也通常是绿的——因为测试很少制造并发</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>cache.<span style="color:#a6e22e">containsKey</span>(key)) {
+</span></span><span style="display:flex;"><span>    cache.<span style="color:#a6e22e">put</span>(key, loadFromDb(key));  <span style="color:#75715e">// 10 个线程同时 miss：10 次打库、互相覆盖</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> cache.<span style="color:#a6e22e">get</span>(key);
+</span></span></code></pre></div><p>这是 AI 最容易流畅产出的形状：它根据&quot;最可能的下一行&quot;补全，而 happy path 里确实没有问题。但在真实流量下，这段代码意味着缓存击穿、数据库被瞬时打满，最坏情况下返回一个被覆盖到一半的对象。看见这个风险不需要更聪明的模型，需要的是<strong>在脑子里运行系统的能力</strong>——想象十个线程同时到达，想象凌晨两点的流量洪峰。修法同样是把&quot;检查—加载—放入&quot;这组复合动作变成一个原子概念：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// ConcurrentHashMap 保证：对同一个 key，加载函数在映射层面只执行一次</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> cache.<span style="color:#a6e22e">computeIfAbsent</span>(key, <span style="color:#66d9ef">this</span>::loadFromDb);
+</span></span></code></pre></div><p>一行对一行，字符数差不多，但右边有人为并发世界负了责。Therac-25 和阿丽亚娜 5 离日常很远，&ldquo;先检查再操作&quot;离日常很近——它们是同一种思维方式的不同结局。</p>
+<p>AI 时代，责任的边界正在被刻意模糊，但社会接口并不买账：2024 年加拿大不列颠哥伦比亚省民事仲裁庭裁定，加拿大航空必须为其聊天机器人给出的错误退票政策赔偿旅客——航司辩称&quot;那是一个独立的法律实体在说话&rdquo;，被驳回。2023 年，美国律师 Steven Schwartz 因引用 ChatGPT 编造的六个不存在的判例，被处以罚款并公开训诫。法庭和事故调查不接受&quot;是 AI 干的&quot;这个答案。</p>
+<p><strong>责任是人类社会的系统接口，你无法把它委托给下一个 token。</strong> 鉴权、支付、医疗、飞行控制、数据迁移——凡是错误会伤害真实人生的地方，每一行代码都必须有一个愿意在凌晨三点接电话的人。</p>
+<h3 id="54-灵感跨领域的带着痛感的连接">5.4 灵感：跨领域的、带着痛感的连接</h3>
+<p>Hamilton 当年在 NASA 不得不发明一整套做软件的方法，&ldquo;软件工程&quot;这个词最初甚至是她们半开玩笑造出来的；Alan Kay 在儿童与 Seymour Papert 的 LOGO 实验中看见了个人电脑的未来；Douglas Engelbart 从&quot;增强人类智力&quot;的宏大命题出发，最终拿出了鼠标和超文本。米开朗基罗说，他只是看见大理石中的天使，然后一路雕琢，直到把它释放出来。</p>
+<p>灵感不是凭空的联想，而是<strong>带着身体经验和切身之痛的跨域连接</strong>。它要求一个人长期与问题共处，在乎它，被它折磨。AI 可以重新组合人类写过的一切，但它没有 stakes——它不会为一个设计失眠，不会在评审会上被反对而脸红，也不会因为系统宕机而内疚。没有痛感，就没有真正的创造冲动。</p>
+<p>还有一层更隐蔽的风险：<strong>思想的单一作物</strong>。当所有人都向同一个神谕提问，答案会趋同，缺陷也会相关。农业史上，单一品种的规模化种植曾让爱尔兰在 1845 年的土豆晚疫病中，于数年间因死亡和迁徙损失约四分之一人口。当全行业的代码都从少数几个模型中采样，我们第一次可能拥有&quot;相关系数接近 1 的代码缺陷组合&rdquo;——同一个模型特有的盲点，会同时出现在成千上万个系统里。多样性本身，就是工程韧性的来源。</p>
+<h2 id="六两个驾驶舱为什么不能只留机长">六、两个驾驶舱：为什么不能只留机长</h2>
+<p>2009 年 6 月 1 日，法航 447 航班在大西洋上空遭遇空速管结冰，自动驾驶断开。右侧驾驶杆落在资历最浅的副驾驶 Bonin 手中——他几乎全程把侧杆向后拉到底，飞机失速坠落三分半钟，228 人遇难。调查中最令人心寒的细节是：驾驶舱里没有人真正理解飞机当时处于什么状态。</p>
+<p>同年 1 月 15 日，全美航空 1549 航班起飞后一分钟在 3,200 英尺高度撞鸟，双发停车。Sullenberger 机长——40 年飞行经验、两万小时、飞过滑翔机——在短短几分钟内决定迫降哈德逊河，155 人全部生还。自动驾驶算不出这条航线，是人的经验和判断救了场。</p>
+<p>两个故事合在一起，正是自动化时代最深刻的悖论。1983 年，Lisanne Bainbridge 在经典论文 <a href="https://en.wikipedia.org/wiki/Ironies_of_Automation">Ironies of Automation</a> 中就指出：自动化接管了常规操作，于是人越来越少练习；可一旦自动化退出，剩下的恰恰是最罕见、最棘手、最需要人手的时刻。航空界后来把过度依赖屏幕上洋红色指引线的一代飞行员称为&quot;洋红色线的孩子&quot;（Children of the Magenta Line）——自动飞行让他们安全，直到自动飞行不能用的那一秒。</p>
+<p>&ldquo;裁掉初级工程师，只留高级工程师用 AI&quot;这个方案，本质上就是在培养一代没有摸过杆的机长。资深工程师的判断力，是一千次亲手犯错的存款；你不能跳过存款阶段，直接要求他们在雷暴夜接班。外科医生不能跳过住院医师生涯，建筑师不能在没画过节点详图的情况下设计大桥。<strong>能力只在重复的、笨拙的、亲手做的练习中长出来。</strong> 今天被裁掉的初级岗位，就是十年后无人可用的资深岗位——再加上对少数骨干和单一 AI 的双重依赖，整个行业的巴士因子（bus factor）会急剧恶化。</p>
+<h2 id="七只写不读的代码库最坏的终局">七、&ldquo;只写不读&quot;的代码库：最坏的终局</h2>
+<p>这篇文章开头的原文里有一个精准的担忧：如果大家相信&quot;以后代码不需要人读了，AI 自己会维护&rdquo;，最终会得到一个没有人读得懂的代码库。</p>
+<p>GitClear 的 2026 数据证明这不是假想，而是正在发生的结构变化：旧代码更新减少 74%、重构崩塌 70%、新代码与既有代码的连接度下降 35%——人们确实不再回去读旧代码了。</p>
+<p>问题在于，这个赌注有一个技术上的硬约束：<strong>上下文窗口</strong>。真实的大型代码库，迟早会长到超出任何单一模型的上下文。届时 AI 只能看见局部碎片，却仍以全知的口吻输出补丁；人因为从未读过底层，无法判断补丁是否正确。于是补丁叠着补丁，同一个错误以 +81% 的速度复制到更多地方。系统每天都在&quot;能运行&quot;和&quot;无人理解&quot;之间扩大裂缝，直到一次事故——那时模型受限于上下文无法收拾，人受限于从未阅读也无法接手。</p>
+<p>你无法维护一个你读不懂的系统。<strong>读不懂，就意味着你并不拥有它——你只是在替它值班。</strong></p>
+<h2 id="八对四种流行说法的回应">八、对四种流行说法的回应</h2>
+<p><strong>说法一：&ldquo;我用 AI 明明更快了。&rdquo;</strong>
+很可能是真的——尤其是在学习新 API、写样板、补测试、查资料、做可丢弃原型时。证据也一致：新手和常规任务收益最大。但请把&quot;我打字更快了&quot;和&quot;我的系统更好了&quot;分开度量。METR 和 DORA 提醒我们：前者是感受，后者要用变更失败率、事故率、返工率来验证。</p>
+<p><strong>说法二：&ldquo;等下一代模型就好了。&rdquo;</strong>
+模型当然会继续进步。但有三样东西不会随模型参数增长而转移：责任（社会只向人追责）、本质复杂度（系统越大，理解问题越难）、以及规格本身的难度（最难的从来不是&quot;怎么写&rdquo;，而是&quot;该做什么&quot;）。工具史也不必悲观：1952 年 Grace Hopper 拿出第一个编译器时，没人愿意碰它，人们说&quot;计算机只会做算术&quot;；后来 4GL、CASE、低代码每一轮都预言程序员消亡，结果是软件吃掉了更多世界，开发者数量持续增长——只是每一次，门槛都向&quot;判断与品味&quot;上移一层。相机普及没有消灭摄影，它让&quot;眼睛&quot;成为稀缺品；国际象棋引擎没有杀死象棋，反而催生了水平更高的&quot;半人马&quot;棋手。</p>
+<p><strong>说法三：&ldquo;只留高级工程师 + AI，人力成本最低。&rdquo;</strong>
+短期省下的是工资，长期失去的是人才管线、组织记忆和冗余。骨干工程师脑子里的隐性知识——为什么这个地方必须这么设计、当年踩过什么坑——是公司真正的资产，也是 AI 训练不出来的上下文。而且资深者一旦长期脱离代码地面，也会产出自己的&quot;架构幻觉&quot;。</p>
+<p><strong>说法四：&ldquo;代码不用人读，AI 自己维护就行。&rdquo;</strong>
+调试的本质是建立对系统的心智模型；事故处置的本质是接管。不能被人理解的代码，在风平浪静时是黑盒，在风暴中是炸弹。把 AI 代码当作外部陌生人提交的 PR 来对待——<strong>先读懂，再合并</strong>——这是底线。</p>
+<h2 id="九稳健演进的路线保留什么改变什么">九、稳健演进的路线：保留什么，改变什么</h2>
+<p>AI 是放大器：它放大团队的品味，也放大团队的混乱。先有好工程，才有好放大。基于前面的证据，建议团队沿着既有实践做十件事，而不是推倒重来：</p>
+<ol>
+<li><strong>人类对每一次合并负责。</strong> 把 AI 输出当成&quot;一个极快、博学、过度自信、且永远不必值班的实习生&quot;写的代码：先读后合，逐行判断。</li>
+<li><strong>保留并加强经典实践。</strong> 设计评审、架构决策记录（ADR）、代码评审、人写的测试（测试是可执行的规格）、持续集成、on-call 与事故复盘——它们在 AI 时代不是过时了，而是更重要了。</li>
+<li><strong>给重构和旧代码维护留出固定预算。</strong> GitClear 的建议：为重复代码块设置告警 tripwire，把重构占比、旧代码更新率纳入团队指标。</li>
+<li><strong>保护新人的训练道。</strong> 采用&quot;驾照模式&quot;：先证明能手写、能读懂，再逐步授予&quot;自动驾驶&quot;权限。让 AI 成为副驾，而不是代驾。</li>
+<li><strong>按风险分级使用。</strong> 探索、样板、文档、测试生成可以放开；鉴权、支付、并发、加密、数据迁移等高危区，必须人写或逐行复核。</li>
+<li><strong>度量结构，而不是产量。</strong> 盯重复率、两周内返工率、评审缺陷逃逸率、变更失败率、事故恢复时间——不要盯&quot;接受了多少条补全&quot;&ldquo;新增了多少行&rdquo;。</li>
+<li><strong>刻意做知识传承。</strong> 结对、评审时的讲解、把隐性知识写进 ADR——AI 时代信息越多，组织化的理解越稀缺。</li>
+<li><strong>保持多样性。</strong> 关键设计至少有一个&quot;不依赖 AI 的大脑&quot;完整想过一遍；允许多个模型、多种人工方案并存，避免全系统共享同一个盲点。</li>
+<li><strong>慢半步采用，深一层理解。</strong> 把省下的打字时间，投到问题定义、用户访谈和边界条件上去——那才是本质复杂度居住的地方。</li>
+<li><strong>留住骨干，也留住讲得出道理的人。</strong> 评估工程师时，把&quot;能向人解释清楚为什么这样设计&quot;重新放回核心标准——能被传承的判断，才是组织的能力。</li>
+</ol>
+<h2 id="十结语把人放大而不是把人换掉">十、结语：把人放大，而不是把人换掉</h2>
+<p>让我们回到&quot;鹰&quot;号上。1202 警报之所以是虚惊一场，是因为在那之前的许多年里，有一群人决定了什么任务值得在过载时被保留下来。机器执行了人的价值观——快得不可思议，但价值观是人的。</p>
+<p>软件工程的历史，从来不是工具替代人的历史，而是人把重复劳动一层层交给机器、把判断和审美一层层留给自己的历史。汇编器、编译器、IDE、搜索引擎、Copilot 都是这条路上的台阶。AI 是迄今为止最高的一级台阶，但台阶的意义，是让人站得更高，而不是让人从建筑上消失。</p>
+<p>所以，真正该问的问题不是&quot;AI 能替代多少程序员&quot;，而是：</p>
+<blockquote>
+<p><strong>我们要用 AI 放大什么？是放大产量，还是放大品味、责任与人对人的关切？</strong></p>
+</blockquote>
+<p>最好的 AI 时代团队，会像 Sullenberger 与电传飞控的配合：机器处理它能处理的，人在不可预见之处接手；而那只稳住侧杆的手，来自无数次亲手飞行的沉淀。</p>
+<p>人是尺度。过去是，现在是，AI 越强，就越是。</p>
+<hr>
+<h2 id="参考资料与延伸阅读">参考资料与延伸阅读</h2>
+<p><strong>实证研究</strong></p>
+<ul>
+<li>METR, <a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/">Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity</a>（2025，RCT，16 人 / 246 任务）</li>
+<li>Cui, Demirer, Jaffe, Musolff, Peng, Salz, <a href="https://economics.mit.edu/sites/default/files/inline-files/draft_copilot_experiments.pdf">The Effects of Generative AI on High-Skilled Work: Evidence from Three Field Experiments</a>（2025 工作论文，4,867 名开发者）</li>
+<li>Google Cloud / DORA, <a href="https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report">2025 State of AI-assisted Software Development</a> 与 <a href="https://dora.dev/insights/balancing-ai-tensions/">Balancing AI tensions</a></li>
+<li>GitClear, <a href="https://www.gitclear.com/write_only_mode_ai_research">Write-Only Mode: 2026 AI Code Quality Research</a>（6.23 亿次代码变更，2023–2026）</li>
+<li>安全研究综述：<a href="https://safeguard.sh/resources/blog/how-copilot-amplifies-insecure-codebases">How Copilot Amplifies Insecure Codebases</a>（含 Pearce et al. 2021 与 Stanford CCS'23）</li>
+<li>Klarna 回调：<a href="https://geekycodes.in/blog/klarna-said-its-ai-did-the-work-of-700-people-then-it-started-hiring-humans-again/">Klarna Said Its AI Did the Work of 700 People. Then It Hired Humans Again</a>（2025-05）</li>
+</ul>
+<p><strong>经典文献与案例</strong></p>
+<ul>
+<li>Fred Brooks, <em>The Mythical Man-Month</em>（1975）与 <a href="https://en.wikipedia.org/wiki/No_Silver_Bullet">No Silver Bullet</a>（1986）</li>
+<li>Donald Knuth, <em>Computer Programming as an Art</em>（1974 年图灵奖演讲）</li>
+<li>Linus Torvalds, <a href="https://www.ted.com/talks/linus_torvalds_the_mind_behind_linux">The mind behind Linux</a>（TED 2016）</li>
+<li>Rich Hickey, <a href="https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/SimpleMadeEasy.md">Simple Made Easy</a>（2011）</li>
+<li>Lisanne Bainbridge, <a href="https://en.wikipedia.org/wiki/Ironies_of_Automation">Ironies of Automation</a>（Automatica, 1983）</li>
+<li>案例：<a href="https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)">阿波罗 11 号与 Margaret Hamilton</a>、<a href="https://en.wikipedia.org/wiki/Air_France_Flight_447">法航 447</a>、<a href="https://en.wikipedia.org/wiki/US_Airways_Flight_1549">全美航空 1549</a>、Therac-25、阿丽亚娜 5 型 501 次飞行、<a href="https://en.wikipedia.org/wiki/Knight_Capital">Knight Capital</a></li>
+<li>Karpathy &ldquo;vibe coding&rdquo; 原意辨析：<a href="https://devpages.io/blog/vibe-coding-ai-development-explained">What Karpathy Actually Meant, and Where It Breaks</a></li>
+</ul>
+
+        </div>
+
+        
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/2021/note-of-right-measurement/">笔记——正确的度量指标</a></li>
+        
+        <li><a href="/post/2026/learn-tidy-first/">Tidy First</a></li>
+        
+        <li><a href="/post/2026/agile-org-design-note/">《敏捷组织设计》读书笔记</a></li>
+        
+        <li><a href="/post/2025/code-review-game-rule/">Code Review Game Rule 代码审查游戏规则</a></li>
+        
+        <li><a href="/post/2025/pc-win11-wsl-tips/">PC Win11 WSL Tips</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='/tags/ai%E7%BC%96%E7%A8%8B'>AI编程</a></li>
+                
+                <li><a href='/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B'>软件工程</a></li>
+                
+                <li><a href='/tags/%E4%BB%A3%E7%A0%81%E8%B4%A8%E9%87%8F'>代码质量</a></li>
+                
+                <li><a href='/tags/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5'>工程实践</a></li>
+                
+                <li><a href='/tags/%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86'>技术管理</a></li>
+                
+            </ul>
+            
+        </div>
+    </article>
+    
+    
+
+    
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "wind13/wind13.github.io"
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
+</div>
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="site" value="/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="/post/2026/the-human-measure/" title="The Human Measure">The Human Measure</a>
+    </li>
+    
+    <li>
+        <a href="/post/2026/learn-tidy-first/" title="Tidy First">Tidy First</a>
+    </li>
+    
+    <li>
+        <a href="/post/2026/agile-org-design-note/" title="《敏捷组织设计》读书笔记">《敏捷组织设计》读书笔记</a>
+    </li>
+    
+    <li>
+        <a href="/post/2025/code-review-game-rule/" title="Code Review Game Rule 代码审查游戏规则">Code Review Game Rule 代码审查游戏规则</a>
+    </li>
+    
+    <li>
+        <a href="/post/2025/pc-win11-wsl-tips/" title="PC Win11 WSL Tips">PC Win11 WSL Tips</a>
+    </li>
+    
+    <li>
+        <a href="/post/2025/craftsmanship-in-the-ai-era/" title="AI 时代的匠人精神">AI 时代的匠人精神</a>
+    </li>
+    
+    <li>
+        <a href="/post/2024/cross-platform-client-develop-choise/" title="跨平台开发技术选型：Flutter、Tauri和Dioxus比较与未来展望">跨平台开发技术选型：Flutter、Tauri和Dioxus比较与未来展望</a>
+    </li>
+    
+    <li>
+        <a href="/post/2024/acreom-developer-pkm-task-tool/" title="Acreom 开发者的知识库和任务工具">Acreom 开发者的知识库和任务工具</a>
+    </li>
+    
+    <li>
+        <a href="/post/2024/flatnotes-self-note-server/" title="Flatnotes 自托管无库笔记应用">Flatnotes 自托管无库笔记应用</a>
+    </li>
+    
+    <li>
+        <a href="/post/2024/how-to-publish-doc-by-wx-api/" title="如何使用微信公众号API发布文章 How to Publish Doc by Wx Api">如何使用微信公众号API发布文章 How to Publish Doc by Wx Api</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li><a href="/categories/%E5%AE%9E%E8%B7%B5%E4%B8%8E%E7%BB%8F%E9%AA%8C/">实践与经验 (22)</a></li>
+    
+    <li><a href="/categories/%E6%84%9F%E5%8F%97%E4%B8%8E%E6%80%9D%E8%80%83/">感受与思考 (30)</a></li>
+    
+    <li><a href="/categories/%E6%94%B6%E9%9B%86%E4%B8%8E%E8%AE%B0%E5%BD%95/">收集与记录 (34)</a></li>
+    
+    <li><a href="/categories/%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AD%A6%E4%B9%A0/">研究与学习 (20)</a></li>
+    
+    <li><a href="/categories/%E7%AE%A1%E7%90%86%E4%B8%8E%E6%88%98%E7%95%A5/">管理与战略 (16)</a></li>
+    
+    <li><a href="/categories/%E8%BD%AF%E4%BB%B6%E4%B8%8E%E6%8A%80%E6%9C%AF/">软件与技术 (54)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="/tags/access/">Access</a>
+    
+    <a href="/tags/acreom/">Acreom</a>
+    
+    <a href="/tags/agile/">Agile</a>
+    
+    <a href="/tags/ai/">AI</a>
+    
+    <a href="/tags/ai%E7%BC%96%E7%A8%8B/">AI编程</a>
+    
+    <a href="/tags/android/">Android</a>
+    
+    <a href="/tags/android-%E6%B5%8B%E8%AF%95/">Android 测试</a>
+    
+    <a href="/tags/angular/">Angular</a>
+    
+    <a href="/tags/angularjs/">Angularjs</a>
+    
+    <a href="/tags/antd/">Antd</a>
+    
+    <a href="/tags/api/">API</a>
+    
+    <a href="/tags/app/">App</a>
+    
+    <a href="/tags/architect/">Architect</a>
+    
+    <a href="/tags/aws/">AWS</a>
+    
+    <a href="/tags/azure/">Azure</a>
+    
+    <a href="/tags/backbone/">Backbone</a>
+    
+    <a href="/tags/baidu/">Baidu</a>
+    
+    <a href="/tags/beeui/">BeeUi</a>
+    
+    <a href="/tags/blitz/">Blitz</a>
+    
+    <a href="/tags/blog/">BLog</a>
+    
+    <a href="/tags/boook/">Boook</a>
+    
+    <a href="/tags/canvas-app/">Canvas App</a>
+    
+    <a href="/tags/capslock/">Capslock</a>
+    
+    <a href="/tags/chado.js/">Chado.js</a>
+    
+    <a href="/tags/chkdsk/">Chkdsk</a>
+    
+    <a href="/tags/ci/cd/">CI/CD</a>
+    
+    <a href="/tags/clojure/">Clojure</a>
+    
+    <a href="/tags/code/">Code</a>
+    
+    <a href="/tags/code-review/">Code Review</a>
+    
+    <a href="/tags/computer-vision/">Computer Vision</a>
+    
+    <a href="/tags/config/">Config</a>
+    
+    <a href="/tags/daisyui/">DaisyUI</a>
+    
+    <a href="/tags/datavers/">Datavers</a>
+    
+    <a href="/tags/dataverse/">Dataverse</a>
+    
+    <a href="/tags/db/">DB</a>
+    
+    <a href="/tags/dendron/">Dendron</a>
+    
+    <a href="/tags/devops/">DevOps</a>
+    
+    <a href="/tags/devtech-java/">Devtech Java</a>
+    
+    <a href="/tags/digital-garden/">Digital-Garden</a>
+    
+    <a href="/tags/dioxus/">Dioxus</a>
+    
+    <a href="/tags/docker/">Docker</a>
+    
+    <a href="/tags/dubbo/">Dubbo</a>
+    
+    <a href="/tags/easyui/">Easyui</a>
+    
+    <a href="/tags/editor/">Editor</a>
+    
+    <a href="/tags/egghead/">Egghead</a>
+    
+    <a href="/tags/element3/">Element3</a>
+    
+    <a href="/tags/elementui/">ElementUI</a>
+    
+    <a href="/tags/elixir/">Elixir</a>
+    
+    <a href="/tags/emacs/">Emacs</a>
+    
+    <a href="/tags/erlang/">Erlang</a>
+    
+    <a href="/tags/es6/">ES6</a>
+    
+    <a href="/tags/esc/">Esc</a>
+    
+    <a href="/tags/essay/">Essay</a>
+    
+    <a href="/tags/evernote/">Evernote</a>
+    
+    <a href="/tags/feign/">Feign</a>
+    
+    <a href="/tags/filter/">Filter</a>
+    
+    <a href="/tags/fizzbuzz/">Fizzbuzz</a>
+    
+    <a href="/tags/flutter/">Flutter</a>
+    
+    <a href="/tags/framework/">Framework</a>
+    
+    <a href="/tags/freebsd/">FreeBSD</a>
+    
+    <a href="/tags/game/">Game</a>
+    
+    <a href="/tags/games/">Games</a>
+    
+    <a href="/tags/getxml/">GetXML</a>
+    
+    <a href="/tags/git/">Git</a>
+    
+    <a href="/tags/gitlab/">Gitlab</a>
+    
+    <a href="/tags/golang/">Golang</a>
+    
+    <a href="/tags/google/">Google</a>
+    
+    <a href="/tags/graphic/">Graphic</a>
+    
+    <a href="/tags/graphql/">Graphql</a>
+    
+    <a href="/tags/grpc/">Grpc</a>
+    
+    <a href="/tags/gtd/">GTD</a>
+    
+    <a href="/tags/hexo/">Hexo</a>
+    
+    <a href="/tags/https/">Https</a>
+    
+    <a href="/tags/hugo/">Hugo</a>
+    
+    <a href="/tags/hypervisor/">Hypervisor</a>
+    
+    <a href="/tags/idea/">IDEA</a>
+    
+    <a href="/tags/index/">Index</a>
+    
+    <a href="/tags/intellij/">Intellij</a>
+    
+    <a href="/tags/iot/">IoT</a>
+    
+    <a href="/tags/iterm2/">Iterm2</a>
+    
+    <a href="/tags/jamstack/">JamStack</a>
+    
+    <a href="/tags/java/">Java</a>
+    
+    <a href="/tags/javascript/">JavaScript</a>
+    
+    <a href="/tags/jenkins/">Jenkins</a>
+    
+    <a href="/tags/json/">Json</a>
+    
+    <a href="/tags/julia/">Julia</a>
+    
+    <a href="/tags/kafka/">Kafka</a>
+    
+    <a href="/tags/kpi/">KPI</a>
+    
+    <a href="/tags/learn/">Learn</a>
+    
+    <a href="/tags/linux/">Linux</a>
+    
+    <a href="/tags/love/">Love</a>
+    
+    <a href="/tags/low-code/">Low Code</a>
+    
+    <a href="/tags/mac-osx/">Mac Osx</a>
+    
+    <a href="/tags/macos/">MacOS</a>
+    
+    <a href="/tags/macro/">Macro</a>
+    
+    <a href="/tags/manjaro/">Manjaro</a>
+    
+    <a href="/tags/mapapi/">Mapapi</a>
+    
+    <a href="/tags/markdown/">Markdown</a>
+    
+    <a href="/tags/midi/">Midi</a>
+    
+    <a href="/tags/mido/">Mido</a>
+    
+    <a href="/tags/mindmap/">Mindmap</a>
+    
+    <a href="/tags/model-driven-app/">Model Driven App</a>
+    
+    <a href="/tags/module/">Module</a>
+    
+    <a href="/tags/mounty/">Mounty</a>
+    
+    <a href="/tags/mqtt/">MQTT</a>
+    
+    <a href="/tags/multibranch/">Multibranch</a>
+    
+    <a href="/tags/music/">Music</a>
+    
+    <a href="/tags/namespace/">Namespace</a>
+    
+    <a href="/tags/neovim/">NeoVim</a>
+    
+    <a href="/tags/netlify/">Netlify</a>
+    
+    <a href="/tags/next/">Next</a>
+    
+    <a href="/tags/ng/">Ng</a>
+    
+    <a href="/tags/node.js/">Node.js</a>
+    
+    <a href="/tags/nodejs/">Nodejs</a>
+    
+    <a href="/tags/npm/">Npm</a>
+    
+    <a href="/tags/ntfs/">NTFS</a>
+    
+    <a href="/tags/nuxt/">Nuxt</a>
+    
+    <a href="/tags/ocr/">OCR</a>
+    
+    <a href="/tags/okr/">OKR</a>
+    
+    <a href="/tags/opencv/">OpenCV</a>
+    
+    <a href="/tags/openfeign/">OpenFeign</a>
+    
+    <a href="/tags/openproject/">OpenProject</a>
+    
+    <a href="/tags/os/">OS</a>
+    
+    <a href="/tags/osv/">OSv</a>
+    
+    <a href="/tags/package-lock.json/">Package-Lock.json</a>
+    
+    <a href="/tags/pact.io/">Pact.io</a>
+    
+    <a href="/tags/pain-text/">Pain Text</a>
+    
+    <a href="/tags/para/">Para</a>
+    
+    <a href="/tags/pc/">Pc</a>
+    
+    <a href="/tags/piano/">Piano</a>
+    
+    <a href="/tags/pingcode/">PingCode</a>
+    
+    <a href="/tags/pipeline/">PipeLine</a>
+    
+    <a href="/tags/pkm/">PKM</a>
+    
+    <a href="/tags/play1/">Play1</a>
+    
+    <a href="/tags/play1x/">Play1x</a>
+    
+    <a href="/tags/play2-scala/">Play2 Scala</a>
+    
+    <a href="/tags/playframework/">Playframework</a>
+    
+    <a href="/tags/playscala/">Playscala</a>
+    
+    <a href="/tags/post/">POST</a>
+    
+    <a href="/tags/power-apps/">Power Apps</a>
+    
+    <a href="/tags/power-platform/">Power Platform</a>
+    
+    <a href="/tags/powerapps/">PowerApps</a>
+    
+    <a href="/tags/powermill/">Powermill</a>
+    
+    <a href="/tags/ppt/">PPT</a>
+    
+    <a href="/tags/promise/">Promise</a>
+    
+    <a href="/tags/python/">Python</a>
+    
+    <a href="/tags/qa/">QA</a>
+    
+    <a href="/tags/ray-dalio/">Ray Dalio</a>
+    
+    <a href="/tags/re-natal/">Re-Natal</a>
+    
+    <a href="/tags/react/">React</a>
+    
+    <a href="/tags/react-native/">React Native</a>
+    
+    <a href="/tags/react-route/">React-Route</a>
+    
+    <a href="/tags/redux/">Redux</a>
+    
+    <a href="/tags/redwood/">RedWood</a>
+    
+    <a href="/tags/regex/">Regex</a>
+    
+    <a href="/tags/restful-apidocker/">RESTful API，Docker</a>
+    
+    <a href="/tags/rpc/">Rpc</a>
+    
+    <a href="/tags/ruby/">Ruby</a>
+    
+    <a href="/tags/rust/">Rust</a>
+    
+    <a href="/tags/seagate/">Seagate</a>
+    
+    <a href="/tags/second-brain/">Second-Brain</a>
+    
+    <a href="/tags/secure/">Secure</a>
+    
+    <a href="/tags/session/">Session</a>
+    
+    <a href="/tags/silo/">Silo</a>
+    
+    <a href="/tags/sitewhere/">SiteWhere</a>
+    
+    <a href="/tags/smartide/">SmartIDE</a>
+    
+    <a href="/tags/sops/">Sops</a>
+    
+    <a href="/tags/spacemacs/">Spacemacs</a>
+    
+    <a href="/tags/spacevim/">SpaceVim</a>
+    
+    <a href="/tags/sql/">SQL</a>
+    
+    <a href="/tags/ssh/">Ssh</a>
+    
+    <a href="/tags/static-site/">Static Site</a>
+    
+    <a href="/tags/svelte/">Svelte</a>
+    
+    <a href="/tags/svg/">SVG</a>
+    
+    <a href="/tags/taigo/">Taigo</a>
+    
+    <a href="/tags/tailwind/">Tailwind</a>
+    
+    <a href="/tags/tauri/">Tauri</a>
+    
+    <a href="/tags/tdd/">TDD</a>
+    
+    <a href="/tags/text/">Text</a>
+    
+    <a href="/tags/toc/">TOC</a>
+    
+    <a href="/tags/tomorrow-theme/">Tomorrow-Theme</a>
+    
+    <a href="/tags/tool/">Tool</a>
+    
+    <a href="/tags/tools/">Tools</a>
+    
+    <a href="/tags/trello/">Trello</a>
+    
+    <a href="/tags/typescript/">TypeScript</a>
+    
+    <a href="/tags/ui%E6%A1%86%E6%9E%B6/">UI框架</a>
+    
+    <a href="/tags/umi/">Umi</a>
+    
+    <a href="/tags/uml/">Uml</a>
+    
+    <a href="/tags/unit-test/">Unit Test</a>
+    
+    <a href="/tags/unix/">Unix</a>
+    
+    <a href="/tags/vant/">Vant</a>
+    
+    <a href="/tags/vi/">Vi</a>
+    
+    <a href="/tags/vim/">Vim</a>
+    
+    <a href="/tags/vimac/">Vimac</a>
+    
+    <a href="/tags/vimium/">Vimium</a>
+    
+    <a href="/tags/vimrc/">Vimrc</a>
+    
+    <a href="/tags/vlang/">Vlang</a>
+    
+    <a href="/tags/vscode/">VSCode</a>
+    
+    <a href="/tags/vue/">Vue</a>
+    
+    <a href="/tags/vue3/">Vue3</a>
+    
+    <a href="/tags/weapp/">Weapp</a>
+    
+    <a href="/tags/web-resources/">Web Resources</a>
+    
+    <a href="/tags/webpack/">Webpack</a>
+    
+    <a href="/tags/weui/">WeUI</a>
+    
+    <a href="/tags/win11/">Win11</a>
+    
+    <a href="/tags/wind13/">Wind13</a>
+    
+    <a href="/tags/windows/">Windows</a>
+    
+    <a href="/tags/word%E6%96%87%E6%A1%A3/">Word文档</a>
+    
+    <a href="/tags/wux/">Wux</a>
+    
+    <a href="/tags/xml/">Xml</a>
+    
+    <a href="/tags/yarn/">Yarn</a>
+    
+    <a href="/tags/yarn.lock/">Yarn.lock</a>
+    
+    <a href="/tags/%E4%B8%80%E5%9B%BE/">一图</a>
+    
+    <a href="/tags/%E4%B8%96%E9%A3%8E%E5%8D%81%E4%B8%89%E5%AD%A6%E5%A0%82/">世风十三学堂</a>
+    
+    <a href="/tags/%E4%B9%A0%E6%83%AF/">习惯</a>
+    
+    <a href="/tags/%E4%B9%A6%E7%B1%8D/">书籍</a>
+    
+    <a href="/tags/%E4%BA%92%E8%81%94%E7%BD%91%E6%97%B6%E4%BB%A3/">互联网时代</a>
+    
+    <a href="/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/">产品经理</a>
+    
+    <a href="/tags/%E4%BA%B2%E5%AD%90%E6%95%99%E8%82%B2/">亲子教育</a>
+    
+    <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a>
+    
+    <a href="/tags/%E4%BA%BA%E6%9C%88%E7%A5%9E%E8%AF%9D/">人月神话</a>
+    
+    <a href="/tags/%E4%BA%BA%E7%94%9F/">人生</a>
+    
+    <a href="/tags/%E4%BB%A3%E7%A0%81%E5%AE%A1%E6%9F%A5/">代码审查</a>
+    
+    <a href="/tags/%E4%BB%A3%E7%A0%81%E8%B4%A8%E9%87%8F/">代码质量</a>
+    
+    <a href="/tags/%E4%BB%A5%E7%BB%88%E4%B8%BA%E5%A7%8B/">以终为始</a>
+    
+    <a href="/tags/%E4%BC%81%E4%B8%9A%E7%AE%A1%E7%90%86/">企业管理</a>
+    
+    <a href="/tags/%E4%BD%8E%E4%BB%A3%E7%A0%81/">低代码</a>
+    
+    <a href="/tags/%E5%85%AC%E5%8F%B8%E7%AE%A1%E7%90%86/">公司管理</a>
+    
+    <a href="/tags/%E5%87%8F%E8%82%A5/">减肥</a>
+    
+    <a href="/tags/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/">函数式编程</a>
+    
+    <a href="/tags/%E5%88%98%E9%82%A6/">刘邦</a>
+    
+    <a href="/tags/%E5%88%9B%E6%84%8F%E7%B2%BE%E8%8B%B1/">创意精英</a>
+    
+    <a href="/tags/%E5%88%9B%E6%96%B0/">创新</a>
+    
+    <a href="/tags/%E5%88%9D%E5%AD%A6%E8%80%85/">初学者</a>
+    
+    <a href="/tags/%E5%88%B6%E7%BA%A6%E7%90%86%E8%AE%BA/">制约理论</a>
+    
+    <a href="/tags/%E5%89%8D%E7%AB%AF/">前端</a>
+    
+    <a href="/tags/%E5%8C%A0%E4%BA%BA%E7%B2%BE%E7%A5%9E/">匠人精神</a>
+    
+    <a href="/tags/%E5%8C%A0%E5%BF%83/">匠心</a>
+    
+    <a href="/tags/%E5%8D%8E%E6%99%A8%E5%AE%87/">华晨宇</a>
+    
+    <a href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+    
+    <a href="/tags/%E5%8E%9F%E5%88%99/">原则</a>
+    
+    <a href="/tags/%E5%90%B4%E5%86%9B/">吴军</a>
+    
+    <a href="/tags/%E5%91%BC%E5%90%B8%E7%81%AF/">呼吸灯</a>
+    
+    <a href="/tags/%E5%9B%A2%E9%98%9F%E6%95%88%E7%8E%87/">团队效率</a>
+    
+    <a href="/tags/%E5%9B%A2%E9%98%9F%E6%95%88%E8%83%BD/">团队效能</a>
+    
+    <a href="/tags/%E5%9B%B4%E6%A3%8B/">围棋</a>
+    
+    <a href="/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/">图像处理</a>
+    
+    <a href="/tags/%E5%9D%9A%E6%8C%81/">坚持</a>
+    
+    <a href="/tags/%E5%A4%8D%E4%BB%87%E8%80%85%E8%81%94%E7%9B%9F/">复仇者联盟</a>
+    
+    <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+    
+    <a href="/tags/%E5%A4%A7%E4%B9%94/">大乔</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%8E%92%E6%A1%A3/">大排档</a>
+    
+    <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
+    
+    <a href="/tags/%E5%A4%A7%E8%87%AA%E7%84%B6/">大自然</a>
+    
+    <a href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+    
+    <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/">学习方法</a>
+    
+    <a href="/tags/%E5%AE%8F%E7%BC%96%E7%A8%8B/">宏编程</a>
+    
+    <a href="/tags/%E5%AE%A2%E6%88%B7%E7%AB%AF/">客户端</a>
+    
+    <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">小程序</a>
+    
+    <a href="/tags/%E5%B4%94%E5%81%A5/">崔健</a>
+    
+    <a href="/tags/%E5%B7%A5%E4%BD%9C%E5%AE%A4/">工作室</a>
+    
+    <a href="/tags/%E5%B7%A5%E7%A8%8B%E5%8C%96/">工程化</a>
+    
+    <a href="/tags/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/">工程实践</a>
+    
+    <a href="/tags/%E5%B7%A5%E7%A8%8B%E6%80%9D%E7%BB%B4/">工程思维</a>
+    
+    <a href="/tags/%E5%B7%B4%E8%8F%B2%E7%89%B9/">巴菲特</a>
+    
+    <a href="/tags/%E5%BA%A6%E9%87%8F%E6%8C%87%E6%A0%87/">度量指标</a>
+    
+    <a href="/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/">开发环境</a>
+    
+    <a href="/tags/%E5%BC%82%E6%AD%A5/">异步</a>
+    
+    <a href="/tags/%E5%BC%A0%E5%B0%8F%E9%BE%99/">张小龙</a>
+    
+    <a href="/tags/%E5%BE%97%E5%88%B0/">得到</a>
+    
+    <a href="/tags/%E5%BE%97%E5%88%B0-app/">得到 App</a>
+    
+    <a href="/tags/%E5%BE%97%E5%88%B0app/">得到App</a>
+    
+    <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/">微信公众号</a>
+    
+    <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</a>
+    
+    <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">微服务</a>
+    
+    <a href="/tags/%E5%BE%AE%E8%BD%AF/">微软</a>
+    
+    <a href="/tags/%E5%BF%83%E6%99%BA%E6%AE%8B%E7%96%BE/">心智残疾</a>
+    
+    <a href="/tags/%E5%BF%AB%E5%88%80%E9%9D%92%E8%A1%A3/">快刀青衣</a>
+    
+    <a href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">思维导图</a>
+    
+    <a href="/tags/%E6%80%9D%E7%BB%B4%E8%AE%B0%E5%BD%95/">思维记录</a>
+    
+    <a href="/tags/%E6%89%8B%E6%9C%BA/">手机</a>
+    
+    <a href="/tags/%E6%89%8B%E6%B8%B8/">手游</a>
+    
+    <a href="/tags/%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/">技术管理</a>
+    
+    <a href="/tags/%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B/">技术选型</a>
+    
+    <a href="/tags/%E6%8A%95%E8%B5%84/">投资</a>
+    
+    <a href="/tags/%E6%8B%96%E5%BB%B6%E7%97%87/">拖延症</a>
+    
+    <a href="/tags/%E6%8E%98%E9%87%91/">掘金</a>
+    
+    <a href="/tags/%E6%95%8F%E6%8D%B7/">敏捷</a>
+    
+    <a href="/tags/%E6%95%8F%E6%8D%B7%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">敏捷软件开发</a>
+    
+    <a href="/tags/%E6%95%99%E8%82%B2/">教育</a>
+    
+    <a href="/tags/%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D/">数据恢复</a>
+    
+    <a href="/tags/%E6%95%B0%E6%8E%A7%E5%8A%A0%E5%B7%A5/">数控加工</a>
+    
+    <a href="/tags/%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85/">新冠疫情</a>
+    
+    <a href="/tags/%E6%97%8B%E8%BD%AE%E7%BA%BF/">旋轮线</a>
+    
+    <a href="/tags/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/">时间管理</a>
+    
+    <a href="/tags/%E6%98%A5%E8%8A%82/">春节</a>
+    
+    <a href="/tags/%E6%99%BA%E6%85%A7/">智慧</a>
+    
+    <a href="/tags/%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/">最佳实践</a>
+    
+    <a href="/tags/%E6%9C%80%E9%80%9F%E9%99%8D%E7%BA%BF/">最速降线</a>
+    
+    <a href="/tags/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0/">有道云笔记</a>
+    
+    <a href="/tags/%E6%9D%8E%E7%AC%91%E6%9D%A5/">李笑来</a>
+    
+    <a href="/tags/%E6%9E%81%E9%99%90%E7%BC%96%E7%A8%8B/">极限编程</a>
+    
+    <a href="/tags/%E6%A8%8A%E7%99%BB/">樊登</a>
+    
+    <a href="/tags/%E6%A8%8A%E7%99%BB%E8%AF%BB%E4%B9%A6/">樊登读书</a>
+    
+    <a href="/tags/%E6%AD%8C%E6%89%8B/">歌手</a>
+    
+    <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">正则表达式</a>
+    
+    <a href="/tags/%E6%AD%A3%E5%BF%B5%E7%BC%96%E7%A8%8B/">正念编程</a>
+    
+    <a href="/tags/%E6%B1%A0%E5%BB%BA%E5%BC%BA/">池建强</a>
+    
+    <a href="/tags/%E6%B2%B3%E9%A9%AC/">河马</a>
+    
+    <a href="/tags/%E6%B3%A8%E6%84%8F%E5%8A%9B/">注意力</a>
+    
+    <a href="/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/">流程图</a>
+    
+    <a href="/tags/%E6%B5%8B%E8%AF%95%E9%87%91%E5%AD%97%E5%A1%94/">测试金字塔</a>
+    
+    <a href="/tags/%E6%B5%8B%E8%AF%95%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91/">测试驱动开发</a>
+    
+    <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%B7%A5%E4%BD%9C/">深度工作</a>
+    
+    <a href="/tags/%E6%B8%B8%E6%88%8F/">游戏</a>
+    
+    <a href="/tags/%E7%81%B5%E6%84%9F/">灵感</a>
+    
+    <a href="/tags/%E7%86%B5%E5%A2%9E/">熵增</a>
+    
+    <a href="/tags/%E7%89%A9%E8%81%94%E7%BD%91/">物联网</a>
+    
+    <a href="/tags/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/">王者荣耀</a>
+    
+    <a href="/tags/%E7%8E%8B%E9%98%B3%E6%98%8E/">王阳明</a>
+    
+    <a href="/tags/%E7%91%9E%E8%BE%BE%E5%88%A9%E6%AC%A7/">瑞·达利欧</a>
+    
+    <a href="/tags/%E7%93%B6%E9%A2%88/">瓶颈</a>
+    
+    <a href="/tags/%E7%94%98%E7%89%B9%E5%9B%BE/">甘特图</a>
+    
+    <a href="/tags/%E7%95%AA%E8%8C%84%E5%B7%A5%E4%BD%9C%E6%B3%95/">番茄工作法</a>
+    
+    <a href="/tags/%E7%96%AB%E6%83%85/">疫情</a>
+    
+    <a href="/tags/%E7%97%9B%E8%8B%A6/">痛苦</a>
+    
+    <a href="/tags/%E7%9F%A5%E8%AF%86%E6%98%9F%E7%90%83/">知识星球</a>
+    
+    <a href="/tags/%E7%9F%B3%E5%A2%A8/">石墨</a>
+    
+    <a href="/tags/%E7%A2%8E%E7%89%87/">碎片</a>
+    
+    <a href="/tags/%E7%A4%BA%E6%84%8F%E5%9B%BE/">示意图</a>
+    
+    <a href="/tags/%E7%A5%9D%E6%84%BF/">祝愿</a>
+    
+    <a href="/tags/%E7%A6%8F%E6%A0%BC%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B/">福格行为模型</a>
+    
+    <a href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a>
+    
+    <a href="/tags/%E7%AC%AC3%E9%80%89%E6%8B%A9/">第3选择</a>
+    
+    <a href="/tags/%E7%AE%97%E6%B3%95/">算法</a>
+    
+    <a href="/tags/%E7%AE%A1%E7%90%86/">管理</a>
+    
+    <a href="/tags/%E7%AE%A1%E7%90%86%E6%80%9D%E6%83%B3/">管理思想</a>
+    
+    <a href="/tags/%E7%B3%96%E5%B0%BF%E7%97%85/">糖尿病</a>
+    
+    <a href="/tags/%E7%B3%BB%E7%BB%9F/">系统</a>
+    
+    <a href="/tags/%E7%B3%BB%E7%BB%9F%E6%97%B6%E5%8C%BA/">系统时区</a>
+    
+    <a href="/tags/%E7%BA%AF%E6%96%87%E6%9C%AC/">纯文本</a>
+    
+    <a href="/tags/%E7%BA%B3%E5%BE%B7%E6%8B%89/">纳德拉</a>
+    
+    <a href="/tags/%E7%BB%84%E7%BB%87%E8%AE%BE%E8%AE%A1/">组织设计</a>
+    
+    <a href="/tags/%E7%BB%88%E8%BA%AB%E5%AD%A6%E4%B9%A0/">终身学习</a>
+    
+    <a href="/tags/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/">编程开发</a>
+    
+    <a href="/tags/%E7%BC%96%E8%BE%91%E5%99%A8/">编辑器</a>
+    
+    <a href="/tags/%E7%BD%97%E8%83%96/">罗胖</a>
+    
+    <a href="/tags/%E7%BD%97%E8%BE%91%E6%80%9D%E7%BB%B4/">罗辑思维</a>
+    
+    <a href="/tags/%E8%84%91%E5%9B%BE/">脑图</a>
+    
+    <a href="/tags/%E8%85%BE%E8%AE%AF/">腾讯</a>
+    
+    <a href="/tags/%E8%87%AA%E5%BE%8B/">自律</a>
+    
+    <a href="/tags/%E8%88%92%E9%80%82%E5%8C%BA/">舒适区</a>
+    
+    <a href="/tags/%E8%8A%B1%E6%9E%9C%E5%B1%B1%E6%8A%80%E6%9C%AF%E5%9B%A2%E9%98%9F/">花果山技术团队</a>
+    
+    <a href="/tags/%E8%A7%81%E8%AF%86/">见识</a>
+    
+    <a href="/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">解决方案</a>
+    
+    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a>
+    
+    <a href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
+    
+    <a href="/tags/%E8%B0%B7%E4%BB%93/">谷仓</a>
+    
+    <a href="/tags/%E8%B0%B7%E6%AD%8C/">谷歌</a>
+    
+    <a href="/tags/%E8%B4%A2%E5%AF%8C%E8%87%AA%E7%94%B1/">财富自由</a>
+    
+    <a href="/tags/%E8%B7%A8%E5%B9%B3%E5%8F%B0/">跨平台</a>
+    
+    <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">软件工程</a>
+    
+    <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">软件开发</a>
+    
+    <a href="/tags/%E8%BF%87%E6%BB%A4%E5%99%A8/">过滤器</a>
+    
+    <a href="/tags/%E8%BF%90%E6%B0%94/">运气</a>
+    
+    <a href="/tags/%E8%BF%BD%E6%B1%82/">追求</a>
+    
+    <a href="/tags/%E9%81%97%E7%95%99%E7%B3%BB%E7%BB%9F/">遗留系统</a>
+    
+    <a href="/tags/%E9%87%8D%E6%9E%84/">重构</a>
+    
+    <a href="/tags/%E9%98%BF%E5%B0%94%E8%8C%A8%E6%B5%B7%E9%BB%98%E7%97%87/">阿尔茨海默症</a>
+    
+    <a href="/tags/%E9%9B%B7%E7%94%B5%E6%A8%A1%E6%8B%9F%E5%99%A8/">雷电模拟器</a>
+    
+    <a href="/tags/%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A/">非暴力沟通</a>
+    
+    <a href="/tags/%E9%A2%86%E5%AF%BC%E5%8A%9B/">领导力</a>
+    
+    <a href="/tags/%E9%AB%98%E8%B4%A8%E9%87%8F/">高质量</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="http://extremeprogramming.cn/" title="极限编程中国">极限编程中国</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://outmanzzq.github.io/" title="outmanzzq">运维朋友的博客</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+    <div class="container">
+        &copy; 2026 <a href="/">世风十三学堂 By 世风十三</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    
+    
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+
+</body>
+
+</html>
